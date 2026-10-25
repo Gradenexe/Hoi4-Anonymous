@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_european_state_integration_occupation"
+        textureFile = "gfx/interface/occupation/european_state_integration_occupation.dds"
+    }
+}

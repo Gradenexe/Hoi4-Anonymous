@@ -1,0 +1,77 @@
+compliance_eu_core_when_95 = {	
+	type = core_compliance_modifier
+	icon = "GFX_occupation_compliance_modifier_strip:5"
+	small_icon = "GFX_occupation_compliance_modifier_small_strip:5"
+	threshold = 95
+	margin = 2
+	visible = {
+		ROOT = {
+			FROM = {
+				occupation_law = rts_European_State_Integration
+			}
+		}
+	}
+	enabled = {
+		any_controlled_state = {
+			is_fully_controlled_by = ROOT
+			OR = {
+				is_core_of = FROM
+				occupied_country_tag = FROM
+				is_claimed_by = FROM
+			}
+		}
+	}
+	on_enable = {
+		every_controlled_state = {
+			limit = {
+				OR = {
+					is_core_of = FROM
+					is_claimed_by = FROM
+					occupied_country_tag = FROM
+				}
+				is_fully_controlled_by = ROOT
+			}
+			add_core_of = ROOT
+		}
+	}
+}
+
+compliance_eu_claim_when_60 = {	
+	type = core_compliance_modifier
+	icon = "GFX_occupation_compliance_modifier_strip:4"
+	small_icon = "GFX_occupation_compliance_modifier_small_strip:4"
+	threshold = 60
+	margin = 2
+	visible = {
+		ROOT = {
+			FROM = {
+				occupation_law = rts_European_State_Integration
+			}
+		}
+	}
+	enabled = {
+		any_controlled_state = {
+			is_fully_controlled_by = ROOT
+			OR = {
+				is_core_of = FROM
+				occupied_country_tag = FROM
+				is_claimed_by = FROM
+			}
+			NOT = { is_claimed_by = ROOT }
+		}
+	}
+	on_enable = {
+		every_controlled_state = {
+			limit = {
+				OR = {
+					is_core_of = FROM
+					is_claimed_by = FROM
+					occupied_country_tag = FROM
+				}
+				is_fully_controlled_by = ROOT
+			NOT = { is_claimed_by = ROOT }
+			}
+			add_claim_by = ROOT
+		}
+	}
+}
