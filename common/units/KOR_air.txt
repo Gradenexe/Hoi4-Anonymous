@@ -1,0 +1,54 @@
+sub_units = {
+	KOR_ZHANDOUJI_1 = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = {
+			KOR_weilai_shandian_zhandouji = 1
+		}
+		categories = {
+			category_fighter
+		}
+		land_air_wing_size = 100
+	}
+	KOR_ZHANDOUJI_1_cas = {
+		sprite = light_plane
+		priority = 2
+		active = yes
+		type = cas
+		need = {
+			KOR_weilai_shandian_zhandouji = 1
+		}
+		categories = {
+			category_cas
+		}
+		land_air_wing_size = 100
+	}
+	KOR_ZHANDOUJI_2 = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = {
+			KOR_weilai_leidian_zhandouji = 1
+		}
+		categories = {
+			category_fighter
+		}
+		land_air_wing_size = 100
+	}
+	KOR_ZHANDOUJI_2_cas = {
+		sprite = light_plane
+		priority = 2
+		active = yes
+		type = cas
+		need = {
+			KOR_weilai_leidian_zhandouji = 1
+		}
+		categories = {
+			category_cas
+		}
+		land_air_wing_size = 100
+	}
+}

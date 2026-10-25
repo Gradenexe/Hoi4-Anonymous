@@ -1,0 +1,535 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			# Japan Korea Rule
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = RULE_JAPAN_KOREA_STATUS
+						option = RULE_JAPAN_KOREA_ANNEXED
+					}
+					JAP = { exists = yes }
+				}
+				JAP = {
+					if = {
+						limit = { KOR = { exists = yes } }
+						annex_country = { target = KOR transfer_troops = yes }
+					}
+					if = {
+						limit = { JKO = { exists = yes } }
+						annex_country = { target = JKO transfer_troops = yes }
+					}
+				}
+			}
+			# Factory Output Rule
+			if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_150 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_150 } }
+					add_ideas = global_factory_output_minus_150
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_140 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_140 } }
+					add_ideas = global_factory_output_minus_140
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_130 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_130 } }
+					add_ideas = global_factory_output_minus_130
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_125 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_125 } }
+					add_ideas = global_factory_output_minus_125
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_110 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_110 } }
+					add_ideas = global_factory_output_minus_110
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_100 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_100 } }
+					add_ideas = global_factory_output_minus_100
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_90 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_90 } }
+					add_ideas = global_factory_output_minus_90
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_75 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_75 } }
+					add_ideas = global_factory_output_minus_75
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_60 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_60 } }
+					add_ideas = global_factory_output_minus_60
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_50 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_50 } }
+					add_ideas = global_factory_output_minus_50
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_40 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_40 } }
+					add_ideas = global_factory_output_minus_40
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_25 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_25 } }
+					add_ideas = global_factory_output_minus_25
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_15 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_15 } }
+					add_ideas = global_factory_output_minus_15
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_10 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_10 } }
+					add_ideas = global_factory_output_minus_10
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_10 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_10 } }
+					add_ideas = global_factory_output_plus_10
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_15 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_15 } }
+					add_ideas = global_factory_output_plus_15
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_25 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_25 } }
+					add_ideas = global_factory_output_plus_25
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_40 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_40 } }
+					add_ideas = global_factory_output_plus_40
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_50 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_50 } }
+					add_ideas = global_factory_output_plus_50
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_60 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_60 } }
+					add_ideas = global_factory_output_plus_60
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_75 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_75 } }
+					add_ideas = global_factory_output_plus_75
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_90 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_90 } }
+					add_ideas = global_factory_output_plus_90
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_100 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_100 } }
+					add_ideas = global_factory_output_plus_100
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_110 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_110 } }
+					add_ideas = global_factory_output_plus_110
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_125 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_125 } }
+					add_ideas = global_factory_output_plus_125
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_130 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_130 } }
+					add_ideas = global_factory_output_plus_130
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_140 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_140 } }
+					add_ideas = global_factory_output_plus_140
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_150 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_150 } }
+					add_ideas = global_factory_output_plus_150
+				}
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_150 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_150 } }
+					add_ideas = global_factory_output_minus_150
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_140 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_140 } }
+					add_ideas = global_factory_output_minus_140
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_130 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_130 } }
+					add_ideas = global_factory_output_minus_130
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_125 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_125 } }
+					add_ideas = global_factory_output_minus_125
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_110 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_110 } }
+					add_ideas = global_factory_output_minus_110
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_100 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_100 } }
+					add_ideas = global_factory_output_minus_100
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_90 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_90 } }
+					add_ideas = global_factory_output_minus_90
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_75 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_75 } }
+					add_ideas = global_factory_output_minus_75
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_60 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_60 } }
+					add_ideas = global_factory_output_minus_60
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_50 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_50 } }
+					add_ideas = global_factory_output_minus_50
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_40 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_40 } }
+					add_ideas = global_factory_output_minus_40
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_25 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_25 } }
+					add_ideas = global_factory_output_minus_25
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_15 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_15 } }
+					add_ideas = global_factory_output_minus_15
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_MINUS_10 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_minus_10 } }
+					add_ideas = global_factory_output_minus_10
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_10 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_10 } }
+					add_ideas = global_factory_output_plus_10
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_15 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_15 } }
+					add_ideas = global_factory_output_plus_15
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_25 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_25 } }
+					add_ideas = global_factory_output_plus_25
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_40 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_40 } }
+					add_ideas = global_factory_output_plus_40
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_50 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_50 } }
+					add_ideas = global_factory_output_plus_50
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_60 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_60 } }
+					add_ideas = global_factory_output_plus_60
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_75 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_75 } }
+					add_ideas = global_factory_output_plus_75
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_90 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_90 } }
+					add_ideas = global_factory_output_plus_90
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_100 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_100 } }
+					add_ideas = global_factory_output_plus_100
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_110 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_110 } }
+					add_ideas = global_factory_output_plus_110
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_125 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_125 } }
+					add_ideas = global_factory_output_plus_125
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_130 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_130 } }
+					add_ideas = global_factory_output_plus_130
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_140 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_140 } }
+					add_ideas = global_factory_output_plus_140
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = RULE_GLOBAL_FACTORY_OUTPUT option = RULE_FACTORY_OUTPUT_PLUS_150 }
+				}
+				every_country = {
+					limit = { NOT = { has_idea = global_factory_output_plus_150 } }
+					add_ideas = global_factory_output_plus_150
+				}
+			}
+		}
+	}
+}

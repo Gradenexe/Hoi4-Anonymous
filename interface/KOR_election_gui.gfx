@@ -1,0 +1,35 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_election_parliament_party_icon"
+		texturefile = "gfx/interface/paranoia/KOR_election_parliament.png"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_KOR_communism_biankuang"
+		texturefile = "gfx/interface/paranoia/KOR_communism_biankuang.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yanan_pai_gui"
+		textureFile = "gfx/interface/paranoia/KOR_yanan_pai_gui.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_jinricheng_gui"
+		textureFile = "gfx/interface/paranoia/KOR_jinricheng_gui.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_puxianyong_gui"
+		textureFile = "gfx/interface/paranoia/KOR_puxianyong_gui.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_xujiayi_gui"
+		textureFile = "gfx/interface/paranoia/KOR_xujiayi_gui.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_communism_jinricheng_dikuang"
+		textureFile = "gfx/interface/paranoia/KOR_communism_jinricheng_dikuang.png"		#填充
+	}
+	spriteType = {
+		name = "GFX_KOR_communism_jinricheng_xuanchuan"
+		textureFile = "gfx/interface/paranoia/KOR_communism_jinricheng_xuanchuan.png"		#填充
+	}
+}

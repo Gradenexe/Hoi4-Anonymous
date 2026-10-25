@@ -1,0 +1,42 @@
+leader_traits = {
+	hunter = {
+		type = land
+		trait_type = personality_trait
+
+		allowed = {
+			OR = {
+				FROM = { original_tag = BRA }
+				FROM = { original_tag = POR }
+			}
+		}
+
+		trait_xp_factor = {
+			naval_invader = 1
+			commando = 1
+			jungle_rat = 1
+			ranger = 1
+			hill_fighter = 1
+			trickster = 1
+		}
+
+		modifier = {
+			special_forces_attack_factor = 0.07
+			special_forces_defence_factor = 0.07
+			heat_attrition = -0.05
+			winter_attrition = -0.05
+		}
+
+		new_commander_weight = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				FROM = { has_completed_focus = LUSOPHONE_special_force_program }
+			}
+		}
+
+		attack_skill_factor = 1
+		logistics_skill_factor = 1
+	}
+
+}

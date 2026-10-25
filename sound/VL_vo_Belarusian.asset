@@ -1,0 +1,253 @@
+
+category =
+{
+ name = "Voices"
+ soundeffects = {
+	### Belarusian Language (BLR) ###
+	BLR_infantry_idle
+	BLR_infantry_neutral_combat
+	BLR_infantry_positive_combat
+	BLR_infantry_retreat
+ }
+  compressor =
+ {
+	enabled = yes
+	pregain = 0.0
+	postgain = 2.0
+	ratio = 10.0
+	threshold = -10.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+
+########### AUDIO ASSETS
+########### BLR
+sound =
+{
+	name = "BLR_Idle_001"
+	file = "blr/ukranian_idle-01.wav"
+}
+sound =
+{
+	name = "BLR_Idle_002"
+	file = "blr/ukranian_idle-02.wav"
+}
+sound =
+{
+	name = "BLR_Idle_003"
+	file = "blr/ukranian_idle-03.wav"
+}
+sound =
+{
+	name = "BLR_Idle_004"
+	file = "blr/ukranian_idle-04.wav"
+}
+sound =
+{
+	name = "BLR_Idle_005"
+	file = "blr/ukranian_idle-05.wav"
+}
+sound =
+{
+	name = "BLR_Idle_006"
+	file = "blr/ukranian_idle-06.wav"
+}
+sound =
+{
+	name = "BLR_Idle_007"
+	file = "blr/ukranian_idle-07.wav"
+}
+sound =
+{
+	name = "BLR_Idle_008"
+	file = "blr/ukranian_idle-08.wav"
+}
+sound =
+{
+	name = "BLR_Idle_009"
+	file = "blr/ukranian_idle-09.wav"
+}
+sound =
+{
+	name = "BLR_Idle_010"
+	file = "blr/ukranian_idle-10.wav"
+}
+sound =
+{
+	name = "BLR_Neutral_001"
+	file = "blr/ukranian_neutral-01.wav"
+}
+sound =
+{
+	name = "BLR_Neutral_002"
+	file = "blr/ukranian_neutral-02.wav"
+}
+sound =
+{
+	name = "BLR_Neutral_003"
+	file = "blr/ukranian_neutral-03.wav"
+}
+sound =
+{
+	name = "BLR_Neutral_004"
+	file = "blr/ukranian_neutral-04.wav"
+}
+sound =
+{
+	name = "BLR_Neutral_005"
+	file = "blr/ukranian_neutral-05.wav"
+}
+sound =
+{
+	name = "BLR_Neutral_006"
+	file = "blr/ukranian_neutral-06.wav"
+}
+sound =
+{
+	name = "BLR_Neutral_007"
+	file = "blr/ukranian_neutral-07.wav"
+}
+sound =
+{
+	name = "BLR_Positive_001"
+	file = "blr/ukranian_positive-01.wav"
+}
+sound =
+{
+	name = "BLR_Positive_002"
+	file = "blr/ukranian_positive-02.wav"
+}
+sound =
+{
+	name = "BLR_Positive_003"
+	file = "blr/ukranian_positive-03.wav"
+}
+sound =
+{
+	name = "BLR_Positive_004"
+	file = "blr/ukranian_positive-04.wav"
+}
+sound =
+{
+	name = "BLR_Positive_005"
+	file = "blr/ukranian_positive-05.wav"
+}
+sound =
+{
+	name = "BLR_Positive_006"
+	file = "blr/ukranian_positive-06.wav"
+}
+sound =
+{
+	name = "BLR_Positive_007"
+	file = "blr/ukranian_positive-07.wav"
+}
+sound =
+{
+	name = "BLR_Positive_008"
+	file = "blr/ukranian_positive-08.wav"
+}
+sound =
+{
+	name = "BLR_Retreat_001"
+	file = "blr/ukranian_negative-01.wav"
+}
+sound =
+{
+	name = "BLR_Retreat_002"
+	file = "blr/ukranian_negative-02.wav"
+}
+sound =
+{
+	name = "BLR_Retreat_003"
+	file = "blr/ukranian_negative-03.wav"
+}
+sound =
+{
+	name = "BLR_Retreat_004"
+	file = "blr/ukranian_negative-04.wav"
+}
+sound =
+{
+	name = "BLR_Retreat_005"
+	file = "blr/ukranian_negative-05.wav"
+}
+
+########## SOUNDEFFECTS
+########## BLR
+
+soundeffect =
+{
+    name = "BLR_infantry_idle"
+    sounds = {
+        sound = BLR_Idle_001
+        sound = BLR_Idle_002
+        sound = BLR_Idle_003
+		sound = BLR_Idle_004
+        sound = BLR_Idle_005
+        sound = BLR_Idle_006
+		sound = BLR_Idle_007
+        sound = BLR_Idle_008
+        sound = BLR_Idle_009
+        sound = BLR_Idle_010
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.8
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect =
+{
+    name = "BLR_infantry_neutral_combat"
+    sounds = {
+        sound = BLR_Neutral_001
+        sound = BLR_Neutral_002
+        sound = BLR_Neutral_003
+		sound = BLR_Neutral_004
+        sound = BLR_Neutral_005
+        sound = BLR_Neutral_006
+        sound = BLR_Neutral_007
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.8
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect =
+{
+    name = "BLR_infantry_positive_combat"
+    sounds = {
+        sound = BLR_Positive_001
+        sound = BLR_Positive_002
+        sound = BLR_Positive_003
+		sound = BLR_Positive_004
+        sound = BLR_Positive_005
+        sound = BLR_Positive_006
+        sound = BLR_Positive_007
+		sound = BLR_Positive_008
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.8
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect =
+{
+    name = "BLR_infantry_retreat"
+    sounds = {
+        sound = BLR_Retreat_001
+        sound = BLR_Retreat_002
+        sound = BLR_Retreat_003
+		sound = BLR_Retreat_004
+		sound = BLR_Retreat_005
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.8
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}

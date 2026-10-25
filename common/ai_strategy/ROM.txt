@@ -1,0 +1,213 @@
+ROM_be_nice_to_hitler = {
+	allowed = {
+		original_tag = ROM
+	}
+	enable = {
+		has_completed_focus = ROM_trade_treaty_with_germany
+	}
+	abort={
+		is_in_faction = yes
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = GER
+		value = 200
+	}
+}
+
+ROM_build_early_civ = {
+	allowed = {
+		original_tag = ROM
+	}
+	enable = {
+		date < 1939.1.1
+		has_war = no
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 85
+	}
+}
+
+ROM_build_army = {
+	allowed = {
+		original_tag = ROM
+	}
+	enable = {
+		OR = {
+			has_completed_focus = ROM_balkans_dominance
+			has_completed_focus = ROM_preserve_greater_romania
+		}
+	}
+	abort = {
+		OR = {
+			date > 1939.01.01
+			has_army_manpower = { size > 600000 }
+		}
+	}
+	ai_strategy = { type = build_army id = infantry value = 500 }
+	ai_strategy = { type = force_build_armies value = 500 }
+	#ai_strategy = { type = equipment_production_min_factories_archetype id = infantry_equipment value = 10 }
+	#ai_strategy = { type = equipment_production_min_factories_archetype id = support_equipment value = 3 }
+	#ai_strategy = { type = equipment_production_min_factories_archetype id = motorized_equipment value = 3 }
+}
+
+ROM_default_production = {
+	allowed = {
+		original_tag = ROM
+	}
+	
+	enable = { is_major = no }
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = equipment_variant_production_factor id = infantry_equipment value = 50 }
+
+	# ai_strategy = { type = air_factory_balance                                  value = -25 }
+}
+
+#If you went democratic don't die to surprise Hungary and Bulgaria
+ROM_garrison = {
+	allowed = { tag = ROM }
+	enable = {
+		is_in_faction_with = ENG
+		# FRA = { has_capitulated = yes }
+		has_war_with = GER
+		NOT = { has_war_with = HUN }
+		NOT = { has_war_with = BUL }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = garrison value = 200 }
+}
+
+ROM_join_axis_on_time = {
+	allowed = {
+		original_tag = ROM
+	}
+	enable = {
+		is_historical_focus_on = yes
+		country_exists = GER
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = GER }
+			has_completed_focus = ROM_join_axis
+		}
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = -200
+	}
+
+	# ai_strategy = {
+		# type = diplo_action_desire
+		# id = GER
+		# target = join_allies
+		# value = -99999
+	# }
+
+	# ai_strategy = {
+		# type = diplo_action_acceptance
+		# id = GER
+		# target = call_allies
+		# value = -99999
+	# }
+}
+
+	ROM_buy_less_stuff_save_IC = {
+        allowed = {
+            original_tag = ROM
+        }
+        enable = {
+            date < 1940.1.1
+            has_war = no
+        }
+        abort_when_not_enabled = yes
+
+        ai_strategy = {
+            type = equipment_market_spend_factories
+            value = -75
+        }
+        ai_strategy = {
+            type = equipment_market_buying_threshold # Need at least -30k guns to buy them before 1940.1.1
+            id = infantry_equipment
+            value = -30000
+        }
+        ai_strategy = {
+            type = equipment_market_buying_threshold # Need at least -2k artillery to buy them before 1940.1.1
+            id = artillery_equipment
+            value = -2000
+        }
+        ai_strategy = {
+            type = equipment_market_buying_threshold # Need at least -2k anti-air to buy them before 1940.1.1
+            id = anti_air_equipment
+            value = -2000
+        }
+        ai_strategy = {
+            type = equipment_market_buying_threshold # Need at least -2k anti-tank to buy them before 1940.1.1
+            id = anti_tank_equipment
+            value = -2000
+        }
+        ai_strategy = {
+            type = equipment_market_buying_threshold # Need at least -2k trucks to buy them before 1940.1.1
+            id = motorized_equipment
+            value = -2000
+        }
+        ai_strategy = {
+            type = equipment_market_buying_threshold # Need at least -2k mech to buy them before 1940.1.1
+            id = mechanized_equipment
+            value = -2000
+        }
+    }
+	
+    ROM_do_not_build_in_north_transylvania = {
+        allowed = {
+            original_tag = ROM
+        }
+        enable = {
+            date < 1942.1.1
+        }
+        abort_when_not_enabled = yes
+
+        ai_strategy = { # North Transylvania
+            type = factory_build_score_factor
+            target = 76
+            value = -45
+        } 
+    }
+	
+	ROM_do_not_build_in_bessarabia = { # We are just going to lose the territory anyway
+        allowed = {
+            original_tag = ROM
+        }
+        enable = {
+            date < 1942.1.1
+        }
+        abort_when_not_enabled = yes
+
+        ai_strategy = { # Bucovina
+            type = factory_build_score_factor
+            target = 80
+            value = -45
+        }    
+
+        ai_strategy = { # Bessarabia
+            type = factory_build_score_factor
+            target = 78
+            value = -45
+        }
+
+        ai_strategy = { # Southern Bessarabia
+            type = factory_build_score_factor
+            target = 766
+            value = -45
+        }
+    }

@@ -1,0 +1,5 @@
+﻿l_english:
+ RECALL_VOLUNTEERS_TITLE: "Recall Volunteers"
+ RECALL_VOLUNTEERS_ACTION_DESC: "If necessary, we can recall volunteers from any country which we have sent them to."
+ RECALL_VOLUNTEERS_TOOLTIP: "§Y[This.GetNameWithFlag]§! §Rhas not been sent any volunteers.§!"
+ RECALL_VOLUNTEERS_TOOLTIP_G: "§Y[This.GetNameWithFlag]§! has been sent volunteers."

@@ -1,0 +1,3416 @@
+focus_tree = {
+	id = JKO_KOR_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = JKO
+		}
+	}
+	initial_show_position = {
+		focus = JKO_yaoqing_rriben_kaituotuan
+	}
+	#!gfx:interface/chaoxian_zongdufu_interface.gfx
+	########################################################################
+	###########################军事#########################################
+	########################################################################
+	focus = {
+		id = JKO_fucong_riben_one
+		icon = GFX_focus_generic_JKO_fucong_riben
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 32
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = JKO_chaoxian_zongdu_fu
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			IF = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				#create_intelligence_agency = yes
+				create_intelligence_agency = {
+					name = "Special High Tech - Peninsula Branch"
+					icon = GFX_intelligence_JKO_General_Intelligence_Presidency
+				}
+			}
+			ELSE = {
+				add_ideas = JAP_tokko_idea_no_lar
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = JKO_oriental_development_company
+		}
+	}
+	focus = {
+		id = JKO_lalong_sanjing_caifa
+		icon = GFX_focus_JAP_approach_mitsui
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = JKO_fucong_riben_one
+		}
+		relative_position_id = JKO_fucong_riben_one
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			custom_effect_tooltip = modify_caituan_de_longduan
+			add_to_variable = {
+				zongdufu_caituan_4 = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				zongdufu_caituan_2 = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_controlled_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					NOT = {
+						has_state_category = small_island
+						has_state_category = tiny_island
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = JKO_lalong_sanjing_caifa
+				bonus = 0.5
+				uses = 1
+				category = cat_production
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = JKO_mitsui_bank
+			custom_effect_tooltip = generic_skip_one_line_tt
+			JAP = {
+				THIS.capital_scope = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_lalong_sanling_caifa
+		icon = GFX_focus_JAP_approach_mitsubishi
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = JKO_fucong_riben_one
+		}
+		relative_position_id = JKO_fucong_riben_one
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			custom_effect_tooltip = modify_caituan_de_longduan
+			add_to_variable = {
+				zongdufu_caituan_4 = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				zongdufu_caituan_3 = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_controlled_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					NOT = {
+						has_state_category = small_island
+						has_state_category = tiny_island
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = JKO_lalong_sanling_caifa
+				bonus = 0.5
+				uses = 1
+				category = naval_equipment
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = JKO_mitsubishi_civilian
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = JKO_mitsubishi_kobe_shipyard
+				mio:JKO_mitsubishi_kobe_shipyard = {
+					add_mio_size = 1					#For Covering Production line below
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			JAP = {
+				THIS.capital_scope = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_lalong_antian_caifa
+		icon = GFX_focus_JAP_approach_yasuda
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = JKO_fucong_riben_one
+		}
+		relative_position_id = JKO_fucong_riben_one
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			custom_effect_tooltip = modify_caituan_de_longduan
+			add_to_variable = {
+				zongdufu_caituan_4 = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				zongdufu_caituan_6 = -0.05
+				tooltip = political_advisor_cost_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					NOT = {
+						has_state_category = small_island
+						has_state_category = tiny_island
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = JKO_lalong_antian_caifa
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = JKO_yasuda_zaibatsu
+			custom_effect_tooltip = generic_skip_one_line_tt
+			JAP = {
+				THIS.capital_scope = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_lalong_zhuyou_caifa
+		icon = GFX_focus_JAP_approach_sumitomo
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_fucong_riben_one
+		}
+		relative_position_id = JKO_fucong_riben_one
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			custom_effect_tooltip = modify_caituan_de_longduan
+			add_to_variable = {
+				zongdufu_caituan_4 = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_controlled_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					NOT = {
+						has_state_category = small_island
+						has_state_category = tiny_island
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = JKO_lalong_zhuyou_caifa
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+			add_tech_bonus = {
+				name = JKO_lalong_zhuyou_caifa
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = JKO_sumitomo
+			custom_effect_tooltip = generic_skip_one_line_tt
+			JAP = {
+				THIS.capital_scope = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_fucong_faxxing_zhanjuan
+		icon = GFX_focus_generic_JKO_faxing_zhaijuan
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = -5
+		y = 1
+		prerequisite = {
+			focus = JKO_fucong_riben_one
+		}
+		relative_position_id = JKO_fucong_riben_one
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			add_political_power = 50			#添加政治点数 
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = SWI_war_bonds
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = JKO_yaoqing_rriben_kaituotuan
+		icon = GFX_focus_JAP_promote_japanese_settlement
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_fucong_faxxing_zhanjuan
+		}
+		relative_position_id = JKO_fucong_faxxing_zhanjuan
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_MANPOWER
+		}
+		available = {
+			NOT = {
+				has_war_with = JAP
+			}
+			JAP = {
+				exists = yes
+			}
+			OR = {
+				is_ally_with = JAP
+				JAP = {
+					has_opinion = {
+						target = ROOT
+						value > 74
+					}
+				}
+			}
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			add_timed_idea = {
+				idea = JKO_zongdu_ribenqiaomin
+				days = 1095
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			JAP = {
+				add_timed_idea = {
+					idea = JKO_JAP_yimin_kaishi
+					days = 365
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_laodong_fengshi_dui
+		icon = GFX_focus_JAP_joshi_teishin_tai
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = JKO_shuili_fadian_daba
+		}
+		prerequisite = {
+			focus = JKO_quanguo_tudi_diaocha
+		}
+		relative_position_id = JKO_shuili_fadian_daba
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			add_manpower = 20000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = modify_chaoxian_zongdu_fu
+			add_to_variable = {
+				chaoxian_zongdu_fu_5 = 0.05
+				tooltip = non_core_manpower_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_fu_6 = 0.05
+				tooltip = mobilization_speed_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = JKO_jiti_nongchang
+		icon = GFX_focus_generic_farmland
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_laodong_fengshi_dui
+		}
+		relative_position_id = JKO_laodong_fengshi_dui
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			add_tech_bonus = {
+				name = JKO_jiti_nongchang
+				bonus = 0.5
+				uses = 1
+				category = cat_production
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = modify_dalu_bingzhan_jidi
+			add_to_variable = {
+				zongdufu_gongye_5 = 0.05
+				tooltip = MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_tt
+			}
+		}
+	}
+	focus = {
+		id = JKO_jiaoyi_weijin_shangpin
+		icon = GFX_focus_PRC_allow_special_goods_trade
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_guli_riben_touzi
+		}
+		relative_position_id = JKO_guli_riben_touzi
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNATIONAL_TRADE
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			add_ideas = MAN_tsr_illicit_trade
+			custom_effect_tooltip = generic_skip_one_line_tt
+			JAP = {
+				add_political_power = 50
+			}
+		}
+	}
+	focus = {
+		id = JKO_kuoda_nongye_chukou
+		icon = GFX_focus_generic_agricultural_subsidies
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = JKO_jiti_nongchang
+		}
+		relative_position_id = JKO_jiti_nongchang
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			random_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			JAP = {
+				add_ideas = {
+					idea = JKO_xiaomai_chukou_ideas
+					days = 180
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_kuojian_chaoxian_qinggongyei
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = JKO_yaoqing_rriben_kaituotuan
+		}
+		relative_position_id = JKO_yaoqing_rriben_kaituotuan
+		mutually_exclusive = {
+			focus = JKO_kuojian_chaoxian_zhonggongye
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			custom_effect_tooltip = modify_dalu_bingzhan_jidi
+			add_to_variable = {
+				zongdufu_gongye_1 = 0.2
+				tooltip = production_speed_industrial_complex_factor_tt
+			}
+			add_to_variable = {
+				zongdufu_gongye_2 = -0.2
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_manxian_yiti_tieluwang
+		icon = GFX_focus_SOV_south_manchuria_railway
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_kuojian_chaoxian_qinggongyei
+		}
+		relative_position_id = JKO_kuojian_chaoxian_qinggongyei
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			527 = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1028 = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 25
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = JKO_tetsudou_shou
+			custom_effect_tooltip = generic_skip_one_line_tt
+			MAN = {
+				add_political_power = 25				#添加政治点数
+				THIS.capital_scope = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_shuili_fadian_daba
+		icon = GFX_focus_focus_generic_build_dam
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = JKO_manxian_yiti_tieluwang
+			focus = JKO_chaoxian_beifang_zhonggogye
+			focus = JKO_chaoxian_nanfang_chuanwu
+		}
+		relative_position_id = JKO_chaoxian_beifang_zhonggogye
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			1029 = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			IF = {
+				limit = {
+					KOR = {
+						exists = yes
+						is_ally_with = ROOT
+					}
+				}
+				KOR = {
+					add_ideas = MAN_hydroelectric_power
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			1029 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = 1148
+				}
+			}
+			custom_effect_tooltip = {
+				localization_key = building_state_modifier|dam
+				INDENT = ""
+			}
+		}
+	}
+	focus = {
+		id = JKO_beifang_kuangshan_zengcan
+		icon = GFX_focus_generic_mineral_prospecting
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = JKO_shuili_fadian_daba
+		}
+		relative_position_id = JKO_shuili_fadian_daba
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			custom_effect_tooltip = modify_dalu_bingzhan_jidi
+			add_to_variable = {
+				zongdufu_gongye_4 = 0.05
+				tooltip = local_resources_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			527 = {
+				add_resource = {
+					type = STEEL
+					amount = 8
+				}
+				add_resource = {
+					type = TUNGSTEN
+					amount = 8
+				}
+				IF = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_kaicai_meikuang
+		icon = GFX_focus_generic_mining_industry
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_shuili_fadian_daba
+		}
+		relative_position_id = JKO_shuili_fadian_daba
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			custom_effect_tooltip = modify_dalu_bingzhan_jidi
+			add_to_variable = {
+				zongdufu_gongye_4 = 0.05
+				tooltip = local_resources_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			1028 = {
+				add_resource = {
+					type = COAL
+					amount = 8
+				}
+				IF = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_xingnan_huaxue_gongye
+		icon = GFX_goal_generic_oil_refinery
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_beifang_kuangshan_zengcan
+		}
+		prerequisite = {
+			focus = JKO_kaicai_meikuang
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		relative_position_id = JKO_beifang_kuangshan_zengcan
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			add_tech_bonus = {
+				name = JKO_xingnan_huaxue_gongye
+				bonus = 0.5
+				uses = 2
+				category = cat_synth_oil
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			1028 = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			1028 = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_mufan_zongdu_qu
+		icon = GFX_focus_generic_JKO_mufan_zongdu_qu
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = JKO_zongdufu_de_juedui_tongzhi
+		}
+		relative_position_id = JKO_zongdufu_de_juedui_tongzhi
+		mutually_exclusive = {
+			focus = JKO_chaoxian_neidi_yanchang_zhuyi
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			add_ideas = JKO_gongrongquan_jishi
+			custom_effect_tooltip = JKO_gongrongquan_jishi_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = JKO_mufan_zongdu_qu_tt
+		}
+	}
+	focus = {
+		id = JKO_chaoxian_neidi_yanchang_zhuyi
+		icon = GFX_focus_generic_JKO_chaoxian_neidi_yanchang_zhuyi
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_zongdufu_de_juedui_tongzhi
+		}
+		mutually_exclusive = {
+			focus = JKO_mufan_zongdu_qu
+		}
+		relative_position_id = JKO_zongdufu_de_juedui_tongzhi
+		cost = 20
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			JKO = {
+				every_army_leader = {
+					set_nationality = JAP
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			JAP = {
+				annex_country = {
+					target = JKO
+					transfer_troops = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_core_of = JAP
+			}
+		}
+	}
+	focus = {
+		id = JKO_kuojian_chaoxian_zhonggongye
+		icon = GFX_focus_generic_military_industry
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_yaoqing_rriben_kaituotuan
+		}
+		relative_position_id = JKO_yaoqing_rriben_kaituotuan
+		mutually_exclusive = {
+			focus = JKO_kuojian_chaoxian_qinggongyei
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			custom_effect_tooltip = modify_dalu_bingzhan_jidi
+			add_to_variable = {
+				zongdufu_gongye_1 = 0.05
+				tooltip = production_speed_industrial_complex_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_chaoxian_beifang_zhonggogye
+		icon = GFX_focus_generic_JKO_chaoxian_beifang_zhonggogye
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = JKO_kuojian_chaoxian_zhonggongye
+		}
+		relative_position_id = JKO_kuojian_chaoxian_zhonggongye
+		mutually_exclusive = {
+			focus = JKO_chaoxian_nanfang_chuanwu
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			custom_effect_tooltip = modify_dalu_bingzhan_jidi
+			add_to_variable = {
+				zongdufu_gongye_2 = 0.05
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			527 = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_dynamic_modifier = {
+					modifier = JAP_regional_development
+				}
+			}
+			1028 = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_dynamic_modifier = {
+					modifier = JAP_regional_development
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_chaoxian_nanfang_chuanwu
+		icon = GFX_focus_generic_JKO_chaoxian_nanfang_chuanwu
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_kuojian_chaoxian_zhonggongye
+		}
+		relative_position_id = JKO_kuojian_chaoxian_zhonggongye
+		mutually_exclusive = {
+			focus = JKO_chaoxian_beifang_zhonggogye
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			custom_effect_tooltip = modify_dalu_bingzhan_jidi
+			add_to_variable = {
+				zongdufu_gongye_6 = 0.1
+				tooltip = production_speed_dockyard_factor_tt
+			}
+			add_to_variable = {
+				zongdufu_gongye_7 = 0.1
+				tooltip = production_speed_naval_base_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			1030 = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_dynamic_modifier = {
+					modifier = JAP_regional_development
+				}
+			}
+			1031 = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_dynamic_modifier = {
+					modifier = JAP_regional_development
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_yaoqing_maoyidaibiao_tuan
+		icon = GFX_focus_POL_complete_april_constitution
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = JKO_yaoqing_rriben_kaituotuan
+		}
+		relative_position_id = JKO_yaoqing_rriben_kaituotuan
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNATIONAL_TRADE
+			FOCUS_FILTER_RESEARCH
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			custom_effect_tooltip = modify_caituan_de_longduan
+			add_to_variable = {
+				zongdufu_caituan_6 = -0.05
+				tooltip = political_advisor_cost_factor_tt
+			}
+			add_to_variable = {
+				zongdufu_caituan_5 = 0.05
+				tooltip = research_speed_factor_tt
+			}
+			add_opinion_modifier = {
+				target = JAP
+				modifier = small_increase
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			JAP = {
+				add_political_power = 100
+				add_opinion_modifier = {
+					target = JKO
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_guli_riben_touzi
+		icon = GFX_focus_PHI_encourage_japanese_investment
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = JKO_yaoqing_maoyidaibiao_tuan
+		}
+		relative_position_id = JKO_yaoqing_maoyidaibiao_tuan
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNATIONAL_TRADE
+			FOCUS_FILTER_INDUSTRY
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			custom_effect_tooltip = modify_caituan_de_longduan
+			add_to_variable = {
+				zongdufu_caituan_2 = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				zongdufu_caituan_3 = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			JAP = {
+				add_political_power = 25				#添加政治点数
+				THIS.capital_scope = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_fazhan_dui_riben_maoyilianxi
+		icon = GFX_focus_PHI_develop_japanese_trade_connections
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = JKO_guli_riben_touzi
+		}
+		relative_position_id = JKO_guli_riben_touzi
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNATIONAL_TRADE
+		}
+		available = {
+			JAP = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		#cancel_if_invalid = no #条件不满足是否取消
+		#continue_if_invalid = no #条件不满足是否继续
+		#available_if_capitulated = no #投降后是否能点
+		completion_reward = {
+			JAP = {
+				country_event = {
+					id = SEA_PHI_political_events.1
+					hours = 3
+					random_hours = 6
+				}
+			}
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = PHI_japanese_trade_connections
+					days = 365
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_yanjiu_hezuo
+		icon = GFX_focus_JAP_expand_the_showa_research_association
+		text_icon = KOR_zongdufu_focus_tukuang
+		prerequisite = {
+			focus = JKO_fazhan_dui_riben_maoyilianxi
+		}
+		prerequisite = {
+			focus = JKO_jiaoyi_weijin_shangpin
+		}
+		x = 1
+		y = 1
+		relative_position_id = JKO_fazhan_dui_riben_maoyilianxi
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		completion_reward = {
+			custom_effect_tooltip = modify_caituan_de_longduan
+			add_to_variable = {
+				zongdufu_caituan_2 = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				zongdufu_caituan_3 = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				zongdufu_caituan_5 = 0.1
+				tooltip = research_speed_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_research_slot = 1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_to_tech_sharing_group = KOR_JAP_tech_sharing_group
+			JAP = {
+				add_to_tech_sharing_group = KOR_JAP_tech_sharing_group
+			}
+		}
+	}
+	focus = {
+		id = JKO_fucong_zongdu_jianghua
+		icon = GFX_focus_generic_JKO_fucong_zongdu_jianghua
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 5
+		y = 1
+		prerequisite = {
+			focus = JKO_fucong_riben_one
+		}
+		relative_position_id = JKO_fucong_riben_one
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			has_country_flag = nancilang_shangtai_flag
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		completion_reward = {
+			add_stability = 0.05			#添加稳定度
+			add_war_support = 0.05			#添加战争支持度
+			IF = {
+				limit = {
+					KOR = {
+						has_completed_focus = KOR_chongsheng_zhengtong_diwei
+					}
+				}
+				KOR = {
+					add_legitimacy = -5
+				}
+			}
+			every_controlled_state = {
+				add_compliance = 5
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = JKO_zhiyi_linshizhengfu_decisions
+		}
+	}
+	focus = {
+		id = JKO_lalong_qinri_pai
+		icon = GFX_focus_JAP_contact_the_masterless_samurai
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_qianghua_zhongyang_jiquan
+		}
+		relative_position_id = JKO_qianghua_zhongyang_jiquan
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL_CHARACTER
+		}
+		completion_reward = {
+			KOR = {
+				add_legitimacy = -5
+			}
+			custom_effect_tooltip = modify_chaoxian_zongdu_fu
+			add_to_variable = {
+				chaoxian_zongdu_fu_7 = 0.02
+				tooltip = compliance_growth_tt
+			}
+			random_controlled_state = {
+				add_compliance = 5
+				add_resistance = -5
+			}
+			random_controlled_state = {
+				add_compliance = 5
+				add_resistance = -5
+			}
+			random_controlled_state = {
+				add_compliance = 5
+				add_resistance = -5
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = JKO_Choi_Nam_sun
+		}
+	}
+	focus = {
+		id = JKO_tuiguang_huangminhua_yundong
+		icon = GFX_focus_JAP_propaganda
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_lalong_qinri_pai
+		}
+		relative_position_id = JKO_lalong_qinri_pai
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			unlock_decision_tooltip = JKO_huangmin_yundong_kaishi
+			custom_effect_tooltip = JKO_tuiguang_huangminhua_yundong_tt
+		}
+	}
+	focus = {
+		id = JKO_tuixing_guojia_shendao
+		icon = GFX_focus_jap_spiritual_mobilization
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_tuiguang_huangminhua_yundong
+		}
+		relative_position_id = JKO_tuiguang_huangminhua_yundong
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = MAN_state_shintoism_dm
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = MAN_tsr_embrace_state_shintoism_tt
+		}
+	}
+	focus = {
+		id = JKO_tianzhaodashen_de_fenling
+		icon = GFX_focus_JAP_integrate_the_government_general
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_tuixing_guojia_shendao
+		}
+		prerequisite = {
+			focus = JKO_chaoxian_bandao_jidu
+		}
+		relative_position_id = JKO_chaoxian_bandao_jidu
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			add_country_leader_trait = JAP_guided_by_amaterasu_trait
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = JKO_Amaterasu_spiritual_realm_decision
+		}
+	}
+	focus = {
+		id = JKO_chaoxian_bandao_jidu
+		icon = GFX_focus_generic_JKO_chaoxian_bandao_jidu
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = JKO_tuiguang_huangminhua_yundong
+		}
+		relative_position_id = JKO_tuiguang_huangminhua_yundong
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL_CHARACTER
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			KOR = {
+				add_legitimacy = -5
+			}
+			add_stability = 0.05			#添加稳定度
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = JKO_Archbishop_Roh_Paul
+		}
+	}
+	focus = {
+		id = JKO_diyici_jiaoyu_ling
+		icon = GFX_focus_JAP_draft_the_showa_constitution
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_huji_xitong_xiandaihua
+		}
+		relative_position_id = JKO_huji_xitong_xiandaihua
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = JKO_diyici_jiaoyuling
+		}
+	}
+	focus = {
+		id = JKO_guoyu_changyong_yundong
+		icon = GFX_focus_JAP_politicize_the_education_system
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = JKO_diyici_jiaoyu_ling
+		}
+		relative_position_id = JKO_diyici_jiaoyu_ling
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = JKO_diyici_jiaoyuling
+				add_idea = JKO_guoyu_changyong_yundong_idea
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_core_occupation_modifier = {
+								occupied_country_tag = KOR
+								modifier = compliance_40
+							}
+						}
+					}
+					country_event = {
+						id = JKO_huangminhua_event.4
+						days = 20
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_chuangshi_gaiming
+		icon = GFX_focus_JAP_social_and_cultural_revolution
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = JKO_guoyu_changyong_yundong
+			focus = JKO_neixian_yitilun_xuanchuan
+		}
+		prerequisite = {
+			focus = JKO_tianzhaodashen_de_fenling
+		}
+		relative_position_id = JKO_guoyu_changyong_yundong
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			random_list = {
+				5 = {
+					modifier = {
+						factor = 15
+						has_completed_focus = JKO_neixian_yitilun_xuanchuan
+						has_completed_focus = JKO_guoyu_changyong_yundong
+					}
+					country_event = JKO_huangminhua_event.5
+				}
+				30 = {
+					modifier = {
+						factor = 40
+						has_completed_focus = JKO_neixian_yitilun_xuanchuan
+						has_completed_focus = JKO_guoyu_changyong_yundong
+					}
+					country_event = JKO_huangminhua_event.6
+				}
+				15 = {
+					modifier = {
+						factor = 5
+						has_completed_focus = JKO_neixian_yitilun_xuanchuan
+						has_completed_focus = JKO_guoyu_changyong_yundong
+					}
+					country_event = JKO_huangminhua_event.7
+				}
+			}
+			custom_effect_tooltip = JKO_chuangshi_gaiming_one_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = JKO_chuangshi_gaiming_tt
+		}
+	}
+	focus = {
+		id = JKO_huangguo_chenmin_shici
+		icon = GFX_focus_JAP_supreme_council_for_direction_of_war
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_chuangshi_gaiming
+		}
+		prerequisite = {
+			focus = JKO_kuoda_nongye_chukou
+		}
+		prerequisite = {
+			focus = JKO_gen_riben_yiyi_yusui
+		}
+		relative_position_id = JKO_chuangshi_gaiming
+		mutually_exclusive = {
+			#focus = 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			has_core_occupation_modifier = {
+				occupied_country_tag = KOR
+				modifier = compliance_40
+			}
+		}
+		completion_reward = {
+			KOR = {
+				add_legitimacy = -5
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			JAP_add_or_modify_showa_statism = yes
+			add_to_variable = {
+				JAP_showa_statism_fascism_drift = 0.05
+				tooltip = fascism_drift_tt
+			}
+			add_to_variable = {
+				JAP_showa_statism_conscription_factor = 0.07
+				tooltip = conscription_factor_tt
+			}
+			add_to_variable = {
+				JAP_showa_statism_weekly_casualties_war_support = 0.0002
+				tooltip = weekly_casualties_war_support_tt
+			}
+			add_to_variable = {
+				JAP_showa_statism_weekly_convoys_war_support = 0.0002
+				tooltip = weekly_convoys_war_support_tt
+			}
+			add_to_variable = {
+				JAP_showa_statism_weekly_bombing_war_support = 0.0002
+				tooltip = weekly_bombing_war_support_tt
+			}
+			add_to_variable = {
+				JAP_showa_statism_industry_repair_factor = 0.1
+				tooltip = industry_repair_factor_tt
+			}
+			add_to_variable = {
+				JAP_showa_statism_industrial_capacity_factory = 0.03
+				tooltip = industrial_capacity_factory_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_state = {
+				limit = {
+					OR = {
+						state = 1031
+						state = 1030
+						state = 1029
+						state = 1028
+						state = 527
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = JKO_resistance_against_colonial_rule_dm
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_neixian_yitilun_xuanchuan
+		icon = GFX_focus_generic_JKO_chaoxian_neixianyiti_hua
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_diyici_jiaoyu_ling
+		}
+		relative_position_id = JKO_diyici_jiaoyu_ling
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		completion_reward = {
+			KOR = {
+				add_legitimacy = -5
+			}
+			add_ideas = JKO_neixian_yitilun_xuanchuan_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			JAP = {
+				add_opinion_modifier = {
+					target = JKO
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_qianghua_zhongyang_jiquan
+		icon = GFX_focus_generic_JKO_qianghua_zhongyang_jiquan
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_fucong_zongdu_jianghua
+		}
+		relative_position_id = JKO_fucong_zongdu_jianghua
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = modify_chaoxian_zongdu_fu
+			add_to_variable = {
+				chaoxian_zongdu_fu_8 = 0.05
+				tooltip = party_popularity_stability_factor_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_fu_2 = -0.05
+				tooltip = political_advisor_cost_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = JKO_kuoda_jingcha_xitong
+		icon = GFX_focus_generic_advanced_military_studies
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_riben_shiguan_xuexxiao
+		}
+		relative_position_id = JKO_riben_shiguan_xuexxiao
+		mutually_exclusive = {
+			focus = JKO_kuobian_chaoxian_jun
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			custom_effect_tooltip = modify_xianbingjingcha_zhidu
+			add_to_variable = {
+				xianbing_jingcha_1 = -0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				xianbing_jingcha_4 = 0.05
+				tooltip = JKO_kuoda_jingcha_xitong_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_budui_1 = 0.1
+				tooltip = modifier_army_sub_unit_militia_attack_factor_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_budui_2 = 0.1
+				tooltip = modifier_army_sub_unit_militia_defence_factor_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_budui_3 = 0.1
+				tooltip = modifier_army_sub_unit_militia_max_org_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_technology = {
+				military_police_plus = 1
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = JKO_Takeo_Tanaka
+		}
+	}
+	focus = {
+		id = JKO_linzu_zhidu_lianzuo
+		icon = GFX_focus_generic_whispers
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_kuoda_jingcha_xitong
+		}
+		relative_position_id = JKO_kuoda_jingcha_xitong
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			custom_effect_tooltip = modify_xianbingjingcha_zhidu
+			add_to_variable = {
+				xianbing_jingcha_2 = -0.05
+				tooltip = resistance_growth_tt
+			}
+			add_to_variable = {
+				xianbing_jingcha_5 = 5
+				tooltip = enemy_operative_detection_chance_factor_tt
+			}
+			add_to_variable = {
+				xianbing_jingcha_6 = 10
+				tooltip = enemy_operative_capture_chance_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			IF = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				upgrade_intelligence_agency = upgrade_anti_partisan
+				upgrade_intelligence_agency = upgrade_interrogation_techniques
+			}
+		}
+	}
+	focus = {
+		id = JKO_quanguo_tudi_diaocha
+		icon = GFX_focus_PRC_rural_region_development
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = JKO_gaige_difang_xingzheng
+		}
+		relative_position_id = JKO_gaige_difang_xingzheng
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL_CHARACTER
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			custom_effect_tooltip = modify_dalu_bingzhan_jidi
+			add_to_variable = {
+				zongdufu_gongye_5 = 0.05
+				tooltip = MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = JKO_Yajima_Sugizo
+		}
+	}
+	focus = {
+		id = JKO_huji_xitong_xiandaihua
+		icon = GFX_focus_CHI_registry_of_property
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_gaige_difang_xingzheng
+		}
+		relative_position_id = JKO_gaige_difang_xingzheng
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_manpower = 40000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = modify_chaoxian_zongdu_fu
+			add_to_variable = {
+				chaoxian_zongdu_fu_5 = 0.05
+				tooltip = non_core_manpower_tt
+			}
+		}
+	}
+	focus = {
+		id = JKO_sheli_chaoxian_shuxuan_yiyuan
+		icon = GFX_focus_generic_industrialists
+		x = -5
+		y = 1
+		prerequisite = {
+			focus = JKO_qianghua_zhongyang_jiquan
+		}
+		relative_position_id = JKO_qianghua_zhongyang_jiquan
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL_CHARACTER
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		completion_reward = {
+			KOR = {
+				add_legitimacy = -5
+			}
+			add_stability = 0.05			#添加稳定度
+			random_controlled_state = {
+				add_compliance = 5
+				add_resistance = -5
+			}
+			random_controlled_state = {
+				add_compliance = 5
+				add_resistance = -5
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = JKO_Bak_Yeonghyo
+		}
+	}
+	focus = {
+		id = JKO_chafeng_minzuzhuyi_baokan
+		icon = GFX_focus_JAP_revoke_the_peace_preservation_law
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_sheli_chaoxian_shuxuan_yiyuan
+		}
+		relative_position_id = JKO_sheli_chaoxian_shuxuan_yiyuan
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = JKO_chafeng_baokan
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+			activate_advisor = JKO_Zhang_Dexiu
+		}
+	}
+	focus = {
+		id = JKO_gaige_difang_xingzheng
+		icon = GFX_focus_JAP_remove_the_weeds_from_the_crop
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_chafeng_minzuzhuyi_baokan
+		}
+		relative_position_id = JKO_chafeng_minzuzhuyi_baokan
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			custom_effect_tooltip = modify_chaoxian_zongdu_fu
+			add_to_variable = {
+				chaoxian_zongdu_fu_1 = -0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_fu_2 = -0.05
+				tooltip = political_advisor_cost_factor_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_fu_3 = 0.1
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_fu_8 = 0.05
+				tooltip = party_popularity_stability_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = JKO_zongdufu_de_juedui_tongzhi
+		icon = GFX_focus_JAP_crush_the_internal_factions
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_huangguo_chenmin_shici
+		}
+		relative_position_id = JKO_huangguo_chenmin_shici
+		mutually_exclusive = {
+			#focus = 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			has_core_occupation_modifier = {
+				occupied_country_tag = KOR
+				modifier = compliance_60
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = modify_chaoxian_zongdu_fu
+			add_to_variable = {
+				chaoxian_zongdu_fu_8 = 0.1
+				tooltip = party_popularity_stability_factor_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_fu_4 = 0.05
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_fu_1 = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_fu_3 = 0.05
+				tooltip = political_power_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+				}
+				add_core_of = JKO
+			}
+		}
+	}
+	focus = {
+		id = JKO_qingqiu_junbei_xiandaihua
+		icon = GFX_focus_CHI_popular_army
+		x = 5
+		y = 1
+		prerequisite = {
+			focus = JKO_qianghua_zhongyang_jiquan
+		}
+		relative_position_id = JKO_qianghua_zhongyang_jiquan
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			remove_ideas = JKO_yibingyundong_de_jiyi
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_dynamic_modifier = {
+				modifier = JKO_chaoxian_zongdu_budui
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = JKO_qingqiu_junbei_xiandaihua
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+				category = support_tech
+			}
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = JKO_nagoya_arsenal_organization
+				mio:JKO_nagoya_arsenal_organization = {
+					add_mio_funds = 500
+				}
+			}
+			hidden_effect = {
+				country_lock_all_division_template = no
+			}
+		}
+	}
+	focus = {
+		id = JKO_riben_guwen_tuan
+		icon = GFX_focus_generic_JKO_riben_guwen
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_qingqiu_junbei_xiandaihua
+		}
+		relative_position_id = JKO_qingqiu_junbei_xiandaihua
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_MILITARY_CHARACTER
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			army_experience = 15			#陆军经验
+			add_command_power = 20			#添加指挥点数
+			custom_effect_tooltip = generic_skip_one_line_tt
+			show_unit_leaders_tooltip = JKO_Kenzo_Kitano
+			show_unit_leaders_tooltip = JKO_Kotaro_Nakamura
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = JKO_Kenzo_Kitano
+		}
+	}
+	focus = {
+		id = JKO_bandao_zhengbing_ling
+		icon = GFX_focus_JAP_national_spiritual_mobilization_movement
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = JKO_riben_guwen_tuan
+		}
+		relative_position_id = JKO_riben_guwen_tuan
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			custom_effect_tooltip = modify_chaoxian_zongdu_fu
+			add_to_variable = {
+				chaoxian_zongdu_fu_5 = 0.05
+				tooltip = non_core_manpower_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_fu_6 = 0.1
+				tooltip = mobilization_speed_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					#Must be one economy law away from the next one and fulfill the next law's criterias
+					has_idea = extensive_conscription
+					has_war_support > 0.5
+					OR = {
+						has_government = fascism
+						custom_trigger_tooltip = {
+							tooltip = or_clarification_tooltip
+							always = no
+						}
+						AND = {
+							has_war = yes
+							any_enemy_country = {
+								ic_ratio = {
+									tag = ROOT
+									ratio > 0.4
+								}
+							}
+						}
+					}
+				}
+				add_ideas = service_by_requirement
+			}
+			else = {
+				custom_effect_tooltip = JKO_bandao_zhengbing_ling_tt
+			}
+		}
+	}
+	focus = {
+		id = JKO_haian_fangwei_budui
+		icon = GFX_focus_FIN_coastal_defense
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = JKO_bandao_zhengbing_ling
+		}
+		relative_position_id = JKO_bandao_zhengbing_ling
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = {
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		available = {
+			OR = {
+				1030 = {
+					is_controlled_by = ROOT
+				}
+				1031 = {
+					is_controlled_by = ROOT
+				}
+				525 = {
+					is_controlled_by = ROOT
+				}
+				527 = {
+					is_controlled_by = ROOT
+				}
+			}
+		}
+		bypass = {
+			1030 = {
+				free_building_slots = {
+					building = coastal_bunker
+					size < 3
+					province = 4056
+				}
+			}
+			1031 = {
+				free_building_slots = {
+					building = coastal_bunker
+					size < 3
+					province = 7175
+				}
+			}
+			525 = {
+				free_building_slots = {
+					building = coastal_bunker
+					size < 3
+					province = 7125
+				}
+			}
+			527 = {
+				free_building_slots = {
+					building = coastal_bunker
+					size < 3
+					province = 4052
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				add_ideas = JKO_zhongshi_haian_paotai
+				if = {
+					limit = {
+						NOT = {
+							has_tech = railway_gun
+						}
+					}
+					add_tech_bonus = {
+						name = JKO_haian_fangwei_budui
+						bonus = 0.5
+						uses = 1
+						technology = railway_gun
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_full_control_of_state = 525
+				}
+				#TURKU
+				525 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 7125
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 7125
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 527
+				}
+				#TURKU
+				527 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 4052
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 4052
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 1031
+				}
+				#TURKU
+				1031 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 7175
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 7175
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 1030
+				}
+				#TURKU
+				1030 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 4056
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 4056
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_fendan_jinhai_fanghu
+		icon = GFX_focus_generic_merchant_fleet
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = JKO_haian_fangwei_budui
+		}
+		relative_position_id = JKO_haian_fangwei_budui
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			navy_experience = 35
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					name = JKO_fendan_jinhai_fanghu
+					bonus = 0.5
+					uses = 2
+					category = cat_torpedoes
+					category = naval_mines
+					category = dd_tech
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = JKO_fendan_jinhai_fanghu
+					bonus = 0.5
+					uses = 2
+					category = dd_tech
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = JKO_maizuru_naval_arsenal
+				mio:JKO_maizuru_naval_arsenal = {
+					add_mio_size = 1					#For Covering Production line below
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_technology = {
+				coastal_defense_ships = 1
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				create_equipment_variant = {
+					#Made-up
+					name = "Sokuten Class"
+					type = ship_hull_light_1
+					name_group = JAP_MINELAYERS_HISTORICAL
+					design_team = mio:JAP_maizuru_naval_arsenal_organization
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_battery_1
+						fixed_ship_anti_air_slot = empty
+						fixed_ship_fire_control_system_slot = empty
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_1
+						fixed_ship_torpedo_slot = empty
+						mid_1_custom_slot = ship_mine_layer_1
+						rear_1_custom_slot = ship_mine_layer_1
+					}
+					design_team = mio:JKO_maizuru_naval_arsenal
+				}
+				create_equipment_variant = {
+					name = "Izumo Class"					# Izumo Class
+					type = ship_hull_cruiser_coastal_defense_ship
+					name_group = JAP_CA_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_medium_battery_1
+						fixed_ship_anti_air_slot = empty
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_1
+						fixed_ship_armor_slot = ship_armor_cruiser_2
+						mid_1_custom_slot = ship_secondaries_1
+						mid_2_custom_slot = ship_secondaries_1
+						rear_1_custom_slot = ship_torpedo_1
+					}
+				}
+				#Line Production
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_1
+						creator = "JKO"
+						version_name = "Sokuten Class"
+					}
+					name = "Busan"
+					requested_factories = 1
+					progress = 0.7
+					amount = 3
+					industrial_manufacturer = mio:JKO_maizuru_naval_arsenal
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_coastal_defense_ship
+						creator = "JKO"
+						version_name = "Izumo Class"
+					}
+					name = "Gyeongsang"
+					requested_factories = 1
+					progress = 0.7
+					amount = 1
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					#Made-up
+					name = "Sokuten Class"
+					type = ship_hull_light_1
+					name_group = JAP_MINELAYERS_HISTORICAL
+					design_team = mio:JAP_maizuru_naval_arsenal_organization
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_battery_1
+						fixed_ship_anti_air_slot = empty
+						fixed_ship_fire_control_system_slot = empty
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_1
+						fixed_ship_torpedo_slot = empty
+						mid_1_custom_slot = ship_mine_layer_1
+						rear_1_custom_slot = ship_mine_layer_1
+					}
+					design_team = mio:JKO_maizuru_naval_arsenal
+				}
+				#Line Production
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_1
+						creator = "JKO"
+						version_name = "Sokuten Class"
+					}
+					name = "Busan"
+					requested_factories = 1
+					progress = 0.7
+					amount = 3
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_coastal_defense_ship
+						creator = "JKO"
+						version_name = "Izumo Class"
+					}
+					name = "Gyeongsang"
+					requested_factories = 1
+					progress = 0.7
+					amount = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_hangkong_zhushi_huishe
+		icon = GFX_focus_jap_zero
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = JKO_bandao_zhengbing_ling
+		}
+		relative_position_id = JKO_bandao_zhengbing_ling
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.5
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_tech = iw_small_airframe
+						}
+					}
+					set_technology = {
+						iw_small_airframe = 1
+						popup = yes
+					}
+				}
+				create_equipment_variant = {
+					#Copy of I-15 variant in Soviet history file
+					name = "Ki-10"					# Ki-10
+					type = small_plane_airframe_0
+					modules = {
+						fixed_main_weapon_slot = light_mg_2x
+						engine_type_slot = engine_1_1x
+						special_type_slot_1 = empty
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_0
+					amount = 30
+					producer = JAP
+					variant_name = "Ki-10"
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					name = "Ki-10"
+					type = fighter_equipment_0
+					allow_without_tech = yes
+					obsolete = yes
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 30
+					producer = JAP
+					variant_name = "Ki-10"
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = JKO_mitsubishi_organization
+				show_mio_tooltip = JKO_kawanishi_aircraft_company_organization
+				custom_effect_tooltip = generic_skip_one_line_tt
+				mio:JKO_mitsubishi_organization = {
+					add_mio_funds = 500
+				}
+				mio:JKO_kawanishi_aircraft_company_organization = {
+					add_mio_funds = 500
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = MAN_mamc_light
+				show_ideas_tooltip = MAN_mamc_medium
+				show_ideas_tooltip = MAN_mamc_heavy
+			}
+		}
+	}
+	focus = {
+		id = JKO_shenfeng_jingshen
+		icon = GFX_focus_JAP_the_divine_wind
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = JKO_hangkong_zhushi_huishe
+		}
+		relative_position_id = JKO_hangkong_zhushi_huishe
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			add_ideas = JAP_the_divine_wind_idea
+			IF = {
+				limit = {
+					NOT = {
+						has_rule = can_use_kamikaze_pilots
+					}
+				}
+				hidden_effect = {
+					set_rule = {
+						can_use_kamikaze_pilots = yes
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = kamikaze_focus_tooltip
+			}
+		}
+	}
+	focus = {
+		id = JKO_guandongjun_de_jingyan
+		icon = GFX_focus_PRC_develop_the_army
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JKO_bandao_zhengbing_ling
+		}
+		relative_position_id = JKO_bandao_zhengbing_ling
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				name = JKO_guandongjun_de_jingyan
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = MAN_strengthen_army
+		}
+	}
+	focus = {
+		id = JKO_shiyanxing_tanke_lian
+		icon = GFX_focus_JAP_reform_the_army
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = JKO_guandongjun_de_jingyan
+		}
+		relative_position_id = JKO_guandongjun_de_jingyan
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				name = JKO_shiyanxing_tanke_lian
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_technology = {
+				basic_light_tank_chassis = 1
+			}
+			IF = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				create_equipment_variant = {
+					name = "Type 94 Tankette"					# Type 94 Tankette
+					type = light_tank_chassis_1
+					design_team = mio:JAP_osaka_army_arsenal_organization
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_heavy_machine_gun
+						turret_type_slot = tank_light_one_man_tank_turret
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = empty
+						special_type_slot_2 = empty
+						special_type_slot_3 = empty
+						special_type_slot_4 = empty
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 0
+						tank_nsb_armor_upgrade = 0
+					}
+					obsolete = yes
+					icon = "GFX_JAP_basic_light_tank_medium"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_equipment_subsidy = {
+				cic = 500
+				equipment_type = light_tank_equipment
+				seller_tags = {
+					JAP
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 30
+				producer = JAP
+				variant_name = "Type 94 Tankette"
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = JKO_mitsubishi_heavy_industries
+				show_mio_tooltip = JKO_hitachi_arms_department
+				mio:JKO_mitsubishi_heavy_industries = {
+					add_mio_funds = 500
+				}
+				mio:JKO_hitachi_arms_department = {
+					add_mio_funds = 500
+				}
+			}
+			hidden_effect = {
+				division_template = {
+					name = "Experimental Mechanised Division"
+					division_names_group = JAP_ARM_01
+					priority = 2
+					regiments = {
+						light_armor = {
+							x = 0
+							y = 0
+						}
+						light_armor = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 3
+						}
+					}
+					support = {
+						artillery = {
+							x = 0
+							y = 0
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"North Korean Armored Division\" division_template = \"Experimental Mechanised Division\" start_experience_factor = 0.2 start_equipment_factor = 1.0 force_equipment_variants = { light_tank_equipment_1 = { creator = \"JAP\" } }"
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_jiandao_teshe_budui
+		icon = GFX_focus_generic_JKO_jiandao_teshedui
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = JKO_guandongjun_de_jingyan
+		}
+		relative_position_id = JKO_guandongjun_de_jingyan
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_MILITARY_CHARACTER
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = JKO_jiandao_teshe_budui
+				bonus = 1
+				uses = 1
+				category = mountaineers_tech
+			}
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_doctrine_cost_reduction = {
+					name = JKO_jiandao_teshe_budui
+					cost_reduction = 0.25
+					uses = 2
+					category = cat_mountaineers_doctrine
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			add_ideas = JKO_jiandao_teshe_budui_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			show_unit_leaders_tooltip = JKO_Jin_Baiyi
+			JKO_Jin_Baiyi = {
+				limit = {
+					NOT = {
+						has_trait = trait_mountaineer
+					}
+				}
+				add_trait = {
+					trait = trait_mountaineer
+				}
+			}
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = JKO_Jin_Baiyi
+			hidden_effect = {
+				division_template = {
+					name = "Jiandao Special Task Force"
+					force_allow_recruiting = yes
+					division_names_group = JAP_MNT_01
+					priority = 0
+					regiments = {
+						mountaineers = {
+							x = 0
+							y = 0
+						}
+						mountaineers = {
+							x = 0
+							y = 1
+						}
+						mountaineers = {
+							x = 1
+							y = 0
+						}
+						mountaineers = {
+							x = 1
+							y = 1
+						}
+						mountaineers = {
+							x = 2
+							y = 0
+						}
+						mountaineers = {
+							x = 2
+							y = 1
+						}
+					}
+					support = {
+						recon = {
+							x = 0
+							y = 0
+						}
+						artillery = {
+							x = 0
+							y = 1
+						}
+						engineer = {
+							x = 0
+							y = 2
+						}
+					}
+				}
+			}
+			random_controlled_state = {
+				create_unit = {
+					division = "name = \"Jiandao Special Task Force\" division_template = \"Jiandao Special Task Force\" start_experience_factor = 0.2 start_equipment_factor = 1"
+					owner = ROOT
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_gen_riben_yiyi_yusui
+		icon = GFX_focus_JAP_advance_one_hundred_million_fireballs
+		text_icon = KOR_zongdufu_focus_tukuang
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = JKO_fendan_jinhai_fanghu
+		}
+		prerequisite = {
+			focus = JKO_shenfeng_jingshen
+		}
+		relative_position_id = JKO_fendan_jinhai_fanghu
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = {
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		available = {
+		}
+		completion_reward = {
+			add_ideas = JAP_the_final_war_theory_idea
+			hidden_effect = {
+				unlock_tactic = tactic_grand_banzai_charge
+			}
+			custom_effect_tooltip = JAP_instill_the_spirit_of_bushido_tt
+		}
+	}
+	focus = {
+		id = JKO_riben_shiguan_xuexxiao
+		icon = GFX_focus_JAP_minshu_shugi
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = JKO_riben_guwen_tuan
+		}
+		relative_position_id = JKO_riben_guwen_tuan
+		mutually_exclusive = {
+			#focus = 
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_MILITARY_CHARACTER
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			army_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_army_leader = {
+				add_planning = 1
+			}
+			set_global_flag = qinripai_chaoxianren_keyong_flag
+			custom_effect_tooltip = generic_skip_one_line_tt
+			show_unit_leaders_tooltip = JKO_Cai_Bingde
+			show_unit_leaders_tooltip = JKO_Jin_Xiyuan
+			show_unit_leaders_tooltip = JKO_Lee_Hyung_geun
+			show_unit_leaders_tooltip = JKO_Li_Yingjun
+			show_unit_leaders_tooltip = JKO_Shin_Tae_young
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = JKO_Shin_Tae_young
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = JKO_Li_Yingjun
+			custom_effect_tooltip = generic_skip_one_line_tt
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:JKO_hitachi_arms_department = {
+					add_mio_funds = 500
+				}
+			}
+		}
+	}
+	focus = {
+		id = JKO_kuobian_chaoxian_jun
+		icon = GFX_focus_JAP_korean_volunteer_army
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = JKO_riben_shiguan_xuexxiao
+		}
+		relative_position_id = JKO_riben_shiguan_xuexxiao
+		mutually_exclusive = {
+			focus = JKO_kuoda_jingcha_xitong
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		search_filters = {
+			FOCUS_FILTER_SWI_MILITARY_READINESS
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = JKO_kuobian_chaoxian_jun
+				bonus = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = modify_chaoxian_zongdu_budui
+			add_to_variable = {
+				chaoxian_zongdu_budui_4 = 0.1
+				tooltip = army_infantry_attack_factor_tt
+			}
+			add_to_variable = {
+				chaoxian_zongdu_budui_5 = 0.1
+				tooltip = army_infantry_defence_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = JKO_weibandao_zhanzheng_zuozhunbei
+		icon = GFX_focus_JAP_prepare_for_peninsular_war
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = JKO_kuobian_chaoxian_jun
+			focus = JKO_kuoda_jingcha_xitong
+		}
+		relative_position_id = JKO_kuobian_chaoxian_jun
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			controls_state = 525
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_MANPOWER
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_manpower = 25000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 6000
+				producer = JAP
+			}
+			IF = {
+				limit = {
+					525 = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				525 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}

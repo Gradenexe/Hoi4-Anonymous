@@ -1,0 +1,109 @@
+
+IRE_IRA_political_balance = {
+	initial_value = 0.0
+	left_side = IRE_bop_left_side	
+	right_side = IRE_bop_right_side	
+	decision_category = IRE_IRA_balance_of_power_category
+	### Centerist Liberalism
+	range = {
+		id = IRE_centre_range
+		min = -0.4
+		max = 0.4
+		modifier = {
+			 stability_factor = 0.025
+		}
+		on_activate = {
+			
+		}
+		on_deactivate = {
+		}
+	}
+
+	### Social-Democrat - Communist Side 
+	side = {
+		id = IRE_bop_left_side	
+		icon = GFX_idea_IRE_ira_loyal
+		range = {
+			id = IRA_Loyal
+			min = -1
+			max = -0.7
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.15
+				boost_resistance_factor = 0.25
+				commando_trait_chance_factor = 0.25
+				conscription_factor = 0.15
+				army_core_attack_factor  = 0.1
+				army_core_defence_factor = 0.1
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = IRA_Appeased
+			min = -0.7
+			max = -0.4
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.10
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+	}
+
+	# Conservative - National Socialist Side
+	side = {
+		id = IRE_bop_right_side	
+		icon = GFX_idea_IRE_ira_defeated
+		range = {
+			id = IRA_frustrated
+			min = 0.4
+			max = 0.7
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.1
+				conscription_factor = -0.1
+				war_support_factor = -0.025
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = IRA_Furious
+			min = 0.7
+			max = 1
+			modifier = {
+				political_power_factor = -0.5
+				stability_factor = -0.25
+				conscription_factor = -0.2
+				war_support_factor = -0.05
+				mobilization_speed = -0.25
+				training_time_army_factor = 0.1
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+	}
+}
+

@@ -1,0 +1,615 @@
+
+add_namespace = ANZAC_new_Zealand
+
+# Completed NZL_the_singapore_strategy
+country_event = {
+	id = ANZAC_new_Zealand.1
+	title = ANZAC_new_Zealand.1.t	# Democratic New Zealand proposes to govern Singapore/Borneo colonies.
+	desc = ANZAC_new_Zealand.1.d	#
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.1.a # Transfer ownership of colonies to New Zealand.
+		
+		ai_chance = {
+			base = 100
+		}
+		
+		effect_tooltip = {
+			NZL = {
+				puppet = MAL
+			}
+		}
+		hidden_effect = {
+			NZL = {
+				country_event = { id = ANZAC_new_Zealand.2 }
+			}
+		}
+	}
+	
+	option = {
+		name = ANZAC_new_Zealand.1.b # Diplomatically refuse New Zealand's proposal.
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		NZL = {
+			country_event = { id = ANZAC_new_Zealand.3 }
+		}
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.2
+	title = ANZAC_new_Zealand.2.t	# Great Britain transferred Singapore/Borneo colonies to New Zealand.
+	desc = ANZAC_new_Zealand.2.d	#
+	picture = GFX_report_event_ast_army
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.2.a
+		
+		puppet = {
+		    target = MAL
+		    end_wars = no
+		}
+		
+		news_event = { hours = 6 id = anon_news.1 }
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.3
+	title = ANZAC_new_Zealand.3.t	# Great Britain refused New Zealand's offer to govern Singapore/Borneo.
+	desc = ANZAC_new_Zealand.3.d	#
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.3.a
+	}
+}
+
+# Completed NZL_protect_the_dutch_colonies.
+country_event = {
+	id = ANZAC_new_Zealand.4
+	title = ANZAC_new_Zealand.4.t	# Democratic New zealand offers protection of the Dutch colonies in SEA.
+	desc = ANZAC_new_Zealand.4.d	#
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.4.a # Accept New zealand's offer.
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_war_with = NZL
+			}
+		}
+		
+		effect_tooltip = {
+			NZL = {
+				puppet = INS
+			}
+		}
+		
+		hidden_effect = {
+			NZL = {
+				country_event = { id = ANZAC_new_Zealand.4 }
+			}
+		}
+	}
+	
+	option = {
+		name = ANZAC_new_Zealand.4.b # Deny New zealand's offer.
+		
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				has_war_with = NZL
+			}
+		}
+		
+		NZL = {
+			country_event = { id = ANZAC_new_Zealand.5 }
+		}
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.4
+	title = ANZAC_new_Zealand.4.t	# Netherlands accepts protectorate over SEA colonies.
+	desc = ANZAC_new_Zealand.4.d  	#
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.4.a
+		
+		puppet = {
+		    target = INS
+		    end_wars = no
+		}
+		
+		news_event = { id = anon_news.6 hours = 6 }
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.5
+	title = ANZAC_new_Zealand.5.t	# Netherlands denies the protection offer of SEA colonies.
+	desc = ANZAC_new_Zealand.5.d	#
+	picture = GFX_report_event_ast_troops_landing
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.5.a
+	}
+}
+
+
+country_event = {
+	id = ANZAC_new_Zealand.6  
+	title = ANZAC_new_Zealand.6.t #Creates Australian faction
+	desc = ANZAC_new_Zealand.6.d
+	picture = GFX_report_event_ANZAC_day
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.6.a
+		
+		create_faction = south_west_pacific_initiative
+		if = {
+			limit = {
+				country_exists = INS
+				not = { has_war_with = INS }
+			}
+			add_to_faction = INS
+		}
+		
+		news_event = { id = anon_news.5 hours = 6 }
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.7
+	title = ANZAC_new_Zealand.7.t # USA is asked to join faction
+	desc = ANZAC_new_Zealand.7.d
+	picture = GFX_report_event_generic_usa_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.7.a
+		
+		ai_chance = {
+			base = 100
+		}
+
+		effect_tooltip = {
+			NZL = {
+				create_faction = south_west_pacific_initiative
+				add_to_faction = USA
+				
+				if = {
+					limit = {
+						has_country_flag = INS_is_a_puppet
+					}
+					add_to_faction = INS
+				}
+			}
+		}
+		hidden_effect = {
+			NZL = {
+				country_event = { id = ANZAC_new_Zealand.8 }
+			}
+		}
+	}
+	
+	option = {
+		name = ANZAC_new_Zealand.7.b
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		NZL = {
+			country_event = { id = ANZAC_new_Zealand.9 }
+		}
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.8
+	title = ANZAC_new_Zealand.8.t # USA joins faction
+	desc = ANZAC_new_Zealand.8.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.8.a
+		
+		create_faction = south_west_pacific_initiative
+		add_to_faction = USA
+		
+		if = {
+			limit = {
+				has_country_flag = INS_is_a_puppet
+			}
+			add_to_faction = INS
+		}
+		
+		news_event = { id = anon_news.3 hours = 6 }
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.9
+	title = ANZAC_new_Zealand.9.t # USA refused to join faction
+	desc = ANZAC_new_Zealand.9.d
+	picture = GFX_report_event_FDR_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.9.a # Form a faction anyway
+		trigger = {
+			has_country_flag = INS_is_a_puppet
+		}
+		
+		create_faction = south_west_pacific_initiative
+		add_to_faction = INS
+		
+		news_event = { id = anon_news.5 hours = 6 }
+	}
+	
+	option = {
+		name = ANZAC_new_Zealand.9.b
+	}
+}
+
+# Completed NZL_AST_join_comintern.
+# Australian national focus.
+country_event = {
+	id = ANZAC_new_Zealand.10
+	title = ANZAC_new_Zealand.10.t	# Australia asks USSR to join Comintern.
+	desc = ANZAC_new_Zealand.10.d	#
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.10.a
+		
+		ai_chance = {
+			base = 100
+		}
+		
+		effect_tooltip = {
+			add_to_faction = NZL
+		}
+		hidden_effect = {
+			NZL = {
+				country_event = { id = ANZAC_new_Zealand.11 }
+			}
+		}
+	}
+	
+	option = {
+		name = ANZAC_new_Zealand.10.b
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		hidden_effect = {
+			NZL = {
+				country_event = { id = ANZAC_new_Zealand.12 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.11
+	title = ANZAC_new_Zealand.11.t	# USSR accepts Comintern membership.
+	desc = ANZAC_new_Zealand.11.d	#
+	picture = GFX_report_event_stalin_meeting
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.11.a
+		SOV = {
+			add_to_faction = NZL
+		}
+		news_event = { hours = 6 id = news.239 }
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.12
+	title = ANZAC_new_Zealand.12.t	# USSR denies Comintern membership.
+	desc = ANZAC_new_Zealand.12.d	#
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.12.a
+	}
+}
+
+# Indonesian Nationalists Alert 
+country_event = {
+	id = ANZAC_new_Zealand.13
+	title = ANZAC_new_Zealand.13.t	
+	desc = ANZAC_new_Zealand.13.desc
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.13.a
+		start_civil_war = {
+			ideology = fascism
+			size = 0.65
+			states = { 334 673 669 738 667 672 }
+		}
+	}
+	option = {
+		trigger = {
+			is_ai = no
+		}
+		name = ANZAC_new_Zealand.13.b
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = democratic
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = communism
+			}
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = communism
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = neutrality
+				size = 0.5
+			}
+		}
+	}
+
+}
+
+# Completed AST_protect_the_south_west_pacific.
+# Australian national focus.
+country_event = {
+	id = ANZAC_new_Zealand.14
+	title = ANZAC_new_Zealand.14.t	# 
+	desc = ANZAC_new_Zealand.14.d	#
+	picture = GFX_report_event_ast_troops_landing
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.14.a
+		
+		ai_chance = {
+			base = 100
+		}
+
+		effect_tooltip = {
+			NZL = {
+				puppet = MAL
+			}
+		}
+		hidden_effect = {
+			NZL = {
+				country_event = { id = ANZAC_new_Zealand.15 }
+			}
+		}
+	}
+	
+	option = {
+		name = ANZAC_new_Zealand.14.b
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		hidden_effect = {
+			NZL = {
+				country_event = { id = ANZAC_new_Zealand.16 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.15
+	title = ANZAC_new_Zealand.15.t	#
+	desc = ANZAC_new_Zealand.15.d	#
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.15.a
+		
+		puppet = {
+			target = MAL
+			end_wars = no
+		}
+		news_event = { id = anon_news.7 hours = 6 }
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.16
+	title = ANZAC_new_Zealand.16.t	#
+	desc = ANZAC_new_Zealand.16.d	#
+	picture = GFX_report_event_ast_paras
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.16.a
+	}
+}
+
+# Completed AST_a_deal_with_japan.
+# Australian national focus.
+country_event = {
+	id = ANZAC_new_Zealand.17
+	title = ANZAC_new_Zealand.17.t	# Australia proposes alliance \w Japan in exchange for some SEA islands.
+	desc = ANZAC_new_Zealand.17.d	#
+	picture = GFX_report_event_ast_planning
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.17.a
+		
+		ai_chance = {
+			base = 100
+			
+		}
+		
+		effect_tooltip = {
+			NZL = {
+				if = {
+					limit = {
+						MAL = { is_puppet_of = NZL }
+					}
+					JAP = {
+						puppet = MAL
+					}
+					
+					else = {
+						JAP = {
+							transfer_state = 334
+							transfer_state = 673
+							transfer_state = 668
+						}
+					}
+				}
+
+				if = {
+					limit = { JAP = { is_faction_leader = yes } }
+					JAP = {
+						add_to_faction = NZL
+					}
+					else = {
+						create_faction_from_template = {
+							template = faction_template_geacps_faction
+							name = western_pacific_sphere
+						}
+						add_to_faction = JAP					
+					}
+				}				
+			}
+		}
+		hidden_effect = {
+			NZL = {
+				country_event = { id = ANZAC_new_Zealand.18 }
+			}
+		}
+	}
+	
+	option = {
+		name = ANZAC_new_Zealand.17.b
+		
+		ai_chance = {
+			base = 0
+			modifier = {
+				is_faction_leader = yes
+				add = 10
+			}
+		}
+		
+		hidden_effect = {
+			NZL = {	
+				country_event = { id = ANZAC_new_Zealand.19 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.18
+	title = ANZAC_new_Zealand.18.t	# Japan forms alliance \w Australia.
+	desc = ANZAC_new_Zealand.18.d	#
+	picture = GFX_report_event_ast_transfer_singapore
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.18.a
+		if = {
+			limit = {
+				MAL = { is_puppet_of = NZL }
+			}
+			JAP = {
+				puppet = MAL
+			}
+			
+			else = {
+				JAP = { transfer_state = 334 }
+				JAP = { transfer_state = 673 }
+				JAP = { transfer_state = 668 }
+			}
+		}
+		
+		if = {
+			limit = { JAP = { is_faction_leader = yes } }
+			JAP = { add_to_faction = NZL }
+			else = {
+				create_faction = western_pacific_sphere
+				add_to_faction = JAP					
+			}
+		}
+		
+		news_event = { id = anon_news.8 hours = 6 }
+	}
+}
+
+country_event = {
+	id = ANZAC_new_Zealand.19
+	title = ANZAC_new_Zealand.19.t	# Japan denies Australian alliance offer.
+	desc = ANZAC_new_Zealand.19.d	#
+	picture = GFX_report_event_japanese_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANZAC_new_Zealand.19.a
+	}
+}

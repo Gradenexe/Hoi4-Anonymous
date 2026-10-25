@@ -1,0 +1,14 @@
+spriteTypes = {
+
+
+progressbartype = {
+   name = "GFX_FEDERALIST_POPULARITY"
+   textureFile1 = "gfx/interface/decisions/FEDERALIST_POPULARITY.png"
+   textureFile2 = "gfx/interface/tiles/tiled_window_transparent.dds"
+   size = { x = 60 y = 500 }
+   effectFile = "gfx/FX/progress_startend.lua"
+   horizontal = no
+}
+
+	
+}

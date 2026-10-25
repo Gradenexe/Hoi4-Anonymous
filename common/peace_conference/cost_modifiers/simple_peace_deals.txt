@@ -1,0 +1,100 @@
+peace_action_modifiers = {
+    custom_peace_uncontrolled_take_states = {
+        category = occupation
+        peace_action_type = take_states
+
+        enable = {
+            ROOT = { has_country_flag = custom_peace_in_progress }
+            NOT = {
+                FROM.FROM.FROM = {
+                    is_controlled_by_ROOT_or_ally = yes
+                }
+            }
+        }
+
+        cost_multiplier = 3
+    }
+	
+	custom_peace_uncontrolled_take_states_neighbor_state = {
+        category = occupation
+        peace_action_type = take_states
+
+        enable = {
+            ROOT = { has_country_flag = custom_peace_in_progress }
+            NOT = {
+                FROM.FROM.FROM = {
+                    is_controlled_by_ROOT_or_ally = yes	
+                }
+            }
+			FROM.FROM.FROM = {
+				any_neighbor_state = {
+					is_controlled_by_ROOT_or_ally = yes
+				}
+			}	
+        }
+
+        cost_multiplier = 0.8
+    }
+
+	custom_peace_controlled_take_states = {
+        category = occupation
+        peace_action_type = take_states
+
+        enable = {
+            ROOT = { has_country_flag = custom_peace_in_progress }
+			FROM.FROM.FROM = {
+				is_controlled_by_ROOT_or_ally = yes
+			}	
+        }
+
+        cost_multiplier = 0.7
+    }
+
+    custom_peace_uncontrolled_puppet = {
+        category = occupation
+        peace_action_type = puppet
+
+        enable = {
+            ROOT = { has_country_flag = custom_peace_in_progress }
+            NOT = {
+                FROM.FROM.FROM = {
+                    is_controlled_by_ROOT_or_ally = yes
+                }
+            }
+        }
+
+        cost_multiplier = 3
+	}	
+
+    custom_peace_uncontrolled_liberate = {
+        category = occupation
+        peace_action_type = liberate
+
+        enable = {
+            ROOT = { has_country_flag = custom_peace_in_progress }
+            NOT = {
+                FROM.FROM.FROM = {
+                    is_controlled_by_ROOT_or_ally = yes
+                }
+            }
+        }
+
+        cost_multiplier = 3
+	}
+	
+	custom_peace_uncontrolled_force_government = {
+		category = occupation
+		peace_action_type = force_government
+	
+		enable = {
+			ROOT = { has_country_flag = custom_peace_in_progress }
+			NOT = {
+				FROM.FROM.FROM = {
+					is_controlled_by_ROOT_or_ally = yes
+				}
+			}
+		}
+	
+		cost_multiplier = 3
+	}
+}

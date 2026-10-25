@@ -1,0 +1,176 @@
+﻿l_english:
+ # === EXILE BRANCH SHARED FOCUSES ===
+ EXILE_government_in_exile:0 "Government in Exile"
+ EXILE_government_in_exile_desc:0 "Our homeland has fallen or is on the verge of collapse, but our spirit remains unbroken. We shall establish our government in exile and coordinate the liberation struggle from abroad, rallying our people and armed forces to continue the fight."
+
+ EXILE_foreign_air_support:0 "Foreign Air Support"
+ EXILE_foreign_air_support_desc:0 "Our hosts will assist in training our pilots and supplying aircraft for our exile air force. With their help, we can establish an air wing capable of striking back at the occupiers."
+
+ EXILE_aces_in_exile:0 "Aces in Exile"
+ EXILE_aces_in_exile_desc:0 "Among our pilots who escaped the fall of our homeland are some of the finest aviators in the world. By organizing these elite flyers into dedicated squadrons, we can make our exile air force a force to be reckoned with."
+
+ EXILE_air_in_exile:0 "Exile Air Force"
+ EXILE_air_in_exile_desc:0 "Collaboration with allied aircraft manufacturers allows us to secure raw materials and assemble light combat aircraft for our exile air force."
+
+ EXILE_women_in_air:0 "Wings for All"
+ EXILE_women_in_air_desc:0 "By mobilizing every available citizen, including training women for active and auxiliary aviation roles, we significantly expand our operational capacity."
+
+ EXILE_foreign_army_support:0 "Foreign Army Support"
+ EXILE_foreign_army_support_desc:0 "We shall assemble our scattered soldiers and volunteers to form a combat-ready force on foreign soil. With support from our hosts, our exile army will grow into a formidable fighting force."
+
+ EXILE_organize_exiled_army:0 "Organize the Exile Army"
+ EXILE_organize_exiled_army_desc:0 "With thousands of soldiers now gathered on foreign soil, it is time to properly organize our exile army. We shall establish a proper command structure, conduct training exercises, and prepare our forces for the eventual return home."
+
+ EXILE_new_army:0 "A New Army"
+ EXILE_new_army_desc:0 "We shall recruit new volunteers from among our exiled compatriots and establish fresh military units. These forces, combined with veterans of the fall, will form the backbone of our liberation army."
+
+ EXILE_foreign_fleet_support:0 "Foreign Fleet Support"
+ EXILE_foreign_fleet_support_desc:0 "Our naval forces, though reduced, can find refuge and resupply in allied ports. By securing agreements with our host nations, we can rebuild our fleet and continue naval operations against the occupiers."
+
+ EXILE_buy_foreign_ships:0 "Acquire Allied Vessels"
+ EXILE_buy_foreign_ships_desc:0 "Our engineers and shipwrights are working alongside host shipyard facilities to improve ship construction speed and efficiency. We shall also seek to acquire surplus vessels from our allies."
+
+ EXILE_army_cooperation:0 "Unified Command"
+ EXILE_army_cooperation_desc:0 "With our air, land, and naval forces now operating in concert, we shall establish a unified command structure to coordinate all aspects of our liberation campaign. This cooperation will make our exile forces far more effective than the sum of their parts."
+
+ EXILE_exile_politics:0 "Exile Politics"
+ EXILE_exile_politics_desc:0 "The political landscape of our exile government must be carefully managed. By bringing together the various factions of our government in exile, we can present a united front and maintain the legitimacy of our claim."
+
+ EXILE_exploit_our_connections:0 "Exploit Our Connections"
+ EXILE_exploit_our_connections_desc:0 "Our government in exile has connections throughout the allied world. By leveraging these relationships, we can secure better trade terms and reduce the burden of supplying our exile forces."
+
+ EXILE_help_from_our_allies:0 "Allied Support"
+ EXILE_help_from_our_allies_desc:0 "Our allies have pledged to support our liberation struggle. By formalizing this support through diplomatic agreements, we can secure a steady flow of military aid and political backing for our cause."
+
+ EXILE_international_recognition:0 "International Recognition"
+ EXILE_international_recognition_desc:0 "We must ensure that the international community recognizes our government in exile as the legitimate government of our nation. This recognition will strengthen our political position and help secure additional support."
+
+ EXILE_exile_industries:0 "Exile Industries"
+ EXILE_exile_industries_desc:0 "Through agreements with our hosts, we will establish offsite factories to support our war effort. These facilities will produce the weapons and equipment our exile forces desperately need."
+
+ EXILE_resistance_industries:0 "Expand Exile Production"
+ EXILE_resistance_industries_desc:0 "We must dramatically expand our industrial capacity in exile. By building additional factories and securing raw material agreements, we can supply not only our own forces but also the resistance fighters back home."
+
+ EXILE_evacuated_industries:0 "Evacuated Industries"
+ EXILE_evacuated_industries_desc:0 "Before the fall, we managed to evacuate some of our most vital industrial equipment. By reassembling these evacuated factories on allied soil, we can restore a portion of our productive capacity."
+
+ EXILE_connections_with_industrialists:0 "Industrial Connections"
+ EXILE_connections_with_industrialists_desc:0 "Our contacts in the allied industrial world have proven invaluable. By deepening these connections, we can secure access to cutting-edge technology and accelerate our own industrial development."
+
+ EXILE_exile_resistance:0 "Coordinate the Underground"
+ EXILE_exile_resistance_desc:0 "We will establish contact with local resistance groups in our occupied territories to coordinate sabotage and opposition. Our exile government will serve as the nerve center of a nationwide resistance movement."
+
+ EXILE_expand_operations:0 "Expand Resistance Operations"
+ EXILE_expand_operations_desc:0 "The time has come to move beyond mere sabotage. We shall expand our resistance operations to include more ambitious strikes against occupier infrastructure and supply lines."
+
+ EXILE_expand_intelligence:0 "Expand Intelligence Network"
+ EXILE_expand_intelligence_desc:0 "Integrating our decryption teams and field agents into allied intelligence structures, granting us access to advanced spy networks that can penetrate deep into occupied territory."
+
+ EXILE_combined_civilian_agency_resistance:0 "Civil-Military Coordination"
+ EXILE_combined_civilian_agency_resistance_desc:0 "By combining our civilian underground networks with our military intelligence operations, we create a seamlessly integrated resistance force that can strike at will across the occupied homeland."
+
+ EXILE_even_stronger_resistance:0 "Total Resistance"
+ EXILE_even_stronger_resistance_desc:0 "The resistance movement has grown into a formidable force. By coordinating all available resources - industrial, military, and clandestine - we can make occupation of our homeland an untenable proposition for the enemy."
+
+ EXILE_everyone_will_fight:0 "Everyone Will Fight"
+ EXILE_everyone_will_fight_desc:0 "We call upon every man, woman, and child to join the struggle. From factory workers to farmers, all shall contribute to the liberation of our homeland."
+
+ EXILE_our_help_in_the_war:0 "Our Contribution to the War"
+ EXILE_our_help_in_the_war_desc:0 "By demonstrating our value to our allies through concrete military contributions, we strengthen our position and ensure that our liberation remains a priority in allied strategy."
+
+ EXILE_prepare_our_people_to_return:0 "Prepare Our People"
+ EXILE_prepare_our_people_to_return_desc:0 "The time of return approaches. We must prepare our people - both those in exile and those in the underground - for the final push to liberate our homeland. Morale must be high, resolve must be unshakeable."
+
+ EXILE_prepare_our_army_to_return:0 "Prepare Our Army"
+ EXILE_prepare_our_army_to_return_desc:0 "Our exile army must be ready for the liberation campaign. Final training, equipment checks, and battle planning ensure that our forces will strike with maximum effectiveness when the time comes."
+
+ EXILE_prepare_our_land_to_return:0 "Prepare for Liberation"
+ EXILE_prepare_our_land_to_return_desc:0 "Careful planning of supply routes, logistics networks, and administrative structures will ensure that liberated territory can be quickly and effectively brought under our government's control."
+
+ EXILE_combine_all_our_forces:0 "Unite All Our Forces"
+ EXILE_combine_all_our_forces_desc:0 "The moment of liberation is at hand. All our forces - exile army, air force, navy, resistance fighters, and industrial capacity - shall be combined under unified command for the final campaign to free our homeland."
+
+ EXILE_to_return_ours:0 "The Return Begins"
+ EXILE_to_return_ours_desc:0 "With our forces united and prepared, we launch the liberation campaign. Our soldiers and resistance fighters strike simultaneously, overwhelming the occupiers from all directions."
+
+ EXILE_mobilize_from_liberated_lands:0 "Mobilize the Liberated"
+ EXILE_mobilize_from_liberated_lands_desc:0 "As we liberate our homeland territory by territory, we call upon the newly freed citizens to join our ranks. Every liberated village and city adds fresh fighters to our liberation army."
+
+ EXILE_new_volunteers_to_fight:0 "New Volunteers"
+ EXILE_new_volunteers_to_fight_desc:0 "Word of our victories has spread, inspiring a new wave of volunteers both from the diaspora and from within occupied territory. These eager fighters will bolster our forces for the final push."
+
+ EXILE_first_hit:0 "First Strike"
+ EXILE_first_hit_desc:0 "Our exile forces launch their first major offensive operation, striking hard and fast at the occupier's weak points. Speed and surprise are our greatest weapons."
+
+ EXILE_second_hit:0 "Second Wave"
+ EXILE_second_hit_desc:0 "Following up on our initial successes, we unleash a second wave of attacks designed to exploit the gaps in the occupier's lines and drive deep into their rear areas."
+
+ EXILE_third_hit:0 "The Third Blow"
+ EXILE_third_hit_desc:0 "Our third wave of attacks consolidates our gains and prepares our forces for the final decisive battle. The occupiers are reeling, and we press our advantage without mercy."
+
+ EXILE_final_blow:0 "The Final Blow"
+ EXILE_final_blow_desc:0 "The moment we have worked and sacrificed for is here. We launch the final, decisive offensive that will drive the last occupier from our soil and restore our nation to its rightful place among free peoples."
+
+ # === EXILE BRANCH SHARED IDEAS ===
+ EXILE_aces_in_exile_idea:0 "Aces in Exile"
+ EXILE_aces_in_exile_idea_desc:0 "Our most experienced pilots, forced from their homeland, have joined allied squadrons and brought their considerable skills with them. Their expertise is raising the overall quality of our exile air force."
+
+ EXILE_army_cooperation_idea:0 "Unified Command"
+ EXILE_army_cooperation_idea_desc:0 "Our exile forces have established seamless coordination with allied commands, improving our organizational efficiency and recovery capabilities in the field."
+
+ EXILE_civil_and_military_organization:0 "Civil-Military Coordination"
+ EXILE_civil_and_military_organization_desc:0 "The integration of our civilian underground networks with military intelligence has created a highly effective resistance apparatus that operates throughout occupied territory."
+
+ EXILE_industrialist_connections:0 "Industrial Connections"
+ EXILE_industrialist_connections_desc:0 "Our relationships with allied industrialists have opened doors to new technology and accelerated our ability to produce the weapons our liberation forces need."
+
+ EXILE_even_stronger_resistance_idea:0 "Total Resistance"
+ EXILE_even_stronger_resistance_idea_desc:0 "The resistance in our occupied homeland has grown into a formidable force, making occupation costly and setting the stage for our eventual return."
+
+ EXILE_everyone_will_fight_idea:0 "Everyone Will Fight"
+ EXILE_everyone_will_fight_idea_desc:0 "The call to arms has been answered by our entire people. From young volunteers to veterans of past campaigns, all are joining the liberation struggle."
+
+ EXILE_our_help_in_the_war_idea:0 "Our Contribution to the War"
+ EXILE_our_help_in_the_war_idea_desc:0 "Our active contribution to the allied war effort has earned us goodwill and accelerated access to new technologies and research."
+
+ EXILE_people_return_prep_idea:0 "Prepared to Return"
+ EXILE_people_return_prep_idea_desc:0 "Our people, both in exile and in the underground, are ready for the liberation campaign. Morale is high and the will to fight is unbreakable."
+
+ EXILE_army_return_prep_idea:0 "Army Ready to Return"
+ EXILE_army_return_prep_idea_desc:0 "Our exile army has completed its final preparations and stands ready to strike. Our commanders have devised careful plans to maximize our effectiveness on the attack."
+
+ EXILE_land_return_prep_idea:0 "Liberation Logistics"
+ EXILE_land_return_prep_idea_desc:0 "Careful planning of supply chains and logistics means our forces will be well-supplied even as they advance deep into occupied territory."
+
+ EXILE_united_exile_government_idea:0 "United Exile Government"
+ EXILE_united_exile_government_idea_desc:0 "After years of exile, sacrifice, and struggle, our forces and our people are united as never before. The combined strength of our exile government, our armed forces, our resistance fighters, and our industrial capacity makes us a formidable power ready to reclaim what is ours."
+
+ EXILE_exile_politics_spirit:0 "Exile Political Unity"
+ EXILE_exile_politics_spirit_desc:0 "Our exile government has overcome its internal divisions and presents a united political front. This unity strengthens our legitimacy and improves our ability to govern effectively, even from abroad."
+
+ EXILE_exploit_connections_spirit:0 "Network of Connections"
+ EXILE_exploit_connections_spirit_desc:0 "Through our extensive network of contacts in the allied world, we have secured favorable trade arrangements and reduced the consumer burden on our exile economy."
+
+ EXILE_allied_aid_spirit:0 "Allied Aid"
+ EXILE_allied_aid_spirit_desc:0 "Our allies have provided substantial material and technical support to our exile government, accelerating our research and development efforts."
+
+ EXILE_intl_recognition_spirit:0 "International Recognition"
+ EXILE_intl_recognition_spirit_desc:0 "Recognized by the international community as the legitimate government of our nation, we have increased stability and political influence, and our calls for liberation find eager ears around the world."
+
+ EXILE_reconquest_spirit:0 "Spirit of Reconquest"
+ EXILE_reconquest_spirit_desc:0 "The liberation campaign has begun and our forces fight with the fury of those reclaiming what was taken from them. This righteous anger provides a powerful boost to our offensive operations."
+
+ EXILE_first_hit_idea:0 "First Strike"
+ EXILE_first_hit_idea_desc:0 "Our initial offensive has caught the enemy off guard. Our forces press forward with speed and aggression, exploiting the momentum of our first victories."
+
+ EXILE_second_hit_idea:0 "Second Wave"
+ EXILE_second_hit_idea_desc:0 "Our second wave of attacks exploits the breaches created by our first offensive, with our forces driving deep and recovering quickly from the rigors of battle."
+
+ EXILE_third_hit_idea:0 "The Third Blow"
+ EXILE_third_hit_idea_desc:0 "Our third offensive wave focuses on consolidating our gains and denying the enemy any chance to recover. Our forces are fighting with complete tactical mastery."
+
+ EXILE_final_blow_idea:0 "The Final Blow"
+ EXILE_final_blow_idea_desc:0 "We are delivering the final, decisive offensive of the liberation campaign. Our forces fight with the absolute conviction that victory and the restoration of our homeland are within reach."
+
+ # Tooltip
+ EXILE_liberated_troops_tt:0 "For each core state fully controlled by [Root.GetName], creates 3 Liberation Brigade divisions."

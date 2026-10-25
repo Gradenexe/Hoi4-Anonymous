@@ -1,0 +1,4 @@
+anon_trade_agreement_modifier = {
+	valid_relation_trigger = {}
+	trade_cost_for_target_factor = -0.334
+}

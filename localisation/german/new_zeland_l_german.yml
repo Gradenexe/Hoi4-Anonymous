@@ -1,0 +1,536 @@
+﻿l_german:
+ NZL_transfer_the_new_zealand_division:0 "Die New Zealand Division übertragen"
+ NZL_transfer_the_new_zealand_division_desc:0 "Die 2nd New Zealand Division wurde mobilisiert, wir sollten sie also dorthin schicken, wo die Kämpfe stattfinden. Die NZ Division aus dem Ersten Weltkrieg wurde in den Mittelmeerraum entsandt. Das wird auch die neue Division."
+ NZL_form_the_rnzn:0 "Die RNZN bilden"
+ NZL_form_the_rnzn_desc:0 "Unsere einst kleine Küstenpatrouille ist stark angewachsen und enthält nun auch Schiffe, die unabhängig von der Überwachung durch die Royal Navy operieren können. Neuseeland wird seine eigene Marine haben."
+ NZL_expand_devonport_naval_base:0 "Den Marinestützpunkt Devonport erweitern"
+ NZL_expand_devonport_naval_base_desc:0 "Der Marinestützpunkt Devonport wird das neue Hauptquartier unserer Marine. Er muss jedoch erweitert werden, um den neuen Anforderungen des totalen Krieges zu entsprechen."
+ NZL_purchase_old_ships:0 "$SMB_purchase_destroyers_and_subs$"
+ NZL_purchase_old_ships_desc:0 "$SMB_purchase_destroyers_and_subs_desc$"
+ NZL_coastal_defense:0 "Küstenverteidigung"
+ NZL_coastal_defense_desc:0 "Neuseeland ist ein Inselstaat, weit von seinen Feinden entfernt. Wir müssen also auf amphibische Angriffe entlang unserer Küsten vorbereitet sein."
+ NZL_destroyer_effort:0 "Programm zum Bau von Zerstörern"
+ NZL_destroyer_effort_desc:0 "Aufgrund unserer kleinen industriellen Basis sind Zerstörer die effizienteste Art, wie Neuseeland Marinemacht projizieren kann. Patrouillieren wir die Küsten, fangen wir U-Boote ab und legen wir Frühwarnsysteme aus."
+ NZL_submarine_effort:0 "U-Boote"
+ NZL_submarine_effort_desc:0 "Da eine eventuelle Invasion unweigerlich auf dem Seeweg erfolgen muss, können die Wölfe des Ozeans eine starke Verteidigungslinie darstellen. Eine U-Boot-Flotte, die unaufällig und im Rudel jagt, kann unsere Seewege beschützen."
+ NZL_light_cruiser_effort:0 "Programm zum Bau von Leichten Kreuzern"
+ NZL_light_cruiser_effort_desc:0 "Schiffe mittlerer Größe sind für eine Nation mittlerer Größe genau richtig. Leichte Kreuzer können ordentlich austeilen, haben jedoch die Geschwindigkeit, um notfalls aus großen Gefechten zu fliehen."
+ NZL_capital_ship_effort:0 "Großkampfschiffe"
+ NZL_capital_ship_effort_desc:0 "Wenn Neuseeland eine erstklassige Marine besitzen will, muss es erstklassige Schiffe besitzen. Wir müssen in Schlachtschiffe und schwere Kreuzer investieren."
+ NZL_expand_the_nzpaf:0 "Die NZPAF erweitern"
+ NZL_expand_the_nzpaf_desc:0 "Die New Zealand Permanent Air Force braucht neue Flugzeuge für die Küstenpatrouillen und Marinebomber. Moderne Nationen können den Luftkrieg nicht ignorieren."
+ NZL_form_the_rnzaf:0 "Die RNZAF bilden"
+ NZL_form_the_rnzaf_desc:0 "Es ist an der Zeit, die Air Force unabhängig von den übrigen Streitkräften zu machen. Die Royal New Zealand Air Force wird eine eigene Befehlsstruktur haben, aber eng mit der Royal Air Force zusammenarbeiten."
+ NZL_fighter_focus:0 "Jäger-Schwerpunkt"
+ NZL_fighter_focus_desc:0 "Jagdflugzeuge sind sehr effektiv darin, den Feind abzufangen oder die Bomber zu eskortieren, die sich als die entscheidende Waffe für unsere Verbündeten erweisen werden."
+ NZL_bomber_focus:0 "Bomber-Schwerpunkt"
+ NZL_bomber_focus_desc:0 "Leichte Bomber können unsere Küsten effektiv verteidigen und werden in Übersee im Kampf gegen unsere Feinde benötigt."
+ NZL_defend_our_islands:0 "Unsere Inseln verteidigen"
+ NZL_defend_our_islands_desc:0 "Wir müssen auf einen Angriff gegen unser Inselparadies vom Meer aus vorbereitet sein. Marinebomber können Landungsfahrzeuge abfangen und sogar Großkampfschiffe angreifen."
+ NZL_modern_fighters:0 "Moderne Jagdflugzeuge"
+ NZL_modern_fighters_desc:0 "Es ist an der Zeit für schnellere Jagdflugzeuge mit größerer Reichweite. Unsere Verbündeten haben mit einigen der fortschrittlichsten Flugzeuge, welche die Welt je gesehen hat, die Marschroute vorgegeben."
+ NZL_heavy_bombers:0 "Schwere Bomber"
+ NZL_heavy_bombers_desc:0 "Der Krieg ist nur zu gewinnen, indem wir den Feind mitten in seiner Heimat angreifen. Wir brauchen schwere Bomber, um feindlichen Fabriken und Städten einen verheerenden Schlag zu versetzen."
+ NZL_the_plan:0 "Luftausbildung im Britischen Commonwealth"
+ NZL_the_plan_desc:0 "Wir haben uns mit unseren Verbündeten zusammengetan, um Erfahrungen bei der Pilotenausbildung miteinander zu teilen. Der Krieg könnte aus der Luft gewonnen werden. Der Commonwealth Air Training Plan könnte daher der Schlüssel zum Sieg sein."
+ NZL_national_roads_board:0 "Nationale Straßenbehörde"
+ NZL_national_roads_board_desc:0 "Das raue Terrain in Neuseeland hat den Bau eines zusammenhängenden Straßennetzwerks bisher verhindert. Wir müssen aber die bestehenden Straßen verbessern. Wir sollten ein System von Autobahnen erforschen, Straßen asphaltieren und neue Wege durch die Berge anlegen."
+ NZL_new_zealand_steel:0 "Neuseeländischer Stahl"
+ NZL_new_zealand_steel_desc:0 "Neuseeland ist mit reichen Vorräten an Eisensand gesegnet, insbesondere auf der Nordinsel. Es ist ein spezieller Prozess nötig, um aus diesem Sand Erz zu gewinnen, doch er kann viele Jahre lang als Eckpfeiler unserer Industrie dienen."
+ NZL_taranaki_oil:0 "Taranaki-Öl"
+ NZL_taranaki_oil_desc:0 "Die Region Taranaki auf der Nordinsel ist reich an Mineralien und Petroleum. Unternehmer haben bereits versucht, diese Ölreserven abzubauen, doch es sind weitere Investitionen in Raffinerien und Bohranlagen erforderlich."
+ NZL_wairarapa_sheep_farms:0 "Wairarapa-Schaffarmen"
+ NZL_wairarapa_sheep_farms_desc:0 "Die Wollindustrie von Wairarapa ist einer der Eckpfeiler der neuseeländischen Wirtschaft. Je mehr die Welt sich aus der Depression befreit, desto größer wird die Nachfrage nach unserer Wolle werden."
+ NZL_bureau_of_industry:0 "Büro für Industrie"
+ NZL_bureau_of_industry_desc:0 "Neuseeland ist eine Agrargesellschaft, die insbesondere auf der Viehwirtschaft basiert. Das Bureau of Industry muss große Investitionen in die Infrastruktur und die Fertigungswirtschaft fördern."
+ NZL_department_of_scientific_and_industrial_research:0 "Abteilung für wissenschaftliche und industrielle Forschung"
+ NZL_department_of_scientific_and_industrial_research_desc:0 "Die anderen Commonwealth- und Dominion-Nationen investieren in wissenschaftliche und industrielle Forschung. Wir sollten dasselbe tun."
+ NZL_industrial_conscription:0 "Industrielle Rekrutierung"
+ NZL_industrial_conscription_desc:0 "Es gibt keinen Grund, warum ein körperlich gesunder Mann nicht in der Armee dienen oder in einer kriegsrelevanten Industrie arbeiten sollte. Unsere neuen Gesetze werden jede Schulter an das Rad der Mobilisierung und Produktion bringen, um es voranzutreiben."
+ NZL_think_big:0 "Denken Sie groß"
+ NZL_think_big_desc:0 "Wir haben uns daran gewöhnt, uns als weniger wichtiges Dominion als unsere Verbündeten in Australien oder Kanada zu sehen. In Wahrheit aber ist Neuseeland fähig zu industrieller Größe!"
+ NZL_project_seal:0 "Projektsiegel"
+ NZL_project_seal_desc:0 "Project Seal ist eine neue Initiative mit den Amerikanern, eine Waffe zu entwickeln, die Tsunamis auslösen kann. Es ist ein wenig ausgefallen, aber die Rollbombe, die wir entwickelt haben, ist vielversprechend."
+ NZL_national_defense_institute:0 "Gelder für die Rüstungsforschung"
+ NZL_national_defense_institute_desc:0 "Nachdem Neuseeland nun eine souveräne Nation ist, haben wir nicht mehr wie früher Zugang zu fortschrittlichen Prototypen und Bauplänen. Wir müssen sicherstellen, dass wir unseren Feinden immer einen Schritt voraus sind und auf dem Gebiet der Technologie nicht zurückfallen."
+ NZL_expand_the_university_of_auckland:0 "Die University of Auckland erweitern"
+ NZL_expand_the_university_of_auckland_desc:0 "Die University of Auckland ist unsere wichtigste akademische Institution. Indem wir sie erweitern, können wir versuchen, unsere klügsten Köpfe in der Heimat zu halten."
+ NZL_army_reforms:0 "Armeereformen"
+ NZL_army_reforms_desc:0 "Wir sollten das Ausbildungs- und Beförderungssystem unserer Armee modernisieren. So sind wir auf alles vorbereitet, was in der momentanen Weltkrise geschehen könnte."
+ NZL_charlton_automatic_rifle:0 "Charlton-Automatikgewehr"
+ NZL_charlton_automatic_rifle_desc:0 "Einer unserer Bürger hat das Lee Enfield-Gewehr modifiziert und zu einer vollautomatischen Waffe umgebaut. Das ist neuseeländisches Erfindungsreichtum in Reinform, wir sollten derlei Innovationen fördern."
+ NZL_bob_semple_tank:0 "Bob Sample Tank"
+ NZL_bob_semple_tank_desc:0 "Warum sollte Neuseeland keinen eigenen Panzer haben? Das Ministry of Works in Temuka entwickelt einen leichten Panzer, der nur mit Maschinengewehren bewaffnet ist. Selbst, wenn wir nie über einen Prototypen hinaus kommen sollten, werden die Erfahrungen von großem Wert sein."
+ NZL_domestic_arms_industry:0 "Inländische Waffenindustrie"
+ NZL_domestic_arms_industry_desc:0 "Wir sollten so viele Industrien wie möglich auf die Produktion von Handfeuerwaffen umstellen. Wir brauchen Munition, Waffenteile, Ausrüstung und so weiter. All das können wir im Inland herstellen."
+ NZL_schofield_tank:0 "Schofield-Panzer"
+ NZL_schofield_tank_desc:0 "Der Semple Tank mag unseren Ansprüchen nicht gerecht geworden sein, aber vielleicht kann das ein Panzer mit einem richtigen Geschütz. Die Kombination aus Ketten- und Radfahrwerk ist einzigartig und könnte uns in der Panzerkonstruktion voranbringen."
+ NZL_long_range_patrol:0 "Langstreckenpatrouille"
+ NZL_long_range_patrol_desc:0 "Die Long Range Patrol soll große Gebiete in Nordafrika abdecken. Die Aufklärungs- und Kommandoeinheit wird Spezialeinsätze in den schwierigsten klimatischen Bedingungen der Welt ausführen."
+ NZL_artillery_focus:0 "Artillerie-Schwerpunkt"
+ NZL_artillery_focus_desc:0 "Die Artillerie ist entscheidend, um einen Vormarsch unserer Infanterie zu unterstützen. Intensivieren wir die Forschung im Bereich der Ballistik und entwickeln wir Geschütze mit größerem Kaliber."
+ NZL_big_bob_tank:0 "Big Bob Tank"
+ NZL_big_bob_tank_desc:0 "Die Schlachtfelder Europas rufen nach schwererer Panzerung, um mit den Superpanzern unserer Feinde mithalten zu können. Der Big Bob wird Neuseelands Beitrag sein."
+ NZL_research_collaboration:0 "Gemeinsame Forschung"
+ NZL_research_collaboration_desc:0 "Die Briten haben uns gezeigt, welche Vorteile es hat, wissenschaftliche Fortschritte mit engen Verbündeten zu teilen. Wenn wir die entsprechenden Schritte unternehmen, um das zu koordinieren, kann unser gesamtes Bündnis in Kriegszeiten effizientere Forschungs- und Entwicklungsarbeiten durchführen."
+ NZL_the_first_labor_government:0 "Die Erste Labour-Regierung"
+ NZL_the_first_labor_government_desc:0 "Die Erste Labour-Regierung Neuseelands hat die Chance, eine progressive soziale und wirtschaftliche Agenda zu verfolgen. Die Regulierung der Industrie, Arbeiterrechte, Gesetze zu Sozialleistungen und Gehältern – all das steht auf dem Programm."
+ NZL_ratana_alliance:0 "Ratana-Allianz"
+ NZL_ratana_alliance_desc:0 "Eine Allianz mit der Ratana-Bewegung wird Maori in die Regierung bringen und hoffentlich der erste Schritt sein, um die Wunden der britischen Eroberung zu heilen."
+ NZL_maori_affairs_act:0 "Gesetz über Maori-Angelegenheiten"
+ NZL_maori_affairs_act_desc:0 "Ein Großteil des Landes im Besitz der Maori ist wirtschaftlich unproduktiv. Wenn wir es konsolidieren und einen größeren Anteil davon unter die Kontrolle der Regierung bringen können, können wir diese Einöden zu fruchtbaren Stätten der Industrie und des Handels machen."
+ NZL_social_security_act:0 "Sozialversicherungsgesetz"
+ NZL_social_security_act_desc:0 "Die Arbeitslosen in Neuseeland brauchen Unterstützung, bis die Wirtschaft sich erholt und mehr Arbeitsplätze zur Verfügung stehen. Wir haben 1935 mit einem Weihnachtsgeld begonnen, doch nun ist die Zeit reif für ein echtes soziales Sicherheitsnetz für alle Bürger."
+ NZL_the_manpower_act:0 "Manpower Act"
+ NZL_the_manpower_act_desc:0 "Seit Beginn des Krieges strömen viele Maori in die Städte. Der Manpower Act erlaubt es uns, diese Energien in die Fabriken Neuseelands zu lenken."
+ NZL_amend_the_maori_affairs_act:0 "Ergänzung des Maori Affairs Act"
+ NZL_amend_the_maori_affairs_act_desc:0 "Wir müssen den Maori Affairs Act ergänzen, so dass er die Produktivität der ungenutzten Gebiete erhöht, aber nicht unnötig unsere Maori-Bürger vertreibt."
+ NZL_waitangi_tribunal:0 "Waitangi-Tribunal"
+ NZL_waitangi_tribunal_desc:0 "Britische Neuseeländer sollten anerkennen, was ihre Ahnen getan haben, um die neuseeländischen Maori zu vertreiben, zu unterdrücken und zu marginalisieren. Blutige Kriege, Landraub und Verletzung natürlicher Rechte. Dieses Vermächtnis anzuerkennen ist ein Schritt auf dem Weg der Heilung."
+ NZL_maori_conscription:0 "Maori-Rekrutierung"
+ NZL_maori_conscription_desc:0 "Die Tapferkeit und der Heldenmut des Maori-Bataillons, das Teil des Expeditionstrupps ist, sind ein klares Zeichen: Wir müssen das Potenzial unserer gesamten Bevölkerung ausschöpfen und selbst die zögerlichen Maori für die Armee rekrutieren."
+ NZL_maori_volunteers:0 "Maori-Freiwillige"
+ NZL_maori_volunteers_desc:0 "Hunderte von Maori beweisen ihren Patriotismus, indem sie sich freiwillig zum Dienst in der neuseeländischen Armee melden."
+ NZL_strengthen_the_commonwealth:0 "Das Commonwealth stärken"
+ NZL_strengthen_the_commonwealth_desc:0 "Als kleineres Dominion müssen wir die Nähe zu unseren Freunden und Verwandten pflegen. Wir werden unsere Bande zu den übrigen britischen Territorien stärken."
+ NZL_statute_of_westminster:0 "Statut von Westminster"
+ NZL_statute_of_westminster_desc:0 "Das Statut von Westminster verleiht uns größere Unabhängigkeit unter der Krone, hält uns aber im Empire."
+ NZL_2nzef:0 "2NZEF"
+ NZL_2nzef_desc:0 "Trotz der Gräuel des letzten Krieges ist Neuseeland bereit, wieder zu marschieren. Die 2nd New Zealand Expeditionary Force wird bereits organisiert."
+ NZL_arrest_pacifist_leaders:0 "Pazifistische Anführer verhaften"
+ NZL_arrest_pacifist_leaders_desc:0 "Wir können uns keine Zwietracht im Lande leisten, nicht in der augenblicklichen Lage. Jeder muss allein darauf konzentriert sein, den Krieg zu gewinnen. Und wenn das bedeutet, jeden zu verhaften, der sich gegen den Krieg ausspricht, dann werden wir das tun."
+ NZL_technology_sharing_with_britain:0 "Technologieabkommen mit Großbritannien"
+ NZL_technology_sharing_with_britain_desc:0 "Die wissenschaftliche und industrielle Basis Großbritanniens ist deutlich größerer als unsere eigene. Da wir jedoch eine Familie sind, sind sie bereit, ihr Wissen mit uns zu teilen."
+ NZL_the_lee_affair:0 "Die Lee-Affäre"
+ NZL_the_lee_affair_desc:0 "John Lee, Parlamentsabgeordneter für den Wahlbezirk Grey Lynn, macht Probleme innerhalb der Labour-Partei. Er fordert vehement eine radikalere Agenda und ist mit dem vorsichtigen Pfad, den wir eingeschlagen haben, nicht einverstanden. Es muss etwas unternommen werden, um seine Revolte einzudämmen."
+ NZL_empower_the_working_class:0 "Die Arbeiterklasse stärken"
+ NZL_empower_the_working_class_desc:0 "Die Labour-Partei tritt seit ihrer Gründung für die Rechte der Arbeiter ein. Viele unserer Anführer stammen selbst aus der Arbeiterschicht. Setzen wir alles daran, die Gewerkschaften stärker zu schützen und ihnen mehr Macht zu verleihen."
+ NZL_join_comintern:0 "Der Komintern beitreten"
+ NZL_join_comintern_desc:0 "Es ist an der Zeit, sich mit unseren sozialistischen Brüdern zu einem Bündnis zusammenzuschließen. Durch die Komintern werden wir das Arbeiterparadies verwirklichen!"
+ NZL_technology_sharing_with_soviet_union:0 "Technologieabkommen mit der Sowjetunion"
+ NZL_technology_sharing_with_soviet_union_desc:0 "Die Sowjetunion ist Heimat vieler der besten Wissenschaftler und technologischen Innovatoren der Welt. Sie sind zu großzügig ihr Wissen mit uns, ihren Waffenbrüdern, zu teilen."
+ NZL_in_the_darkness:0 "In der Dunkelheit"
+ NZL_in_the_darkness_desc:0 "Die demokratischen Systeme, die von unserem Mutterland vertreten werden, sind minderwertig. Wahre Stärke kann nicht durch Kompromisse demonstriert werden."
+ NZL_befriend_japan:0 "Freundschaft mit Japan"
+ NZL_befriend_japan_desc:0 "Als pazifische Nation dient es unseren Sicherheitsinteressen, uns mit der stärksten Macht in der Region zu verbünden. Japan und seine mächtige Marine kann uns vor den Gefahren der Welt beschützen."
+ NZL_rule_them_all:0 "Einheit"
+ NZL_rule_them_all_desc:0 "Die Nationen des Südpazifik sollten eine vereinte Macht sein. Australien sollten sich unserem überlegenen Ethos unterwerfen."
+ NZL_technology_sharing_with_japan:0 "Technologieabkommen mit Japan"
+ NZL_technology_sharing_with_japan_desc:0 "Japan ist Heimat vieler der besten Wissenschaftler und technologischen Innovatoren der Welt. Sie sind zu großzügig ihr Wissen mit uns, ihren Waffenbrüdern, zu teilen."
+ NZL_constitution_amendment_act:0 "Verfassungsänderungsgesetz"
+ NZL_constitution_amendment_act_desc:0 "Es ist an der Zeit, dass Neuseeland sich von der britischen Herrschaft lossagt. Wir werden unsere Verfassung abändern, um mehr Kontrolle über unsere eigenen Angelegenheiten ausüben zu können."
+ NZL_independent_new_zealand:0 "Neuseeländische Unabhängigkeit"
+ NZL_independent_new_zealand_desc:0 "Wir sind jetzt eine Republik! Neuseeland schuldet dem Vereinigten Königreich nichts als die Dankbarkeit, die jedes Kind seiner Mutter dafür schuldet, dass sie es sicher aufgezogen hat. Aber wir müssen das sichere Nest des Commonwealth verlassen und die Welt mit unseren eigenen Interessen im Sinn betrachten."
+ NZL_transfer_ships_tt:0 "[ENG.GetNameDef] transferiert §Y2 Leichte Kreuzer§! an uns."
+
+ ANZAC_new_Zealand.1.t: "[From.GetAdjective] Vorschlag zur Singapur-Strategie"
+ ANZAC_new_Zealand.1.d: "Die Singapur-Strategie ist seit dem Ende des Ersten Weltkriegs der Eckpfeiler unserer Abschreckungspolitik gegen [JAP.GetNameDef]. Allerdings ist die Verlegung der Hauptflotte nach Singapur im Falle eines Angriffs auf die Unterstützung unserer Verbündeten in [From.GetNameDef] angewiesen. Da die potenzielle Bedrohung für britische Besitzungen im Fernen Osten von Tag zu Tag zunimmt, hat das Oberkommando der [From.GetAdjective] eine mögliche neue Strategie vorgestellt, die Neuseeland eine weitaus größere Kontrolle über die Verteidigung der Region verschaffen würde.\n\nEs ist ein vernünftiger Plan, und die Frage ist nur, ob wir glauben, dass sie die Sicherheit bieten können, die wir brauchen."
+ ANZAC_new_Zealand.1.a: "Neuseeland sollte die erste Verteidigungslinie in Südostasien darstellen."
+ ANZAC_new_Zealand.1.b: "Die Singapur-Strategie wird so bleiben, wie sie immer war."
+ ANZAC_new_Zealand.2.t: "[From.GetNameDefCap] überträgt Kolonialbesitz"
+ ANZAC_new_Zealand.2.d: "Die [From.GetAdjective] hat das Gesetz verabschiedet, das die Kontrolle über alle [From.GetAdjective]-Kolonialbesitzungen in der Nähe von Singapur und Borneo an [Root.GetNameDef].\n\nüberträgt. Unsere nationale Sicherheit liegt endlich in unseren eigenen Händen."
+ ANZAC_new_Zealand.2.a: "Wir werden Sie nicht enttäuschen."
+ ANZAC_new_Zealand.3.t: "[From.GetNameDefCap] lehnt strategische Anpassungen ab"
+ ANZAC_new_Zealand.3.d: "Trotz unserer berechtigten Bedenken hinsichtlich der Durchführbarkeit der Singapur-Strategie wurden unsere Änderungsvorschläge im [From.GetAdjective]-Parlament abgelehnt. \nDies scheint ein Ergebnis des militärischen Konservatismus zu sein, der im [From.GetAdjective]-Oberkommando vorherrscht, aber Tatsache ist, dass wir, wenn sich unsere Befürchtungen bewahrheiten, möglicherweise an unseren Küsten mit feindlichen Streitkräften konfrontiert werden."
+ ANZAC_new_Zealand.3.a: "Mit oder ohne [From.GetAdjective]-Unterstützung wird [Root.GetNameDef] groß bleiben!"
+
+ ANZAC_new_Zealand.4.t: "[From.GetNameDefCap] bietet Schutz für unsere Kolonien"
+ ANZAC_new_Zealand.4.d: "[From.GetNameDefCap] hat Verhandlungen mit [Root.GetAdjective]-Diplomaten über die mögliche Übertragung der Verantwortung für den Schutz des [Root.GetAdjective]-Territoriums in Südostasien aufgenommen. \n\nAngesichts der Herausforderungen, die mit der Verteidigung dieses Territoriums verbunden sind, ist eine Partnerschaft möglicherweise keine so schlechte Idee. Das würde bedeuten, dass dieses Gebiet auf absehbare Zeit nur nominell [Root.GetAdjective] wäre, aber nominelles Eigentum ist sicherlich besser, als es vollständig zu verlieren."
+ ANZAC_new_Zealand.4.a: "[From.GetNameDefCap] wird der Vollstrecker der [Root.GetAdjective]-Interessen in der Region sein."
+ ANZAC_new_Zealand.4.b: "Das [Root.GetAdjective]-Territorium bleibt in den Händen von [Root.GetAdjective]!"
+
+ ANZAC_new_Zealand.5.t: "[From.GetNameDefCap] tritt Protektorate ab"
+ ANZAC_new_Zealand.5.d: "[Root.GetAdjective]-Truppen standen bereit, die Verantwortung für den Schutz des gesamten [From.GetAdjective]-Territoriums in Südostasien zu übernehmen, sobald [From.GetLeader] dem Abkommen zugestimmt hatte.\n\nWährend der Transfer auf lokalen Widerstand stieß, sorgt die Angst vor ausländischen Aggressionen dafür, dass die meisten die Notwendigkeit einer [Root.GetAdjective]-Verteidigung erkennen."
+ ANZAC_new_Zealand.5.a: "[Root.GetNameDefCap] wird tun, was sie muss."
+
+ANZAC_new_Zealand.6.t: "[Root.GetNameDefCap] als globaler Marktführer"
+ ANZAC_new_Zealand.6.d: "Aufgrund unserer jüngsten Politik, uns vom Imperium zu distanzieren, ist es für ein Land, das in unserem eigenen Bereich so dominant ist wie wir, nur sinnvoll, die Position eines Anführers und nicht eines Gefolgsmanns einzunehmen."
+ ANZAC_new_Zealand.6.a: "[Root.GetNameDefCap] weist den Weg in die Zukunft!"
+ ANZAC_new_Zealand.7.t: "[From.GetNameDefCap] bittet um politische Zusammenarbeit"
+ ANZAC_new_Zealand.7.d: "Nach dem formellen Austritt von [From.GetNameDef] aus dem Commonwealth sucht die [From.GetAdjective]-Regierung nun nach neuen Verbündeten. Da Europa scheinbar am Rande eines neuen, kostspieligen Konflikts steht und [From.GetNameDef] für jeden potenziellen Konflikt im Pazifik von strategischer Bedeutung ist, könnte eine Partnerschaft in unserem besten Interesse liegen.\n\nEs würde sicherlich Südostasien, den Fernen Osten und den Pazifik als Teile unseres Einflussbereichs hervorheben und sicherstellen, dass die Interessen von [Root.GetAdjective] nicht beeinträchtigt werden, ganz gleich, was in Europa passiert."
+ ANZAC_new_Zealand.7.a: "Gerne nennen wir sie unsere Verbündeten!"
+ ANZAC_new_Zealand.7.b: "Wir können unsere Interessen aus eigener Kraft besser schützen."
+ ANZAC_new_Zealand.8.t: "[From.GetNameDefCap] stimmt der pazifischen Zusammenarbeit zu"
+ ANZAC_new_Zealand.8.d: "Angesichts der offensichtlichen Vorteile einer transpazifischen Partnerschaft hat [From.GetNameDef] unserem Vorschlag einer regionalen Allianz zugestimmt."
+ ANZAC_new_Zealand.8.a: "Die alten Meister sind tot. Wir sind jetzt alle gleich."
+ ANZAC_new_Zealand.9.t: "[From.GetNameDefCap] lehnt Kooperationsprojekt ab"
+ ANZAC_new_Zealand.9.d: "Ob es an der Nichtanerkennung unserer gemeinsamen Geschichte liegt oder einfach an politischem Opportunismus liegt, [From.GetNameDef] hat unser Angebot einer transpazifischen Partnerschaft abgelehnt.\n\nWährend ihre Teilnahme ein großer Vorteil gewesen wäre, sollten wir unsere eigene Agenda vorantreiben und unsere eigenen Ziele verfolgen."
+ ANZAC_new_Zealand.9.a: "Wir werden weiterhin für unseren Teil der Welt tun, was wir können."
+ ANZAC_new_Zealand.9.b: "Wir haben versagt."
+
+ANZAC_new_Zealand.10.t: "[From.GetNameDefCap] Requests Membership in the [Root.GetFactionName]"
+ ANZAC_new_Zealand.10.d: "[From.GetNameDef] identifiziert sich als eine Nation der Arbeiter, frei von der alten europäischen Bourgeoisie, und ist nach und nach in die Sphäre der Politik von [Root.GetAdjective] vorgedrungen. Die [From.GetAdjective]-Regierung hat offiziell die nationale Mitgliedschaft im [Root.GetFactionName] beantragt.\n\nMit Blick auf die Weltrevolution präsentiert [From.GetLeader] eine Vision von [Root.GetNameDef] und [From.GetNameDef] als zwei der Schlüsselpole in einer neuen, sozialistischen Weltordnung, die auf der Dominanz von [From.GetNameDef] in Ozeanien und [Root.GetNameDef] in Eurasien aufbaut."
+ ANZAC_new_Zealand.10.a: "Jede revolutionäre Nation wird mit offenen Armen empfangen!"
+ ANZAC_new_Zealand.10.b: "Wir können uns die Konflikte, in die uns die [From.GetAdjective]s mit Sicherheit hineinziehen werden, nicht leisten."
+ ANZAC_new_Zealand.11.t: "Brüder der Revolution"
+ ANZAC_new_Zealand.11.d: "[From.GetNameDefCap] hat unseren Antrag auf Mitgliedschaft im [From.GetFactionName] geprüft und uns zu einem geschätzten Verbündeten der Sache erklärt!"
+ ANZAC_new_Zealand.11.a: "Die Weltrevolution erwartet Sie!"
+ ANZAC_new_Zealand.12.t: "Alleingänge machen"
+ ANZAC_new_Zealand.12.d: "Nach wochenlang ins Stocken geratenen Verhandlungen und bürokratischen Umständlichkeiten ist klar geworden, dass [From.GetNameDef] kein Interesse daran hat, uns eine endgültige Antwort auf unseren Beitritt zum [From.GetFactionName] zu geben. \nA Da wir auf schnelle und schlüssige Verhandlungen gehofft hatten, muss sich [Root.GetNameDef] darauf vorbereiten, den Arbeitern der Welt aus eigener Kraft wahre Freiheit zu bringen."
+ ANZAC_new_Zealand.12.a: "Wir kämpfen für die Unterdrückten in allen Teilen der Welt!"
+
+ ANZAC_new_Zealand.13.t: "Bürgerkrieg!"
+ ANZAC_new_Zealand.13.desc: "Bewaffnete Nationalisten gehen in ganz Indonesien auf die Straße. Militärische und polizeiliche Maßnahmen gegen den Aufstand blieben bislang erfolglos. Dieser bewaffnete Aufstand erfolgte im Zuge eines plötzlichen Anstiegs der nationalistischen Stimmung, was bedeutet, dass wir uns nun in einem umfassenden Bürgerkrieg befinden."
+ ANZAC_new_Zealand.13.a: "Widerstehen Sie dem nationalistischen Abschaum!"
+ ANZAC_new_Zealand.13.b: "Schließen Sie sich dem Aufstand an!"
+
+ANZAC_new_Zealand.14.t: "[From.GetNameDefCap] fordert das Recht, Protektorate zu kontrollieren"
+ ANZAC_new_Zealand.14.d: "Mit der Behauptung, dass ein Versäumnis von [Root.GetNameDef], seine Kolonialbesitzungen in Südostasien zu verteidigen, katastrophale Auswirkungen auf die nationale Verteidigung von [From.GetAdjective] hätte, hat [From.GetLeader] gefordert, dass der [From.GetAdjective]-Regierung die volle, unabhängige Verantwortung für die Verteidigung der Region übertragen wird. \nObwohl es sich nicht um eine direkte Forderung handelt, macht das Wachstum des strategischen und militärischen Einflusses von [From.GetAdjective] in der Region doch Sinn. Das Gegengewicht ist die jüngste politische Distanzierung von uns, die [From.GetNameDef] angenommen hat.\nDies wäre eine Vereinbarung mit einem potenziellen Partner, nicht mit einem Subjekt, und würde die Kolonien de facto aus unseren Händen lassen, sollte [From.GetNameDef] sich dafür entscheiden."
+ ANZAC_new_Zealand.14.a: "Ja, die Stabilität Südostasiens hat Priorität."
+ ANZAC_new_Zealand.14.b: "Nein, wir werden der alleinige Besitzer unserer eigenen Kolonialbesitzungen sein!"
+ ANZAC_new_Zealand.15.t: "Verteidigungskommission"
+ ANZAC_new_Zealand.15.d: "Nach Annäherungsversuchen des [Root.GetAdjective]-Militärkommandos hat [From.GetNameDef] beschlossen, uns die „mittlere Kontrolle“ über alle [From.GetAdjective]-Kolonialbesitzungen in Südostasien zu übertragen. \n\nDa die alten Mächte des Pazifiks nichts davon wissen, gehen unsere Versuche, die Vorherrschaft von [Root.GetNameDef] über die Region sicherzustellen, weiter."
+ ANZAC_new_Zealand.15.a: "Wir werden das alte Land stolz machen."
+ ANZAC_new_Zealand.16.t: "[From.GetNameDefCap] lehnt „Verteidigungsprojekt“ ab"
+ ANZAC_new_Zealand.16.d: "Trotz Annäherungsversuchen des [Root.GetAdjective]-Oberkommandos hat [From.GetNameDef] unseren Antrag auf Kontrolle seiner Kolonien in der südostasiatischen Region abgelehnt.\n\nUnsere Ambitionen sind jedoch ungebremst. Wir werden weiterhin nach Möglichkeiten suchen, die Bedeutung von [Root.GetAdjective] im Pazifik zu sichern."
+ ANZAC_new_Zealand.16.a: "Trotz dieses Rückschlags bleibt [Root.GetNameDefCap] stark."
+
+
+ANZAC_new_Zealand.17.t: "Ein Angebot von jenseits des Meeres"
+ ANZAC_new_Zealand.17.d: "[From.GetNameDefCap] hat im Laufe der Zeit mehr Sympathie für die imperialen Ambitionen von [Root.GetNameDef] entwickelt. Als einzige andere große Militärmacht, die in der Region stationiert ist, haben die [From.GetAdjective]s entschieden, dass es besser ist, als unser stolzer Verbündeter zu stehen als als unsere gedemütigten Diener.\n\nUm unser Interesse zu wecken, umreißt der Vorschlag für ein Bündnis im Westpazifik klar die [Root.GetAdjective]-Sphäre, um auch mehrere Gebiete einzuschließen, die derzeit von den Feinden von [From.GetNameDef] kontrolliert werden."
+ ANZAC_new_Zealand.17.a: "Gemeinsam werden wir die östliche Hemisphäre vollständig beherrschen!"
+ ANZAC_new_Zealand.17.b: "Unsere Ambitionen haben keinen Platz für diese Hinterwäldler!"
+ ANZAC_new_Zealand.18.t: "[From.GetNameDefCap] genehmigt Allianz"
+ ANZAC_new_Zealand.18.d: "Unsere Delegation nach Japan ist triumphierend zurückgekehrt. Wir haben eine offizielle Allianz mit [JAP.GetName] unterzeichnet. Das Dokument definiert klar Interessenbereiche für jedes unserer Länder, in die sich das andere nicht einmischen kann."
+ ANZAC_new_Zealand.18.a: "Davon werden [Root.GetAdjective]s und [From.GetAdjective] im gesamten Westpazifik profitieren."
+ ANZAC_new_Zealand.19.t: "Die [From.GetAdjective]-Regierung widersetzt sich der Partnerschaft!"
+ ANZAC_new_Zealand.19.d: "Trotz unseres Aufstiegs an die Spitze der globalen Bühne weigert sich [From.GetNameDef], unsere Bedeutung in der Westpazifikregion anzuerkennen. \nDie [From.GetAdjective] lehnten uns nicht nur rundweg ab, sie brachten auch unmissverständlich zum Ausdruck, dass ihre Lehre von Nanshin-ron sie sehr wohl über Indonesien hinaus auf den australischen Kontinent selbst führen könnte."
+ ANZAC_new_Zealand.19.a: "Wenn sie uns nicht beistehen, werden wir sie zwingen, für uns niederzuknien."
+
+
+
+ anon_news.1.t: "[NZL.GetNameDefCap] übernimmt die Verantwortung für Kolonialbesitz"
+ anon_news.1.d: "\nUm der zunehmenden Bedrohung der [ENG.GetAdjective]-Bestände in Südostasien standzuhalten, wurden die Kolonialgebiete Singapur und Borneo an [NZL.GetNameDef] übertragen. Mit dem Ziel, die erste und beste Verteidigungslinie des Commonwealth im Pazifik zu sein, übernimmt [NZL.GetNameDef] die volle Verantwortung für die militärischen und administrativen Vorbereitungen im Falle von Kämpfen in der Region.\n\nVermutlich dazu gedacht, den imperialen Ambitionen von [JAP.GetNameDef] entgegenzuwirken, wird [NZL.GetNameDef] nicht mehr ausschließlich auf die Bemühungen seines ehemaligen Kolonialherrn angewiesen sein, seine Küsten vor einer Invasion zu schützen."
+ anon_news.1.a: "Eine interessante Strategie."
+ anon_news.1.b: "Hoffen wir, dass [NZL.GetNameDef] weiß, was sie tun."
+ anon_news.1.c: "Wir haben endlich die Mittel, die wir brauchen, um den Kontinent zu verteidigen."
+ anon_news.1.e: "Glauben sie wirklich, dass es einen Unterschied machen wird?"
+
+ anon_news.2.t: "Neuseeland trennt die Beziehungen zu Großbritannien"
+ anon_news.2.desc: "\nIn einer hart umkämpften Abstimmung entschied eine knappe Mehrheit im [NZL.GetAdjective]-Parlament, dass das Land das Britische Empire verlassen sollte. Die letzten Überreste der britischen Rechtsherrschaft wurden für null und nichtig erklärt. [NZL.GetLeader] hat die Entscheidung bereits in Kraft gesetzt und damit die langjährige Rechtstradition der königlichen Zustimmung des Generalgouverneurs umgangen und [NZL.GetNameDef] zu einer völlig souveränen Nation gemacht.\n\nDas Parlament stimmte außerdem für die Bildung eines Verfassungsausschusses, der Änderungen an der Verfassung diskutieren und beraten wird, um alle Spuren einer britischen Einmischung in die Angelegenheiten von [NZL.GetAdjective] zu beseitigen."
+ anon_news.2.a: "Zu diesem Zeitpunkt ist es nur noch eine Formsache."
+ anon_news.2.b: "Freiheit!"
+ anon_news.2.c: "Neuseeland verlässt das Commonwealth."
+
+ anon_news.3.t: "[USA.GetNameDefCap] tritt der Verteidigungsinitiative [NZL.GetAdjective] bei"
+ anon_news.3.d: "\nAus Sorge über die wachsende strategische Bedeutung des Pazifiks haben [NZL.GetNameDef] und [USA.GetNameDef] einen Vertrag über pazifische Zusammenarbeit unterzeichnet. Obwohl der Vertrag darauf abzielt, die politische Stabilität der Region und damit auch der transpazifischen Schifffahrt aufrechtzuerhalten, sieht er auch Eventualitäten für die militärische Verteidigung vor, die es den beiden Ländern ermöglichen, weit über ihre eigentlichen Gebietsansprüche hinaus Autorität auszuüben.\n\nDa ein so großes Gebiet nun unter neuseeländisch-amerikanischem „Schutz“ steht, ist es sicherlich nur eine Frage der Zeit, bis diese Eventualitäten auf die Probe gestellt werden."
+ anon_news.3.a: "Ein faszinierender Schachzug..."
+ anon_news.3.b: "Dies wird unseren Platz als dominierende Macht im Pazifik sichern."
+ anon_news.3.c: "Gemeinsam werden wir die Stabilität auf der halben Welt aufrechterhalten."
+
+ anon_news.4.t: "[NZL.GetNameDefCap] sucht Distanz zum Commonwealth"
+ anon_news.4.d: "\nIn einer Rede heute Morgen kündigte Premierminister [NZL.GetLeader] das Engagement der neuseeländischen Regierung für Wachstum und Stabilität als ozeanischen Staat an. Das bedeutet, nach neuen Ufern als dem britischen Europa zu blicken, da das neuseeländische Volk die Last ausländischer Konflikte nicht länger auf seinen Schultern tragen kann. In direkter Anspielung auf die King's Speech bei der Eröffnung des letzten Parlaments brachte [NZL.GetLeader] es auf den Punkt, indem er sagte: „Never Another Gallipoli!“\n\nDer begeisterte Jubel der Menge deutet darauf hin, dass eine neue Ära der neuseeländischen Politik begonnen hat. Wo es enden wird, darüber kann die Welt nur spekulieren."
+ anon_news.4.a: "Der [Root.GetFactionName] muss auf [NZL.GetNameDef] verzichten."
+ anon_news.4.b: "Beobachten Sie, wie ein Imperium auseinanderfällt ..."
+ anon_news.4.c: "Sie haben sich JETZT für eine größere Unabhängigkeit entschieden?"
+ anon_news.4.e: "Dies wird große Auswirkungen auf den Pazifik haben."
+ anon_news.4.f: "Wir gehen unseren eigenen Weg!"
+
+ anon_news.5.t: "[NZL.GetNameDefCap] etabliert Einflussbereich"
+ anon_news.5.d: "In einem Schritt, der nur wenige Beobachter überraschte, hat [NZL.GetNameDef] eine eigene, unabhängige Vertragsorganisation angekündigt. [NZL.GetLeader] hat angekündigt, dass [NZL.GetNameDef] Verbündete suchen wird, um die Stabilität in der südostasiatisch-pazifischen Region und darüber hinaus aufrechtzuerhalten und gegebenenfalls Aggressionen gegen den [NZL.GetAdjective]-Staat und andere entgegenzuwirken. \n\nAngesichts der jüngsten Abkehr von seinen Commonwealth-Verbindungen scheint dies der natürliche nächste Schritt zu sein, da [NZL.GetNameDef] versucht, alleiniger Herr über sein Schicksal zu werden."
+ anon_news.5.a: "Sie spielen um die Vorherrschaft."
+ anon_news.5.b: "Unser eigener Hinterhof wird nicht von Europäern beherrscht!"
+
+ anon_news.6.t: "Der Vertrag von Jayapura"
+ anon_news.6.d: "Die Regierung von [NZL.GetAdjective] und [HOL.GetAdjective] kündigte heute einen „Gemeinsamen Kooperations- und Verteidigungspakt“ an, der vorsieht, dass die [HOL.GetAdjective]-Kolonialbesitzungen in Südostasien unter den Schutz der [NZL.GetAdjective]-Streitkräfte gestellt werden. Der Vertrag wurde vom niederländischen Gouverneur Indonesiens und [NZL.GetLeader] unterzeichnet, der ankündigte, dass das Abkommen aufgrund der „entfernten und herausfordernden Situation in Europa“ eine vollständige Kolonialverwaltung umfassen werde. \n\nDie [HOL.GetAdjective]-Regierung hat keine Erklärung zu dem Vertrag abgegeben."
+ anon_news.6.a: "Das kommt überraschend."
+ anon_news.6.b: "Man tut, was man zum Überleben tun muss."
+ anon_news.6.c: "[NZL.GetNameDefCap] wacht über den Pazifik."
+
+ anon_news.7.t: "[NZL.GetNameDefCap] übernimmt die Kontrolle über südostasiatische Kolonien"
+ anon_news.7.d: "Die Militärdoktrin \n[ENG.GetNameDef] beschäftigt sich seit langem mit der Frage der Verteidigung in Südostasien. Jetzt hoffen sie, dass ihre Probleme ein Ende haben, da [NZL.GetNameDef] die Verantwortung für die Verteidigung von Singapur und Borneo übernimmt, um feindlichen militärischen Aktivitäten in der Region entgegenzuwirken.\n\nDiese Machtübertragung umfasst, zumindest vorerst, die zivile Verwaltung der Kolonialregionen, um [NZL.GetNameDef] alle erforderlichen Maßnahmen zu ermöglichen, um ihren Kontinent vor Angriffen aus Übersee zu schützen. Die politischen Auswirkungen dieses Schritts für [ENG.GetNameDef], [NZL.GetNameDef] und [MAL.GetNameDef] sind noch ungewiss."
+ anon_news.7.a: "Dadurch verändern sich die Kräfteverhältnisse in Südostasien."
+ anon_news.7.b: "Hoffen wir, dass [NZL.GetNameDef] das nicht ruiniert."
+ anon_news.7.c: "Perfekt! Alles nach Plan."
+
+anon_news.8.t: "[NZL.GetNameDefCap] und [JAP.GetNameDef] geben Allianz bekannt"
+ anon_news.8.d: "Angesichts der jüngsten Erfolge von [NZL.GetNameDef] und [JAP.GetNameDef] in Ostasien und im Pazifik gingen viele Beobachter davon aus, dass es nur eine Frage der Zeit sein würde, bis die beiden aufstrebenden Imperien in einen Konflikt geraten würden. Allerdings haben die Länder stattdessen eine Kooperationsvereinbarung getroffen, die schnell als „Pazifikbarriere“ bezeichnet wurde.\nDer Vertrag wurde von keinem der Länder veröffentlicht, daher sind viele Aspekte ihrer Vereinbarung unbekannt. Sicher ist, dass beide Seiten sich gegenseitig militärische Unterstützung versprochen haben, um „den Vorstößen gieriger Außenseiter in unseren jeweiligen Regionen entgegenzuwirken“.\n\nEs ist noch zu früh, um zu sagen, wie die von [JAP.GetNameDef] und [NZL.GetNameDef] angestrebte Weltordnung aussieht, aber es besteht kein Zweifel daran, dass [NZL.GetFactionName] derzeit die dominierende Kraft im Pazifik ist."
+ anon_news.8.a: "Beunruhigend, um es gelinde auszudrücken."
+ anon_news.8.b: "[Root.GetNameDefCap] begrüßt die Zusammenarbeit mit allen, die uns nicht im Weg stehen."
+ anon_news.8.c: "Das ist eine tolle Partnerschaft, zumindest im Moment."
+
+ # === CUSTOM EXPANSION FOCUSES ===
+
+ # Politics
+ NZL_the_tasman_union:0 "Die Tasman Union"
+ NZL_the_tasman_union_desc:0 "Die Bindungen zwischen Neuseeland und Australien sind tief. Es ist an der Zeit, eine formelle Union zu schmieden, die unseren Platz im Pazifik sichert."
+
+ NZL_establish_advisory_war_council:0 "Richten Sie den Kriegsrat ein"
+ NZL_establish_advisory_war_council_desc:0 "Die Anforderungen eines totalen Krieges erfordern einen eigenen Kriegsrat, der unsere militärischen und zivilen Ressourcen koordiniert."
+
+ NZL_national_security_act:0 "Nationales Sicherheitsgesetz"
+ NZL_national_security_act_desc:0 "Durch neue Kriegsgesetze erhält die Regierung umfassendere Befugnisse zur Gewährleistung der nationalen Sicherheit und der öffentlichen Ordnung."
+
+ NZL_volunteer_defence_corps:0 "Freiwilliges Verteidigungskorps"
+ NZL_volunteer_defence_corps_desc:0 "Richten Sie eine Freiwilligentruppe zur Heimatverteidigung ein, um unsere Städte und Küsten zu schützen."
+
+ NZL_civil_construction_corps:0 "Zivilbaukorps"
+ NZL_civil_construction_corps_desc:0 "Ein Korps ziviler Arbeiter, die sich dem Aufbau der Infrastruktur widmen, die Neuseeland für den Krieg benötigt."
+
+ NZL_army_inventions_directorate:0 "Direktion für Erfindungen der Armee"
+ NZL_army_inventions_directorate_desc:0 "Einrichtung eines Gremiums zur Prüfung und Entwicklung neuer militärischer Erfindungen, die von neuseeländischen Ingenieuren und Wissenschaftlern eingereicht wurden."
+
+ NZL_invest_in_victory:0 "Investieren Sie in den Sieg"
+ NZL_invest_in_victory_desc:0 "Starten Sie eine landesweite Kampagne, um zivile Ersparnisse in Kriegsproduktionsanleihen umzuwandeln."
+
+ NZL_citizen_military_forces:0 "Bürgerliche Streitkräfte"
+ NZL_citizen_military_forces_desc:0 "Reformieren und erweitern Sie unsere Teilzeitmiliz zu einer leistungsfähigeren Heimatverteidigungstruppe."
+
+ NZL_support_the_policy_of_appeasement:0 "Unterstützen Sie Appeasement"
+ NZL_support_the_policy_of_appeasement_desc:0 "Folgen Sie dem Beispiel Großbritanniens und unterstützen Sie eine Politik der diplomatischen Entgegenkommen, um offene Konflikte zu vermeiden."
+
+ NZL_strengthen_ties_with_uk:0 "Stärken Sie die Beziehungen zu Großbritannien"
+ NZL_strengthen_ties_with_uk_desc:0 "Vertiefung unserer politischen, militärischen und wirtschaftlichen Beziehungen zum Vereinigten Königreich."
+
+ NZL_the_singapore_strategy:0 "Die Singapur-Strategie"
+ NZL_the_singapore_strategy_desc:0 "Setzen Sie die neuseeländische Verteidigungspolitik auf die Unterstützung der Festung Singapur als Anker der pazifischen Sicherheit."
+
+ NZL_adopt_westminster:0 "Übernehmen Sie das Westminster-System"
+ NZL_adopt_westminster_desc:0 "Das Westminster-Parlamentsmodell offiziell als Eckpfeiler der neuseeländischen Verfassung verankern."
+
+ NZL_CSIR:0 "Rat für wissenschaftliche und industrielle Forschung"
+ NZL_CSIR_desc:0 "Gründung einer nationalen wissenschaftlichen Einrichtung zur Koordinierung der industriellen und militärischen Forschung in Neuseeland."
+
+ NZL_empire_air_training_scheme:0 "Empire Air-Trainingsprogramm"
+ NZL_empire_air_training_scheme_desc:0 "Nehmen Sie am Flugausbildungsprogramm des Commonwealth teil, um unseren Pool an geschultem Flugpersonal schnell zu erweitern."
+
+ NZL_commonwealth_aircraft_corporation:0 "Commonwealth Aircraft Corporation"
+ NZL_commonwealth_aircraft_corporation_desc:0 "Arbeiten Sie mit dem Commonwealth zusammen, um einen inländischen Flugzeughersteller zu gründen."
+
+ NZL_swpa_protector:0 "Beschützer der SWPA"
+ NZL_swpa_protector_desc:0 "Bekräftigen Sie die Rolle Neuseelands als Hauptgarant für Sicherheit im Südwestpazifik."
+
+ NZL_never_another_gallipoli:0 "Nie wieder ein Gallipoli"
+ NZL_never_another_gallipoli_desc:0 "Die Opfer des Ersten Weltkriegs dürfen sich niemals wiederholen. Neuseeland wird seinen eigenen strategischen Kurs festlegen."
+
+ NZL_protect_the_homeland:0 "Beschütze das Heimatland"
+ NZL_protect_the_homeland_desc:0 "Priorisieren Sie die Verteidigung der eigenen Küsten Neuseelands gegenüber Verpflichtungen im Ausland."
+
+ NZL_the_swpa_menace:0 "Die SWPA-Bedrohung"
+ NZL_the_swpa_menace_desc:0 "Erkennen und bekämpfen Sie die wachsenden Bedrohungen der Stabilität im Südwestpazifik."
+
+ NZL_sever_ties_with_uk:0 "Trennen Sie die Beziehungen zu Großbritannien"
+ NZL_sever_ties_with_uk_desc:0 "Brechen Sie die politischen Ketten, die uns an London binden, und schmieden Sie eine völlig unabhängige Außenpolitik."
+
+ NZL_woo_usa:0 "Gerichtliche amerikanische Unterstützung"
+ NZL_woo_usa_desc:0 "Wenden Sie sich an Washington und nicht an London als unseren wichtigsten strategischen Partner im Pazifik."
+
+ NZL_protect_the_dutch_colonies:0 "Beschütze Niederländisch-Ostindien"
+ NZL_protect_the_dutch_colonies_desc:0 "Erweitern Sie Neuseelands Sicherheitsschirm, um die niederländischen Kolonialgebiete in unserer Region abzudecken."
+
+ NZL_the_south_west_pacific_initiative:0 "Die Südwestpazifik-Initiative"
+ NZL_the_south_west_pacific_initiative_desc:0 "Starten Sie eine umfassende diplomatische und militärische Initiative zur Sicherung des Einflussbereichs Neuseelands."
+
+ NZL_research_cooperation:0 "Forschungskooperation"
+ NZL_research_cooperation_desc:0 "Erweitern Sie die wissenschaftliche Zusammenarbeit mit unseren regionalen Partnern, um die technologische Entwicklung zu beschleunigen."
+
+ NZL_preemptive_intervention:0 "Präventive Intervention"
+ NZL_preemptive_intervention_desc:0 "Schlagen Sie zuerst gegen Bedrohungen vor, bevor sie gegen uns mobilisiert werden können."
+
+ NZL_abandon_the_westminster_system:0 "Westminster aufgeben"
+ NZL_abandon_the_westminster_system_desc:0 "Lehnen Sie das britische parlamentarische Modell ab und verfolgen Sie eine neue politische Ordnung für Neuseeland."
+
+ NZL_support_the_centre_party:0 "Unterstützen Sie die Zentrumspartei"
+ NZL_support_the_centre_party_desc:0 "Gewähren Sie gemäßigten zentristischen politischen Kräften die Unterstützung der Regierung."
+
+ NZL_supply_indonesian_nationalists:0 "Versorgen Sie die indonesischen Nationalisten"
+ NZL_supply_indonesian_nationalists_desc:0 "Bewaffnen und rüsten Sie die indonesische Unabhängigkeitsbewegung heimlich aus."
+
+ NZL_support_indonesian_uprising:0 "Unterstützen Sie den indonesischen Aufstand"
+ NZL_support_indonesian_uprising_desc:0 "Bieten Sie dem indonesischen Unabhängigkeitskampf offene Unterstützung."
+
+ NZL_protect_the_south_west_pacific:0 "Schützen Sie den Südwestpazifik"
+ NZL_protect_the_south_west_pacific_desc:0 "Bekräftigen Sie die Schutzfunktion Neuseelands gegenüber der gesamten Südwestpazifikregion."
+
+ NZL_a_deal_with_japan:0 "Ein Deal mit Japan"
+ NZL_a_deal_with_japan_desc:0 "Verhandeln Sie eine Einflusssphärenvereinbarung mit dem kaiserlichen Japan."
+
+ NZL_our_own_empire:0 "Unser eigenes Imperium"
+ NZL_our_own_empire_desc:0 "Neuseeland wird sein eigenes pazifisches Imperium aufbauen, unabhängig von britischer oder amerikanischer Schirmherrschaft."
+
+ NZL_japan_tech_sharing:0 "Japanischer Technologieaustausch"
+ NZL_japan_tech_sharing_desc:0 "Erwerben Sie im Austausch für politische Zugeständnisse fortschrittliche japanische Militärtechnologie."
+
+ NZL_war_on_japan:0 "Krieg gegen Japan"
+ NZL_war_on_japan_desc:0 "Erklären Sie dem kaiserlichen Japan den offenen Krieg, um unsere pazifischen Interessen zu verteidigen."
+
+ NZL_empower_the_workers:0 "Stärken Sie die Arbeiter"
+ NZL_empower_the_workers_desc:0 "Verlagern Sie die politische Macht hin zur Arbeiterbewegung und Arbeiterklasse."
+
+ NZL_delegation_to_china:0 "Delegation nach China"
+ NZL_delegation_to_china_desc:0 "Entsenden Sie eine diplomatische Mission nach China, um Kooperationsmöglichkeiten zu erkunden."
+
+ NZL_commitment_to_the_cause:0 "Engagement für die Sache"
+ NZL_commitment_to_the_cause_desc:0 "Vertiefung des ideologischen Engagements Neuseelands für den internationalen Sozialismus."
+
+ NZL_indirect_support:0 "Indirekte Unterstützung"
+ NZL_indirect_support_desc:0 "Gewähren Sie verdeckte materielle und finanzielle Unterstützung ohne offenes politisches Engagement."
+
+ NZL_direct_support:0 "Direkter Support"
+ NZL_direct_support_desc:0 "Setzen Sie die Ressourcen und den Ruf Neuseelands offen für die Sache ein."
+
+ NZL_AST_join_comintern:0 "Treten Sie der Komintern bei"
+ NZL_AST_join_comintern_desc:0 "Schließen Sie Neuseeland offiziell der von der Sowjetunion geführten internationalen kommunistischen Bewegung an."
+
+ NZL_workers_paradise:0 "Arbeiterparadies"
+ NZL_workers_paradise_desc:0 "Verwandeln Sie Neuseeland in einen sozialistischen Modellstaat."
+
+ NZL_research_city_excursions:0 "Recherchieren Sie Stadtausflüge"
+ NZL_research_city_excursions_desc:0 "Finanzieren Sie wissenschaftliche Studienreisen, um unsere technologische Basis voranzutreiben."
+
+ NZL_the_threat_against_the_people:0 "Die Bedrohung des Volkes"
+ NZL_the_threat_against_the_people_desc:0 "Mobilisieren Sie gegen reaktionäre Kräfte, die Neuseelands Arbeiter bedrohen."
+
+ NZL_fund_australian_defense_research:0 "Fonds für Verteidigungsforschung"
+ NZL_fund_australian_defense_research_desc:0 "Lenken Sie staatliche Mittel in hochmoderne Verteidigungsforschungsprogramme."
+
+ NZL_squash_the_squanderbugs:0 "Zerquetsche die Squanderbugs"
+ NZL_squash_the_squanderbugs_desc:0 "Eine landesweite Sparkampagne zur Beseitigung von Verschwendung und zur Umleitung von Ressourcen in Kriegsanstrengungen."
+
+ NZL_fight_work_or_perish:0 "Kämpfen, arbeiten oder zugrunde gehen"
+ NZL_fight_work_or_perish_desc:0 "Geben Sie einen landesweiten Aufruf zu den Waffen heraus und fordern Sie jeden Neuseeländer auf, sich an den Kriegsanstrengungen zu beteiligen."
+
+ NZL_rats_of_tobruk:0 "Die Ratten von Tobruk"
+ NZL_rats_of_tobruk_desc:0 "Ehren Sie die neuseeländischen und Commonwealth-Verteidiger von Tobruk und schicken Sie Verstärkung."
+
+ NZL_classify_aliens:0 "Aliens klassifizieren"
+ NZL_classify_aliens_desc:0 "Führen Sie die Registrierung von Ausländern während des Krieges ein, um Ausländer zu identifizieren und zu überwachen."
+
+ NZL_rationing_and_recycling:0 "Rationierung und Recycling"
+ NZL_rationing_and_recycling_desc:0 "Führen Sie eine zivile Rationierung und eine nationale Recyclingaktion ein, um die Kriegsressourcen zu maximieren."
+
+ # === ARMY ===
+ NZL_additional_militia_training:0 "Zusätzliche Milizausbildung"
+ NZL_additional_militia_training_desc:0 "Ausweitung und Intensivierung der Ausbildungsprogramme für die neuseeländischen Milizen."
+
+ NZL_royal_australian_artillery:0 "Neuseeländisches Artilleriekorps"
+ NZL_royal_australian_artillery_desc:0 "Reformieren und erweitern Sie unsere Artilleriearmee und stützen Sie sich dabei auf die Lehren aus dem Ersten Weltkrieg."
+
+ NZL_promote_reservists:0 "Reservisten fördern"
+ NZL_promote_reservists_desc:0 "Integrieren Sie Reserveoffiziere in die reguläre Kommandostruktur."
+
+ NZL_daimler_dingo:0 "Daimler Dingo Scout Cars"
+ NZL_daimler_dingo_desc:0 "Besorgen Sie Daimler-Dingo-Spähwagen für unsere Aufklärungseinheiten."
+
+ NZL_hmas_assault:0 "Amphibische Angriffsdoktrin"
+ NZL_hmas_assault_desc:0 "Entwickeln Sie spezielle amphibische Angriffsfähigkeiten für Operationen auf pazifischen Inseln."
+
+ NZL_specialize_equipment:0 "Spezialausrüstungsprogramm"
+ NZL_specialize_equipment_desc:0 "Investieren Sie in spezielle militärische Ausrüstung, die auf die Bedingungen der Kriegsführung im Pazifik zugeschnitten ist."
+
+ NZL_australian_womens_army_service:0 "Wehrdienst der Frauen"
+ NZL_australian_womens_army_service_desc:0 "Richten Sie ein Women's Army Service Corps ein, um männliche Soldaten für Fronteinsätze freizustellen."
+
+ NZL_australian_army_catering_corps:0 "Heeres-Verpflegungskorps"
+ NZL_australian_army_catering_corps_desc:0 "Ein wohlgenährter Soldat ist ein effektiver Soldat. Richten Sie ein eigenes Armee-Verpflegungskorps ein."
+
+ NZL_fund_owen_gun_research:0 "Owen Gun Research"
+ NZL_fund_owen_gun_research_desc:0 "Finanzieren Sie die Entwicklung und Massenproduktion der zuverlässigen Owen-Maschinenpistole für unsere Infanterie."
+
+ NZL_sentinel_tank_project:0 "Sentinel-Panzerprojekt"
+ NZL_sentinel_tank_project_desc:0 "Finanzieren Sie die inländische Entwicklung des Sentinel-Kreuzerpanzers."
+
+ NZL_airborne_defence:0 "Luftverteidigungstruppe"
+ NZL_airborne_defence_desc:0 "Richten Sie eine eigene Luftlandeeinheit für den schnellen Einsatz und die Inselverteidigung ein."
+
+ NZL_introduce_unconventional_warfare:0 "Unkonventionelle Kriegsführung"
+ NZL_introduce_unconventional_warfare_desc:0 "Investieren Sie in Spezialoperationen und unkonventionelle Kriegsführungsfähigkeiten."
+
+ NZL_z_special_unit:0 "Z-Spezialeinheit"
+ NZL_z_special_unit_desc:0 "Bilden Sie eine Elite-Spezialeinheit für verdeckte Missionen hinter den feindlichen Linien."
+
+ NZL_m_special_unit:0 "M-Spezialeinheit"
+ NZL_m_special_unit_desc:0 "Richten Sie eine Spezialeinheit für Signalaufklärung und Küstenwache ein."
+
+ NZL_central_bureau:0 "Geheimdienst des Zentralbüros"
+ NZL_central_bureau_desc:0 "Richten Sie ein Zentralbüro für die Koordinierung von Geheimdienst- und Codeknackoperationen ein."
+
+ # === AIR ===
+ NZL_expand_the_raaf:0 "Erweitern Sie die RNZAF"
+ NZL_expand_the_raaf_desc:0 "Investieren Sie Ressourcen in die Royal New Zealand Air Force, um eine erstklassige Luftwaffe zu bauen."
+
+ NZL_cac_boomerang:0 "CAC Boomerang Fighter"
+ NZL_cac_boomerang_desc:0 "Beschaffung des im Inland entwickelten CAC Boomerang-Jagdflugzeugs für unsere Luftstreitkräfte."
+
+ NZL_expand_northern_presence:0 "Erweitern Sie die Northern Air-Präsenz"
+ NZL_expand_northern_presence_desc:0 "Errichten Sie zusätzliche Luftwaffenstützpunkte im Nordpazifik, um unsere Luftreichweite zu erweitern."
+
+ NZL_cac_woomera:0 "CAC Woomera Bomber"
+ NZL_cac_woomera_desc:0 "Entwickeln und produzieren Sie das Mehrzweckflugzeug CAC Woomera."
+
+ NZL_volunteer_air_observers_corps:0 "Luftbeobachterkorps"
+ NZL_volunteer_air_observers_corps_desc:0 "Bauen Sie ein Netzwerk ziviler freiwilliger Flugzeugbeobachter auf, um frühzeitig zu warnen."
+
+ NZL_naval_bombers:0 "Marinebombergeschwader"
+ NZL_naval_bombers_desc:0 "Bilden Sie einen speziellen Marinebomberflügel, um feindliche Schiffe anzugreifen."
+
+ NZL_death_from_down_under:0 "Tod aus Down Under"
+ NZL_death_from_down_under_desc:0 "Entwickeln Sie eine strategische Bombardierungsdoktrin unter Ausnutzung unserer einzigartigen geografischen Lage."
+
+ NZL_womens_auxilliary_australian_air_force:0 "Hilfskraft der Luftwaffe der Frauen"
+ NZL_womens_auxilliary_australian_air_force_desc:0 "Richten Sie ein Frauenhilfswerk ein, um die RNZAF mit Bodenpersonal, Signalen und Logistik zu unterstützen."
+
+ NZL_dominate_the_skies:0 "Beherrsche den Himmel"
+ NZL_dominate_the_skies_desc:0 "Starten Sie ein umfassendes Programm, um im gesamten pazifischen Raum Luftüberlegenheit zu erreichen."
+
+ # === NAVY ===
+ NZL_cockatoo_island_shipyards:0 "Erweitern Sie die Küstenwerften"
+ NZL_cockatoo_island_shipyards_desc:0 "Investieren Sie in unsere Küstenwerften, um die Schiffbaukapazitäten zu steigern."
+
+ NZL_kangaroo_point_shipyards:0 "Neue Hafenwerften"
+ NZL_kangaroo_point_shipyards_desc:0 "Errichten Sie eine neue große Werftanlage, um unsere Marineproduktion weiter auszubauen."
+
+ NZL_protect_overseas_commerce:0 "Schützen Sie den Überseehandel"
+ NZL_protect_overseas_commerce_desc:0 "Setzen Sie das RNZN ein, um unsere wichtigen Handelsschifffahrtsrouten zu schützen."
+
+ NZL_fly_the_jolly_roger:0 "Fliegen Sie mit dem lustigen Roger"
+ NZL_fly_the_jolly_roger_desc:0 "Unsere U-Boote werden uneingeschränkt Krieg gegen feindliche Schiffe führen."
+
+ NZL_scrap_iron_flotilla:0 "Die Schrottflottille"
+ NZL_scrap_iron_flotilla_desc:0 "Beauftragen Sie eine Flottille älterer Zerstörer mit aggressiven Patrouillen- und Begleitaufgaben."
+
+ NZL_royal_australian_submarine_service:0 "Royal New Zealand Submarine Service"
+ NZL_royal_australian_submarine_service_desc:0 "Aufbau und Ausbau einer eigenen neuseeländischen U-Boot-Armee."
+
+ NZL_naval_auxiliary_patrol:0 "Marine-Hilfspatrouille"
+ NZL_naval_auxiliary_patrol_desc:0 "Beauftragen Sie zivile Schiffe mit dem Hilfsdienst der Marine für Küstenpatrouillenaufgaben."
+
+ NZL_cruisers:0 "Cruiser-Programm"
+ NZL_cruisers_desc:0 "Beauftragen Sie eine neue Generation von Kreuzern, um Neuseelands Marinereichweite zu erweitern."
+
+ NZL_pacific_area_navy:0 "Marine des Pazifikraums"
+ NZL_pacific_area_navy_desc:0 "Bauen Sie eine Flotte auf, die für die Energieübertragung über den Pazifischen Ozean optimiert ist."
+
+ # === INDUSTRY ===
+ NZL_standard_gauge_railway:0 "Normalspurbahn"
+ NZL_standard_gauge_railway_desc:0 "Standardisieren Sie die Spurweiten der neuseeländischen Eisenbahn, um die Effizienz des interregionalen Güterverkehrs zu verbessern."
+
+ NZL_industries_assistance_corporation:0 "Industries Assistance Corporation"
+ NZL_industries_assistance_corporation_desc:0 "Richten Sie eine Regierungsbehörde ein, die wichtige Kriegsindustrien mit Krediten und Unterstützung versorgt."
+
+ NZL_western_australian_government_railways:0 "Neuseeländisches Eisenbahnnetz"
+ NZL_western_australian_government_railways_desc:0 "Erweitern und modernisieren Sie das nationale Eisenbahnnetz, um die Industrie- und Militärlogistik zu unterstützen."
+
+ NZL_south_australian_housing_trust:0 "National Housing Trust"
+ NZL_south_australian_housing_trust_desc:0 "Gründung einer nationalen Wohnungsbaustiftung zur Unterbringung von Arbeitnehmern in wichtigen Industriezentren."
+
+ NZL_department_of_supply_and_development:0 "Abteilung für Versorgung und Entwicklung"
+ NZL_department_of_supply_and_development_desc:0 "Schaffen Sie eine eigene Regierungsabteilung, um die Materialversorgung der Industrie und des Militärs zu koordinieren."
+
+ NZL_expand_lithgow_small_arms_factory:0 "Ausbau der Kleinwaffenproduktion"
+ NZL_expand_lithgow_small_arms_factory_desc:0 "Erweitern Sie unsere Produktionskapazität für Kleinwaffen, um die wachsende Armee Neuseelands auszurüsten."
+
+ NZL_allied_works_council:0 "Alliierter Betriebsrat"
+ NZL_allied_works_council_desc:0 "Richten Sie einen Rat ein, um die Bauarbeit in allen wichtigen Kriegsindustrien zu koordinieren."
+
+ NZL_expand_the_northern_railway:0 "Erweitern Sie die Northern Rail Line"
+ NZL_expand_the_northern_railway_desc:0 "Verlängern Sie die Nordbahnlinie, um Industrie- und Rohstoffzentren zu verbinden."
+
+ NZL_australian_arms_production:0 "Neuseeländische Waffenproduktion"
+ NZL_australian_arms_production_desc:0 "Erhöhen Sie die inländische Waffenproduktion drastisch, um unsere Streitkräfte auszurüsten."
+
+ NZL_uranium_mining:0 "Uranabbauprogramm"
+ NZL_uranium_mining_desc:0 "Starten Sie ein geheimes Programm zur Lokalisierung und Gewinnung von Uranvorkommen für zukünftige Forschungen."
+ NZL_fashist_ANZAC:0 "John Ormond"
+ NZL_communist_ANZAC:0 "Michael Joseph Savage"
+ NZL_democracy_ANZAC:0 "Der wilde Michai Ioseph"

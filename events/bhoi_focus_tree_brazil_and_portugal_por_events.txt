@@ -1,0 +1,342 @@
+﻿###########################
+# Portugal Events
+###########################
+
+add_namespace = lar_portugal_promote_monarchist_cause
+
+######## PROMOTE MONARCHIST CAUSE ########
+# Event for Brazil when Portugal completes "The Kingdom Reunited" Focus
+country_event = {
+	id = lar_portugal_promote_monarchist_cause.101
+	title = lar_portugal_promote_monarchist_cause.101.t
+	desc = lar_portugal_promote_monarchist_cause.101.desc
+	picture = GFX_report_event_por_president_military_inspection
+
+	is_triggered_only = yes
+
+	option = { # Annexation
+		name = lar_portugal_promote_monarchist_cause.101.a
+		ai_chance = {
+			factor = 5
+			modifier = { #Not non-aligned Brazil will never accept
+				factor = 0
+				NOT = { has_government = neutrality }
+			}
+			modifier = {
+				factor = 10
+				has_completed_focus = BRA_empire_of_brazil
+				has_stability < 40
+			}
+		}
+		
+		hidden_effect = {
+			POR = { news_event = { id = lar_news.26 days = 3 random_days = 5 } }
+			every_state = {
+				limit = { is_core_of = BRA }
+				add_core_of  = POR
+			}
+		}
+		POR = {
+			country_event = lar_portugal_promote_monarchist_cause.5
+			annex_country = { 
+				target = ROOT
+				transfer_troops = yes
+			}
+			hidden_effect = {
+				set_cosmetic_tag = KPB_kingdom_portugal_and_brazil	
+			}
+		}
+		custom_effect_tooltip = POR_kingdom_reunited_tooltip_tt
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = { # Brazil proposes Commonwealth
+		name = lar_portugal_promote_monarchist_cause.101.c
+		trigger = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				has_war_with = FROM
+			}
+			modifier = {
+				factor = 10
+				has_completed_focus = BRA_empire_of_brazil
+				has_stability > 40
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
+		}
+		FROM = {
+			country_event = {
+				id = lar_portugal_promote_monarchist_cause.102
+				hours = 1
+			}
+		}
+		event_option_tooltip = lar_portugal_promote_monarchist_cause.103.a
+	}
+
+	option = { # Refuse
+		name = lar_portugal_promote_monarchist_cause.101.b
+		ai_chance = {
+			factor = 1
+			modifier = { # If POR helped during the CW, Monarchist BRA will be willing to accept
+				factor = 0
+				has_global_flag = POR_portugal_joined_brazilian_civil_war_flag
+				has_government = neutrality
+			}
+		}
+		POR = {
+			create_wargoal = {
+			  	target = ROOT
+			    type = annex_everything
+			}
+			hidden_effect = { country_event = lar_portugal_promote_monarchist_cause.6 }
+		}		
+	}
+}
+
+# Brazil proposes commonwealth
+country_event = {
+	id = lar_portugal_promote_monarchist_cause.102
+	title = lar_portugal_promote_monarchist_cause.102.t
+	desc = lar_portugal_promote_monarchist_cause.102.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	# Agree to the commonwealth
+	option = {
+		name =  lar_portugal_promote_monarchist_cause.102.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 5
+				OR = {
+					has_opinion = {
+						target = FROM
+						value > 50
+					}
+					is_in_faction_with = FROM
+				}
+			}
+			modifier = {
+				factor = 0
+				has_war_with = FROM
+			}
+		}
+		FROM = {
+			country_event = {
+				id = lar_portugal_promote_monarchist_cause.103
+				hours = 1
+			}
+		}
+		event_option_tooltip = lar_portugal_promote_monarchist_cause.103.a
+	}	
+	# Reject commonwealth	
+	option = {
+		name =  lar_portugal_promote_monarchist_cause.102.b
+		ai_chance = {
+			base = 1
+		}
+		FROM = {
+			country_event = {
+				id = lar_portugal_promote_monarchist_cause.104
+				hours = 1
+			}
+		}
+	}
+}
+
+# Portugal agrees to establish commonwealth
+country_event = {
+	id = lar_portugal_promote_monarchist_cause.103
+	title = lar_portugal_promote_monarchist_cause.103.t
+	desc = lar_portugal_promote_monarchist_cause.103.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	# Fortunate
+	option = {
+		name =  lar_portugal_promote_monarchist_cause.103.a
+		ai_chance = {
+			base = 10
+		}
+		add_opinion_modifier = {
+			target = FROM
+			modifier = large_increase
+		}
+		add_ideas = BRA_commonwealth_idea
+		give_guarantee = FROM
+		add_to_tech_sharing_group = BRA_commonwealth_tech_sharing
+		FROM = {
+			add_ideas = BRA_commonwealth_idea
+			give_guarantee = ROOT
+			add_to_tech_sharing_group = BRA_commonwealth_tech_sharing
+		}
+		hidden_effect = {
+			news_event = { id = JUNO_brazil_news.4 hours = 1 }
+
+			if = {
+				limit = {
+					ANG = {
+						is_puppet_of = POR
+					}
+				}
+				ANG = {
+					add_ideas = BRA_commonwealth_idea
+				}
+			}
+
+			if = {
+				limit = {
+					MZB = {
+						is_puppet_of = POR
+					}
+				}
+				MZB = {
+					add_ideas = BRA_commonwealth_idea
+				}
+			}
+		}
+	}		
+}
+
+# Portugal rejects commonwealth
+country_event = {
+	id = lar_portugal_promote_monarchist_cause.104
+	title = lar_portugal_promote_monarchist_cause.104.t
+	desc = lar_portugal_promote_monarchist_cause.104.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	# Unfortunate
+	option = {
+		name =  lar_portugal_promote_monarchist_cause.104.a
+		ai_chance = {
+			base = 10
+		}
+		add_opinion_modifier = {
+			target = FROM
+			modifier = large_decrease
+		}
+	}		
+}
+
+
+# Event for Spain when Portugal completes Iberian Union
+country_event = {
+	id = lar_portugal_promote_monarchist_cause.105
+	title = lar_portugal_promote_monarchist_cause.105.t
+	desc = lar_portugal_promote_monarchist_cause.105.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = lar_portugal_promote_monarchist_cause.105.a
+
+		ai_chance = {
+			base = 6
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = FROM ratio > 2 }
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = { tag = FROM ratio > 1 }
+			}
+			modifier = {
+				factor = 5
+				has_opinion = { target = FROM value > 99 }
+			}
+		}
+
+		FROM = {
+			country_event = {
+				id = lar_portugal_promote_monarchist_cause.106
+				hours = 1
+			}
+		}
+
+		event_option_tooltip = lar_portugal_promote_monarchist_cause.106.a
+	}
+
+	option = { #Refuse
+		name = lar_portugal_promote_monarchist_cause.105.b
+
+		ai_chance = {
+			base = 4
+			modifier = {
+				factor = 0.1
+				has_opinion = { target = FROM value > 99 }
+			}
+			modifier = {
+				factor = 0
+				has_completed_focus = SPA_restore_the_iberian_union
+			}
+		}
+		FROM = {
+			country_event = {
+				id = lar_portugal_promote_monarchist_cause.107
+				hours = 1
+			}
+		}
+
+		event_option_tooltip = lar_portugal_promote_monarchist_cause.107.a
+	}		
+}
+
+# Spain agrees to union
+country_event = {
+	id = lar_portugal_promote_monarchist_cause.106
+	title = lar_portugal_promote_monarchist_cause.106.t
+	desc = lar_portugal_promote_monarchist_cause.106.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	# Fortunate
+	option = {
+		name =  lar_portugal_promote_monarchist_cause.106.a
+		ai_chance = {
+			base = 10
+		}
+		POR = {
+			set_autonomy = {
+				target = SPB
+				autonomy_state = autonomy_personal_union
+			}
+		}
+	}		
+}
+
+# Spain rejects union
+country_event = {
+	id = lar_portugal_promote_monarchist_cause.107
+	title = lar_portugal_promote_monarchist_cause.107.t
+	desc = lar_portugal_promote_monarchist_cause.107.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	# Unfortunate
+	option = {
+		name =  lar_portugal_promote_monarchist_cause.107.a
+		ai_chance = {
+			base = 10
+		}
+		POR = {
+			add_opinion_modifier = {
+				target = SPB
+				modifier = POR_rejected_the_royal_iberian_alliance
+			}
+			create_wargoal = {
+				target = SPB
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}		
+}

@@ -1,0 +1,553 @@
+RULE_DISABLE_GER = {
+	name = RULE_DISABLE_GER
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_SOV = {
+	name = RULE_DISABLE_SOV
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_ITA = {
+	name = RULE_DISABLE_ITA
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_FRA = {
+	name = RULE_DISABLE_FRA
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_ENG = {
+	name = RULE_DISABLE_ENG
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_POL = {
+	name = RULE_DISABLE_POL
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_SWE = {
+	name = RULE_DISABLE_SWE
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_NOR = {
+	name = RULE_DISABLE_NOR
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_DEN = {
+	name = RULE_DISABLE_DEN
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_FIN = {
+	name = RULE_DISABLE_FIN
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_ICE = {
+	name = RULE_DISABLE_ICE
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_HOL = {
+	name = RULE_DISABLE_HOL
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_BEL = {
+	name = RULE_DISABLE_BEL
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_LUX = {
+	name = RULE_DISABLE_LUX
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_SWI = {
+	name = RULE_DISABLE_SWI
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_AUS = {
+	name = RULE_DISABLE_AUS
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_CZE = {
+	name = RULE_DISABLE_CZE
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_HUN = {
+	name = RULE_DISABLE_HUN
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_YUG = {
+	name = RULE_DISABLE_YUG
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_ROM = {
+	name = RULE_DISABLE_ROM
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_BUL = {
+	name = RULE_DISABLE_BUL
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_GRE = {
+	name = RULE_DISABLE_GRE
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_ALB = {
+	name = RULE_DISABLE_ALB
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_SPR = {
+	name = RULE_DISABLE_SPR
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_POR = {
+	name = RULE_DISABLE_POR
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_LIT = {
+	name = RULE_DISABLE_LIT
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_LAT = {
+	name = RULE_DISABLE_LAT
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_EST = {
+	name = RULE_DISABLE_EST
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_IRE = {
+	name = RULE_DISABLE_IRE
+	group = ANON_1_COUNTRY_EUROPE
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_JAP = {
+	name = RULE_DISABLE_JAP
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_CHI = {
+	name = RULE_DISABLE_CHI
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_PRC = {
+	name = RULE_DISABLE_PRC
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_MAN = {
+	name = RULE_DISABLE_MAN
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_MEN = {
+	name = RULE_DISABLE_MEN
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_SIA = {
+	name = RULE_DISABLE_SIA
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_AFG = {
+	name = RULE_DISABLE_AFG
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_TIB = {
+	name = RULE_DISABLE_TIB
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_SIK = {
+	name = RULE_DISABLE_SIK
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_XSM = {
+	name = RULE_DISABLE_XSM
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_GXC = {
+	name = RULE_DISABLE_GXC
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_YUN = {
+	name = RULE_DISABLE_YUN
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_SHX = {
+	name = RULE_DISABLE_SHX
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_NEP = {
+	name = RULE_DISABLE_NEP
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_BHU = {
+	name = RULE_DISABLE_BHU
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_PHI = {
+	name = RULE_DISABLE_PHI
+	group = ANON_2_COUNTRY_ASIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_USA = {
+	name = RULE_DISABLE_USA
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_CAN = {
+	name = RULE_DISABLE_CAN
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_MEX = {
+	name = RULE_DISABLE_MEX
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_CUB = {
+	name = RULE_DISABLE_CUB
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_HAI = {
+	name = RULE_DISABLE_HAI
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_DOM = {
+	name = RULE_DISABLE_DOM
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_GUA = {
+	name = RULE_DISABLE_GUA
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_ELS = {
+	name = RULE_DISABLE_ELS
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_HON = {
+	name = RULE_DISABLE_HON
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_NIC = {
+	name = RULE_DISABLE_NIC
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_COS = {
+	name = RULE_DISABLE_COS
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_PAN = {
+	name = RULE_DISABLE_PAN
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_COL = {
+	name = RULE_DISABLE_COL
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_VEN = {
+	name = RULE_DISABLE_VEN
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_ECU = {
+	name = RULE_DISABLE_ECU
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_PRU = {
+	name = RULE_DISABLE_PRU
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_BRA = {
+	name = RULE_DISABLE_BRA
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_BOL = {
+	name = RULE_DISABLE_BOL
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_PAR = {
+	name = RULE_DISABLE_PAR
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_URG = {
+	name = RULE_DISABLE_URG
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_ARG = {
+	name = RULE_DISABLE_ARG
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_CHL = {
+	name = RULE_DISABLE_CHL
+	group = ANON_3_COUNTRY_AMERICAS
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_TUR = {
+	name = RULE_DISABLE_TUR
+	group = ANON_4_COUNTRY_MENA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_IRQ = {
+	name = RULE_DISABLE_IRQ
+	group = ANON_4_COUNTRY_MENA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_PER = {
+	name = RULE_DISABLE_PER
+	group = ANON_4_COUNTRY_MENA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_SAU = {
+	name = RULE_DISABLE_SAU
+	group = ANON_4_COUNTRY_MENA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_YEM = {
+	name = RULE_DISABLE_YEM
+	group = ANON_4_COUNTRY_MENA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_OMA = {
+	name = RULE_DISABLE_OMA
+	group = ANON_4_COUNTRY_MENA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_ETH = {
+	name = RULE_DISABLE_ETH
+	group = ANON_4_COUNTRY_MENA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_SAF = {
+	name = RULE_DISABLE_SAF
+	group = ANON_4_COUNTRY_MENA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_LIB = {
+	name = RULE_DISABLE_LIB
+	group = ANON_4_COUNTRY_MENA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_AST = {
+	name = RULE_DISABLE_AST
+	group = ANON_5_COUNTRY_OCEANIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_NZL = {
+	name = RULE_DISABLE_NZL
+	group = ANON_5_COUNTRY_OCEANIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+
+RULE_DISABLE_INS = {
+	name = RULE_DISABLE_INS
+	group = ANON_5_COUNTRY_OCEANIA
+	default = { name = RULE_DISABLE_OFF text = RULE_DISABLE_OFF }
+	option = { name = RULE_DISABLE_ON text = RULE_DISABLE_ON }
+}
+

@@ -1,0 +1,262 @@
+JKO_huangminhua_yundong_decisions = {
+	JKO_zhiyi_linshizhengfu_decisions = {
+		icon = GFX_decision_generic_speech
+		allowed = {
+			tag = JKO
+		}
+
+		available = {
+			has_completed_focus = JKO_fucong_zongdu_jianghua
+		}
+
+		visible = {
+			any_controlled_state = {
+				is_owned_by = KOR
+			}
+		}
+
+		days_re_enable = 180 #Changing this requires changing the custom tooltip below
+		cost = 35
+
+		complete_effect = {
+			KOR = { 
+				country_event = { 
+					id = JKO_huangminhua_event.8 
+					hours = 1 
+				} 
+			}
+			every_controlled_state = {
+				limit = {
+					is_owned_by = KOR
+				}
+				add_compliance = 5
+			}
+
+			custom_effect_tooltip = ITA_discredit_haile_selassie_cd_tt
+		}
+
+		ai_will_do = {
+			base = 0.8
+		}
+	}
+	JKO_huangmin_yundong_kaishi = {
+		visible = {
+			has_completed_focus = JKO_tuiguang_huangminhua_yundong
+		}
+		available = {
+			any_controlled_state = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+			}
+		}
+		cost = 20
+		days_remove = 60
+		fire_only_once = no
+		ai_will_do = {
+			base = 3
+		}
+		complete_effect = {
+		}
+		modifier = {
+			political_power_factor = -0.1
+		}
+		remove_effect = {
+			random_list = {
+				20 = {
+					modifier = {
+						factor = 50
+						has_completed_focus = JKO_neixian_yitilun_xuanchuan
+						has_completed_focus = JKO_guoyu_changyong_yundong
+					}
+					modifier = {
+						factor = 40
+						OR = {
+							has_completed_focus = JKO_neixian_yitilun_xuanchuan
+							has_completed_focus = JKO_guoyu_changyong_yundong
+						}
+					}
+					modifier = {
+						factor = 30
+						has_completed_focus = JKO_diyici_jiaoyu_ling
+					}
+					country_event = JKO_huangminhua_event.1
+				}
+				60 = {
+					modifier = {
+						factor = 20
+						has_completed_focus = JKO_neixian_yitilun_xuanchuan
+						has_completed_focus = JKO_guoyu_changyong_yundong
+					}
+					modifier = {
+						factor = 30
+						OR = {
+							has_completed_focus = JKO_neixian_yitilun_xuanchuan
+							has_completed_focus = JKO_guoyu_changyong_yundong
+						}
+					}
+					modifier = {
+						factor = 50
+						has_completed_focus = JKO_diyici_jiaoyu_ling
+					}
+					country_event = JKO_huangminhua_event.2
+				}
+				15 = {
+					modifier = {
+						factor = 5
+						has_completed_focus = JKO_neixian_yitilun_xuanchuan
+						has_completed_focus = JKO_guoyu_changyong_yundong
+					}
+					modifier = {
+						factor = 10
+						OR = {
+							has_completed_focus = JKO_neixian_yitilun_xuanchuan
+							has_completed_focus = JKO_guoyu_changyong_yundong
+						}
+					}
+					country_event = JKO_huangminhua_event.3
+				}
+			}
+		}
+	}
+	JKO_import_imperial_way_buddhism_decision = {
+		priority = 15
+		icon = GFX_decision_hol_exchange_intelligence_data
+		ai_will_do = {
+			base = 25
+		}
+		allowed = {
+			original_tag = JKO
+		}
+		visible = {
+			has_completed_focus = JKO_tuixing_guojia_shendao
+		}
+		available = {
+		}
+		#days_remove = 70
+		#days_re_enable = 180
+		cost = 50
+		cancel_trigger = {
+		}
+		cancel_effect = {
+		}
+		modifier = {
+		}
+		complete_effect = {
+			MAN_add_or_modify_state_shintoism = yes
+			add_to_variable = {
+				MAN_state_shintoism_pocket_penalty = -0.05
+				tooltip = pocket_penalty_tt
+			}
+			add_to_variable = {
+				MAN_state_shintoism_surrender_limit = 0.1
+				tooltip = surrender_limit_tt
+			}
+		}
+		fire_only_once = yes
+		remove_effect = {
+		}
+	}
+	JKO_one_people_united_under_shinto_decision = {
+		priority = 14
+		icon = GFX_decision_generic_civil_support
+		ai_will_do = {
+			base = 2
+		}
+		allowed = {
+			original_tag = JKO
+		}
+		visible = {
+			has_completed_focus = JKO_tuixing_guojia_shendao
+		}
+		available = {
+		}
+		cost = 50
+		cancel_trigger = {
+		}
+		cancel_effect = {
+		}
+		modifier = {
+		}
+		complete_effect = {
+			MAN_add_or_modify_state_shintoism = yes
+			add_to_variable = {
+				MAN_state_shintoism_stability_factor = 0.075
+				tooltip = stability_factor_tt
+			}
+		}
+		fire_only_once = yes
+		remove_effect = {
+		}
+	}
+	JKO_state_shinto_in_education_decision = {
+		priority = 12
+		icon = GFX_decision_SOV_academy_of_sciences
+		ai_will_do = {
+			base = 10
+		}
+		allowed = {
+			original_tag = JKO
+		}
+		visible = {
+			has_completed_focus = JKO_tuixing_guojia_shendao
+		}
+		available = {
+		}
+		cost = 75
+		cancel_trigger = {
+		}
+		cancel_effect = {
+		}
+		modifier = {
+		}
+		complete_effect = {
+			MAN_add_or_modify_state_shintoism = yes
+			add_to_variable = {
+				MAN_state_shintoism_research_speed_factor = 0.05
+				tooltip = research_speed_factor_tt
+			}
+		}
+		fire_only_once = yes
+		remove_effect = {
+		}
+	}
+	JKO_Amaterasu_spiritual_realm_decision = {
+		priority = 13
+		icon = GFX_decision_eng_blackshirt_speech
+		ai_will_do = {
+			base = 3
+		}
+		allowed = {
+			original_tag = JKO
+		}
+		visible = {
+			has_completed_focus = JKO_tianzhaodashen_de_fenling
+		}
+		available = {
+			has_completed_focus = JKO_tianzhaodashen_de_fenling
+		}
+		cost = 50
+		cancel_trigger = {
+		}
+		cancel_effect = {
+		}
+		modifier = {
+		}
+		complete_effect = {
+			MAN_add_or_modify_state_shintoism = yes
+			add_to_variable = {
+				MAN_state_shintoism_army_core_defence_factor = 0.05
+				tooltip = army_core_defence_factor_tt
+			}
+			add_to_variable = {
+				MAN_state_shintoism_war_support_factor = 0.05
+				tooltip = war_support_factor_tt
+			}
+		}
+		fire_only_once = yes
+		remove_effect = {
+		}
+	}
+}
+
+

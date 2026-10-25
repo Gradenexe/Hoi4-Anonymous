@@ -1,0 +1,329 @@
+KOr_plus_bop = {
+	initial_value = 0.05
+	left_side = KOR_communism_side
+	right_side = KOR_democratic_side
+	decision_category = KOR_bop_decision
+	range = {
+		id = kor_balance_range
+		min = -0.2
+		max = 0.2
+		modifier = {
+		}
+	}
+	side = {
+		id = KOR_communism_side
+		icon = "GFX_bop_ITA_communism_side"
+		range = {
+			id = KOR_communism_low_control_range
+			min = -0.4
+			max = -0.2
+			modifier = {
+				communism_drift = 0.01
+				research_speed_factor = -0.05  #研究速度
+				industrial_capacity_factory = 0.05  #工厂产出
+				industrial_capacity_dockyard = 0.05  #船坞产出
+				production_speed_arms_factory_factor = 0.05  #军用工厂建造速度
+				production_speed_industrial_complex_factor = -0.05  #民用工厂建造速度
+				consumer_goods_factor = 0.05  #生活消费品
+			}
+		}
+		range = {
+			id = KOR_communism_medium_control_range
+			min = -0.6
+			max = -0.4
+			modifier = {
+				communism_drift = 0.02
+				political_power_factor = 0.05  #政治点百分比
+				research_speed_factor = -0.08  #研究速度
+				industrial_capacity_factory = 0.08  #工厂产出
+				industrial_capacity_dockyard = 0.08  #船坞产出
+				production_speed_arms_factory_factor = 0.08  #军用工厂建造速度
+				production_speed_industrial_complex_factor = -0.08  #民用工厂建造速度
+				consumer_goods_factor = 0.08  #生活消费品
+			}
+		}
+		range = {
+			id = KOR_communism_high_control_range
+			min = -0.8
+			max = -0.6
+			modifier = {
+				communism_drift = 0.03
+				political_power_factor = 0.1  #政治点百分比
+				research_speed_factor = -0.12  #研究速度
+				industrial_capacity_factory = 0.12  #工厂产出
+				industrial_capacity_dockyard = 0.12  #船坞产出
+				production_speed_arms_factory_factor = 0.12  #军用工厂建造速度
+				production_speed_industrial_complex_factor = -0.12  #民用工厂建造速度
+				consumer_goods_factor = 0.12  #生活消费品
+			}
+		}
+		range = {
+			id = KOR_communism_total_control_range
+			min = -1
+			max = -0.8
+			modifier = {
+				communism_drift = 0.05
+				max_surrender_limit_offset = 0.1  #最低投降界限
+				political_power_factor = 0.12  #政治点百分比
+				research_speed_factor = -0.12  #研究速度
+				industrial_capacity_factory = 0.15  #工厂产出
+				industrial_capacity_dockyard = 0.15  #船坞产出
+				production_speed_arms_factory_factor = 0.15  #军用工厂建造速度
+				production_speed_industrial_complex_factor = -0.15  #民用工厂建造速度
+				consumer_goods_factor = 0.15  #生活消费品
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = KOr_plus_bop
+					side = KOR_communism_side
+					gfx = "GFX_bop_ITA_communism_improved_side"
+				}
+			}
+			on_deactivate = {
+				set_power_balance_gfx = {
+					id = KOr_plus_bop
+					side = KOR_communism_side
+					gfx = "GFX_bop_ITA_communism_side"
+				}
+			}
+		}
+	}
+	side = {
+		id = KOR_democratic_side
+		icon = "GFX_bop_ITA_democratic_side"
+		range = {
+			id = KOR_democratic_low_control_range
+			min = 0.2
+			max = 0.4
+			modifier = {
+				democratic_drift = 0.01
+				research_speed_factor = 0.05  #研究速度
+				industrial_capacity_factory = -0.05  #工厂产出
+				industrial_capacity_dockyard = -0.05  #船坞产出
+				consumer_goods_factor = -0.05  #生活消费品
+				production_speed_arms_factory_factor = -0.05  #军用工厂建造速度
+				production_speed_industrial_complex_factor = 0.05  #民用工厂建造速度
+			}
+		}
+		range = {
+			id = KOR_democratic_medium_control_range
+			min = 0.4
+			max = 0.6
+			modifier = {
+				democratic_drift = 0.02
+				political_power_factor = -0.05  #政治点百分比
+				research_speed_factor = 0.05  #研究速度
+				industrial_capacity_factory = -0.08  #工厂产出
+				industrial_capacity_dockyard = -0.08  #船坞产出
+				consumer_goods_factor = -0.08  #生活消费品
+				production_speed_arms_factory_factor = -0.08  #军用工厂建造速度
+				production_speed_industrial_complex_factor = 0.08  #民用工厂建造速度
+			}
+		}
+		range = {
+			id = KOR_democratic_high_control_range
+			min = 0.6
+			max = 0.8
+			modifier = {
+				democratic_drift = 0.03
+				political_power_factor = -0.1  #政治点百分比
+				research_speed_factor = 0.1  #研究速度
+				industrial_capacity_factory = -0.12  #工厂产出
+				industrial_capacity_dockyard = -0.12  #船坞产出
+				consumer_goods_factor = -0.12  #生活消费品
+				production_speed_arms_factory_factor = -0.12  #军用工厂建造速度
+				production_speed_industrial_complex_factor = 0.12  #民用工厂建造速度
+			}
+		}
+		range = {
+			id = KOR_democratic_total_control_range
+			min = 0.8
+			max = 1
+			modifier = {
+				democratic_drift = 0.05
+				max_surrender_limit_offset = -0.1  #最低投降界限
+				political_power_factor = -0.12  #政治点百分比
+				research_speed_factor = 0.12  #研究速度
+				industrial_capacity_factory = -0.15  #工厂产出
+				industrial_capacity_dockyard = -0.15  #船坞产出
+				consumer_goods_factor = -0.15  #生活消费品
+				production_speed_arms_factory_factor = -0.15  #军用工厂建造速度
+				production_speed_industrial_complex_factor = 0.15  #民用工厂建造速度
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = KOr_plus_bop
+					side = KOR_democratic_side
+					gfx = "GFX_bop_ITA_democratic_improved_side"
+				}
+			}
+			on_deactivate = {
+				set_power_balance_gfx = {
+					id = KOr_plus_bop
+					side = KOR_democratic_side
+					gfx = "GFX_bop_ITA_democratic_side"
+				}
+			}
+		}
+	}
+	side = {
+		id = KOR_monarchy_side
+		icon = "GFX_bop_KOR_monarchy_side_grey"
+		range = {
+			id = KOR_monarchy_low_control_range
+			min = -0.35
+			max = -0.2
+			modifier = {
+            	war_support_factor = 0.05
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05 
+				research_speed_factor = -0.05 
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = -0.05
+				local_building_slots_factor = -0.05
+			}
+		}
+		range = {
+			id = KOR_monarchy_medium_control_range
+			min = -0.65
+			max = -0.35
+			modifier = {
+            	war_support_weekly = 0.001
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.08 
+				research_speed_factor = -0.08
+				production_speed_arms_factory_factor = 0.08
+				production_speed_industrial_complex_factor = -0.08
+				local_building_slots_factor = -0.08
+			}
+		}
+		range = {
+			id = KOR_monarchy_high_control_range
+			min = -0.85
+			max = -0.65
+			modifier = {
+            	war_support_weekly = 0.002
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				research_speed_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				local_building_slots_factor = -0.1
+			}
+		}
+		range = {
+			id = KOR_monarchy_total_control_range
+			min = -1
+			max = -0.85
+			modifier = {
+            	war_support_weekly = 0.003
+				consumer_goods_factor = -0.2
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15 
+				research_speed_factor = -0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = -0.15
+				local_building_slots_factor = -0.15
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = KOr_plus_bop
+					side = KOR_monarchy_side
+					gfx = "GFX_bop_KOR_monarchy_side_colorful"
+				}
+			}
+			on_deactivate = {
+				set_power_balance_gfx = {
+					id = KOr_plus_bop
+					side = KOR_monarchy_side
+					gfx = "GFX_bop_KOR_monarchy_side_grey"
+				}
+			}
+		}
+	}
+	side = {
+		id = KOR_Social_democracy_side
+		icon = "GFX_bop_KOR_democratic_side_grey"
+		range = {
+			id = KOR_Social_democracy_low_control_range
+			min = 0.2
+			max = 0.35
+			modifier = {
+				democratic_drift = 0.01
+            	stability_factor = 0.05
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05 
+				compliance_growth = 0.05 
+				production_speed_arms_factory_factor = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		range = {
+			id = KOR_Social_democracy_medium_control_range
+			min = 0.35
+			max = 0.65
+			modifier = {
+				democratic_drift = 0.02
+            	stability_weekly = 0.001
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.08
+				industrial_capacity_dockyard = -0.08 
+				compliance_growth = 0.08 
+				production_speed_arms_factory_factor = -0.08
+				production_speed_industrial_complex_factor = 0.08
+				research_speed_factor = 0.08
+			}
+		}
+		range = {
+			id = KOR_Social_democracy_high_control_range
+			min = 0.65
+			max = 0.85
+			modifier = {
+				democratic_drift = 0.03
+            	stability_weekly = 0.002
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				compliance_growth = 0.1 
+				production_speed_arms_factory_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		range = {
+			id = KOR_Social_democracy_total_control_range
+			min = 0.85
+			max = 1
+			modifier = {
+				democratic_drift = 0.05
+            	stability_weekly = 0.003
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				compliance_growth = 0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_industrial_complex_factor = 0.15
+				research_speed_factor = 0.15
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = KOr_plus_bop
+					side = KOR_Social_democracy_side
+					gfx = "GFX_bop_KOR_democratic_side_colorful"
+				}
+			}
+			on_deactivate = {
+				set_power_balance_gfx = {
+					id = KOr_plus_bop
+					side = KOR_Social_democracy_side
+					gfx = "GFX_bop_KOR_democratic_side_grey"
+				}
+			}
+		}
+	}
+}

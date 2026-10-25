@@ -1,0 +1,30 @@
+guiTypes = {
+	containerWindowType = {
+		name = "file_integrity_watermark"
+		position = { x = -1000 y = -1000 }
+		scale = 0.01
+		layer = -1
+		visible = { is_on_game_menu = no }
+		alwaystransparent = yes        # Ensures the container is fully transparent
+		transparent = yes
+		clip_children = yes            # Prevents any child elements from rendering outside the container
+		size = { width = 0 height = 0 } # Sets the container to zero size
+	}
+
+	# Remove the background block entirely from the code.
+	instantTextBoxType = {
+		name = "watermark_header"
+		font = "hoi_24header"
+		orientation = center
+		alwaystransparent = yes
+		size = { width = 0 height = 0 }
+	}
+	
+	instantTextBoxType = {
+		name = "watermark_text"
+		font = "hoi_18mbs"
+		orientation = center
+		alwaystransparent = yes
+		size = { width = 0 height = 0 }
+	}
+}

@@ -1,0 +1,255 @@
+﻿### SOV Peace Conference AI — AnonymousBeta override
+### Prevents AI from fragmenting breakaway republics during/after Russian Civil War
+
+peace_actions = {
+	
+	# Highly prioritize annexing breakaway republics
+	annex_everything = {
+		filter = {
+			enemy_country = yes
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 500
+				OR = {
+					FROM = { tag = UKR }
+					FROM = { tag = BLR }
+					FROM = { tag = KAZ }
+					FROM = { tag = UZB }
+					FROM = { tag = TMS }
+					FROM = { tag = KYR }
+					FROM = { tag = TAJ }
+					FROM = { tag = AZR }
+					FROM = { tag = ARM }
+					FROM = { tag = GEO }
+					FROM = { tag = MOL }
+					FROM = { tag = EST }
+					FROM = { tag = LAT }
+					FROM = { tag = LIT }
+					FROM = { tag = DON }
+					FROM = { tag = KUB }
+					FROM = { tag = CIN }
+					FROM = { tag = DAG }
+					FROM = { tag = KAL }
+					FROM = { tag = TAT }
+					FROM = { tag = BSK }
+					FROM = { tag = KAR }
+					FROM = { tag = CRI }
+					FROM = { tag = ABK }
+					FROM = { tag = KBK }
+					FROM = { tag = NOA }
+					FROM = { tag = VGE }
+					FROM = { tag = YAK }
+					FROM = { tag = BYA }
+					FROM = { tag = KHA }
+					FROM = { tag = KOM }
+					FROM = { tag = UDM }
+					FROM = { tag = CHU }
+					FROM = { tag = BUK }
+					FROM = { tag = KKP }
+					FROM = { tag = KHI }
+					FROM = { tag = MEL }
+					FROM = { tag = OVO }
+					FROM = { tag = YAM }
+					FROM = { tag = TAY }
+					FROM = { tag = EVE }
+					FROM = { tag = VLA }
+					FROM = { tag = FER }
+					FROM = { tag = CKK }
+					FROM = { tag = ALT }
+					FROM = { tag = NEN }
+				}
+				ROOT = { original_tag = SOV }
+			}
+		}
+	}
+
+	# Completely block puppeting breakaway republics so it doesn't split them
+	puppet = {
+		filter = {
+			enemy_country = yes
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				OR = {
+					FROM = { tag = UKR }
+					FROM = { tag = BLR }
+					FROM = { tag = KAZ }
+					FROM = { tag = UZB }
+					FROM = { tag = TMS }
+					FROM = { tag = KYR }
+					FROM = { tag = TAJ }
+					FROM = { tag = AZR }
+					FROM = { tag = ARM }
+					FROM = { tag = GEO }
+					FROM = { tag = MOL }
+					FROM = { tag = EST }
+					FROM = { tag = LAT }
+					FROM = { tag = LIT }
+					FROM = { tag = DON }
+					FROM = { tag = KUB }
+					FROM = { tag = CIN }
+					FROM = { tag = DAG }
+					FROM = { tag = KAL }
+					FROM = { tag = TAT }
+					FROM = { tag = BSK }
+					FROM = { tag = KAR }
+					FROM = { tag = CRI }
+					FROM = { tag = ABK }
+					FROM = { tag = KBK }
+					FROM = { tag = NOA }
+					FROM = { tag = VGE }
+					FROM = { tag = YAK }
+					FROM = { tag = BYA }
+					FROM = { tag = KHA }
+					FROM = { tag = KOM }
+					FROM = { tag = UDM }
+					FROM = { tag = CHU }
+					FROM = { tag = BUK }
+					FROM = { tag = KKP }
+					FROM = { tag = KHI }
+					FROM = { tag = MEL }
+					FROM = { tag = OVO }
+					FROM = { tag = YAM }
+					FROM = { tag = TAY }
+					FROM = { tag = EVE }
+					FROM = { tag = VLA }
+					FROM = { tag = FER }
+					FROM = { tag = CKK }
+					FROM = { tag = ALT }
+					FROM = { tag = NEN }
+				}
+				ROOT = { original_tag = SOV }
+			}
+		}
+	}
+
+	# Completely block change government on breakaway republics
+	change_government = {
+		filter = {
+			enemy_country = yes
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				OR = {
+					FROM = { tag = UKR }
+					FROM = { tag = BLR }
+					FROM = { tag = KAZ }
+					FROM = { tag = UZB }
+					FROM = { tag = TMS }
+					FROM = { tag = KYR }
+					FROM = { tag = TAJ }
+					FROM = { tag = AZR }
+					FROM = { tag = ARM }
+					FROM = { tag = GEO }
+					FROM = { tag = MOL }
+					FROM = { tag = EST }
+					FROM = { tag = LAT }
+					FROM = { tag = LIT }
+					FROM = { tag = DON }
+					FROM = { tag = KUB }
+					FROM = { tag = CIN }
+					FROM = { tag = DAG }
+					FROM = { tag = KAL }
+					FROM = { tag = TAT }
+					FROM = { tag = BSK }
+					FROM = { tag = KAR }
+					FROM = { tag = CRI }
+					FROM = { tag = ABK }
+					FROM = { tag = KBK }
+					FROM = { tag = NOA }
+					FROM = { tag = VGE }
+					FROM = { tag = YAK }
+					FROM = { tag = BYA }
+					FROM = { tag = KHA }
+					FROM = { tag = KOM }
+					FROM = { tag = UDM }
+					FROM = { tag = CHU }
+					FROM = { tag = BUK }
+					FROM = { tag = KKP }
+					FROM = { tag = KHI }
+					FROM = { tag = MEL }
+					FROM = { tag = OVO }
+					FROM = { tag = YAM }
+					FROM = { tag = TAY }
+					FROM = { tag = EVE }
+					FROM = { tag = VLA }
+					FROM = { tag = FER }
+					FROM = { tag = CKK }
+					FROM = { tag = ALT }
+					FROM = { tag = NEN }
+				}
+				ROOT = { original_tag = SOV }
+			}
+		}
+	}
+
+	# Strongly discourage releasing countries from these territories
+	liberate_country = {
+		filter = {
+			enemy_country = yes
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				FROM = {
+					OR = {
+						tag = UKR
+						tag = BLR
+						tag = KAZ
+						tag = UZB
+						tag = TMS
+						tag = KYR
+						tag = TAJ
+						tag = AZR
+						tag = ARM
+						tag = GEO
+						tag = MOL
+						tag = EST
+						tag = LAT
+						tag = LIT
+						tag = DON
+						tag = KUB
+						tag = CIN
+						tag = DAG
+						tag = KAL
+						tag = TAT
+						tag = BSK
+						tag = KAR
+						tag = CRI
+						tag = ABK
+						tag = KBK
+						tag = NOA
+						tag = VGE
+						tag = YAK
+						tag = BYA
+						tag = KHA
+						tag = KOM
+						tag = UDM
+						tag = CHU
+						tag = BUK
+						tag = KKP
+						tag = KHI
+						tag = MEL
+						tag = OVO
+						tag = YAM
+						tag = TAY
+						tag = EVE
+						tag = VLA
+						tag = FER
+						tag = CKK
+						tag = ALT
+						tag = NEN
+					}
+				}
+				ROOT = { original_tag = SOV }
+			}
+		}
+	}
+}

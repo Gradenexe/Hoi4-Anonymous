@@ -1,0 +1,256 @@
+ideas = {
+	country = {
+		generic_exile_resistance_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				resistance_target_on_our_occupied_states = 0.15
+				resistance_growth_on_our_occupied_states = 0.05
+			}
+		}
+		naval_production_boost = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = generic_sea_focused_navy
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		exiled_air_production = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = JAP_air_services
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			show_equipment_icon = no
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				small_plane_naval_bomber_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		influx_of_exiles_1 = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = soviet_german_friendship
+			modifier = {
+				weekly_manpower = 250
+			}
+		}
+		influx_of_exiles_2 = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = soviet_german_friendship
+			modifier = {
+				weekly_manpower = 500
+			}
+		}
+		influx_of_exiles_3 = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = soviet_german_friendship
+			modifier = {
+				weekly_manpower = 750
+			}
+		}
+		influx_of_exiles_4 = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = soviet_german_friendship
+			modifier = {
+				weekly_manpower = 1000
+			}
+		}
+		influx_of_exiles_5 = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = soviet_german_friendship
+			modifier = {
+				weekly_manpower = 1500
+			}
+		}
+		influx_of_exiles_6 = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = soviet_german_friendship
+			modifier = {
+				weekly_manpower = 2500
+			}
+		}
+		influx_of_exiles_7 = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = soviet_german_friendship
+			modifier = {
+				weekly_manpower = 5000
+			}
+		}
+		influx_of_exiles_8 = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = soviet_german_friendship
+			modifier = {
+				weekly_manpower = 10000
+			}
+		}
+		influx_of_exiles_9 = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = soviet_german_friendship
+			modifier = {
+				weekly_manpower = 15000
+			}
+		}
+		influx_of_exiles_10 = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = soviet_german_friendship
+			modifier = {
+				weekly_manpower = 25000
+			}
+		}
+		
+		expand_intelligence_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = generic_spy_intel
+			modifier = {
+				operative_slot = 1
+			}
+		}
+		strength_in_numbers = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = generic_reserve_divisions
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		exiled_nation_in_arms = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = GFX_focus_SIA_army_of_siam
+			modifier = {
+				conscription_factor = 0.10
+				army_org_factor = 0.05
+				training_time_factor = -0.25
+			}
+		}
+		exiled_army = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = GFX_focus_NORDIC_mon_army
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		
+		
+		homeland_defense = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			picture = YUG_federal_defense_council
+
+
+			modifier = {
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+			}
+		}
+	}
+}

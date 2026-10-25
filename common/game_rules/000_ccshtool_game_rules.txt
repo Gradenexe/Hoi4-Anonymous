@@ -1,0 +1,110 @@
+### HOST MODE: how the host tool is distributed
+ccshtool_gr_mode = {
+	name = ccshtool_gr_mode
+	group = ANON_0_RULES_GROUP
+
+	# Everyone gets the tool (players only)
+	option = { name = ccshtool_gr_mode_everyone   text = ccshtool_gr_mode_everyone   desc = ccshtool_gr_mode_everyone_desc }
+
+	# Everyone gets the tool (including AI - for debug)
+	default = { name = ccshtool_gr_mode_everyone_ai   text = ccshtool_gr_mode_everyone_ai   desc = ccshtool_gr_mode_everyone_ai_desc }
+
+	# Random player gets the tool
+	option = { name = ccshtool_gr_mode_random   text = ccshtool_gr_mode_random   desc = ccshtool_gr_mode_random_desc }
+
+	# No one gets the tool (manual via console)
+	option = { name = ccshtool_gr_mode_nohost   text = ccshtool_gr_mode_nohost   desc = ccshtool_gr_mode_nohost_desc }
+}
+
+### HOST COUNTRY: which specific country gets the host tool (only used when mode = random or country)
+ccshtool_gr_country = {
+	name = ccshtool_gr_country
+	group = ANON_0_RULES_GROUP
+
+	# No specific country (default - used when mode handles it)
+	default = { name = ccshtool_gr_country_none   text = ccshtool_gr_country_none   desc = ccshtool_gr_country_none_desc }
+
+	# === MAJORS ===
+	option = { name = ccshtool_gr_host_GER   text = ccshtool_gr_host_GER   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_SOV   text = ccshtool_gr_host_SOV   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_FRA   text = ccshtool_gr_host_FRA   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_ENG   text = ccshtool_gr_host_ENG   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_USA   text = ccshtool_gr_host_USA   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_JAP   text = ccshtool_gr_host_JAP   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_ITA   text = ccshtool_gr_host_ITA   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_CHI   text = ccshtool_gr_host_CHI   desc = ccshtool_gr_host_country_desc }
+
+	# === EUROPEAN MINORS ===
+	option = { name = ccshtool_gr_host_POL   text = ccshtool_gr_host_POL   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_FIN   text = ccshtool_gr_host_FIN   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_SWE   text = ccshtool_gr_host_SWE   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_NOR   text = ccshtool_gr_host_NOR   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_DEN   text = ccshtool_gr_host_DEN   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_BEL   text = ccshtool_gr_host_BEL   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_HOL   text = ccshtool_gr_host_HOL   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_CZE   text = ccshtool_gr_host_CZE   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_YUG   text = ccshtool_gr_host_YUG   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_ROM   text = ccshtool_gr_host_ROM   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_BUL   text = ccshtool_gr_host_BUL   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_GRE   text = ccshtool_gr_host_GRE   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_HUN   text = ccshtool_gr_host_HUN   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_SLO   text = ccshtool_gr_host_SLO   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_AUS   text = ccshtool_gr_host_AUS   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_SWI   text = ccshtool_gr_host_SWI   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_ICE   text = ccshtool_gr_host_ICE   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_LIT   text = ccshtool_gr_host_LIT   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_LAT   text = ccshtool_gr_host_LAT   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_EST   text = ccshtool_gr_host_EST   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_SPR   text = ccshtool_gr_host_SPR   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_POR   text = ccshtool_gr_host_POR   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_TUR   text = ccshtool_gr_host_TUR   desc = ccshtool_gr_host_country_desc }
+
+	# === REST OF WORLD ===
+	option = { name = ccshtool_gr_host_CAN   text = ccshtool_gr_host_CAN   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_ARG   text = ccshtool_gr_host_ARG   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_BRA   text = ccshtool_gr_host_BRA   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_MEX   text = ccshtool_gr_host_MEX   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_CHL   text = ccshtool_gr_host_CHL   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_PRY   text = ccshtool_gr_host_PRY   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_URU   text = ccshtool_gr_host_URU   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_AST   text = ccshtool_gr_host_AST   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_NZL   text = ccshtool_gr_host_NZL   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_SAF   text = ccshtool_gr_host_SAF   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_ETH   text = ccshtool_gr_host_ETH   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_COG   text = ccshtool_gr_host_COG   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_RAJ   text = ccshtool_gr_host_RAJ   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_INS   text = ccshtool_gr_host_INS   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_PHI   text = ccshtool_gr_host_PHI   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_SIA   text = ccshtool_gr_host_SIA   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_AFG   text = ccshtool_gr_host_AFG   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_IRQ   text = ccshtool_gr_host_IRQ   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_PER   text = ccshtool_gr_host_PER   desc = ccshtool_gr_host_country_desc }
+	option = { name = ccshtool_gr_host_MAN   text = ccshtool_gr_host_MAN   desc = ccshtool_gr_host_country_desc }
+}
+
+
+rt56rp_gr_vanillarestrict_vol = {
+	name = rt56rp_gr_vanillarestrict_vol
+	group = ANON_0_RULES_GROUP
+	default = { name = rt56rp_gr_vanillarestrict_vol_enable_ai text = rt56rp_gr_vanillarestrict_vol_enable_ai desc = rt56rp_gr_vanillarestrict_vol_enable_ai_desc }
+	option = { name = rt56rp_gr_vanillarestrict_vol_enable_n text = rt56rp_gr_vanillarestrict_vol_enable_n desc = rt56rp_gr_vanillarestrict_vol_enable_n_desc }
+	option  = { name = rt56rp_gr_vanillarestrict_vol_enable_y text = rt56rp_gr_vanillarestrict_vol_enable_y desc = rt56rp_gr_vanillarestrict_vol_enable_y_desc }
+}
+
+rt56rp_gr_vanillarestrict_facc = {
+	name = rt56rp_gr_vanillarestrict_facc
+	group = ANON_0_RULES_GROUP
+	default = { name = rt56rp_gr_vanillarestrict_facc_enable_ai text = rt56rp_gr_vanillarestrict_facc_enable_ai desc = rt56rp_gr_vanillarestrict_facc_enable_ai_desc }
+	option = { name = rt56rp_gr_vanillarestrict_facc_enable_n text = rt56rp_gr_vanillarestrict_facc_enable_n desc = rt56rp_gr_vanillarestrict_facc_enable_n_desc }
+	option  = { name = rt56rp_gr_vanillarestrict_facc_enable_y text = rt56rp_gr_vanillarestrict_facc_enable_y desc = rt56rp_gr_vanillarestrict_facc_enable_y_desc }
+}
+
+rt56rp_gr_vanillarestrict_facj = {
+	name = rt56rp_gr_vanillarestrict_facj
+	group = ANON_0_RULES_GROUP
+	default = { name = rt56rp_gr_vanillarestrict_facj_enable_ai text = rt56rp_gr_vanillarestrict_facj_enable_ai desc = rt56rp_gr_vanillarestrict_facj_enable_ai_desc }
+	option = { name = rt56rp_gr_vanillarestrict_facj_enable_n text = rt56rp_gr_vanillarestrict_facj_enable_n desc = rt56rp_gr_vanillarestrict_facj_enable_n_desc }
+	option  = { name = rt56rp_gr_vanillarestrict_facj_enable_y text = rt56rp_gr_vanillarestrict_facj_enable_y desc = rt56rp_gr_vanillarestrict_facj_enable_y_desc }
+}
+
+

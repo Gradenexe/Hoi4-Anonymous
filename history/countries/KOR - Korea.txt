@@ -1,0 +1,1797 @@
+capital = 525# Seoul/Keijō/Gyeongseong
+set_research_slots = 5
+oob = "KOR_1936"
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	tech_trucks = 1
+	bicycle_infantry = 1
+	basic_train = 1
+}
+
+add_ideas = {
+	limited_conscription
+	partial_economic_mobilisation
+	#
+	KOR_liuwang_zhengfu
+	KOR_guoji_guli
+	KOR_yilie_tuan_idea
+	KOR_shouzhiyu_jiangjieshi
+	#隐藏
+}
+
+set_convoys = 5
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 5
+	neutrality = 79
+	democratic = 8
+	communism = 8
+}
+
+set_variable = {
+	KOR.host_nation = CHI
+}
+
+JAP = {
+	declare_war_on = {
+		target = KOR
+		type = annex_everything
+	}
+}
+
+set_global_flag = KOR_kaiju_zhanzheng_flag
+###########东北抗联
+recruit_character = MAN_Yang_Jingyu
+recruit_character = MAN_Li_Zhaolin
+recruit_character = MAN_Wang_Yachen
+recruit_character = MAN_Xia_Yunjie
+recruit_character = MAN_Zhao_Yiman
+recruit_character = MAN_Zhou_Baozhong
+###########
+recruit_character = KOR_Cho_Man_sik
+recruit_character = KOR_chaoxian_dahui
+recruit_character = KOR_communism_kaiju_leader
+recruit_character = KOR_lyuh_woon_hyung
+recruit_character = KOR_Jianzhun_weiyuanhui
+recruit_character = KOR_Li_DongNing
+recruit_character = KOR_Cho_Bong_am
+recruit_character = KOR_Yi_Yunyong
+recruit_character = KOR_Ahn_Jae_hong
+recruit_character = KOR_Kim_JongSuk
+recruit_character = KOR_Xu_ZhenJiao
+recruit_character = KOR_Jin_Ce
+recruit_character = KOR_Xu_Chengze
+recruit_character = KOR_Bai_Nanyun
+recruit_character = KOR_Kim_Dae_hyun
+recruit_character = KOR_Choi_Dukshin
+recruit_character = KOR_Kim_Yi
+recruit_character = KOR_Lin_Chunqiu
+recruit_character = KOR_Kim_Seongsuk
+recruit_character = KOR_Kim_Chang_man
+recruit_character = KOR_kim_il_sung
+recruit_character = KOR_pak_hon_yong
+recruit_character = KOR_Li_Chengye
+recruit_character = KOR_Li_Xuanxiang
+recruit_character = KOR_Xuan_Junhe
+recruit_character = KOR_Hong_Mingxi
+recruit_character = KOR_Jin_SanLong
+recruit_character = KOR_Li_ZhouHe
+recruit_character = KOR_Lim_Hwa
+recruit_character = KOR_Li_KangGuo
+recruit_character = KOR_Xu_Fengxue
+recruit_character = KOR_Pak_Kum_chol
+recruit_character = KOR_Xu_Jiayi
+recruit_character = KOR_Nam_Il
+recruit_character = SOV_Ivan_Chistyakov
+recruit_character = SOV_Trenti_Shitikov
+recruit_character = KOR_Kim_Tu_bong
+recruit_character = KOR_Li_Xiangzhao
+recruit_character = KOR_Park_Il_Woo
+recruit_character = KOR_Kim_Won_bong
+recruit_character = KOR_Tse_Chianguikku
+recruit_character = KOR_Bang_Ho_San
+recruit_character = KOR_Yun_Seju
+recruit_character = KOR_Li_Quanwu
+recruit_character = KOR_choe_hyon
+recruit_character = KOR_Wu_Bailong
+recruit_character = KOR_Li_Qingsong
+recruit_character = KOR_Cui_Guang
+recruit_character = KOR_Cui_Yongjian
+recruit_character = KOR_Cui_Yongjin
+recruit_character = KOR_Jiang_Jian
+recruit_character = KOR_Jin_Dahong
+recruit_character = KOR_Li_Yonghao
+recruit_character = KOR_Park_Jung_deok
+recruit_character = KOR_Jin_GuangXia
+recruit_character = KOR_Mu_Jong
+recruit_character = KOR_USA_Cornelius_Ryan
+recruit_character = KOR_John_reed_hodg
+recruit_character = KOR_Charles_Turner_Joy
+recruit_character = KOR_Shin_Ik_hee
+recruit_character = KOR_Jin_MingShi
+recruit_character = KOR_Yi_DongZhu
+recruit_character = KOR_Cui_Doushan
+recruit_character = KOR_Jang_Taek
+recruit_character = KOR_Cuineng_Town
+recruit_character = KOR_Jin_Binglu
+recruit_character = KOR_Yin_Zhiwang
+recruit_character = KOR_Lee_Byungchul
+recruit_character = KOR_Kim_Koo
+recruit_character = KOR_Kim_Xin
+recruit_character = KOR_Jin_Kuizhi
+recruit_character = KOR_Zhao_Suang
+recruit_character = KOR_Kim_Seong_Soo
+recruit_character = KOR_Song_Zhenyu
+recruit_character = KOR_Xu_Zheng
+recruit_character = KOR_Yun_Bo_seon
+recruit_character = KOR_Zhao_Bingyu
+recruit_character = KOR_syngman_rhee
+recruit_character = KOR_lee_beom_seok
+recruit_character = KOR_Jin_Changlong
+recruit_character = KOR_Yin_Zhihao
+recruit_character = KOR_Chang_Myon
+recruit_character = KOR_Archbishop_Roh_Paul
+recruit_character = KOR_Jin_ZhongWu
+recruit_character = KOR_Song_Yo_chan
+recruit_character = KOR_Li_Hanlin
+recruit_character = KOR_Liu_Zaixing
+recruit_character = KOR_Liu_Shenglie
+recruit_character = KOR_Shin_sung
+recruit_character = KOR_Song_Ho_seong
+recruit_character = KOR_Paik_Sun_Yup
+recruit_character = KOR_Ji_cheong_cheon
+recruit_character = KOR_Kim_Hong_il
+recruit_character = KOR_Shin_Hyun_Joon
+recruit_character = KOR_Son_Won_Il
+recruit_character = KOR_Cui_Yongde
+recruit_character = KOR_Ding_Yiquan
+recruit_character = KOR_Jin_Zhenlie
+recruit_character = KOR_Li_Genhao
+recruit_character = KOR_Park_Shichang
+recruit_character = KOR_Ahn_Chunsaeng
+recruit_character = KOR_Li_JunZhi
+recruit_character = KOR_Ji_CheongCheon
+recruit_character = KOR_Lee_Dynasty
+recruit_character = KOR_yi_un
+recruit_character = KOR_yi_kang
+recruit_character = KOR_Li_Sairong
+recruit_character = KOR_Yi_Bangja
+recruit_character = KOR_Li_Jian
+recruit_character = KOR_Li_Qin
+recruit_character = KOR_Lian_DongZhen
+recruit_character = KOR_Yin_Shifu
+recruit_character = KOR_Du_Shanglu
+recruit_character = KOR_Li_Shengji
+recruit_character = KOR_caidan_kexuejia
+recruit_character = KOR_chaotic_Congress
+recruit_character = KOR_Yi_Siyeong
+KOR_chaoxian_dahui = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+KOR_communism_kaiju_leader = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+KOR_Xu_ZhenJiao = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+KOR_Kim_JongSuk = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+KOR_Jin_Ce = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+KOR_Xu_Chengze = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+KOR_Bai_Nanyun = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+KOR_Kim_Dae_hyun = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+KOR_Ji_CheongCheon = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+KOR_Kim_Yi = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+KOR_Lin_Chunqiu = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+KOR_Kim_Seongsuk = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+KOR_pak_hon_yong = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+SOV_Trenti_Shitikov = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+SOV_Ivan_Chistyakov = {
+	set_character_flag = KOR_dongtaiguojia_gongchandang_flag
+}
+
+#### 南劳派	   
+KOR_Li_Chengye = {
+	set_character_flag = KOR_Namrodangpa_flag
+}
+
+KOR_Li_Xuanxiang = {
+	set_character_flag = KOR_Namrodangpa_flag
+}
+
+KOR_Xuan_Junhe = {
+	set_character_flag = KOR_Namrodangpa_flag
+}
+
+KOR_Hong_Mingxi = {
+	set_character_flag = KOR_Namrodangpa_flag
+}
+
+KOR_Jin_SanLong = {
+	set_character_flag = KOR_Namrodangpa_flag
+}
+
+KOR_Li_ZhouHe = {
+	set_character_flag = KOR_Namrodangpa_flag
+}
+
+KOR_Lim_Hwa = {
+	set_character_flag = KOR_Namrodangpa_flag
+}
+
+KOR_Li_KangGuo = {
+	set_character_flag = KOR_Namrodangpa_flag
+}
+
+#### 苏联派
+KOR_Nam_Il = {
+	set_character_flag = KOR_Soryeonpa_flag
+}
+
+KOR_Xu_Jiayi = {
+	set_character_flag = KOR_Soryeonpa_flag
+}
+
+#### 延安
+KOR_Kim_Tu_bong = {
+	set_character_flag = KOR_Yeonanpa_flag
+}
+
+KOR_Li_Xiangzhao = {
+	set_character_flag = KOR_Yeonanpa_flag
+}
+
+KOR_Park_Il_Woo = {
+	set_character_flag = KOR_Yeonanpa_flag
+}
+
+KOR_Kim_Chang_man = {
+	set_character_flag = KOR_Yeonanpa_flag
+}
+
+KOR_Kim_Won_bong = {
+	set_character_flag = KOR_Yeonanpa_flag
+}
+
+KOR_Tse_Chianguikku = {
+	set_character_flag = KOR_Yeonanpa_flag
+}
+
+KOR_Yun_Seju = {
+	set_character_flag = KOR_Yeonanpa_flag
+}
+
+KOR_Bang_Ho_San = {
+	set_character_flag = KOR_Yeonanpa_flag
+}
+
+KOR_Mu_Jong = {
+	set_character_flag = KOR_Yeonanpa_flag
+}
+
+#### 满洲
+KOR_kim_il_sung = {
+	set_character_flag = KOR_Manjupa_Ppalchisanpa_flag
+}
+
+KOR_Cui_Yongjian = {
+	set_character_flag = KOR_Manjupa_Ppalchisanpa_flag
+}
+
+#### 甲山派
+KOR_Xu_Fengxue = {
+	set_character_flag = KOR_Gapsanpa_flag
+}
+
+KOR_Pak_Kum_chol = {
+	set_character_flag = KOR_Gapsanpa_flag
+}
+
+#### 法团移出共和派
+KOR_Pak_Kum_chol = {
+	set_character_flag = KOR_Democratic_Republic_flag
+}
+
+KOR_Ahn_Jae_hong = {
+	set_character_flag = KOR_Democratic_Republic_flag
+}
+
+KOR_Cho_Bong_am = {
+	set_character_flag = KOR_Democratic_Republic_flag
+}
+
+KOR_Kim_Koo = {
+	set_character_flag = KOR_Democratic_Republic_flag
+}
+
+KOR_Kim_Xin = {
+	set_character_flag = KOR_Democratic_Republic_flag
+}
+
+KOR_Jin_Kuizhi = {
+	set_character_flag = KOR_Democratic_Republic_flag
+}
+
+KOR_Zhao_Suang = {
+	set_character_flag = KOR_Democratic_Republic_flag
+}
+
+KOR_Song_Zhenyu = {
+	set_character_flag = KOR_Democratic_Republic_flag
+}
+
+#### 共产党人暴乱派
+KOR_choe_hyon = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Cui_Yongjian = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Wu_Bailong = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Li_Qingsong = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Cui_Guang = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Cui_Yongjin = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Jiang_Jian = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Jin_Dahong = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Li_Yonghao = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Liu_Jingzhu = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Park_Jung_deok = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Jin_GuangXia = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Mu_Jong = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Li_Quanwu = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Bang_Ho_San = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Yun_Seju = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Kim_Won_bong = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Li_Xiangzhao = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Park_Il_Woo = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Nam_Il = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Xu_Fengxue = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Li_Xuanxiang = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_Choi_Dukshin = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_kim_il_sung = {
+	set_character_flag = KOR_gongchanzhuyi_baodong_flag
+}
+
+KOR_kim_il_sung = {
+	set_character_flag = KOR_character_jinricheng_flag
+}
+
+####
+set_variable = {
+	KOR_zhimindijingji_de_yichan_1 = 0.1
+}
+
+set_variable = {
+	KOR_zhimindijingji_de_yichan_2 = -0.15
+}
+
+set_variable = {
+	KOR_zhimindijingji_de_yichan_3 = -0.15
+}
+
+set_variable = {
+	KOR_zhimindijingji_de_yichan_4 = -0.1
+}
+
+set_variable = {
+	KOR_zhimindijingji_de_yichan_5 = 0
+}
+
+set_variable = {
+	KOR_zhimindijingji_de_yichan_6 = 0
+}
+
+set_variable = {
+	KOR_zhimindijingji_de_yichan_7 = 0
+}
+
+set_variable = {
+	KOR_zhimindijingji_de_yichan_8 = 0
+}
+
+set_variable = {
+	KOR_zhimindijingji_de_yichan_9 = 0
+}
+
+set_variable = {
+	KOR_zhimindijingji_de_yichan_10 = 0
+}
+
+set_variable = {
+	KOR_zhimindijingji_de_yichan_11 = 0
+}
+
+############################################
+set_variable = {
+	KOR_paixilinli_dabenying_1 = 0
+}
+
+set_variable = {
+	KOR_paixilinli_dabenying_2 = 0
+}
+
+set_variable = {
+	KOR_paixilinli_dabenying_3 = 0
+}
+
+set_variable = {
+	KOR_paixilinli_dabenying_4 = 0.05
+}
+
+set_variable = {
+	KOR_paixilinli_dabenying_5 = -0.02
+}
+
+##########陆军############## 
+set_variable = {
+	KOR_army_communism_1 = 0
+}
+
+set_variable = {
+	KOR_army_communism_2 = 0
+}
+
+set_variable = {
+	KOR_army_communism_3 = 0
+}
+
+set_variable = {
+	KOR_army_communism_4 = 0
+}
+
+set_variable = {
+	KOR_army_communism_5 = 0
+}
+
+set_variable = {
+	KOR_army_communism_6 = 0
+}
+
+set_variable = {
+	KOR_army_communism_7 = 0
+}
+
+set_variable = {
+	KOR_army_communism_8 = 0
+}
+
+set_variable = {
+	KOR_army_communism_9 = 0
+}
+
+set_variable = {
+	KOR_army_communism_10 = 0
+}
+
+set_variable = {
+	KOR_army_communism_11 = 0
+}
+
+set_variable = {
+	KOR_army_communism_12 = 0
+}
+
+set_variable = {
+	KOR_army_communism_13 = 0
+}
+
+set_variable = {
+	KOR_army_communism_14 = 0
+}
+
+set_variable = {
+	KOR_army_communism_15 = 0
+}
+
+set_variable = {
+	KOR_army_communism_16 = 0
+}
+
+set_variable = {
+	KOR_army_communism_17 = 0
+}
+
+set_variable = {
+	KOR_army_communism_18 = 0
+}
+
+set_variable = {
+	KOR_army_communism_19 = 0
+}
+
+set_variable = {
+	KOR_army_communism_20 = 0
+}
+
+set_variable = {
+	KOR_army_communism_21 = 0.02
+}
+
+set_variable = {
+	KOR_army_communism_22 = 0
+}
+
+set_variable = {
+	KOR_army_communism_23 = 0
+}
+
+set_variable = {
+	KOR_army_communism_24 = 0
+}
+
+set_variable = {
+	KOR_army_communism_25 = 0
+}
+
+set_variable = {
+	KOR_army_communism_26 = 0
+}
+
+set_variable = {
+	KOR_army_communism_27 = 0
+}
+
+set_variable = {
+	KOR_army_communism_28 = 0
+}
+
+set_variable = {
+	KOR_army_communism_29 = 0
+}
+
+set_variable = {
+	KOR_army_communism_30 = 0
+}
+
+set_variable = {
+	KOR_army_communism_31 = 0
+}
+
+set_variable = {
+	KOR_army_communism_32 = 0
+}
+
+set_variable = {
+	KOR_army_communism_33 = 0
+}
+
+set_variable = {
+	KOR_army_communism_34 = 0
+}
+
+set_variable = {
+	KOR_army_communism_35 = 0
+}
+
+##########空军############## 
+set_variable = {
+	KOR_air_communism_1 = 0.02
+}
+
+set_variable = {
+	KOR_air_communism_2 = 0
+}
+
+set_variable = {
+	KOR_air_communism_3 = 0
+}
+
+set_variable = {
+	KOR_air_communism_4 = 0
+}
+
+set_variable = {
+	KOR_air_communism_5 = 0
+}
+
+set_variable = {
+	KOR_air_communism_6 = 0
+}
+
+set_variable = {
+	KOR_air_communism_7 = 0
+}
+
+set_variable = {
+	KOR_air_communism_8 = 0
+}
+
+set_variable = {
+	KOR_air_communism_9 = 0
+}
+
+set_variable = {
+	KOR_air_communism_10 = 0
+}
+
+set_variable = {
+	KOR_air_communism_11 = 0
+}
+
+set_variable = {
+	KOR_air_communism_12 = 0
+}
+
+set_variable = {
+	KOR_air_communism_13 = 0
+}
+
+set_variable = {
+	KOR_air_communism_14 = 0
+}
+
+set_variable = {
+	KOR_air_communism_15 = 0
+}
+
+set_variable = {
+	KOR_air_communism_16 = 0
+}
+
+set_variable = {
+	KOR_air_communism_17 = 0
+}
+
+set_variable = {
+	KOR_air_communism_18 = 0
+}
+
+set_variable = {
+	KOR_air_communism_19 = 0
+}
+
+set_variable = {
+	KOR_air_communism_20 = 0
+}
+
+set_variable = {
+	KOR_air_communism_21 = 0
+}
+
+set_variable = {
+	KOR_air_communism_22 = 0
+}
+
+set_variable = {
+	KOR_air_communism_23 = 0
+}
+
+##########海军############## 
+set_variable = {
+	KOR_navy_communism_1 = 0.02
+}
+
+set_variable = {
+	KOR_navy_communism_2 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_3 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_4 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_5 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_6 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_7 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_8 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_9 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_10 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_11 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_12 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_13 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_14 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_15 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_16 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_17 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_18 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_19 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_20 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_21 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_22 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_23 = 0
+}
+
+set_variable = {
+	KOR_navy_communism_24 = 0
+}
+
+##########奇迹武器############## 
+set_variable = {
+	KOR_qiji_wuqi_1 = 0
+}
+
+set_variable = {
+	KOR_qiji_wuqi_2 = 0
+}
+
+set_variable = {
+	KOR_qiji_wuqi_3 = 0
+}
+
+set_variable = {
+	KOR_qiji_wuqi_4 = 0
+}
+
+set_variable = {
+	KOR_qiji_wuqi_5 = 0
+}
+
+set_variable = {
+	KOR_qiji_wuqi_6 = 0
+}
+
+set_variable = {
+	KOR_qiji_wuqi_7 = 0
+}
+
+set_variable = {
+	KOR_qiji_wuqi_8 = 0
+}
+
+set_variable = {
+	KOR_qiji_wuqi_9 = 0
+}
+
+set_variable = {
+	KOR_qiji_wuqi_10 = 0
+}
+
+##########情报局############## 
+set_variable = {
+	KOR_guojia_anquan_baoweibu_1 = 0
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_2 = 0
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_3 = 0
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_4 = 0
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_5 = -10
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_6 = -10
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_7 = -10
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_8 = -10
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_9 = 0
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_10 = 0
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_11 = 0
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_12 = 0
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_13 = 0
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_14 = 0
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_15 = 0
+}
+
+set_variable = {
+	KOR_guojia_anquan_baoweibu_16 = 0
+}
+
+##########社会主义经济############## 
+set_variable = {
+	KOR_shehui_zhuyi_jingji_1 = 0
+}
+
+set_variable = {
+	KOR_shehui_zhuyi_jingji_2 = 0
+}
+
+set_variable = {
+	KOR_shehui_zhuyi_jingji_3 = 0
+}
+
+set_variable = {
+	KOR_shehui_zhuyi_jingji_4 = 0
+}
+
+set_variable = {
+	KOR_shehui_zhuyi_jingji_5 = 0
+}
+
+set_variable = {
+	KOR_shehui_zhuyi_jingji_6 = 0
+}
+
+set_variable = {
+	KOR_shehui_zhuyi_jingji_7 = 0
+}
+
+set_variable = {
+	KOR_shehui_zhuyi_jingji_8 = 0
+}
+
+set_variable = {
+	KOR_shehui_zhuyi_jingji_9 = 0
+}
+
+set_variable = {
+	KOR_shehui_zhuyi_jingji_10 = 0
+}
+
+set_variable = {
+	KOR_shehui_zhuyi_jingji_11 = 0
+}
+
+set_variable = {
+	KOR_shehui_zhuyi_jingji_12 = 0
+}
+
+set_variable = {
+	KOR_shehui_zhuyi_jingji_13 = 0
+}
+
+##########共产党############## 
+set_variable = {
+	KOR_communism_zhengzhi_1 = 0.02
+}
+
+set_variable = {
+	KOR_communism_zhengzhi_2 = 0
+}
+
+set_variable = {
+	KOR_communism_zhengzhi_3 = 0
+}
+
+set_variable = {
+	KOR_communism_zhengzhi_4 = 0
+}
+
+set_variable = {
+	KOR_communism_zhengzhi_5 = 0
+}
+
+set_variable = {
+	KOR_communism_zhengzhi_6 = 0
+}
+
+set_variable = {
+	KOR_communism_zhengzhi_7 = 0
+}
+
+set_variable = {
+	KOR_communism_zhengzhi_8 = 0
+}
+
+set_variable = {
+	KOR_communism_zhengzhi_9 = 0
+}
+
+set_variable = {
+	KOR_communism_zhengzhi_10 = 0
+}
+
+set_variable = {
+	KOR_communism_zhengzhi_12 = 0
+}
+
+set_variable = {
+	KOR_communism_zhengzhi_13 = 0
+}
+
+###
+set_country_flag = KOR_neutrality_member_flag
+set_variable = {
+	KOR_election_a = 8
+}
+
+set_variable = {
+	KOR_election_b = 8
+}
+
+set_variable = {
+	KOR_election_c = 79
+}
+
+set_variable = {
+	KOR_election_d = 5
+}
+
+###
+set_variable = {
+	var = KOR_yanan_Party_Size
+	value = 0
+}
+
+set_variable = {
+	var = KOR_NanLao_Party_Size
+	value = 0
+}
+
+set_variable = {
+	var = KOR_ManZhou_Party_Size
+	value = 0
+}
+
+set_variable = {
+	var = KOR_SOV_Party_Size
+	value = 0
+}
+
+clamp_variable = {
+	var = KOR_yanan_Party_Size
+	min = -100
+	max = 100
+}
+
+clamp_variable = {
+	var = KOR_NanLao_Party_Size
+	min = -100
+	max = 100
+}
+
+clamp_variable = {
+	var = KOR_ManZhou_Party_Size
+	min = -100
+	max = 100
+}
+
+clamp_variable = {
+	var = KOR_SOV_Party_Size
+	min = -100
+	max = 100
+}
+
+set_variable = {
+	KOR_electrification_cooldown = 0
+}
+##########党派斗争############## 
+set_variable = {
+	KOR_dangpai_douzheng_dynamic_1 = -0.1
+}
+
+set_variable = {
+	KOR_dangpai_douzheng_dynamic_2 = 0.1
+}
+
+set_variable = {
+	KOR_dangpai_douzheng_dynamic_3 = 0.1
+}
+
+set_variable = {
+	KOR_dangpai_douzheng_dynamic_4 = 0.1
+}
+
+set_variable = {
+	KOR_dangpai_douzheng_dynamic_5 = 0.1
+}
+
+set_variable = {
+	KOR_dangpai_douzheng_dynamic_6 = 0.1
+}
+
+set_variable = {
+	KOR_dangpai_douzheng_dynamic_7 = 0.1
+}
+
+#############集体领导############## 
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_1 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_2 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_3 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_4 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_5 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_6 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_7 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_8 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_9 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_10 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_11 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_12 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_13 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_14 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_15 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_16 = 0
+}
+
+set_variable = {
+	KOR_chaoxian_dahui_dynamic_17 = 0
+}
+
+##########伟大领袖############## 
+set_variable = {
+	KOR_weidalingxiu_xushishi_1 = 0.02
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_2 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_3 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_4 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_5 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_6 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_7 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_8 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_9 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_10 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_11 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_12 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_13 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_14 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_15 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_16 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_17 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_18 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_19 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_20 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_21 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_22 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_23 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_24 = 0
+}
+
+set_variable = {
+	KOR_weidalingxiu_xushishi_25 = 0
+}
+
+##########伟大领袖—花费############## 
+set_variable = {
+	KOR_jinricheng_xuanchuan_cost = 15
+}
+
+##########泛亚研究理事会############## 
+set_variable = {
+	KOR_fanya_yanjiu_lishihui_factor = 0.01
+}
+
+set_variable = {
+	KOR_fanya_yanjiu_lishihui_modifier_allies_count = 1
+}
+
+##########民主######################################################################
+set_variable = {
+	KOR_democratic_zhengzhi_1 = 0.02
+}
+
+set_variable = {
+	KOR_democratic_zhengzhi_2 = 0
+}
+
+set_variable = {
+	KOR_democratic_zhengzhi_3 = 0
+}
+
+set_variable = {
+	KOR_democratic_zhengzhi_4 = 0
+}
+
+set_variable = {
+	KOR_democratic_zhengzhi_5 = 0
+}
+
+set_variable = {
+	KOR_democratic_zhengzhi_6 = 0
+}
+
+set_variable = {
+	KOR_democratic_zhengzhi_7 = 0
+}
+
+set_variable = {
+	KOR_democratic_zhengzhi_8 = 0
+}
+
+set_variable = {
+	KOR_democratic_zhengzhi_9 = 0
+}
+
+set_variable = {
+	KOR_democratic_zhengzhi_10 = 0
+}
+
+set_variable = {
+	KOR_democratic_zhengzhi_11 = 0
+}
+
+set_variable = {
+	KOR_democratic_zhengzhi_12 = 0
+}
+
+##########光复军###############
+set_variable = {
+	KOR_guangfujun_jingshen_modifier_1 = 0.002
+}
+
+set_variable = {
+	KOR_guangfujun_jingshen_modifier_2 = 0.002
+}
+
+set_variable = {
+	KOR_guangfujun_jingshen_modifier_3 = 0.002
+}
+
+set_variable = {
+	KOR_guangfujun_jingshen_modifier_4 = 0
+}
+
+set_variable = {
+	KOR_guangfujun_jingshen_modifier_5 = 0
+}
+
+set_variable = {
+	KOR_guangfujun_jingshen_modifier_6 = 0
+}
+
+set_variable = {
+	KOR_guangfujun_jingshen_modifier_7 = 0
+}
+
+set_variable = {
+	KOR_guangfujun_jingshen_modifier_8 = 0
+}
+
+#####间谍#####
+set_variable = {
+	KOR_guojia_anbao_fa_modifiers_1 = 0
+}
+
+set_variable = {
+	KOR_guojia_anbao_fa_modifiers_2 = 0
+}
+
+set_variable = {
+	KOR_guojia_anbao_fa_modifiers_3 = 0
+}
+
+set_variable = {
+	KOR_guojia_anbao_fa_modifiers_4 = 1
+}
+
+set_variable = {
+	KOR_guojia_anbao_fa_modifiers_5 = -10
+}
+
+set_variable = {
+	KOR_guojia_anbao_fa_modifiers_6 = -10
+}
+
+set_variable = {
+	KOR_guojia_anbao_fa_modifiers_7 = -10
+}
+
+set_variable = {
+	KOR_guojia_anbao_fa_modifiers_8 = -10
+}
+
+set_variable = {
+	KOR_guojia_anbao_fa_modifiers_9 = 0
+}
+
+set_variable = {
+	KOR_guojia_anbao_fa_modifiers_10 = 0
+}
+
+set_variable = {
+	KOR_guojia_anbao_fa_modifiers_11 = 0
+}
+
+##########中立######################################################################
+set_variable = {
+	KOR_neutrality_zhengzhi_1 = 0.02
+}
+
+set_variable = {
+	KOR_neutrality_zhengzhi_2 = 0
+}
+
+set_variable = {
+	KOR_neutrality_zhengzhi_3 = 0
+}
+
+set_variable = {
+	KOR_neutrality_zhengzhi_4 = 0
+}
+
+set_variable = {
+	KOR_neutrality_zhengzhi_5 = 0
+}
+
+set_variable = {
+	KOR_neutrality_zhengzhi_6 = 0
+}
+
+set_variable = {
+	KOR_neutrality_zhengzhi_7 = 0
+}
+
+set_variable = {
+	KOR_neutrality_zhengzhi_8 = 0
+}
+
+set_variable = {
+	KOR_neutrality_zhengzhi_9 = 0
+}
+
+set_variable = {
+	KOR_neutrality_zhengzhi_10 = 0
+}
+
+set_variable = {
+	KOR_neutrality_zhengzhi_11 = 0
+}
+
+set_variable = {
+	KOR_neutrality_zhengzhi_12 = 0
+}
+
+set_variable = {
+	KOR_neutrality_zhengzhi_13 = 0
+}
+
+########## 
+set_variable = {
+	KOR_militia_template_level = 1
+}
+
+set_variable = {
+	KOR_military_readiness = 0
+}
+
+#
+set_variable = {
+	KOR_max_mil_readiness = 100
+}
+
+#最大值
+set_variable = {
+	KOR_new_militia_cap_for_tooltip = 15
+}
+
+set_variable = {
+	KOR_jiangyao_bushu_minbingshi_shuliang = 0
+}
+
+########## 
+set_variable = {
+	KOR_neutrality1_zhengzhi_2 = 0
+}
+
+set_variable = {
+	KOR_neutrality1_zhengzhi_3 = 0
+}
+
+set_variable = {
+	KOR_neutrality1_zhengzhi_4 = 0
+}
+
+set_variable = {
+	KOR_neutrality1_zhengzhi_5 = 0
+}
+
+set_variable = {
+	KOR_neutrality1_zhengzhi_6 = 0
+}
+
+set_variable = {
+	KOR_neutrality1_zhengzhi_7 = 0
+}
+
+set_variable = {
+	KOR_neutrality1_zhengzhi_8 = 0
+}
+
+########## 君主间谍
+set_variable = {
+	KOR_huangjia_jingcha_1 = 0
+}
+
+set_variable = {
+	KOR_huangjia_jingcha_2 = 0
+}
+
+set_variable = {
+	KOR_huangjia_jingcha_3 = 0
+}
+
+set_variable = {
+	KOR_huangjia_jingcha_4 = 0
+}
+
+set_variable = {
+	KOR_huangjia_jingcha_5 = 0
+}
+
+set_variable = {
+	KOR_huangjia_jingcha_6 = 0.002
+}
+
+set_variable = {
+	KOR_huangjia_jingcha_7 = 0.002
+}
+
+set_variable = {
+	KOR_huangjia_jingcha_8 = 0.002
+}
+
+##### 
+set_variable = {
+	KOR_tudi_enci_cost = 15
+}
+
+set_variable = {
+	KOR_fuchi_qiye_cost = 15
+}
+
+##########法西斯###################################################################### 
+set_variable = {
+	KOR_fascism_zhengzhi_1 = 0.02
+}
+
+set_variable = {
+	KOR_fascism_zhengzhi_2 = 0
+}
+
+set_variable = {
+	KOR_fascism_zhengzhi_3 = 0
+}
+
+set_variable = {
+	KOR_fascism_zhengzhi_4 = 0
+}
+
+set_variable = {
+	KOR_fascism_zhengzhi_5 = 0
+}
+
+set_variable = {
+	KOR_fascism_zhengzhi_6 = 0
+}
+
+set_variable = {
+	KOR_fascism_zhengzhi_7 = 0
+}
+
+##### 
+set_variable = {
+	KOR_huangshi_jingji_tizhi_1 = 0
+}
+
+set_variable = {
+	KOR_huangshi_jingji_tizhi_2 = 0
+}
+
+set_variable = {
+	KOR_huangshi_jingji_tizhi_3 = 0
+}
+
+set_variable = {
+	KOR_huangshi_jingji_tizhi_4 = 0
+}
+
+set_variable = {
+	KOR_huangshi_jingji_tizhi_5 = 0
+}
+
+set_variable = {
+	KOR_huangshi_jingji_tizhi_6 = 0
+}
+
+set_variable = {
+	KOR_huangshi_jingji_tizhi_7 = 0
+}
+
+set_variable = {
+	KOR_huangshi_jingji_tizhi_8 = 0.1
+}
+
+####新乡
+set_variable = {
+	KOR_xincunyundong_de_chuxing_1 = 0
+}
+
+set_variable = {
+	KOR_xincunyundong_de_chuxing_2 = 0
+}
+
+set_variable = {
+	KOR_xincunyundong_de_chuxing_3 = 0
+}
+
+####新乡
+set_variable = {
+	KOR_liuwang_zhengfu_modifiers_1 = -0.2
+}
+
+set_variable = {
+	KOR_liuwang_zhengfu_modifiers_2 = -0.15
+}
+
+set_variable = {
+	KOR_liuwang_zhengfu_modifiers_3 = 200
+}
+
+set_variable = {
+	KOR_liuwang_zhengfu_modifiers_4 = 0.3
+}
+
+set_variable = {
+	KOR_liuwang_zhengfu_modifiers_5 = -0.3
+}
+
+##############
+##############
+##############
+##############
+##############
+##############
+##############
+##############
+##############
+##############
+set_party_name = {
+	ideology = communism
+	name = KOR_chaoxian_minzu_party
+	long_name = KOR_chaoxian_minzu_party
+}
+
+set_party_name = {
+	ideology = democratic
+	name = KOR_guangfu_zhenxian_Party
+	long_name = KOR_guangfu_zhenxian_Party
+}
+
+set_party_name = {
+	ideology = neutrality
+	name = KOR_provisional_government
+	long_name = KOR_provisional_government_long
+}
+
+set_party_name = {
+	ideology = fascism
+	name = KOR_National_Youth_League
+	long_name = KOR_National_Youth_League_long
+}
+
+set_cosmetic_tag = KOR_dahanminguo_linshizhengfu
+1939.1.1 = {
+	CHI = { add_to_faction = PREV }
+	add_to_war = {
+		targeted_alliance = CHI
+		enemy = JAP
+		hostility_reason = asked_to_join
+	}
+	set_technology = {
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
+	}
+	set_grand_doctrine = mass_assault
+	set_grand_doctrine = new_fleet_in_being
+	set_grand_doctrine = new_strategic_destruction
+
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
+	complete_national_focus = JKO_kaiju_guoce_jieshao
+	complete_national_focus = KOR_chongsheng_zhengtong_diwei
+	complete_national_focus = KOR_tongyi_duli_zhenxian
+	complete_national_focus = KOR_goumai_wuzi_zhuangbei
+	complete_national_focus = KOR_chongzu_yizheng_yuan
+}

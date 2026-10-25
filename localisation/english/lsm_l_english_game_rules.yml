@@ -1,0 +1,105 @@
+﻿l_english:
+
+NONHIST_AI_BEHAVIOR: "Non-historical AI behaviour"
+
+RULE_OPTION_DEFAULT_NONHIST_AI_DESC: "No specific rules will be imposed on AI"
+
+RULE_OPTION_HISTORICAL_PATHS: "Relatively Historical"
+RULE_OPTION_HISTORICAL_PATHS_NONHIST_AI_DESC: "Countries will stay relatively historical in focus pickings; however, some countries may have specific focus plan designed to take historical path on nonhistorical. AI will still deviate to react to changes in the political landscape."
+
+RULE_OPTION_MAJORS_ONLY: "Only Majors"
+RULE_OPTION_MAJORS_ONLY_NONHIST_AI_DESC: "Only Major AI countries may deviate from historical paths, minor countries may still respond."
+
+RULE_OPTION_MINORS_ONLY: "Only Minors"
+RULE_OPTION_MINORS_ONLY_NONHIST_AI_DESC: "Only minor AI countries may deviate from historical paths, major countries may still respond."
+
+RULE_OPTION_ANTI_HISTORICAL: "Anti-Historical"
+RULE_OPTION_ANTI_HISTORICAL_NONHIST_AI_DESC: "Everything but historical will be acceptable."
+
+RULE_OPTION_NO_GAME_BALANCE: "No Game Balance"
+RULE_OPTION_NO_GAME_BALANCE_NONHIST_AI_DESC: "Vanilla ideology balancing will be removed. Some countries may however still have weighted focus plan."
+
+NONHIST_GENERIC_AI_BEHAVIOR: "Generic AI Country Participation"
+
+RULE_OPTION_GENERIC_NO: "Avoid Joining Faction"
+RULE_OPTION_GENERIC_NO_DESC: "Generic AI countries will avoid joining or creating factions. May still be targeted by Create Faction by non-generic country or through certain focus/decision."
+
+RULE_OPTION_GENERIC_YES_1936: "May participate ASAP"
+RULE_OPTION_GENERIC_YES_1936_DESC: "May participate whenver eligible by other rules"
+
+RULE_OPTION_GENERIC_YES_1939: "May participate 1939 + 50% WT"
+RULE_OPTION_GENERIC_YES_1939_DESC: "May participate after 1939 and World Tension is above 50%"
+
+RULE_OPTION_GENERIC_YES_1941: "May participate 1941 + 100% WT"
+RULE_OPTION_GENERIC_YES_1941_DESC: "May participate after 1941 and World Tension is at 100%"
+
+RULE_EXILES_DEMOCRATIC_1: "Allied Democracy"
+RULE_OPTION_EXILES_DEMOCRATIC_1_SOV_AI_DESC: "Democracy will be restored in Russia through a violent civil war with the support of the White Russian movement and Tsar loyalists. From then on, AI Russia will attempt to enter an alliance with the United Kingdom or German Republic."
+
+RULE_EXILES_DEMOCRATIC_2: "Eastern Entente"
+RULE_OPTION_EXILES_DEMOCRATIC_2_SOV_AI_DESC: "Democracy will be restored in Russia through a violent civil war with the support of the moderates in the socialist government. From then on, AI Russia will form a new alliance to defend the free nations of Eurasia."
+
+RULE_OPTION_CHL_LE_DELUGE_2: "Patria Nueva"
+RULE_OPTION_CHL_LE_DELUGE_2_DESC: "The moderatist wing of the government will coup Chile with the support of the loyalist under Antoine III, and will eventually coup Antoine III to install a new government under the Prime Minister."
+
+RULE_OPTION_COMMUNIST_2: "Vanguardist Revolution"
+RULE_OPTION_COMMUNIST_2_FRA_AI_DESC: "The Vanguardist wing of the leftist government will take over and seek to destroy its right-wing extremism, then militarize the country for a socialist revolution around Europe."
+
+RULE_OPTION_ISLAMIC_AFG_AI: "Islamic Republic"
+RULE_OPTION_ISLAMIC_AFG_DESC: "Incomplete. Will act like Democratic."
+
+RULE_OPTION_ISLAMIC_PER_AI: "Islamic Revolution"
+RULE_OPTION_ISLAMIC_PER_DESCC: "Incomplete. Will be islamic but doesn't cause enough islamic revolution in middle east yet. Will add original content."
+
+RULE_OPTION_ISLAMIC_IRQ_AI: "Arabic Islam"
+RULE_OPTION_ISLAMIC_IRQ_DESC: "Incomplete. Will act like Fascist."
+
+RULE_OPTION_MONARCHIST_FIN: "Monarchist - House of Hesse"
+RULE_HISTORICAL_FIN_MONARCHIST_PLAN_DESC: "Incomplete. Will act like historical, will try to be monarchist. Might not succeed. Future original content will be added."
+
+RULE_OPTION_COMMUNISM_PER_AI_SOVIET: "Soviet SR of Iran"
+RULE_OPTION_COMMUNISM_PER_SOVIET_DESC: "Iran will undergo a civil war with Soviet backing then join the Comintern later. Will be cancelled if the Soviet Union is on track to White Russian civil war."
+
+RULE_OPTION_HISTORICAL_ALTERNATIVE: "Stalinist Trotskyism?"
+RULE_OPTION_HISTORICAL_ALTERNATIVE_SOV_AI_DESC: "Stalin will attempt to rapidly expand and takeover the world, because it is fun."
+
+RULE_OPTION_GOE_INDIA_COMMUNISM_SOVIET: "Worker Revolution"
+RULE_OPTION_GOE_INDIA_COMMUNISM_SOVIET_RAJ_AI_DESC: "India will centralize power into the hands of a worker government and seek to industralize the countries into heavy industry and prefer an alignment with the Soviet Union or other world-leading socialist economies."
+
+RULE_OPTION_GOE_INDIA_COMMUNISM_AGRARIAN: "Agrarian Socialism"
+RULE_OPTION_GOE_INDIA_COMMUNISM_AGRARIAN_RAJ_AI_DESC: "The agrarian communes of India will seize power for the people and attempt to revolutionize the social class hierarchy of the nation before dealing the final blows to the British remnants, while seeking diplomatical alignment with Asian communists or even a far-right imperialist Japan."
+
+RULE_OPTION_IMPERIAL_PER_THIRD_AI: "Third Persian Empire"
+RULE_OPTION_IMPERIAL_PER_THIRD_DESC: "The assassination of Reza Shah will be carried out, where in the aftermath, his son will suceed the throne and attempt to conquer the region."
+
+PUNITIVE_ACTION_SOV: "PUNITIVE ACTION - Soviet Union @SOV"
+PUNITIVE_ACTION_GER: "PUNITIVE ACTION - Germany @GER"
+
+RULE_OPTION_PUNITIVE_ENABLED: "Enabled"
+RULE_OPTION_PUNITIVE_ENABLED_SOV_DESC: "If you don't play by the book, neither will they."
+RULE_OPTION_PUNITIVE_ENABLED_GER_DESC: "A challenge awaits those who desires great power."
+
+RULE_OPTION_PUNITIVE_DISABLED: "Disabled"
+RULE_OPTION_PUNITIVE_DISABLED_SOV_DESC: "Nothing bad can ever happen. You can try out your strategies."
+RULE_OPTION_PUNITIVE_DISABLED_GER_DESC: "The fruit of power tumbles into one's mouth."
+
+RULE_OPTION_FASCIST_MR_PACT: "Unholy Alliance"
+RULE_OPTION_FASCIST_MR_PACT_GER_AI_DESC: "Germany will attempt to enter an alliance with the Soviet Union to fight against the western powers. AI will however proceed to the war with ussr if this plan fails due to various conditions required to ally the Soviet Union."
+
+ALLIES_MAINLAND_DEFENSE_NAME: "Allies Mainland Europe Strategy"
+RULE_OPTION_ALLIES_MAINLAND_DEFENSE_ENABLED: "Enabled"
+RULE_OPTION_ALLIES_MAINLAND_DEFENSE_DISABLED: "Disabled"
+RULE_OPTION_ALLIES_MAINLAND_DEFENSE_ENABLED_DESC: "Allies will coordinate and try to defend mainland Europe"
+RULE_OPTION_ALLIES_MAINLAND_DEFENSE_DISABLED_DESC: "Allies will coordinate to give up on mainland Europe"
+
+USA_ENG_GUARANTEE_NAME: "Anglo-American Tie"
+RULE_OPTION_USA_ENG_GUARANTEE_ENABLED: "Enabled"
+RULE_OPTION_USA_ENG_GUARANTEE_DISABLED: "Disabled"
+RULE_OPTION_USA_ENG_GUARANTEE_ENABLED_DESC: "Democratic USA will join a Democratic UK when Sealion happens"
+RULE_OPTION_USA_ENG_GUARANTEE_DISABLED_DESC: "Will not"
+
+RULE_OPTION_DEN_COMMUNIST: "Danish Communism"
+RULE_OPTION_DEN_COMMUNIST_AI_DESC: "AI Denmark will try to flip to socialism/communism and create a state of welfare before seeking an alliance against external threat. Will always reject Soviet Communism unless sharing the same war, but will align with Russian Social-Democracy."
+
+RULE_OPTION_ROMANOV: "The Last Romanov"
+RULE_ROMANOV_POL_AI_DESC: "Anastasia will ascend to the Polish throne. Then Poland will probably die to Germany or Russia somewhere along the path."

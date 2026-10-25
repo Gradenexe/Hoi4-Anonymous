@@ -1,0 +1,101 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = RULE_SOVIET_REPUBLICS_STATUS
+						option = RULE_SOVIET_REPUBLICS_ANNEXED
+					}
+					SOV = { exists = yes }
+				}
+				SOV = {
+					every_subject_country = {
+						limit = {
+							is_subject_of = SOV
+						}
+						SOV = {
+							annex_country = {
+								target = PREV
+								transfer_troops = yes
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_AFRICA option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_on_continent = africa }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_ASIA option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_on_continent = asia }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_NORTH_AMERICA option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_on_continent = north_america }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_SOUTH_AMERICA option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_on_continent = south_america }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_MIDDLE_EAST option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_on_continent = middle_east }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_AUSTRALIA option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_on_continent = australia }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_EUROPE option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_on_continent = europe }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			GRN = {
+				add_ideas = stupid_ai
+			}
+		}
+	}
+}

@@ -1,0 +1,766 @@
+ideas = {
+
+	country = {
+	
+	riots_in_streets = {
+		picture = riots
+		
+		removal_cost = -1 
+		
+		modifier = {
+			political_power_factor = -0.15 
+			neutrality_drift = 0.03 
+			}
+		}
+	
+	lux_poor_industry = {
+		picture = lux_poor_industry
+		
+		removal_cost = -1 
+		
+		modifier = {
+		consumer_goods_factor = 0.07
+		production_speed_buildings_factor = -0.3
+		industrial_capacity_factory = -0.1 
+			}
+		}
+	
+	lux_poor_industry1 = {
+		picture = lux_poor_industry
+		
+		removal_cost = -1 
+		
+		modifier = {
+			consumer_goods_factor = 0.05 
+			production_speed_buildings_factor = -0.2 
+			industrial_capacity_factory = -0.1
+			}
+		}
+	
+	lux_poor_industry2 = {
+		picture = lux_poor_industry
+		
+		removal_cost = -1 
+		
+		modifier = {
+			production_speed_buildings_factor = -0.1
+			industrial_capacity_factory = -0.1 
+			}
+		}
+	
+	lux_poor_industry3 = {
+		picture = lux_poor_industry
+		
+		removal_cost = -1 
+		
+		modifier = {	
+			consumer_goods_factor = 0.05 
+			production_speed_buildings_factor = -0.2 
+			}
+		}
+	
+	lux_poor_industry4 = {
+		picture = lux_poor_industry
+		
+		removal_cost = -1 
+		
+		modifier = {
+			production_speed_buildings_factor = -0.1 
+			}
+		}
+	
+	lux_poor_industry5 = {
+		picture = lux_industrialization
+		
+		removal_cost = -1 
+		
+		modifier = {
+			local_resources_factor = 0.1 
+			}
+		}
+	
+	lux_poor_industry6 = {
+		picture = lux_industrialization
+		
+		removal_cost = -1 
+		
+		modifier = {
+			production_speed_buildings_factor = 0.1 
+			consumer_goods_factor = -0.1
+			local_resources_factor = 0.2 
+			}
+		}
+	
+	luxemburg_army = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+			conscription_factor = -0.2 
+			army_org_factor = -0.1 
+			army_speed_factor = -0.15 
+			army_morale_factor = -0.1 
+			experience_gain_army_factor = -0.1 
+			training_time_factor = -0.2
+			}
+		}
+	
+	luxemburg_army1 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+			army_org_factor = -0.1 
+			army_speed_factor = -0.15 
+			army_morale_factor = -0.1 
+			experience_gain_army_factor = -0.1 
+			training_time_factor = -0.2
+			}
+		}
+	luxemburg_army2 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+			army_artillery_attack_factor = 0.1
+			army_artillery_defence_factor = 0.1
+			army_org_factor = -0.1 
+			army_speed_factor = -0.15 
+			army_morale_factor = -0.1 
+			training_time_factor = -0.1 
+			}
+		}
+	luxemburg_army3 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+		army_infantry_attack_factor = 0.05
+		army_infantry_defence_factor = 0.1
+		army_org_factor = -0.1 
+		army_speed_factor = -0.15 
+		army_morale_factor = -0.1 
+		training_time_factor = -0.1 
+		}
+	}
+	
+	luxemburg_army4 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+			army_artillery_attack_factor = 0.1
+			army_artillery_defence_factor = 0.1 
+			army_speed_factor = -0.15 
+			army_morale_factor = -0.1 
+			training_time_factor = -0.1 
+			}
+		}
+	
+	luxemburg_army5 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+		army_infantry_attack_factor = 0.05
+		army_infantry_defence_factor = 0.1
+		army_speed_factor = -0.15 
+		army_morale_factor = -0.1 
+		training_time_factor = -0.1 
+		}
+	}
+	
+	luxemburg_army6 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+			army_artillery_attack_factor = 0.1
+			army_artillery_defence_factor = 0.1 
+			army_speed_factor = -0.15  
+			}
+		}
+	
+	luxemburg_army7 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+		army_infantry_attack_factor = 0.05
+		army_infantry_defence_factor = 0.1
+		army_speed_factor = -0.15 
+		}
+	}
+	
+	luxemburg_army8 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+			army_artillery_attack_factor = 0.1
+			army_artillery_defence_factor = 0.1 
+			army_morale_factor = -0.1 
+			}
+		}
+	
+	luxemburg_army9 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+		army_infantry_attack_factor = 0.05
+		army_infantry_defence_factor = 0.1
+		army_morale_factor = -0.1  
+		}
+	}
+	
+	luxemburg_army10 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+			army_artillery_attack_factor = 0.1
+			army_artillery_defence_factor = 0.1 
+			experience_gain_army_factor = 0.1
+			}
+		}
+	
+	luxemburg_army11 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+		army_infantry_attack_factor = 0.05
+		army_infantry_defence_factor = 0.1 
+		experience_gain_army_factor = 0.1
+		}
+	}
+	
+	luxemburg_army12 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+			army_artillery_attack_factor = 0.1
+			army_artillery_defence_factor = 0.1 
+			experience_gain_army_factor = 0.1
+			special_forces_attack_factor = 0.15
+			special_forces_defence_factor = 0.15 
+			}
+		}
+	
+	luxemburg_army13 = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+		army_infantry_attack_factor = 0.05
+		army_infantry_defence_factor = 0.1 
+		experience_gain_army_factor = 0.1
+		special_forces_attack_factor = 0.15
+		special_forces_defence_factor = 0.15
+		}
+	}
+	
+	lux_industrialization = {	
+		picture = lux_industrialization
+		
+		removal_cost = -1 
+		
+		modifier = {
+			consumer_goods_factor = -0.07
+			local_building_slots_factor = 0.25
+			production_speed_buildings_factor = 0.05
+			}
+		}
+	
+	town_state = {
+		picture = state
+		
+		removal_cost = -1 
+		
+		modifier = {
+			political_power_factor = -0.15 
+			stability_factor = -0.1 
+		}
+	}
+	
+	large_town_state = {
+		picture = state
+		
+		removal_cost = -1 
+		
+		modifier = {
+			political_power_factor = -0.05
+			stability_factor = -0.05 
+			}
+		}
+	
+	city_state = {
+		picture = state
+		
+		removal_cost = -1 
+		
+		modifier = {
+			political_power_factor = 0.1 
+			war_support_factor = 0.05
+			}
+		}
+	
+	lux_science_funds = {
+		picture = lux_research_funds
+		
+		removal_cost = -1 
+		
+		modifier = {
+			consumer_goods_factor = 0.05 
+			research_speed_factor = 0.05
+			}
+		}
+	
+	axis_experts = {
+		picture = german_advisors
+		
+		removal_cost = -1 
+		
+		modifier = {
+			industrial_capacity_factory = 0.1 
+			production_speed_arms_factory_factor = 0.15 
+			}
+		}
+	
+	allied_experts = {
+		picture = eng_guided_by_britain
+		
+		removal_cost = -1 
+		
+		modifier = {
+			consumer_goods_factor = -0.15
+			production_speed_industrial_complex_factor = 0.07
+			}
+		}
+	
+	lux_air_defence = {
+		picture = anti_air
+		
+		removal_cost = -1 
+		
+		modifier = {
+		production_speed_anti_air_building_factor = 0.2
+		static_anti_air_damage_factor = 0.2
+        static_anti_air_hit_chance_factor = 0.25
+		}
+	}
+	
+	lux_foreign_experts = {
+		picture = foreign_experts
+		
+		removal_cost = -1 
+		
+		modifier = {
+			political_power_gain = -0.2 
+			}
+		}
+	
+	lux_fortify_lands = {
+		picture = fortification_focus
+		
+		removal_cost = -1 
+		
+		modifier = {
+			production_speed_bunker_factor = 0.3 
+			production_speed_coastal_bunker_factor = 0.3 
+			}
+		}
+	
+	unity_through_democracy = {
+		picture = generic_democratic_drift_bonus
+		
+		removal_cost = -1 
+		
+		modifier = {
+			democratic_drift = 0.1 
+			democratic_acceptance = 10 
+			stability_factor = 0.05 
+			}
+		}
+	
+	give_refuge_to_scientists = {
+		picture = give_refuge_to_scientists
+		
+		removal_cost = -1 
+		
+		modifier = {
+			research_speed_factor = 0.1 
+			stability_factor = -0.1 
+			}
+		}
+	
+	western_experts = {
+		picture = eng_guided_by_britain
+		
+		removal_cost = -1 
+		
+		modifier = {
+			industrial_capacity_factory = 0.1 
+			production_factory_max_efficiency_factor = 0.1 
+			}
+		}
+	
+	LUX_conscription = {
+		picture = lux_conscription
+		
+		removal_cost = -1 
+		
+		modifier = { 
+			conscription = 0.05
+			}
+		}
+	
+	we_must_not_fall = {
+		picture = FRA_scw_intervention_republicans_focus
+		
+		removal_cost = -1 
+		
+		modifier = {
+			army_core_defence_factor = 0.1 
+			surrender_limit = 0.1
+			war_support_factor = 0.1
+			}
+		}
+	
+	LUX_liberalism = {
+		picture = lux_liberalism
+		
+		removal_cost = -1 
+		
+		modifier = {
+			consumer_goods_factor = -0.15
+			}
+		}
+	
+	propaganda_of_benelux = {
+		picture = benelux_propaganda
+		
+		removal_cost = -1 
+		
+		modifier = {
+			democratic_acceptance = 50 
+			democratic_drift = 0.05 
+			}
+		}
+	
+	benelux_economic_cooperation = {
+		picture = benelux_economic_union
+		
+		removal_cost = -1 
+		
+		modifier = {
+			production_speed_buildings_factor = 0.1 
+			consumer_goods_factor = -0.15 
+			}
+		}
+	
+	LUX_responsibility_for_our_own_defense = {
+		picture = generic_fortify_the_borders
+		
+		removal_cost = -1 
+		
+		modifier = {
+			conscription = 0.025 
+			industrial_capacity_factory = 0.05 
+			production_speed_arms_factory_factor = 0.1 
+			}
+		}
+	
+	rally_the_monarchists = {
+		picture = generic_pp_unity_bonus
+		
+		removal_cost = -1 
+		
+		modifier = {
+			neutrality_drift = 0.1 
+			}
+		}
+	
+	LUX_organize_workers = {
+		picture = lux_work
+		
+		removal_cost = -1 
+		
+		modifier = {
+			industrial_capacity_factory = 0.1 
+			production_factory_max_efficiency_factor = 0.1 
+			production_factory_efficiency_gain_factor = 0.1 
+			}
+		}
+	
+	LUX_palace = {
+		picture = palace
+		
+		removal_cost = -1 
+		
+		modifier = {
+			political_power_factor = 0.1
+			stability_factor = 0.05 
+			war_support_factor = 0.05
+			}
+		}
+	
+	soldiers_of_kingdom = {
+		picture = soldier_of_kingdom
+		
+		removal_cost = -1 
+		
+		modifier = {
+			conscription = 0.03 
+			}
+		}
+	
+	LUX_who_are_we = {
+		picture = lux_who_are_we
+		
+		removal_cost = -1 
+		
+		modifier = {
+			political_power_factor = -0.25 
+			stability_factor = -0.1 
+			war_support_factor = 0.1 
+			}
+		}
+	
+	brave_soldiers_of_benelux = {
+		picture = luxembourg_army
+		
+		removal_cost = -1 
+		
+		modifier = {
+			army_attack_factor = 0.1 
+			army_defence_factor = 0.1 
+			conscription = 0.02 
+			}
+		}
+	
+	government_reforms = {
+		picture = lux_consumer_goods
+		
+		removal_cost = -1 
+		
+		modifier = {
+			consumer_goods_factor = -0.15 
+			stability_factor = 0.05 
+			}
+		}
+	
+	war_preparations = {
+		picture = war_preparations
+		
+		removal_cost = -1 
+		
+		modifier = {
+			consumer_goods_factor = -0.15 
+			production_speed_arms_factory_factor = 0.15 
+			}
+		}
+	
+	revive_luxembourg_nationalism = {
+		picture = generic_fascism_drift_bonus
+		
+		removal_cost = -1 
+		
+		modifier = {
+			fascism_drift = 0.1 
+			fascism_acceptance = 25 
+			}
+		}
+	
+	anti_communist_militas = {
+		picture = anti_soviet_pact
+		
+		removal_cost = -1 
+		
+		modifier = {
+			communism_drift = -0.05 
+			communism_acceptance = -100 
+			}
+		}
+	
+	LUX_national_education = {
+		picture = lux_nationalist_education
+		
+		removal_cost = -1 
+		
+		modifier = {
+			research_speed_factor = 0.03 
+			conscription_factor = 0.1 
+			industrial_capacity_factory = 0.05 
+			production_speed_buildings_factor = 0.05 
+			fascism_drift = 0.03 
+			}
+		}
+	
+	black_shirts = {
+		picture = lux_blackshirts
+		
+		removal_cost = -1 
+		
+		modifier = {
+			conscription = 0.05 
+			}
+		}
+	
+	golden_age = {
+		picture = golden_age
+		
+		removal_cost = -1 
+		
+		modifier = {
+			political_power_factor = 0.1 
+			war_support_factor = 0.1
+			}
+		}
+	
+	german_scientists = {
+		picture = german_scientists
+		
+		removal_cost = -1 
+		
+		modifier = {
+			stability_factor = -0.05 
+			research_speed_factor = 0.05 
+			}
+		}
+	
+	aircraft_supporter_of_axis = {
+		picture = generic_fighter_production_diverted
+		
+		removal_cost = -1 
+		
+		equipment_bonus = {
+				fighter = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+	}
+	
+	integrated_german_soldiers = {
+		picture = german_advisors
+		
+		removal_cost = -1 
+		
+		modifier = {
+			conscription_factor = 0.1 
+			army_attack_factor = 0.1 
+			army_defence_factor = 0.1 
+			}
+		}
+	
+	more_budget_for_science = {
+		picture = lux_research_funds
+		
+		removal_cost = -1 
+		
+		modifier = {
+			research_speed_factor = 0.05 
+			consumer_goods_factor = 0.05
+			}
+		}
+	
+	communism_influence = {
+		picture = generic_communism_drift_bonus
+		
+		removal_cost = -1 
+		
+		modifier = {
+			communism_drift = 0.1 
+			communism_acceptance = 25 
+			}
+		}
+	
+	refugees_from_germany = {
+		picture = german_scientists
+		
+		removal_cost = -1 
+		
+		modifier = {
+			weekly_manpower = 1250 
+			}
+		}
+	
+	LUX_socialist_faith = {
+		picture = dfn_socialist_faith
+		
+		removal_cost = -1 
+		
+		modifier = {
+			research_speed_factor = 0.05 
+			local_building_slots_factor = 0.2 
+			local_resources_factor = 0.1 
+			production_speed_buildings_factor = 0.1 
+			consumer_goods_factor = -0.07
+			}
+		}
+	
+	strengthen_workers = {
+		picture = lux_worker
+		
+		removal_cost = -1 
+		
+		modifier = {
+			conscription = 0.03
+			industrial_capacity_factory = 0.1 
+			production_factory_max_efficiency_factor = 0.1 
+			}
+		}
+	
+	everything_for_our_peoples = {
+		picture = lux_consumer_goods
+		
+		removal_cost = -1 
+		
+		modifier = {
+			consumer_goods_factor = -0.15 
+			}
+		}
+	
+	prepare_war_with_germany = {
+		picture = war_preparations
+		
+		removal_cost = -1 
+		
+		modifier = {
+			consumer_goods_factor = -0.1
+			production_speed_arms_factory_factor = 0.15 
+			}
+		}
+	
+	soviet_military_staff = {
+		picture = dfn_soviet_advisors
+		
+		removal_cost = -1 
+		
+		modifier = {
+			industrial_capacity_factory = 0.15 
+			training_time_factor = -0.2 
+			}
+		}
+
+	
+		}
+		}
+			

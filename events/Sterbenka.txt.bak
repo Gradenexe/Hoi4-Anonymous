@@ -1,0 +1,934 @@
+add_namespace = sterbenka
+
+# fall of soviet union
+country_event = {
+	id = sterbenka.1
+	title = sterbenka.1.t
+	desc = sterbenka.1.d
+	picture = GFX_decision_cat_picture_soviet_civil_war
+	
+	trigger = {
+		NOT = { original_tag = SOV }
+		has_war_with = SOV
+		SOV = { surrender_progress > 0.85 }
+		controls_state = 219 #Moscov
+		controls_state = 195 #Leningrad
+		controls_state = 217 #Stalingrad
+		controls_state = 229 #Baku
+		controls_state = 213 #Murmansk
+		controls_state = 206 #Minsk
+		controls_state = 202 #Kyiv
+		controls_state = 137 #Crimea
+	}
+
+	#ok
+	option = {
+		name = sterbenka.1.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = SOV
+		every_faction_member = {
+			white_peace = SOV
+		}
+		every_state = { 
+			limit = {
+				is_on_continent = europe
+				or = {
+					is_owned_by = SOV 
+					owner = {
+						is_subject_of = SOV
+					}
+				}
+			}
+			transfer_state_to = PREV
+		}
+		every_country = {
+			limit = {
+				is_subject_of = SOV
+			}
+			set_autonomy = { target = THIS autonomy_state = autonomy_free }
+		}
+		SOV = { 
+			add_ideas = anti_german_military
+			set_cosmetic_tag = SOV_red_army
+		}
+	}
+	
+	#NEIN!
+	option = {
+		name = sterbenka.1.b
+		ai_chance = {
+			factor = 0
+		}
+		add_war_support = 0.1
+	}
+}
+
+# Bukhara rebelion
+country_event = {
+	id = sterbenka.2
+	title = sterbenka.2.t
+	desc = sterbenka.2.d
+	picture = GFX_decision_cat_picture_soviet_civil_war
+	
+	trigger = {
+		tag = UZB
+		UZB = { 
+			is_subject = no 
+			exists = yes
+		}
+		830 = { is_controlled_by = UZB }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			UZB = { release_on_controlled = BUK }
+			TAJ = {
+				declare_war_on = {
+					target = BUK
+					type = annex_everything
+				}
+			}
+			every_country = {
+				limit = {
+					original_tag = BUK
+					has_civil_war = yes
+				}
+				declare_war_on = {
+					target = BUK
+					type = annex_everything
+				}
+			}
+			BUK = {
+				division_template = {
+					name = "Bukhara Division"
+					priority = 1
+					division_names_group = BUK_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+				
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"qoʻzgʻolonchi\" division_template = \"Bukhara Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"qoʻzgʻolonchi\" division_template = \"Bukhara Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"qoʻzgʻolonchi\" division_template = \"Bukhara Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"qoʻzgʻolonchi\" division_template = \"Bukhara Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.70
+				}
+			}
+		}
+	}
+
+	#Play as
+	option = {
+		name = sterbenka.2.a
+		ai_chance = {
+			factor = 0
+		}
+		declare_war_on = {
+			target = BUK
+			type = annex_everything
+		}
+		BUK = { change_tag_from = ROOT }
+	}
+	
+	#Kill that
+	option = {
+		name = sterbenka.2.b
+		ai_chance = {
+			factor = 95
+		}
+		declare_war_on = {
+			target = BUK
+			type = annex_everything
+		}
+	}
+	
+	#Peace out
+	option = {
+		name = sterbenka.2.c
+		ai_chance = {
+			factor = 5
+		}
+		add_war_support = -0.05
+		add_stability = 0.1
+	}
+}
+
+# Khiva rebelion
+country_event = {
+	id = sterbenka.3
+	title = sterbenka.3.t
+	desc = sterbenka.3.d
+	picture = GFX_decision_cat_picture_soviet_civil_war
+	
+	trigger = {
+		tag = UZB
+		UZB = { 
+			is_subject = no 
+			exists = yes
+		}
+		823 = { is_controlled_by = UZB }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			UZB = { release_on_controlled = KKP }
+			KKS = {
+				declare_war_on = {
+					target = KHI
+					type = annex_everything
+				}
+			}
+			every_country = {
+				limit = {
+					original_tag = SOV
+					has_civil_war = yes
+				}
+				declare_war_on = {
+					target = KKP
+					type = annex_everything
+				}
+			}
+			KKP = {
+				division_template = {
+					name = "Karakalpakstan Division"
+					priority = 1
+					division_names_group = KKP_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+				
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"kóterilisshiler\" division_template = \"Karakalpakstan Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"kóterilisshiler\" division_template = \"Karakalpakstan Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"kóterilisshiler\" division_template = \"Karakalpakstan Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"kóterilisshiler\" division_template = \"Karakalpakstan Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.70
+				}
+			}
+		}
+	}
+
+	#Play as
+	option = {
+		name = sterbenka.3.a
+		ai_chance = {
+			factor = 0
+		}
+		declare_war_on = {
+			target = KKS
+			type = annex_everything
+		}
+		KKS = { change_tag_from = ROOT }
+	}
+	
+	#Kill that
+	option = {
+		name = sterbenka.2.b
+		ai_chance = {
+			factor = 95
+		}
+		declare_war_on = {
+			target = KKS
+			type = annex_everything
+		}
+	}
+	
+	#Peace out
+	option = {
+		name = sterbenka.3.c
+		ai_chance = {
+			factor = 5
+		}
+		add_war_support = -0.05
+		add_stability = 0.1
+	}
+}
+
+# Khiva rebelion
+country_event = {
+	id = sterbenka.4
+	title = sterbenka.4.t
+	desc = sterbenka.4.d
+	picture = GFX_decision_cat_picture_soviet_civil_war
+	
+	trigger = {
+		tag = TMS
+		TMS = { 
+			is_subject = no 
+			exists = yes
+		}
+		832 = { is_controlled_by = TMS }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			TMS = { release_on_controlled = KHI }
+			KKS = {
+				declare_war_on = {
+					target = KHI
+					type = annex_everything
+				}
+			}
+			every_country = {
+				limit = {
+					original_tag = SOV
+					has_civil_war = yes
+				}
+				declare_war_on = {
+					target = KHI
+					type = annex_everything
+				}
+			}
+			KHI = {
+				division_template = {
+					name = "Khiva Division"
+					priority = 1
+					division_names_group = KHI_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+				
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"ayağğa qalğanlar\" division_template = \"Khiva Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"ayağğa qalğanlar\" division_template = \"Khiva Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"ayağğa qalğanlar\" division_template = \"Khiva Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"ayağğa qalğanlar\" division_template = \"Khiva Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.70
+				}
+			}
+		}
+	}
+
+	#Play as
+	option = {
+		name = sterbenka.4.a
+		ai_chance = {
+			factor = 0
+		}
+		declare_war_on = {
+			target = KHI
+			type = annex_everything
+		}
+		KHI = { change_tag_from = ROOT }
+	}
+	
+	#Kill that
+	option = {
+		name = sterbenka.4.b
+		ai_chance = {
+			factor = 95
+		}
+		declare_war_on = {
+			target = KHI
+			type = annex_everything
+		}
+	}
+	
+	#Peace out
+	option = {
+		name = sterbenka.4.c
+		ai_chance = {
+			factor = 5
+		}
+		add_war_support = -0.05
+		add_stability = 0.1
+	}
+}
+
+# Abkhazia rebelion
+country_event = {
+	id = sterbenka.5
+	title = sterbenka.5.t
+	desc = sterbenka.5.d
+	picture = GFX_decision_cat_picture_soviet_civil_war
+	
+	trigger = {
+		tag = GEO
+		GEO = { 
+			is_subject = no 
+			exists = yes
+		}
+		826 = { is_controlled_by = GEO }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			GEO = { release_on_controlled = ABK }
+			every_country = {
+				limit = {
+					original_tag = SOV
+					has_civil_war = yes
+				}
+				declare_war_on = {
+					target = ABK
+					type = annex_everything
+				}
+			}
+			ABK = {
+				division_template = {
+					name = "Abkhazia Division"
+					priority = 1
+					division_names_group = ABK_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+				
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"aqwygyloycwa\" division_template = \"Abkhazia Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"aqwygyloycwa\" division_template = \"Abkhazia Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"aqwygyloycwa\" division_template = \"Abkhazia Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"aqwygyloycwa\" division_template = \"Abkhazia Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.70
+				}
+			}
+		}
+	}
+
+	#Play as
+	option = {
+		name = sterbenka.5.a
+		ai_chance = {
+			factor = 0
+		}
+		declare_war_on = {
+			target = ABK
+			type = annex_everything
+		}
+		ABK = { change_tag_from = ROOT }
+	}
+	
+	#Kill that
+	option = {
+		name = sterbenka.5.b
+		ai_chance = {
+			factor = 95
+		}
+		declare_war_on = {
+			target = ABK
+			type = annex_everything
+		}
+	}
+	
+	#Peace out
+	option = {
+		name = sterbenka.5.c
+		ai_chance = {
+			factor = 5
+		}
+		add_war_support = -0.05
+		add_stability = 0.1
+	}
+}
+
+# Crimia rebelion
+country_event = {
+	id = sterbenka.6
+	title = sterbenka.6.t
+	desc = sterbenka.6.d
+	picture = GFX_decision_cat_picture_soviet_civil_war
+	
+	trigger = {
+		tag = UKR
+		UKR = { 
+			is_subject = no 
+			exists = yes
+		}
+		or = {
+			137 = { is_controlled_by = UKR }
+			any_country_with_original_tag = {
+				original_tag_to_check = SOV
+				controls_state = 137
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					original_tag = SOV
+					has_civil_war = yes
+				}
+				release_on_controlled = CRI
+				declare_war_on = {
+					target = CRI
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					137 = { is_controlled_by = UKR }
+				}
+				UKR = { release_on_controlled = CRI }
+			}
+			CRI = {
+				division_template = {
+					name = "Crimea Division"
+					priority = 1
+					division_names_group = CRI_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+				
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"isyançılar\" division_template = \"Crimea Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"isyançılar\" division_template = \"Crimea Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"isyançılar\" division_template = \"Crimea Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"isyançılar\" division_template = \"Crimea Division\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.70
+				}
+			}
+		}
+	}
+
+	#Play as
+	option = {
+		name = sterbenka.6.a
+		ai_chance = {
+			factor = 0
+		}
+		declare_war_on = {
+			target = CRI
+			type = annex_everything
+		}
+		CRI = { change_tag_from = ROOT }
+	}
+	
+	#Kill that
+	option = {
+		name = sterbenka.6.b
+		ai_chance = {
+			factor = 50
+		}
+		declare_war_on = {
+			target = CRI
+			type = annex_everything
+		}
+	}
+	
+	#Peace out
+	option = {
+		name = sterbenka.6.c
+		ai_chance = {
+			factor = 50
+		}
+		add_war_support = -0.05
+		add_stability = 0.1
+	}
+}
+
+# Territories for puppets
+country_event = {
+	id = sterbenka.7
+	title = sterbenka.7.t
+	desc = sterbenka.7.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	#Agree
+	option = {
+		name = sterbenka.7.a
+		ai_chance = {
+			factor = 100
+		}
+		set_temp_variable = { poland_territories_for_puppet_var = this }
+		save_event_target_as = poland_territories_for_puppet_target
+		THIS = {
+			FROM = {
+				every_owned_state = {
+					limit = { is_core_of = var:poland_territories_for_puppet_var }
+					ROOT = { transfer_state = PREV }
+				}
+			}
+			every_core_state = {
+				limit = {
+					is_core_of = POL
+				}
+				remove_core_of = POL
+			}
+		}
+		FROM = { set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet } }
+		FROM = {
+			country_event = {
+				id = sterbenka.8
+				days = 1
+			}
+		}
+	}
+	
+	#Fuck you Poland
+	option = {
+		name = sterbenka.7.b
+		ai_chance = {
+			factor = 0
+		}
+		FROM = {
+			country_event = {
+				id = sterbenka.9
+				days = 1
+			}
+		}
+	}
+}
+
+# They agree
+country_event = {
+	id = sterbenka.8
+	title = sterbenka.8.t
+	desc = sterbenka.8.d
+	picture = GFX_report_event_generic_croatia_handshake
+	
+	is_triggered_only = yes
+
+	#Good
+	option = {
+		name = sterbenka.8.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# They refused 
+country_event = {
+	id = sterbenka.9
+	title = sterbenka.9.t
+	desc = sterbenka.9.d
+	picture = GFX_report_event_poland_rejects
+	
+	is_triggered_only = yes
+
+	#Bad
+	option = {
+		name = sterbenka.9.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+add_namespace = International_STE
+
+	#Request to do excavation research with Belarus
+country_event = {
+	id = International_STE.8
+	title = International_STE.8.t
+	desc = International_STE.8.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+
+	option = { #Great idea!
+		name = International_STE.8.a
+		ai_chance = {
+			base = 10
+		}
+		add_tech_bonus = {
+			name = BLR_autarky_res
+			bonus = 0.5
+			uses = 1
+			technology = excavation1
+			technology = excavation2
+			technology = excavation3
+			technology = excavation4
+			technology = excavation5
+		}
+		FROM = {
+			add_tech_bonus = {
+				name = BLR_autarky_res
+				bonus = 1.0
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+		}
+		FROM = { country_event = International_STE.9 }
+	}
+
+	option = { #Nope
+		name = International_STE.8.b
+		ai_chance = {
+			base = 0
+		}
+		FROM = { country_event = International_STE.10 }
+	}
+}
+
+#Belarus agree
+country_event = {
+	id = International_STE.9
+	title = International_STE.9.t
+	desc = International_STE.9.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+
+	option = { #Cool
+		name = International_STE.9.a
+	}
+}
+
+#Belarus disagree
+country_event = {
+	id = International_STE.10
+	title = International_STE.10.t
+	desc = International_STE.10.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+
+	option = { # =(
+		name = International_STE.10.a
+	}
+}
+
+#Donbas deal
+country_event = {
+	id = International_STE.11
+	title = International_STE.11.t
+	desc = International_STE.11.d
+	picture = GFX_report_event_FIN_petsamo_mine
+	
+	is_triggered_only = yes
+
+	option = { #Great idea!
+		name = International_STE.11.a
+		ai_chance = {
+			base = 10
+		}
+		227 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		FROM = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = coal
+					amount = 10
+				}
+			}
+		}
+		FROM = { country_event = International_STE.12 }
+	}
+
+	option = { #Nope
+		name = International_STE.11.b
+		ai_chance = {
+			base = 0
+		}
+		FROM = { country_event = International_STE.13 }
+	}
+}
+
+#Ukraine agree
+country_event = {
+	id = International_STE.12
+	title = International_STE.12.t
+	desc = International_STE.12.d
+	picture = GFX_report_event_FIN_petsamo_mine
+	
+	is_triggered_only = yes
+
+	option = { #Cool
+		name = International_STE.12.a
+	}
+}
+
+#Ukraine disagree
+country_event = {
+	id = International_STE.13
+	title = International_STE.13.t
+	desc = International_STE.13.d
+	picture = GFX_report_event_FIN_petsamo_mine
+	
+	is_triggered_only = yes
+
+	option = { # =(
+		name = International_STE.13.a
+	}
+}

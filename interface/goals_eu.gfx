@@ -1,0 +1,54 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_focus_europe_union"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_europe_union_airforce"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union_airforce.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_europe_union_army"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_europe_union_coal_and_steel"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union_coal_and_steel.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_europe_union_energy"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union_energy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_europe_union_euro"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union_euro.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_europe_union_fleet"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union_fleet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_europe_union_justice"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union_justice.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_europe_union_nuclear_power"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union_nuclear_power.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_europe_union_parliament"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union_parliament.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_europe_union_power_of_nations"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union_power_of_nations.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_europe_union_trade_inside_europe"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union_trade_inside_europe.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_europe_union_trade_outside_europe"
+		texturefile = "gfx/interface/goals/eu/focus_europe_union_trade_outside_europe.dds"
+	}
+}

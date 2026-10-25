@@ -1,0 +1,59 @@
+SLO_upgrade_army_equip_idea = {
+	if = {
+		limit = { NOT = { has_idea = SLO_pumping_out_weapons_idea } }
+		
+		# Remove whatever tier is currently active
+		if = { limit = { has_idea = SLO_army_equip_1 } remove_ideas = SLO_army_equip_1 }
+		if = { limit = { has_idea = SLO_army_equip_2 } remove_ideas = SLO_army_equip_2 }
+		if = { limit = { has_idea = SLO_army_equip_3 } remove_ideas = SLO_army_equip_3 }
+		if = { limit = { has_idea = SLO_army_equip_4 } remove_ideas = SLO_army_equip_4 }
+		if = { limit = { has_idea = SLO_army_equip_5 } remove_ideas = SLO_army_equip_5 }
+		if = { limit = { has_idea = SLO_army_equip_6 } remove_ideas = SLO_army_equip_6 }
+		if = { limit = { has_idea = SLO_army_equip_7 } remove_ideas = SLO_army_equip_7 }
+		if = { limit = { has_idea = SLO_army_equip_8 } remove_ideas = SLO_army_equip_8 }
+		if = { limit = { has_idea = SLO_army_equip_9 } remove_ideas = SLO_army_equip_9 }
+		if = { limit = { has_idea = SLO_army_equip_10 } remove_ideas = SLO_army_equip_10 }
+
+		# Add the correct tier based on how many equip focuses are done
+		if = {
+			limit = { check_variable = { SLO_equip_focuses_done = 1 } }
+			add_ideas = SLO_army_equip_1
+		}
+		else_if = {
+			limit = { check_variable = { SLO_equip_focuses_done = 2 } }
+			add_ideas = SLO_army_equip_2
+		}
+		else_if = {
+			limit = { check_variable = { SLO_equip_focuses_done = 3 } }
+			add_ideas = SLO_army_equip_3
+		}
+		else_if = {
+			limit = { check_variable = { SLO_equip_focuses_done = 4 } }
+			add_ideas = SLO_army_equip_4
+		}
+		else_if = {
+			limit = { check_variable = { SLO_equip_focuses_done = 5 } }
+			add_ideas = SLO_army_equip_5
+		}
+		else_if = {
+			limit = { check_variable = { SLO_equip_focuses_done = 6 } }
+			add_ideas = SLO_army_equip_6
+		}
+		else_if = {
+			limit = { check_variable = { SLO_equip_focuses_done = 7 } }
+			add_ideas = SLO_army_equip_7
+		}
+		else_if = {
+			limit = { check_variable = { SLO_equip_focuses_done = 8 } }
+			add_ideas = SLO_army_equip_8
+		}
+		else_if = {
+			limit = { check_variable = { SLO_equip_focuses_done = 9 } }
+			add_ideas = SLO_army_equip_9
+		}
+		else_if = {
+			limit = { check_variable = { SLO_equip_focuses_done >= 10 } }
+			add_ideas = SLO_army_equip_10
+		}
+	}
+}

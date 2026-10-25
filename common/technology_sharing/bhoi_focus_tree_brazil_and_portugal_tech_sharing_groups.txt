@@ -1,0 +1,12 @@
+technology_sharing_group = {
+
+	id = LUSOPHONE_tech_sharing
+	name = LUSOPHONE_tech_sharing_name
+	desc = LUSOPHONE_tech_sharing_desc
+	picture = GFX_technology_sharing_default
+	research_sharing_per_country_bonus = 0.2
+
+	available = {
+		has_idea = LUSOPHONE_commonwealth_idea
+	}
+}

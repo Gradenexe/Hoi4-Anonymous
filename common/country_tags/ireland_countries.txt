@@ -1,0 +1,4 @@
+IRE_Celtic_Union = {
+	color = rgb { 253  232  129 }
+	color_ui = rgb { 253  232  129 }
+}

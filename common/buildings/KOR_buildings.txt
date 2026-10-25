@@ -1,0 +1,55 @@
+buildings = {
+	Gyeongbokgung_Palace = {
+		show_on_map = 1
+		base_cost = 20000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		icon_frame = 26
+		value = 5
+		tags = { Gyeongbokgung_Palace_building }
+		spawn_point = landmark_spawn
+		is_buildable = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_Gyeongbokgung_Palace_icon_small
+		level_cap = {
+			province_max = 1
+		}
+		show_modifier = yes
+		state_modifiers = {
+			local_building_slots_factor = 0.15
+		}
+		country_modifiers = {
+			enable_for_controllers = { KOR }
+			modifiers = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+	}
+	Celestial_Research_Institute = {
+		show_on_map = 1
+		base_cost = 20000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		icon_frame = 26
+		value = 5
+		tags = { Celestial_Research_Institute_building }
+		spawn_point = landmark_spawn
+		is_buildable = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_Celestial_Research_Institute_icon_small
+		level_cap = {
+			province_max = 1
+		}
+		show_modifier = yes
+		state_modifiers = {
+			
+		}
+		country_modifiers = {
+			enable_for_controllers = { KOR }
+			modifiers = {
+				research_speed_factor = 0.05
+			}
+		}
+	}
+}

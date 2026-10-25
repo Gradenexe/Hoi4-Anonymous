@@ -1,0 +1,145 @@
+########################################################################################################################################服从####################
+JKO_chaoxian_zongdu_budui = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_generic_chaoxian_zongdu_budui
+	#0
+	army_infantry_attack_factor = chaoxian_zongdu_budui_4	#步兵攻击
+	army_infantry_defence_factor = chaoxian_zongdu_budui_5	#步兵防御
+	experience_loss_factor = chaoxian_zongdu_budui_6	#有经验的士兵损失
+	naval_strike_targetting_factor = chaoxian_zongdu_budui_7	#对海瞄准
+	convoy_escort_efficiency = chaoxian_zongdu_budui_8	#运输护航效率
+	mines_planting_by_fleets_factor = chaoxian_zongdu_budui_9	#海军布雷效率
+	production_speed_coastal_bunker_factor = chaoxian_zongdu_budui_10	#海军要塞建造速度
+	production_speed_bunker_factor = chaoxian_zongdu_budui_11	#堡垒建造速度
+	experience_gain_army = chaoxian_zongdu_budui_12	#陆军经验增长 
+}
+
+JKO_chaoxian_zongdu_fu = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_generic_chaoxian_zongdu_fu
+	#0
+	stability_factor = chaoxian_zongdu_fu_1	#稳定度
+	political_advisor_cost_factor = chaoxian_zongdu_fu_2	#政治顾问花费
+	political_power_factor = chaoxian_zongdu_fu_3	#政治点百分比增加 
+	war_support_factor = chaoxian_zongdu_fu_4	#战争支持度
+	non_core_manpower = chaoxian_zongdu_fu_5	#非核心人力
+	mobilization_speed = chaoxian_zongdu_fu_6	#动员速度
+	compliance_growth = chaoxian_zongdu_fu_7	#顺从度增长速度
+	party_popularity_stability_factor = chaoxian_zongdu_fu_8	#党派支持度对稳定度修正
+}
+
+JKO_xianbing_jingcha_zhidu_dynamic = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_generic_secret_police
+	#0
+	stability_factor = xianbing_jingcha_1	#稳定度
+	resistance_growth = xianbing_jingcha_2	#抵抗增长速度
+	resistance_target = xianbing_jingcha_3	#抵抗目标(抵抗的力度)
+	required_garrison_factor = xianbing_jingcha_4	#驻军需求
+	enemy_operative_detection_chance = xianbing_jingcha_5	#敌方特工被发现几率补正
+	enemy_operative_capture_chance_factor = xianbing_jingcha_6	#敌方特工被捕几率
+	resistance_decay = xianbing_jingcha_7	#抵抗下降速度
+	modifier_army_sub_unit_militia_attack_factor = chaoxian_zongdu_budui_1	#民兵攻击
+	modifier_army_sub_unit_militia_defence_factor = chaoxian_zongdu_budui_2	#民兵防御
+	modifier_army_sub_unit_militia_max_org_factor = chaoxian_zongdu_budui_3	#民兵组织度
+}
+
+JKO_dalu_bingzhan_jidi_dynamic = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_SWE_severe_lack_of_ammunition
+	#0
+	production_speed_industrial_complex_factor = zongdufu_gongye_1	#民用工厂建造速度
+	production_speed_arms_factory_factor = zongdufu_gongye_2	#军用工厂建造速度
+	production_speed_infrastructure_factor = zongdufu_gongye_3	#基础设施建造速度
+	local_resources_factor = zongdufu_gongye_4	#战略资源获取率
+	local_building_slots_factor = zongdufu_gongye_5	#地区最大工业值
+	production_speed_dockyard_factor = zongdufu_gongye_6	#海军船坞建造速度
+	production_speed_naval_base_factor = zongdufu_gongye_7	#海军基地建造速度
+}
+
+JKO_caituan_de_longduan_dynamic = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_jap_zaibatsu
+	#0
+	min_export = zongdufu_caituan_1	#出口资源
+	industrial_capacity_factory = zongdufu_caituan_2	#工厂产出
+	production_factory_max_efficiency_factor = zongdufu_caituan_3	#生产效率上限
+	consumer_goods_factor = zongdufu_caituan_4	#生活消费品
+	research_speed_factor = zongdufu_caituan_5	#研究速度
+	political_advisor_cost_factor = zongdufu_caituan_6	#政治顾问花费
+	trade_laws_cost_factor = zongdufu_caituan_7	#贸易法案花费
+}
+
+########################################################################################################################################独立####################
+JKO_bandao_duli_one_dynamic = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_generic_idea_chaoxian_sanyi_yundong
+	democratic_drift = JKO_bandao_duli_one_dynamic_1	#民主意识形态
+	communism_drift = JKO_bandao_duli_one_dynamic_2	#共产主义意识形态
+	neutrality_drift = JKO_bandao_duli_one_dynamic_3	#中立意识形态
+	fascism_drift = JKO_bandao_duli_one_dynamic_4	#法西斯意识形态
+}
+
+###########地区
+JKO_tielue_huihuai_modifiers = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_generic_JKO_tielue_huihuai
+	remove_trigger = {
+		is_controlled_by = KOR 
+	}
+	local_supply_impact_factor = 0.35
+	disable_strategic_redeployment = 1
+	army_speed_factor_for_controller = -0.25
+	local_non_core_supply_impact_factor = 0.15
+	repair_speed_rail_way_factor = -0.5	#铁路修复速度
+	local_supplies = -0.5	#当地补给能力
+}
+
+JKO_fankangjun_dabenying_modifiers = {
+	#STATE MODIFIER
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_generic_resistance
+	remove_trigger = {
+		is_controlled_by = KOR 
+	}
+	#local_factory_sabotage = 0.05
+	local_resources = -0.15
+	local_factories = -0.15
+	state_production_speed_buildings_factor = -0.2
+	resistance_target = 0.15
+	compliance_growth = -0.1
+}
+
+JKO_resistance_against_colonial_rule_dm = { #STATE MODIFIER
+	enable = { always = yes }
+
+	remove_trigger = {
+		is_controlled_by = KOR 
+	}
+
+	icon = GFX_modifiers_generic_resistance
+
+	#local_factory_sabotage = 0.05
+	local_resources = -0.05
+	local_factories = -0.05
+	state_production_speed_buildings_factor = -0.1
+	resistance_target = 0.1
+	compliance_growth = -0.02
+
+}

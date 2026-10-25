@@ -1,0 +1,77 @@
+﻿ l_english:
+ # ============================================
+ # BALTIC ENTENTE SHARED FOCUS TREE
+ # ============================================
+
+ # --- Root ---
+ BALTIC_entente_shared: "Baltic Entente"
+ BALTIC_entente_shared_desc: "The Baltic states of Estonia, Latvia, and Lithuania have formed a mutual defence and cooperation pact. Together we are stronger."
+
+ # --- Railway ---
+ BALTIC_railway_cooperation: "Baltic Railway Cooperation"
+ BALTIC_railway_cooperation_desc: "A unified railway network connecting our three nations will dramatically improve the speed of troop movements and economic integration."
+
+ # --- Industrial Expansion ---
+ BALTIC_industrial_expansion: "Industrial Expansion"
+ BALTIC_industrial_expansion_desc: "By pooling our resources and expertise, we can construct new factories to fuel our growing war economy."
+
+ # --- Resource Development ---
+ BALTIC_resource_development: "Baltic Natural Resources"
+ BALTIC_resource_development_desc: "The Baltic states sit atop significant deposits of raw materials. Coordinated extraction will benefit all member nations."
+
+ BALTIC_estonian_oil: "Estonian Oil Shale"
+ BALTIC_estonian_oil_desc: "Estonia's northern regions contain vast deposits of oil shale. With proper investment, we can exploit this resource for the benefit of the entire Baltic alliance."
+
+ BALTIC_latvian_steel: "Latvian Steel Industry"
+ BALTIC_latvian_steel_desc: "Latvia's iron ore deposits in the Kurzeme region can be transformed into high-quality steel to supply Baltic arms production."
+
+ BALTIC_lithuanian_aluminium: "Lithuanian Aluminium"
+ BALTIC_lithuanian_aluminium_desc: "Lithuania's Žemaitija region holds valuable bauxite deposits. Developing aluminium production here will modernize our military equipment."
+
+ BALTIC_combined_resources: "Baltic Combined Resources"
+ BALTIC_combined_resources_desc: "With all three Baltic resource industries working in tandem, we have achieved economic self-sufficiency that will sustain our alliance through any conflict."
+
+ # --- Defence Line ---
+ BALTIC_defence_line: "Baltic Defence Line"
+ BALTIC_defence_line_desc: "We shall construct a chain of fortifications across all three countries, creating an impenetrable wall that will deter any aggressor."
+
+ BALTIC_plan_east: "Plan East"
+ BALTIC_plan_east_desc: "The Soviet threat looms large over the Baltic. We must reinforce our eastern borders with fortifications and prepared defensive positions to blunt any Red Army advance."
+
+ BALTIC_plan_west: "Plan West"
+ BALTIC_plan_west_desc: "Germany's ambitions are a constant concern. Coastal fortifications and western defensive lines will ensure we can resist any pressure from the Reich."
+
+ BALTIC_homeland_defense: "Homeland Defence"
+ BALTIC_homeland_defense_desc: "With both our eastern and western borders secured, we can now focus on training our armies for the ultimate defense of the Baltic homeland. Every citizen will know their role when the time comes."
+
+ # --- Fleet ---
+ BALTIC_fleet_cooperation: "Baltic Sea Fleet"
+ BALTIC_fleet_cooperation_desc: "The Baltic Sea is our lifeline. A coordinated Baltic naval force will protect our coastlines and shipping lanes from foreign interference."
+
+ # --- Army ---
+ BALTIC_unified_army: "Unified Baltic Army"
+ BALTIC_unified_army_desc: "The armies of Estonia, Latvia, and Lithuania are to be placed under a unified command structure, sharing doctrine, equipment, and training programmes."
+
+ BALTIC_air_cooperation: "Baltic Air Cooperation"
+ BALTIC_air_cooperation_desc: "A combined Baltic air force, trained together and sharing doctrine, will provide vital air cover for our armies and coastal defences."
+
+ BALTIC_military_industry: "Baltic Military Industry"
+ BALTIC_military_industry_desc: "Expanding our arms factories and coordination of military production will ensure our alliance can sustain prolonged military operations."
+
+ # --- Economy ---
+ BALTIC_currency_union: "Baltic Currency Union"
+ BALTIC_currency_union_desc: "A shared currency and monetary policy will deepen economic ties between our nations, reducing trade friction and boosting consumer confidence across the alliance."
+
+ BALTIC_university_exchange: "University Exchange Programme"
+ BALTIC_university_exchange_desc: "Baltic scientists and engineers studying together will accelerate technological development and share crucial knowledge across all three nations."
+
+ # --- Dynamic Modifier ---
+ BALTIC_pact: "Baltic Pact"
+ BALTIC_pact_desc: "As a member of the Baltic Pact, this nation benefits from shared resources, military cooperation, and economic integration across all three Baltic states."
+
+ BALTIC_lit_lat_military_cooperation:0 "Lithuanian-Latvian Military Cooperation"
+ BALTIC_lit_lat_military_cooperation_desc:0 "To ensure the survival of our nations against the looming threats from both East and West, we must integrate our military command structures and share our martial expertise."
+ BALTIC_lat_est_civilian_cooperation:0 "Latvian-Estonian Civilian Cooperation"
+ BALTIC_lat_est_civilian_cooperation_desc:0 "By tearing down economic barriers and sharing our civilian industrial capacity, we can rapidly modernize our infrastructure and factories."
+ BALTIC_lit_est_naval_cooperation:0 "Lithuanian-Estonian Naval Cooperation"
+ BALTIC_lit_est_naval_cooperation_desc:0 "The Baltic Sea is our lifeline. Combining our shipbuilding efforts and naval intelligence will allow us to secure our maritime borders."

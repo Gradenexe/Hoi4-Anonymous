@@ -1,0 +1,42 @@
+
+technology_sharing_group = {
+
+	id = LUX_research_cooperation1
+	name = LUX_research_cooperation1_name
+	desc = LUX_research_cooperation1_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.1
+
+	available = {
+			is_in_faction_with = LUX
+	}
+}
+
+technology_sharing_group = {
+
+	id = LUX_german_techological_exchange
+	name = LUX_german_techological_exchange_name
+	desc = LUX_german_techological_exchange_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.1
+
+	available = {
+			is_in_faction_with = LUX
+	}
+}
+
+technology_sharing_group = {
+
+	id = LUX_benelux_technological_exchange
+	name = LUX_benelux_technological_exchange_name
+	desc = LUX_benelux_technological_exchange_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.1
+
+	available = {
+			is_in_faction_with = LUX
+	}
+}

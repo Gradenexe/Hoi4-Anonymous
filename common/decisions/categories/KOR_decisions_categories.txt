@@ -1,0 +1,283 @@
+KOR_DEBUG_test_decisions = {
+	icon = GFX_decision_category_generic_communist_revolution
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		is_debug = yes
+		is_ai = no
+	}
+	priority = 1000
+}
+
+KOR_duli_chaoxian_one_decisions = {
+	icon = GFX_decision_category_NOR_fascist_deploy_prep
+	picture = GFX_decision_JKO_chaoxian_duli
+	priority = 111
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		#has_completed_focus = JKO_kaiju_guoce_jieshao
+	}
+}
+
+KOR_gongyexian_decision = {
+	icon = GFX_decision_category_generic_industry
+	picture = GFX_decision_KOR_gongyexian
+	priority = 111
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = KOR_jingji_qiansan_zhimin_yichan
+	}
+}
+
+KOR_junshi_decision = {
+	icon = GFX_decision_category_generic_industry
+	picture = GFX_decision_cat_picture_NOR_fascist_war
+	priority = 111
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = KOR_jingji_qiansan_zhimin_yichan
+	}
+}
+
+KOR_election_decision_category = {
+	icon = usa_congress
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_country_flag = KOR_election_decision_category_flag
+		NOT = {
+			has_country_flag = KOR_xuanju_jieshu_flag
+		}
+	}
+	priority = 1000
+	scripted_gui = election_parliament_gui
+	visible_when_empty = NO
+}
+
+KOR_communism_management_category_decisions = {
+	icon = GFX_decision_category_GER_war_planning
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_country_flag = KOR_paixi_zhengduan_mission_flag
+	}
+	priority = 998
+	scripted_gui = KOR_communism_decision_ui
+	visible_when_empty = no
+}
+
+KOR_communism_jinricheng_xuanchuan_decisions = {
+	icon = GFX_decision_KOR_xuetong_shixi_shenhua
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = KOR_baitoushan_xuetong_shenhua
+	}
+	priority = 999
+	scripted_gui = KOR_communism_weidalingxiu_ui
+	visible_when_empty = yes
+}
+
+KOR_yindao_ruoxiao_guojia_decisions = {
+	icon = GFX_decision_category_generic_communist_revolution
+	picture = GFX_decision_cat_picture_ARG_international_loan_decisions
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		OR = {
+			has_completed_focus = KOR_yindao_ruoxiao_guojia
+			has_completed_focus = KOR_yiguojiancheng_shehuizhuyi
+		}
+	}
+	priority = 1000
+}
+
+KOR_chaebol_construction_decisions = {
+	icon = GFX_decision_category_gre_paying_ifc_debt
+	picture = GFX_decision_KOR_caifa_de_dansheng
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = KOR_caifa_de_dansheng
+	}
+	priority = 1000
+}
+
+#
+KOR_meiyuan_yilai_jingji_decisions = {
+	icon = GFX_decision_category_gre_paying_ifc_debt
+	picture = GFX_decision_KOR_meiyuan_yilai_jingji
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = KOR_meiyuan_yilai_jingji
+	}
+	priority = 999
+}
+
+KOR_baifan_de_lixiangguo_decisions = {
+	icon = GFX_decision_category_eng_concessions_to_the_trade_unions
+	picture = GFX_decision_KOR_baifan_de_lixiangguo
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = KOR_tudi_gaige_fa
+	}
+	priority = 1000
+}
+
+KOR_pardon_the_bishop_decisions = {
+	icon = GFX_decision_category_generic_political_actions
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = KOR_jidu_jiao_liguo_lun
+	}
+	priority = 999
+}
+
+#
+KOR_fandduipai_dongluan_decisions = {
+	icon = GFX_decision_category_SOV_permanent_revolution
+	picture = GFX_decision_KOR_fandduipai_dongluan
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+	}
+	priority = 1000
+}
+
+#
+KOR_Oriental_Eagle_decisions = {
+	icon = GFX_decision_category_generic_communist_revolution
+	picture = GFX_decision_cat_picture_ARG_international_loan_decisions
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+	}
+	priority = 1000
+}
+
+KOR_anti_colonialism_category = {
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	allowed = {
+		original_tag = KOR
+	}
+	priority = 45
+	visible = {
+		has_completed_focus = KOR_heping_xianfa_chengnuo
+	}
+	on_map_area = {
+		target_array = KOR.asian_colonial_states_array
+		name = JAP_anti_colonialism_map_category_name
+		zoom = 150
+	}
+	visible_when_empty = yes
+}
+
+KOR_bop_decision = {
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		#has_completed_focus = KOR_forge_a_national_identity
+	}
+}
+
+KOR_guotu_fangwei_jun_decision = {
+	priority = 999
+	icon = GFX_decision_category_SWI_military_readiness_decisions
+	picture = GFX_decision_cat_picture_SWI_military_readiness_decisions
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = KOR_guotu_fangwei_jun
+	}
+}
+
+KOR_communism_rebellion_decision = {
+	priority = 1000
+	icon = GFX_decision_category_NOR_fascist_deploy_prep
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+	}
+}
+
+KOR_dongfang_junzhu_lianmeng_decision = {
+	priority = 999
+	icon = GFX_decision_category_generic_monarchism
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = KOR_dongfang_junzhu_lianmeng
+	}
+}
+
+KOR_bukesiyi_de_jihua_decision = {
+	priority = 1000
+	icon = GFX_decision_category_SOV_civil_war
+	picture = GFX_decision_cat_picture_soviet_civil_war
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		OR = {
+			has_completed_focus = KOR_wei_yazhou_dikang_tigong_zijin
+			has_completed_focus = KOR_huifu_sanhan_gutu
+		}
+	}
+}
+
+KOR_liyong_meisu_maodun_decisions = {
+	priority = 1000
+	icon = GFX_decision_category_power_struggle
+	picture = GFX_decision_KOR_liyong_meisu_maodun
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = KOR_liyong_meisu_maodun
+	}
+	custom_icon = {
+		tag = USA		#321800
+		value = KOR_country_to_appease_1_opinion_loc
+		desc = KOR_absolute_neutrality_breakdown
+	}
+	custom_icon = {
+		tag = SOV		#559900
+		value = KOR_country_to_appease_2_opinion_loc
+		desc = KOR_absolute_neutrality_breakdown
+	}
+}
+
+KOR_fatuanxian_decision = {
+	priority = 1000
+	icon = GFX_decision_KOR_fatuanxian_xiaotubiao
+	picture = GFX_decision_KOR_fatuanxian_tupian
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+	}
+}

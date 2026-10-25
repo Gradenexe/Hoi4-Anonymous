@@ -1,0 +1,10 @@
+lusophone_commonwealth_capital = {
+    enable = { always = yes }
+
+    icon = GFX_modifiers_lusaphon_commonwealth
+
+    local_building_slots = 3
+    local_building_slots_factor = 0.15
+    local_manpower = 0.25
+    state_resources_factor = 0.5
+}

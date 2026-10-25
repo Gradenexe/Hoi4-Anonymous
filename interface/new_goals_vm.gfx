@@ -1,0 +1,81 @@
+spriteTypes = {	
+
+	#### Generic continuous goal icons
+
+	SpriteType = {
+	name = "GFX_goal_referendum"
+	texturefile = "gfx/interface/goals/referendum.png"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_bank"
+	texturefile = "gfx/interface/goals/bank.png"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_gold"
+	texturefile = "gfx/interface/goals/american_gold.png"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_exp"
+	texturefile = "gfx/interface/goals/exp.png"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_tri_king"
+	texturefile = "gfx/interface/goals/tri_king.png"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_prep"
+	texturefile = "gfx/interface/goals/prep.png"			
+	}
+	SpriteType = {
+	name = "GFX_goal_int"
+	texturefile = "gfx/interface/goals/int.png"			
+	}
+	SpriteType = {
+	name = "GFX_goal_inte"
+	texturefile = "gfx/interface/goals/inte.png"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_egy"
+	texturefile = "gfx/interface/goals/egy.png"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_demos"
+	texturefile = "gfx/interface/goals/demos.png"			
+	}
+	SpriteType = {
+	name = "GFX_goal_roma"
+	texturefile = "gfx/interface/goals/roma.png"			
+	}
+	SpriteType = {
+	name = "GFX_goal_est"
+	texturefile = "gfx/interface/goals/est.png"			
+	}
+	SpriteType = {
+	name = "GFX_goal_roman"
+	texturefile = "gfx/interface/goals/roman.png"			
+	}
+	SpriteType = {
+	name = "GFX_goal_quran"
+	texturefile = "gfx/interface/goals/quran.png"			
+	}
+	SpriteType = {
+	name = "GFX_goal_muh"
+	texturefile = "gfx/interface/goals/muh.png"			
+	}
+	SpriteType = {
+	name = "GFX_CTM" 
+	texturefile = "gfx/interface/goals/CTM.png"			
+	}
+	SpriteType = {
+	name = "GFX_OCP"
+	texturefile = "gfx/interface/goals/OCP.png"			
+	}
+	SpriteType = {
+	name = "GFX_focus_general"
+	texturefile = "gfx/interface/goals/general.png"			
+	}
+	SpriteType = {
+	name = "GFX_focus_gaulle"
+	texturefile = "gfx/interface/goals/gaulle.png"			
+	}
+}

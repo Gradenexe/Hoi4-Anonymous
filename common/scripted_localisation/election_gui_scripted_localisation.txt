@@ -1,0 +1,1025 @@
+defined_text = {
+	name = Getelection_parliamentPartyName
+	text = {
+		trigger = {
+			check_variable = {
+				v = 1
+			}
+		}
+		localization_key = party_1_text
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 2
+			}
+		}
+		localization_key = party_2_text
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 3
+			}
+		}
+		localization_key = party_3_text
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 4
+			}
+		}
+		localization_key = party_4_text
+	}
+}
+
+defined_text = {
+	name = Getelection_parliamentPartyDominanceName
+	text = {
+		trigger = {
+			has_country_flag = KOR_communism_member_flag
+		}
+		localization_key = party_1_dom_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_democratic_member_flag
+		}
+		localization_key = party_2_dom_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_neutrality_member_flag
+		}
+		localization_key = party_3_dom_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_fascism_member_flag
+		}
+		localization_key = party_4_dom_text
+	}
+}
+
+defined_text = {
+	name = Getelection_parliamentSeatName
+	text = {
+		trigger = {
+			set_temp_variable = {
+				temp_seat = election_parliament_main_index
+			}
+			add_to_temp_variable = {
+				temp_seat = 1
+			}
+			check_variable = {
+				temp_seat > 0
+			}
+		}
+		localization_key = election_parliament_seat_text
+	}
+}
+
+defined_text = {
+	name = GeKORmengyangdelixiangDominanceName
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = KOR_lyuh_woon_hyung_kill_flag
+			}
+		}
+		localization_key = KOR_mengyang_de_lixiang_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_lyuh_woon_hyung_kill_flag
+		}
+		localization_key = KOR_mengyang_de_lixiang_2_text
+	}
+}
+
+defined_text = {
+	name = GeKORmengyangdelixiangDominanceNameDESC
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = KOR_lyuh_woon_hyung_kill_flag
+			}
+		}
+		localization_key = KOR_mengyang_de_lixiang_text_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_lyuh_woon_hyung_kill_flag
+		}
+		localization_key = KOR_mengyang_de_lixiang_2_text_desc
+	}
+}
+
+defined_text = {
+	name = GeKOR_xinminzhuzhuyijiaoyu
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = KOR_lyuh_woon_hyung_kill_flag
+			}
+		}
+		localization_key = KOR_xinminzhu_zhuyi_jiaoyu_desc_a
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_lyuh_woon_hyung_kill_flag
+		}
+		localization_key = KOR_xinminzhu_zhuyi_jiaoyu_desc_b
+	}
+}
+
+defined_text = {
+	name = GeKOR_zhengxie_huiyinanceName
+	text = {
+		trigger = {
+			check_variable = {
+				KOR_election_a > KOR_election_b
+			}
+			check_variable = {
+				KOR_election_a > KOR_election_c
+			}
+			check_variable = {
+				KOR_election_a > KOR_election_d
+			}
+		}
+		localization_key = KOR_communism_xuanju_key
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				KOR_election_b > KOR_election_a
+			}
+			check_variable = {
+				KOR_election_b > KOR_election_c
+			}
+			check_variable = {
+				KOR_election_b > KOR_election_d
+			}
+		}
+		localization_key = KOR_democratic_xuanju_key
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				KOR_election_c > KOR_election_a
+			}
+			check_variable = {
+				KOR_election_c > KOR_election_b
+			}
+			check_variable = {
+				KOR_election_c > KOR_election_d
+			}
+		}
+		localization_key = KOR_neutrality_xuanju_key
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				KOR_election_d > KOR_election_a
+			}
+			check_variable = {
+				KOR_election_d > KOR_election_b
+			}
+			check_variable = {
+				KOR_election_d > KOR_election_c
+			}
+		}
+		localization_key = KOR_fascism_xuanju_key
+	}
+}
+
+defined_text = {
+	name = GetYanAnPartySizeEffects
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_yanan_Party_Size
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_0
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_yanan_Party_Size
+				value = 60
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_1
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_yanan_Party_Size
+				value = 30
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_2
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_yanan_Party_Size
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_3
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_yanan_Party_Size
+				value = -30
+				compare = greater_than
+			}
+		}
+		localization_key = KOR_communism_Party_Size_3
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_yanan_Party_Size
+				value = -30
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_4
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_yanan_Party_Size
+				value = -60
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_5
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_yanan_Party_Size
+				value = -90
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_6
+	}
+}
+
+defined_text = {
+	name = GetNanLaoPartySizeEffects
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_NanLao_Party_Size
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_0
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_NanLao_Party_Size
+				value = 60
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_1
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_NanLao_Party_Size
+				value = 30
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_2
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_NanLao_Party_Size
+				value = 0
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_3
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_NanLao_Party_Size
+				value = -30
+				compare = greater_than
+			}
+		}
+		localization_key = KOR_communism_Party_Size_3
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_NanLao_Party_Size
+				value = -30
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_4
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_NanLao_Party_Size
+				value = -60
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_5
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_NanLao_Party_Size
+				value = -90
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_6
+	}
+}
+
+defined_text = {
+	name = GetManZhouPartySizeEffects
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_ManZhou_Party_Size
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_0
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_ManZhou_Party_Size
+				value = 60
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_1
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_ManZhou_Party_Size
+				value = 30
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_2
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_ManZhou_Party_Size
+				value = 0
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_3
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_ManZhou_Party_Size
+				value = -30
+				compare = greater_than
+			}
+		}
+		localization_key = KOR_communism_Party_Size_3
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_ManZhou_Party_Size
+				value = -30
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_4
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_ManZhou_Party_Size
+				value = -60
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_5
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_ManZhou_Party_Size
+				value = -90
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_6
+	}
+}
+
+defined_text = {
+	name = GetSOVPartySizeEffects
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_SOV_Party_Size
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_0
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_SOV_Party_Size
+				value = 60
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_1
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_SOV_Party_Size
+				value = 30
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_2
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_SOV_Party_Size
+				value = 0
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_3
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_SOV_Party_Size
+				value = -30
+				compare = greater_than
+			}
+		}
+		localization_key = KOR_communism_Party_Size_3
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_SOV_Party_Size
+				value = -30
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_4
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_SOV_Party_Size
+				value = -60
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_5
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+			check_variable = {
+				var = KOR_SOV_Party_Size
+				value = -90
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = KOR_communism_Party_Size_6
+	}
+}
+
+defined_text = {
+	name = GetCommunismFactionalStrifeYANAN
+	text = {
+		trigger = {
+			has_idea = KOR_yanan_paixi1
+		}
+		localization_key = "tech_effect|KOR_yanan_communism_factional_strife1"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_yanan_paixi2
+		}
+		localization_key = "tech_effect|KOR_yanan_communism_factional_strife2"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_yanan_paixi3
+		}
+		localization_key = "tech_effect|KOR_yanan_communism_factional_strife3"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_yanan_paixi_1
+		}
+		localization_key = "tech_effect|KOR_yanan_communism_factional_strife_1"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_yanan_paixi_2
+		}
+		localization_key = "tech_effect|KOR_yanan_communism_factional_strife_1"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_yanan_paixi_3
+		}
+		localization_key = "tech_effect|KOR_yanan_communism_factional_strife_1"
+	}
+	text = {
+		localization_key = KOR_communism_factional_strife_0
+	}
+}
+
+defined_text = {
+	name = GetCommunismFactionalStrifeSULIAN
+	text = {
+		trigger = {
+			has_idea = KOR_sulian_paixi1
+		}
+		localization_key = "tech_effect|KOR_sulian_communism_factional_strife1"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_sulian_paixi2
+		}
+		localization_key = "tech_effect|KOR_sulian_communism_factional_strife2"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_sulian_paixi3
+		}
+		localization_key = "tech_effect|KOR_sulian_communism_factional_strife3"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_sulian_paixi_1
+		}
+		localization_key = "tech_effect|KOR_sulian_communism_factional_strife_1"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_sulian_paixi_2
+		}
+		localization_key = "tech_effect|KOR_sulian_communism_factional_strife_2"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_sulian_paixi_3
+		}
+		localization_key = "tech_effect|KOR_sulian_communism_factional_strife_3"
+	}
+	text = {
+		localization_key = KOR_communism_factional_strife_0
+	}
+}
+
+defined_text = {
+	name = GetCommunismFactionalStrifeKANGLIAN
+	text = {
+		trigger = {
+			has_idea = KOR_kanglian_paixi1
+		}
+		localization_key = "tech_effect|KOR_kanglian_communism_factional_strife1"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_kanglian_paixi2
+		}
+		localization_key = "tech_effect|KOR_kanglian_communism_factional_strife2"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_kanglian_paixi3
+		}
+		localization_key = "tech_effect|KOR_kanglian_communism_factional_strife2"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_kanglian_paixi_1
+		}
+		localization_key = "tech_effect|KOR_kanglian_communism_factional_strife_1"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_kanglian_paixi_2
+		}
+		localization_key = "tech_effect|KOR_kanglian_communism_factional_strife_2"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_kanglian_paixi_3
+		}
+		localization_key = "tech_effect|KOR_kanglian_communism_factional_strife_3"
+	}
+	text = {
+		localization_key = KOR_communism_factional_strife_0
+	}
+}
+
+defined_text = {
+	name = GetCommunismFactionalStrifeNANLAO
+	text = {
+		trigger = {
+			has_idea = KOR_nanlao_paixi1
+		}
+		localization_key = "tech_effect|KOR_nanlao_communism_factional_strife1"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_nanlao_paixi2
+		}
+		localization_key = "tech_effect|KOR_nanlao_communism_factional_strife2"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_nanlao_paixi3
+		}
+		localization_key = "tech_effect|KOR_nanlao_communism_factional_strife3"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_nanlao_paixi_1
+		}
+		localization_key = "tech_effect|KOR_nanlao_communism_factional_strife_1"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_nanlao_paixi_2
+		}
+		localization_key = "tech_effect|KOR_nanlao_communism_factional_strife_2"
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_nanlao_paixi_3
+		}
+		localization_key = "tech_effect|KOR_nanlao_communism_factional_strife_3"
+	}
+	text = {
+		localization_key = KOR_communism_factional_strife_0
+	}
+}
+
+defined_text = {
+	name = GetKORDangpaiDouzhengDynamic
+	text = {
+		trigger = {
+			has_dynamic_modifier = {
+				modifier = KOR_dangpai_douzheng_dynamic
+			}
+		}
+		localization_key = "tech_effect|KOR_dangpai_douzheng_dynamic"
+	}
+}
+
+defined_text = {
+	name = GetKORChaoXiandahuiTezhi
+	text = {
+		trigger = {
+			has_dynamic_modifier = {
+				modifier = KOR_chaoxian_dahui_dynamic
+			}
+		}
+		localization_key = "tech_effect|KOR_chaoxian_dahui_dynamic_key"
+	}
+}
+
+defined_text = {
+	name = GetKORPingrangDeMosikeShenpan
+	text = {
+		trigger = {
+			has_completed_focus = KOR_zhutisixiang_de_dengta
+		}
+		localization_key = KOR_pingrangde_mosikeshenpan_event_text
+	}
+	text = {
+		trigger = {
+			has_completed_focus = KOR_kelimulingong_de_yizhi
+		}
+		localization_key = KOR_pingrangde_mosikeshenpan_event1_text
+	}
+}
+
+defined_text = {
+	name = GetKORCommunismJinrichengXuanchuan
+	text = {
+		trigger = {
+			has_dynamic_modifier = {
+				modifier = KOR_weidalingxiu_xushishi_dynamic
+			}
+		}
+		localization_key = "tech_effect|KOR_weidalingxiu_xushishi_dynamic_key"
+	}
+}
+
+
+defined_text = {
+	name = GetKORXuanChuanCiShuo
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = KOR_xuanchuan_cishu_flag
+				value = 1
+			}
+		}
+		localization_key = KOR_xuanchuan_cishu_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = KOR_xuanchuan_cishu_flag
+				value = 2
+			}
+		}
+		localization_key = KOR_xuanchuan_cishu_2
+	}
+	text = {
+		localization_key = KOR_xuanchuan_cishu_0
+	}
+}
+
+defined_text = {
+	name = GetKORSulianpaiZhangquanTezhi
+	text = {
+		trigger = {
+			has_idea = KOR_sulian_paixi_jieshu_tezhi
+		}
+		localization_key = "tech_effect|KOR_sulianpai_zhangquan_tezhi_key"
+	}
+}
+
+defined_text = {
+	name = GetKORYindaoRuoxiaoGuojiaDecisions
+	text = {
+		trigger = {
+			has_completed_focus = KOR_yindao_ruoxiao_guojia
+		}
+		localization_key = KOR_yindao_ruoxiao_guojia_key
+	}
+	text = {
+		localization_key = KOR_yiguojiancheng_shehuizhuyi_key
+	}
+}
+
+defined_text = {
+	name = GetJinJiuWasAssassinated
+	text = {
+		trigger = {
+			has_completed_focus = KOR_fangong_jianguo_gangling
+		}
+		localization_key = KOR_zhengxie_huiyi_14_2_key
+	}
+	text = {
+		localization_key = KOR_zhengxie_huiyi_14_1_key
+	}
+}
+
+defined_text = {
+	name = GetLyuhWoonHyungWasAssassinated
+	text = {
+		trigger = {
+			has_completed_focus = KOR_fangong_jianguo_gangling
+		}
+		localization_key = KOR_zhengxie_huiyi_15_2_key
+	}
+	text = {
+		localization_key = KOR_zhengxie_huiyi_15_1_key
+	}
+}
+
+defined_text = {
+	name = GetLKORFanyaYanjiuLishihuiModifier
+	text = {
+		trigger = {
+			has_completed_focus = KOR_beijixing_de_zhiyin
+		}
+		localization_key = KOR_fanya_yanjiu_lishihui_modifier_key
+	}
+	text = {
+		localization_key = KOR_ziyou_guoji_lianmeng_modifier_key
+	}
+}
+
+defined_text = {
+	name = GetLKORInviteConsultants
+	text = {
+		trigger = {
+			tag = SOV
+		}
+		localization_key = KORKORInviteConsultants_SOV_key
+	}
+	text = {
+		trigger = {
+			tag = USA
+		}
+		localization_key = KORKORInviteConsultants_USA_key
+	}
+}
+
+defined_text = {
+	name = GetLKORChaebolConstructionDecisions
+	text = {
+		trigger = {
+			has_completed_focus = KOR_wangshi_texu_hui_she
+		}
+		localization_key = KOR_wangshi_texu_hui_she_key
+	}
+	text = {
+		localization_key = KOR_caifa_de_danshengr_key
+	}
+}
+
+defined_text = {
+	name = GetLKORYongyuanDeGuofu
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = KOR_jiduzhujiao_shangtai_flag
+			}
+		}
+		localization_key = KOR_yongyuan_de_guofu_1_key
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_jiduzhujiao_shangtai_flag
+		}
+		localization_key = KOR_yongyuan_de_guofu_2_key
+	}
+}
+defined_text = {
+	name = GetLKORYongyuanDeGuofuDESC
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = KOR_jiduzhujiao_shangtai_flag
+			}
+		}
+		localization_key = KOR_yongyuan_de_guofu_1DESC_key
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_jiduzhujiao_shangtai_flag
+		}
+		localization_key = KOR_yongyuan_de_guofu_2DESC_key
+	}
+}
+
+defined_text = {
+	name = GetLKORZiyouDeHuixiang
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = KOR_jiduzhujiao_shangtai_flag
+			}
+		}
+		localization_key = KOR_ziyou_de_huixiang_1_key
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_jiduzhujiao_shangtai_flag
+		}
+		localization_key = KOR_ziyou_de_huixiang_2_key
+	}
+}
+defined_text = {
+	name = GetLKORZiyouDeHuixiangDESC
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = KOR_jiduzhujiao_shangtai_flag
+			}
+		}
+		localization_key = KOR_ziyou_de_huixiang_1DESC_key
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_jiduzhujiao_shangtai_flag
+		}
+		localization_key = KOR_ziyou_de_huixiang_2DESC_key
+	}
+}
+defined_text = {
+	name = GetLKORAsianConventionOrganization
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = KOR_jiduzhujiao_shangtai_flag
+			}
+		}
+		localization_key = KOR_Asian_Convention_Organization_1_key
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_jiduzhujiao_shangtai_flag
+		}
+		localization_key = KOR_Asian_Convention_Organization_2_key
+	}
+}
+defined_text = {
+	name = GetLKORAsianConventionOrganizationDESC
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = KOR_jiduzhujiao_shangtai_flag
+			}
+		}
+		localization_key = KOR_Asian_Convention_Organization_1DESC_key
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_jiduzhujiao_shangtai_flag
+		}
+		localization_key = KOR_Asian_Convention_Organization_2DESC_key
+	}
+}
+defined_text = {
+	name = GetLKORTINGZHANSHIJIAN
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = KOR_guizi_jujue_heping_flag
+			}
+		}
+		localization_key = KOR_TONGYI_TINGZHAN_1_key
+	}
+	text = {
+		trigger = {
+			has_global_flag = KOR_guizi_jujue_heping_flag
+		}
+		localization_key = KOR_TONGYI_TINGZHAN_2_key
+	}
+}

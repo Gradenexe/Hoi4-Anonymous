@@ -1,0 +1,1044 @@
+###########################
+# Luxemburg Events
+###########################
+
+add_namespace = dfn_luxemburg
+
+country_event = {
+	id = dfn_luxemburg.1 
+	title = dfn_luxemburg.1.t 
+	desc = dfn_luxemburg.1.d 
+	picture = GFX_report_event_lithuania_army
+	
+	fire_only_once = yes 
+	
+	trigger = {
+	original_tag = LUX
+	has_completed_focus = LUX_large_town_to_large_city
+	num_of_controlled_states > 1
+	}
+	
+	mean_time_to_happen = { days = 3 }
+
+	option = {
+		name = "We are not city state anymore!" 
+		ai_chance = {
+			factor = 100 
+			}
+		remove_ideas = city_state 
+		set_country_flag = lux_is_not_one_state
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.2 
+	title = dfn_luxemburg.2.t 
+	desc = dfn_luxemburg.2.d 
+	picture = GFX_report_event_lithuania_army
+	
+	fire_only_once = yes
+	
+	trigger = {
+	original_tag = LUX
+	NOT = { has_completed_focus = LUX_town_to_large_town }
+	num_of_controlled_states > 1
+	}
+	
+	mean_time_to_happen = { days = 3 }
+
+	option = {
+		name = "We are not town state anymore!" 
+		ai_chance = {
+			factor = 100 
+			}
+		remove_ideas = town_state 
+		set_country_flag = lux_is_not_one_state
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.3
+	title = dfn_luxemburg.3.t 
+	desc = dfn_luxemburg.3.d 
+	picture = GFX_report_event_lithuania_army
+	
+	fire_only_once = yes 
+	
+	trigger = {
+	original_tag = LUX
+	has_completed_focus = LUX_town_to_large_town
+	NOT = { has_completed_focus = LUX_large_town_to_large_city }
+	num_of_controlled_states > 1
+	}
+	
+	mean_time_to_happen = { days = 3 }
+
+	option = {
+		name = "We are not large town state anymore!" 
+		ai_chance = {
+			factor = 100 
+			}
+		remove_ideas = large_town_state 
+		set_country_flag = lux_is_not_one_state
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.4
+	title = dfn_luxemburg.4.t 
+	desc = dfn_luxemburg.4.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Wilhelmina" 
+		ai_chance = {
+			factor = 50 
+			}
+		LUX_wilhelmina = {
+		add_country_leader_role = {
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					wilhelmina
+					disdain_for_politicians_1
+					queen_of_the_people	
+					}
+			}
+			promote_leader = yes
+			}
+		}
+		}
+	option = {
+		name = "Wilhelm"
+		ai_chance = {
+			factor = 50 
+			}
+		LUX_wilhelm_ii = {
+			add_country_leader_role = {
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					anti_democrat
+					imperial_connections	
+					}
+			}
+			promote_leader = yes
+			}
+		}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.5
+	title = dfn_luxemburg.5.t 
+	desc = dfn_luxemburg.5.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "We are stronger together!" 
+		ai_chance = {
+			factor = 95
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+			}
+		}
+		add_political_power = 120
+		diplomatic_relation = {
+			country = LUX
+			relation = non_aggression_pact
+			active = yes
+		}
+		hidden_effect = {
+			add_ai_strategy = {
+				type = befriend
+				id = FROM
+				value = 100
+			}
+			LUX = { country_event = { id = dfn_luxemburg.6 hours = 12 } }
+		}
+		
+		}
+	option = {
+		name = "Luxembourg does not hold our best interests at heart"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		add_war_support = 0.05
+		hidden_effect = {
+			LUX = { country_event = { id = dfn_luxemburg.7 hours = 12 } }
+			}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.6
+	title = dfn_luxemburg.6.t 
+	desc = dfn_luxemburg.6.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "True and honest friends!" 
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 25
+		effect_tooltip = { 
+			diplomatic_relation = {
+				country = FROM
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.7
+	title = dfn_luxemburg.7.t 
+	desc = dfn_luxemburg.7.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Stick it out alone then" 
+		ai_chance = {
+			factor = 100
+		}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.8
+	title = dfn_luxemburg.8.t 
+	desc = dfn_luxemburg.8.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "United Benelux!" 
+		ai_chance = {
+			factor = 100
+		}
+		LUX = {
+			country_event = { id = dfn_luxemburg.10 hours = 24 }
+			}
+		}
+		
+	option = {
+		name = "We don't want unification" 
+		ai_chance = {
+			factor = 0
+		}
+		LUX = {
+			country_event = { id = dfn_luxemburg.9 hours = 24 }
+			}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.9
+	title = dfn_luxemburg.9.t 
+	desc = dfn_luxemburg.9.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "What?!" 
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = -0.05 
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.10
+	title = dfn_luxemburg.10.t 
+	desc = dfn_luxemburg.10.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Now, we wait Netherland's answer" 
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+		HOL = {
+			country_event = { id = dfn_luxemburg.11 hours = 24 }
+			}
+		}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.11
+	title = dfn_luxemburg.11.t 
+	desc = dfn_luxemburg.11.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "United Benelux!" 
+		ai_chance = {
+			factor = 100
+		}
+		LUX = {
+			country_event = { id = dfn_luxemburg.12 hours = 24 }
+			}
+		}
+		
+	option = {
+		name = "We don't want unification" 
+		ai_chance = {
+			factor = 0
+		}
+		LUX = {
+			country_event = { id = dfn_luxemburg.9 hours = 24 }
+			}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.12
+	title = dfn_luxemburg.12.t 
+	desc = dfn_luxemburg.12.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Nice!" 
+		ai_chance = {
+			factor = 100
+		}
+		set_cosmetic_tag = BENELUX
+		annex_country = { target = BEL transfer_troops = yes }
+		BEL = {
+		every_unit_leader = {
+			set_nationality = LUX
+			}
+		}
+		annex_country = { target = HOL transfer_troops = yes }
+		HOL = {
+		every_unit_leader = {
+			set_nationality = LUX
+			}
+		}
+		hidden_effect = {
+			puppet = INS
+			}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.13
+	title = dfn_luxemburg.13.t 
+	desc = dfn_luxemburg.13.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Don't supress it" 
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = -0.05 
+		add_popularity = {
+			ideology = neutrality popularity = 0.1 
+			}
+		add_ideas = riots_in_streets
+		}
+	
+	option = {
+		name = "Supress it" 
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.05 
+		add_popularity = {
+			ideology = democratic popularity = 0.1 
+			}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.14
+	title = dfn_luxemburg.14.t 
+	desc = dfn_luxemburg.14.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Wilhelmina would be great" 
+		ai_chance = {
+			factor = 50
+		}
+		HOL = {
+			country_event = { id = dfn_luxemburg.15 hours = 12 }
+			}
+		}
+	option = {
+		name = "Wilhelm would be great" 
+		ai_chance = {
+			factor = 50
+		}
+		HOL = {
+		country_event = { id = dfn_luxemburg.16 hours = 12 }
+		}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.15
+	title = dfn_luxemburg.15.t 
+	desc = dfn_luxemburg.15.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Accept their offer" 
+		ai_chance = {
+			factor = 50
+		}
+		LUX = {
+			country_event = { id = dfn_luxemburg.17 hours = 12 }
+			}
+		}
+	option = {
+		name = "Send them Wilhelm instead of Wilhelmina" 
+		ai_chance = {
+			factor = 50
+		}
+		LUX = {
+		country_event = { id = dfn_luxemburg.18 hours = 12 }
+		}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.16
+	title = dfn_luxemburg.16.t 
+	desc = dfn_luxemburg.16.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Accept their offer" 
+		ai_chance = {
+			factor = 100
+		}
+		LUX = {
+			country_event = { id = dfn_luxemburg.18 hours = 12 }
+			}
+		}
+	option = {
+		name = "Nein!" 
+		ai_chance = {
+			factor = 0
+		}
+		LUX = {
+		country_event = { id = dfn_luxemburg.19 hours = 12 }
+		}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.17
+	title = dfn_luxemburg.17.t 
+	desc = dfn_luxemburg.17.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Long live Wilhelmina!" 
+		ai_chance = {
+			factor = 100
+		}
+		LUX_wilhelmina = {
+		add_country_leader_role = {
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					wilhelmina
+					disdain_for_politicians_1
+					queen_of_the_people	
+					}
+			}
+			promote_leader = yes
+			}
+		}
+		set_cosmetic_tag = KINGDOM_OF_LUXEMBOURG
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.18
+	title = dfn_luxemburg.18.t 
+	desc = dfn_luxemburg.18.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Long live Wilhelm II!" 
+		ai_chance = {
+			factor = 100
+		}
+		LUX_wilhelm_ii = {
+			add_country_leader_role = {
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					anti_democrat
+					imperial_connections	
+					}
+			}
+			promote_leader = yes
+			}
+		}
+		set_cosmetic_tag = KINGDOM_OF_LUXEMBOURG
+		hidden_effect = {
+			GER = { country_event = { id = dfn_luxemburg.20 hours = 12 } }
+			}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.19
+	title = dfn_luxemburg.19.t 
+	desc = dfn_luxemburg.19.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "This is reason of the war" 
+		ai_chance = {
+			factor = 0
+		}
+		create_wargoal = {
+			target = HOL 
+			type = annex_everything 
+			expire = 0 
+			}
+		}
+	option = {
+		name = "Oops" 
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = -0.05
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.20
+	title = dfn_luxemburg.20.t 
+	desc = dfn_luxemburg.20.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Kaiser, what have you done?" 
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = kaiser_is_ruler_of_luxembourg
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.21
+	title = dfn_luxemburg.21.t 
+	desc = dfn_luxemburg.21.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "That girl can be helpful for our government" 
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = 0.05
+		set_country_flag = girl_accepted
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.22
+	title = dfn_luxemburg.22.t 
+	desc = dfn_luxemburg.22.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Give Northern Ireland" 
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100 
+				is_in_faction_with = LUX 
+				}
+		}
+	LUX = {
+		transfer_state = 119 
+		}
+		remove_state_core = 119 
+		ENG = {
+		set_cosmetic_tag = GREAT_BRITAIN
+		}
+		}
+	option = {
+		name = "Don't give Northern Ireland" 
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0 
+					is_in_faction_with = LUX 
+		}
+		}
+		LUX = {
+			country_event = { id = dfn_luxemburg.23 hours = 12 } 
+			}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.23
+	title = dfn_luxemburg.23.t 
+	desc = dfn_luxemburg.23.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "What?!" 
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = uk_refused_giving_northern_ireland
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.24
+	title = dfn_luxemburg.24.t 
+	desc = dfn_luxemburg.24.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Don't interfere them" 
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.05 
+		add_popularity = {
+			ideology = democratic popularity = -0.3 
+			}
+		}
+	option = {
+		name = "Interfere them" 
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = -50
+		add_popularity = {
+			ideology = democratic popularity = -0.1
+			}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.25
+	title = dfn_luxemburg.25.t 
+	desc = dfn_luxemburg.25.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "That was unexpected" 
+		ai_chance = {
+			factor = 100
+		}
+		effect_tooltip = {
+			GER = {
+		set_autonomy = {
+		target = LUX
+		autonomous_state = autonomy_integrated_puppet
+			}
+		}
+		}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.26
+	title = dfn_luxemburg.26.t 
+	desc = dfn_luxemburg.26.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "That was unexpected" 
+		ai_chance = {
+			factor = 100
+		}
+		effect_tooltip = {
+			SOV = {
+		set_autonomy = {
+		target = LUX
+		autonomous_state = autonomy_integrated_puppet
+			}
+		}
+		}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.27
+	title = dfn_luxemburg.27.t 
+	desc = dfn_luxemburg.27.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "We can accept this" 
+		ai_chance = {
+			factor = 100
+		}
+		SOV = {
+		set_autonomy = {
+		target = LUX
+		autonomous_state = autonomy_puppet
+			}
+		LUX = { country_event = { id = dfn_luxemburg.28 hours = 24 } }
+		}
+		}
+	option = {
+		name = "Nyet!" 
+		ai_chance = {
+			factor = 100
+		}
+		LUX = { country_event = { id = dfn_luxemburg.29 hours = 24 } }
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.28
+	title = dfn_luxemburg.28.t 
+	desc = dfn_luxemburg.28.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "That was unexpected" 
+		ai_chance = {
+			factor = 100
+		}
+		effect_tooltip = {
+			SOV = {
+		set_autonomy = {
+		target = LUX
+		autonomous_state = autonomy_puppet
+			}
+		}
+		}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.29
+	title = dfn_luxemburg.29.t 
+	desc = dfn_luxemburg.29.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "That was unexpected" 
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = -0.05 
+		add_popularity = {
+			ideology = communism popularity = -0.05 
+			}
+		}
+		}
+
+country_event = {
+	id = dfn_luxemburg.30
+	title = dfn_luxemburg.30.t 
+	desc = dfn_luxemburg.30.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Move our friends to Northern Region" 
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0 
+				has_war_with = FIN 
+				}
+		}
+		LUX = {
+			transfer_state = 213 
+			transfer_state = 215 
+			transfer_state = 214 
+			add_state_core = 213 
+			add_state_core = 215 
+			add_state_core = 214
+			set_cosmetic_tag = PROVISIONAL_BENELUX
+			set_capital = { state = 214 }
+			}
+		set_country_flag = luxembourg_is_at_the_northern_region
+		}
+	option = {
+		name = "Move our friends to Turkmenistan Region" 
+		ai_chance = {
+			factor = 70
+		}
+		LUX = {
+			transfer_state = 584 
+			transfer_state = 832
+			transfer_state = 830 
+			transfer_state = 742 
+			transfer_state = 405 
+			transfer_state = 585 
+			transfer_state = 831 
+			transfer_state = 823 
+			transfer_state = 587
+			transfer_state = 732
+			add_state_core = 584 
+			add_state_core = 832 
+			add_state_core = 830 
+			add_state_core = 742 
+			add_state_core = 405 
+			add_state_core = 585 
+			add_state_core = 831 
+			add_state_core = 823 
+			add_state_core = 587
+			add_state_core = 732
+			set_cosmetic_tag = PROVISIONAL_BENELUX
+			set_capital = { state = 405 }
+			}
+		set_country_flag = luxembourg_is_at_the_turkmen_region
+		}
+		}
+	
+	country_event = {
+	id = dfn_luxemburg.31
+	title = dfn_luxemburg.31.t 
+	desc = dfn_luxemburg.31.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Liberate them!" 
+		ai_chance = {
+			factor = 100
+		}
+		
+		IF = {
+			limit = {
+				SOV = {
+					has_country_flag = luxembourg_is_at_the_northern_region 
+					}
+				}
+		SOV = {
+			transfer_state = 213 
+			transfer_state = 215 
+			transfer_state = 214 
+			}
+		LUX = {
+			remove_state_core = 213 
+			remove_state_core = 215 
+			remove_state_core = 214 
+			set_cosmetic_tag = BENELUX
+			}
+		}
+		
+		IF = {
+			limit = {
+				SOV = {
+					has_country_flag = luxembourg_is_at_the_turkmen_region 
+					}
+				}
+		SOV = {
+			transfer_state = 584 
+			transfer_state = 832
+			transfer_state = 830 
+			transfer_state = 742 
+			transfer_state = 405 
+			transfer_state = 585 
+			transfer_state = 831 
+			transfer_state = 823 
+			transfer_state = 587
+			transfer_state = 732
+			}
+		LUX = {
+			remove_state_core = 584 
+			remove_state_core = 832 
+			remove_state_core = 830 
+			remove_state_core = 742 
+			remove_state_core = 405 
+			remove_state_core = 585 
+			remove_state_core = 831 
+			remove_state_core = 823 
+			remove_state_core = 587
+			remove_state_core = 732
+			set_cosmetic_tag = BENELUX
+			set_capital = { state = 8 }
+			}
+		}
+		
+	}
+		
+}
+
+country_event = {
+	id = dfn_luxemburg.32 
+	title = dfn_luxemburg.32.t 
+	desc = dfn_luxemburg.32.d 
+	picture = GFX_report_event_lithuania_army
+	
+	fire_only_once = yes 
+	
+	trigger = {
+	AND = {
+	original_tag = GER
+	LUX = { has_completed_focus = LUX_united_benelux }
+	OR = {
+	AND = {
+	BEL = { exists = no }
+	HOL = { exists = no }
+	}
+	AND = {
+	BEL = { has_capitulated = yes }
+	HOL = { has_capitulated = yes }
+	}
+	}
+	
+	OR = {
+	has_full_control_of_state = 34 
+	has_full_control_of_state = 6
+	has_full_control_of_state = 977
+	has_full_control_of_state = 980
+	has_full_control_of_state = 35 
+	has_full_control_of_state = 7 
+	has_full_control_of_state = 36 
+	}
+	}
+	}
+	
+	mean_time_to_happen = { days = 3 }
+
+	option = {
+		name = "Transfer their states" 
+		ai_chance = {
+			factor = 100 
+			}
+		LUX = {
+			transfer_state = 34 
+			transfer_state = 6 
+			transfer_state = 35 
+			transfer_state = 7 
+			transfer_state = 36 
+			transfer_state = 977
+			transfer_state = 980
+			}
+		}
+	}
+
+country_event = {
+	id = dfn_luxemburg.33 
+	title = dfn_luxemburg.33.t 
+	desc = dfn_luxemburg.33.d 
+	picture = GFX_report_event_lithuania_army
+	
+	fire_only_once = yes 
+	
+	trigger = {
+	original_tag = GER
+	LUX = { is_in_faction_with = SOV }
+	GER = { has_non_aggression_pact_with = SOV }
+	GER = { NOT = { has_war_with = LUX } }
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "Communist Bastards!" 
+		ai_chance = {
+			factor = 100 
+			}
+		IF = {
+			limit = {
+				is_ai = yes 
+				}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 50000
+				producer = GER
+				}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 3000
+				producer = GER
+				}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 2500
+				producer = GER
+				}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe
+				amount = 500
+				producer = GER
+				}
+			}
+		diplomatic_relation = {
+			country = SOV
+			relation = non_aggression_pact
+			active = no
+			}
+		}
+	}

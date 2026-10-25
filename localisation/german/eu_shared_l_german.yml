@@ -1,0 +1,158 @@
+﻿l_german:
+
+ EU_council_of_europe: "Der Europarat"
+ EU_council_of_europe_desc: "Es ist an der Zeit, über unsere Grenzen hinauszuschauen. Mit einer starken Koalition demokratischer Nationen, die in Europa zusammenstehen, können wir damit beginnen, den Grundstein für einen wirklich geeinten Kontinent zu legen."
+ EU_council_of_europe_tt: "Erhält den Nationalgeist §YEuropäische Gemeinschaft§!"
+ 
+ EU_coal_and_steel: "Europäische Gemeinschaft für Kohle und Stahl"
+ EU_coal_and_steel_desc: "Indem wir unsere Schwerindustrien bündeln, machen wir einen Krieg zwischen europäischen Nationen nicht nur undenkbar, sondern auch materiell unmöglich."
+ EU_coal_and_steel_tt: "Die §YEuropäische Gemeinschaft§! Nationalgeist gewinnt:\n§G+5,00 %§! Fabrikproduktion"
+ 
+ EU_energy_integration: "Europäische Energieintegration"
+ EU_energy_integration_desc: "Die gemeinsame Nutzung unserer Energienetze und -ressourcen wird die für das kontinuierliche Wachstum Europas erforderliche Energie sicherstellen."
+ EU_energy_integration_tt: "Die §YEuropäische Gemeinschaft§! Nationalgeist gewinnt:\n§G+10,00 %§! Maximale Fabriken in einem Staat"
+ 
+ EU_nuclear_power: "Euratom"
+ EU_nuclear_power_desc: "Kernenergie ist die Zukunft. Durch die Gründung einer gemeinsamen europäischen Atomenergiegemeinschaft können wir gemeinsam friedliche Kerntechnologie erforschen."
+ EU_nuclear_power_tt: "Die §YEuropäische Gemeinschaft§! Nationalgeist gewinnt:\n§G+5,00 %§! Forschungsgeschwindigkeit"
+ 
+ EU_internal_market: "Der Europäische Binnenmarkt"
+ EU_internal_market_desc: "Der Abbau interner Handelshemmnisse und die Gewährleistung des freien Warenverkehrs werden allen Mitgliedstaaten beispiellosen Wohlstand bringen."
+ EU_internal_market_tt: "Die §YEuropäische Gemeinschaft§! Nationalgeist gewinnt:\n§G+5,00 %§! Fabrikproduktion"
+ 
+ EU_external_tariffs: "Gemeinsamer Zolltarif"
+ EU_external_tariffs_desc: "Eine einheitliche Zollpolitik gegenüber dem Rest der Welt wird unsere wirtschaftliche Verhandlungsposition weltweit stärken."
+ EU_external_tariffs_tt: "Die §YEuropäische Gemeinschaft§! Nationalgeist gewinnt:\n§G-5,00%§! Konsumgüterfabriken"
+ 
+ EU_single_currency: "Der Euro"
+ EU_single_currency_desc: "Ein Binnenmarkt braucht eine einheitliche Währung. Die Einführung des Euro wird unsere Volkswirtschaften untrennbar miteinander verbinden."
+ EU_single_currency_tt: "Die §YEuropäische Gemeinschaft§! gewinnt an nationalem Geist:\n§G+10,00 %§! Politischer Machtgewinn\n§G-5,00 %§! Konsumgüterfabriken"
+ 
+ EU_common_agriculture: "Gemeinsame Agrarpolitik"
+ EU_common_agriculture_desc: "Die Förderung und Modernisierung unserer landwirtschaftlichen Betriebe auf europäischer Ebene wird die Ernährungssicherheit für den gesamten Kontinent gewährleisten."
+ EU_common_agriculture_tt: "Der §YEuropäische Gemeinschaft§! Nationalgeist gewinnt:\n§G+5,00 %§! Stabilität"
+
+ EU_european_parliament: "Das Europäische Parlament"
+ EU_european_parliament_desc: "Eine echte Union braucht eine demokratische Stimme. Wir werden ein direkt gewähltes Parlament schaffen, das alle Bürger Europas vertritt."
+ EU_european_parliament_tt: "Die §YEuropäische Gemeinschaft§! nationaler Geist gewinnt:\n§G+10,00 %§! Politischer Machtgewinn"
+ 
+ EU_court_of_justice: "Europäischer Gerichtshof"
+ EU_court_of_justice_desc: "Ein oberstes Gericht ist notwendig, um sicherzustellen, dass das europäische Recht in allen Mitgliedstaaten einheitlich ausgelegt und angewendet wird."
+ EU_court_of_justice_tt: "Die §YEuropäische Gemeinschaft§! Nationalgeist gewinnt:\n§G+10,00 %§! Stabilität"
+ 
+ EU_schengen_area: "Das Schengener Abkommen"
+ EU_schengen_area_desc: "Die Abschaffung der Binnengrenzkontrollen wird es unseren Bürgern ermöglichen, frei auf dem Kontinent zu reisen."
+ EU_schengen_area_tt: "Die §YEuropäische Gemeinschaft§! Nationalgeist gewinnt:\n§G+5,00 %§! Nicht zum Kerngeschäft gehörende Arbeitskräfte"
+ 
+ EU_space_agency: "Europäisches Raketenprogramm"
+ EU_space_agency_desc: "Die Bündelung unserer wissenschaftlichen Köpfe wird es Europa ermöglichen, in der fortgeschrittenen Raketen- und Luft- und Raumfahrtforschung weltweit führend zu sein."
+ EU_space_agency_tt: "Die §YEuropäische Gemeinschaft§! Nationalgeist gewinnt:\n§G+5,00 %§! Forschungsgeschwindigkeit"
+
+ EU_defense_council: "Europäische Verteidigungsgemeinschaft"
+ EU_defense_council_desc: "Ohne Sicherheit ist wirtschaftliche Integration bedeutungslos. Wir müssen eine gemeinsame Kommandostruktur schaffen, um die freien Nationen Europas zu verteidigen."
+ EU_defense_council_tt: "Die §YEuropäische Gemeinschaft§! Nationalgeist gewinnt:\n§G+5,00 %§! Kriegsunterstützung"
+ 
+ EU_integrated_army: "Standardisierte Armeeausrüstung"
+ EU_integrated_army_desc: "Die Standardisierung von Waffen, Munition und Militärdoktrin in allen europäischen Armeen wird unsere Kampfeffizienz und -organisation erheblich verbessern."
+ EU_integrated_army_tt: "Die §YEuropäische Gemeinschaft§! gewinnt an Nationalgeist:\n§G+5,00 %§! Armeeorganisation"
+ 
+ EU_integrated_navy: "Gemeinsame Marineoperationen"
+ EU_integrated_navy_desc: "Durch die gemeinsame Nutzung von Marinestützpunkten und die Koordinierung unserer Flotten können wir die Macht Europas auf die Weltmeere übertragen."
+ EU_integrated_navy_tt: "Die §YEuropäische Gemeinschaft§! gewinnt an Nationalgeist:\n§G+5,00 %§! Marineorganisation"
+ 
+ EU_integrated_airforce: "Europäisches Luftkommando"
+ EU_integrated_airforce_desc: "Ein integriertes Luftverteidigungsnetzwerk und gemeinsame Pilotenausbildungsprogramme werden den Luftraum über Europa sichern."
+ EU_integrated_airforce_tt: "Der nationale Geist der §YEuropäischen Gemeinschaft§! gewinnt:\n§G+5,00 %§! Effizienz bei Luftmissionen"
+ 
+ EU_united_states_of_europe: "Proklamieren Sie die Europäische Union"
+ EU_united_states_of_europe_desc: "Heute markiert das Ende jahrhundertelanger europäischer Teilung. Wir werden uns offiziell zu einem einzigen, föderierten Superstaat vereinen: der Europäischen Union."
+ 
+ EU_expand_the_union: "Erweitern Sie die Union"
+ EU_expand_the_union_desc: "Das europäische Projekt endet hier nicht. Wir müssen den verbleibenden demokratischen Nationen Europas die Hand der Freundschaft reichen und sie einladen, sich unserem Wohlstand anzuschließen."
+ EU_gains_spirit_tt: "Erhält den Nationalgeist §YEuropäische Gemeinschaft§!"
+
+ POR_eu_gateway:0 "Portugiesisches Tor zu Europa"
+ POR_eu_gateway_desc:0 "Nachdem Portugal die parlamentarische Demokratie angenommen hat, blickt es nach außen und ist bereit, die Tür zu einer engeren europäischen Zusammenarbeit zu öffnen."
+
+ SPR_eu_gateway:0 "Spanisches Tor zu Europa"
+ SPR_eu_gateway_desc:0 "Ein demokratisches Spanien, das seine eigenen Turbulenzen überstanden hat, sucht nun seinen Platz am Tisch eines geeinten Kontinents."
+
+ FRA_eu_gateway:0 "Französisches Tor zu Europa"
+ FRA_eu_gateway_desc:0 "Als eine der großen Demokratien des Kontinents ist Frankreich bereit, den Weg zur europäischen Einheit zu weisen."
+
+ ENG_eu_gateway:0 "Britisches Tor zu Europa"
+ ENG_eu_gateway_desc:0 "Ein demokratisches Großbritannien, das lange Zeit vor kontinentalen Verflechtungen zurückschreckte, überdenkt seine Rolle als Brücke zwischen Europa und der übrigen Welt."
+
+ BEL_eu_gateway:0 "Belgisches Tor zu Europa"
+ BEL_eu_gateway_desc:0 "Am Scheideweg Europas setzt sich die demokratische Regierung Belgiens mit aller Kraft für das Projekt der kontinentalen Zusammenarbeit ein."
+
+ BEL_eu_gateway_2:0 "Belgisches Tor zu Europa (II)"
+ BEL_eu_gateway_2_desc:0 "Belgien bekräftigt sein Engagement für ein geeintes Europa durch einen zweiten Weg der Zusammenarbeit und Integration."
+
+ HOL_eu_gateway:0 "Niederländisches Tor zu Europa"
+ HOL_eu_gateway_desc:0 "Die Niederlande sind traditionell eine Handelsnation und sehen in der europäischen Einheit eine Chance, den Wohlstand für künftige Generationen zu sichern."
+
+ SWI_eu_gateway:0 "Schweizer Tor zu Europa"
+ SWI_eu_gateway_desc:0 "Eine demokratische Schweiz, die stets auf der Hut vor ausländischen Verstrickungen ist, wägt die Vorteile ab, ihre Nachbarn in einem gemeinsamen europäischen Projekt zusammenzuschließen."
+
+ ITA_eu_gateway:0 "Italienisches Tor zu Europa"
+ ITA_eu_gateway_desc:0 "Ein demokratisches Italien blickt über die jüngsten Unruhen hinaus und strebt nach Stabilität und Wohlstand durch engere Beziehungen zu seinen Nachbarn."
+
+ ITA_eu_gateway_2:0 "Italienisches Tor zu Europa (II)"
+ ITA_eu_gateway_2_desc:0 "Italien verfolgt einen zweiten Weg der europäischen Zusammenarbeit und festigt seine Rolle auf dem Kontinent weiter."
+
+ GER_eu_gateway:0 "Deutsches Tor zu Europa"
+ GER_eu_gateway_desc:0 "Ein demokratisches Deutschland, das das Vertrauen zu seinen Nachbarn wiederherstellen möchte, bietet seine Hand für eine gemeinsame europäische Zukunft an."
+
+ AUS_eu_gateway:0 "Österreichisches Tor zu Europa"
+ AUS_eu_gateway_desc:0 "Als demokratisches Österreich im Herzen des Kontinents strebt es nach Sicherheit und Wohlstand durch europäische Zusammenarbeit."
+
+ YUG_eu_gateway:0 "Jugoslawisches Tor zu Europa"
+ YUG_eu_gateway_desc:0 "Ein demokratisches Jugoslawien, das seine vielen Völker unter einem Banner vereint, betrachtet Europa als einen stabilen Partner."
+
+ GRE_eu_gateway:0 "Griechisches Tor zu Europa"
+ GRE_eu_gateway_desc:0 "Ein demokratisches Griechenland, Erbe der Traditionen der Antike, sucht seinen Platz in einer modernen Union der Nationen."
+
+ BUL_eu_gateway:0 "Bulgarisches Tor zu Europa"
+ BUL_eu_gateway_desc:0 "Ein demokratisches Bulgarien blickt nach Westen und sucht auf dem Kontinent nach neuen Partnern und neuen Möglichkeiten."
+
+ ROM_eu_gateway:0 "Rumänisches Tor zu Europa"
+ ROM_eu_gateway_desc:0 "Ein demokratisches Rumänien, das seinen eigenen Kurs festgelegt hat, strebt eine engere Zusammenarbeit mit seinen europäischen Nachbarn an."
+
+ HUN_eu_gateway:0 "Ungarisches Tor zu Europa"
+ HUN_eu_gateway_desc:0 "Ein demokratisches Ungarn blickt über seine Grenzen hinaus und strebt nach Sicherheit und Wohlstand durch kontinentale Zusammenarbeit."
+
+ POL_eu_gateway:0 "Polnisches Tor zu Europa"
+ POL_eu_gateway_desc:0 "Ein demokratisches Polen, das am Scheideweg Europas steht, unterstützt eine Union freier Nationen."
+
+ DEN_eu_gateway:0 "Dänisches Tor zu Europa"
+ DEN_eu_gateway_desc:0 "Ein demokratisches Dänemark sucht Sicherheit in Zahlen und schließt sich dem wachsenden Chor der europäischen Zusammenarbeit an."
+
+ NOR_eu_gateway:0 "Norwegisches Tor zu Europa"
+ NOR_eu_gateway_desc:0 "Ein demokratisches Norwegen, das lange an das Meer gebunden war, hofft auf neue Partnerschaften und gemeinsame Sicherheit auf dem Kontinent."
+
+ SWE_eu_gateway:0 "Schwedisches Tor zu Europa"
+ SWE_eu_gateway_desc:0 "Ein demokratisches Schweden wägt die Vorzüge einer engeren europäischen Integration gegen seine Tradition der Neutralität ab."
+
+ FIN_eu_gateway:0 "Finnisches Tor zu Europa"
+ FIN_eu_gateway_desc:0 "Nachdem das demokratische Finnland seine Unabhängigkeit gesichert hat, sucht es nach neuen Verbündeten durch engere Beziehungen zum Rest Europas."
+
+ ICE_eu_gateway:0 "Isländisches Tor zu Europa"
+ ICE_eu_gateway_desc:0 "Ein demokratisches Island, auch wenn es weit vom Kontinent entfernt ist, sieht den Wert darin, sich einem umfassenderen europäischen Projekt anzuschließen."
+
+ CZE_eu_gateway:0 "Tschechoslowakisches Tor zu Europa"
+ CZE_eu_gateway_desc:0 "Eine demokratische Tschechoslowakei, die inmitten regionaler Spannungen standhaft bleibt, strebt nach Stärke durch europäische Solidarität."
+
+ LIT_eu_gateway:0 "Litauisches Tor zu Europa"
+ LIT_eu_gateway_desc:0 "Ein demokratisches Litauen sieht in der europäischen Zusammenarbeit einen Schutz für seine hart erkämpfte Unabhängigkeit."
+
+ LAT_eu_gateway:0 "Lettisches Tor zu Europa"
+ LAT_eu_gateway_desc:0 "Ein demokratisches Lettland strebt nach Sicherheit und Partnerschaft durch eine engere Integration mit dem Rest Europas."
+
+ EST_eu_gateway:0 "Estnisches Tor zu Europa"
+ EST_eu_gateway_desc:0 "Ein demokratisches Estland, klein, aber entschlossen, sucht seinen Platz innerhalb einer größeren Union europäischer Nationen."
+
+ SOV_eu_gateway:0 "Russisches Tor zu Europa"
+ SOV_eu_gateway_desc:0 "Nachdem sie sich die parlamentarische Demokratie zu eigen gemacht hat, überdenkt die Russische Föderation ihren Platz in der Welt und orientiert sich eher an Europa als an der Isolation."
+  POL_eu_gateway_2:0 "Polnisches Tor zu Europa (II)"
+ POL_eu_gateway_2_desc:0 "Polen bekräftigt sein Engagement für ein geeintes Europa durch einen zweiten Weg der Zusammenarbeit und Integration."

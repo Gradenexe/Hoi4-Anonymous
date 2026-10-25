@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_trait_hunter"
+        texturefile = "gfx/interface/traits/personal/trait_hunter.dds"
+        legacy_lazy_load = no
+    }
+}

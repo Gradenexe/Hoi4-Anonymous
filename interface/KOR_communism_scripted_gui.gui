@@ -1,0 +1,123 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "KOR_communism_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 725 }
+		background = {
+			name = "KOR_communism_biankuang" 
+			position = { x = 7 y = -15 }
+			quadTextureSprite = "GFX_KOR_communism_biankuang"
+		}
+        ####
+		iconType = {
+			name ="KOR_yanan_pai_gui"
+			spriteType = "GFX_KOR_yanan_pai_gui"
+			position = { x = 75 y = 105 }
+			pdx_tooltip = "KOR_yanan_pai_gui_txt"
+		}
+		instantTextBoxType = {
+			name = "KOR_shili_zongkuang_txt"
+			position = { x = 35 y = 315 }
+			font = "hoi_24header"
+			text = "KOR_shili_zongkuang0_txt"
+			maxWidth = 170
+			maxHeight = 200
+			format = center
+		}
+		instantTextBoxType = {
+			name = "KOR_communism_Party_Size"
+			position = { x = 95 y = 318 }
+			font = "hoi_18mbs"
+			text = "KOR_YanAn_Party_Size_txt"
+			pdx_tooltip = "KOR_yanan_jiacheng_buff_txt"
+			maxWidth = 170
+			maxHeight = 200
+			format = center
+		}
+		#
+		iconType = {
+			name ="KOR_jinricheng_gui"
+			spriteType = "GFX_KOR_jinricheng_gui"
+			position = { x = 75 y = 350 }
+			pdx_tooltip = "KOR_jinricheng_gui_txt"
+		}
+		instantTextBoxType = {
+			name = "KOR_shili_zongkuang1_txt"
+			position = { x = 35 y = 555 }
+			font = "hoi_24header"
+			text = "KOR_shili_zongkuang0_txt"
+			maxWidth = 170
+			maxHeight = 300
+			format = center
+		}
+		instantTextBoxType = {
+			name = "KOR_communism_Party_Size_1"
+			position = { x = 95 y = 558 }
+			font = "hoi_18mbs"
+			text = "KOR_ManZhou_Party_Size_txt"
+			pdx_tooltip = "KOR_kanglian_jiacheng_buff_txt"
+			maxWidth = 170
+			maxHeight = 200
+			format = center
+		}
+		#
+		iconType = {
+			name ="KOR_puxianyong_gui"
+			spriteType = "GFX_KOR_puxianyong_gui"
+			position = { x = 270 y = 105 }
+			pdx_tooltip = "KOR_puxianyong_gui_txt"
+		}
+		instantTextBoxType = {
+			name = "KOR_shili_zongkuang2_txt"
+			position = { x = 231 y = 315 }
+			font = "hoi_24header"
+			text = "KOR_shili_zongkuang0_txt"
+			maxWidth = 170
+			maxHeight = 300
+			format = center
+		}
+		instantTextBoxType = {
+			name = "KOR_communism_Party_Size_2"
+			position = { x = 291 y = 318 }
+			font = "hoi_18mbs"
+			text = "GetNanLaoPartySizeEffects"
+			pdx_tooltip = "KOR_nanlao_jiacheng_buff_txt"
+			maxWidth = 170
+			maxHeight = 200
+			format = center
+		}
+		#
+		iconType = {
+			name ="KOR_xujiayi_gui"
+			spriteType = "GFX_KOR_xujiayi_gui"
+			position = { x = 270 y = 350 }
+			pdx_tooltip = "KOR_xujiayi_gui_txt"
+		}
+		instantTextBoxType = {
+			name = "KOR_shili_zongkuang3_txt"
+			position = { x = 231 y = 555 }
+			font = "hoi_24header"
+			text = "KOR_shili_zongkuang0_txt"
+			maxWidth = 170
+			maxHeight = 300
+			format = center
+		}
+		instantTextBoxType = {
+			name = "KOR_communism_Party_Size_3"
+			position = { x = 291 y = 558 }
+			font = "hoi_18mbs"
+			text = "KOR_SOV_Party_Size_txt"
+			pdx_tooltip = "KOR_sulian_jiacheng_buff_txt"
+			maxWidth = 170
+			maxHeight = 200
+			format = center
+		}
+
+		
+        ############################### 底纹
+		
+
+
+	}
+}

@@ -1,0 +1,7 @@
+style = {
+	name = KOR_zongdufu_focus_tukuang
+	unavailable = GFX_focus_zongdufu_bukedian_zhuangtai	###不可点状态
+	completed = GFX_focus_zongdufu_wanchengshi_zhuangtai	###完成时状态
+	available = GFX_focus_zongdufu_weiwancheng_kedian_zhuangtai	###未完成可点状态
+	current = GFX_focus_zongdufu_jinxingzhong_zhuangtai	###进行中状态
+}

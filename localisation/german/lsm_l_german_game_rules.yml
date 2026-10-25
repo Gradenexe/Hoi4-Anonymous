@@ -1,0 +1,105 @@
+﻿l_german:
+
+NONHIST_AI_BEHAVIOR: "Nicht-historisches KI-Verhalten"
+
+RULE_OPTION_DEFAULT_NONHIST_AI_DESC: "Der KI werden keine besonderen Regeln auferlegt"
+
+RULE_OPTION_HISTORICAL_PATHS: "Relativ historisch"
+RULE_OPTION_HISTORICAL_PATHS_NONHIST_AI_DESC: "Die Länder bleiben bei der Fokusauswahl relativ historisch; however, some countries may have specific focus plan designed to take historical path on nonhistorical. AI will still deviate to react to changes in the political landscape."
+
+RULE_OPTION_MAJORS_ONLY: "Nur Majors"
+RULE_OPTION_MAJORS_ONLY_NONHIST_AI_DESC: "Nur große KI-Länder können vom historischen Pfad abweichen, kleinere Länder können dennoch reagieren."
+
+RULE_OPTION_MINORS_ONLY: "Nur Minderjährige"
+RULE_OPTION_MINORS_ONLY_NONHIST_AI_DESC: "Nur kleinere KI-Länder können vom historischen Pfad abweichen, große Länder können dennoch reagieren."
+
+RULE_OPTION_ANTI_HISTORICAL: "Antihistorisch"
+RULE_OPTION_ANTI_HISTORICAL_NONHIST_AI_DESC: "Alles andere als historisch wird akzeptabel sein."
+
+RULE_OPTION_NO_GAME_BALANCE: "Keine Spielbalance"
+RULE_OPTION_NO_GAME_BALANCE_NONHIST_AI_DESC: "Das Balancing der Vanilla-Ideologie wird entfernt. Einige Länder verfügen jedoch möglicherweise immer noch über einen gewichteten Schwerpunktplan."
+
+NONHIST_GENERIC_AI_BEHAVIOR: "Generische KI-Länderbeteiligung"
+
+RULE_OPTION_GENERIC_NO: "Vermeiden Sie es, einer Fraktion beizutreten"
+RULE_OPTION_GENERIC_NO_DESC: "Generische KI-Länder vermeiden den Beitritt oder die Gründung von Fraktionen. Kann immer noch von „Fraktion erstellen“ durch ein nicht generisches Land oder durch bestimmte Schwerpunkte/Entscheidungen ins Visier genommen werden."
+
+RULE_OPTION_GENERIC_YES_1936: "Darf so schnell wie möglich teilnehmen"
+RULE_OPTION_GENERIC_YES_1936_DESC: "Kann teilnehmen, sofern dies aufgrund anderer Regeln zulässig ist"
+
+RULE_OPTION_GENERIC_YES_1939: "Mai teilnehmen 1939 + 50 % WT"
+RULE_OPTION_GENERIC_YES_1939_DESC: "Kann nach 1939 teilnehmen und die Weltspannung liegt über 50 %"
+
+RULE_OPTION_GENERIC_YES_1941: "Mai teilnehmen 1941 + 100 % WT"
+RULE_OPTION_GENERIC_YES_1941_DESC: "Darf nach 1941 teilnehmen und die Weltspannung liegt bei 100 %"
+
+RULE_EXILES_DEMOCRATIC_1: "Alliierte Demokratie"
+RULE_OPTION_EXILES_DEMOCRATIC_1_SOV_AI_DESC: "Die Demokratie in Russland wird durch einen gewaltsamen Bürgerkrieg mit Unterstützung der weißrussischen Bewegung und Zarentreuen wiederhergestellt. Von da an wird AI Russia versuchen, ein Bündnis mit dem Vereinigten Königreich oder der Deutschen Republik einzugehen."
+
+RULE_EXILES_DEMOCRATIC_2: "Östliche Entente"
+RULE_OPTION_EXILES_DEMOCRATIC_2_SOV_AI_DESC: "Die Wiederherstellung der Demokratie in Russland wird durch einen gewaltsamen Bürgerkrieg mit Unterstützung der Gemäßigten in der sozialistischen Regierung erfolgen. Von da an wird KI Russland eine neue Allianz bilden, um die freien Nationen Eurasiens zu verteidigen."
+
+RULE_OPTION_CHL_LE_DELUGE_2: "Patria Nueva"
+RULE_OPTION_CHL_LE_DELUGE_2_DESC: "Der gemäßigte Flügel der Regierung wird Chile mit Unterstützung der Loyalisten unter Antoine III. putschen und schließlich Antoine III. putschen, um eine neue Regierung unter dem Premierminister einzusetzen."
+
+RULE_OPTION_COMMUNIST_2: "Avantgardistische Revolution"
+RULE_OPTION_COMMUNIST_2_FRA_AI_DESC: "Der avantgardistische Flügel der linken Regierung wird die Macht übernehmen und versuchen, ihren Rechtsextremismus zu zerstören und dann das Land für eine sozialistische Revolution in ganz Europa zu militarisieren."
+
+RULE_OPTION_ISLAMIC_AFG_AI: "Islamische Republik"
+RULE_OPTION_ISLAMIC_AFG_DESC: "Unvollständig. Wird sich demokratisch verhalten."
+
+RULE_OPTION_ISLAMIC_PER_AI: "Islamische Revolution"
+RULE_OPTION_ISLAMIC_PER_DESCC: "Unvollständig. Wird islamisch sein, verursacht aber noch nicht genügend islamische Revolution im Nahen Osten. Wird Originalinhalte hinzufügen."
+
+RULE_OPTION_ISLAMIC_IRQ_AI: "Arabischer Islam"
+RULE_OPTION_ISLAMIC_IRQ_DESC: "Unvollständig. Wird sich wie ein Faschist verhalten."
+
+RULE_OPTION_MONARCHIST_FIN: "Monarchist - Haus Hessen"
+RULE_HISTORICAL_FIN_MONARCHIST_PLAN_DESC: "Unvollständig. Wird sich historisch verhalten und versuchen, monarchistisch zu sein. Könnte möglicherweise nicht gelingen. Zukünftige Originalinhalte werden hinzugefügt."
+
+RULE_OPTION_COMMUNISM_PER_AI_SOVIET: "Sowjetische SR Iran"
+RULE_OPTION_COMMUNISM_PER_SOVIET_DESC: "Der Iran wird mit sowjetischer Unterstützung einen Bürgerkrieg erleben und sich später der Komintern anschließen. Wird abgesagt, wenn die Sowjetunion auf dem Weg zum weißrussischen Bürgerkrieg ist."
+
+RULE_OPTION_HISTORICAL_ALTERNATIVE: "Stalinistischer Trotzkismus?"
+RULE_OPTION_HISTORICAL_ALTERNATIVE_SOV_AI_DESC: "Stalin wird versuchen, schnell zu expandieren und die Welt zu erobern, weil es Spaß macht."
+
+RULE_OPTION_GOE_INDIA_COMMUNISM_SOVIET: "Arbeiterrevolution"
+RULE_OPTION_GOE_INDIA_COMMUNISM_SOVIET_RAJ_AI_DESC: "Indien wird die Macht in den Händen einer Arbeiterregierung zentralisieren und versuchen, die Länder zur Schwerindustrie zu industrialisieren und eine Angleichung an die Sowjetunion oder andere weltweit führende sozialistische Volkswirtschaften bevorzugen."
+
+RULE_OPTION_GOE_INDIA_COMMUNISM_AGRARIAN: "Agrarsozialismus"
+RULE_OPTION_GOE_INDIA_COMMUNISM_AGRARIAN_RAJ_AI_DESC: "Die Agrarkommunen Indiens werden die Macht für das Volk ergreifen und versuchen, die soziale Klassenhierarchie der Nation zu revolutionieren, bevor sie den britischen Überresten den letzten Schlag versetzen, während sie gleichzeitig eine diplomatische Verbindung mit asiatischen Kommunisten oder sogar einem rechtsextremen imperialistischen Japan anstreben."
+
+RULE_OPTION_IMPERIAL_PER_THIRD_AI: "Drittes Persisches Reich"
+RULE_OPTION_IMPERIAL_PER_THIRD_DESC: "Die Ermordung von Reza Schah wird durchgeführt, woraufhin sein Sohn den Thron besteigen und versuchen wird, die Region zu erobern."
+
+PUNITIVE_ACTION_SOV: "STRAFAKTION – Sowjetunion @SOV"
+PUNITIVE_ACTION_GER: "STRAFMASSNAHMEN - Deutschland @GER"
+
+RULE_OPTION_PUNITIVE_ENABLED: "Ermöglicht"
+RULE_OPTION_PUNITIVE_ENABLED_SOV_DESC: "Wenn Sie sich nicht an die Regeln halten, werden sie es auch nicht tun."
+RULE_OPTION_PUNITIVE_ENABLED_GER_DESC: "Eine Herausforderung erwartet denjenigen, der nach großer Macht strebt."
+
+RULE_OPTION_PUNITIVE_DISABLED: "Deaktiviert"
+RULE_OPTION_PUNITIVE_DISABLED_SOV_DESC: "Es kann nie etwas Schlimmes passieren. Sie können Ihre Strategien ausprobieren."
+RULE_OPTION_PUNITIVE_DISABLED_GER_DESC: "Die Frucht der Macht fällt einem in den Mund."
+
+RULE_OPTION_FASCIST_MR_PACT: "Unheilige Allianz"
+RULE_OPTION_FASCIST_MR_PACT_GER_AI_DESC: "Deutschland wird versuchen, ein Bündnis mit der Sowjetunion einzugehen, um gegen die Westmächte zu kämpfen. AI wird jedoch den Krieg mit der UdSSR beginnen, wenn dieser Plan aufgrund verschiedener Bedingungen scheitert, die für einen Verbündeten der Sowjetunion erforderlich sind."
+
+ALLIES_MAINLAND_DEFENSE_NAME: "Strategie der Verbündeten für Festlandeuropa"
+RULE_OPTION_ALLIES_MAINLAND_DEFENSE_ENABLED: "Ermöglicht"
+RULE_OPTION_ALLIES_MAINLAND_DEFENSE_DISABLED: "Deaktiviert"
+RULE_OPTION_ALLIES_MAINLAND_DEFENSE_ENABLED_DESC: "Die Verbündeten werden sich koordinieren und versuchen, das europäische Festland zu verteidigen"
+RULE_OPTION_ALLIES_MAINLAND_DEFENSE_DISABLED_DESC: "Die Verbündeten werden sich abstimmen, um das europäische Festland aufzugeben"
+
+USA_ENG_GUARANTEE_NAME: "Angloamerikanische Krawatte"
+RULE_OPTION_USA_ENG_GUARANTEE_ENABLED: "Ermöglicht"
+RULE_OPTION_USA_ENG_GUARANTEE_DISABLED: "Deaktiviert"
+RULE_OPTION_USA_ENG_GUARANTEE_ENABLED_DESC: "Die demokratischen USA werden sich einem demokratischen Großbritannien anschließen, wenn Sealion stattfindet"
+RULE_OPTION_USA_ENG_GUARANTEE_DISABLED_DESC: "Wird nicht"
+
+RULE_OPTION_DEN_COMMUNIST: "Dänischer Kommunismus"
+RULE_OPTION_DEN_COMMUNIST_AI_DESC: "AI Dänemark wird versuchen, zum Sozialismus/Kommunismus überzuwechseln und einen Wohlfahrtsstaat zu schaffen, bevor es ein Bündnis gegen äußere Bedrohungen anstrebt. Wird den sowjetischen Kommunismus immer ablehnen, es sei denn, er führt denselben Krieg, wird sich aber der russischen Sozialdemokratie anschließen."
+
+RULE_OPTION_ROMANOV: "Der letzte Romanow"
+RULE_ROMANOV_POL_AI_DESC: "Anastasia wird den polnischen Thron besteigen. Dann wird Polen wahrscheinlich irgendwo auf dem Weg an Deutschland oder Russland sterben."

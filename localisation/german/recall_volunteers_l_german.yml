@@ -1,0 +1,5 @@
+﻿l_german:
+ RECALL_VOLUNTEERS_TITLE: "Freiwillige zurückrufen"
+ RECALL_VOLUNTEERS_ACTION_DESC: "Bei Bedarf können wir Freiwillige aus jedem Land zurückrufen, in das wir sie entsandt haben."
+ RECALL_VOLUNTEERS_TOOLTIP: "§Y[This.GetNameWithFlag]§! §Res wurden keine Freiwilligen geschickt.§!"
+ RECALL_VOLUNTEERS_TOOLTIP_G: "§Y[This.GetNameWithFlag]§! wurden Freiwillige geschickt."

@@ -1,0 +1,48 @@
+spriteTypes = {	
+
+	SpriteType = { 
+		name = "GFX_focus_ege_cave_to_the_italians"
+		texturefile = "gfx/interface/goals/focus_ege_cave_to_the_italians.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_blow_the_suez"
+		texturefile = "gfx/interface/goals/focus_ege_blow_the_suez_NEW.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_imperial_dream"
+		texturefile = "gfx/interface/goals/focus_ege_imperial_dream.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_green_shirt_militias"
+		texturefile = "gfx/interface/goals/focus_ege_green_shirt_militias.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_rekindle_the_old_alliance"
+		texturefile = "gfx/interface/goals/focus_ege_rekindle_the_old_alliance.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_marx_of_africa"
+		texturefile = "gfx/interface/goals/focus_ege_marx_of_africa.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_arab_socialist_movement"
+		texturefile = "gfx/interface/goals/focus_ege_arab_socialist_movement.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_ra"
+		texturefile = "gfx/interface/goals/focus_ege_ra.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_amen"
+		texturefile = "gfx/interface/goals/focus_ege_amen.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_ptah"
+		texturefile = "gfx/interface/goals/focus_ege_ptah.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_sutekh"
+		texturefile = "gfx/interface/goals/focus_ege_sutekh.dds"
+	}
+
+}

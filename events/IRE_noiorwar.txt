@@ -1,0 +1,50 @@
+add_namespace = IRE_noiorwar
+
+#North of Ireland or WAR
+country_event = {
+	id = IRE_noiorwar.1
+	title = IRE_noiorwar.1.t
+	desc = IRE_noiorwar.1.d
+
+	picture = IRE_north_of_ireland_or_war-826
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 40
+	fire_for_sender = yes
+	option = {
+		name = IRE_noiorwar.1.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 25 }
+		
+		hidden_effect = {
+			
+		}
+		
+		IRE = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				generator = { 119 }
+			}
+		}
+		IRE = { set_country_flag = Northern_Ireland_Refused }
+	}
+	option = {
+		name = IRE_noiorwar.1.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 75 }
+		
+		hidden_effect = {
+			
+		}
+		
+		IRE = { set_country_flag = Northern_Ireland_Accepted }
+		IRE = {
+			transfer_state = 119
+		}
+	}
+}

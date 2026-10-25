@@ -1,0 +1,536 @@
+﻿l_english:
+ NZL_transfer_the_new_zealand_division:0 "Transfer the New Zealand Division"
+ NZL_transfer_the_new_zealand_division_desc:0 "The 2nd New Zealand Division has been mobilized for action, so we should send it where the fighting is. The NZ Division from the Great War was attached to the Mediterranean, and so will the new division."
+ NZL_form_the_rnzn:0 "Form the RNZN"
+ NZL_form_the_rnzn_desc:0 "Our once small coastal patrol has now grown to include ships that can operate independently from Royal Navy supervision. New Zealand will have its own navy."
+ NZL_expand_devonport_naval_base:0 "Expand Devonport Naval Base"
+ NZL_expand_devonport_naval_base_desc:0 "The Devonport Naval Base will be the headquarters for our navy, but it must be expanded to meet the new demands of total war."
+ NZL_purchase_old_ships: "$SMB_purchase_destroyers_and_subs$"
+ NZL_purchase_old_ships_desc: "$SMB_purchase_destroyers_and_subs_desc$"
+ NZL_coastal_defense:0 "Coastal Defense"
+ NZL_coastal_defense_desc:0 "New Zealand is an island nation, far from enemies, so we must be prepared for amphibious attack along our coastlines."
+ NZL_destroyer_effort:0 "Destroyer Effort"
+ NZL_destroyer_effort_desc:0 "With our small industrial base, destroyers are the most efficient way for New Zealand to project naval power. Patrol the coasts, intercept submarines, and set early warning pickets."
+ NZL_submarine_effort:0 "Submarine Effort"
+ NZL_submarine_effort_desc:0 "Since any invasion will have to come by sea, the wolves of the ocean can be strong line of defense. Stealthy and hunting in packs, a submarine fleet can protect our sea lanes."
+ NZL_light_cruiser_effort:0 "Light Cruiser Effort"
+ NZL_light_cruiser_effort_desc:0 "Mid-size ships are appropriate for a mid-size power. Light cruisers can pack a punch, but have the speed to escape major engagements if necessary."
+ NZL_capital_ship_effort:0 "Capital Ship Effort"
+ NZL_capital_ship_effort_desc:0 "If New Zealand is to have a first rate navy, it has to have first rate ships. We must invest in battleships and heavy cruisers."
+ NZL_expand_the_nzpaf:0 "Expand the NZPAF"
+ NZL_expand_the_nzpaf_desc:0 "The New Zealand Permanent Air Force needs new coastal patrol craft and naval bombers. Modern nations cannot neglect the air war."
+ NZL_form_the_rnzaf:0 "Form the RNZAF"
+ NZL_form_the_rnzaf_desc:0 "The time has come to make the air force independent of the other combat arms. The Royal New Zealand Air Force will have its own command structure but co-operate closely with the Royal Air Force."
+ NZL_fighter_focus:0 "Fighter Focus"
+ NZL_fighter_focus_desc:0 "Fighters are effective at intercepting and escorting the bombers that will be the decisive weapon for our allies."
+ NZL_bomber_focus:0 "Bomber Focus"
+ NZL_bomber_focus_desc:0 "Light bombers can effectively protect our coastlines, and will be needed in the fight overseas against our enemies."
+ NZL_defend_our_islands:0 "Defend Our Islands"
+ NZL_defend_our_islands_desc:0 "We must be prepared for attack on our island paradise from the sea. Naval bombers can intercept and attack landing craft or even target capital ships."
+ NZL_modern_fighters:0 "Modern Fighters"
+ NZL_modern_fighters_desc:0 "It is time to upgrade our fighter designs to faster craft with a longer range. Our allies have shown the way with some of the most advanced planes the world has ever seen."
+ NZL_heavy_bombers:0 "Heavy Bombers"
+ NZL_heavy_bombers_desc:0 "The war can only be won by striking at the heart of the enemy homeland. Heavy bombers are necessary to deal a devastating blow to enemy factories and cities."
+ NZL_the_plan: "British Commonwealth Air Training Plan"
+ NZL_the_plan_desc: "We have joined with our allies to share experience and insight in the training of pilots. The war could be won from the air, so the Commonwealth Air Training Plan could be the key to victory."
+ NZL_national_roads_board:0 "National Roads Board"
+ NZL_national_roads_board_desc:0 "New Zealand's rough terrain has discouraged a coherent road building system, but we need to improve what we have in place. A highway system should be researched, roads should be paved, and new paths cut through the mountains."
+ NZL_new_zealand_steel:0 "New Zealand Steel"
+ NZL_new_zealand_steel_desc:0 "New Zealand has been blessed with abundant stores of ironsand, especially on the North Island. It takes a special process to extract ore from this sand, but it can serve as the cornerstone of our steel industry for years to come."
+ NZL_taranaki_oil:0 "Taranaki Oil"
+ NZL_taranaki_oil_desc:0 "The Taranaki region on the north island is rich in minerals and petroleum. Entrepreneurs have tried to exploit these oil reserves, but more investment is needed in refineries and drilling."
+ NZL_wairarapa_sheep_farms:0 "Wairarapa Sheep Farms"
+ NZL_wairarapa_sheep_farms_desc:0 "The wool industry of Wairarapa is one of the cornerstones of the New Zealand economy. As the world breaks out of its Depression, there will be greater demand for our wool."
+ NZL_bureau_of_industry:0 "Bureau of Industry"
+ NZL_bureau_of_industry_desc:0 "New Zealand is an agrarian society, with an emphasis on ranching. The Bureau of Industry must encourage great investment in capital infrastructure and manufacturing."
+ NZL_department_of_scientific_and_industrial_research:0 "Department of Scientific And Industrial Research"
+ NZL_department_of_scientific_and_industrial_research_desc:0 "The other Commonwealth and Dominion nations are investing in scientific and industrial research, so we should do the same."
+ NZL_industrial_conscription:0 "Industrial Conscription"
+ NZL_industrial_conscription_desc:0 "There is no reason for any able bodied man to not be serving in the armed forces or working in a war related industry. Our new laws will put every shoulder to the wheel of mobilization and production."
+ NZL_think_big:0 "Think Big"
+ NZL_think_big_desc:0 "We have become accustomed to see ourselves as a lesser Dominion than our Aussie or Canadian allies. But New Zealand is fully capable of industrial greatness."
+ NZL_project_seal:0 "Project Seal"
+ NZL_project_seal_desc:0 "Project Seal is a new initiative with the Americans to develop a weapon that can trigger tsunamis to overwhelm our enemies. It is a little fanciful, but the bouncing bomb that has been developed shows great promise."
+ NZL_national_defense_institute:0 "National Defense Institute"
+ NZL_national_defense_institute_desc:0 "Now that New Zealand is fully a sovereign nation we are no longer receiving access to advanced prototypes and blueprints like we previously did. We must ensure that we always stay ahead of our enemies, and do not fall behind in technology."
+ NZL_expand_the_university_of_auckland:0 "Expand the University of Auckland"
+ NZL_expand_the_university_of_auckland_desc:0 "The University of Auckland is our most important post-secondary institution. By expanding its facilities, we can try to keep some of our finest minds here at home."
+ NZL_army_reforms:0 "Army Reforms"
+ NZL_army_reforms_desc:0 "We should modernize our army's training and promotion system. This way we can be prepared for whatever happens in the ongoing world crisis."
+ NZL_charlton_automatic_rifle:0 "Charlton Automatic Rifle"
+ NZL_charlton_automatic_rifle_desc:0 "One of our citizens has modified the standard Lee Enfield rifle into a full automatic gun. This is New Zealand ingenuity at its best and we should encourage innovation along these lines."
+ NZL_bob_semple_tank:0 "Bob Semple Tank"
+ NZL_bob_semple_tank_desc:1 "Why shouldn’t New Zealand have its own tank? The Ministry of Works in Temuka is developing a light tank armed with only machine guns. Even if we never get this beyond a prototype, the experience we gain will be invaluable."
+ NZL_domestic_arms_industry:0 "Domestic Arms Industry"
+ NZL_domestic_arms_industry_desc:0 "We should turn as many industries as we can over to the production of small arms. We need ammunition, gun parts, support equipment and so forth. These can be made domestically."
+ NZL_schofield_tank:0 "Schofield Tank"
+ NZL_schofield_tank_desc:0 "If the Semple Tank didn’t meet our needs, maybe a tank with a proper cannon will do the trick. The combined wheel/track system is original and might lead us to new insights into tank design."
+ NZL_long_range_patrol:0 "Long Range Patrol"
+ NZL_long_range_patrol_desc:0 "The Long Range Patrol is intended to cover wide expanses of territory in North Africa. This reconnaissance and commando unit will undertake special missions in some of the world's harshest climates."
+ NZL_artillery_focus:0 "Artillery Focus"
+ NZL_artillery_focus_desc:0 "Artillery is crucial for the support of any forward movement by our infantry. Expand research into ballistics and larger barrel guns."
+ NZL_big_bob_tank:0 "Big Bob Tank"
+ NZL_big_bob_tank_desc:0 "The battlefields of Europe are calling for heavier armor to compete with the super tanks of our enemies. The Big Bob will be New Zealand's contribution to this design effort."
+ NZL_research_collaboration:0 "Research Collaboration"
+ NZL_research_collaboration_desc:0 "The British showed us the advantage of sharing scientific progress between close allies. Our whole faction will be able to conduct wartime R&D more efficiently if we take the steps necessary to coordinate this."
+ NZL_the_first_labor_government:0 "The First Labour Government"
+ NZL_the_first_labor_government_desc:0 "The First Labour Government for New Zealand has the opportunity to pursue a progressive social and economic agenda. Industrial regulation, workers’ rights, social welfare laws and rules for wages are all on the agenda."
+ NZL_ratana_alliance:0 "Ratana Alliance"
+ NZL_ratana_alliance_desc:0 "An alliance with the Ratana movement will bring Maori New Zealanders into the government and hopefully begin to heal some of the wounds of British conquest."
+ NZL_maori_affairs_act:0 "Maori Affairs Act"
+ NZL_maori_affairs_act_desc:0 "Much of the land owned by Maori is economically unproductive. If we can consolidate it and bring more under government control, we can turn these barren locations into fruitful sites of industry and commerce."
+ NZL_social_security_act:0 "Social Security Act"
+ NZL_social_security_act_desc:0 "The unemployed of New Zealand need to be taken care of until the economy recovers and more jobs are available. We started with a Christmas bonus in 1935, but the time has come for a proper social safety net for all citizens."
+ NZL_the_manpower_act:0 "The Manpower Act"
+ NZL_the_manpower_act_desc:0 "Ever since the war started, Maori have come to the cities in large numbers. The Manpower Act will let us steer those energies into New Zealand factories."
+ NZL_amend_the_maori_affairs_act:0 "Amend the Maori Affairs Act"
+ NZL_amend_the_maori_affairs_act_desc:0 "We must amend the Maori Affairs Act so that it boosts the productivity of underutilized lands, but doesn’t needlessly displace our Maori citizens."
+ NZL_waitangi_tribunal:0 "Waitangi Tribunal"
+ NZL_waitangi_tribunal_desc:0 "British New Zealanders should come to terms with what their ancestors did to displace, disrupt and marginalize the Maori of New Zealand. Bloody wars, land seizures, and natural rights ignored. Recognizing this legacy is a step to healing."
+ NZL_maori_conscription:0 "Maori Conscription"
+ NZL_maori_conscription_desc:0 "The bravery and heroism of the Maori Battalion attached to the Expeditionary Force is a sign that we should make the most of our entire population by drafting even the reluctant Maori into the service."
+ NZL_maori_volunteers:0 "Maori Volunteers"
+ NZL_maori_volunteers_desc:0 "Showing their patriotism, hundreds of Maori are stepping up to volunteer for service in the New Zealand army."
+ NZL_strengthen_the_commonwealth:0 "Strengthen the Commonwealth"
+ NZL_strengthen_the_commonwealth_desc:0 "As a smaller Dominion, it is important to stick close to our friends and family. We will reinforce our ties to our fellow British territories."
+ NZL_statute_of_westminster:0 "Statute of Westminster"
+ NZL_statute_of_westminster_desc:0 "The Statute of Westminster gives us greater independence under the Crown while still keeping us within the Empire."
+ NZL_2nzef:0 "2NZEF"
+ NZL_2nzef_desc:0 "Despite the horrors of the last war, New Zealand is ready to march again. The 2nd New Zealand Expeditionary Force is being organized as we speak."
+ NZL_arrest_pacifist_leaders:0 "Arrest Pacifist Leaders"
+ NZL_arrest_pacifist_leaders_desc:0 "Now is not a time for dissension within the country. Everyone must focus on winning the war, and if that means detaining any who speak against the war, then that is what we will do."
+ NZL_technology_sharing_with_britain:0 "Technology Sharing With Britain"
+ NZL_technology_sharing_with_britain_desc:0 "Great Britain's scientific and industrial base far exceeds our own, but since we are family, they are willing to share what they know with us."
+ NZL_the_lee_affair:0 "The Lee Affair"
+ NZL_the_lee_affair_desc:0 "John Lee, MP for Grey Lynn, has been causing problems within the Labour caucus. He is agitating for a more radical agenda instead of the cautious path we are taking. Measures must be taken to quiet his revolt."
+ NZL_empower_the_working_class:0 "Empower the Working Class"
+ NZL_empower_the_working_class_desc:0 "Labour has championed the working class since its founding, indeed many of our leaders have working class origins. Let's push for more dramatic protections and powers for the unions."
+ NZL_join_comintern:0 "Join Comintern"
+ NZL_join_comintern_desc:0 "The time has come to join with our socialist brothers in an alliance. Through the Comintern we will achieve the worker's paradise."
+ NZL_technology_sharing_with_soviet_union:0 "Technology Sharing With Soviet Union"
+ NZL_technology_sharing_with_soviet_union_desc:0 "The Soviet Union has many of the world's top scientists and technology innovators. They are generous enough to share what they know with us, their comrades in arms."
+ NZL_in_the_darkness:0 "In the Darkness"
+ NZL_in_the_darkness_desc:0 "There is a rot inherent in the democratic systems championed by our mother country. True strength cannot be demonstrated through compromise."
+ NZL_befriend_japan:0 "Befriend Japan"
+ NZL_befriend_japan_desc:0 "As a Pacific nation, it suits our security interests to side with the strongest power in the region. Japan and its mighty navies can protect us from the world's dangers."
+ NZL_rule_them_all:0 "Rule Them All"
+ NZL_rule_them_all_desc: "The antipodean nations of the South Pacific should be one united power. Australia should consider submitting to our superior ethos."
+ NZL_technology_sharing_with_japan:0 "Technology Sharing With Japan"
+ NZL_technology_sharing_with_japan_desc:0 "Japan has many of the world's top scientists and technology innovators. They are generous enough to share what they know with us, their brothers in arms."
+ NZL_constitution_amendment_act:0 "Constitution Amendment Act"
+ NZL_constitution_amendment_act_desc:0 "The time has come for New Zealand to consider separating itself from British domination. We will amend our constitution to assert greater control over our own affairs."
+ NZL_independent_new_zealand:0 "Independent New Zealand"
+ NZL_independent_new_zealand_desc:0 "We are now a Republic! New Zealand owes nothing to the United Kingdom but the gratitude any child owes its mother for raising it safely. But we must leave the safe nest of the Commonwealth and view the world with our own interests in mind."
+ NZL_transfer_ships_tt:0 "[ENG.GetNameDefCap] transfers §Y2 Light Cruisers§! to us."
+
+ ANZAC_new_Zealand.1.t: "[From.GetAdjective] Proposal about the Singapore Strategy"
+ ANZAC_new_Zealand.1.d: "The Singapore Strategy has been the cornerstone of our deterrence policy against [JAP.GetNameDef] since the end of the Great War. However, the redeployment of the Main Fleet to Singapore in case of attack is reliant on support from our allies in [From.GetNameDef]. With the potential threat against British holdings in the Far East increasing by the day, the [From.GetAdjective] high command has presented a potential new stratagem, that would see New Zealand in far greater control of the defense of the region.\n\nIt's a sound plan, and the only question is whether we believe they can provide the security we require."
+ ANZAC_new_Zealand.1.a: "New Zealand should provide the first line of defense in Southeast Asia."
+ ANZAC_new_Zealand.1.b: "The Singapore Strategy will remain as it always has."
+ ANZAC_new_Zealand.2.t: "[From.GetNameDefCap] Transfers Colonial Holdings"
+ ANZAC_new_Zealand.2.d: "The [From.GetAdjective] has passed the law that will transfer control of all [From.GetAdjective] colonial possessions near Singapore and Borneo to [Root.GetNameDef].\n\nOur national safety is finally in our own hands."
+ ANZAC_new_Zealand.2.a: "We will not disappoint."
+ ANZAC_new_Zealand.3.t: "[From.GetNameDefCap] Rejects Strategic Adjustments"
+ ANZAC_new_Zealand.3.d: "Despite our valid concerns about the viability of the Singapore Strategy, our suggestions to change it have been rejected in the [From.GetAdjective] parliament. \nThis seems a result of the military conservatism dominating the [From.GetAdjective] High Command, but the fact is that if our fears come to pass, we may have to face enemy forces on our shores."
+ ANZAC_new_Zealand.3.a: "With or without [From.GetAdjective] support, [Root.GetNameDef] will stand tall!"
+
+ ANZAC_new_Zealand.4.t: "[From.GetNameDefCap] Offers Protection for Our Colonies"
+ ANZAC_new_Zealand.4.d: "[From.GetNameDefCap] has initiated negotiations with [Root.GetAdjective] diplomats for the potential transfer of responsibility over the protection of [Root.GetAdjective] territory in Southeast Asia.\n\nConsidering the challenges inherent in defending said territory, a partnership may not be such a bad idea. It would mean that for the foreseeable future said territory would only be nominally [Root.GetAdjective], but nominal ownership is surely better than completely losing them."
+ ANZAC_new_Zealand.4.a: "[From.GetNameDefCap] will be the executor of [Root.GetAdjective] interests in the region."
+ ANZAC_new_Zealand.4.b: "[Root.GetAdjective] territory will remain in [Root.GetAdjective] hands!"
+
+ ANZAC_new_Zealand.5.t: "[From.GetNameDefCap] Cedes Protectorates"
+ ANZAC_new_Zealand.5.d: "[Root.GetAdjective] troops stood ready to assume responsibilities for the protection of all [From.GetAdjective] territory in Southeast Asia as soon as [From.GetLeader] approved the agreement.\n\nWhile some local resistance was met in the transfer, fear of foreign aggression ensures that most recognize the need for [Root.GetAdjective] defense."
+ ANZAC_new_Zealand.5.a: "[Root.GetNameDefCap] will do what she must."
+
+ANZAC_new_Zealand.6.t: "[Root.GetNameDefCap] as a Global Leader"
+ ANZAC_new_Zealand.6.d: "Following our recent policy of distancing ourselves from the Empire, it only makes sense for a country as dominant as we are in our own sphere to assume the position of a leader, rather than a follower.\nWe will gather other regional powers to our cause, and ensure that our mutual interests are defended on the global stage.\n\nNo longer in servitude to the colonial powers of Europe, we will ensure a new, more just balance of power."
+ ANZAC_new_Zealand.6.a: "[Root.GetNameDefCap] leads the way to the future!"
+ ANZAC_new_Zealand.7.t: "[From.GetNameDefCap] Requests Political Cooperation"
+ ANZAC_new_Zealand.7.d: "Following the formal departure of [From.GetNameDef] from the Commonwealth, the [From.GetAdjective] government is now looking for new allies. With Europe seemingly on the brink of a new, costly conflict, and the strategic value of [From.GetNameDef] to any potential conflict in the Pacific, a partnership may be in our best interest.\n\nIt would certainly emphasize Southeast Asia, the Far East and the Pacific as parts of our sphere of influence, and ensure that no matter what happens in Europe, [Root.GetAdjective] interests will not be intruded upon."
+ ANZAC_new_Zealand.7.a: "We would be happy to call them our ally!"
+ ANZAC_new_Zealand.7.b: "We can protect our interests better on our own."
+ ANZAC_new_Zealand.8.t: "[From.GetNameDefCap] Agrees to Pacific Cooperation"
+ ANZAC_new_Zealand.8.d: "Seeing the obvious benefits of transpacific partnership, [From.GetNameDef] has agreed to our proposal of a regional alliance."
+ ANZAC_new_Zealand.8.a: "The old masters are dead. We are all equals now."
+ ANZAC_new_Zealand.9.t: "[From.GetNameDefCap] Declines Cooperation Project"
+ ANZAC_new_Zealand.9.d: "Whether it is failure to acknowledge our shared history, or simply a matter of political opportunism, [From.GetNameDef] has declined our offer of a transpacific partnership.\n\nWhile their participation would have been a great asset, we should move forwards with our own agenda, towards our own goals."
+ ANZAC_new_Zealand.9.a: "We will still do what we can for our corner of the world."
+ ANZAC_new_Zealand.9.b: "We have failed."
+
+ANZAC_new_Zealand.10.t: "[From.GetNameDefCap] Requests Membership in the [Root.GetFactionName]"
+ ANZAC_new_Zealand.10.d: "Identifying as a nation of workers, free of the old European bourgeoisie, [From.GetNameDef] has gradually moved into the [Root.GetAdjective] sphere of politics. The [From.GetAdjective] government has officially requested national membership in the [Root.GetFactionName].\n\nWith the World Revolution in sight, [From.GetLeader] presents a vision of [Root.GetNameDef] and [From.GetNameDef] as two of the key poles in a new, Socialist world order, building on [From.GetNameDef]'s dominance in Oceania, and [Root.GetNameDef]'s in Eurasia."
+ ANZAC_new_Zealand.10.a: "Any revolutionary nation is welcomed with open arms!"
+ ANZAC_new_Zealand.10.b: "We cannot afford the conflicts the [From.GetAdjective]s will surely drag us into."
+ ANZAC_new_Zealand.11.t: "Brothers of the Revolution"
+ ANZAC_new_Zealand.11.d: "[From.GetNameDefCap] has considered our request for membership in the [From.GetFactionName], and declared us a valued ally of the cause!"
+ ANZAC_new_Zealand.11.a: "The World Revolution awaits!"
+ ANZAC_new_Zealand.12.t: "Going It Alone"
+ ANZAC_new_Zealand.12.d: "Following weeks of stalled negotiations and bureaucratic trappings, it has become apparent that [From.GetNameDef] are not interested in giving us a definitive answer on our accession to the [From.GetFactionName].\nAs we were hoping for quick and conclusive negotiations, [Root.GetNameDef] must prepare to bring true freedom to the workers of the world on her own."
+ ANZAC_new_Zealand.12.a: "We fight for the oppressed in all corners of the world!"
+
+ ANZAC_new_Zealand.13.t: "Civil War!"
+ ANZAC_new_Zealand.13.desc: "Armed Nationalists take to the streets all over Indonesia. Military and police actions against the uprising have proven unsuccessful thus far. This armed insurrection has come in the wake of a sudden rise in Nationalist sentiment, which now means we are in an all out civil war."
+ ANZAC_new_Zealand.13.a: "Resist the nationalist scum!"
+ ANZAC_new_Zealand.13.b: "Join the uprising!"
+
+ANZAC_new_Zealand.14.t: "[From.GetNameDefCap] Demands Right to Control Protectorates"
+ ANZAC_new_Zealand.14.d: "Claiming that a failure on the part of [Root.GetNameDef] to defend its colonial holdings in Southeast Asia would have catastrophic implications for [From.GetNameDef] national defense, [From.GetLeader] has requested that the [From.GetAdjective] government be given full, independent responsibility for the defense of the region.\nWhile not an outright demand, the growth of [From.GetAdjective] strategic and military influence in the region has the argument make some sense. The counterbalance being the recent political distancing from us that [From.GetNameDef] has embraced.\nThis would be an agreement with a potential partner, not a subject, and would leave the colonies de facto out of our hands, should [From.GetNameDef] choose to make it so."
+ ANZAC_new_Zealand.14.a: "Yes, the stability of Southeast Asia is a priority."
+ ANZAC_new_Zealand.14.b: "No, we will be the sole controller of our own colonial possessions!"
+ ANZAC_new_Zealand.15.t: "Defensive Commission"
+ ANZAC_new_Zealand.15.d: "Following overtures from the [Root.GetAdjective] military command, [From.GetNameDef] has decided to give us "intermediate control" of all [From.GetAdjective] colonial holdings in Southeast Asia.\n\nWith the old forces of the Pacific none the wiser, our attempts to ensure [Root.GetNameDef] dominance over the region continues."
+ ANZAC_new_Zealand.15.a: "We'll make the old country proud."
+ ANZAC_new_Zealand.16.t: "[From.GetNameDefCap] Declines "Defense Project""
+ ANZAC_new_Zealand.16.d: "Despite overtures from the [Root.GetAdjective] High Command, [From.GetNameDef] has rejected our request for control of their colonies in the Southeast Asian region.\n\nOur ambitions are untempered, however. We will continue to seek ways of securing [Root.GetAdjective] prominence in the Pacific."
+ ANZAC_new_Zealand.16.a: "[Root.GetNameDefCap] stands strong, despite this setback."
+
+
+ANZAC_new_Zealand.17.t: "An Offer From Beyond the Sea"
+ ANZAC_new_Zealand.17.d: "[From.GetNameDefCap] has over time become more sympathetic to the imperial ambitions of [Root.GetNameDef]. As the only other major military force based in the region, the [From.GetAdjective]s have decided it is better to stand as our proud ally than as our humbled servants.\n\nTo raise our interest, the proposal for a West Pacific alliance clearly outlines the [Root.GetAdjective] sphere to also include several territories currently controlled by the enemies of [From.GetNameDef]."
+ ANZAC_new_Zealand.17.a: "Together we will completely dominate the eastern hemisphere!"
+ ANZAC_new_Zealand.17.b: "Our ambitions have no room for those backwater farmers!"
+ ANZAC_new_Zealand.18.t: "[From.GetNameDefCap] Approves Alliance"
+ ANZAC_new_Zealand.18.d: "Our delegation to Japan has returned triumphant. We have signed an official alliance with [JAP.GetName]. The document clearly defines spheres of interest for each of our countries, in which the other can not interfere."
+ ANZAC_new_Zealand.18.a: "[Root.GetAdjective]s and [From.GetAdjective] across the West Pacific will benefit from this."
+ ANZAC_new_Zealand.19.t: "The [From.GetAdjective] Government Resists Partnership!"
+ ANZAC_new_Zealand.19.d: "Despite our accession to the forefront of the global stage, [From.GetNameDef] has refused to acknowledge our importance in the West Pacific region. \nNot only did the [From.GetAdjective] refuse us outright, they expressed in no uncertain terms that their doctrine of Nanshin-ron might very well bring them beyond Indonesia, towards the Australian continent itself."
+ ANZAC_new_Zealand.19.a: "If they will not stand with us, we will make them kneel for us."
+
+
+
+ anon_news.1.t: "[NZL.GetNameDefCap] Assumes Responsibility for Colonial Holdings"
+ anon_news.1.d: "\nIn an attempt to stand up to the increased threat against [ENG.GetAdjective] holdings in Southeast Asia, the colonial territories of Singapore and Borneo have been transferred to [NZL.GetNameDef]. With the goal of being the Commonwealth's first and best line of defense in the Pacific, [NZL.GetNameDef] assumes full responsibility for military and administrative preparations in case of fighting in the region.\n\nPresumably intended to counter the imperial ambitions of [JAP.GetNameDef], [NZL.GetNameDef] will no longer be entirely reliant on the efforts of its former colonial overlord to protect her shores from invasion."
+ anon_news.1.a: "An interesting strategy."
+ anon_news.1.b: "Let's hope [NZL.GetNameDef] know what they're doing."
+ anon_news.1.c: "We finally have the means we need to defend the continent."
+ anon_news.1.e: "Do they really believe it will make a difference?"
+
+ anon_news.2.t: "New Zealand severs ties with Britain"
+ anon_news.2.desc: "\nIn a hotly contested vote, a small majority in the [NZL.GetAdjective] parliament decided that the country should leave the British Empire. The last few remnants of British legal rule have been declared null and void. [NZL.GetLeader] has already signed the decision into law, thereby bypassing the long-standing legal tradition of Royal Assent being granted by the Governor-General and turning [NZL.GetNameDef] into a fully sovereign nation.\n\nParliament also voted to form a Constitutional Committee, which will discuss and advise on changes that will be made to the Constitution to remove all traces of British intervention into [NZL.GetAdjective] affairs."
+ anon_news.2.a: "A mere formality by this point."
+ anon_news.2.b: "Freedom!"
+ anon_news.2.c: "New Zealand exits the Commonwealth."
+
+ anon_news.3.t: "[USA.GetNameDefCap] Joins [NZL.GetAdjective] Defense Initiative"
+ anon_news.3.d: "\nWith concern over the growing strategic importance of the Pacific, [NZL.GetNameDef] and [USA.GetNameDef] has signed a treaty of Pacific cooperation. Although intended to maintain the political stability of the region, and by extension transpacific shipping, the treaty also involves contingencies for military defense, allowing the two countries to exert authority far beyond their actual territorial claims.\n\nWith such a vast area now being under New Zealand-American "protection," it is surely only a matter of time before those contingencies will be put to the test."
+ anon_news.3.a: "A fascinating move..."
+ anon_news.3.b: "This will ensure our place as a dominant power in the Pacific."
+ anon_news.3.c: "Together we will maintain stability across half the globe."
+
+ anon_news.4.t: "[NZL.GetNameDefCap] Seeks Distance from Commonwealth"
+ anon_news.4.d: "\nIn a speech this morning, Prime Minister [NZL.GetLeader] announced the New Zealand government's dedication to growth and stability as an Oceanic state. This means looking to new shores than those of Britain's Europe, as the New Zealand people can no longer bear the weight of foreign conflicts on their shoulders. In a direct reference to the King's Speech at the open of the last parliament, [NZL.GetLeader] hit the point home by stating "Never Another Gallipoli!"\n\nThe rapturous cheers from the crowds indicate a new era of New Zealand politics has begun. Where it will end, the world can only begin to speculate."
+ anon_news.4.a: "The [Root.GetFactionName] will have to do without [NZL.GetNameDef]."
+ anon_news.4.b: "Watch an empire fall to pieces..."
+ anon_news.4.c: "They chose NOW to seek greater independence?"
+ anon_news.4.e: "This will have large ramifications on the Pacific."
+ anon_news.4.f: "We stake our own path!"
+
+ anon_news.5.t: "[NZL.GetNameDefCap] Establishes Sphere of Influence"
+ anon_news.5.d: "In a move that surprised few observers, [NZL.GetNameDef] has announced its own, independent treaty organization. [NZL.GetLeader] has announced that [NZL.GetNameDef] will seek allies in an attempt to maintain stability in the Southeast Asia-Pacific region and beyond, and if necessary to counter aggression against the [NZL.GetAdjective] state and others.\n\nWith recent moves away from its Commonwealth ties, this seems like the natural next step as [NZL.GetNameDef] seeks to become sole master of its fate."
+ anon_news.5.a: "They are making a play for dominance."
+ anon_news.5.b: "Our own back yard will not be ruled by Europeans!"
+
+ anon_news.6.t: "The Treaty of Jayapura"
+ anon_news.6.d: "The [NZL.GetAdjective] and [HOL.GetAdjective] government today announced a "Joint Cooperation and Defense Pact" that will see the [HOL.GetAdjective] colonial holdings in Southeast Asia placed under the protection of the [NZL.GetAdjective] armed forces. The treaty was signed by the Dutch governor of Indonesia and [NZL.GetLeader], who announced that the deal will include full colonial administration, due to the "distant and challenging situation in Europe."\n\nThe [HOL.GetAdjective] government has issued no statement on the treaty."
+ anon_news.6.a: "This comes as a surprise."
+ anon_news.6.b: "One does what one must to survive."
+ anon_news.6.c: "[NZL.GetNameDefCap] watches over the Pacific."
+
+ anon_news.7.t: "[NZL.GetNameDefCap] Assumes Control of Southeast Asian Colonies"
+ anon_news.7.d: "\n[ENG.GetNameDef] military doctrine has long struggled with the issue of defense in Southeast Asia. Now they are hoping their problems are at an end, as [NZL.GetNameDef] assumes responsibility for the defense of Singapore and Borneo, to counter hostile military activity in the region.\n\nThis transfer of power includes, at least for the time being, the civilian administration of the colonial regions, in order to allow [NZL.GetNameDef] any measures required to keep their continent safe from overseas attack. The political implications of this move for [ENG.GetNameDef], [NZL.GetNameDef] and [MAL.GetNameDef] are as of yet uncertain."
+ anon_news.7.a: "This changes the balance of power in Southeast Asia."
+ anon_news.7.b: "Let's hope [NZL.GetNameDef] doesn't ruin this."
+ anon_news.7.c: "Perfect! All according to plan."
+
+anon_news.8.t: "[NZL.GetNameDefCap] and [JAP.GetNameDef] Announce Alliance"
+ anon_news.8.d: "With the recent gains of [NZL.GetNameDef] and [JAP.GetNameDef] in East Asia and the Pacific, many observers expected it to only be a question of time before the two burgeoning empires would be brought into conflict. However, the countries have instead reached an accord of cooperation, in what was quickly termed "the Pacific Barrier."\nThe treaty has not been published by either country, so many aspects of their agreement are unknown. What is certain is that both sides have promised each other military support to "counter the advances of greedy outsiders in our respective regions."\n\nIt is too early to say what the world order envisioned by [JAP.GetNameDef] and [NZL.GetNameDef] looks like, but there can be no doubt that [NZL.GetFactionName] is now the dominant force in the Pacific."
+ anon_news.8.a: "Disconcerting, to say the least."
+ anon_news.8.b: "[Root.GetNameDefCap] welcomes cooperation with all who will not stand in our way."
+ anon_news.8.c: "This is a great partnership, at least for now."
+
+ # === CUSTOM EXPANSION FOCUSES ===
+
+ # Politics
+ NZL_the_tasman_union:0 "The Tasman Union"
+ NZL_the_tasman_union_desc:0 "The bonds between New Zealand and Australia run deep. It is time to forge a formal union that will secure our place in the Pacific."
+
+ NZL_establish_advisory_war_council:0 "Establish the War Council"
+ NZL_establish_advisory_war_council_desc:0 "The demands of total war require a dedicated War Council to coordinate our military and civilian resources."
+
+ NZL_national_security_act:0 "National Security Act"
+ NZL_national_security_act_desc:0 "New wartime legislation will give the government broader powers to ensure national security and public order."
+
+ NZL_volunteer_defence_corps:0 "Volunteer Defence Corps"
+ NZL_volunteer_defence_corps_desc:0 "Establish a home defence volunteer force to protect our cities and coastlines."
+
+ NZL_civil_construction_corps:0 "Civil Construction Corps"
+ NZL_civil_construction_corps_desc:0 "A corps of civilian workers dedicated to building the infrastructure New Zealand needs for war."
+
+ NZL_army_inventions_directorate:0 "Army Inventions Directorate"
+ NZL_army_inventions_directorate_desc:0 "Establish a body to review and develop new military inventions submitted by New Zealand's engineers and scientists."
+
+ NZL_invest_in_victory:0 "Invest in Victory"
+ NZL_invest_in_victory_desc:0 "Launch a national campaign to channel civilian savings into war production bonds."
+
+ NZL_citizen_military_forces:0 "Citizen Military Forces"
+ NZL_citizen_military_forces_desc:0 "Reform and expand our part-time militia into a more capable home defence force."
+
+ NZL_support_the_policy_of_appeasement:0 "Support Appeasement"
+ NZL_support_the_policy_of_appeasement_desc:0 "Follow Britain's lead and support a policy of diplomatic accommodation to avoid open conflict."
+
+ NZL_strengthen_ties_with_uk:0 "Strengthen Ties with Britain"
+ NZL_strengthen_ties_with_uk_desc:0 "Deepen our political, military and economic relationship with the United Kingdom."
+
+ NZL_the_singapore_strategy:0 "The Singapore Strategy"
+ NZL_the_singapore_strategy_desc:0 "Commit New Zealand's defence policy to supporting the Singapore fortress as the anchor of Pacific security."
+
+ NZL_adopt_westminster:0 "Adopt the Westminster System"
+ NZL_adopt_westminster_desc:0 "Formally entrench the Westminster parliamentary model as the cornerstone of New Zealand's constitution."
+
+ NZL_CSIR:0 "Council for Scientific and Industrial Research"
+ NZL_CSIR_desc:0 "Establish a national scientific body to coordinate industrial and military research in New Zealand."
+
+ NZL_empire_air_training_scheme:0 "Empire Air Training Scheme"
+ NZL_empire_air_training_scheme_desc:0 "Join the Commonwealth air training programme to rapidly expand our pool of trained aircrew."
+
+ NZL_commonwealth_aircraft_corporation:0 "Commonwealth Aircraft Corporation"
+ NZL_commonwealth_aircraft_corporation_desc:0 "Partner with the Commonwealth to establish a domestic aircraft manufacturing corporation."
+
+ NZL_swpa_protector:0 "Protector of the SWPA"
+ NZL_swpa_protector_desc:0 "Assert New Zealand's role as the primary guarantor of security in the South West Pacific Area."
+
+ NZL_never_another_gallipoli:0 "Never Another Gallipoli"
+ NZL_never_another_gallipoli_desc:0 "The sacrifices of the Great War must never be repeated. New Zealand will chart its own strategic course."
+
+ NZL_protect_the_homeland:0 "Protect the Homeland"
+ NZL_protect_the_homeland_desc:0 "Prioritise the defence of New Zealand's own shores above overseas commitments."
+
+ NZL_the_swpa_menace:0 "The SWPA Menace"
+ NZL_the_swpa_menace_desc:0 "Identify and confront the growing threats to stability in the South West Pacific Area."
+
+ NZL_sever_ties_with_uk:0 "Sever Ties with Britain"
+ NZL_sever_ties_with_uk_desc:0 "Break the political chains that bind us to London and forge a fully independent foreign policy."
+
+ NZL_woo_usa:0 "Court American Support"
+ NZL_woo_usa_desc:0 "Turn to Washington rather than London as our primary strategic partner in the Pacific."
+
+ NZL_protect_the_dutch_colonies:0 "Protect the Dutch East Indies"
+ NZL_protect_the_dutch_colonies_desc:0 "Extend New Zealand's security umbrella to cover the Dutch colonial territories in our region."
+
+ NZL_the_south_west_pacific_initiative:0 "The South West Pacific Initiative"
+ NZL_the_south_west_pacific_initiative_desc:0 "Launch a broad diplomatic and military initiative to secure New Zealand's sphere of influence."
+
+ NZL_research_cooperation:0 "Research Cooperation"
+ NZL_research_cooperation_desc:0 "Expand scientific cooperation with our regional partners to accelerate technological development."
+
+ NZL_preemptive_intervention:0 "Preemptive Intervention"
+ NZL_preemptive_intervention_desc:0 "Strike first against threats before they can be mobilised against us."
+
+ NZL_abandon_the_westminster_system:0 "Abandon Westminster"
+ NZL_abandon_the_westminster_system_desc:0 "Reject the British parliamentary model and pursue a new political order for New Zealand."
+
+ NZL_support_the_centre_party:0 "Support the Centre Party"
+ NZL_support_the_centre_party_desc:0 "Lend government backing to moderate centrist political forces."
+
+ NZL_supply_indonesian_nationalists:0 "Supply the Indonesian Nationalists"
+ NZL_supply_indonesian_nationalists_desc:0 "Covertly arm and equip the Indonesian independence movement."
+
+ NZL_support_indonesian_uprising:0 "Support the Indonesian Uprising"
+ NZL_support_indonesian_uprising_desc:0 "Provide open backing for the Indonesian independence struggle."
+
+ NZL_protect_the_south_west_pacific:0 "Protect the South West Pacific"
+ NZL_protect_the_south_west_pacific_desc:0 "Assert New Zealand's protective role over the wider South West Pacific region."
+
+ NZL_a_deal_with_japan:0 "A Deal with Japan"
+ NZL_a_deal_with_japan_desc:0 "Negotiate a sphere-of-influence arrangement with Imperial Japan."
+
+ NZL_our_own_empire:0 "Our Own Empire"
+ NZL_our_own_empire_desc:0 "New Zealand will build its own Pacific empire, independent of British or American patronage."
+
+ NZL_japan_tech_sharing:0 "Japanese Technology Sharing"
+ NZL_japan_tech_sharing_desc:0 "Acquire advanced Japanese military technology in exchange for political concessions."
+
+ NZL_war_on_japan:0 "War on Japan"
+ NZL_war_on_japan_desc:0 "Declare open war on Imperial Japan to defend our Pacific interests."
+
+ NZL_empower_the_workers:0 "Empower the Workers"
+ NZL_empower_the_workers_desc:0 "Shift political power toward the labour movement and working class."
+
+ NZL_delegation_to_china:0 "Delegation to China"
+ NZL_delegation_to_china_desc:0 "Send a diplomatic mission to China to explore cooperation opportunities."
+
+ NZL_commitment_to_the_cause:0 "Commitment to the Cause"
+ NZL_commitment_to_the_cause_desc:0 "Deepen New Zealand's ideological commitment to international socialism."
+
+ NZL_indirect_support:0 "Indirect Support"
+ NZL_indirect_support_desc:0 "Provide covert material and financial support without open political commitment."
+
+ NZL_direct_support:0 "Direct Support"
+ NZL_direct_support_desc:0 "Openly commit New Zealand's resources and reputation to the cause."
+
+ NZL_AST_join_comintern:0 "Join the Comintern"
+ NZL_AST_join_comintern_desc:0 "Formally align New Zealand with the Soviet-led international communist movement."
+
+ NZL_workers_paradise:0 "Workers' Paradise"
+ NZL_workers_paradise_desc:0 "Transform New Zealand into a model socialist state."
+
+ NZL_research_city_excursions:0 "Research City Excursions"
+ NZL_research_city_excursions_desc:0 "Fund scientific study trips to advance our technological base."
+
+ NZL_the_threat_against_the_people:0 "The Threat Against the People"
+ NZL_the_threat_against_the_people_desc:0 "Mobilise against reactionary forces threatening New Zealand's workers."
+
+ NZL_fund_australian_defense_research:0 "Fund Defence Research"
+ NZL_fund_australian_defense_research_desc:0 "Channel government funds into cutting-edge defence research programmes."
+
+ NZL_squash_the_squanderbugs:0 "Squash the Squanderbugs"
+ NZL_squash_the_squanderbugs_desc:0 "A national austerity campaign to eliminate waste and redirect resources to the war effort."
+
+ NZL_fight_work_or_perish:0 "Fight, Work or Perish"
+ NZL_fight_work_or_perish_desc:0 "Issue a national call to arms demanding every New Zealander contribute to the war effort."
+
+ NZL_rats_of_tobruk:0 "The Rats of Tobruk"
+ NZL_rats_of_tobruk_desc:0 "Honour the New Zealand and Commonwealth defenders of Tobruk and dispatch reinforcements."
+
+ NZL_classify_aliens:0 "Classify Aliens"
+ NZL_classify_aliens_desc:0 "Implement wartime alien registration to identify and monitor foreign nationals."
+
+ NZL_rationing_and_recycling:0 "Rationing and Recycling"
+ NZL_rationing_and_recycling_desc:0 "Introduce civilian rationing and a national recycling drive to maximise war resources."
+
+ # === ARMY ===
+ NZL_additional_militia_training:0 "Additional Militia Training"
+ NZL_additional_militia_training_desc:0 "Expand and intensify the training programmes for New Zealand's militia forces."
+
+ NZL_royal_australian_artillery:0 "New Zealand Artillery Corps"
+ NZL_royal_australian_artillery_desc:0 "Reform and expand our artillery arm, drawing on lessons from the Great War."
+
+ NZL_promote_reservists:0 "Promote Reservists"
+ NZL_promote_reservists_desc:0 "Integrate reserve officers into the regular command structure."
+
+ NZL_daimler_dingo:0 "Daimler Dingo Scout Cars"
+ NZL_daimler_dingo_desc:0 "Procure Daimler Dingo scout cars for our reconnaissance units."
+
+ NZL_hmas_assault:0 "Amphibious Assault Doctrine"
+ NZL_hmas_assault_desc:0 "Develop dedicated amphibious assault capabilities for Pacific island operations."
+
+ NZL_specialize_equipment:0 "Specialized Equipment Programme"
+ NZL_specialize_equipment_desc:0 "Invest in specialized military equipment tailored to Pacific warfare conditions."
+
+ NZL_australian_womens_army_service:0 "Women's Army Service"
+ NZL_australian_womens_army_service_desc:0 "Establish a Women's Army Service Corps to free up male soldiers for frontline duties."
+
+ NZL_australian_army_catering_corps:0 "Army Catering Corps"
+ NZL_australian_army_catering_corps_desc:0 "A well-fed soldier is an effective soldier. Establish a dedicated Army Catering Corps."
+
+ NZL_fund_owen_gun_research:0 "Owen Gun Research"
+ NZL_fund_owen_gun_research_desc:0 "Fund the development and mass production of the reliable Owen submachine gun for our infantry."
+
+ NZL_sentinel_tank_project:0 "Sentinel Tank Project"
+ NZL_sentinel_tank_project_desc:0 "Fund the domestic development of the Sentinel cruiser tank."
+
+ NZL_airborne_defence:0 "Airborne Defence Force"
+ NZL_airborne_defence_desc:0 "Establish a dedicated airborne unit for rapid deployment and island defence."
+
+ NZL_introduce_unconventional_warfare:0 "Unconventional Warfare"
+ NZL_introduce_unconventional_warfare_desc:0 "Invest in special operations and unconventional warfare capabilities."
+
+ NZL_z_special_unit:0 "Z Special Unit"
+ NZL_z_special_unit_desc:0 "Form an elite special operations unit for covert missions behind enemy lines."
+
+ NZL_m_special_unit:0 "M Special Unit"
+ NZL_m_special_unit_desc:0 "Establish a signals intelligence and coastwatcher special unit."
+
+ NZL_central_bureau:0 "Central Bureau Intelligence"
+ NZL_central_bureau_desc:0 "Establish a Central Bureau for coordinating intelligence and code-breaking operations."
+
+ # === AIR ===
+ NZL_expand_the_raaf:0 "Expand the RNZAF"
+ NZL_expand_the_raaf_desc:0 "Pour resources into the Royal New Zealand Air Force to build a world-class aerial arm."
+
+ NZL_cac_boomerang:0 "CAC Boomerang Fighter"
+ NZL_cac_boomerang_desc:0 "Procure the domestically designed CAC Boomerang fighter for our air forces."
+
+ NZL_expand_northern_presence:0 "Expand Northern Air Presence"
+ NZL_expand_northern_presence_desc:0 "Establish additional air bases in the northern Pacific to extend our aerial reach."
+
+ NZL_cac_woomera:0 "CAC Woomera Bomber"
+ NZL_cac_woomera_desc:0 "Develop and produce the CAC Woomera multi-role aircraft."
+
+ NZL_volunteer_air_observers_corps:0 "Air Observers Corps"
+ NZL_volunteer_air_observers_corps_desc:0 "Establish a network of civilian volunteer aircraft spotters to provide early warning."
+
+ NZL_naval_bombers:0 "Naval Bomber Wing"
+ NZL_naval_bombers_desc:0 "Form a dedicated naval bomber wing to strike at enemy shipping."
+
+ NZL_death_from_down_under:0 "Death from Down Under"
+ NZL_death_from_down_under_desc:0 "Develop a strategic bombing doctrine exploiting our unique geographic position."
+
+ NZL_womens_auxilliary_australian_air_force:0 "Women's Air Force Auxiliary"
+ NZL_womens_auxilliary_australian_air_force_desc:0 "Establish a women's auxiliary to support the RNZAF with ground crew, signals and logistics."
+
+ NZL_dominate_the_skies:0 "Dominate the Skies"
+ NZL_dominate_the_skies_desc:0 "Launch a comprehensive programme to achieve air superiority across the Pacific theatre."
+
+ # === NAVY ===
+ NZL_cockatoo_island_shipyards:0 "Expand Coastal Shipyards"
+ NZL_cockatoo_island_shipyards_desc:0 "Invest in our coastal shipyards to boost naval construction capacity."
+
+ NZL_kangaroo_point_shipyards:0 "New Harbour Shipyards"
+ NZL_kangaroo_point_shipyards_desc:0 "Establish a new major shipyard facility to further expand our naval output."
+
+ NZL_protect_overseas_commerce:0 "Protect Overseas Commerce"
+ NZL_protect_overseas_commerce_desc:0 "Deploy the RNZN to protect our vital merchant shipping lanes."
+
+ NZL_fly_the_jolly_roger:0 "Fly the Jolly Roger"
+ NZL_fly_the_jolly_roger_desc:0 "Our submarines will wage unrestricted warfare against enemy shipping."
+
+ NZL_scrap_iron_flotilla:0 "The Scrap Iron Flotilla"
+ NZL_scrap_iron_flotilla_desc:0 "Commission a flotilla of older destroyers for aggressive patrol and escort duties."
+
+ NZL_royal_australian_submarine_service:0 "Royal New Zealand Submarine Service"
+ NZL_royal_australian_submarine_service_desc:0 "Establish and expand a dedicated New Zealand submarine arm."
+
+ NZL_naval_auxiliary_patrol:0 "Naval Auxiliary Patrol"
+ NZL_naval_auxiliary_patrol_desc:0 "Commission civilian vessels into auxiliary naval service for coastal patrol duties."
+
+ NZL_cruisers:0 "Cruiser Programme"
+ NZL_cruisers_desc:0 "Commission a new generation of cruisers to extend New Zealand's naval reach."
+
+ NZL_pacific_area_navy:0 "Pacific Area Navy"
+ NZL_pacific_area_navy_desc:0 "Build a fleet optimised for power projection across the Pacific Ocean."
+
+ # === INDUSTRY ===
+ NZL_standard_gauge_railway:0 "Standard Gauge Railway"
+ NZL_standard_gauge_railway_desc:0 "Standardise New Zealand's railway gauges to improve inter-regional freight efficiency."
+
+ NZL_industries_assistance_corporation:0 "Industries Assistance Corporation"
+ NZL_industries_assistance_corporation_desc:0 "Establish a government body to provide loans and assistance to key war industries."
+
+ NZL_western_australian_government_railways:0 "New Zealand Railway Network"
+ NZL_western_australian_government_railways_desc:0 "Expand and modernise the national railway network to support industrial and military logistics."
+
+ NZL_south_australian_housing_trust:0 "National Housing Trust"
+ NZL_south_australian_housing_trust_desc:0 "Establish a national housing trust to house workers in key industrial centres."
+
+ NZL_department_of_supply_and_development:0 "Department of Supply and Development"
+ NZL_department_of_supply_and_development_desc:0 "Create a dedicated government department to coordinate the supply of materials to industry and the military."
+
+ NZL_expand_lithgow_small_arms_factory:0 "Expand Small Arms Production"
+ NZL_expand_lithgow_small_arms_factory_desc:0 "Expand our small arms manufacturing capacity to equip New Zealand's growing army."
+
+ NZL_allied_works_council:0 "Allied Works Council"
+ NZL_allied_works_council_desc:0 "Establish a council to coordinate construction labour across all major war industries."
+
+ NZL_expand_the_northern_railway:0 "Expand the Northern Rail Line"
+ NZL_expand_the_northern_railway_desc:0 "Extend the northern rail line to connect industrial and resource centres."
+
+ NZL_australian_arms_production:0 "New Zealand Arms Production"
+ NZL_australian_arms_production_desc:0 "Dramatically scale up domestic arms manufacturing to equip our forces."
+
+ NZL_uranium_mining:0 "Uranium Mining Programme"
+ NZL_uranium_mining_desc:0 "Begin a classified programme to locate and extract uranium deposits for future research."
+ NZL_fashist_ANZAC:0 "John Ormond"
+ NZL_communist_ANZAC:0 "Michael Joseph Savage"
+ NZL_democracy_ANZAC:0 "Savage Michai Ioseph"

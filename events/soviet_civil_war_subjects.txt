@@ -1,0 +1,128 @@
+add_namespace = soviet_cw_subjects
+
+# Triggered for all subjects of the Soviet Union when the civil war starts
+country_event = {
+	id = soviet_cw_subjects.1
+	title = soviet_cw_subjects.1.t
+	desc = soviet_cw_subjects.1.d
+	picture = GFX_report_event_soviet_tanks_1
+
+	is_triggered_only = yes
+
+	# Option 1: Declare Independence (80% AI chance)
+	option = {
+		name = soviet_cw_subjects.1.a
+		ai_chance = { factor = 80 }
+		
+		add_named_threat = { threat = -6 }
+		
+		# Break free
+		event_target:soviet_cw_root_tag = {
+			set_autonomy = { target = ROOT autonomy_state = autonomy_free }
+			
+		}
+		
+		# Ensure they are removed from any Soviet factions
+		if = {
+			limit = { event_target:soviet_cw_stalin = { is_in_faction = yes } }
+			event_target:soviet_cw_stalin = { remove_from_faction = ROOT }
+		}
+		if = {
+			limit = { event_target:soviet_cw_opposition = { is_in_faction = yes } }
+			event_target:soviet_cw_opposition = { remove_from_faction = ROOT }
+		}
+		
+		# Block them from joining factions
+		ROOT = { set_rule = { can_join_factions = no } }
+		
+		# Stalin declares war on Republic
+		if = {
+			limit = { event_target:soviet_cw_stalin = { exists = yes } }
+			event_target:soviet_cw_stalin = { declare_war_on = { target = ROOT type = annex_everything } }
+			
+		}
+		
+		# Opposition declares war on Republic
+		if = {
+			limit = { event_target:soviet_cw_opposition = { exists = yes } }
+			event_target:soviet_cw_opposition = { declare_war_on = { target = ROOT type = annex_everything } }
+			
+		}
+	}
+
+	# Option 2: Side with the Opposition (10% AI chance)
+	option = {
+		name = soviet_cw_subjects.1.b
+		ai_chance = { factor = 10 }
+		
+		add_named_threat = { threat = -6 }
+		
+		# Transfer to Opposition
+		if = {
+			limit = { event_target:soviet_cw_opposition = { exists = yes NOT = { ROOT = { is_puppet_of = event_target:soviet_cw_opposition } } } }
+			event_target:soviet_cw_opposition = { puppet = ROOT }
+			
+			# Join Opposition's faction
+			if = {
+				limit = { event_target:soviet_cw_opposition = { is_in_faction = yes } }
+				event_target:soviet_cw_opposition = { add_to_faction = ROOT }
+			}
+		}
+		
+		# Join the civil war alongside the Opposition against Stalin
+		if = {
+			limit = { 
+				event_target:soviet_cw_stalin = { exists = yes } 
+				event_target:soviet_cw_opposition = { exists = yes }
+			}
+			event_target:soviet_cw_opposition = {
+				event_target:soviet_cw_stalin = {
+					ROOT = {
+						add_to_war = {
+							targeted_alliance = PREV.PREV
+							enemy = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# Option 3: Side with Moscow/Stalin (10% AI chance)
+	option = {
+		name = soviet_cw_subjects.1.c
+		ai_chance = { factor = 10 }
+		
+		add_named_threat = { threat = -6 }
+		
+		# Transfer to Stalin
+		if = {
+			limit = { event_target:soviet_cw_stalin = { exists = yes NOT = { ROOT = { is_puppet_of = event_target:soviet_cw_stalin } } } }
+			event_target:soviet_cw_stalin = { puppet = ROOT }
+			
+			# Join Stalin's faction
+			if = {
+				limit = { event_target:soviet_cw_stalin = { is_in_faction = yes } }
+				event_target:soviet_cw_stalin = { add_to_faction = ROOT }
+			}
+		}
+		
+		# Join the civil war alongside Stalin against the Opposition
+		if = {
+			limit = { 
+				event_target:soviet_cw_stalin = { exists = yes } 
+				event_target:soviet_cw_opposition = { exists = yes }
+			}
+			event_target:soviet_cw_stalin = {
+				event_target:soviet_cw_opposition = {
+					ROOT = {
+						add_to_war = {
+							targeted_alliance = PREV.PREV
+							enemy = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+}

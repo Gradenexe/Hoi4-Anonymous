@@ -1,0 +1,226 @@
+BEL_closer_european_union_cat =  {
+	BEL_invite_to_the_european_union_decision = {
+		priority = 75
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		ai_will_do = {
+			base = 50
+		}
+
+		targets = { GER ITA AUS GRE DEN IRE POR SPR SWE FIN CZE POL HUN ROM EST LAT LIT BUL SLV CRO FRA ENG LUX HOL } #Avoid states that are not in the eu to this day such as SWI, NOR and YUG (Serbia),but include the UK for shits and giggles :D
+
+		target_trigger = {
+			FROM = {
+				exists = yes
+				is_government_in_exile = no
+				
+				NOT = {
+					has_war_with = ROOT
+				}
+				NOT = { has_country_flag = sent_eu_invitation_flag }
+			}
+		}
+
+		cost = 50
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		
+
+		visible = {
+			FROM = {
+				is_in_faction = no
+				is_subject = no #It has to be here or the decision is cancelled by the taret trigger rather than the cancel trigger if it happens. Cancellation via target trigger doesn't run cancel_effect meaning following decisions get perma-locked by a flag that can't be removed
+				OR = { #needs to be here to cancel correctly if there is a ideology flip
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+		}
+
+		available = {
+			NOT = {	has_country_flag = BEL_currently_taking_eu_decision_flag }	
+
+		}
+
+		cancel_trigger = {
+			FROM = {
+				OR = {
+					is_subject = yes
+					exists = no
+					is_in_faction = yes
+					NOT = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = BEL_currently_taking_eu_decision_flag
+		}
+
+		complete_effect = {
+			set_country_flag = BEL_currently_taking_eu_decision_flag
+		}
+
+		remove_effect = {
+			FROM = {
+				country_event = {
+					id = ww_BEL_event_diplomatic.20
+					hours = 12
+				}
+			}
+			clr_country_flag = BEL_currently_taking_eu_decision_flag
+		}
+	}
+
+	BEL_establish_research_sharing_group_decision = {
+		priority = 80
+	
+		icon = GFX_decision_hol_exchange_intelligence_data
+	
+		ai_will_do = {
+			base = 10
+		}
+
+		cost = 100
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		
+
+		visible = {
+
+		}
+
+		available = {
+			NOT = {	has_country_flag = BEL_currently_taking_eu_decision_flag }
+			any_country = { is_in_faction_with = ROOT }
+		}
+
+		cancel_trigger = {
+			NOT = {
+				any_country = { is_in_faction_with = ROOT }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = BEL_currently_taking_eu_decision_flag
+		}
+
+		complete_effect = {
+			set_country_flag = BEL_currently_taking_eu_decision_flag
+		}
+
+		remove_effect = {
+			clr_country_flag = BEL_currently_taking_eu_decision_flag
+
+			add_to_tech_sharing_group = EU_tech_sharing_group
+
+			every_other_country = {
+				limit = {
+					is_in_faction_with = ROOT
+				}
+				country_event = {
+					id = ww_BEL_event_diplomatic.23
+					hours = 6
+				}
+			}
+		}
+	}
+
+	BEL_propose_limited_federalization_descision = {
+		priority = 80
+	
+		icon = GFX_decision_hol_exchange_intelligence_data
+	
+		ai_will_do = {
+			base = 10
+		}
+
+		target_array = ROOT.faction_members
+
+		target_trigger = {
+			FROM = {
+				exists = yes
+				capital_scope = {
+					is_on_continent = europe
+				}
+			}
+		}
+
+		cost = 100
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		
+
+		visible = {
+			FROM = { is_government_in_exile = no } 
+			is_subject = no #has to be here or the target trigger will kill the decision rather than the cancel leading to cancel effects not being run
+		}
+
+		available = {
+			NOT = {	has_country_flag = BEL_currently_taking_eu_decision_flag }
+			FROM = {
+				is_in_faction_with = ROOT
+			}
+		}
+
+		cancel_trigger = {
+			FROM = {
+				OR = {
+					is_subject = yes
+					is_government_in_exile = yes
+					exists = no
+					NOT = {
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = BEL_currently_taking_eu_decision_flag
+		}
+
+		complete_effect = {
+			set_country_flag = BEL_currently_taking_eu_decision_flag
+
+		}
+
+		remove_effect = {
+			clr_country_flag = BEL_currently_taking_eu_decision_flag
+			FROM = {
+				country_event = {
+					id = ww_BEL_event_diplomatic.26
+					hours = 6
+				}
+			}
+
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				ROOT = {
+					set_autonomy = {
+						target = FROM
+						autonomy_state = autonomy_eu_member
+						freedom_level = 0.5
+					}
+				}
+			}
+
+			custom_effect_tooltip = generic_more_likely_to_accept_tt
+			custom_effect_tooltip = more_likely_to_accept_federalization_tt
+			
+		}
+	}
+}

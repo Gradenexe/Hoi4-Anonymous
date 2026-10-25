@@ -1,0 +1,125 @@
+
+
+division_template = {
+	name = "Military Police Guard"				# Represents a corps of 3 NRA divisions (2 brigades of 2 regiments each)
+	division_names_group = JAP_GAR_01
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	support = { 
+		military_police = { x = 0 y = 0 }
+	} 
+}
+division_template = {
+  name = "Infantry Division"  # Hohei Shidan
+  division_names_group = JAP_INF_01
+  regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = { 
+		artillery = { x = 0 y = 0 }
+	} 
+}
+division_template = {
+	name = "Cavalry Division"			# Cavalry Division
+	division_names_group = JAP_CAV_01
+	role = garrison
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
+units = {
+  division = {
+    name = "19th Division"  # Eniwetok Kichi Shubitai
+    location = 7125
+    division_template = "Infantry Division"  # Chuton-chi Shidan
+    force_equipment_variants = {
+      infantry_equipment_0 = {
+        owner = JAP
+      }
+    }
+  }
+  division = {
+    name = "20th Division"  # Eniwetok Kichi Shubitai
+    location = 7125
+    division_template = "Infantry Division"  # Chuton-chi Shidan
+    force_equipment_variants = {
+      infantry_equipment_0 = {
+        owner = JAP
+      }
+    }
+  }
+  division = {
+    name = "Korean People's Army Security Command"  # Eniwetok Kichi Shubitai
+    location = 7125
+    division_template = "Military Police Guard"  # Chuton-chi Shidan
+    force_equipment_variants = {
+      infantry_equipment_0 = {
+        owner = JAP
+      }
+    }
+  }
+  division = {
+    name = "Command headquarters of Yongxing Bay fortress"  # Eniwetok Kichi Shubitai
+    location = 7125
+    division_template = "Military Police Guard"  # Chuton-chi Shidan
+    force_equipment_variants = {
+      infantry_equipment_0 = {
+        owner = JAP
+      }
+    }
+  }
+  division = {
+    name = "Zhenhai Bay Fortress Command"  # Eniwetok Kichi Shubitai
+    location = 7125
+    division_template = "Cavalry Division"  # Chuton-chi Shidan
+    force_equipment_variants = {
+      infantry_equipment_0 = {
+        owner = JAP
+      }
+    }
+  }
+}
+instant_effect = {
+  add_equipment_production = {
+    equipment = {
+      type = infantry_equipment_0
+      creator = JKO
+    }
+    requested_factories = 1
+    progress = 0.3
+    efficiency = 50
+  }
+  add_equipment_production = {
+    equipment = {
+      type = support_equipment_1
+      creator = JKO
+    }
+    requested_factories = 1
+    progress = 0.3
+    efficiency = 50
+  }
+  add_equipment_production = {
+    equipment = {
+      type = artillery_equipment_1
+      creator = JKO
+    }
+    requested_factories = 1
+    progress = 0.3
+    efficiency = 50
+  }
+}

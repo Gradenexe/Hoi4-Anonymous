@@ -1,0 +1,21 @@
+spriteTypes = {	
+
+	# Events
+
+	spriteType = {
+		name = "GFX_event_munich"
+		texturefile = "gfx/interface/events/event_munich.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sudetenland"
+		texturefile = "gfx/interface/events/event_sudetenland.png"
+	}
+	
+	# Portrait
+	
+	
+	
+	# Decision Icons
+	
+}

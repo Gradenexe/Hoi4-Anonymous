@@ -1,0 +1,2738 @@
+spriteTypes = {	
+
+	# Ideas
+
+	spriteType = {
+		name = "GFX_idea_Democrat_Election"
+		texturefile = "gfx/interface/ideas/idea_fdr.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Republican_Election"
+		texturefile = "gfx/interface/ideas/idea_alf.png"
+	}
+
+	# Portrait
+	
+	spriteType = {
+		name = "GFX_portrait_Pelley"
+		texturefile = "gfx/interface/leaders/portrait_Pelley.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Hoover"
+		texturefile = "gfx/interface/leaders/portrait_Herbert_Hoover.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Ford"
+		texturefile = "gfx/interface/leaders/portrait_Ford.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_FDR"
+		texturefile = "gfx/interface/leaders/portrait_FDR.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Fritz_Kuhn"
+		texturefile = "gfx/interface/leaders/portrait_usa_fritz_kuhn.dds"
+	}
+	
+	# Event
+	
+	spriteType = {
+		name = "GFX_event_butler"
+		texturefile = "gfx/interface/events/event_butler.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_browder_speech"
+		texturefile = "gfx/interface/events/event_browder_speech.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_browder_sitting"
+		texturefile = "gfx/interface/events/event_browder_desk.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_browder_ussa"
+		texturefile = "gfx/interface/events/event_browder_ussa.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_american_civil_war"
+		texturefile = "gfx/interface/events/event_american_civil_war.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_kuhn_desk"
+		texturefile = "gfx/interface/events/event_kuhn_desk.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_ford_desk"
+		texturefile = "gfx/interface/events/event_henry_ford_desk.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_ford_speaking"
+		texturefile = "gfx/interface/events/event_henry_ford_speech.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_cult_of_washington"
+		texturefile = "gfx/interface/events/event_cult_of_washington.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_pelley_speech"
+		texturefile = "gfx/interface/events/event_pelley_speech.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_pelley"
+		texturefile = "gfx/interface/events/event_pelley.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_fdr_radio"
+		texturefile = "gfx/interface/events/event_fdr_radio.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_fdr_bill"
+		texturefile = "gfx/interface/events/event_fdr_bill.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_hoover_bill"
+		texturefile = "gfx/interface/events/event_hoover_bill.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_hoover_speech"
+		texturefile = "gfx/interface/events/event_hoover_speech.png"
+	}
+	
+ ####   #####  #   #   ####    ####  ####     ###    ####  #   # 
+ #   #  #      ## ##  #    #  #      #   #   #   #  #       # # 
+ #   #  ####   # # #  #    #  #      ####    #####  #        #  
+ #   #  #      #   #  #    #  #      #   #   #   #  #        # 
+ ####   #####  #   #   ####    ####  #    #  #   #   ####    # 
+
+	
+	spriteType = {
+		name = "GFX_focus_american_way"
+		texturefile = "gfx/interface/focus/focus_american_way.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_american_way_shine"
+		texturefile = "gfx/interface/focus/focus_american_way.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_new_deal"
+		texturefile = "gfx/interface/focus/focus_new_deal.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_new_deal_shine"
+		texturefile = "gfx/interface/focus/focus_new_deal.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_gold_standard"
+		texturefile = "gfx/interface/focus/focus_gold_standard.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_gold_standard_shine"
+		texturefile = "gfx/interface/focus/focus_gold_standard.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_shield_of_democracy"
+		texturefile = "gfx/interface/focus/focus_shield_of_democracy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_shield_of_democracy_shine"
+		texturefile = "gfx/interface/focus/focus_shield_of_democracy.png"
+	}
+		
+	spriteType = {
+		name = "GFX_focus_neutrality_acts"
+		texturefile = "gfx/interface/focus/focus_neutrality.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_neutrality_acts_shine"
+		texturefile = "gfx/interface/focus/focus_neutrality.png"
+	}
+		
+	spriteType = {
+		name = "GFX_focus_lend_lease"
+		texturefile = "gfx/interface/focus/focus_lend_lease.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_lend_lease_shine"
+		texturefile = "gfx/interface/focus/focus_lend_lease.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_limited_intervention"
+		texturefile = "gfx/interface/focus/focus_usa_limited_intervention.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_limited_intervention_shine"
+		texturefile = "gfx/interface/focus/focus_usa_limited_intervention.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_europe_intervention"
+		texturefile = "gfx/interface/focus/focus_europe_intervention.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_europe_intervention_shine"
+		texturefile = "gfx/interface/focus/focus_europe_intervention.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_asia_intervention"
+		texturefile = "gfx/interface/focus/focus_asia_intervention.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_asia_intervention_shine"
+		texturefile = "gfx/interface/focus/focus_asia_intervention.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_war_propaganda"
+		texturefile = "gfx/interface/focus/focus_usa_war_propaganda.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_propaganda_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_propaganda.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_civ_construction"
+		texturefile = "gfx/interface/focus/focus_usa_civ_construction.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_civ_construction_shine"
+		texturefile = "gfx/interface/focus/focus_usa_civ_construction.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_mil_construction"
+		texturefile = "gfx/interface/focus/focus_usa_mil_construction.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_mil_construction_shine"
+		texturefile = "gfx/interface/focus/focus_usa_mil_construction.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_deregulate_bank"
+		texturefile = "gfx/interface/focus/focus_deregulate_bank.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_deregulate_bank_shine"
+		texturefile = "gfx/interface/focus/focus_deregulate_bank.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_farm"
+		texturefile = "gfx/interface/focus/focus_wheat_farm.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_farm_shine"
+		texturefile = "gfx/interface/focus/focus_wheat_farm.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_farm_protection"
+		texturefile = "gfx/interface/focus/focus_farm_protectionism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_farm_protection_shine"
+		texturefile = "gfx/interface/focus/focus_farm_protectionism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_trade_protection"
+		texturefile = "gfx/interface/focus/focus_trade_protectionism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_trade_protection_shine"
+		texturefile = "gfx/interface/focus/focus_trade_protectionism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_honor_confederacy"
+		texturefile = "gfx/interface/focus/focus_honor_confederacy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_honor_confederacy_shine"
+		texturefile = "gfx/interface/focus/focus_honor_confederacy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_government"
+		texturefile = "gfx/interface/focus/focus_usa_government.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_government_shine"
+		texturefile = "gfx/interface/focus/focus_usa_government.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_bill"
+		texturefile = "gfx/interface/focus/focus_usa_bill.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_bill_shine"
+		texturefile = "gfx/interface/focus/focus_usa_bill.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_vets"
+		texturefile = "gfx/interface/focus/focus_usa_veterans.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_vets_shine"
+		texturefile = "gfx/interface/focus/focus_usa_veterans.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_magic"
+		texturefile = "gfx/interface/focus/focus_magic.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_magic_shine"
+		texturefile = "gfx/interface/focus/focus_magic.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_manhattan_project"
+		texturefile = "gfx/interface/focus/focus_manhattan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_manhattan_project_shine"
+		texturefile = "gfx/interface/focus/focus_manhattan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_tva"
+		texturefile = "gfx/interface/focus/focus_tva.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_tva_shine"
+		texturefile = "gfx/interface/focus/focus_tva.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_huac"
+		texturefile = "gfx/interface/focus/focus_huac.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_huac_shine"
+		texturefile = "gfx/interface/focus/focus_huac.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_scientist_haven"
+		texturefile = "gfx/interface/focus/focus_scientist_haven.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_scientist_haven_shine"
+		texturefile = "gfx/interface/focus/focus_scientist_haven.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_the_giant_wakes"
+		texturefile = "gfx/interface/focus/focus_the_giant_wakes.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_the_giant_wakes_shine"
+		texturefile = "gfx/interface/focus/focus_the_giant_wakes.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_science"
+		texturefile = "gfx/interface/focus/focus_usa_science.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_science_shine"
+		texturefile = "gfx/interface/focus/focus_usa_science.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_rubber"
+		texturefile = "gfx/interface/focus/focus_rubber_reserve.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_rubber_shine"
+		texturefile = "gfx/interface/focus/focus_rubber_reserve.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_knights_of_golden_circle"
+		texturefile = "gfx/interface/focus/focus_knights_of_golden_circle.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_knights_of_golden_circle_shine"
+		texturefile = "gfx/interface/focus/focus_knights_of_golden_circle.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_manifest_destiny"
+		texturefile = "gfx/interface/focus/focus_manifest_destiny.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_manifest_destiny_shine"
+		texturefile = "gfx/interface/focus/focus_manifest_destiny.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_nato"
+		texturefile = "gfx/interface/focus/focus_nato.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_nato_shine"
+		texturefile = "gfx/interface/focus/focus_nato.png"
+	}
+	
+ #   #   ###   ####     ####   ####    ###   #      ##### 
+ #   #  #   #  #   #   #      #    #  #   #  #      #     
+ # # #  #####  ####    #  ##  #    #  #####  #      ##### 
+ ## ##  #   #  #   #   #   #  #    #  #   #  #          # 
+ #   #  #   #  #    #   ###    ####   #   #  #####  ##### 
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_mexico"
+		texturefile = "gfx/interface/focus/focus_usa_war_mexico.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_mexico_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_mexico.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_canada"
+		texturefile = "gfx/interface/focus/focus_usa_war_canada.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_canada_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_canada.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_italy"
+		texturefile = "gfx/interface/focus/focus_usa_war_italian.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_italy_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_italian.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_france"
+		texturefile = "gfx/interface/focus/focus_usa_war_france.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_france_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_france.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_germany"
+		texturefile = "gfx/interface/focus/focus_usa_war_germany.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_germany_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_germany.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_soviet"
+		texturefile = "gfx/interface/focus/focus_usa_war_sov.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_soviet_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_sov.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_gbr"
+		texturefile = "gfx/interface/focus/focus_usa_war_gbr.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_gbr_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_gbr.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_cuba"
+		texturefile = "gfx/interface/focus/focus_usa_war_cuba.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_cuba_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_cuba.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_raj"
+		texturefile = "gfx/interface/focus/focus_usa_war_raj.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_raj_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_raj.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_japan"
+		texturefile = "gfx/interface/focus/focus_usa_war_japan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_japan_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_japan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_aus"
+		texturefile = "gfx/interface/focus/focus_usa_war_australia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_aus_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_australia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_china"
+		texturefile = "gfx/interface/focus/focus_usa_war_china.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_china_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_china.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_south_america"
+		texturefile = "gfx/interface/focus/focus_usa_war_south_america.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_south_america_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_south_america.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_north_america"
+		texturefile = "gfx/interface/focus/focus_usa_war_north_america.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_north_america_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_north_america.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_asia"
+		texturefile = "gfx/interface/focus/focus_usa_war_asia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_asia_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_asia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_canadian_corridor"
+		texturefile = "gfx/interface/focus/focus_usa_canadian_corridor.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_canadian_corridor_shine"
+		texturefile = "gfx/interface/focus/focus_usa_canadian_corridor.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_strategic_interests_gbr"
+		texturefile = "gfx/interface/focus/focus_usa_strategic_interests.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_strategic_interests_gbr_shine"
+		texturefile = "gfx/interface/focus/focus_usa_strategic_interests.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_bully_mexico"
+		texturefile = "gfx/interface/focus/focus_usa_bully_mexico.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_bully_mexico_shine"
+		texturefile = "gfx/interface/focus/focus_usa_bully_mexico.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_monroe_doctrine"
+		texturefile = "gfx/interface/focus/focus_monroe_doctrine.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_monroe_doctrine_shine"
+		texturefile = "gfx/interface/focus/focus_monroe_doctrine.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_cooperation_gbr"
+		texturefile = "gfx/interface/focus/focus_usa_cooperation_gbr.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_cooperation_gbr_shine"
+		texturefile = "gfx/interface/focus/focus_usa_cooperation_gbr.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_defense_of_the_pacific"
+		texturefile = "gfx/interface/focus/focus_usa_defense_of_pacific.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_defense_of_the_pacific_shine"
+		texturefile = "gfx/interface/focus/focus_usa_defense_of_pacific.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_pentagon"
+		texturefile = "gfx/interface/focus/focus_usa_pentagon.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_pentagon_shine"
+		texturefile = "gfx/interface/focus/focus_usa_pentagon.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_joint_chiefs_of_staff"
+		texturefile = "gfx/interface/focus/focus_usa_joint_chiefs_of_staff.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_joint_chiefs_of_staff_shine"
+		texturefile = "gfx/interface/focus/focus_usa_joint_chiefs_of_staff.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_intervention_in_asia"
+		texturefile = "gfx/interface/focus/focus_usa_intervention_in_asia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_intervention_in_asia_shine"
+		texturefile = "gfx/interface/focus/focus_usa_intervention_in_asia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_intervention_in_europe"
+		texturefile = "gfx/interface/focus/focus_usa_intervention_in_europe.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_intervention_in_europe_shine"
+		texturefile = "gfx/interface/focus/focus_usa_intervention_in_europe.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_intervention_in_americas"
+		texturefile = "gfx/interface/focus/focus_usa_intervention_in_americas.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_intervention_in_americas_shine"
+		texturefile = "gfx/interface/focus/focus_usa_intervention_in_americas.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_the_opposition"
+		texturefile = "gfx/interface/focus/focus_usa_the_opposition.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_the_opposition_shine"
+		texturefile = "gfx/interface/focus/focus_usa_the_opposition.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_usmca"
+		texturefile = "gfx/interface/focus/focus_usmca.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_usmca_shine"
+		texturefile = "gfx/interface/focus/focus_usmca.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_usmca_infra"
+		texturefile = "gfx/interface/focus/focus_usmca_infrastructure.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_usmca_infra_shine"
+		texturefile = "gfx/interface/focus/focus_usmca_infrastructure.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_usmca_trade"
+		texturefile = "gfx/interface/focus/focus_usmca_trade.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_usmca_trade_shine"
+		texturefile = "gfx/interface/focus/focus_usmca_trade.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_mex_research"
+		texturefile = "gfx/interface/focus/focus_usa_mex_science.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_mex_research_shine"
+		texturefile = "gfx/interface/focus/focus_usa_mex_science.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_can_freedom"
+		texturefile = "gfx/interface/focus/focus_usa_can_freedom.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_can_freedom_shine"
+		texturefile = "gfx/interface/focus/focus_usa_can_freedom.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_offer_western_protection"
+		texturefile = "gfx/interface/focus/focus_usa_offer_western_protection.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_offer_western_protection_shine"
+		texturefile = "gfx/interface/focus/focus_usa_offer_western_protection.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_western_bloc_protection"
+		texturefile = "gfx/interface/focus/focus_usa_western_bloc_protection.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_western_bloc_protection_shine"
+		texturefile = "gfx/interface/focus/focus_usa_western_bloc_protection.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_marshall_plan"
+		texturefile = "gfx/interface/focus/focus_marshall_plan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_marshall_plan_shine"
+		texturefile = "gfx/interface/focus/focus_marshall_plan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_nato_volunteers"
+		texturefile = "gfx/interface/focus/focus_usa_nato_volunteers.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_nato_volunteers_shine"
+		texturefile = "gfx/interface/focus/focus_usa_nato_volunteers.png"
+	}
+	
+ #####   ####   ####    ####  
+ #      #    #  #   #   #   # 
+ ####   #    #  ####    #   # 
+ #      #    #  #   #   #   # 
+ #       ####   #    #  ####  
+
+
+	spriteType = {
+		name = "GFX_focus_usa_right_opposition"
+		texturefile = "gfx/interface/focus/focus_usa_the_right_opposition.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_right_opposition_shine"
+		texturefile = "gfx/interface/focus/focus_usa_the_right_opposition.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_left_opposition"
+		texturefile = "gfx/interface/focus/focus_usa_the_left_opposition.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_left_opposition_shine"
+		texturefile = "gfx/interface/focus/focus_usa_the_left_opposition.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_start_civil_war"
+		texturefile = "gfx/interface/focus/focus_usa_start_civil_war.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_start_civil_war_shine"
+		texturefile = "gfx/interface/focus/focus_usa_start_civil_war.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_america_first"
+		texturefile = "gfx/interface/focus/focus_usa_america_first.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_america_first_shine"
+		texturefile = "gfx/interface/focus/focus_usa_america_first.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_silver_shirts"
+		texturefile = "gfx/interface/focus/focus_usa_silver_shirts.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_silver_shirts_shine"
+		texturefile = "gfx/interface/focus/focus_usa_silver_shirts.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_bund"
+		texturefile = "gfx/interface/focus/focus_usa_work_with_bund.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_bund_shine"
+		texturefile = "gfx/interface/focus/focus_usa_work_with_bund.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_expand_bund"
+		texturefile = "gfx/interface/focus/focus_usa_expand_with_bund.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_expand_bund_shine"
+		texturefile = "gfx/interface/focus/focus_usa_expand_with_bund.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_lindbergh"
+		texturefile = "gfx/interface/focus/focus_usa_send_lindbergh.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_lindbergh_shine"
+		texturefile = "gfx/interface/focus/focus_usa_send_lindbergh.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_wehrmacht"
+		texturefile = "gfx/interface/focus/focus_usa_american_wehrmacht.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_wehrmacht_shine"
+		texturefile = "gfx/interface/focus/focus_usa_american_wehrmacht.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_general_staff"
+		texturefile = "gfx/interface/focus/focus_usa_american_general_staff.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_general_staff_shine"
+		texturefile = "gfx/interface/focus/focus_usa_american_general_staff.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_nazi_youth"
+		texturefile = "gfx/interface/focus/focus_usa_nazi_youth.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_nazi_youth_shine"
+		texturefile = "gfx/interface/focus/focus_usa_nazi_youth.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_black_legion"
+		texturefile = "gfx/interface/focus/focus_usa_black_legion.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_black_legion_shine"
+		texturefile = "gfx/interface/focus/focus_usa_black_legion.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_cult_of_washington"
+		texturefile = "gfx/interface/focus/focus_usa_cult_of_washington.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_cult_of_washington_shine"
+		texturefile = "gfx/interface/focus/focus_usa_cult_of_washington.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_cooperation_with_kkk"
+		texturefile = "gfx/interface/focus/focus_usa_cooperation_with_kkk.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_cooperation_with_kkk_shine"
+		texturefile = "gfx/interface/focus/focus_usa_cooperation_with_kkk.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_fuhrerprinzip"
+		texturefile = "gfx/interface/focus/focus_usa_fuhrerprinzip.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_fuhrerprinzip_shine"
+		texturefile = "gfx/interface/focus/focus_usa_fuhrerprinzip.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_new_americanism"
+		texturefile = "gfx/interface/focus/focus_usa_new_americanism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_new_americanism_shine"
+		texturefile = "gfx/interface/focus/focus_usa_new_americanism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_unity_in_thought"
+		texturefile = "gfx/interface/focus/focus_usa_unity_in_thought.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_unity_in_thought_shine"
+		texturefile = "gfx/interface/focus/focus_usa_unity_in_thought.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_reich"
+		texturefile = "gfx/interface/focus/focus_american_reich.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_reich_shine"
+		texturefile = "gfx/interface/focus/focus_american_reich.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_university"
+		texturefile = "gfx/interface/focus/focus_usa_ford_university.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_university_shine"
+		texturefile = "gfx/interface/focus/focus_usa_ford_university.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_industrial_complex"
+		texturefile = "gfx/interface/focus/focus_usa_ford_industrial_complexes.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_industrial_complex_shine"
+		texturefile = "gfx/interface/focus/focus_usa_ford_industrial_complexes.pngh"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_radio"
+		texturefile = "gfx/interface/focus/focus_usa_ford_radio.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_radio_shine"
+		texturefile = "gfx/interface/focus/focus_usa_ford_radio.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_expanded_industrial_investments"
+		texturefile = "gfx/interface/focus/focus_usa_expanded_industrial_investments.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_expanded_industrial_investments_shine"
+		texturefile = "gfx/interface/focus/focus_usa_expanded_industrial_investments.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_economics"
+		texturefile = "gfx/interface/focus/focus_usa_ford_economics.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_economics_shine"
+		texturefile = "gfx/interface/focus/focus_usa_ford_economics.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_fordlandia"
+		texturefile = "gfx/interface/focus/focus_usa_fordlandia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_fordlandia_shine"
+		texturefile = "gfx/interface/focus/focus_usa_fordlandia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_force_fordlandia"
+		texturefile = "gfx/interface/focus/focus_usa_force_fordlandia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_force_fordlandia_shine"
+		texturefile = "gfx/interface/focus/focus_usa_force_fordlandia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_canada"
+		texturefile = "gfx/interface/focus/focus_usa_ford_canada.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_canada_shine"
+		texturefile = "gfx/interface/focus/focus_usa_ford_canada.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_mexico"
+		texturefile = "gfx/interface/focus/focus_usa_ford_mexico.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_mexico_shine"
+		texturefile = "gfx/interface/focus/focus_usa_ford_mexico.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_land_market_expansion"
+		texturefile = "gfx/interface/focus/focus_usa_land_market_expansion.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_land_market_expansion_shine"
+		texturefile = "gfx/interface/focus/focus_usa_land_market_expansion.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_ideological_enemy"
+		texturefile = "gfx/interface/focus/focus_usa_ford_ideological_enemy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_ideological_enemy_shine"
+		texturefile = "gfx/interface/focus/focus_usa_ford_ideological_enemy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_superior_firepower"
+		texturefile = "gfx/interface/focus/focus_usa_ford_superior_firepower.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_superior_firepower_shine"
+		texturefile = "gfx/interface/focus/focus_usa_ford_superior_firepower.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_delegation_fordlandia"
+		texturefile = "gfx/interface/focus/focus_usa_delegation_fordlandia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_delegation_fordlandia_shine"
+		texturefile = "gfx/interface/focus/focus_usa_delegation_fordlandia.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_ford_hegemony"
+		texturefile = "gfx/interface/focus/focus_usa_ford_american_hegemony.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ford_hegemony_shine"
+		texturefile = "gfx/interface/focus/focus_usa_ford_american_hegemony.png"
+	}
+
+	
+ #####   #####  #      #      #####  #   # 
+ #    #  #      #      #      #       # # 
+ #####   ####   #      #      ####     #  
+ #       #      #      #      #        # 
+ #       #####  #####  #####  #####    # 
+ 
+	spriteType = {
+		name = "GFX_focus_usa_safeguard_our_beliefs"
+		texturefile = "gfx/interface/focus/focus_safeguard_our_beliefs.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_safeguard_our_beliefs_shine"
+		texturefile = "gfx/interface/focus/focus_safeguard_our_beliefs.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_new_american_man"
+		texturefile = "gfx/interface/focus/focus_usa_new_american_man.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_new_american_man_shine"
+		texturefile = "gfx/interface/focus/focus_usa_new_american_man.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_christ_left"
+		texturefile = "gfx/interface/focus/focus_usa_christ_left.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_christ_left_shine"
+		texturefile = "gfx/interface/focus/focus_usa_christ_left.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_christ_middle"
+		texturefile = "gfx/interface/focus/focus_usa_christ_middle.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_christ_middle_shine"
+		texturefile = "gfx/interface/focus/focus_usa_christ_middle.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_christ_right"
+		texturefile = "gfx/interface/focus/focus_usa_christ_right.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_christ_right_shine"
+		texturefile = "gfx/interface/focus/focus_usa_christ_right.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_new_american_woman"
+		texturefile = "gfx/interface/focus/focus_usa_new_american_woman.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_new_american_woman_shine"
+		texturefile = "gfx/interface/focus/focus_usa_new_american_woman.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_national_church"
+		texturefile = "gfx/interface/focus/focus_usa_national_church.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_national_church_shine"
+		texturefile = "gfx/interface/focus/focus_usa_national_church.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_hungry"
+		texturefile = "gfx/interface/focus/focus_usa_hungry.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_hungry_shine"
+		texturefile = "gfx/interface/focus/focus_usa_hungry.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_christian_economics"
+		texturefile = "gfx/interface/focus/focus_usa_christian_economics.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_christian_economics_shine"
+		texturefile = "gfx/interface/focus/focus_usa_christian_economics.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_pelley_radio"
+		texturefile = "gfx/interface/focus/focus_usa_pelley_radio.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_pelley_radio_shine"
+		texturefile = "gfx/interface/focus/focus_usa_pelley_radio.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_nationalization"
+		texturefile = "gfx/interface/focus/focus_usa_nationalization_of_industry.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_nationalization_shine"
+		texturefile = "gfx/interface/focus/focus_usa_nationalization_of_industry.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_cooperatives"
+		texturefile = "gfx/interface/focus/focus_usa_formation_of_cooperatives.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_cooperatives_shine"
+		texturefile = "gfx/interface/focus/focus_usa_formation_of_cooperatives.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_prophet"
+		texturefile = "gfx/interface/focus/focus_usa_american_prophet.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_prophet_shine"
+		texturefile = "gfx/interface/focus/focus_usa_american_prophet.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_manifestation_of_divine"
+		texturefile = "gfx/interface/focus/focus_usa_manifestation_of_divine.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_manifestation_of_divine_shine"
+		texturefile = "gfx/interface/focus/focus_usa_manifestation_of_divine.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_mandatory_religious"
+		texturefile = "gfx/interface/focus/focus_usa_new_mandatory_religious.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_mandatory_religious_shine"
+		texturefile = "gfx/interface/focus/focus_usa_new_mandatory_religious.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_christ_war_left"
+		texturefile = "gfx/interface/focus/focus_usa_christ_war_left.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_christ_war_left_shine"
+		texturefile = "gfx/interface/focus/focus_usa_christ_war_left.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_christ_war_right"
+		texturefile = "gfx/interface/focus/focus_usa_christ_war_right.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_christ_war_right_shine"
+		texturefile = "gfx/interface/focus/focus_usa_christ_war_right.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_penal_labor"
+		texturefile = "gfx/interface/focus/focus_usa_penal_labor.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_penal_labor_shine"
+		texturefile = "gfx/interface/focus/focus_usa_penal_labor.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_abolish_constitution"
+		texturefile = "gfx/interface/focus/focus_usa_abolish_constitution.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_abolish_constitution_shine"
+		texturefile = "gfx/interface/focus/focus_usa_abolish_constitution.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_approach_germany"
+		texturefile = "gfx/interface/focus/focus_usa_approach_germany.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_approach_germany_shine"
+		texturefile = "gfx/interface/focus/focus_usa_approach_germany.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_one_party"
+		texturefile = "gfx/interface/focus/focus_usa_one_party_state.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_one_party_shine"
+		texturefile = "gfx/interface/focus/focus_usa_one_party_state.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_immigration_enforcement"
+		texturefile = "gfx/interface/focus/focus_usa_immigration_enforcement.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_immigration_enforcement_shine"
+		texturefile = "gfx/interface/focus/focus_usa_immigration_enforcement.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_jew_expulsion"
+		texturefile = "gfx/interface/focus/focus_usa_jew_expulsion.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_jew_expulsion_shine"
+		texturefile = "gfx/interface/focus/focus_usa_jew_expulsion.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_german_trade"
+		texturefile = "gfx/interface/focus/focus_usa_trade_with_germany.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_german_trade_shine"
+		texturefile = "gfx/interface/focus/focus_usa_trade_with_germany.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_national_recovery"
+		texturefile = "gfx/interface/focus/focus_usa_national_recovery.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_national_recovery_shine"
+		texturefile = "gfx/interface/focus/focus_usa_national_recovery.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_patriotic_police"
+		texturefile = "gfx/interface/focus/focus_usa_patriotic_police.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_patriotic_police_shine"
+		texturefile = "gfx/interface/focus/focus_usa_patriotic_police.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_austerity"
+		texturefile = "gfx/interface/focus/focus_usa_american_austerity.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_austerity_shine"
+		texturefile = "gfx/interface/focus/focus_usa_american_austerity.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_autarky"
+		texturefile = "gfx/interface/focus/focus_usa_american_autarky.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_autarky_shine"
+		texturefile = "gfx/interface/focus/focus_usa_american_autarky.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_infrastructure"
+		texturefile = "gfx/interface/focus/focus_usa_american_infrastructure.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_american_infrastructure_shine"
+		texturefile = "gfx/interface/focus/focus_usa_american_infrastructure.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_german_economic_assistance"
+		texturefile = "gfx/interface/focus/focus_usa_german_economic_assistance.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_german_economic_assistance_shine"
+		texturefile = "gfx/interface/focus/focus_usa_german_economic_assistance.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_military_spending"
+		texturefile = "gfx/interface/focus/focus_usa_military_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_military_spending_shine"
+		texturefile = "gfx/interface/focus/focus_usa_military_spending.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_looking_outward"
+		texturefile = "gfx/interface/focus/focus_usa_looking_outward.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_looking_outward_shine"
+		texturefile = "gfx/interface/focus/focus_usa_looking_outward.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_great_bastion"
+		texturefile = "gfx/interface/focus/focus_usa_great_bastion.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_great_bastion_shine"
+		texturefile = "gfx/interface/focus/focus_usa_great_bastion.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_mandatory_military"
+		texturefile = "gfx/interface/focus/focus_usa_mandatory_military.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_mandatory_military_shine"
+		texturefile = "gfx/interface/focus/focus_usa_mandatory_military.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_military_youth"
+		texturefile = "gfx/interface/focus/focus_usa_military_youth.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_military_youth_shine"
+		texturefile = "gfx/interface/focus/focus_usa_military_youth.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_pelley_sa"
+		texturefile = "gfx/interface/focus/focus_usa_pelley_south_america.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_pelley_sa_shine"
+		texturefile = "gfx/interface/focus/focus_usa_pelley_south_america.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_pelley_meso"
+		texturefile = "gfx/interface/focus/focus_usa_pelley_meso.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_pelley_meso_shine"
+		texturefile = "gfx/interface/focus/focus_usa_pelley_meso.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_pelley_carribean"
+		texturefile = "gfx/interface/focus/focus_usa_pelley_carribean.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_pelley_carribean_shine"
+		texturefile = "gfx/interface/focus/focus_usa_pelley_carribean.png"
+	}
+	
+  ####   ####   #   #  #   #  #   #  #   #  #####  #####  #   # 
+ #      #    #  ## ##  ## ##  #   #  ##  #    #    #      ## ## 
+ #      #    #  # # #  # # #  #   #  # # #    #    #####  # # # 
+ #      #    #  #   #  #   #  #   #  #  ##    #        #  #   # 
+  ####   ####   #   #  #   #  #####  #   #  #####  #####  #   # 
+  
+  	spriteType = {
+		name = "GFX_focus_usa_compromise_new_deal"
+		texturefile = "gfx/interface/focus/focus_usa_compomise_with_new_deal.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_compromise_new_deal_shine"
+		texturefile = "gfx/interface/focus/focus_usa_compomise_with_new_deal.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_ware_group"
+		texturefile = "gfx/interface/focus/focus_usa_ware_group.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ware_group_shine"
+		texturefile = "gfx/interface/focus/focus_usa_ware_group.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_new_american_communism"
+		texturefile = "gfx/interface/focus/focus_usa_new_american_communism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_new_american_communism_shine"
+		texturefile = "gfx/interface/focus/focus_usa_new_american_communism.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_international_support"
+		texturefile = "gfx/interface/focus/focus_usa_international_support.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_international_support_shine"
+		texturefile = "gfx/interface/focus/focus_usa_international_support.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_suspend_the_persecution"
+		texturefile = "gfx/interface/focus/focus_usa_suspend_the_persecution.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_suspend_the_persecution_shine"
+		texturefile = "gfx/interface/focus/focus_usa_suspend_the_persecution.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_agitprop"
+		texturefile = "gfx/interface/focus/focus_usa_agitprop.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_agitprop_shine"
+		texturefile = "gfx/interface/focus/focus_usa_agitprop.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_browder_cult"
+		texturefile = "gfx/interface/focus/focus_usa_browder_cult.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_browder_cult_shine"
+		texturefile = "gfx/interface/focus/focus_usa_browder_cult.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_worker_management"
+		texturefile = "gfx/interface/focus/focus_usa_worker_management_act.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_worker_management_shine"
+		texturefile = "gfx/interface/focus/focus_usa_worker_management_act.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_union_representation"
+		texturefile = "gfx/interface/focus/focus_usa_union_representation.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_union_representation_shine"
+		texturefile = "gfx/interface/focus/focus_usa_union_representation.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_unemployment_councils"
+		texturefile = "gfx/interface/focus/focus_usa_unemployment_councils.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_unemployment_councils_shine"
+		texturefile = "gfx/interface/focus/focus_usa_unemployment_councils.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_desegregration_army"
+		texturefile = "gfx/interface/focus/focus_usa_desegregration_army.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_desegregration_army_shine"
+		texturefile = "gfx/interface/focus/focus_usa_desegregration_army.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_desegregration"
+		texturefile = "gfx/interface/focus/focus_usa_desegregration.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_desegregration_shine"
+		texturefile = "gfx/interface/focus/focus_usa_desegregration.png"
+	}
+
+  	spriteType = {
+		name = "GFX_focus_usa_red_army"
+		texturefile = "gfx/interface/focus/focus_usa_red_army.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_red_army_shine"
+		texturefile = "gfx/interface/focus/focus_usa_red_army.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_wealth_inequality"
+		texturefile = "gfx/interface/focus/focus_usa_wealth_inequality.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_wealth_inequality_shine"
+		texturefile = "gfx/interface/focus/focus_usa_wealth_inequality.png"
+	}
+
+  	spriteType = {
+		name = "GFX_focus_usa_soc_medicine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_medicine.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_medicine_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_medicine.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_soc_science"
+		texturefile = "gfx/interface/focus/focus_usa_soc_science.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_science_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_science.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_soc_accumulated_wealth"
+		texturefile = "gfx/interface/focus/focus_usa_soc_accumulated_wealth.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_accumulated_wealth_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_accumulated_wealth.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_soc_communal"
+		texturefile = "gfx/interface/focus/focus_usa_soc_communal.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_communal_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_communal.png"
+	}
+	
+  	spriteType = {
+		name = "GFX_focus_usa_soc_american_dream"
+		texturefile = "gfx/interface/focus/focus_usa_soc_american_dream.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_american_dream_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_american_dream.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_foreign_affairs"
+		texturefile = "gfx/interface/focus/focus_usa_soc_foreign_affairs.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_foreign_affairs_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_foreign_affairs.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_internal_affairs"
+		texturefile = "gfx/interface/focus/focus_usa_soc_internal_affairs.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_internal_affairs_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_internal_affairs.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_root_out_fascism"
+		texturefile = "gfx/interface/focus/focus_usa_soc_root_out_fascism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_root_out_fascism_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_root_out_fascism.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_anti_fascism"
+		texturefile = "gfx/interface/focus/focus_usa_soc_anti_fascism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_anti_fascism_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_anti_fascism.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_decolonization_initiative"
+		texturefile = "gfx/interface/focus/focus_usa_soc_decolonization_initiative.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_decolonization_initiative_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_decolonization_initiative.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_decolonization_india"
+		texturefile = "gfx/interface/focus/focus_usa_soc_decolonization_indian.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_decolonization_india_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_decolonization_indian.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_decolonization_africa"
+		texturefile = "gfx/interface/focus/focus_usa_soc_decolonization_africa.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_decolonization_africa_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_decolonization_africa.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_decolonization_pacific"
+		texturefile = "gfx/interface/focus/focus_usa_soc_decolonization_pacific.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_decolonization_pacific_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_decolonization_pacific.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_africa_confederation"
+		texturefile = "gfx/interface/focus/focus_usa_soc_african_confederation.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_africa_confederation_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_african_confederation.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_great_liberator"
+		texturefile = "gfx/interface/focus/focus_usa_soc_great_liberator.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_great_liberator_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_great_liberator.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_under_red_eagle"
+		texturefile = "gfx/interface/focus/focus_usa_soc_under_red_eagle.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_under_red_eagle_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_under_red_eagle.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_spy"
+		texturefile = "gfx/interface/focus/focus_usa_soc_spy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_spy_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_spy.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_fascism_spy"
+		texturefile = "gfx/interface/focus/focus_usa_soc_fascism_spy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_fascism_spy_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_fascism_spy.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_red_internationalism"
+		texturefile = "gfx/interface/focus/focus_usa_soc_red_internationalism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_red_internationalism_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_red_internationalism.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_pan_america"
+		texturefile = "gfx/interface/focus/focus_usa_soc_pan_america.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_pan_america_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_pan_america.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_canadian_initiative"
+		texturefile = "gfx/interface/focus/focus_usa_soc_canadian_initiative.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_canadian_initiative_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_canadian_initiative.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_mexican_initiative"
+		texturefile = "gfx/interface/focus/focus_usa_soc_mexican_initiative.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_mexican_initiative_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_mexican_initiative.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_sa_initiative"
+		texturefile = "gfx/interface/focus/focus_usa_soc_sa_initiative.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_sa_initiative_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_sa_initiative.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_red_international_army"
+		texturefile = "gfx/interface/focus/focus_usa_soc_red_international_army.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_red_international_army_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_red_international_army.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_us_ussr"
+		texturefile = "gfx/interface/focus/focus_usa_soc_us_ussr.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_us_ussr_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_us_ussr.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_unholy"
+		texturefile = "gfx/interface/focus/focus_usa_soc_unholy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_unholy_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_unholy.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_prc"
+		texturefile = "gfx/interface/focus/focus_usa_soc_prc.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_prc_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_prc.png"
+	}
+
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_integrate_mexico"
+		texturefile = "gfx/interface/focus/focus_usa_soc_integrate_mexico.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_integrate_mexico_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_integrate_mexico.png"
+	}
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_integrate_sa"
+		texturefile = "gfx/interface/focus/focus_usa_soc_integrate_sa.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_integrate_sa_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_integrate_sa.png"
+	}
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_integrate_canada"
+		texturefile = "gfx/interface/focus/focus_usa_soc_integrate_canada.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_integrate_canada_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_integrate_canada.png"
+	}
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_shatter_empires"
+		texturefile = "gfx/interface/focus/focus_usa_soc_shatter_empires.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_shatter_empires_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_shatter_empires.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_new_american_spirit"
+		texturefile = "gfx/interface/focus/focus_usa_soc_new_american_spirit.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_new_american_spirit_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_new_american_spirit.png"
+	}
+	
+ 	spriteType = {
+		name = "GFX_focus_usa_soc_ussa"
+		texturefile = "gfx/interface/focus/focus_usa_soc_ussa.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_soc_ussa_shine"
+		texturefile = "gfx/interface/focus/focus_usa_soc_ussa.png"
+	}
+
+ #####  #####   ###   #      ##### 
+ #      #      #   #  #      #     
+ #####  ####   #####  #      ##### 
+     #  #      #   #  #          # 
+ #####  #####  #   #  #####  ##### 
+	
+	spriteType = {
+		name = "GFX_focus_usa_oss"
+		texturefile = "gfx/interface/focus/focus_oss.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_oss_shine"
+		texturefile = "gfx/interface/focus/focus_oss.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_presidential_seal"
+		texturefile = "gfx/interface/focus/focus_presidential.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_presidential_seal_shine"
+		texturefile = "gfx/interface/focus/focus_presidential.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_presidential_seal"
+		texturefile = "gfx/interface/focus/focus_presidential.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_presidential_seal_shine"
+		texturefile = "gfx/interface/focus/focus_presidential.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_sec_seal"
+		texturefile = "gfx/interface/focus/focus_sec.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_sec_seal_shine"
+		texturefile = "gfx/interface/focus/focus_sec.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_seal"
+		texturefile = "gfx/interface/focus/focus_seal_of_usa.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_seal_shine"
+		texturefile = "gfx/interface/focus/focus_seal_of_usa.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_hud_seal"
+		texturefile = "gfx/interface/focus/focus_hud.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_hud_seal_shine"
+		texturefile = "gfx/interface/focus/focus_hud.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usace_seal"
+		texturefile = "gfx/interface/focus/focus_usace.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usace_seal_shine"
+		texturefile = "gfx/interface/focus/focus_usace.png"
+	}
+	
+ #   #  #####  #      #####  #####   ###   ####    #   # 
+ ## ##    #    #        #      #    #   #  #   #    # # 
+ # # #    #    #        #      #    #####  ####      #  
+ #   #    #    #        #      #    #   #  #   #     # 
+ #   #  #####  #####  #####    #    #   #  #    #    # 
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_dept"
+		texturefile = "gfx/interface/focus/focus_usa_war_dept.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_war_dept_shine"
+		texturefile = "gfx/interface/focus/focus_usa_war_dept.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_army_ground_forces"
+		texturefile = "gfx/interface/focus/focus_usa_army_ground_forces.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_army_ground_forces_shine"
+		texturefile = "gfx/interface/focus/focus_usa_army_ground_forces.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_army_air_forces"
+		texturefile = "gfx/interface/focus/focus_usa_army_air_forces.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_army_air_forces_shine"
+		texturefile = "gfx/interface/focus/focus_usa_army_air_forces.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_army_service_forces"
+		texturefile = "gfx/interface/focus/focus_usa_army_service_forces.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_army_service_forces_shine"
+		texturefile = "gfx/interface/focus/focus_usa_army_service_forces.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ordnance"
+		texturefile = "gfx/interface/focus/focus_usa_ordnance.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_ordnance_shine"
+		texturefile = "gfx/interface/focus/focus_usa_ordnance.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_military_medical"
+		texturefile = "gfx/interface/focus/focus_usa_medical.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_military_medical_shine"
+		texturefile = "gfx/interface/focus/focus_usa_medical.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_transportation"
+		texturefile = "gfx/interface/focus/focus_usa_transportation.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_transportation_shine"
+		texturefile = "gfx/interface/focus/focus_usa_transportation.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_quartermaster"
+		texturefile = "gfx/interface/focus/focus_usa_quartermaster.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_quartermaster_shine"
+		texturefile = "gfx/interface/focus/focus_usa_quartermaster.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_signal"
+		texturefile = "gfx/interface/focus/focus_usa_signal.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_signal_shine"
+		texturefile = "gfx/interface/focus/focus_usa_signal.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_engineers_corp"
+		texturefile = "gfx/interface/focus/focus_usa_engineers_corp.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_engineers_corp_shine"
+		texturefile = "gfx/interface/focus/focus_usa_engineers_corp.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_chemical_corp"
+		texturefile = "gfx/interface/focus/focus_usa_chemical_corp.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_chemical_corp_shine"
+		texturefile = "gfx/interface/focus/focus_usa_chemical_corp.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_special_forces"
+		texturefile = "gfx/interface/focus/focus_usa_special_forces.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_special_forces_shine"
+		texturefile = "gfx/interface/focus/focus_usa_special_forces.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_louisiana_manuevers"
+		texturefile = "gfx/interface/focus/focus_louisiana_maneuvers.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_louisiana_manuevers_shine"
+		texturefile = "gfx/interface/focus/focus_louisiana_maneuvers.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_rock_island"
+		texturefile = "gfx/interface/focus/focus_usa_rock_island.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_rock_island_shine"
+		texturefile = "gfx/interface/focus/focus_usa_rock_island.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_navy"
+		texturefile = "gfx/interface/focus/focus_usa_navy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_navy_shine"
+		texturefile = "gfx/interface/focus/focus_usa_navy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_selective_service"
+		texturefile = "gfx/interface/focus/focus_usa_selective_service.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_selective_service_shine"
+		texturefile = "gfx/interface/focus/focus_usa_selective_service.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_dod"
+		texturefile = "gfx/interface/focus/focus_usa_dod.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_dod_shine"
+		texturefile = "gfx/interface/focus/focus_usa_dod.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_army_of_the_us"
+		texturefile = "gfx/interface/focus/focus_usa_army_of_the_us.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_army_of_the_us_shine"
+		texturefile = "gfx/interface/focus/focus_usa_army_of_the_us.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_women_in_army"
+		texturefile = "gfx/interface/focus/focus_usa_women_in_army.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_women_in_army_shine"
+		texturefile = "gfx/interface/focus/focus_usa_women_in_army.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_armored_infantry"
+		texturefile = "gfx/interface/focus/focus_usa_armored_infantry.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_armored_infantry_shine"
+		texturefile = "gfx/interface/focus/focus_usa_armored_infantry.png"
+	}
+	
+ #####   ###   #   #  #   #  ##### 
+   #    #   #  ##  #  #  #   #     
+   #    #####  # # #  ###    ##### 
+   #    #   #  #  ##  #  #       # 
+   #    #   #  #   #  #   #  ##### 
+	
+	spriteType = {
+		name = "GFX_focus_usa_tank_experiments"
+		texturefile = "gfx/interface/focus/focus_usa_tank_experimentations.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_tank_experiments_shine"
+		texturefile = "gfx/interface/focus/focus_usa_tank_experimentations.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_tank_destroyer"
+		texturefile = "gfx/interface/focus/focus_usa_tank_destroyer.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_tank_destroyer_shine"
+		texturefile = "gfx/interface/focus/focus_usa_tank_destroyer.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_main_battle_tanks"
+		texturefile = "gfx/interface/focus/focus_usa_main_battle_tanks.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_main_battle_tanks_shine"
+		texturefile = "gfx/interface/focus/focus_usa_main_battle_tanks.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m3_lee"
+		texturefile = "gfx/interface/focus/focus_usa_m3_lee.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m3_lee_shine"
+		texturefile = "gfx/interface/focus/focus_usa_m3_lee.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m4_sherman"
+		texturefile = "gfx/interface/focus/focus_usa_m4_sherman.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m4_sherman_shine"
+		texturefile = "gfx/interface/focus/focus_usa_m4_sherman.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m10_gmc"
+		texturefile = "gfx/interface/focus/focus_usa_m10_gmc.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m10_gmc_shine"
+		texturefile = "gfx/interface/focus/focus_usa_m10_gmc.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m18_hellcat"
+		texturefile = "gfx/interface/focus/focus_usa_m18_hellcat.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m18_hellcat_shine"
+		texturefile = "gfx/interface/focus/focus_usa_m18_hellcat.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_t23"
+		texturefile = "gfx/interface/focus/focus_usa_t23.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_t23_shine"
+		texturefile = "gfx/interface/focus/focus_usa_t23.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m26_pershing"
+		texturefile = "gfx/interface/focus/focus_usa_m26_pershing.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m26_pershing_shine"
+		texturefile = "gfx/interface/focus/focus_usa_m26_pershing.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m6"
+		texturefile = "gfx/interface/focus/focus_usa_m6.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m6_shine"
+		texturefile = "gfx/interface/focus/focus_usa_m6.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_t14"
+		texturefile = "gfx/interface/focus/focus_usa_t14.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_t14_shine"
+		texturefile = "gfx/interface/focus/focus_usa_t14.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m3_stuart"
+		texturefile = "gfx/interface/focus/focus_usa_m3_stuart.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m3_stuart_shine"
+		texturefile = "gfx/interface/focus/focus_usa_m3_stuart.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m5_stuart"
+		texturefile = "gfx/interface/focus/focus_usa_m5_stuart.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_m5_stuart_shine"
+		texturefile = "gfx/interface/focus/focus_usa_m5_stuart.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_t28"
+		texturefile = "gfx/interface/focus/focus_usa_t28.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_t28_shine"
+		texturefile = "gfx/interface/focus/focus_usa_t28.png"
+	}
+	
+ #####   #       ###   #   #  #####  ##### 
+ #    #  #      #   #  ##  #  #      #     
+ #####   #      #####  # # #  ####   ##### 
+ #       #      #   #  #  ##  #          # 
+ #       #####  #   #  #   #  #####  ##### 
+	
+	spriteType = {
+		name = "GFX_focus_usa_women_in_airforce"
+		texturefile = "gfx/interface/focus/focus_usa_women_in_airforce.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_women_in_airforce_shine"
+		texturefile = "gfx/interface/focus/focus_usa_women_in_airforce.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_airborne_divisions"
+		texturefile = "gfx/interface/focus/focus_usa_airborne_divisions.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_airborne_divisions_shine"
+		texturefile = "gfx/interface/focus/focus_usa_airborne_divisions.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_air"
+		texturefile = "gfx/interface/focus/focus_usa_air.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_air_shine"
+		texturefile = "gfx/interface/focus/focus_usa_air.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_air_war_plans"
+		texturefile = "gfx/interface/focus/focus_usa_air_war_plans.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_air_war_plans_shine"
+		texturefile = "gfx/interface/focus/focus_usa_air_war_plans.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_p38_lightning"
+		texturefile = "gfx/interface/focus/focus_usa_p83_lightning.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_p38_lightning_shine"
+		texturefile = "gfx/interface/focus/focus_usa_p83_lightning.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_a36_mustang"
+		texturefile = "gfx/interface/focus/focus_usa_a36_mustang.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_a36_mustang_shine"
+		texturefile = "gfx/interface/focus/focus_usa_a36_mustang.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_p51_mustang"
+		texturefile = "gfx/interface/focus/focus_usa_p51_mustang.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_p51_mustang_shine"
+		texturefile = "gfx/interface/focus/focus_usa_p51_mustang.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_b25_mitchell"
+		texturefile = "gfx/interface/focus/focus_usa_b25_mitchell.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_b25_mitchell_shine"
+		texturefile = "gfx/interface/focus/focus_usa_b25_mitchell.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_b24_liberator"
+		texturefile = "gfx/interface/focus/focus_usa_b24_liberator.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_b24_liberator_shine"
+		texturefile = "gfx/interface/focus/focus_usa_b24_liberator.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_sbd_dauntless"
+		texturefile = "gfx/interface/focus/focus_usa_dauntless.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_sbd_dauntless_shine"
+		texturefile = "gfx/interface/focus/focus_usa_dauntless.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_seahawk"
+		texturefile = "gfx/interface/focus/focus_usa_seahawk.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_seahawk_shine"
+		texturefile = "gfx/interface/focus/focus_usa_seahawk.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_tbf_avenger"
+		texturefile = "gfx/interface/focus/focus_usa_tbf_avenger.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_tbf_avenger_shine"
+		texturefile = "gfx/interface/focus/focus_usa_tbf_avenger.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_continental_air"
+		texturefile = "gfx/interface/focus/focus_usa_continental_airforce.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_continental_air_shine"
+		texturefile = "gfx/interface/focus/focus_usa_continental_airforce.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_oceanic_air"
+		texturefile = "gfx/interface/focus/focus_usa_oceanic_airforce.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_oceanic_air_shine"
+		texturefile = "gfx/interface/focus/focus_usa_oceanic_airforce.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_air_fighters"
+		texturefile = "gfx/interface/focus/focus_usa_air_fighters.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_air_fighters_shine"
+		texturefile = "gfx/interface/focus/focus_usa_air_fighters.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_naval_fighters"
+		texturefile = "gfx/interface/focus/focus_usa_naval_fighters.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_naval_fighters_shine"
+		texturefile = "gfx/interface/focus/focus_usa_naval_fighters.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_naval_bombers"
+		texturefile = "gfx/interface/focus/focus_usa_naval_bombers.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_naval_bombers_shine"
+		texturefile = "gfx/interface/focus/focus_usa_naval_bombers.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_air_bombers"
+		texturefile = "gfx/interface/focus/focus_usa_air_bombers.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_air_bombers_shine"
+		texturefile = "gfx/interface/focus/focus_usa_air_bombers.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_aeronautics"
+		texturefile = "gfx/interface/focus/focus_usa_aeronautics.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_aeronautics_shine"
+		texturefile = "gfx/interface/focus/focus_usa_aeronautics.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_naval_radar"
+		texturefile = "gfx/interface/focus/focus_usa_naval_radar.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_naval_radar_shine"
+		texturefile = "gfx/interface/focus/focus_usa_naval_radar.png"
+	}
+	
+ #   #   ###   #   #  #   # 
+ ##  #  #   #  #   #   # # 
+ # # #  #####   # #     #  
+ #  ##  #   #   # #     # 
+ #   #  #   #    #      # 
+
+	spriteType = {
+		name = "GFX_focus_usa_generic_navy"
+		texturefile = "gfx/interface/focus/focus_usa_generic_navy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_generic_navy_shine"
+		texturefile = "gfx/interface/focus/focus_usa_generic_navy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_liberty_ship"
+		texturefile = "gfx/interface/focus/focus_usa_liberty_ship.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_liberty_ship_shine"
+		texturefile = "gfx/interface/focus/focus_usa_liberty_ship.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_usa_fleet_doctrine"
+		texturefile = "gfx/interface/focus/focus_usa_fleet_doctrine.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_fleet_doctrine_shine"
+		texturefile = "gfx/interface/focus/focus_usa_fleet_doctrine.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_mahanian"
+		texturefile = "gfx/interface/focus/focus_usa_mahanian.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_mahanian_shine"
+		texturefile = "gfx/interface/focus/focus_usa_mahanian.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_two_ocean"
+		texturefile = "gfx/interface/focus/focus_usa_two_ocean_navy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_two_ocean_shine"
+		texturefile = "gfx/interface/focus/focus_usa_two_ocean_navy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_navy_defense"
+		texturefile = "gfx/interface/focus/focus_usa_navy_defense.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_navy_defense_shine"
+		texturefile = "gfx/interface/focus/focus_usa_navy_defense.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_submarines"
+		texturefile = "gfx/interface/focus/focus_usa_submarines.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_submarines_shine"
+		texturefile = "gfx/interface/focus/focus_usa_submarines.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_anti_submarine"
+		texturefile = "gfx/interface/focus/focus_usa_anti_submarine.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_anti_submarine_shine"
+		texturefile = "gfx/interface/focus/focus_usa_anti_submarine.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_usmc"
+		texturefile = "gfx/interface/focus/focus_usa_usmc.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_usmc_shine"
+		texturefile = "gfx/interface/focus/focus_usa_usmc.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_carrier"
+		texturefile = "gfx/interface/focus/focus_usa_carrier.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_carrier_shine"
+		texturefile = "gfx/interface/focus/focus_usa_carrier.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_battleship"
+		texturefile = "gfx/interface/focus/focus_usa_battleship.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_usa_battleship_shine"
+		texturefile = "gfx/interface/focus/focus_usa_battleship.png"
+	}
+}

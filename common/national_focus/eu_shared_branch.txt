@@ -1,0 +1,650 @@
+shared_focus = {
+	id = EU_council_of_europe
+	icon = GFX_focus_europe_union_parliament
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_council_of_europe }
+	}
+
+	x = 55
+	y = 30
+	cost = 10
+
+	available = {
+		capital_scope = { is_on_continent = europe }
+		has_government = democratic
+		OR = {
+			has_completed_focus = POR_eu_gateway
+			has_completed_focus = SPR_eu_gateway
+			has_completed_focus = FRA_eu_gateway
+			has_completed_focus = ENG_eu_gateway
+			has_completed_focus = BEL_eu_gateway
+			has_completed_focus = BEL_eu_gateway_2
+			has_completed_focus = HOL_eu_gateway
+			has_completed_focus = SWI_eu_gateway
+			has_completed_focus = ITA_eu_gateway
+			has_completed_focus = GER_eu_gateway
+			has_completed_focus = AUS_eu_gateway
+			has_completed_focus = YUG_eu_gateway
+			has_completed_focus = GRE_eu_gateway
+			has_completed_focus = BUL_eu_gateway
+			has_completed_focus = ROM_eu_gateway
+			has_completed_focus = HUN_eu_gateway
+			has_completed_focus = POL_eu_gateway
+			has_completed_focus = DEN_eu_gateway
+			has_completed_focus = NOR_eu_gateway
+			has_completed_focus = SWE_eu_gateway
+			has_completed_focus = FIN_eu_gateway
+			has_completed_focus = ICE_eu_gateway
+			has_completed_focus = ITA_eu_gateway_2
+			has_completed_focus = CZE_eu_gateway
+			has_completed_focus = LIT_eu_gateway
+			has_completed_focus = LAT_eu_gateway
+			has_completed_focus = EST_eu_gateway
+			has_completed_focus = SOV_eu_gateway
+			has_completed_focus = POL_eu_gateway_2
+			
+		}
+	}
+
+	completion_reward = {
+		add_political_power = 50
+		set_variable = { eu_factory_output_var = 0 }
+		set_variable = { eu_consumer_goods_var = 0 }
+		set_variable = { eu_pp_gain_var = 0 }
+		set_variable = { eu_building_slots_var = 0 }
+		set_variable = { eu_research_speed_var = 0 }
+		set_variable = { eu_stability_var = 0 }
+		set_variable = { eu_war_support_var = 0 }
+		set_variable = { eu_non_core_manpower_var = 0 }
+		set_variable = { eu_org_var = 0 }
+		set_variable = { eu_navy_org_var = 0 }
+		set_variable = { eu_air_mission_efficiency_var = 0 }
+		add_dynamic_modifier = { modifier = eu_european_community }
+		custom_effect_tooltip = EU_gains_spirit_tt
+	
+		every_other_country = {
+			limit = { is_in_faction_with = ROOT }
+			add_dynamic_modifier = { modifier = eu_european_community }
+		}
+	}
+}
+
+# --- ECONOMIC BRANCH (Left) ---
+shared_focus = {
+	id = EU_coal_and_steel
+	icon = GFX_focus_europe_union_coal_and_steel
+	prerequisite = { focus = EU_council_of_europe }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_coal_and_steel }
+	}
+
+	x = -5
+	y = 1
+	relative_position_id = EU_council_of_europe
+	cost = 10
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = eu_factory_output_var
+			value = 0.05
+			tooltip = industrial_capacity_factory_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_factory_output_var
+				value = 0.02
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EU_energy_integration
+	icon = GFX_focus_europe_union_energy
+	prerequisite = { focus = EU_coal_and_steel }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_energy_integration }
+	}
+
+	x = 0
+	y = 1
+	relative_position_id = EU_coal_and_steel
+	cost = 10
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = eu_building_slots_var
+			value = 0.10
+			tooltip = production_speed_buildings_factor_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_building_slots_var
+				value = 0.04
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EU_nuclear_power
+	icon = GFX_focus_europe_union_nuclear_power
+	prerequisite = { focus = EU_energy_integration }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_nuclear_power }
+	}
+
+	x = 0
+	y = 1
+	relative_position_id = EU_energy_integration
+	cost = 10
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = eu_research_speed_var
+			value = 0.05
+			tooltip = research_speed_factor_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_research_speed_var
+				value = 0.02
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EU_internal_market
+	icon = GFX_focus_europe_union_trade_inside_europe
+	prerequisite = { focus = EU_coal_and_steel }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_internal_market }
+	}
+
+	x = -4
+	y = 1
+	relative_position_id = EU_coal_and_steel
+	cost = 10
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = eu_factory_output_var
+			value = 0.05
+			tooltip = industrial_capacity_factory_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_factory_output_var
+				value = 0.02
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EU_external_tariffs
+	icon = GFX_focus_europe_union_trade_outside_europe
+	prerequisite = { focus = EU_internal_market }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_external_tariffs }
+	}
+
+	x = -1
+	y = 1
+	relative_position_id = EU_internal_market
+	cost = 10
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = eu_consumer_goods_var
+			value = -0.05
+			tooltip = consumer_goods_factor_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_consumer_goods_var
+				value = -0.02
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EU_single_currency
+	icon = GFX_focus_europe_union_euro
+	prerequisite = { focus = EU_external_tariffs }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_single_currency }
+	}
+
+	x = 0
+	y = 1
+	relative_position_id = EU_external_tariffs
+	cost = 10
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = eu_consumer_goods_var
+			value = -0.05
+			tooltip = consumer_goods_factor_tt
+		}
+		add_to_variable = {
+			var = eu_pp_gain_var
+			value = 0.10
+			tooltip = political_power_factor_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_consumer_goods_var
+				value = -0.02
+			}
+			add_to_variable = {
+				var = eu_pp_gain_var
+				value = 0.04
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EU_common_agriculture
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = { focus = EU_internal_market }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_common_agriculture }
+	}
+
+	x = 1
+	y = 1
+	relative_position_id = EU_internal_market
+	cost = 10
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = eu_stability_var
+			value = 0.05
+			tooltip = stability_factor_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_stability_var
+				value = 0.02
+			}
+		}
+	}
+}
+
+# --- POLITICAL BRANCH (Center) ---
+shared_focus = {
+	id = EU_european_parliament
+	icon = GFX_focus_europe_union_parliament
+	prerequisite = { focus = EU_council_of_europe }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_european_parliament }
+	}
+
+	x = 0
+	y = 2
+	relative_position_id = EU_council_of_europe
+	cost = 10
+	completion_reward = {
+		add_political_power = 50
+		add_to_variable = {
+			var = eu_pp_gain_var
+			value = 0.10
+			tooltip = political_power_factor_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_pp_gain_var
+				value = 0.04
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EU_court_of_justice
+	icon = GFX_focus_europe_union_justice
+	prerequisite = { focus = EU_european_parliament }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_court_of_justice }
+	}
+
+	x = 0
+	y = 1
+	relative_position_id = EU_european_parliament
+	cost = 10
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = eu_stability_var
+			value = 0.10
+			tooltip = stability_factor_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_stability_var
+				value = 0.04
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EU_schengen_area
+	icon = GFX_goal_generic_national_unity
+	prerequisite = { focus = EU_european_parliament }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_schengen_area }
+	}
+
+	x = -2
+	y = 1
+	relative_position_id = EU_european_parliament
+	cost = 10
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = eu_non_core_manpower_var
+			value = 0.05
+			tooltip = conscription_factor_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_non_core_manpower_var
+				value = 0.02
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EU_space_agency
+	icon = GFX_goal_generic_secret_weapon
+	prerequisite = { focus = EU_european_parliament }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_space_agency }
+	}
+
+	x = 2
+	y = 1
+	relative_position_id = EU_european_parliament
+	cost = 10
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = eu_research_speed_var
+			value = 0.05
+			tooltip = research_speed_factor_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_research_speed_var
+				value = 0.02
+			}
+		}
+	}
+}
+
+# --- DEFENSE BRANCH (Right) ---
+shared_focus = {
+	id = EU_defense_council
+	icon = GFX_focus_europe_union_power_of_nations
+	prerequisite = { focus = EU_council_of_europe }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_defense_council }
+	}
+
+	x = 5
+	y = 1
+	relative_position_id = EU_council_of_europe
+	cost = 10
+	completion_reward = {
+		army_experience = 10
+		add_to_variable = {
+			var = eu_war_support_var
+			value = 0.05
+			tooltip = war_support_factor_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_war_support_var
+				value = 0.02
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EU_integrated_army
+	icon = GFX_focus_europe_union_army
+	prerequisite = { focus = EU_defense_council }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_integrated_army }
+	}
+
+	x = -2
+	y = 1
+	relative_position_id = EU_defense_council
+	cost = 10
+	completion_reward = {
+		army_experience = 25
+		add_to_variable = {
+			var = eu_org_var
+			value = 0.05
+			tooltip = army_org_factor_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_org_var
+				value = 0.02
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EU_integrated_navy
+	icon = GFX_focus_europe_union_fleet
+	prerequisite = { focus = EU_defense_council }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_integrated_navy }
+	}
+
+	x = 0
+	y = 1
+	relative_position_id = EU_defense_council
+	cost = 10
+	completion_reward = {
+		navy_experience = 25
+		add_to_variable = {
+			var = eu_navy_org_var
+			value = 0.05
+			tooltip = navy_org_factor_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_navy_org_var
+				value = 0.02
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EU_integrated_airforce
+	icon = GFX_focus_europe_union_airforce
+	prerequisite = { focus = EU_defense_council }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_integrated_airforce }
+	}
+
+	x = 2
+	y = 1
+	relative_position_id = EU_defense_council
+	cost = 10
+	completion_reward = {
+		air_experience = 25
+		add_to_variable = {
+			var = eu_air_mission_efficiency_var
+			value = 0.05
+			tooltip = air_mission_efficiency_tt
+		}
+	
+		every_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_dynamic_modifier = { modifier = eu_european_community }
+			}
+			add_to_variable = {
+				var = eu_air_mission_efficiency_var
+				value = 0.02
+			}
+		}
+	}
+}
+
+# --- UNIFICATION ---
+shared_focus = {
+	id = EU_united_states_of_europe
+	icon = GFX_focus_europe_union
+	prerequisite = {
+		focus = EU_single_currency
+		focus = EU_nuclear_power
+		focus = EU_court_of_justice
+		focus = EU_integrated_army
+		focus = EU_integrated_navy
+		focus = EU_integrated_airforce
+	}
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_united_states_of_europe }
+	}
+
+	x = 0
+	y = 3
+	relative_position_id = EU_european_parliament
+	cost = 10
+	completion_reward = {
+		add_political_power = 200
+	}
+}
+
+shared_focus = {
+	id = EU_expand_the_union
+	icon = GFX_goal_continuous_reduce_training_time
+	prerequisite = { focus = EU_united_states_of_europe }
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_expand_the_union }
+	}
+
+	x = 0
+	y = 1
+	relative_position_id = EU_united_states_of_europe
+	cost = 10
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+# --- DUMMY FOCUSES TO PREVENT CRASHES ---
+shared_focus = {
+	id = EU_generic_entry
+	icon = GFX_goal_generic_national_unity
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_generic_entry }
+	}
+
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = { always = no }
+	completion_reward = {}
+}
+
+shared_focus = {
+	id = EU_economic_integration
+	icon = GFX_goal_generic_national_unity
+	bypass = {
+		any_allied_country = { has_completed_focus = EU_economic_integration }
+	}
+
+	x = 0
+	y = 0
+	cost = 10
+	allow_branch = { always = no }
+	completion_reward = {}
+}
+
+

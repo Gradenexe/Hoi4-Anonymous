@@ -1,0 +1,276 @@
+add_namespace = anon_news
+
+news_event = {
+	id = anon_news.1
+	title = anon_news.1.t
+	desc = anon_news.1.d
+	picture = GFX_news_event_ast_troops_landing
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anon_news.1.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = NZL
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = anon_news.1.b
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = anon_news.1.c
+		trigger = { TAG = NZL }
+	}
+	option = {
+		name = anon_news.1.e
+		trigger = { TAG = JAP }
+	}
+}
+
+news_event = {
+	id = anon_news.2
+	title = anon_news.2.t
+	desc = anon_news.2.desc
+	picture = GFX_news_event_ast_parliament_house
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anon_news.2.a
+		trigger = {
+			NOT = {
+				TAG = NZL
+				TAG = ENG
+				is_in_faction_with = ENG
+			}
+		}
+	}
+	option = {
+		name = anon_news.2.b
+		trigger = { TAG = NZL }
+	}
+
+	option = {
+		name = anon_news.2.c
+		trigger = { 
+			OR = {
+				TAG = ENG 
+				is_in_faction_with = ENG
+			}
+		}
+	}
+}
+
+news_event = {
+	id = anon_news.3
+	title = anon_news.3.t
+	desc = anon_news.3.d
+	picture = GFX_news_event_generic_usa_treaty
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anon_news.3.a
+		trigger = {
+			NOT = {
+				TAG = NZL
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = anon_news.3.b
+		trigger = { TAG = NZL }
+	}
+	option = {
+		name = anon_news.3.c
+		trigger = { TAG = USA }
+	}
+}
+
+# Australia found South-West Pacific Initiative \wo USA - AST_the_south_west_pacific_initiative focus
+news_event = {
+	id = anon_news.5
+	title = anon_news.5.t
+	desc = anon_news.5.d
+	picture = GFX_news_event_ast_parliament_house
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anon_news.5.a
+		trigger = {
+			NOT = {
+				TAG = AST
+			}
+		}
+	}
+	option = {
+		name = anon_news.5.b
+		trigger = { TAG = AST }
+	}
+}
+
+#Australia seeks distance from Commonwealth
+#Fired from AST_never_another_gallipoli focus
+news_event = {
+	id = anon_news.4
+	title = anon_news.4.t
+	desc = anon_news.4.d
+	picture = GFX_news_event_generic_rally
+
+	major = yes
+
+	is_triggered_only = yes
+
+	# Is in the same faction as ENG (presumably Allies)
+	option = {
+		name = anon_news.4.a
+		trigger = {
+			is_in_faction_with = ENG
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = NZL
+			}
+		}
+	}
+	# Is in a faction "competing" with ENG's
+	option = {
+		name = anon_news.4.b
+		trigger = {
+			is_in_faction = yes
+			NOT = {
+				is_in_faction_with = ENG
+			}
+		}
+	}
+	# Is ENG
+	option = {
+		name = anon_news.4.c
+		trigger = {
+			tag = ENG
+		}
+	}
+	# Is not ENG, is not in a faction.
+	option = {
+		name = anon_news.4.e
+		trigger = {
+			NOT = {
+				tag = ENG
+			}
+			is_in_faction = no
+		}
+	}
+	# Is NZL
+	option = {
+		name = anon_news.4.f
+		trigger = {
+			tag = NZL
+		}
+	}
+}
+
+# Australia protects Dutch colonies in SEA
+news_event = {
+	id = anon_news.6
+	title = anon_news.6.t
+	desc = anon_news.6.d
+	picture = GFX_news_event_ast_troops_landing
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anon_news.6.a
+		trigger = {
+			NOT = {
+				TAG = HOL
+				TAG = NZL
+			}
+		}
+	}
+	option = {
+		name = anon_news.6.b
+		trigger = { TAG = HOL }
+	}
+	option = {
+		name = anon_news.6.c
+		trigger = { TAG = NZL }
+	}
+}
+
+# Australia granted governship over Malaysia - AST_swpa_protector focu
+news_event = {
+	id = anon_news.7
+	title = anon_news.7.t
+	desc = anon_news.7.d
+	picture = GFX_news_event_ast_troops_landing
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anon_news.7.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = NZL
+			}
+		}
+	}
+	option = {
+		name = anon_news.7.b
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = anon_news.7.c
+		trigger = { TAG = NZL }
+	}
+}
+
+# Autralia founds faction with Japan - AST_a_deal_with_japan focus
+news_event = {
+	id = anon_news.8
+	title = anon_news.8.t
+	desc = anon_news.8.d
+	picture = GFX_news_event_japanese_army_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anon_news.8.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+				TAG = NZL
+			}
+		}
+	}
+	option = {
+		name = anon_news.8.b
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = anon_news.8.c
+		trigger = { TAG = NZL }
+	}
+}

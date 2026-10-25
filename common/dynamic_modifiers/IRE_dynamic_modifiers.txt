@@ -1,0 +1,68 @@
+#Economic Downturn
+IRE_economic_downturn_dynamic_modifier = {
+enable = { always = yes }
+	icon = GFX_idea_AngloIrishTradeWar 
+
+	remove_trigger = { 
+		AND = {
+			check_variable = {
+				var = IRE_economic_downturn_consumer_goods_factor
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = IRE_economic_downturn_industrial_capacity_factory
+				value = 0
+				compare = greater_than_or_equals
+			}	
+		}
+	}
+	
+	consumer_goods_factor = IRE_economic_downturn_consumer_goods_factor
+	industrial_capacity_factory = IRE_economic_downturn_industrial_capacity_factory
+
+}
+
+IRE_scars_of_The_Potato_Famine_dynamic_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_IRE_Potato_Famine
+
+	war_support_factor = IRE_scars_of_The_Potato_Famine_war_support_factor
+	production_speed_arms_factory_factor = IRE_scars_of_The_Potato_Famine_production_speed_arms_factory_factor
+	army_org_factor = IRE_scars_of_The_Potato_Famine_army_org_factor
+	conscription_factor = IRE_scars_of_The_Potato_Famine_conscription_factor
+}
+
+IRE_Autonomous_Dominion_dynamic_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_hol_caved_to_the_british
+
+	political_power_factor = IRE_Autonomous_Dominion_political_power_factor
+}
+
+IRE_army_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_IRE_ira_loyal
+
+	experience_gain_army_factor = IRE_experience_gain_army_factor
+	experience_loss_factor = IRE_experience_loss_factor
+	experience_gain_army = IRE_experience_gain_army
+	army_org_factor = IRE_army_org_factor
+	operative_slot = IRE_operative_slot
+	supply_combat_penalties_on_core_factor = IRE_supply_combat_penalties_on_core_factor
+	production_speed_supply_node_factor = IRE_production_speed_supply_node_factor
+	army_core_defence_factor = IRE_army_core_defence_factor
+	army_armor_defence_factor = IRE_army_armor_defence_factor
+	army_armor_attack_factor = IRE_army_armor_attack_factor
+	army_attack_speed_factor = IRE_army_attack_speed_factor
+	army_artillery_attack_factor = IRE_army_artillery_attack_factor
+	army_artillery_defence_factor = IRE_army_artillery_defence_factor
+	production_speed_anti_air_building_factor = IRE_production_speed_anti_air_building_factor
+	conscription_factor = IRE_conscription_factor
+	training_time_factor = IRE_training_time_factor
+	conscription = IRE_conscription
+	army_defence_factor = IRE_army_defence_factor
+	army_attack_factor = IRE_army_attack_factor
+	special_forces_cap = IRE_special_forces_cap
+}

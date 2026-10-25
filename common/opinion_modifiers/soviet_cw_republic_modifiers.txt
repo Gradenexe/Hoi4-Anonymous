@@ -1,0 +1,23 @@
+SCWR_recognition_modifier = {
+	value = 25
+	days = 365
+	trade = no
+}
+
+SCWR_ally_modifier = {
+	value = 30
+	days = 730
+	trade = no
+}
+
+SCWR_dedicated_ally_modifier = {
+	value = 50
+	days = 730
+	trade = no
+}
+
+SCWR_traitor_modifier = {
+	value = -100
+	days = 3650
+	trade = no
+}

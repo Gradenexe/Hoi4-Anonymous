@@ -1,0 +1,1252 @@
+﻿# Baltic Entente Shared Focus Tree
+
+joint_focus = {
+	id = BALTIC_entente_shared
+	icon = GFX_focus_SOV_baltic_security
+	relative_position_id = BALTIC_rejoin_the_railways    x = 0
+	y = 10    cost = 5
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	available = {
+		is_faction_leader = yes
+		OR = {
+			AND = {
+				tag = LIT
+				OR = {
+					is_in_faction_with = LAT
+					is_in_faction_with = EST
+				}
+			}
+			AND = {
+				tag = LAT
+				OR = {
+					is_in_faction_with = LIT
+					is_in_faction_with = EST
+				}
+			}
+			AND = {
+				tag = EST
+				OR = {
+					is_in_faction_with = LIT
+					is_in_faction_with = LAT
+				}
+			}
+		}
+		NOT = {
+			has_war_with = LIT
+			has_war_with = LAT
+			has_war_with = EST
+		}
+	}
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+		NOT = {
+			has_war_with = LIT
+			has_war_with = LAT
+			has_war_with = EST
+		}
+	}
+	complete_tooltip = {
+	}
+	completion_reward_joint_originator = {
+		add_stability = 0.10
+		add_political_power = 100
+		if = {
+			limit = {
+				NOT = { has_event_target = BALTIC_leader }
+			}
+			ROOT = { save_global_event_target_as = BALTIC_leader }
+		}
+		set_country_flag = baltic_entente_flag
+		set_variable = { BALTIC_trade_cost_for_target_factor = 0 }
+		set_variable = { BALTIC_production_speed_infrastructure_factor = 0 }
+		set_variable = { BALTIC_trade_opinion_factor = 0 }
+		set_variable = { BALTIC_cic_to_target_factor = 0 }
+		set_variable = { BALTIC_mic_to_target_factor = 0 }
+		set_variable = { BALTIC_production_speed_arms_factory_factor = 0 }
+		set_variable = { BALTIC_war_support_factor = 0 }
+		set_variable = { BALTIC_stability_factor = 0 }
+		set_variable = { BALTIC_experience_gain_army = 0 }
+		set_variable = { BALTIC_experience_gain_air = 0 }
+		set_variable = { BALTIC_experience_gain_navy = 0 }
+		set_variable = { BALTIC_country_resource_oil = 0 }
+		set_variable = { BALTIC_country_resource_chromium = 0 }
+		set_variable = { BALTIC_army_defence_against_major_factor = 0 }
+		set_variable = { BALTIC_army_defence_against_minor_factor = 0 }
+		set_variable = { BALTIC_conscription_factor = 0 }
+		set_variable = { BALTIC_intelligence_agency_defense = 0 }
+		set_variable = { BALTIC_production_factory_efficiency_gain_factor = 0 }
+		set_variable = { BALTIC_production_factory_max_efficiency_factor = 0 }
+		set_variable = { BALTIC_acclimatization_hot_climate_gain_factor = 0 }
+		set_variable = { BALTIC_heat_attrition_factor = 0 }
+		set_variable = { BALTIC_special_forces_cap = 0 }
+		set_variable = { BALTIC_local_resources_factor = 0 }
+		set_variable = { BALTIC_justify_war_goal_time = 0 }
+		set_variable = { BALTIC_opinion_gain_monthly = 0 }
+		set_variable = { BALTIC_annex_cost_factor = 0 }
+		set_variable = { BALTIC_political_power_factor = 0 }
+		set_variable = { BALTIC_agency_upgrade_time = 0 }
+		set_variable = { BALTIC_production_speed_buildings_factor = 0 }
+		set_variable = { BALTIC_production_speed_bunker_factor = 0 }
+		set_variable = { BALTIC_production_speed_coastal_bunker_factor = 0 }
+		set_variable = { BALTIC_army_org_factor = 0 }
+		set_variable = { BALTIC_army_core_attack_factor = 0 }
+		set_variable = { BALTIC_army_core_defence_factor = 0 }
+		set_variable = { BALTIC_army_non_core_attack_factor = 0 }
+		set_variable = { BALTIC_army_non_core_defence_factor = 0 }
+		set_variable = { BALTIC_consumer_goods_factor = 0 }
+		set_country_flag = BALTIC_leader
+		add_dynamic_modifier = { modifier = BALTIC_pact }
+				if = {
+			limit = {
+				NOT = { has_dynamic_modifier = { modifier = BALTIC_pact } }
+			}
+			add_to_variable = {
+				var = BALTIC_stability_factor
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+		}
+		else = {
+			hidden_effect = {
+				add_to_variable = {
+					var = BALTIC_stability_factor
+					value = 0.05
+					tooltip = stability_factor_tt
+				}
+			}
+		}
+				}
+	completion_reward_joint_member = {
+		add_stability = 0.05
+		add_political_power = 50
+		set_country_flag = baltic_entente_flag
+		set_variable = { BALTIC_trade_cost_for_target_factor = 0 }
+		set_variable = { BALTIC_production_speed_infrastructure_factor = 0 }
+		set_variable = { BALTIC_trade_opinion_factor = 0 }
+		set_variable = { BALTIC_cic_to_target_factor = 0 }
+		set_variable = { BALTIC_mic_to_target_factor = 0 }
+		set_variable = { BALTIC_production_speed_arms_factory_factor = 0 }
+		set_variable = { BALTIC_war_support_factor = 0 }
+		set_variable = { BALTIC_stability_factor = 0 }
+		set_variable = { BALTIC_experience_gain_army = 0 }
+		set_variable = { BALTIC_experience_gain_air = 0 }
+		set_variable = { BALTIC_experience_gain_navy = 0 }
+		set_variable = { BALTIC_country_resource_oil = 0 }
+		set_variable = { BALTIC_country_resource_chromium = 0 }
+		set_variable = { BALTIC_army_defence_against_major_factor = 0 }
+		set_variable = { BALTIC_army_defence_against_minor_factor = 0 }
+		set_variable = { BALTIC_conscription_factor = 0 }
+		set_variable = { BALTIC_intelligence_agency_defense = 0 }
+		set_variable = { BALTIC_production_factory_efficiency_gain_factor = 0 }
+		set_variable = { BALTIC_production_factory_max_efficiency_factor = 0 }
+		set_variable = { BALTIC_acclimatization_hot_climate_gain_factor = 0 }
+		set_variable = { BALTIC_heat_attrition_factor = 0 }
+		set_variable = { BALTIC_special_forces_cap = 0 }
+		set_variable = { BALTIC_local_resources_factor = 0 }
+		set_variable = { BALTIC_justify_war_goal_time = 0 }
+		set_variable = { BALTIC_opinion_gain_monthly = 0 }
+		set_variable = { BALTIC_annex_cost_factor = 0 }
+		set_variable = { BALTIC_political_power_factor = 0 }
+		set_variable = { BALTIC_agency_upgrade_time = 0 }
+		set_variable = { BALTIC_production_speed_buildings_factor = 0 }
+		set_variable = { BALTIC_production_speed_bunker_factor = 0 }
+		set_variable = { BALTIC_production_speed_coastal_bunker_factor = 0 }
+		set_variable = { BALTIC_army_org_factor = 0 }
+		set_variable = { BALTIC_army_core_attack_factor = 0 }
+		set_variable = { BALTIC_army_core_defence_factor = 0 }
+		set_variable = { BALTIC_army_non_core_attack_factor = 0 }
+		set_variable = { BALTIC_army_non_core_defence_factor = 0 }
+		set_variable = { BALTIC_consumer_goods_factor = 0 }
+		set_country_flag = BALTIC_member
+		add_dynamic_modifier = { modifier = BALTIC_pact }
+		add_to_variable = {
+				var = BALTIC_stability_factor
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+	}
+}
+
+joint_focus = {
+	id = BALTIC_railway_cooperation
+	icon = GFX_goal_LIT_LAT_EST_Rail_Baltic
+	prerequisite = { focus = BALTIC_entente_shared }
+	relative_position_id = BALTIC_entente_shared
+	x = -4
+	y = 1
+	cost = 5
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	bypass = { }
+	completion_reward_joint_originator = {
+		capital_scope = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		add_to_variable = {
+			var = BALTIC_production_speed_buildings_factor
+			value = 0.05
+			tooltip = production_speed_buildings_factor_tt
+		}
+	}
+	completion_reward_joint_member = {
+		capital_scope = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_to_variable = {
+			var = BALTIC_production_speed_buildings_factor
+			value = 0.05
+			tooltip = production_speed_buildings_factor_tt
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_industrial_expansion
+	icon = GFX_focus_generic_industry_1
+	prerequisite = { focus = BALTIC_railway_cooperation }
+	relative_position_id = BALTIC_railway_cooperation
+	x = 0
+	y = 1
+	cost = 5
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = { factor = 1 }
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	bypass = { }
+	completion_reward_joint_originator = {
+		capital_scope = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	completion_reward_joint_member = {
+		capital_scope = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_resource_development
+	icon = GFX_goal_LIT_LAT_EST_BALTIC_resource_development
+	prerequisite = { focus = BALTIC_entente_shared }
+	relative_position_id = BALTIC_entente_shared
+	x = 0
+	y = 1
+	cost = 5
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	bypass = { }
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = BALTIC_local_resources_factor
+			value = 0.10
+			tooltip = local_resources_factor_tt
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_estonian_oil
+	icon = GFX_goal_LIT_LAT_EST_EST_oil
+	prerequisite = { focus = BALTIC_resource_development }
+	prerequisite = { focus = BALTIC_railway_cooperation }
+	relative_position_id = BALTIC_resource_development
+	x = -2
+	y = 1
+	cost = 5
+	text_icon = EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	available = {
+		tag = EST
+	}
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+		ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	bypass = { }
+	# Estonia gets 10 oil (Tallinn/812), Latvia gets 5 (Riga/808), Lithuania gets 5 (Kaunas/11)
+	# Uses joint_originator so this runs ONCE total, not once per member
+	completion_reward_joint_originator = {
+		812 = { # Tallinn - Estonia
+			add_resource = {
+				type = oil
+				amount = 10
+			}
+		}
+		808 = { # Riga - Latvia
+			add_resource = {
+				type = oil
+				amount = 5
+			}
+		}
+		11 = { # Kaunas - Lithuania
+			add_resource = {
+				type = oil
+				amount = 5
+			}
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_latvian_steel
+	icon = GFX_goal_LIT_LAT_EST_LAT_steel
+	prerequisite = { focus = BALTIC_resource_development }
+	prerequisite = { focus = BALTIC_railway_cooperation }
+	relative_position_id = BALTIC_resource_development
+	x = 0
+	y = 1
+	cost = 5
+	text_icon = LAT
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	available = {
+		tag = LAT
+	}
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	originator_tag = LAT
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	bypass = { }
+	# Latvia gets 20 steel (Riga/808), Estonia gets 10 (Tallinn/812), Lithuania gets 10 (Kaunas/11)
+	# Uses joint_originator so this runs ONCE total, not once per member
+	completion_reward_joint_originator = {
+		808 = { # Riga - Latvia
+			add_resource = {
+				type = steel
+				amount = 20
+			}
+		}
+		812 = { # Tallinn - Estonia
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+		}
+		11 = { # Kaunas - Lithuania
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_lithuanian_aluminium
+	icon = GFX_goal_LIT_LAT_EST_LIT_alum
+	prerequisite = { focus = BALTIC_resource_development }
+	prerequisite = { focus = BALTIC_railway_cooperation }
+	relative_position_id = BALTIC_resource_development
+	x = 2
+	y = 1
+	cost = 5
+	text_icon = LIT
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	available = {
+		tag = LIT
+	}
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	originator_tag = LIT
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	bypass = { }
+	# Lithuania gets 10 aluminium (Kaunas/11), Latvia gets 5 (Riga/808), Estonia gets 5 (Tallinn/812)
+	# Uses joint_originator so this runs ONCE total, not once per member
+	completion_reward_joint_originator = {
+		11 = { # Kaunas - Lithuania
+			add_resource = {
+				type = aluminium
+				amount = 10
+			}
+		}
+		808 = { # Riga - Latvia
+			add_resource = {
+				type = aluminium
+				amount = 5
+			}
+		}
+		812 = { # Tallinn - Estonia
+			add_resource = {
+				type = aluminium
+				amount = 5
+			}
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_combined_resources
+	icon = GFX_focus_GER_autarky_achieved
+	prerequisite = { focus = BALTIC_estonian_oil }
+	prerequisite = { focus = BALTIC_latvian_steel }
+	prerequisite = { focus = BALTIC_lithuanian_aluminium }
+	relative_position_id = BALTIC_latvian_steel
+	x = 0
+	y = 1
+	cost = 10
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	bypass = { }
+	completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_to_variable = {
+			var = BALTIC_local_resources_factor
+			value = 0.05
+			tooltip = local_resources_factor_tt
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_defence_line
+	icon = GFX_goal_LIT_LAT_EST_defence_line
+	prerequisite = { focus = BALTIC_entente_shared }
+	relative_position_id = BALTIC_entente_shared
+	x = 7
+	y = 1
+	cost = 5
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_MILITARY_MIGHT }
+	bypass = { }
+	completion_reward = {
+		army_experience = 25
+		add_war_support = 0.05
+		add_tech_bonus = {
+			name = BALTIC_defence_bonus
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		add_to_variable = {
+			var = BALTIC_production_speed_bunker_factor
+			value = 0.10
+			tooltip = production_speed_bunker_factor_tt
+		}
+		add_to_variable = {
+			var = BALTIC_army_non_core_attack_factor
+			value = -0.35
+			tooltip = army_non_core_attack_factor_tt
+		}
+		add_to_variable = {
+			var = BALTIC_army_non_core_defence_factor
+			value = -0.35
+			tooltip = army_non_core_defence_factor_tt
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_military_industry
+	icon = GFX_focus_generic_military_industry
+	prerequisite = { focus = BALTIC_defence_line }
+	relative_position_id = BALTIC_defence_line
+	x = 3
+	y = 1
+	cost = 5
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = { factor = 1 }
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	bypass = { }
+	completion_reward_joint_originator = {
+		capital_scope = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	completion_reward_joint_member = {
+		capital_scope = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_air_cooperation
+	icon = GFX_focus_generic_air_defense
+	prerequisite = { focus = BALTIC_defence_line }
+	relative_position_id = BALTIC_defence_line
+	x = 5
+	y = 1
+	cost = 5
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = { factor = 1 }
+	search_filters = { FOCUS_FILTER_RESEARCH }
+	bypass = { }
+	completion_reward_joint_originator = {
+		air_experience = 25
+		add_tech_bonus = {
+			name = BALTIC_air_bonus
+			bonus = 0.5
+			uses = 1
+			category = air_doctrine
+		}
+		capital_scope = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	completion_reward_joint_member = {
+		air_experience = 15
+		add_tech_bonus = {
+			name = BALTIC_air_bonus
+			bonus = 0.5
+			uses = 1
+			category = air_doctrine
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_unified_army
+	icon = GFX_focus_generic_manpower
+	prerequisite = { focus = BALTIC_defence_line }
+	relative_position_id = BALTIC_defence_line
+	x = 0
+	y = 1
+	cost = 5
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	bypass = { }
+	completion_reward_joint_originator = {
+		army_experience = 50
+		add_manpower = 10000
+		add_to_variable = {
+			var = BALTIC_army_org_factor
+			value = 0.05
+			tooltip = army_org_factor_tt
+		}
+	}
+	completion_reward_joint_member = {
+		army_experience = 25
+		add_manpower = 5000
+		add_to_variable = {
+			var = BALTIC_army_org_factor
+			value = 0.05
+			tooltip = army_org_factor_tt
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_plan_east
+	icon = GFX_goal_LIT_LAT_EST_shield_against_east
+	prerequisite = { focus = BALTIC_unified_army }
+	prerequisite = { focus = BALTIC_military_industry }
+	relative_position_id = BALTIC_unified_army
+	x = 3
+	y = 1
+	cost = 5
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_MILITARY_MIGHT }
+	bypass = { }
+	completion_reward_joint_originator = {
+		add_tech_bonus = {
+			name = BALTIC_defence_bonus
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		every_owned_state = {
+			limit = {
+				is_owned_by = ROOT
+				any_neighbor_state = {
+					NOT = { is_owned_by = ROOT }
+					owner = {
+						NOT = { is_in_faction_with = ROOT }
+					}
+				}
+			}
+			add_building_construction = {
+				type = bunker
+				province = {
+					all_provinces = yes
+					limit_to_victory_point = yes
+				}
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_to_variable = {
+			var = BALTIC_production_speed_bunker_factor
+			value = 0.05
+			tooltip = production_speed_bunker_factor_tt
+		}
+	}
+		completion_reward_joint_member = {
+		add_tech_bonus = {
+			name = BALTIC_defence_bonus
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		add_to_variable = {
+			var = BALTIC_production_speed_bunker_factor
+			value = 0.05
+			tooltip = production_speed_bunker_factor_tt
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_fleet_cooperation
+	icon = GFX_goal_baltic_states_baltic_sea_fleet
+	prerequisite = { focus = BALTIC_defence_line }
+	relative_position_id = BALTIC_defence_line
+	x = -3
+	y = 1
+	cost = 5
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_NAVY }
+	bypass = { }
+	completion_reward_joint_originator = {
+		navy_experience = 25
+		add_tech_bonus = {
+			name = BALTIC_fleet_bonus
+			bonus = 0.5
+			uses = 1
+			category = naval_equipment
+		}
+	}
+	completion_reward_joint_member = {
+		navy_experience = 15
+	}}
+
+joint_focus = {
+	id = BALTIC_plan_west
+	icon = GFX_goal_LIT_LAT_EST_shield_against_west
+	prerequisite = { focus = BALTIC_unified_army }
+	prerequisite = { focus = BALTIC_fleet_cooperation}
+	relative_position_id = BALTIC_fleet_cooperation
+	x = 0
+	y = 1
+	cost = 5
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_MILITARY_MIGHT }
+	bypass = { }
+	completion_reward_joint_originator = {
+		every_owned_state = {        limit = {            is_coastal = yes        }        add_building_construction = {            type = coastal_bunker            province = {                all_provinces = yes                limit_to_coastal = yes            }            level = 1            instant_build = yes        }    }
+		add_tech_bonus = {
+			name = BALTIC_defence_bonus
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+						add_to_variable = {
+			var = BALTIC_production_speed_coastal_bunker_factor
+			value = 0.15
+			tooltip = production_speed_coastal_bunker_factor_tt
+		}
+	}
+		completion_reward_joint_member = {
+		every_owned_state = {        limit = {            is_coastal = yes        }        add_building_construction = {            type = coastal_bunker            province = {                all_provinces = yes                limit_to_coastal = yes            }            level = 1            instant_build = yes        }    }
+		add_tech_bonus = {
+			name = BALTIC_defence_bonus
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		add_to_variable = {
+			var = BALTIC_production_speed_coastal_bunker_factor
+			value = 0.15
+			tooltip = production_speed_coastal_bunker_factor_tt
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_homeland_defense
+	icon = GFX_goal_baltic_defend_homeland
+	prerequisite = { focus = BALTIC_plan_east }
+	prerequisite = { focus = BALTIC_plan_west }
+	relative_position_id = BALTIC_unified_army
+	x = 0
+	y = 2
+	cost = 10
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_MILITARY_MIGHT FOCUS_FILTER_MANPOWER }
+	bypass = { }
+	completion_reward_joint_originator = {
+		army_experience = 50
+		add_manpower = 25000
+		add_to_variable = {
+			var = BALTIC_army_core_attack_factor
+			value = 0.25
+			tooltip = army_core_attack_factor_tt
+		}
+		add_to_variable = {
+			var = BALTIC_army_core_defence_factor
+			value = 0.25
+			tooltip = army_core_defence_factor_tt
+		}
+	}
+		completion_reward_joint_member = {
+		army_experience = 25
+		add_manpower = 15000
+		add_to_variable = {
+			var = BALTIC_army_core_attack_factor
+			value = 0.25
+			tooltip = army_core_attack_factor_tt
+		}
+		add_to_variable = {
+			var = BALTIC_army_core_defence_factor
+			value = 0.25
+			tooltip = army_core_defence_factor_tt
+		}
+	}}
+
+joint_focus = {
+	id = BALTIC_university_exchange
+	icon = GFX_focus_research2
+	prerequisite = { focus = BALTIC_unified_army }
+	prerequisite = { focus = BALTIC_fleet_cooperation }
+	relative_position_id = BALTIC_unified_army
+	x = 0
+	y = 1
+	cost = 10
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH }
+	bypass = { }
+	completion_reward = {
+		add_tech_bonus = {
+			name = BALTIC_research_bonus
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
+		add_to_tech_sharing_group = BALTIC_tech_sharing_group
+	}}
+
+joint_focus = {
+	id = BALTIC_currency_union
+	icon = GFX_focus_generic_industry_investment
+	prerequisite = { focus = BALTIC_combined_resources }
+	prerequisite = { focus = BALTIC_university_exchange }
+	relative_position_id = BALTIC_entente_shared
+	x = 0
+	y = 5
+	cost = 14
+	text_icon = LIT_LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+	bypass = { }
+	completion_reward = {
+		add_stability = 0.10
+		add_political_power = 50
+		add_to_variable = {
+			var = BALTIC_consumer_goods_factor
+			value = -0.10
+			tooltip = consumer_goods_factor_tt
+		}
+		add_to_variable = {
+			var = BALTIC_production_speed_buildings_factor
+			value = 0.05
+			tooltip = production_speed_buildings_factor_tt
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = LIT
+					tag = LAT
+					tag = EST
+				}
+				NOT = { tag = ROOT }
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_increase
+			}
+		}
+	}
+joint_focus = {
+	id = BALTIC_lit_lat_military_cooperation
+	icon = GFX_focus_generic_military_mission
+	prerequisite = { focus = BALTIC_unified_army }
+	relative_position_id = BALTIC_unified_army
+	x = -2
+	y = 1
+	cost = 5
+	text_icon = LIT_LAT
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	available = {
+		LIT = { is_in_faction_with = LAT }
+	}
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = { factor = 1 }
+	search_filters = { FOCUS_FILTER_MILITARY_MIGHT }
+	bypass = { }
+	completion_reward_joint_originator = {
+		LIT = {
+			army_experience = 25
+			add_command_power = 10
+			capital_scope = {
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+		LAT = {
+			army_experience = 25
+			add_command_power = 10
+			capital_scope = {
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+	}
+	completion_reward_joint_member = {}
+}
+
+joint_focus = {
+	id = BALTIC_lat_est_civilian_cooperation
+	icon = GFX_focus_generic_industry_2
+	prerequisite = { focus = BALTIC_industrial_expansion }
+	relative_position_id = BALTIC_industrial_expansion
+	x = 2
+	y = 1
+	cost = 5
+	text_icon = LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	available = {
+		LAT = { is_in_faction_with = EST }
+	}
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = { factor = 1 }
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	bypass = { }
+	completion_reward_joint_originator = {
+		LAT = {
+			add_to_variable = { var = BALTIC_production_speed_buildings_factor value = 0.05 }
+			capital_scope = {
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+		EST = {
+			add_to_variable = { var = BALTIC_production_speed_buildings_factor value = 0.05 }
+			capital_scope = {
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	completion_reward_joint_member = {}
+}
+
+joint_focus = {
+	id = BALTIC_lit_est_naval_cooperation
+	icon = GFX_focus_generic_navy_battleship_2
+	prerequisite = { focus = BALTIC_plan_west }
+	relative_position_id = BALTIC_plan_west
+	x = 2
+	y = 3
+	cost = 5
+	text_icon = LIT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	available = {
+		LIT = { is_in_faction_with = EST }
+	}
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = { factor = 1 }
+	search_filters = { FOCUS_FILTER_NAVAL }
+	bypass = { }
+	completion_reward_joint_originator = {
+		LIT = {
+			navy_experience = 25
+			capital_scope = {
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
+		}
+		EST = {
+			navy_experience = 25
+			capital_scope = {
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
+		}
+	}
+	completion_reward_joint_member = {}
+}
+
+}
+
+joint_focus = {
+	id = BALTIC_lit_lat_military_cooperation
+	icon = GFX_focus_generic_military_mission
+	prerequisite = { focus = BALTIC_plan_east }
+	relative_position_id = BALTIC_plan_east
+	x = 0
+	y = 1
+	cost = 5
+	text_icon = LIT_LAT
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	available = {
+		OR = {
+		original_tag = LIT
+		original_tag = LAT
+		}
+		LIT = { is_in_faction_with = LAT }
+	}
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = { factor = 1 }
+	search_filters = { FOCUS_FILTER_MILITARY_MIGHT }
+	bypass = { }
+	completion_reward_joint_originator = {
+		LIT = {
+			army_experience = 25
+			add_command_power = 10
+			capital_scope = {
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+		LAT = {
+			army_experience = 25
+			add_command_power = 10
+			capital_scope = {
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+	}
+	completion_reward_joint_member = {}
+}
+
+joint_focus = {
+	id = BALTIC_lat_est_civilian_cooperation
+	icon = GFX_focus_generic_industry_2
+	prerequisite = { focus = BALTIC_industrial_expansion }
+	relative_position_id = BALTIC_industrial_expansion
+	x = 0
+	y = 1
+	cost = 5
+	text_icon = LAT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	available = {
+		OR = {
+		original_tag = LAT
+		original_tag = EST
+		}
+		LAT = { is_in_faction_with = EST }
+		
+	}
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = { factor = 1 }
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	bypass = { }
+	completion_reward_joint_originator = {
+		LAT = {
+			add_to_variable = { var = BALTIC_production_speed_buildings_factor value = 0.05 }
+			capital_scope = {
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+		EST = {
+			add_to_variable = { var = BALTIC_production_speed_buildings_factor value = 0.05 }
+			capital_scope = {
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	completion_reward_joint_member = {}
+}
+
+joint_focus = {
+	id = BALTIC_lit_est_naval_cooperation
+	icon = GFX_focus_generic_naval_discipline
+	prerequisite = { focus = BALTIC_plan_west }
+	relative_position_id = BALTIC_plan_west
+	x = 0
+	y = 1
+	cost = 5
+	text_icon = LIT_EST
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	available = {
+		OR = {
+		original_tag = LIT
+		original_tag = EST
+		}
+		LIT = { is_in_faction_with = EST }
+	}
+	joint_trigger = {
+		OR = {
+			is_in_faction_with = LIT
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
+		}
+	}
+	ai_will_do = { factor = 1 }
+	search_filters = { FOCUS_FILTER_NAVAL }
+	bypass = { }
+	completion_reward_joint_originator = {
+    LIT = {
+    navy_experience = 25
+    189 = {
+        add_building_construction = { type = dockyard level = 1 instant_build = yes }
+    }
+}	
+    EST = {
+        navy_experience = 25
+        capital_scope = {
+            add_building_construction = { type = dockyard level = 1 instant_build = yes }
+        }
+    }
+}
+	completion_reward_joint_member = {}
+}
+

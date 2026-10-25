@@ -1,0 +1,16 @@
+﻿l_german:
+
+
+#IRE
+ IRE_free_state_democratic:0 "Irish Free State"
+ IRE_free_state_democratic_DEF:0 "the Irish Free State"
+ IRE_Ireland_democratic:0 "Ireland"
+ IRE_Ireland_democratic_DEF:0 "The Republic of Ireland"
+
+ IRE_Celtic_Union: "The Celtic Union"
+ IRE_Celtic_Union_ADJ: "Celtic"
+ IRE_Celtic_Union_DEF: "The Celtic Union"
+ 
+ IRE_HolyOrder: "The Holy Order of St. Patrick"
+ IRE_HolyOrder_ADJ: "Paddy"
+ IRE_HolyOrder_DEF: "The Holy Order of St. Patrick"

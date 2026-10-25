@@ -1,0 +1,32 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = { has_game_rule = { rule = rt56rp_gr_vanillarestrict_vol option = rt56rp_gr_vanillarestrict_vol_enable_n } }
+				every_possible_country = { set_rule = { can_send_volunteers = yes } }
+			}
+			else_if = {
+				limit = { has_game_rule = { rule = rt56rp_gr_vanillarestrict_vol option = rt56rp_gr_vanillarestrict_vol_enable_ai } }
+				every_possible_country = { limit = { is_ai = no } set_rule = { can_send_volunteers = yes } }
+			}
+			
+			if = {
+				limit = { has_game_rule = { rule = rt56rp_gr_vanillarestrict_facc option = rt56rp_gr_vanillarestrict_facc_enable_n } }
+				every_possible_country = { set_rule = { can_create_factions = yes } }
+			}
+			else_if = {
+				limit = { has_game_rule = { rule = rt56rp_gr_vanillarestrict_facc option = rt56rp_gr_vanillarestrict_facc_enable_ai } }
+				every_possible_country = { limit = { is_ai = no } set_rule = { can_create_factions = yes } }
+			}
+			
+			if = {
+				limit = { has_game_rule = { rule = rt56rp_gr_vanillarestrict_facj option = rt56rp_gr_vanillarestrict_facj_enable_n } }
+				every_possible_country = { add_ideas = rt56rp_unrestricted_join_faction_idea }
+			}
+			else_if = {
+				limit = { has_game_rule = { rule = rt56rp_gr_vanillarestrict_facj option = rt56rp_gr_vanillarestrict_facj_enable_ai } }
+				every_possible_country = { limit = { is_ai = no } add_ideas = rt56rp_unrestricted_join_faction_idea }
+			}
+		}
+	}
+}

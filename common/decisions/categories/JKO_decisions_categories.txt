@@ -1,0 +1,10 @@
+JKO_huangminhua_yundong_decisions = {
+	icon = GFX_decision_jap_pacific_guardian
+	picture = GFX_decision_JKO_huangminhua_yundong
+	priority = 111
+	allowed = {
+		original_tag = JKO
+	}
+	visible = {
+	}
+}

@@ -1,0 +1,557 @@
+spriteTypes = {	
+	spriteType = {
+			name = GFX_portrait_phibun
+			texturefile = gfx/interface/portraits/portrait_phibun.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_boworadet
+			texturefile = gfx/interface/portraits/portrait_Prince_Boworadet.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_rama
+			texturefile = gfx/interface/portraits/portrait_rama.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_rama_vii
+			texturefile = gfx/interface/ideas/idea_rama.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_phraya
+			texturefile = gfx/interface/ideas/ideas_phraya.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_pridi
+			texturefile = gfx/interface/portraits/portrait_Pridi_Banomyong.png
+		}
+
+	spriteType = {
+			name = GFX_portrait_paribatra
+			texturefile = gfx/interface/portraits/advisors/advisor_paribatra.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_narisara
+			texturefile = gfx/interface/portraits/advisors/advisor_narisara.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_damrong
+			texturefile = gfx/interface/portraits/advisors/advisor_damrong.png
+		}
+		
+	spriteType = {
+			name = GFX_ideas_bangkok
+			texturefile = gfx/interface/mios/mio_bangkok.png
+		}
+		
+		# Ideas
+		
+	spriteType = {
+			name = GFX_idea_pad_thai
+			texturefile = gfx/interface/ideas/idea_pad_thai.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_military_in_power
+			texturefile = gfx/interface/ideas/ideas_military_in_power.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_empowered_civilians
+			texturefile = gfx/interface/ideas/ideas_empowered_civilians.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_civilian_opposition
+			texturefile = gfx/interface/ideas/ideas_civilian_opposition.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_military_opposition
+			texturefile = gfx/interface/ideas/ideas_military_opposition.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_peoples_assembly
+			texturefile = gfx/interface/ideas/ideas_peoples_assembly.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_yellow_dossier
+			texturefile = gfx/interface/ideas/ideas_yellow_dossier.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_yellow_dossier_expanded
+			texturefile = gfx/interface/ideas/ideas_yellow_dossier_expanded.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_thammasat
+			texturefile = gfx/interface/ideas/ideas_thammasat.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_chakri
+			texturefile = gfx/interface/ideas/ideas_chakri.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_legacy_ayu
+			texturefile = gfx/interface/ideas/idea_legacy_ayu.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_revenge_burma
+			texturefile = gfx/interface/ideas/idea_revenge_burma.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_march_rome
+			texturefile = gfx/interface/ideas/idea_march_on_rome.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_stalinism
+			texturefile = gfx/interface/ideas/ideas_stalinism.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_supreme_council
+			texturefile = gfx/interface/ideas/idea_supreme_council.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_great_thai
+			texturefile = gfx/interface/ideas/idea_great_thai.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_marines
+			texturefile = gfx/interface/ideas/idea_marines.png
+		}	
+	
+	spriteType = {
+			name = GFX_idea_puppeted_monarchy
+			texturefile = gfx/interface/ideas/idea_puppeted_monarchy.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_volunteers_china
+			texturefile = gfx/interface/ideas/idea_volunteers_china.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_protect_asia
+			texturefile = gfx/interface/ideas/idea_protect_asia.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_peoples_dictator
+			texturefile = gfx/interface/ideas/idea_peoples_dictator.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_rural_subsidies
+			texturefile = gfx/interface/ideas/idea_rural_subsidies.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_economic_council
+			texturefile = gfx/interface/ideas/idea_economic_council.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_state_welfare
+			texturefile = gfx/interface/ideas/idea_state_welfare.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_redistribute_land
+			texturefile = gfx/interface/ideas/idea_redistribute_land.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_surpeme_ecnomics
+			texturefile = gfx/interface/ideas/idea_supreme_council_economics.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_surpeme_science
+			texturefile = gfx/interface/ideas/idea_supreme_council_science.png
+		}
+		
+		# 6
+		
+	spriteType = {
+			name = GFX_idea_supreme_power
+			texturefile = gfx/interface/ideas/idea_supreme_thai.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_national_security
+			texturefile = gfx/interface/ideas/idea_security.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_economic_welfare
+			texturefile = gfx/interface/ideas/idea_economic.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_equality
+			texturefile = gfx/interface/ideas/idea_equality.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_rights_and_liberties
+			texturefile = gfx/interface/ideas/idea_rights_liberties.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_public_education
+			texturefile = gfx/interface/ideas/idea_education.png
+		}
+		
+	spriteType = {
+			name = GFX_idea_six_principles
+			texturefile = gfx/interface/ideas/idea_six.png
+		}
+		
+		# Focus
+		
+	spriteType = {
+			name = GFX_focus_peoples_assembly
+			texturefile = gfx/interface/focus/focus_peoples_assembly.png
+		}
+	spriteType = {
+			name = GFX_focus_peoples_assembly_shine
+			texturefile = gfx/interface/focus/focus_peoples_assembly.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_thammasat
+			texturefile = gfx/interface/focus/focus_thammasat.png
+		}	
+	spriteType = {
+			name = GFX_focus_thammasat_shine
+			texturefile = gfx/interface/focus/focus_thammasat.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_military_factionalism
+			texturefile = gfx/interface/focus/focus_military_factionalism.png
+		}	
+	spriteType = {
+			name = GFX_focus_military_factionalism_shine
+			texturefile = gfx/interface/focus/focus_military_factionalism.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_ayutthaya
+			texturefile = gfx/interface/focus/focus_ayu.png
+		}
+	spriteType = {
+			name = GFX_focus_ayutthaya_shine
+			texturefile = gfx/interface/focus/focus_ayu.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_referendum
+			texturefile = gfx/interface/focus/focus_referendum.png
+		}
+	spriteType = {
+			name = GFX_focus_referendum_shine
+			texturefile = gfx/interface/focus/focus_referendum.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_great_thai
+			texturefile = gfx/interface/focus/focus_great_thai.png
+		}
+	spriteType = {
+			name = GFX_focus_great_thai_shine
+			texturefile = gfx/interface/focus/focus_great_thai.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_equality
+			texturefile = gfx/interface/focus/focus_equality.png
+		}
+	spriteType = {
+			name = GFX_focus_equality_shine
+			texturefile = gfx/interface/focus/focus_equality.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_rights_liberties
+			texturefile = gfx/interface/focus/focus_rights_liberties.png
+		}
+	spriteType = {
+			name = GFX_focus_rights_liberties_shine
+			texturefile = gfx/interface/focus/focus_rights_liberties.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_security
+			texturefile = gfx/interface/focus/focus_security.png
+		}
+	spriteType = {
+			name = GFX_focus_security_shine
+			texturefile = gfx/interface/focus/focus_security.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_supreme_thai
+			texturefile = gfx/interface/focus/focus_supreme_thai.png
+		}
+	spriteType = {
+			name = GFX_focus_supreme_thai_shine
+			texturefile = gfx/interface/focus/focus_supreme_thai.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_six
+			texturefile = gfx/interface/focus/focus_six.png
+		}
+	spriteType = {
+			name = GFX_focus_six_shine
+			texturefile = gfx/interface/focus/focus_six.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_economic
+			texturefile = gfx/interface/focus/focus_economic.png
+		}
+	spriteType = {
+			name = GFX_focus_economic_shine
+			texturefile = gfx/interface/focus/focus_economic.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_education
+			texturefile = gfx/interface/focus/focus_education.png
+		}
+	spriteType = {
+			name = GFX_focus_education_shine
+			texturefile = gfx/interface/focus/focus_education.png
+		}
+		
+		
+	spriteType = {
+			name = GFX_focus_two_italies
+			texturefile = gfx/interface/focus/focus_ally_italy.png
+		}
+	spriteType = {
+			name = GFX_focus_two_italies_shine
+			texturefile = gfx/interface/focus/focus_ally_italy.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_protect_asia
+			texturefile = gfx/interface/focus/focus_protect_asia.png
+		}
+	spriteType = {
+			name = GFX_focus_protect_asia_shine
+			texturefile = gfx/interface/focus/focus_protect_asia.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_under_one_pridi
+			texturefile = gfx/interface/focus/focus_under_one_pridi.png
+		}
+	spriteType = {
+			name = GFX_focus_under_one_pridi_shine
+			texturefile = gfx/interface/focus/focus_under_one_pridi.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_boworadet
+			texturefile = gfx/interface/focus/focus_boworadet.png
+		}
+	spriteType = {
+			name = GFX_focus_boworadet_shine
+			texturefile = gfx/interface/focus/focus_boworadet.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_supreme_council
+			texturefile = gfx/interface/focus/focus_supreme_council.png
+		}
+	spriteType = {
+			name = GFX_focus_supreme_council_shine
+			texturefile = gfx/interface/focus/focus_supreme_council.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_return_rama
+			texturefile = gfx/interface/focus/focus_return_rama.png
+		}
+	spriteType = {
+			name = GFX_focus_return_rama_shine
+			texturefile = gfx/interface/focus/focus_return_rama.png
+		}
+		
+		
+	# Event
+	
+	spriteType = {
+			name = GFX_event_boworadet
+			texturefile = gfx/interface/events/event_boworadet_rebellion.png
+		}
+		
+		
+	spriteType = {
+			name = GFX_event_bangkok_floods
+			texturefile = gfx/interface/events/event_bangkok_floods.png
+		}
+		
+		# Cultural Mandates
+		
+	spriteType = {
+			name = GFX_event_cultural_mandate_1
+			texturefile = gfx/interface/events/event_thai_mandate_1.png
+		}
+	spriteType = {
+			name = GFX_event_cultural_mandate_2
+			texturefile = gfx/interface/events/event_thai_mandate_2.png
+		}
+	spriteType = {
+			name = GFX_event_cultural_mandate_5
+			texturefile = gfx/interface/events/event_thai_mandate_5.png
+		}
+	spriteType = {
+			name = GFX_event_cultural_mandate_10
+			texturefile = gfx/interface/events/event_thai_mandate_10.png
+		}
+		
+	spriteType = {
+			name = GFX_event_bangkok_bombing
+			texturefile = gfx/interface/events/event_bangkok_bombing.png
+		}
+		
+	spriteType = {
+			name = GFX_event_burma_railway
+			texturefile = gfx/interface/events/event_burma_railway.png
+		}
+		
+		
+	# New Advisors
+	
+	spriteType = {
+			name = GFX_portrait_khuang
+			texturefile = gfx/interface/portraits/advisors/advsior_khuang.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_whichit
+			texturefile = gfx/interface/portraits/advisors/advsior_wichit.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_tua
+			texturefile = gfx/interface/portraits/advisors/advsior_tua.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_charun
+			texturefile = gfx/interface/portraits/advisors/advsior_charun.png
+		}
+		
+	# Theorists
+	
+	spriteType = {
+			name = GFX_portrait_phibun_small
+			texturefile = gfx/interface/portraits/advisors/advisor_phibun.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_bowaradet_small
+			texturefile = gfx/interface/portraits/advisors/advisor_boworadet.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_chalermkiat
+			texturefile = gfx/interface/portraits/advisors/advisor_chalermkiat.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_phahon_small
+			texturefile = gfx/interface/portraits/advisors/advisor_phahon.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_krawin
+			texturefile = gfx/interface/portraits/advisors/advisor_krawin.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_sindhu
+			texturefile = gfx/interface/portraits/advisors/advisor_sindhu.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_munee
+			texturefile = gfx/interface/portraits/advisors/advisor_munee.png
+		}
+		
+		
+	# Generals / Admirals / Military Staff Courtesy of KrasnaMerah
+	
+	spriteType = {
+			name = GFX_portrait_mangkorn_small
+			texturefile = gfx/interface/portraits/advisors/advisor_mangkorn.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_thamrong_small
+			texturefile = gfx/interface/portraits/advisors/advisor_thamrong.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_kamalanavin_small
+			texturefile = gfx/interface/portraits/advisors/advisor_sindhu_kamalanavin.png
+		}
+	
+	spriteType = {
+			name = GFX_portrait_mangkorn
+			texturefile = gfx/interface/portraits/portrait_mangkorn_phromyothi.png
+		}
+	
+	spriteType = {
+			name = GFX_portrait_thamrong
+			texturefile = gfx/interface/portraits/portrait_thamrong_nawasawat.png
+		}
+		
+	spriteType = {
+			name = GFX_portrait_kamalanavin
+			texturefile = gfx/interface/portraits/portrait_sindhu_kamalanavin.png
+		}
+		
+	# MIOS
+	
+	spriteType = {
+			name = GFX_idea_bangkok
+			texturefile = gfx/interface/ideas/idea_bangkok.png
+		}
+		
+	# Ideology
+	
+	spriteType = {
+        name = GFX_ideology_social_democracy
+        texturefile = gfx/interface/ideologies/ideology_social_democracy.png
+    }
+	
+	# Intelligence
+	
+	spriteType = {
+        name = GFX_intelligence_agency_logo_SIA_nia
+        texturefile = gfx/interface/operatives/agencies/agency_logo_nia.png
+		noOfFrames = 2
+    }
+}

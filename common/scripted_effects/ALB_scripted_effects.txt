@@ -1,0 +1,269 @@
+ALB_update_national_unity = {
+	########################
+	### Prevent overflow ###
+	########################
+	if = {
+		limit = {
+			check_variable = { ALB_government_authority_var > 100 } 
+		}
+		set_variable = {
+			ALB_government_authority_var = 100
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { ALB_government_authority_var < 0 } 
+		}
+		set_variable = {
+			ALB_government_authority_var = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { ALB_westernization_var > 100 } 
+		}
+		set_variable = {
+			ALB_westernization_var = 100
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { ALB_westernization_var < 0 } 
+		}
+		set_variable = {
+			ALB_westernization_var = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { ALB_religious_unity_var > 100 } 
+		}
+		set_variable = {
+			ALB_religious_unity_var = 100
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { ALB_religious_unity_var < 0 } 
+		}
+		set_variable = {
+			ALB_religious_unity_var = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { ALB_italian_influence_var > 100 } 
+		}
+		set_variable = {
+			ALB_italian_influence_var = 100
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { ALB_italian_influence_var < 0 } 
+		}
+		set_variable = {
+			ALB_italian_influence_var = 0
+		}
+	}
+	############################
+	### Government Authority ###
+	############################
+	#Stability
+	set_variable = {
+		ALB_national_unity_stability_factor = ALB_government_authority_var
+	}
+	divide_variable = {
+		ALB_national_unity_stability_factor = 100
+	}
+	multiply_variable = {
+		ALB_national_unity_stability_factor = 30
+	}
+	round_variable = ALB_national_unity_stability_factor
+	subtract_from_variable = {
+		ALB_national_unity_stability_factor = 15
+	}
+	divide_variable = {
+		ALB_national_unity_stability_factor = 100
+	}
+	#Drift
+	set_variable = {
+		ALB_national_unity_drift_defence_factor = ALB_government_authority_var
+	}
+	round_variable = ALB_national_unity_drift_defence_factor
+	subtract_from_variable = {
+		ALB_national_unity_drift_defence_factor = 50
+	}
+	divide_variable = {
+		ALB_national_unity_drift_defence_factor = 100
+	}
+	######################
+	### Westernization ###
+	######################
+	set_variable = {
+		ALB_national_unity_westernization = ALB_westernization_var
+	}
+	divide_variable = {
+		ALB_national_unity_westernization = 100
+	}
+	multiply_variable = {
+		ALB_national_unity_westernization = 30
+	}
+	round_variable = ALB_national_unity_westernization
+	subtract_from_variable = {
+		ALB_national_unity_westernization = 15
+	}
+	divide_variable = {
+		ALB_national_unity_westernization = 100
+	}
+	########################
+	### Regligious Unity ###
+	########################
+	# Non-Core Manpower
+	set_variable = {
+		ALB_national_unity_non_core_manpower = ALB_religious_unity_var
+	}
+	divide_variable = {
+		ALB_national_unity_non_core_manpower = 100
+	}
+	multiply_variable = {
+		ALB_national_unity_non_core_manpower = 10
+	}
+	#round_variable = ALB_national_unity_non_core_manpower
+	subtract_from_variable = {
+		ALB_national_unity_non_core_manpower = 5
+	}
+	divide_variable = {
+		ALB_national_unity_non_core_manpower = 100
+	}
+	# Monthly Population
+	set_variable = {
+		ALB_national_unity_monthly_population = ALB_religious_unity_var
+	}
+	divide_variable = {
+		ALB_national_unity_monthly_population = 100
+	}
+	multiply_variable = {
+		ALB_national_unity_monthly_population = 30
+	}
+	round_variable = ALB_national_unity_monthly_population
+	subtract_from_variable = {
+		ALB_national_unity_monthly_population = 15
+	}
+	divide_variable = {
+		ALB_national_unity_monthly_population = 100
+	}
+	#########################
+	### Italian Influence ###
+	#########################
+	# Experience
+	if = {
+		limit = { NOT = { has_country_flag = ALB_national_unity_italian_influence_disabled } }
+		if = {
+			limit = {
+				NOT = { has_country_flag = ALB_national_unity_experience_bypass }
+			}
+			set_variable = {
+				ALB_national_unity_italian_influence = ALB_italian_influence_var
+			}
+			divide_variable = {
+				ALB_national_unity_italian_influence = 100
+			}
+			multiply_variable = {
+				ALB_national_unity_italian_influence = 30
+			}
+			round_variable = ALB_national_unity_italian_influence
+			subtract_from_variable = {
+				ALB_national_unity_italian_influence = 15
+			}
+			divide_variable = {
+				ALB_national_unity_italian_influence = 100
+			}
+			multiply_variable = {
+				ALB_national_unity_italian_influence = -1
+			}
+		}
+		else = {
+			set_variable = {
+				ALB_national_unity_italian_influence = 0
+			}
+		}
+		#Fascism
+		if = {
+			limit = { NOT = { has_country_flag = ALB_national_unity_fascism_drift_bypass } }
+			set_variable = {
+				ALB_national_unity_fascism_drift = ALB_italian_influence_var
+			}
+			divide_variable = {
+				ALB_national_unity_fascism_drift = 100
+			}
+			multiply_variable = {
+				ALB_national_unity_fascism_drift = 20
+			}
+			round_variable = ALB_national_unity_fascism_drift
+			divide_variable = {
+				ALB_national_unity_fascism_drift = 100
+			}
+		}
+		else = {
+			set_variable = {
+				ALB_national_unity_fascism_drift = 0
+			}
+		}
+	}
+	else = {
+		set_variable = {
+			ALB_national_unity_italian_influence = 0
+		}
+		set_variable = {
+			ALB_national_unity_fascism_drift = 0
+		}
+	}
+	######################
+	### National Unity ###
+	######################
+	###
+	set_variable = {
+		ALB_national_unity_var = ALB_government_authority_var
+	}
+	add_to_variable = {
+		ALB_national_unity_var = ALB_westernization_var
+	}
+	add_to_variable = {
+		ALB_national_unity_var = ALB_religious_unity_var
+	}
+	subtract_from_variable = {
+		ALB_national_unity_var = ALB_italian_influence_var
+	}
+	round_variable = ALB_national_unity_var
+	if = {
+		limit = { NOT = { has_country_flag = ALB_national_unity_italian_influence_disabled } }
+		divide_variable = {
+			ALB_national_unity_var = 2
+		}
+	}
+	### Prevent overflow
+	if = {
+		limit = { check_variable = { ALB_national_unity_var > 100 } }
+		set_variable = {
+			ALB_national_unity_var = 100
+		}
+	}
+	if = {
+		limit = { check_variable = { ALB_national_unity_var < 0 } }
+		set_variable = {
+			ALB_national_unity_var = 0
+		}
+	}
+	#Political Power Gain
+	set_variable = {
+		ALB_national_unity_political_power_gain = ALB_national_unity_var
+	}
+	round_variable = ALB_national_unity_political_power_gain
+	subtract_from_variable = {
+		ALB_national_unity_political_power_gain = 50
+	}
+	divide_variable = {
+		ALB_national_unity_political_power_gain = 100
+	}
+}

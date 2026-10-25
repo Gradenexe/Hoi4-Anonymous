@@ -1,0 +1,1502 @@
+joint_focus = {
+    id = LUSOPHONE_commonwealth_capital
+
+    dynamic = yes
+
+    icon = GFX_focus_generic_improve_the_administration
+
+    allow_branch = {
+        has_dlc = "Arms Against Tyranny"
+    }
+
+    x = 0
+    y = 0
+
+    #GENERIC 
+    offset = {
+        x = 32
+        y = 0
+        trigger = {
+            has_focus_tree = lusophone_commonwealth_releasable
+        }
+    }
+
+    #BRAZIL
+    offset = {
+        x = 62
+        y = 0
+        trigger = {
+            has_focus_tree = brazil_tree
+        }
+    }
+
+    offset = {
+        x = -15
+        y = 0
+        trigger = {
+            has_focus_tree = brazil_tree
+            has_game_rule = {
+                rule = obsolete_focus_branches_visibility
+                option = HIDE
+            }
+            has_completed_focus = BRA_end_the_state_of_emergency
+        }
+    }
+
+    offset = {
+        x = -30
+        y = 0
+        trigger = {
+            has_focus_tree = brazil_tree
+            has_game_rule = {
+                rule = obsolete_focus_branches_visibility
+                option = HIDE
+            }
+            has_completed_focus = BRA_prepare_for_second_intentona
+        }
+    }
+
+    #PORTUGAL
+    offset = {
+        x = 85
+        y = 0
+        trigger = {
+            has_focus_tree = portuguese_focus
+        }
+    }
+
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    available = {
+        has_idea = BRA_commonwealth_idea
+        
+        OR = {
+            tag = POR
+            tag = BRA
+        }
+    }
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 0
+            is_historical_focus_on = yes
+        }
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL }
+
+    completion_reward_joint_originator = {
+        capital_scope = {
+            add_dynamic_modifier = { modifier = lusophone_commonwealth_capital }
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_high_command
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_commonwealth_capital }
+
+    icon = GFX_focus_generic_military_academy
+    x = -5
+    y = 1
+
+    relative_position_id = LUSOPHONE_commonwealth_capital
+    cost = 10
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        army_experience = 25
+        air_experience = 25
+        navy_experience = 25
+    }
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_high_command
+        every_army_leader = {
+            add_planning = 1
+        }
+        every_navy_leader = {
+            add_coordination = 1
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_air_cooperation
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_high_command }
+
+    icon = GFX_goal_generic_air_fighter2
+    x = -2
+    y = 1
+
+    relative_position_id = LUSOPHONE_high_command
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        air_experience = 25
+    }
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_air_cooperation
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_air_exercises
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_air_cooperation }
+
+    icon = GFX_focus_SOV_flying_clubs
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_air_cooperation
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        add_doctrine_cost_reduction = {
+            name = LUSOPHONE_air_exercises
+            cost_reduction = 0.2
+            uses = 2
+            category = air_doctrine
+        }
+    }
+
+    completion_reward_joint_member = {
+        add_doctrine_cost_reduction = {
+            name = LUSOPHONE_air_exercises
+            cost_reduction = 0.2
+            uses = 1
+            category = air_doctrine
+        }
+    }
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = LUSOPHONE_air_cooperation
+            add_idea = LUSOPHONE_air_cooperation_1
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_air_war_games
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_air_exercises }
+
+    icon = GFX_goal_generic_air_doctrine
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_air_exercises
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        air_experience = 35
+    }
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = LUSOPHONE_air_cooperation_1
+            add_idea = LUSOPHONE_air_cooperation_2
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_navy_cooperation
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_high_command }
+
+    icon = GFX_focus_generic_cruiser2
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_high_command
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        navy_experience = 25
+    }
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_navy_cooperation
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_navy_exercises
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_navy_cooperation }
+
+    icon = GFX_focus_generic_naval_discipline
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_navy_cooperation
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        add_doctrine_cost_reduction = {
+            name = LUSOPHONE_naval_exercises
+            cost_reduction = 0.2
+            uses = 2
+            category = naval_doctrine
+        }
+    }
+
+    completion_reward_joint_member = {
+        add_doctrine_cost_reduction = {
+            name = LUSOPHONE_naval_exercises
+            cost_reduction = 0.2
+            uses = 1
+            category = naval_doctrine
+        }
+    }
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = LUSOPHONE_navy_cooperation
+            add_idea = LUSOPHONE_navy_cooperation_1
+        }
+        every_navy_leader = {
+            add_trait = {
+                trait = blue_water_expert
+            }
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_navy_war_games
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_navy_exercises }
+
+    icon = GFX_goal_generic_navy_doctrines_tactics
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_navy_exercises
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        navy_experience = 35
+    }
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = LUSOPHONE_navy_cooperation_1
+            add_idea = LUSOPHONE_navy_cooperation_2
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_army_cooperation
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_high_command }
+
+    icon = GFX_focus_secret_rearmament
+    x = 2
+    y = 1
+
+    relative_position_id = LUSOPHONE_high_command
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        army_experience = 25
+    }
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_army_cooperation
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_army_exercises
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_army_cooperation }
+
+    icon = GFX_focus_ETH_peacekeeping_forces
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_army_cooperation
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        add_doctrine_cost_reduction = {
+            name = LUSOPHONE_army_exercises
+            cost_reduction = 0.2
+            uses = 2
+            category = land_doctrine
+        }
+    }
+
+    completion_reward_joint_member = {
+        add_doctrine_cost_reduction = {
+            name = LUSOPHONE_army_exercises
+            cost_reduction = 0.2
+            uses = 1
+            category = land_doctrine
+        }
+    }
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = LUSOPHONE_army_cooperation
+            add_idea = LUSOPHONE_army_cooperation_1
+        }
+        every_army_leader = {
+            add_trait = {
+                trait = ranger
+            }
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_land_war_games
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_army_exercises }
+
+    icon = GFX_goal_generic_army_doctrines
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_army_exercises
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        army_experience = 35
+    }
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = LUSOPHONE_army_cooperation_1
+            add_idea = LUSOPHONE_army_cooperation_2
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_special_force_program
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_land_war_games }
+
+    icon = GFX_focus_eng_special_air_service
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_land_war_games
+    cost = 10
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        add_doctrine_cost_reduction = {
+            name = LUSOPHONE_special_force
+            cost_reduction = 0.35
+            uses = 2
+            category = special_forces_doctrine
+        }
+        if = {
+            limit = { has_dlc = "Arms Against Tyranny" }
+            add_potential_special_forces_tree = yes
+        }
+    }
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_special_force
+        every_army_leader = {
+            limit = {
+                has_trait = commando
+            }
+            add_trait = {
+                trait = hunter
+            }
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_our_art_of_war
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_air_war_games }
+    prerequisite = { focus = LUSOPHONE_navy_war_games }
+    prerequisite = { focus = LUSOPHONE_land_war_games }
+
+    icon = GFX_goal_generic_occupy_states_ongoing_war
+    x = 2
+    y = 1
+
+    relative_position_id = LUSOPHONE_air_war_games
+    cost = 10
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        army_experience = 25
+        air_experience = 25
+        navy_experience = 25
+    }
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_our_art_of_war
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_government_coperation
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_commonwealth_capital }
+    icon = GFX_goal_generic_improve_relations
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_commonwealth_capital
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        add_political_power = 75
+    }
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_politic_cooperation
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_shared_intelligence_network
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_government_coperation }
+    icon = GFX_goal_generic_intelligence_exchange
+    x = -1
+    y = 1
+
+    relative_position_id = LUSOPHONE_government_coperation
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_improved_intelligence_network
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_economic_alliance
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_government_coperation }
+    icon = GFX_SOV_foreign_experts_ccp_2d_sov_compatibility
+    x = 1
+    y = 1
+
+    relative_position_id = LUSOPHONE_government_coperation
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_economic_alliance
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_collaborative_research
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    prerequisite = { focus = LUSOPHONE_commonwealth_capital }
+
+    icon = GFX_focus_research2
+    x = 7
+    y = 1
+
+    relative_position_id = LUSOPHONE_commonwealth_capital
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward = {
+        add_to_tech_sharing_group = LUSOPHONE_tech_sharing
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_construction_developments
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_collaborative_research }
+    icon = GFX_goal_generic_construction
+    x = -2
+    y = 1
+
+    relative_position_id = LUSOPHONE_collaborative_research
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        add_tech_bonus = {
+            name = LUSOPHONE_construction_developments
+            bonus = 1
+            uses = 2
+            category = construction_tech
+        }
+    }
+
+    completion_reward_joint_member = {
+        add_tech_bonus = {
+            name = LUSOPHONE_construction_developments
+            bonus = 0.75
+            uses = 2
+            category = construction_tech
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_improve_infrastructure
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_construction_developments }
+    prerequisite = { focus = LUSOPHONE_economic_alliance }
+
+    icon = GFX_goal_generic_construct_infrastructure
+    x = -3
+    y = 1
+
+    relative_position_id = LUSOPHONE_construction_developments
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        every_owned_state = {
+            random_select_amount = 3
+            add_extra_state_shared_building_slots = 2
+        }
+    }
+
+    completion_reward_joint_member = {
+        every_owned_state = {
+            random_select_amount = 3
+            add_extra_state_shared_building_slots = 1
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_sponsor_new_industries
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_construction_developments }
+    prerequisite = { focus = LUSOPHONE_economic_alliance }
+
+    icon = GFX_focus_generic_industry_3
+    x = -1
+    y = 1
+
+    relative_position_id = LUSOPHONE_construction_developments
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        every_owned_state = {
+            limit = {
+                is_core_of = ROOT
+                free_building_slots = {
+                    building = industrial_complex
+                    size > 1
+                    include_locked = yes
+                }
+            }
+            random_select_amount = 3
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    completion_reward_joint_member = {
+        every_owned_state = {
+            limit = {
+                is_core_of = ROOT
+                free_building_slots = {
+                    building = industrial_complex
+                    size > 1
+                    include_locked = yes
+                }
+            }
+            random_select_amount = 2
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_develop_resources
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_improve_infrastructure }
+    prerequisite = { focus = LUSOPHONE_sponsor_new_industries }
+
+    icon = GFX_focus_generic_mining_industry
+    x = 1
+    y = 1
+
+    relative_position_id = LUSOPHONE_improve_infrastructure
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward = {
+        random_owned_state = {
+            limit = {
+                is_controlled_by = ROOT
+                has_resources_amount = {
+                    resource = oil
+                    amount > 0
+                }
+            }
+            add_resource = {
+                type = oil
+                amount = 4
+            }
+        }
+        random_owned_state = {
+            limit = {
+                is_controlled_by = ROOT
+                has_resources_amount = {
+                    resource = steel
+                    amount > 0
+                }
+            }
+            add_resource = {
+                type = steel
+                amount = 4
+            }
+        }
+        random_owned_state = {
+            limit = {
+                is_controlled_by = ROOT
+                has_resources_amount = {
+                    resource = chromium
+                    amount > 0
+                }
+            }
+            add_resource = {
+                type = chromium
+                amount = 4
+            }
+        }
+        random_owned_state = {
+            limit = {
+                is_controlled_by = ROOT
+                has_resources_amount = {
+                    resource = aluminium
+                    amount > 0
+                }
+            }
+            add_resource = {
+                type = aluminium
+                amount = 4
+            }
+        }
+        random_owned_state = {
+            limit = {
+                is_controlled_by = ROOT
+                has_resources_amount = {
+                    resource = rubber
+                    amount > 0
+                }
+            }
+            add_resource = {
+                type = rubber
+                amount = 4
+            }
+        }
+        random_owned_state = {
+            limit = {
+                is_controlled_by = ROOT
+                has_resources_amount = {
+                    resource = tungsten
+                    amount > 0
+                }
+            }
+            add_resource = {
+                type = tungsten
+                amount = 4
+            }
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_nuclear_research
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_develop_resources }
+
+    icon = GFX_focus_wonderweapons
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_develop_resources
+    cost = 10
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        add_tech_bonus = {
+            name = LUSOPHONE_nuclear
+            bonus = 1
+            ahead_reduction = 0.5
+            uses = 1
+            category = nuclear
+        }
+    }
+
+    completion_reward_joint_member = {
+        add_tech_bonus = {
+            name = LUSOPHONE_nuclear
+            bonus = 0.75
+            ahead_reduction = 0.5
+            uses = 1
+            category = nuclear
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_nuclear_production
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_nuclear_research }
+    prerequisite = { focus = LUSOPHONE_heart_of_operations }
+
+
+    icon = GFX_goal_generic_secret_weapon
+    x = 1
+    y = 1
+
+    relative_position_id = LUSOPHONE_nuclear_research
+    cost = 10
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        every_owned_state = {
+            limit = {
+                is_controlled_by = ROOT
+                free_building_slots = {
+                    building = arms_factory
+                    size > 0
+                    include_locked = yes
+                }
+            }
+            random_select_amount = 2
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = nuclear_reactor
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    completion_reward_joint_member = {
+        every_owned_state = {
+            limit = {
+                is_controlled_by = ROOT
+                free_building_slots = {
+                    building = arms_factory
+                    size > 0
+                    include_locked = yes
+                }
+            }
+            random_select_amount = 1
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = nuclear_reactor
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_advanced_construction_techniques
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_construction_developments }
+
+    icon = GFX_goal_generic_production
+    x = 0
+    y = 2
+
+    relative_position_id = LUSOPHONE_construction_developments
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_advanced_construction_techniques
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_heart_of_operations
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_advanced_construction_techniques }
+
+    icon = GFX_SOV_reorganize_the_pc_of_heavy_industry_ccp_2d_sov_compatibility
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_advanced_construction_techniques
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = LUSOPHONE_advanced_construction_techniques
+            add_idea = LUSOPHONE_advanced_construction_techniques_1
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_material_design
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_collaborative_research }
+    icon = GFX_focus_generic_reorient_production
+    x = 2
+    y = 1
+
+    relative_position_id = LUSOPHONE_collaborative_research
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        add_tech_bonus = {
+            name = LUSOPHONE_material_design
+            bonus = 1
+            uses = 2
+            category = infantry_weapons
+        }
+    }
+
+    completion_reward_joint_member = {
+        add_tech_bonus = {
+            name = LUSOPHONE_material_design
+            bonus = 0.75
+            uses = 2
+            category = infantry_weapons
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_renew_our_arsenal
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_construction_developments }
+    prerequisite = { focus = LUSOPHONE_material_design }
+    icon = GFX_goal_generic_construct_mil_factory
+    x = -2
+    y = 1
+
+    relative_position_id = LUSOPHONE_material_design
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        every_owned_state = {
+            limit = {
+                is_core_of = ROOT
+                free_building_slots = {
+                    building = arms_factory
+                    size > 1
+                    include_locked = yes
+                }
+            }
+            random_select_amount = 2
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    completion_reward_joint_member = {
+        every_owned_state = {
+            limit = {
+                is_core_of = ROOT
+                free_building_slots = {
+                    building = arms_factory
+                    size > 1
+                    include_locked = yes
+                }
+            }
+            random_select_amount = 1
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_improve_our_dockyards
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_renew_our_arsenal }
+    icon = GFX_goal_generic_construct_naval_dockyard
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_renew_our_arsenal
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        every_owned_state = {
+            limit = {
+                is_coastal = yes
+                is_core_of = ROOT
+                free_building_slots = {
+                    building = dockyard
+                    size > 1
+                    include_locked = yes
+                }
+            }
+            random_select_amount = 2
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = dockyard
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    completion_reward_joint_member = {
+        every_owned_state = {
+            limit = {
+                is_coastal = yes
+                is_core_of = ROOT
+                free_building_slots = {
+                    building = dockyard
+                    size > 1
+                    include_locked = yes
+                }
+            }
+            random_select_amount = 1
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = dockyard
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_new_naval_designs
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_material_design }
+    icon = GFX_SOV_expand_the_morskaya_aviatsiya_ccp_2d_sov_compatibility
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_material_design
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        add_tech_bonus = {
+            name = LUSOPHONE_material_design
+            bonus = 1
+            uses = 2
+            ahead_reduction = 0.5
+            category = naval_equipment
+        }
+    }
+
+    completion_reward_joint_member = {
+        add_tech_bonus = {
+            name = LUSOPHONE_material_design
+            bonus = 0.75
+            ahead_reduction = 0.5
+            uses = 2
+            category = naval_equipment
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_atlantic_response_force
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_new_naval_designs }
+    icon = GFX_SOV_an_oceangoing_navy_ccp_2d_sov_compatibility
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_new_naval_designs
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        every_owned_state = {
+            limit = {
+                is_coastal = yes
+                is_core_of = ROOT
+                free_building_slots = {
+                    building = dockyard
+                    size > 1
+                    include_locked = yes
+                }
+            }
+            random_select_amount = 1
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = dockyard
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_atlantic_response_force
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_modernize_our_merchant_fleet
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_improve_our_dockyards }
+    prerequisite = { focus = LUSOPHONE_atlantic_response_force }
+
+    icon = GFX_focus_generic_merchant_fleet
+    x = 1
+    y = 1
+
+    relative_position_id = LUSOPHONE_improve_our_dockyards
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        every_owned_state = {
+            limit = {
+                is_coastal = yes
+                is_core_of = ROOT
+                free_building_slots = {
+                    building = dockyard
+                    size > 1
+                    include_locked = yes
+                }
+            }
+            random_select_amount = 1
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = dockyard
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = LUSOPHONE_atlantic_response_force
+            add_idea = LUSOPHONE_atlantic_response_force_1
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_new_army_designs
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_material_design }
+    icon = GFX_focus_generic_little_entente
+    x = 2
+    y = 1
+
+    relative_position_id = LUSOPHONE_material_design
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        add_tech_bonus = {
+            name = LUSOPHONE_material_design
+            bonus = 1
+            uses = 2
+            ahead_reduction = 0.5
+            category = armor
+            category = infantry_weapons
+            category = artillery
+        }
+    }
+
+    completion_reward_joint_member = {
+        add_tech_bonus = {
+            name = LUSOPHONE_material_design
+            bonus = 0.75
+            ahead_reduction = 0.5
+            uses = 2
+            category = armor
+            category = infantry_weapons
+            category = artillery
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_advanced_military_manufacturing
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_new_army_designs }
+    icon = GFX_SOV_superior_war_machines_ccp_2d_sov_compatibility
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_new_army_designs
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        every_owned_state = {
+            limit = {
+                is_core_of = ROOT
+                free_building_slots = {
+                    building = arms_factory
+                    size > 1
+                    include_locked = yes
+                }
+            }
+            random_select_amount = 1
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_advanced_military_manufacturing
+    }
+}
+
+
+joint_focus = {
+    id = LUSOPHONE_new_air_designs
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_material_design }
+    icon = GFX_focus_generic_multi_role_aircraft
+    x = 4
+    y = 1
+
+    relative_position_id = LUSOPHONE_material_design
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        add_tech_bonus = {
+            name = LUSOPHONE_material_design
+            bonus = 1
+            uses = 2
+            ahead_reduction = 0.5
+            category = air_equipment
+        }
+    }
+
+    completion_reward_joint_member = {
+        add_tech_bonus = {
+            name = LUSOPHONE_material_design
+            bonus = 0.75
+            ahead_reduction = 0.5
+            uses = 2
+            category = air_equipment
+        }
+    }
+}
+
+joint_focus = {
+    id = LUSOPHONE_standardize_aerial_production
+    available = {
+        has_idea = BRA_commonwealth_idea
+    }
+
+    bypass = {
+    }
+    prerequisite = { focus = LUSOPHONE_new_air_designs }
+    icon = GFX_focus_generic_aircraft_production
+    x = 0
+    y = 1
+
+    relative_position_id = LUSOPHONE_new_air_designs
+    cost = 5
+
+    text_icon = NORDIC_focus_style
+
+    completion_reward_joint_originator = {
+        every_owned_state = {
+            limit = {
+                is_core_of = ROOT
+                free_building_slots = {
+                    building = arms_factory
+                    size > 1
+                    include_locked = yes
+                }
+            }
+            random_select_amount = 1
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    completion_reward = {
+        add_ideas = LUSOPHONE_standardize_aerial_production
+    }
+}
+

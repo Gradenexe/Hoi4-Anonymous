@@ -1,0 +1,664 @@
+leader_traits = {
+	KOR_provisional_government_trait = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.1
+		war_stability_factor = 0.1
+	}
+	KOR_Forest_Hermit = { 
+		sprite = 13
+		random = no
+		stability_factor = 0.1
+		war_support_factor = -0.1
+		consumer_goods_factor = -0.1
+    	production_speed_industrial_complex_factor = 0.1
+	}
+	KOR_Coat_of_arms_of_Paul_Ro_Ki_Nam = { 
+		sprite = 13
+		random = no
+		political_advisor_cost_factor = -0.15
+		political_power_factor = 0.1
+		consumer_goods_factor = -0.05
+	}
+	KOR_chaotic_Congress_tezhi = {
+		random = no
+		political_power_factor = -0.15
+		stability_factor = -0.05
+		trade_laws_cost_factor  = 0.25
+		mobilization_laws_cost_factor = 0.25
+		economy_cost_factor = 0.25
+		tank_manufacturer_cost_factor = 0.25
+		naval_manufacturer_cost_factor = 0.25
+		aircraft_manufacturer_cost_factor = 0.25
+		materiel_manufacturer_cost_factor = 0.25
+		industrial_concern_cost_factor = 0.25
+		political_advisor_cost_factor = 0.25
+		army_chief_cost_factor = 0.25
+		navy_chief_cost_factor = 0.25
+		air_chief_cost_factor = 0.25
+		high_command_cost_factor = 0.25
+		theorist_cost_factor = 0.25
+	}
+	KOR_supreme_representative_of_god_on_earth = {
+		random = no
+		neutrality_drift = 0.5
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		drift_defence_factor = 1
+		consumer_goods_factor = -0.1
+	}
+	KOR_hengguo_zhi_zhu = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.1
+		stability_weekly = 0.002
+		party_popularity_stability_factor = 0.2
+		conscription = 0.05
+		consumer_goods_factor = -0.15
+	}
+	KOR_tiansunminzu_de_chuanren = {
+		random = no
+		sprite = 13
+		war_support_weekly = 0.002
+		research_speed_factor = 0.1
+		army_org_factor = 0.1
+		supply_consumption_factor = -0.1
+	}
+	KOR_fangzi_tianhuang = {
+		random = no
+		sprite = 13
+		stability_factor = 0.1
+		political_power_factor = 0.1
+		consumer_goods_factor = -0.08
+	}
+	KOR_weimin_fuwu_de_junwang = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		conscription = 0.02
+		compliance_growth = 0.1
+		consumer_goods_factor = -0.05
+	}
+	KOR_father_of_the_welfare_state = {
+		random = no
+		sprite = 13
+		production_speed_industrial_complex_factor = 0.05
+		stability_factor = 0.1
+		compliance_growth = 0.1
+		consumer_goods_factor = 0.05
+		weekly_manpower = 200
+	}
+	KOR_hongyi_renjian_de_zhengzhijia = {
+		random = no
+		stability_weekly = 0.002
+		compliance_growth = 0.12
+		compliance_starting_value = 0.1
+		resistance_growth = -0.12
+	}
+	KOR_Bai_Fan = {
+		random = no
+		stability_factor = 0.1
+		political_power_factor = 0.1
+		democratic_drift = 0.03
+		communism_drift = 0.01
+	}
+	KOR_jinjiu_guofu = {
+		random = no
+		war_support_factor = 0.05
+		party_popularity_stability_factor = 0.1
+		democratic_drift = 0.03
+		conscription_factor = 0.1
+		army_core_defence_factor = 0.1
+	}
+	KOR_jinjiu_guofu_1 = {
+		random = no
+		war_support_factor = 0.05
+		party_popularity_stability_factor = 0.1
+		democratic_drift = 0.03
+		neutrality_drift = 0.01
+		conscription_factor = 0.1
+		army_core_defence_factor = 0.1
+	}
+	MAN_guandongjun_siling = {
+		random = no
+		stability_factor = -0.05
+		fascism_drift = 0.03
+		army_chief_cost_factor = -0.15
+		war_support_factor = 0.1
+		max_command_power_mult = 0.15
+		army_infantry_attack_factor = 0.05
+	}
+	KOR_communism_kaiju_tezhi = {
+		random = no
+	}
+	KOR_chaoxian_dahui_tezhi = {
+		random = no
+	}
+	KOR_chaoxian_sulianpai_tezhi = {
+		random = no
+	}
+	KOR_Mu_Jong_tezhi = {
+		random = no
+		superior_firepower_mastery_gain_factor = 0.15
+		army_artillery_attack_factor = 0.15
+		army_artillery_defence_factor = 0.1
+	}
+	KOR_jiechu_renmin_lingxiu = {
+		random = no
+		surrender_limit = 0.3
+		communism_drift = 0.1
+		consumer_goods_factor = -0.1
+		war_support_factor = 0.1
+	}
+	KOR_renmin_de_taiyang = {
+		random = no
+		resistance_target = -0.05
+		resistance_decay = 0.1
+		resistance_growth = -0.1
+		compliance_starting_value = 0.1
+		compliance_growth = 0.1
+	}
+	KOR_chaoxian_dayuanshuai = {
+		random = no
+		command_power_gain_mult = 0.15
+		max_command_power = 50
+		conscription = 0.02
+		planning_speed = 0.15
+		max_planning = 0.1
+	}
+	#################################### 
+	JKO_royal_mouthpiece = {
+		#Goebbels
+		sprite = 13
+		random = no
+		war_support_factor = 0.05
+		master_ideology_drift = 0.1
+		offensive_war_stability_factor = 0.1
+		weekly_casualties_war_support = 0.001
+		weekly_convoys_war_support = 0.001
+		weekly_bombing_war_support = 0.001
+	}
+	JKO_collaborationist_arch_bishop = {
+		random = no
+		sprite = 13
+		master_ideology_drift = 0.05
+		conscription_factor = 0.05
+		required_garrison_factor = -0.1
+	}
+	JKO_controversial_academic = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.03
+		master_ideology_drift = 0.03
+		mobilization_laws_cost_factor = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JKO_zhengwu_zongjian = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.05
+		trade_opinion_factor = 0.1
+		production_speed_buildings_factor = 0.05
+		improve_relations_maintain_cost_factor = -0.15
+		production_lack_of_resource_penalty_factor = -0.15
+	}
+	JKO_chaoxian_guizuyuan = {
+		random = no
+		sprite = 13
+		conscription_factor = 0.1
+		compliance_growth = 0.08
+		consumer_goods_factor = 0.05
+	}
+	KOR_minzheng_zhangguan = {
+		random = no
+		sprite = 13
+		conscription_factor = 0.1
+		stability_factor = 0.05
+		political_power_factor = 0.05
+		production_speed_buildings_factor = 0.1
+	}
+	KOR_hierarch_minister_of_justice = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.05
+		improve_relations_maintain_cost_factor = -0.5
+		resistance_decay = 0.05
+	}
+	KOR_kexueyuan_yuanzhang = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.05
+		communism_drift = 0.01
+		political_power_factor = 0.05
+	}
+	KOR_tiandaojiaog_qingyouhui = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		conscription = 0.005
+		resistance_growth_on_our_occupied_states = 0.1
+	}
+	KOR_tiandaojiaog_weiyuanzhang = {
+		random = no
+		sprite = 13
+		party_popularity_stability_factor = 0.08
+		war_support_factor = 0.05
+		conscription = 0.005
+		army_org_factor = 0.1
+	}
+	KOR_dangzhengzhiju_weiyuan = {
+		random = no
+		sprite = 13
+		party_popularity_stability_factor = 0.1
+		stability_factor = 0.05
+		drift_defence_factor = 0.15
+		communism_drift = 0.02
+	}
+	KOR_diyi_shuji = {
+		random = no
+		sprite = 13
+		communism_drift = 0.03
+		research_speed_factor = 0.02
+		army_core_defence_factor = 0.1
+		army_core_attack_factor = 0.05
+	}
+	KOR_xuanchuan_buzhang = {
+		#Goebbels
+		sprite = 13
+		random = no
+		war_support_factor = 0.05
+		communism_drift = 0.1
+		surrender_limit = 0.1
+		offensive_war_stability_factor = 0.1
+		defensive_war_stability_factor = 0.1
+	}
+	KOR_zuzhi_buzhang = {
+		random = no
+		sprite = 13
+		army_core_defence_factor = 0.05
+		army_org_factor = 0.1
+		conscription_factor = 0.1
+	}
+	KOR_laodong_buzhang = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = -0.05
+		industrial_capacity_factory = 0.1
+		production_factory_max_efficiency_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.1
+		research_speed_factor = -0.05
+	}
+	KOR_guojia_fuxiang = {
+		random = no
+		sprite = 13
+		political_power_gain = 0.05
+		economy_cost_factor = -0.15
+		production_factory_max_efficiency_factor = 0.07
+		communism_drift = 0.1
+	}
+	KOR_baoshe_shezhang = {
+		random = no
+		sprite = 13
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		justify_war_goal_time = -0.1
+	}
+	KOR_yiwu_zongjian = {
+		random = no
+		sprite = 13
+		experience_loss_factor = -0.1
+		weekly_manpower = 100
+		conscription_factor = 0.1
+	}
+	KOR_hongshizihui_zhuxi = {
+		random = no
+		sprite = 13
+		weekly_manpower = 100
+		conscription = 0.02
+		conscription_factor = 0.1
+	}
+	KOR_chaoxian_guizu = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		consumer_goods_factor = -0.05
+	}
+	KOR_chaoxian_de_gandi = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		war_support_factor = -0.1
+		political_power_factor = 0.1
+		consumer_goods_factor = -0.1
+	}
+	KOR_sanxing_shanghui = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = 0.05
+		political_power_factor = 0.05
+		industrial_capacity_factory = 0.06
+		production_speed_radar_station_factor = 0.1
+	}
+	KOR_sanxing_shanghui_1 = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = 0.1
+		political_power_factor = 0.1
+		industrial_capacity_factory = 0.15
+		production_speed_radar_station_factor = 0.15
+		resource_trade_cost_bonus_per_factory = 1
+	}
+	KOR_mingyu_lingxiu = {
+		sprite = 13
+		random = no
+		stability_factor = 0.12
+		political_power_factor = 0.1
+		democratic_drift = 0.01
+		neutrality_drift = 0.02
+		production_speed_industrial_complex_factor = 0.05
+	}
+	KOR_yi_kang_gong = {
+		sprite = 13
+		random = no
+		stability_factor = 0.05
+		political_power_factor = 0.1
+		neutrality_drift = 0.01
+		consumer_goods_factor = 0.05
+	}
+	KOR_weilihui_jidu_mushi = {
+		random = no
+		sprite = 13
+		weekly_manpower = 200
+		resistance_growth = -0.1
+		compliance_growth = 0.1
+		defensive_war_stability_factor = 0.15
+	}
+	KOR_Foreign_Minister = {
+		#Ribbentrop
+		random = no
+		sprite = 13
+		subversive_activites_upkeep = -0.25
+		drift_defence_factor = 0.25
+		justify_war_goal_time = -0.15
+		faction_trade_opinion_factor = 0.1
+		opinion_gain_monthly_same_ideology = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	KOR_yizhengyuan_yuanzhang = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.05
+		stability_factor = 0.1
+		political_advisor_cost_factor = -0.1
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	KOR_council_communist = {
+		random = no
+		sprite = 13
+		democratic_drift = 0.02
+		communism_drift = 0.01
+		political_power_factor = 0.05
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	KOR_council_communist_1 = {
+		random = no
+		sprite = 13
+		neutrality_drift = 0.02
+		communism_drift = 0.01
+		political_power_factor = 0.05
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	KOR_council_communist_2 = {
+		random = no
+		sprite = 13
+		neutrality_drift = 0.02
+		democratic_drift = 0.01
+		political_power_factor = 0.05
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	KOR_minister_of_state = {
+		random = no
+		sprite = 13
+		land_doctrine_cost_factor = -0.1
+		experience_gain_army = 0.03
+		political_power_factor = 0.1
+	}
+	KOR_Archidioecesis_Seulensis = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.05
+		party_popularity_stability_factor = 0.1
+		resistance_growth = -0.03
+		stability_factor = 0.1
+		research_speed_factor = -0.02
+	}
+	KOR_media_professionals = {
+		sprite = 13
+		random = no
+		war_support_factor = 0.05
+		stability_factor = -0.05
+		offensive_war_stability_factor = 0.1
+		weekly_casualties_war_support = 0.001
+		weekly_convoys_war_support = 0.001
+		weekly_bombing_war_support = 0.001
+	}
+	KOR_reich_minister_of_propaganda = {
+		sprite = 13
+		random = no
+		war_support_factor = 0.05
+		surrender_limit = 0.1
+	}
+	KOR_Tan_Ya_Grandmaster = {
+		sprite = 13
+		random = no
+		consumer_goods_factor = -0.05
+		conscription = 0.02
+		resistance_decay = 0.1
+		resistance_growth = -0.1
+		compliance_growth = 0.1
+	}
+	KOR_buxian_wenhualun_xuezhe = {
+		sprite = 13
+		random = no
+		war_support_factor = 0.1
+		weekly_casualties_war_support = 0.003
+		weekly_convoys_war_support = 0.003
+		weekly_bombing_war_support = 0.003
+	}
+	KOR_Publicity_Department_of_the_Women_Federation = {
+		sprite = 13
+		random = no
+		war_support_factor = 0.05
+		weekly_casualties_war_support = 0.002
+		weekly_convoys_war_support = 0.002
+		weekly_bombing_war_support = 0.002
+		communism_drift = 0.01
+	}
+	KOR_national_poet = {
+		sprite = 13
+		random = no
+		drift_defence_factor = 0.25
+		weekly_manpower = 200
+		stability_factor = 0.05
+		resistance_growth_on_our_occupied_states = 0.08
+	}
+	KOR_prime_minister_Kim_Koo = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		political_power_gain = 0.07
+		political_advisor_cost_factor = -0.1
+		neutrality_drift = 0.01
+		democratic_drift = 0.02
+	}
+	KOR_prime_minister_lyuh_woon_hyung = {
+		random = no
+		sprite = 13
+		industrial_capacity_factory = 0.1
+		opinion_gain_monthly_factor = 0.25
+		enemy_justify_war_goal_time = 0.25
+		neutrality_drift = 0.02
+		democratic_drift = 0.01
+	}
+	KOR_prime_minister_syngman_rhee = {
+		random = no
+		sprite = 13
+		war_support_factor = 0.05
+		mobilization_speed = 0.07
+		production_speed_arms_factory_factor = 0.1
+		neutrality_drift = 0.02
+		communism_drift = -0.01
+	}
+	KOR_Yi_Bangja_tezhi = {
+		random = no
+		sprite = 13
+		targeted_modifier = {
+			tag = JAP
+			non_core_manpower = 0.1
+			compliance_gain = 0.15
+			resistance_growth = -0.15
+			resistance_decay = 0.15
+			required_garrison_factor = -0.15
+		}
+	}
+	KOR_caidan_kexuejia_tezhi = {
+		random = no
+		sprite = 13
+		research_speed_factor = 1
+	}
+	KOR_caidan_kexuejia_tezhi_1 = {
+		random = no
+		sprite = 13
+		research_speed_factor = 1
+		sp_tag_nuclear_warfare_speed_factor = 1
+		sp_tag_nuclear_power_speed_factor = 1
+	}
+	KOR_fawu_zongzhang = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.05
+		consumer_goods_factor = -0.05
+		stability_factor = 0.05
+	}
+	KOR_revolutionary_writer = {
+		sprite = 13
+		random = no
+
+		drift_defence_factor = 0.25
+		resistance_growth_on_our_occupied_states = 0.3
+		political_power_factor = 0.1
+		stability_factor = 0.05
+		war_support_factor = 0.05
+
+	}
+	KOR_guowu_ling = {
+		sprite = 13
+		random = no
+		stability_factor = 0.1
+		political_power_factor = 0.1
+		legitimacy_daily = 0.05
+		weekly_manpower = 200
+	}
+	####################################
+	KOR_Minister_of_Coal_Industry = {
+		random = no
+		sprite = 10
+		country_resource_coal = 6
+		production_speed_buildings_factor = 0.05
+		industrial_capacity_factory = 0.05
+		production_lack_of_resource_penalty_factor = -0.05
+		army_fuel_consumption_factor = -0.1
+	}
+	KOR_Minister_of_Coal_Industry_1 = {
+		random = no
+		sprite = 10
+		country_resource_coal = 6
+		production_speed_buildings_factor = 0.05
+		industrial_capacity_factory = 0.15
+		production_lack_of_resource_penalty_factor = -0.15
+		army_fuel_consumption_factor = -0.15
+	}
+	KOR_chanye_yu_jiaotong = {
+		random = no
+		sprite = 10
+		production_speed_infrastructure_factor = 0.05
+		production_speed_rail_way_factor = 0.05
+		production_speed_supply_node_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		local_building_slots_factor = 0.1
+	}
+	################################################
+	KOR_minzu_baowei_xiang = {
+		random = no
+		sprite = 18
+		conscription_factor = 0.05
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		production_speed_air_base_factor = 0.1
+		production_speed_naval_base_factor = 0.1
+	}
+	KOR_junxiao_xiaozhang = {
+		random = no
+		sprite = 18
+		war_support_factor = 0.05
+		max_command_power = 30
+		experience_gain_army = 0.01
+		war_support_factor = 0.05
+	}
+	MAN_dongbei_kanglian_yangjingyu = {
+		random = no
+		sprite = 18
+		modifier_army_sub_unit_mountaineers_attack_factor = 0.15
+		modifier_army_sub_unit_mountaineers_defence_factor = 0.15
+		modifier_army_sub_unit_mountaineers_speed_factor = 0.15
+		modifier_trait_hill_fighter_xp_gain_factor = 0.4
+		modifier_trait_jungle_rat_xp_gain_factor = 0.4
+		winter_attrition_factor = -0.25
+		acclimatization_cold_climate_gain_factor = 0.25
+	}
+	KOR_United_States_Army_Military_Government_in_Korea = {
+		random = no
+		sprite = 18
+		experience_gain_army = 0.3
+		army_org_factor = 0.05
+		max_planning = 0.05
+		amphibious_invasion = 0.15
+		naval_invasion_capacity = 12
+	}
+	KOR_Staff_Officer_of_the_Restoration_Army = {
+		random = no
+		sprite = 18
+		experience_gain_army = 0.02
+		special_forces_cap = 0.2
+		command_power_gain_mult = 0.1
+		weekly_manpower = 30
+	}
+	################################################  科技
+	KOR_telephone_company = {
+		random = no
+		land_reinforce_rate = 0.06
+		coordination_bonus = 0.08
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

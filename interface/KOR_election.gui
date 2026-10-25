@@ -1,0 +1,93 @@
+guiTypes = {
+	containerWindowType = {
+        name = "election_parliament_gui_container"
+        position = { x = 0 y = 0 }
+		size = { width = 400 height = 360 }
+
+		instantTextBoxType = {
+			name = "semicircle_election_parliament_gui_title"
+			position = { x = 35 y = 10 }
+			font = "hoi_24header"
+			text = "semicircle_election_parliament_gui_title"
+			maxWidth = 440
+			maxHeight = 24
+			format = center
+		}
+		containerWindowType = {
+			name = "election_parliament_status"
+			position = { x = 15 y = 37 }
+			size = { width = 100% height = 20 }
+			instantTextBoxType = {
+				name = "KOR_election_dominance_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_16mbs"
+				text = "KOR_election_dominance_text"
+				maxWidth = 500
+				maxHeight = 16
+				format = left
+			}
+		}
+		containerWindowType = {
+		    name = "election_parliament_semicircle_main_container"
+			position = { x = 0 y = 50 }
+			size = { width = 490 height = 225 }
+
+			background = {
+				name = "Background"
+			}
+
+			gridboxtype = {
+				name = "election_parliament_semicircle_main_grid"
+				position = { x = 35 y = 25 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+
+		gridboxtype = {
+			name = "election_parliament_member_grid"
+			position = { x = -150 y = 525 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 200 height = 18 }
+			max_slots_vertical = 8
+			add_horizontal = no
+		}
+    }
+
+
+	containerWindowType = {
+        name = "election_parliament_semicircle_main_entry"
+        position = { x = 0 y = 0 }
+
+		iconType = {
+			name = "election_parliament_semicircle_main_icon"
+			spriteType = "GFX_election_parliament_party_icon"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "election_parliament_main_icon_tt"
+		}
+    }
+
+	containerWindowType = {
+        name = "election_parliament_member_entry"
+        position = { x = 0 y = -200 }
+		size = { width = 500 height = 18 }
+
+		iconType = {
+			name = "election_parliament_member_icon"
+			spriteType = "GFX_election_parliament_party_icon"
+			position = { x = -20 y = -52 }
+		}
+		instantTextboxType = {
+			name = "election_parliament_member_text"
+			position = { x = 0 y = -52 }
+			font = "hoi_16mbs"
+			maxWidth = 500
+			maxHeight = 16
+			format = left
+			text = "election_parliament_member_text"
+		}
+    }
+}
+

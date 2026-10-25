@@ -1,0 +1,25 @@
+﻿l_english:
+ rt56rp_gr_vanillarestrict_vol:0 "Vanilla Volunteer Restrictions"
+ rt56rp_gr_vanillarestrict_vol_enable_n:0 "Disabled (includes AI)"
+ rt56rp_gr_vanillarestrict_vol_enable_n_desc:0 "Overrides base game rules on volunteering and allows you to always volunteer regardless of ideology."
+ rt56rp_gr_vanillarestrict_vol_enable_ai:0 "Disabled (Players Only) (Default)"
+ rt56rp_gr_vanillarestrict_vol_enable_ai_desc:0 "Overrides base game rules and allows players to always volunteer regardless of ideology."
+ rt56rp_gr_vanillarestrict_vol_enable_y:0 "Enabled"
+ rt56rp_gr_vanillarestrict_vol_enable_y_desc:0 "Base game volunteer rules apply."
+
+ rt56rp_gr_vanillarestrict_facc:0 "Vanilla Faction Creation Restrictions"
+ rt56rp_gr_vanillarestrict_facc_enable_n:0 "Disabled (includes AI)"
+ rt56rp_gr_vanillarestrict_facc_enable_n_desc:0 "Overrides base game rules on creating factions and allows you to always create factions regardless of ideology."
+ rt56rp_gr_vanillarestrict_facc_enable_ai:0 "Disabled (Players Only) (Default)"
+ rt56rp_gr_vanillarestrict_facc_enable_ai_desc:0 "Overrides base game rules and allows players to always create factions regardless of ideology."
+ rt56rp_gr_vanillarestrict_facc_enable_y:0 "Enabled"
+ rt56rp_gr_vanillarestrict_facc_enable_y_desc:0 "Base game faction creation rules apply."
+
+ rt56rp_gr_vanillarestrict_facj:0 "Vanilla Faction Joining Restrictions"
+ rt56rp_gr_vanillarestrict_facj_enable_n:0 "Disabled (includes AI)"
+ rt56rp_gr_vanillarestrict_facj_enable_n_desc:0 "Removes the world tension limit for joining factions for both players and AI."
+ rt56rp_gr_vanillarestrict_facj_enable_ai:0 "Disabled (Players Only) (Default)"
+ rt56rp_gr_vanillarestrict_facj_enable_ai_desc:0 "Removes the world tension limit for joining factions for players only."
+ rt56rp_gr_vanillarestrict_facj_enable_y:0 "Enabled"
+ rt56rp_gr_vanillarestrict_facj_enable_y_desc:0 "Base game faction joining rules apply."
+

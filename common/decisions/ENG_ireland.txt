@@ -1,0 +1,68 @@
+ENG_ireland_integration_category = {
+	icon = generic_diplomacy
+	picture = GFX_decision_cat_picture_generic_diplomacy
+	
+	allowed = {
+		original_tag = ENG
+	}
+	
+	visible = {
+		has_completed_focus = uk_ireland_new_union
+		country_exists = IRE
+		NOT = { has_completed_focus = uk_ireland_unification }
+	}
+}
+
+ENG_ireland_integration_category = {
+	ENG_diplomatically_puppet_ireland = {
+		icon = generic_agreement
+		priority = 100
+		
+		allowed = {
+			original_tag = ENG
+		}
+		
+		visible = {
+			has_completed_focus = uk_ireland_new_union
+			country_exists = IRE
+			NOT = { IRE = { is_subject_of = ROOT } }
+		}
+		
+		available = {
+			IRE = {
+				is_in_faction_with = ROOT
+				is_subject = no
+			}
+			NOT = { has_war_with = IRE }
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		
+		complete_effect = {
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = IRE
+					autonomy_state = autonomy_dominion
+				}
+			}
+			else = {
+				puppet = IRE
+			}
+			add_stability = 0.05
+			IRE = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = positive_50
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}

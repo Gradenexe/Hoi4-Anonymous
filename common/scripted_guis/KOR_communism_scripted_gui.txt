@@ -1,0 +1,10 @@
+scripted_gui = {
+	KOR_communism_decision_ui = {
+		context_type = decision_category
+		window_name = "KOR_communism_decision_ui_window"
+	}
+	KOR_communism_weidalingxiu_ui = {
+		context_type = decision_category
+		window_name = "KOR_communism_weidalingxiu_decision_ui"
+	}
+}

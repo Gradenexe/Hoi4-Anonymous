@@ -1,0 +1,32 @@
+ideas = {
+	country = {
+		stupid_ai = {
+			picture = FRA_factory_strikes
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 100
+				consumer_goods_factor = 100
+				conversion_cost_civ_to_mil_factor = 100
+				conversion_cost_mil_to_civ_factor = 100
+				conscription_factor = -100
+				industrial_capacity_factory = -10
+				industrial_capacity_dockyard = -10
+				line_change_production_efficiency_factor = -10
+				production_factory_efficiency_gain_factor = -10
+				production_factory_max_efficiency_factor = -10
+				min_export = -100
+				compliance_gain = 5
+				resistance_decay = 0.15
+				justify_war_goal_time = 50
+				enemy_justify_war_goal_time = 10
+				surrender_limit = 100
+			}
+		}
+	}
+}

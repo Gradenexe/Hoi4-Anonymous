@@ -1,0 +1,123 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ITA = { remove_state_claim = 44 }
+			ITA = { remove_state_claim = 805 }
+			ITA = { remove_state_claim = 934 }
+		}
+	}
+	
+	on_monthly_ALB = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = ALB_italian_immigration_0
+				}
+				add_to_variable = {
+					var = ALB_italian_influence_var
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ALB_italian_investments_0
+				}
+				add_to_variable = {
+					var = ALB_italian_influence_var
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ALB_italian_integration_0
+				}
+				add_to_variable = {
+					var = ALB_italian_influence_var
+					value = 2
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_idea = ALB_westernization_idea
+				}
+				add_to_variable = {
+					var = ALB_westernization_var
+					value = 2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ALB_placate_minorities_idea
+				}
+				add_to_variable = {
+					var = ALB_religious_unity_var
+					value = 2
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					ALB_ekrem_libohova = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_to_variable = {
+					var = ALB_italian_influence_var
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					ALB_gogo_nushi = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_to_variable = {
+					var = ALB_italian_influence_var
+					value = -1
+				}
+			}
+		}
+	}
+	
+	on_daily_ALB = {
+		effect = {  
+			ALB_update_national_unity = yes
+		}
+	}
+	
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					has_completed_focus = ALB_undermine_italian_government
+					tag = ALB
+					FROM = { tag = ITA }
+				}
+				country_event = {
+					id = albania.1
+					days = 3
+					random_hours = 12
+					random_days = 3
+				}
+			}
+		}
+	}
+	
+	on_government_change = { 
+		effect = {
+			### ITALY CAN'T GIVE ALBANIA FASCISM IF THEY AREN'T FASCIST...
+			ITA = {
+				IF = {
+					LIMIT = {
+						NOT = { has_government = fascism }
+					}
+					ALB = { set_country_flag = ALB_national_unity_fascism_drift_bypass }
+				}
+			}
+		} 
+	}
+}

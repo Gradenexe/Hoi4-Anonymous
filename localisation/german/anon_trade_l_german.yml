@@ -1,0 +1,21 @@
+﻿l_german:
+ trade_agreement_action:0 "Handelsabkommen unterzeichnen"
+ TRADE_AGREEMENT_ACTION:0 "Handelsabkommen unterzeichnen"
+ TRADE_AGREEMENT_ACTION_TITLE:0 "Handelsabkommen unterzeichnen"
+ trade_agreement_action_desc:0 "Bieten Sie ein Handelsabkommen an, um die Ressourcen pro Fabrik von 8 auf 12 zu erhöhen."
+ TRADE_AGREEMENT_ACTION_ACTION_DESC:0 "Bieten Sie ein Handelsabkommen an, um die Ressourcen pro Fabrik von 8 auf 12 zu erhöhen."
+ 
+ trade_agreement_break_action:0 "Handelsabkommen kündigen"
+ TRADE_AGREEMENT_BREAK_ACTION:0 "Handelsabkommen kündigen"
+ TRADE_AGREEMENT_BREAK_ACTION_TITLE:0 "Handelsabkommen kündigen"
+ trade_agreement_break_action_desc:0 "Kündigen Sie das laufende Handelsabkommen mit dieser Nation."
+ TRADE_AGREEMENT_BREAK_ACTION_ACTION_DESC:0 "Kündigen Sie das laufende Handelsabkommen mit dieser Nation."
+ 
+ anon_trade_agreement_modifier:0 "Handelsabkommen"
+ ANON_TRADE_AGREEMENT_ACCEPT:0 "Handelsabkommen angenommen"
+ ANON_TRADE_AGREEMENT_ACCEPT_DESC:0 "Sie haben unser Handelsabkommen akzeptiert. 1 Fabrik liefert jetzt 12 Ressourcen."
+ ANON_TRADE_AGREEMENT_REJECT:0 "Handelsabkommen abgelehnt"
+ ANON_TRADE_AGREEMENT_REJECT_DESC:0 "Sie haben unser Angebot für ein Handelsabkommen abgelehnt."
+ ANON_TRADE_AGREEMENT_SEND_DESC:0 "Wir schlagen ein Handelsabkommen vor. Bei Annahme liefert eine Fabrik 12 statt 8 Ressourcen."
+ ANON_TRADE_AGREEMENT_RECEIVE_DESC:0 "Ein Handelsabkommen wird angeboten. Wenn wir akzeptieren, wird eine Fabrik 12 statt 8 Ressourcen liefern."
+ trade_agreement_ai_base:0 "Grundlegende Zurückhaltung"

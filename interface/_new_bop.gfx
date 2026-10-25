@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {  
+		name = "GFX_bop_MOR_Traditional_side"
+		texturefile = "gfx/interface/bop/bop_MOR_Tradition.png"
+	}
+	spriteType = {  
+		name = "GFX_bop_MOR_Modernized_side"
+		texturefile = "gfx/interface/bop/bop_MOR_Modern.png"
+	}
+}

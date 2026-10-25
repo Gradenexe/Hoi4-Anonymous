@@ -1,0 +1,219 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+@experience_gain_low = 0.03
+@experience_gain_medium = 0.06
+@experience_gain_high = 0.08
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
+###Todo remove commented advisor experience gains
+
+leader_traits = {
+
+	guardian_of_albanian_socialism = {
+		random = no
+		communism_drift = 0.10
+		surrender_limit = 0.10
+	}
+
+	chain_smoker = {
+		random = no
+		consumer_goods_factor = 0.02
+	}
+	
+	king_of_all_albanians = {
+		random = no
+		stability_factor = 0.10
+		drift_defence_factor = 0.15
+	}
+	
+	cult_of_zog = {
+		random = no
+		max_command_power = 100
+		command_power_gain_mult = 0.30
+		political_power_factor = 0.20
+		skill_bonus_factor = 0.2
+	}
+	
+	balkan_emperor = {
+		random = no
+		terrain_penalty_reduction = 0.10
+		justify_war_goal_time = -0.10
+		puppet_cost_factor = -0.3
+	}
+	
+	sultan = {
+		random = no
+		stability_factor = 0.1
+		resistance_target = -0.05
+		resistance_damage_to_garrison = -0.3
+	}
+	
+	ALB_svea_trait = {
+		random = no
+		#Is just here for trait name
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_state_mining_directorate_trait = {
+		random = no
+		local_resources_factor = 0.15
+		local_resources_coal_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_italophile = {
+		random = no
+		sprite = 13  
+		trade_opinion_factor = 0.15
+		opinion_gain_monthly_factor = 0.05
+		experience_gain_army = 0.1
+		resistance_decay = 0.05
+		custom_modifier_tooltip = ALB_italophile_tt
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_intellectual_nationalist = {
+		random = no
+		sprite = 13
+		compliance_growth = 0.05
+		research_speed_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_administrative_genius = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.05
+		consumer_goods_factor = -0.10
+		industrial_capacity_factory = -0.05
+		industrial_capacity_dockyard = -0.05
+		production_speed_dockyard_factor = -0.05
+		production_speed_arms_factory_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_minister_of_justice = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.10
+		resistance_target = -0.05
+		drift_defence_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_minister_of_the_interior = {
+		random = no
+		sprite = 13
+		trade_opinion_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.2
+		industry_repair_factor = 0.1
+		supply_node_range = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_revolutionary_physician = {
+		random = no
+		sprite = 13
+		communism_drift = 0.03
+		monthly_population = 0.10
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_liberal_nationalist = {
+		sprite = 13
+		random = no
+		democratic_drift = 0.05
+		party_popularity_stability_factor = 0.1
+		weekly_casualties_war_support = 0.001
+		weekly_bombing_war_support = 0.001
+		weekly_convoys_war_support = 0.001
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_womens_rights_activist = {
+		random = no
+		sprite = 13
+		communism_drift = 0.03
+		experience_gain_army = 0.1
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_chief_of_the_royal_army = {
+		random = no
+		sprite = 13
+		neutrality_drift = 0.03
+		army_org_factor = 0.02
+		experience_gain_army = 0.03
+		experience_gain_navy = 0.03
+		experience_gain_air = 0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_anti_fascist = {
+		random = no
+		sprite = 13
+		fascism_drift = -0.10
+		fascism_acceptance = -40
+		party_popularity_stability_factor = 0.1
+		war_support_factor = -0.05
+		custom_modifier_tooltip = ALB_anti_fascist_tt
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_orthodox_scholar  = {
+		random = no
+		sprite = 13
+		weekly_manpower = 150
+		compliance_growth_on_our_occupied_states = -0.1
+		resistance_growth_on_our_occupied_states = 0.1
+		defensive_war_stability_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,77 @@
+﻿l_german:
+ # ============================================
+ # BALTIC ENTENTE SHARED FOCUS TREE
+ # ============================================
+
+ # --- Root ---
+ BALTIC_entente_shared: "Baltische Entente"
+ BALTIC_entente_shared_desc: "Die baltischen Staaten Estland, Lettland und Litauen haben einen gegenseitigen Verteidigungs- und Kooperationspakt geschlossen. Gemeinsam sind wir stärker."
+
+ # --- Railway ---
+ BALTIC_railway_cooperation: "Baltische Eisenbahnkooperation"
+ BALTIC_railway_cooperation_desc: "Ein einheitliches Eisenbahnnetz, das unsere drei Nationen verbindet, wird die Geschwindigkeit der Truppenbewegungen und die wirtschaftliche Integration erheblich verbessern."
+
+ # --- Industrial Expansion ---
+ BALTIC_industrial_expansion: "Industrielle Expansion"
+ BALTIC_industrial_expansion_desc: "Indem wir unsere Ressourcen und unser Fachwissen bündeln, können wir neue Fabriken bauen, um unsere wachsende Kriegswirtschaft voranzutreiben."
+
+ # --- Resource Development ---
+ BALTIC_resource_development: "Baltische natürliche Ressourcen"
+ BALTIC_resource_development_desc: "Die baltischen Staaten verfügen über bedeutende Rohstoffvorkommen. Eine koordinierte Gewinnung kommt allen Mitgliedsstaaten zugute."
+
+ BALTIC_estonian_oil: "Estnischer Ölschiefer"
+ BALTIC_estonian_oil_desc: "In den nördlichen Regionen Estlands gibt es riesige Ölschiefervorkommen. Mit entsprechenden Investitionen können wir diese Ressource zum Nutzen der gesamten baltischen Allianz nutzen."
+
+ BALTIC_latvian_steel: "Lettische Stahlindustrie"
+ BALTIC_latvian_steel_desc: "Lettlands Eisenerzvorkommen in der Region Kurzeme können in hochwertigen Stahl umgewandelt werden, um die baltische Waffenproduktion zu versorgen."
+
+ BALTIC_lithuanian_aluminium: "Litauisches Aluminium"
+ BALTIC_lithuanian_aluminium_desc: "Die litauische Region Žemaitija verfügt über wertvolle Bauxitvorkommen. Die Entwicklung der Aluminiumproduktion hier wird unsere militärische Ausrüstung modernisieren."
+
+ BALTIC_combined_resources: "Baltische kombinierte Ressourcen"
+ BALTIC_combined_resources_desc: "Durch die Zusammenarbeit aller drei baltischen Rohstoffindustrien haben wir eine wirtschaftliche Unabhängigkeit erreicht, die unserem Bündnis in jedem Konflikt standhält."
+
+ # --- Defence Line ---
+ BALTIC_defence_line: "Baltische Verteidigungslinie"
+ BALTIC_defence_line_desc: "Wir werden eine Kette von Befestigungsanlagen über alle drei Länder errichten und so eine undurchdringliche Mauer schaffen, die jeden Angreifer abschreckt."
+
+ BALTIC_plan_east: "Planen Sie Osten"
+ BALTIC_plan_east_desc: "Über der Ostsee lauert die sowjetische Bedrohung. Wir müssen unsere Ostgrenzen mit Befestigungen und vorbereiteten Verteidigungsstellungen verstärken, um jeden Vormarsch der Roten Armee abzuwehren."
+
+ BALTIC_plan_west: "Planen Sie den Westen"
+ BALTIC_plan_west_desc: "Die Ambitionen Deutschlands sind ein ständiges Anliegen. Küstenbefestigungen und westliche Verteidigungslinien werden dafür sorgen, dass wir jedem Druck des Reiches standhalten können."
+
+ BALTIC_homeland_defense: "Heimatverteidigung"
+ BALTIC_homeland_defense_desc: "Da sowohl unsere Ost- als auch unsere Westgrenzen gesichert sind, können wir uns nun auf die Ausbildung unserer Armeen für die ultimative Verteidigung des baltischen Heimatlandes konzentrieren. Jeder Bürger wird seine Rolle kennen, wenn es soweit ist."
+
+ # --- Fleet ---
+ BALTIC_fleet_cooperation: "Ostseeflotte"
+ BALTIC_fleet_cooperation_desc: "Die Ostsee ist unsere Lebensader. Eine koordinierte baltische Seestreitmacht wird unsere Küsten und Schifffahrtswege vor ausländischer Einmischung schützen."
+
+ # --- Army ---
+ BALTIC_unified_army: "Vereinigte baltische Armee"
+ BALTIC_unified_army_desc: "Die Armeen Estlands, Lettlands und Litauens sollen einer einheitlichen Kommandostruktur unterstellt werden, die Doktrin, Ausrüstung und Ausbildungsprogramme gemeinsam nutzt."
+
+ BALTIC_air_cooperation: "Baltische Luftkooperation"
+ BALTIC_air_cooperation_desc: "Eine kombinierte baltische Luftwaffe, die gemeinsam ausgebildet wird und die Doktrin teilt, wird unseren Armeen und Küstenverteidigungen wichtige Luftunterstützung bieten."
+
+ BALTIC_military_industry: "Baltische Militärindustrie"
+ BALTIC_military_industry_desc: "Der Ausbau unserer Waffenfabriken und die Koordinierung der Militärproduktion werden sicherstellen, dass unser Bündnis längere Militäreinsätze durchhalten kann."
+
+ # --- Economy ---
+ BALTIC_currency_union: "Baltische Währungsunion"
+ BALTIC_currency_union_desc: "Eine gemeinsame Währung und Geldpolitik wird die Wirtschaftsbeziehungen zwischen unseren Nationen vertiefen, Handelskonflikte verringern und das Verbrauchervertrauen im gesamten Bündnis stärken."
+
+ BALTIC_university_exchange: "Universitätsaustauschprogramm"
+ BALTIC_university_exchange_desc: "Gemeinsam studierende baltische Wissenschaftler und Ingenieure werden die technologische Entwicklung beschleunigen und wichtiges Wissen in allen drei Nationen teilen."
+
+ # --- Dynamic Modifier ---
+ BALTIC_pact: "Baltischer Pakt"
+ BALTIC_pact_desc: "Als Mitglied des Baltischen Pakts profitiert diese Nation von gemeinsamen Ressourcen, militärischer Zusammenarbeit und wirtschaftlicher Integration aller drei baltischen Staaten."
+
+ BALTIC_lit_lat_military_cooperation:0 "Litauisch-lettische Militärkooperation"
+ BALTIC_lit_lat_military_cooperation_desc:0 "Um das Überleben unserer Nationen gegen die drohenden Bedrohungen aus Ost und West zu sichern, müssen wir unsere militärischen Kommandostrukturen integrieren und unser kriegerisches Fachwissen teilen."
+ BALTIC_lat_est_civilian_cooperation:0 "Lettisch-estnische zivile Zusammenarbeit"
+ BALTIC_lat_est_civilian_cooperation_desc:0 "Durch den Abbau wirtschaftlicher Barrieren und die gemeinsame Nutzung unserer zivilen Industriekapazitäten können wir unsere Infrastruktur und Fabriken schnell modernisieren."
+ BALTIC_lit_est_naval_cooperation:0 "Litauisch-estnische Marinekooperation"
+ BALTIC_lit_est_naval_cooperation_desc:0 "Die Ostsee ist unsere Lebensader. Die Kombination unserer Bemühungen im Schiffbau und der Marineaufklärung wird es uns ermöglichen, unsere Seegrenzen zu sichern."

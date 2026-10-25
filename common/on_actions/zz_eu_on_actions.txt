@@ -1,0 +1,23 @@
+on_actions = {
+	on_join_faction = {
+		effect = {
+			# ROOT is the country joining the faction
+			# FROM is the country that sent the invite (or faction leader if joining via focus)
+			
+			if = {
+				limit = {
+					# If the faction leader has completed EU council of europe
+					any_allied_country = {
+						is_faction_leader = yes
+						has_completed_focus = EU_council_of_europe
+					}
+					# And ROOT does NOT already have the modifier
+					NOT = { has_dynamic_modifier = { modifier = eu_european_community } }
+				}
+				ROOT = {
+					add_dynamic_modifier = { modifier = eu_european_community }
+				}
+			}
+		}
+	}
+}

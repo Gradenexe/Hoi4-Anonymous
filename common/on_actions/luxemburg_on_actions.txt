@@ -1,0 +1,33 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			LUX = {
+				if = {
+					limit = {
+						is_historical_focus_on = no
+						}
+					random_list = {
+						20 = {
+							set_country_flag = LUX_alternate_democratic_flag
+						}
+						20 = {
+							set_country_flag = LUX_we_are_dutch_flag
+						}
+						10 = {
+							set_country_flag = LUX_rise_of_luxembourg_eng_flag
+						}
+						10 = {
+							set_country_flag = LUX_rise_of_luxembourg_ger_flag
+						}
+						20 = {
+							set_country_flag = LUX_join_axis_flag
+						}
+						20 = {
+							set_country_flag = LUX_communist_plan_flag
+						}
+					}
+				}
+			}
+		}
+	}
+}

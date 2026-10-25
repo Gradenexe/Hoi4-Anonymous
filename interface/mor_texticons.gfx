@@ -1,0 +1,27 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_mor_texticon_agr"
+		texturefile = "gfx/texticons/mor_texticon_agr.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_mor_texticon_dahir"
+		texturefile = "gfx/texticons/mor_texticon_dahir.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_mor_texticon_fr"
+		texturefile = "gfx/texticons/mor_texticon_fr.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_mor_texticon_ang"
+		texturefile = "gfx/texticons/mor_texticon_ang.png"
+		legacy_lazy_load = no
+	}
+
+}

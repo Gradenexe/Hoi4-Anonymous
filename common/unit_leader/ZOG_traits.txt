@@ -1,0 +1,14 @@
+leader_traits = {
+	power_of_cigarettes = {
+		type = land
+		trait_type = status_trait
+		
+		modifier = {
+			breakthrough_factor = 0.15
+		}
+		
+		non_shared_modifier = {
+			experience_gain_factor = 2.0
+		}
+	}
+}

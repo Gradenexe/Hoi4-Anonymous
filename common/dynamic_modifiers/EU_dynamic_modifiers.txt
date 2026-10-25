@@ -1,0 +1,16 @@
+eu_european_community = {
+	enable = { always = yes }
+	icon = GFX_idea_eu_european_community
+
+	industrial_capacity_factory = eu_factory_output_var
+	consumer_goods_factor = eu_consumer_goods_var
+	political_power_factor = eu_pp_gain_var
+	production_speed_buildings_factor = eu_building_slots_var
+	research_speed_factor = eu_research_speed_var
+	stability_factor = eu_stability_var
+	war_support_factor = eu_war_support_var
+	conscription_factor = eu_non_core_manpower_var
+	army_org_factor = eu_org_var
+	navy_org_factor = eu_navy_org_var
+	air_mission_efficiency = eu_air_mission_efficiency_var
+}

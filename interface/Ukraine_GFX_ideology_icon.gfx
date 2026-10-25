@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_UKR_neutrality_group"
+		texturefile = "gfx/interface/ideologies/UKR_neutrality_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_UKR_fascism_group"
+		texturefile = "gfx/interface/ideologies/UKR_fascism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_UKR_democratic_group"
+		texturefile = "gfx/interface/ideologies/UKR_democratic_group.png"
+	}
+}

@@ -1,0 +1,788 @@
+﻿add_namespace = albania
+
+country_event = { #Albanian Partisans in Italy
+	id = albania.1
+	title = albania.1.t
+	desc = albania.1.d
+	picture = GFX_report_event_spr_anarchist_uprising2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = albania.1.a
+		ai_chance = { factor = 10 }
+		add_war_support = 0.1
+		custom_effect_tooltip = ALB_ITA_partisans_TT
+		hidden_effect = {
+			load_oob = "ALB_ITA_partisans"
+			117 = {
+				if = {
+					limit = {
+						owner = { has_war_with = ALB }
+					}
+					create_unit = {
+						division = "name = \"Albanian Partisans\" division_template = \"Albanian Partisans\" start_experience_factor = 0.3"
+						owner = ALB
+						allow_spawning_on_enemy_provs = yes
+						count = 4
+					}
+				}
+			}
+			156 = {
+				if = {
+					limit = {
+						owner = { has_war_with = ALB }
+					}
+					create_unit = {
+						division = "name = \"Albanian Partisans\" division_template = \"Albanian Partisans\" start_experience_factor = 0.3"
+						owner = ALB
+						allow_spawning_on_enemy_provs = yes
+						count = 2
+					}
+				}
+			}
+			157 = {
+				if = {
+					limit = {
+						owner = { has_war_with = ALB }
+					}
+					create_unit = {
+						division = "name = \"Albanian Partisans\" division_template = \"Albanian Partisans\" start_experience_factor = 0.3"
+						owner = ALB
+						allow_spawning_on_enemy_provs = yes
+						count = 1
+					}
+				}
+			}
+			849 = {
+				if = {
+					limit = {
+						owner = { has_war_with = ALB }
+					}
+					create_unit = {
+						division = "name = \"Albanian Partisans\" division_template = \"Albanian Partisans\" start_experience_factor = 0.3"
+						owner = ALB
+						allow_spawning_on_enemy_provs = yes
+						count = 3
+					}
+				}
+			}
+		}
+		
+		trigger = { tag = ALB }
+	}
+	
+	option = {
+		name = albania.1.b
+		ai_chance = { factor = 10 }
+		effect_tooltip = {
+			ALB = { custom_effect_tooltip = ALB_ITA_partisans_TT }
+		}
+		
+		trigger = { NOT = { tag = ALB } }
+	}
+}
+
+country_event = { #Moving our Capital
+	id = albania.2
+	title = albania.2.t
+	desc = albania.2.d
+	picture = GFX_report_event_military_planning
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = albania.2.a	# Yes
+		ai_chance = { factor = 10 }
+		set_capital = {state = 2}
+	}
+	
+	option = {
+		name = albania.2.b	# No
+		ai_chance = { factor = 10 }
+		set_capital = {state = 44}
+		2 = { add_manpower = -50000 }
+		hidden_effect = { add_manpower = -50000 }
+		44 = { add_manpower = 50000 }
+	}
+}
+
+country_event = { # Truce with Albania
+	id = albania.3
+	title = albania.3.t
+	desc = albania.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = albania.3.a	# Accept Peace
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				ALB = {
+					any_core_state = {
+						NOT = { is_fully_controlled_by = ALB }
+					}
+				}
+				date > 1940.06.01
+			}
+		}
+		white_peace = ALB
+		hidden_effect = {
+			set_truce = {
+				target = ALB
+				days = 365
+			}
+			every_country = {
+				limit = { is_in_faction_with = ITA }
+				white_peace = ALB
+			}
+		}
+		ALB = { country_event = albania.4 }
+	}
+	
+	option = {
+		name = albania.3.b	# Deny
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					ALB = {
+						all_core_state = {
+							is_fully_controlled_by = ALB
+						}
+					}
+					date < 1940.06.01
+				}
+			}
+		}
+		add_political_power = -100
+		ALB = { country_event = albania.5 }
+	}
+}
+
+country_event = { # Truce with Albania - Accept
+	id = albania.4
+	title = albania.4.t
+	desc = albania.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = albania.4.a
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = { # Truce with Albania - Deny
+	id = albania.5
+	title = albania.5.t
+	desc = albania.5.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = albania.5.a
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = { # Demand Levant
+	id = albania.6
+	title = albania.6.t
+	desc = albania.6.d
+	picture = GFX_report_event_tur_the_saadabad_pact
+	
+	is_triggered_only = yes
+	
+	option = { # Do not give land
+		name = albania.6.a
+		ai_chance = { factor = 0.5 }
+		
+		ALB = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
+			}
+			country_event = albania.7
+		}
+	}
+	
+	option = { # Give land
+		name = albania.6.b
+		ai_chance = { 
+			factor = 0
+			modifier = {
+				factor = 1
+				strength_ratio = {
+					tag = ALB
+					ratio > 2
+				}
+			}
+			modifier = {
+				factor = 1
+				naval_strength_ratio = {
+					tag = ALB
+					ratio > 2
+				}
+			}
+		}
+		
+		454 = {
+			if = {
+				limit = {
+					owns_or_subject_of = yes
+				}
+				transfer_state_to = ALB
+			}
+		}
+		455 = {
+			if = {
+				limit = {
+					owns_or_subject_of = yes
+				}
+				transfer_state_to = ALB
+			}
+		}
+		553 = {
+			if = {
+				limit = {
+					owns_or_subject_of = yes
+				}
+				transfer_state_to = ALB
+			}
+		}
+		554 = {
+			if = {
+				limit = {
+					owns_or_subject_of = yes
+				}
+				transfer_state_to = ALB
+			}
+		}
+		677 = {
+			if = {
+				limit = {
+					owns_or_subject_of = yes
+				}
+				transfer_state_to = ALB
+			}
+		}
+		680 = {
+			if = {
+				limit = {
+					owns_or_subject_of = yes
+				}
+				transfer_state_to = ALB
+			}
+		}
+		799 = {
+			if = {
+				limit = {
+					owns_or_subject_of = yes
+				}
+				transfer_state_to = ALB
+			}
+		}
+		ALB = { country_event = albania.8 }
+	}
+}
+
+country_event = { # Demand Levant - Denied
+	id = albania.7
+	title = albania.7.t
+	desc = albania.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = albania.7.a
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = { # Demand Levant - Accepted
+	id = albania.8
+	title = albania.8.t
+	desc = albania.8.d
+	picture = GFX_report_event_albanian_king_zog
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = albania.8.a
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = { #Albanian Partisans in Italy
+	id = albania.9
+	title = albania.9.t
+	desc = albania.9.d
+	picture = GFX_report_event_hol_cabinet_de_geer
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = albania.9.a
+		ai_chance = { factor = 10 }
+		
+		set_cosmetic_tag = ALB_ITALIAN_UNION
+	}
+	
+	option = {
+		name = albania.9.b
+		ai_chance = { factor = 10 }
+		
+		set_cosmetic_tag = ITA
+	}
+}
+
+country_event = { #Albania wants friendship with Yugo
+	id = albania.10
+	title = albania.10.t
+	desc = albania.10.desc
+	picture = GFX_report_event_albanian_king_zog
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Accept
+		name = albania.10.a
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0
+				has_war_with = ALB
+			}
+		}
+		
+		ALB = { country_event = albania.11 }
+		if = {
+			limit = { has_dlc = "Arms Against Tyranny" }
+			give_market_access = ALB
+			diplomatic_relation = {
+				country = ALB
+				relation = non_aggression_pact
+				active = yes
+			}
+			ALB = {
+				give_market_access = ROOT
+				diplomatic_relation = {
+					country = ROOT
+					relation = non_aggression_pact
+					active = yes
+				}
+			}
+		}
+		else = {
+			diplomatic_relation = {
+				country = ALB
+				relation = non_aggression_pact
+				active = yes
+			}
+			ALB = {
+				diplomatic_relation = {
+					country = ROOT
+					relation = non_aggression_pact
+					active = yes
+				}
+			}
+		}
+	}
+	
+	option = { #Deny
+		name = albania.10.b
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = ALB }
+			}
+		}
+		
+		ALB = { country_event = albania.12 }
+		add_political_power = -10
+	}
+}
+
+country_event = { #Albania wants friendship with Yugo - Accept
+	id = albania.11
+	title = albania.11.t
+	desc = albania.11.desc
+	picture = GFX_report_event_albanian_king_zog
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = albania.11.a
+		ai_chance = { 
+			factor = 10
+		}
+	}
+}
+
+country_event = { #Albania wants friendship with Yugo - Reject
+	id = albania.12
+	title = albania.12.t
+	desc = albania.12.desc
+	picture = GFX_report_event_albanian_king_zog
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = albania.12.a
+		ai_chance = { 
+			factor = 10
+		}
+	}
+}
+
+country_event = { #Albania demands kosovo
+	id = albania.13
+	title = albania.13.t
+	desc = albania.13.desc
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Accept
+		name = albania.13.a
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = will_NOT_accept_demand_for_kosovo
+			}
+		}
+		
+		ALB = { country_event = albania.14 }
+		802 = { transfer_state_to = ALB }
+	}
+	
+	option = { #Deny
+		name = albania.13.b
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = will_accept_demand_for_kosovo
+			}
+		}
+		
+		ALB = {
+			country_event = albania.15
+			create_wargoal = {
+				target = ROOT
+				type = take_state_focus
+				generator = { 802 }
+			}
+		}
+	}
+}
+
+country_event = { #Albania demands kosovo - Accept
+	id = albania.14
+	title = albania.14.t
+	desc = albania.14.desc
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = albania.14.a
+		ai_chance = { 
+			factor = 10
+		}
+	}
+}
+
+country_event = { #Albania demands kosovo - Reject
+	id = albania.15
+	title = albania.15.t
+	desc = albania.15.desc
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = albania.15.a
+		ai_chance = { 
+			factor = 10
+		}
+	}
+}
+
+country_event = { #Albania claims kosovo
+	id = albania.16
+	title = albania.16.t
+	desc = albania.16.desc
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = albania.16.a
+		ai_chance = {
+			factor = 10
+		}
+		effect_tooltip = {
+			ALB = {
+				add_state_claim = 802
+			}
+		}
+	}
+}
+
+country_event = { #Albania influences us
+	id = albania.17
+	title = albania.17.t
+	desc = albania.17.desc
+	picture = GFX_report_event_gre_megali_conference_signing
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = albania.17.a
+		ai_chance = {
+			factor = 10
+		}
+		effect_tooltip = {
+			add_ideas = ALB_albanian_diplomatic_pressure
+		}
+	}
+}
+
+country_event = { #Albania wants mutual guarentees
+	id = albania.18
+	title = albania.18.t
+	desc = albania.18.desc
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = albania.18.a
+		ai_chance = {
+			factor = 10
+		}
+		add_opinion_modifier = {
+			target = FROM
+			modifier = ALB_diplomatic_ties_opinion_modifier
+		}
+		give_guarantee = FROM
+		FROM = {
+			country_event = albania.19
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = ALB_diplomatic_ties_opinion_modifier
+			}
+			give_guarantee = ROOT
+		}
+		set_country_flag = ALB_accepted_mutual_guarentees
+	}
+	
+	option = {
+		name = albania.18.b
+		ai_chance = {
+			factor = 0
+		}
+		FROM = { country_event = albania.20 }
+	}
+}
+
+country_event = { #Albania wants mutual guarentees - Accept
+	id = albania.19
+	title = albania.19.t
+	desc = albania.19.desc
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = albania.19.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { #Albania wants mutual guarentees - Deny
+	id = albania.20
+	title = albania.20.t
+	desc = albania.20.desc
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = albania.20.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { #Albania invites us to their faction
+	id = albania.21
+	title = albania.21.t
+	desc = albania.21.desc
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = albania.21.a
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.2
+				has_guaranteed = FROM
+			}
+			modifier = {
+				factor = 0.25
+				AND = {
+					has_war = no
+					FROM = { has_war = yes }
+				}
+			}
+			modifier = {
+				factor = 0.4
+				is_enemy_ideology = yes
+			}
+			modifier = {
+				factor = 0.4
+				strength_ratio = {
+					tag = FROM
+					ratio > 2
+				}
+			}
+			modifier = {
+				factor = 0.0
+				has_idea = neutrality_idea
+			}
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio > 3
+				}
+			}
+			modifier = {
+				factor = 0
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+		}
+		FROM = { 
+			country_event = albania.22
+			add_to_faction = ROOT
+		}
+	}
+	
+	option = {
+		name = albania.21.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.4
+				is_guaranteed_by = FROM
+			}
+			modifier = {
+				factor = 0.9
+				has_non_aggression_pact_with = FROM
+			}
+			modifier = {
+				factor = 0.6
+				has_opinion = {
+					target = FROM
+					value > 40
+				}
+			}
+			modifier = {
+				factor = 0.6
+				has_opinion = {
+					target = FROM
+					value > 80
+				}
+			}
+			modifier = {
+				factor = 0.9
+				strength_ratio = {
+					tag = FROM
+					ratio < 1.5
+				}
+			}
+			modifier = {
+				factor = 1.2
+				strength_ratio = {
+					tag = FROM
+					ratio > 1
+				}
+			}
+			modifier = {
+				factor = 1.2
+				strength_ratio = {
+					tag = FROM
+					ratio > 2
+				}
+			}
+		}
+		FROM = { country_event = albania.23 }
+	}
+}
+
+country_event = { #Albania invites us to their faction - Accept
+	id = albania.22
+	title = albania.22.t
+	desc = albania.22.desc
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = albania.22.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { #Albania invites us to their faction - Deny
+	id = albania.23
+	title = albania.23.t
+	desc = albania.23.desc
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = albania.23.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

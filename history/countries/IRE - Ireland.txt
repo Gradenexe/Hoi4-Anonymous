@@ -1,0 +1,290 @@
+﻿capital = 113
+
+oob = "IRE_1936"
+set_cosmetic_tag = IRE_free_state
+send_embargo = ENG
+set_research_slots = 5
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		#basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		basic_fire_control_system = 1
+		basic_dp_light_battery = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			basic_medium_airframe = 1
+			basic_small_airframe = 1
+			air_torpedoe_1 = 1
+			bba_early_transport_plane = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			CAS1 = 1
+			early_transport_plane = 1
+		}
+	}
+}
+
+
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+set_naval_oob = "IRE_1936_naval_mtg"
+
+add_dynamic_modifier = {
+	modifier = IRE_economic_downturn_dynamic_modifier
+}
+add_dynamic_modifier = {
+	modifier = IRE_scars_of_The_Potato_Famine_dynamic_modifier
+}
+add_dynamic_modifier = {
+	modifier = IRE_Autonomous_Dominion_dynamic_modifier
+}
+add_ideas = { IRE_Treaty_Ports }
+
+set_variable = { IRE_scars_of_The_Potato_Famine_war_support_factor = -0.3 }
+set_variable = { IRE_scars_of_The_Potato_Famine_production_speed_arms_factory_factor = -0.2 }
+set_variable = { IRE_scars_of_The_Potato_Famine_army_org_factor = -0.15 }
+set_variable = { IRE_scars_of_The_Potato_Famine_conscription_factor = -0.15 }
+	
+set_variable = { IRE_economic_downturn_consumer_goods_factor = 0.30 }
+set_variable = { IRE_economic_downturn_industrial_capacity_factory = -0.25 }
+
+set_variable = { IRE_Autonomous_Dominion_political_power_factor = -0.5 }
+
+
+set_variable = { var = Northern_Ireland_Counties_swung value = 0 }
+
+set_power_balance = {
+	id = IRE_IRA_political_balance
+	set_default = no  # whether or not to reset the power balance to the initial value, default = no
+	set_value = -0.0
+}
+
+
+
+
+set_war_support = 0.17
+set_stability = 0.75
+set_convoys = 55
+
+recruit_character = IRE_Éamon_de_valera
+recruit_character = IRE_eoin_oduffy
+recruit_character = IRE_james_larkin
+recruit_character = IRE_william_norton
+recruit_character = IRE_michael_costello
+recruit_character = IRE_p_a_mulcahy
+recruit_character = IRE_liam_archer
+recruit_character = IRE_a_t_lawlor
+recruit_character = IRE_oscar_traynor
+recruit_character = IRE_frank_fahy
+recruit_character = IRE_h_t_green
+recruit_character = IRE_michael_brennan
+recruit_character = IRE_richard_james_mulcahy
+recruit_character = IRE_michael_joe_costello
+recruit_character = IRE_s_muiris
+recruit_character = IRE_john_byrne
+recruit_character = IRE_sean_lemass
+recruit_character = IRE_douglas_hyde
+recruit_character = IRE_sean_ceallaigh
+recruit_character = IRE_ernest_walton
+recruit_character = IRE_jack_lynch
+recruit_character = IRE_thomas_ohiggins
+recruit_character = IRE_sean_murray
+recruit_character = IRE_joseph_macrory
+recruit_character = IRE_Michael_Fitzpatrick
+recruit_character = IRE_padraig_hennessy
+recruit_character = IRE_charlotte_despard
+recruit_character = IRE_christopher_furlong
+recruit_character = IRE_daniel_hogan
+recruit_character = IRE_sean_mac_eoin
+recruit_character = IRE_james_steele
+recruit_character = IRE_wj_brennan_whitmore
+recruit_character = IRE_tom_barry
+recruit_character = IRE_daniel_mckenna
+recruit_character = IRE_jj_oconnell
+recruit_character = IRE_frank_aiken
+recruit_character = IRE_eamon_broy
+recruit_character = IRE_james_ObrienNavy
+recruit_character = IRE_Harry_FitzgeraldNavy
+recruit_character = IRE_Paddy_AikenNavy
+recruit_character = IRE_Lugaid_OConnor
+
+
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	add_command_power = 100
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "IRE_1939"
+	set_technology = {
+		gw_artillery = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		fuel_refining = 1
+	}
+
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.1.24"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 42
+	fascism = 31
+	communism = 12
+	neutrality = 15
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1938.6.17"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}

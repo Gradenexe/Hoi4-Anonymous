@@ -1,0 +1,43 @@
+spriteTypes = {
+
+	spriteType = {
+		name = GFX_portrait_UKR_nikita_khrushchev
+		texturefile = gfx/leaders/UKR/Portrait_Ukraine_Nikita_Khruchchev.DDS
+	}
+
+	spriteType = {
+		name = GFX_portrait_BLR_panteleimon_ponomarenko
+		texturefile = gfx/leaders/UKR/Portrait_Belarus_Panteleimon_Ponomarenko.DDS
+	}
+
+	spriteType = {
+		name = GFX_portrait_Grigor_Harutyunyan
+		texturefile = gfx/leaders/UKR/Portrait_Armenia_Grigor_Harutyunyan.DDS
+	}
+
+	spriteType = {
+		name = GFX_portrait_Mir_Jafar_Baghirov
+		texturefile = gfx/leaders/UKR/Portrait_Azerbaijan_Mir_Djafar_Baghirov.DDS
+	}
+
+	spriteType = {
+		name = GFX_portrait_TAJ_bobojon_ghafurov
+		texturefile = gfx/leaders/UKR/Portrait_Tajikistan_Bobojon_Ghafurov.DDS
+	}
+
+	spriteType = {
+		name = GFX_portrait_KYR_maxim_ammosov
+		texturefile = gfx/leaders/UKR/Portrait_Kyrgyzstan_Maxim_Ammosov.DDS
+	}
+
+	spriteType = {
+		name = GFX_portrait_TMS_aytbay_hudayberganov
+		texturefile = gfx/leaders/UKR/Portrait_Turkmenistan_Aytbay_Hudayberganov.DDS
+	}
+
+	spriteType = {
+		name = GFX_portrait_UZB_usman_yusupov
+		texturefile = gfx/leaders/UKR/Portrait_Uzbekistan_Usman_Yusupov.DDS
+	}
+
+}

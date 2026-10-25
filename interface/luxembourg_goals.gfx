@@ -1,0 +1,8 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_focus_lux_strange_girl"
+	texturefile = "gfx/interface/goals/lux_focus.dds"			
+	}
+	
+}

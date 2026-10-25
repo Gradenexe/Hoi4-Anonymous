@@ -1,0 +1,666 @@
+add_namespace = UKR_events
+
+# Ukraine asks for Guarantees/Support / Faction entry
+country_event = {
+	id = UKR_events.1
+	title = UKR_events.1.t
+	desc = UKR_events.1.d
+	picture = GFX_report_event_sanation_left_victory
+	
+	is_triggered_only = yes
+
+	option = { # We will invite them to our faction or defend them
+		name = UKR_events.1.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 10
+				FROM = {
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = { is_in_faction = yes }
+			}
+		}
+		if = {
+			limit = { is_faction_leader = yes }
+			add_to_faction = FROM
+		}
+		else = {
+			give_guarantee = FROM
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = UKR_events.101 days = 5 } }
+		}
+	}
+
+	option = { # Absolutely not
+		name = UKR_events.1.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				NOT = { has_government = fascism }
+				FROM = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+			}
+		}
+		reverse_add_opinion_modifier = {
+			target = FROM
+			modifier = refused_help
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = UKR_events.102 days = 5 } }
+		}
+	}
+}
+
+# Informed of choice (Accept)
+country_event = {
+	id = UKR_events.101
+	title = UKR_events.101.t
+	desc = UKR_events.101.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+
+	option = { # Nice!
+		name = UKR_events.101.a
+		effect_tooltip = {
+			FROM = { give_guarantee = ROOT }
+		}
+	}
+}
+
+# Informed of choice (Reject)
+country_event = {
+	id = UKR_events.102
+	title = UKR_events.102.t
+	desc = UKR_events.102.d
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes
+
+	option = { # Not Nice!
+		name = UKR_events.102.a
+		effect_tooltip = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = refused_help
+			}
+		}
+	}
+}
+
+
+# Event 7 - Finland
+country_event = {
+	id = UKR_events.7
+	title = UKR_events.7.t
+	desc = UKR_events.7.d
+	picture = GFX_report_event_soviet_tanks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = UKR_events.7.a
+		create_wargoal = {
+			type = topple_government
+			target = BUL
+			expire = 0
+		}
+	}
+}
+
+# Event 8 - Denmark
+country_event = {
+	id = UKR_events.8
+	title = UKR_events.8.t
+	desc = UKR_events.8.d
+	picture = GFX_report_event_soviet_tanks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = UKR_events.8.a
+		create_wargoal = {
+			type = topple_government
+			target = ROM
+			expire = 0
+		}
+	}
+}
+
+# Event 9 - Sweden
+country_event = {
+	id = UKR_events.9
+	title = UKR_events.9.t
+	desc = UKR_events.9.d
+	picture = GFX_report_event_soviet_tanks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = UKR_events.9.a
+		create_wargoal = {
+			type = topple_government
+			target = YUG
+			expire = 0
+		}
+	}
+}
+
+# Event 10 - Poland
+country_event = {
+	id = UKR_events.10
+	title = UKR_events.10.t
+	desc = UKR_events.10.d
+	picture = GFX_report_event_soviet_tanks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = UKR_events.10.a
+		create_wargoal = {
+			type = topple_government
+			target = POL
+			expire = 0
+		}
+	}
+}
+
+# Event 11 - Italy
+country_event = {
+	id = UKR_events.11
+	title = UKR_events.11.t
+	desc = UKR_events.11.d
+	picture = GFX_report_event_soviet_tanks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = UKR_events.11.a
+		create_wargoal = {
+			type = topple_government
+			target = ITA
+			expire = 0
+		}
+	}
+}
+
+# Event 12 - Czechoslovakia
+country_event = {
+	id = UKR_events.12
+	title = UKR_events.12.t
+	desc = UKR_events.12.d
+	picture = GFX_report_event_soviet_tanks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = UKR_events.12.a
+		create_wargoal = {
+			type = topple_government
+			target = CZE
+			expire = 0
+		}
+		create_wargoal = {
+			type = topple_government
+			target = SLO
+			expire = 0
+		}
+	}
+}
+
+#ukr_ask_crimea
+country_event = {
+	id = UKR_events.13
+	title = UKR_events.13.t
+	desc = UKR_events.13.d
+	picture = GFX_report_event_SOV_purge_administration
+	is_triggered_only = yes
+
+	
+	option = {
+		name = UKR_events.13.a	
+		ai_chance = { factor = 100 }
+		if = {
+			limit = { CRI = { is_puppet = SOV } }
+		}
+        annex_country = {	
+            target = CRI
+            transfer_troops = yes
+        }
+        every_state = {
+        limit = { is_core_of = CRI }
+        add_core_of = PREV
+        }
+    	196 = { transfer_state_to = UKR }
+        137 = { transfer_state_to = UKR }
+		UKR = {
+			country_event =  UKR_events.14
+		}
+		
+	}
+	
+	option = {
+		name = UKR_events.13.b
+		ai_chance = { factor = 0 }
+		UKR = {
+			country_event = UKR_events.15
+		}
+
+	}
+	}
+
+	country_event = {
+	id = UKR_events.14
+	title = UKR_events.14.t
+	desc = UKR_events.14.d
+	picture = GFX_report_event_soviet_army_greeted
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_events.14.a	
+	}
+	}
+	country_event = {
+	id = UKR_events.15
+	title = UKR_events.15.t
+	desc = UKR_events.15.d
+	picture = GFX_report_event_stalin_02
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_events.15.a	
+	}
+	}
+
+
+
+
+
+
+
+#ukr_ask_bessarabia
+country_event = {
+    id = UKR_events.16
+    title = UKR_events.16.t
+    desc = UKR_events.16.d
+    picture = GFX_report_event_soviet_tanks
+    is_triggered_only = yes
+
+    option = {
+        name = UKR_events.16.a
+        ai_chance = {
+            factor = 90
+            modifier = {
+                factor = 0
+                has_war_with = FROM
+                NOT = { is_in_faction_with = FROM }
+                OR = {
+                    any_other_country = {
+                        is_major = yes
+                        NOT = { tag = UKR }
+                        OR = {
+                            is_in_faction_with = ROOT
+                            has_guaranteed = ROOT
+                        }
+                    }
+                    has_idea = anti_soviet_pact
+                }
+            }
+        }
+        FROM = {
+            country_event = { days = 1 id = UKR_events.17 }
+        }
+        set_country_flag = bessarabia_ceded_to_ukraine
+    }
+
+    option = {
+        name = UKR_events.16.b
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                is_in_faction = yes
+                NOT = { is_in_faction_with = FROM }
+            }
+            modifier = {
+                add = 100
+                has_war_with = FROM
+            }
+            modifier = {
+                is_historical_focus_on = yes
+                NOT = { has_war_with = FROM }
+                factor = 0
+            }
+            modifier = {
+                factor = 0
+                is_in_faction_with = FROM
+            }
+        }
+        UKR = {
+            if = {
+                limit = { is_subject = yes }
+                overlord = { country_event = UKR_events.18 }
+            }
+            else = {
+                country_event = UKR_events.18
+            }
+        }
+        effect_tooltip = {
+            create_wargoal = {
+                type = take_state
+                target = ROOT
+                generator = { 78 80 766 }
+            }
+        }
+    }
+}
+
+# Ukraine receives Bessarabia
+country_event = {
+    id = UKR_events.17
+    title = UKR_events.17.t
+    desc = UKR_events.17.d
+    picture = GFX_report_event_soviet_army_greeted
+    is_triggered_only = yes
+
+    option = {
+        name = UKR_events.17.a
+
+        set_variable = { UKR.former_controller_of_bessarabia = 78.controller }
+
+        ROOT = {
+            if = {
+                limit = {
+                    78 = { is_owned_and_controlled_by = FROM } 
+                }
+                transfer_state = 78
+            }
+            if = {
+                limit = {
+                    80 = { is_owned_and_controlled_by = FROM }
+                }
+                transfer_state = 80
+            }
+            if = {
+                limit = {
+                    766 = { is_owned_and_controlled_by = FROM }
+                }
+                transfer_state = 766
+            }
+        }
+    }
+}
+
+# Ukraine gets war goal on Bessarabia owner
+country_event = {
+    id = UKR_events.18
+    title = UKR_events.18.t
+    desc = UKR_events.18.d
+    picture = GFX_report_event_SOV_cossack_cavalry
+    is_triggered_only = yes
+
+    option = {
+        name = UKR_events.18.a
+        create_wargoal = {
+            type = take_state
+            target = FROM
+            generator = { 78 80 766 }
+        }
+    }
+}
+
+
+#ussr question about UKR unification
+country_event = {
+    id = UKR_events.19
+    title = UKR_events.19.t
+    desc = UKR_events.19.d
+    picture = GFX_report_event_AST_winston_platypus_2
+    is_triggered_only = yes
+
+    option = {
+        name = UKR_events.19.a
+        ai_chance = {
+            factor = 100
+        }
+        UKR = {
+            country_event = UKR_events.20
+        }
+    }
+
+    option = {
+        name = UKR_events.19.b
+        ai_chance = {
+            factor = 0
+        }
+        UKR = {
+            country_event = UKR_events.21
+        }
+    }
+}
+
+#unification accepted unification
+country_event = {
+    id = UKR_events.20
+    title = UKR_events.20.t
+    desc = UKR_events.20.d
+    picture = GFX_report_event_AST_winston_platypus_2
+    is_triggered_only = yes
+
+    option = {
+        name = UKR_events.20.a
+        ai_chance = {
+            factor = 60
+        }
+        annex_country = {
+            target = BLR
+            transfer_troops = yes
+        }
+        every_state = {
+        limit = { is_core_of = BLR }
+        add_core_of = PREV
+        }
+        
+        if = { limit = { 241 = { is_controlled_by = SOV } } SOV = { 241 = { transfer_state_to = UKR } } }
+        if = { limit = { 207 = { is_controlled_by = SOV } } SOV = { 207 = { transfer_state_to = UKR } } }
+        if = { limit = { 206 = { is_controlled_by = SOV } } SOV = { 206 = { transfer_state_to = UKR } } }
+        if = { limit = { 194 = { is_controlled_by = SOV } } SOV = { 194 = { transfer_state_to = UKR } } }
+        if = { limit = { 204 = { is_controlled_by = SOV } } SOV = { 204 = { transfer_state_to = UKR } } }
+		if = { limit = { 94 = { is_controlled_by = SOV } } SOV = { 94 = { transfer_state_to = UKR } } }
+        if = { limit = { 95 = { is_controlled_by = SOV } } SOV = { 95 = { transfer_state_to = UKR } } }
+        if = { limit = { 96 = { is_controlled_by = SOV } } SOV = { 96 = { transfer_state_to = UKR } } }
+
+		effect_tooltip = {
+			set_cosmetic_tag = UKR_UNIFIED
+		}
+		hidden_effect = {
+			set_cosmetic_tag = UKR_UNIFIED
+		}
+		    every_state = {
+        limit = {
+            is_core_of = BLR
+        }
+        add_core_of = ROOT
+    }
+    }
+}
+
+#USSR rejects unification
+	country_event = {
+	id = UKR_events.21
+	title = UKR_events.21.t
+	desc = UKR_events.21.d
+	picture = GFX_report_event_AST_winston_platypus_2
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_events.21.a	
+	}
+	}
+
+
+
+	country_event = {
+    id = UKR_events.22
+    title = UKR_events.22.t
+    desc = UKR_events.22.d
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+
+    option = {
+        name = UKR_events.22.a
+        ai_chance = {
+            factor = 100
+        }
+        UKR = { country_event = { days = 1 id = UKR_events.23 } }
+    }
+
+    option = {
+        name = UKR_events.22.b
+        ai_chance = {
+            base = 0
+        }
+        UKR = { country_event = { days = 1 id = UKR_events.24 } }
+    }
+}
+
+
+
+
+country_event = {
+    id = UKR_events.23
+    title = UKR_events.23.t
+    desc = UKR_events.23.d
+    picture = GFX_report_event_soviet_army_greeted
+    is_triggered_only = yes
+
+    option = {
+        name = UKR_events.23.a
+
+        ROOT = {
+            if = {
+                limit = {
+                    89 = {
+                        is_owned_and_controlled_by = SOV
+                        is_core_of = ROOT
+                    }
+                }
+                transfer_state = 89
+            }
+            if = {
+                limit = {
+                    91 = {
+                        is_owned_and_controlled_by = SOV
+                        is_core_of = ROOT
+                    }
+                }
+                transfer_state = 91
+            }
+            if = {
+                limit = {
+                    93 = {
+                        is_owned_and_controlled_by = SOV
+                        is_core_of = ROOT
+                    }
+                }
+                transfer_state = 93
+            }
+
+            if = {
+                limit = {
+                    96 = {
+                        is_owned_and_controlled_by = SOV
+                    }
+                }
+                if = {
+                    limit = {
+                        96 = { is_core_of = ROOT }
+                    }
+                    transfer_state = 96
+                }
+                else_if = {
+                    limit = {
+                        country_exists = BLR
+                        OR = {
+                            BLR = { is_puppet_of = ROOT }  
+                            BLR = { is_puppet_of = SOV }   
+                        }
+                    }
+                    BLR = { transfer_state = 96 }
+                }
+            }
+
+            # 95
+            if = {
+                limit = {
+                    95 = {
+                        is_owned_and_controlled_by = SOV
+                    }
+                }
+                if = {
+                    limit = {
+                        95 = { is_core_of = ROOT }
+                    }
+                    transfer_state = 95
+                }
+                else_if = {
+                    limit = {
+                        country_exists = BLR
+                        OR = {
+                            BLR = { is_puppet_of = ROOT }
+                            BLR = { is_puppet_of = SOV }
+                        }
+                    }
+                    BLR = { transfer_state = 95 }
+                }
+            }
+
+            # 94
+            if = {
+                limit = {
+                    94 = {
+                        is_owned_and_controlled_by = SOV
+                    }
+                }
+                if = {
+                    limit = {
+                        94 = { is_core_of = ROOT }
+                    }
+                    transfer_state = 94
+                }
+                else_if = {
+                    limit = {
+                        country_exists = BLR
+                        OR = {
+                            BLR = { is_puppet_of = ROOT }
+                            BLR = { is_puppet_of = SOV }
+                        }
+                    }
+                    BLR = { transfer_state = 94 }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = UKR_events.24
+    title = UKR_events.24.t
+    desc = UKR_events.24.d
+    picture = GFX_report_event_stalin_02
+    is_triggered_only = yes
+
+    option = {
+        name = UKR_events.24.a
+    }
+}

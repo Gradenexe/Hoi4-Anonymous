@@ -1,0 +1,181 @@
+leader_traits = {
+	##################################
+	# 朝鲜籍日本兵
+	##################################
+	JKO_chaoxianji_rijun = {
+		type = {
+			land
+			navy
+		}
+		trait_type = personality_trait
+		gain_xp = {
+			always = no			# not gainable
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	##################################
+	# 苏联
+	################################## 
+	KOR_sulian_pai = {
+		type = {
+			land
+			navy
+		}
+		trait_type = personality_trait
+		gain_xp = {
+			always = no			# not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+		planning_skill = 1
+		planning_skill_factor = 1
+	}
+	##################################
+	# 抗联
+	################################## 
+	KOR_kanglian_junshi = {
+		type = {
+			land
+			navy
+		}
+		trait_type = personality_trait
+		gain_xp = {
+			always = no			# not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+		modifier = {
+			out_of_supply_factor = -0.1
+			equipment_capture = 0.1
+			winter_attrition_factor = -0.1
+			acclimatization_cold_climate_gain_factor = 0.1
+		}
+	}
+	##################################
+	# 延安
+	################################## 
+	KOR_yananpai_chengyuan = {
+		type = {
+			land
+			navy
+		}
+		trait_type = personality_trait
+		gain_xp = {
+			always = no			# not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+		modifier = {
+			out_of_supply_factor = -0.08
+			equipment_capture = 0.02
+			dig_in_speed_factor = 0.1
+		}
+	}
+	##################################
+	# 南劳
+	################################## 
+	KOR_nanlao_pai = {
+		type = {
+			land
+			navy
+		}
+		trait_type = personality_trait
+		gain_xp = {
+			always = no			# not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	##################################
+	# 中国系
+	################################## 
+	KOR_zhongguoxi = {
+		type = {
+			land
+			navy
+		}
+		trait_type = personality_trait
+		gain_xp = {
+			always = no			# not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	##################################
+	# 满洲系
+	################################## 
+	KOR_manzhouguo_xi = {
+		type = {
+			land
+			navy
+		}
+		trait_type = personality_trait
+		gain_xp = {
+			always = no			# not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	##################################
+	# 皇家血统
+	################################## 
+	KOR_huangjia_xuetong = {
+		type = {
+			land
+			navy
+		}
+		trait_type = personality_trait
+		gain_xp = {
+			always = no			# not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	##################################
+	# 
+	################################## 
+	KOR_Fear_of_the_investigation_committee = {
+		type = {
+			land
+		}
+		trait_type = personality_trait
+		gain_xp = {
+			always = no			# not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+		attack_skill = -2
+		defense_skill = -2
+		modifier = {
+			custom_modifier_tooltip = KOR_Fear_of_the_investigation_committee_tt
+			army_morale_factor = -0.1
+			land_reinforce_rate = -0.02
+		}
+	}
+	generic_artillery_officer = { # Reserved for Wojtek  
+		type = corps_commander
+		
+		trait_type = personality_trait
+		
+		modifier = {
+			army_artillery_attack_factor = 0.1
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,337 @@
+ideas = {
+
+	industrial_concern = {
+
+		# Override CZE_csd to require SLO_industrial_legacy focus for Slovakia
+		CZE_csd = {
+
+			picture = CZE_csd
+
+			allowed = {
+				OR = {
+					original_tag = CZE
+					original_tag = POL
+					original_tag = SLO
+					tag = RKH
+				}
+			}
+
+			available = {
+				if = {
+					limit = {
+						original_tag = CZE
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Peace For Our Time"
+							}
+						}
+						has_completed_focus = CZE_industrial_legacy
+					}
+					else = {
+						has_completed_focus = CZE_the_slovak_arrow
+					}
+				}
+				if = {
+					limit = {
+						original_tag = SLO
+					}
+					has_completed_focus = SLO_industrial_legacy
+				}
+				if = {
+					limit = {
+						original_tag = POL
+					}
+					has_completed_focus = POL_join_CZE_rails
+				}
+			}
+
+			visible = {
+				if = {
+					limit = {
+						original_tag = POL
+					}
+					has_completed_focus = POL_join_CZE_rails
+				}
+			}
+
+			cost = 75
+
+			research_bonus = {
+			}
+
+			traits = { railway_company }
+
+			modifier = {
+			}
+		}
+
+	}
+
+	country = {
+
+		# Unlocked by SLO_trust_in_the_west (Trust in the West)
+		# Equivalent to financial_expert advisor trait
+		SLO_englis_finance = {
+			picture = eng_guided_by_britain
+
+			allowed = {
+				original_tag = SLO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		### SLOVAK ARMY — progressive equipment build cost reduction ###
+		# Each focus in the military branch swaps this idea to the next tier
+		# Each tier adds -1% build_cost_ic to all key army equipment types
+
+		SLO_army_equip_1 = {
+			picture = slovakia_starting_small
+			allowed = { original_tag = SLO }
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.01 instant = yes }
+				artillery_equipment = { build_cost_ic = -0.01 instant = yes }
+				anti_air = { build_cost_ic = -0.01 instant = yes }
+				anti_tank = { build_cost_ic = -0.01 instant = yes }
+				rocket_artillery_equipment = { build_cost_ic = -0.01 instant = yes }
+				motorized_rocket_equipment = { build_cost_ic = -0.01 instant = yes }
+				support_equipment = { build_cost_ic = -0.01 instant = yes }
+				motorized = { build_cost_ic = -0.01 instant = yes }
+				mechanized_equipment = { build_cost_ic = -0.01 instant = yes }
+				armored_car_equipment = { build_cost_ic = -0.01 instant = yes }
+				light_tank_chassis = { build_cost_ic = -0.01 instant = yes }
+				medium_tank_chassis = { build_cost_ic = -0.01 instant = yes }
+			}
+		}
+
+		SLO_army_equip_2 = {
+			picture = slovakia_starting_small
+			allowed = { original_tag = SLO }
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.02 instant = yes }
+				artillery_equipment = { build_cost_ic = -0.02 instant = yes }
+				anti_air = { build_cost_ic = -0.02 instant = yes }
+				anti_tank = { build_cost_ic = -0.02 instant = yes }
+				rocket_artillery_equipment = { build_cost_ic = -0.02 instant = yes }
+				motorized_rocket_equipment = { build_cost_ic = -0.02 instant = yes }
+				support_equipment = { build_cost_ic = -0.02 instant = yes }
+				motorized = { build_cost_ic = -0.02 instant = yes }
+				mechanized_equipment = { build_cost_ic = -0.02 instant = yes }
+				armored_car_equipment = { build_cost_ic = -0.02 instant = yes }
+				light_tank_chassis = { build_cost_ic = -0.02 instant = yes }
+				medium_tank_chassis = { build_cost_ic = -0.02 instant = yes }
+			}
+		}
+
+		SLO_army_equip_3 = {
+			picture = slovakia_starting_small
+			allowed = { original_tag = SLO }
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.03 instant = yes }
+				artillery_equipment = { build_cost_ic = -0.03 instant = yes }
+				anti_air = { build_cost_ic = -0.03 instant = yes }
+				anti_tank = { build_cost_ic = -0.03 instant = yes }
+				rocket_artillery_equipment = { build_cost_ic = -0.03 instant = yes }
+				motorized_rocket_equipment = { build_cost_ic = -0.03 instant = yes }
+				support_equipment = { build_cost_ic = -0.03 instant = yes }
+				motorized = { build_cost_ic = -0.03 instant = yes }
+				mechanized_equipment = { build_cost_ic = -0.03 instant = yes }
+				armored_car_equipment = { build_cost_ic = -0.03 instant = yes }
+				light_tank_chassis = { build_cost_ic = -0.03 instant = yes }
+				medium_tank_chassis = { build_cost_ic = -0.03 instant = yes }
+			}
+		}
+
+		SLO_army_equip_4 = {
+			picture = slovakia_starting_small
+			allowed = { original_tag = SLO }
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.04 instant = yes }
+				artillery_equipment = { build_cost_ic = -0.04 instant = yes }
+				anti_air = { build_cost_ic = -0.04 instant = yes }
+				anti_tank = { build_cost_ic = -0.04 instant = yes }
+				rocket_artillery_equipment = { build_cost_ic = -0.04 instant = yes }
+				motorized_rocket_equipment = { build_cost_ic = -0.04 instant = yes }
+				support_equipment = { build_cost_ic = -0.04 instant = yes }
+				motorized = { build_cost_ic = -0.04 instant = yes }
+				mechanized_equipment = { build_cost_ic = -0.04 instant = yes }
+				armored_car_equipment = { build_cost_ic = -0.04 instant = yes }
+				light_tank_chassis = { build_cost_ic = -0.04 instant = yes }
+				medium_tank_chassis = { build_cost_ic = -0.04 instant = yes }
+			}
+		}
+
+		SLO_army_equip_5 = {
+			picture = slovakia_starting_small
+			allowed = { original_tag = SLO }
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.05 instant = yes }
+				artillery_equipment = { build_cost_ic = -0.05 instant = yes }
+				anti_air = { build_cost_ic = -0.05 instant = yes }
+				anti_tank = { build_cost_ic = -0.05 instant = yes }
+				rocket_artillery_equipment = { build_cost_ic = -0.05 instant = yes }
+				motorized_rocket_equipment = { build_cost_ic = -0.05 instant = yes }
+				support_equipment = { build_cost_ic = -0.05 instant = yes }
+				motorized = { build_cost_ic = -0.05 instant = yes }
+				mechanized_equipment = { build_cost_ic = -0.05 instant = yes }
+				armored_car_equipment = { build_cost_ic = -0.05 instant = yes }
+				light_tank_chassis = { build_cost_ic = -0.05 instant = yes }
+				medium_tank_chassis = { build_cost_ic = -0.05 instant = yes }
+			}
+		}
+
+		SLO_army_equip_6 = {
+			picture = slovakia_starting_small
+			allowed = { original_tag = SLO }
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.06 instant = yes }
+				artillery_equipment = { build_cost_ic = -0.06 instant = yes }
+				anti_air = { build_cost_ic = -0.06 instant = yes }
+				anti_tank = { build_cost_ic = -0.06 instant = yes }
+				rocket_artillery_equipment = { build_cost_ic = -0.06 instant = yes }
+				motorized_rocket_equipment = { build_cost_ic = -0.06 instant = yes }
+				support_equipment = { build_cost_ic = -0.06 instant = yes }
+				motorized = { build_cost_ic = -0.06 instant = yes }
+				mechanized_equipment = { build_cost_ic = -0.06 instant = yes }
+				armored_car_equipment = { build_cost_ic = -0.06 instant = yes }
+				light_tank_chassis = { build_cost_ic = -0.06 instant = yes }
+				medium_tank_chassis = { build_cost_ic = -0.06 instant = yes }
+			}
+		}
+
+		SLO_army_equip_7 = {
+			picture = slovakia_starting_small
+			allowed = { original_tag = SLO }
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.07 instant = yes }
+				artillery_equipment = { build_cost_ic = -0.07 instant = yes }
+				anti_air = { build_cost_ic = -0.07 instant = yes }
+				anti_tank = { build_cost_ic = -0.07 instant = yes }
+				rocket_artillery_equipment = { build_cost_ic = -0.07 instant = yes }
+				motorized_rocket_equipment = { build_cost_ic = -0.07 instant = yes }
+				support_equipment = { build_cost_ic = -0.07 instant = yes }
+				motorized = { build_cost_ic = -0.07 instant = yes }
+				mechanized_equipment = { build_cost_ic = -0.07 instant = yes }
+				armored_car_equipment = { build_cost_ic = -0.07 instant = yes }
+				light_tank_chassis = { build_cost_ic = -0.07 instant = yes }
+				medium_tank_chassis = { build_cost_ic = -0.07 instant = yes }
+			}
+		}
+
+		SLO_army_equip_8 = {
+			picture = slovakia_starting_small
+			allowed = { original_tag = SLO }
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.08 instant = yes }
+				artillery_equipment = { build_cost_ic = -0.08 instant = yes }
+				anti_air = { build_cost_ic = -0.08 instant = yes }
+				anti_tank = { build_cost_ic = -0.08 instant = yes }
+				rocket_artillery_equipment = { build_cost_ic = -0.08 instant = yes }
+				motorized_rocket_equipment = { build_cost_ic = -0.08 instant = yes }
+				support_equipment = { build_cost_ic = -0.08 instant = yes }
+				motorized = { build_cost_ic = -0.08 instant = yes }
+				mechanized_equipment = { build_cost_ic = -0.08 instant = yes }
+				armored_car_equipment = { build_cost_ic = -0.08 instant = yes }
+				light_tank_chassis = { build_cost_ic = -0.08 instant = yes }
+				medium_tank_chassis = { build_cost_ic = -0.08 instant = yes }
+			}
+		}
+
+		SLO_army_equip_9 = {
+			picture = slovakia_starting_small
+			allowed = { original_tag = SLO }
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.09 instant = yes }
+				artillery_equipment = { build_cost_ic = -0.09 instant = yes }
+				anti_air = { build_cost_ic = -0.09 instant = yes }
+				anti_tank = { build_cost_ic = -0.09 instant = yes }
+				rocket_artillery_equipment = { build_cost_ic = -0.09 instant = yes }
+				motorized_rocket_equipment = { build_cost_ic = -0.09 instant = yes }
+				support_equipment = { build_cost_ic = -0.09 instant = yes }
+				motorized = { build_cost_ic = -0.09 instant = yes }
+				mechanized_equipment = { build_cost_ic = -0.09 instant = yes }
+				armored_car_equipment = { build_cost_ic = -0.09 instant = yes }
+				light_tank_chassis = { build_cost_ic = -0.09 instant = yes }
+				medium_tank_chassis = { build_cost_ic = -0.09 instant = yes }
+			}
+		}
+
+		SLO_army_equip_10 = {
+			picture = slovakia_starting_small
+			allowed = { original_tag = SLO }
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.10 instant = yes }
+				artillery_equipment = { build_cost_ic = -0.10 instant = yes }
+				anti_air = { build_cost_ic = -0.10 instant = yes }
+				anti_tank = { build_cost_ic = -0.10 instant = yes }
+				rocket_artillery_equipment = { build_cost_ic = -0.10 instant = yes }
+				motorized_rocket_equipment = { build_cost_ic = -0.10 instant = yes }
+				support_equipment = { build_cost_ic = -0.10 instant = yes }
+				motorized = { build_cost_ic = -0.10 instant = yes }
+				mechanized_equipment = { build_cost_ic = -0.10 instant = yes }
+				armored_car_equipment = { build_cost_ic = -0.10 instant = yes }
+				light_tank_chassis = { build_cost_ic = -0.10 instant = yes }
+				medium_tank_chassis = { build_cost_ic = -0.10 instant = yes }
+			}
+		}
+
+	}
+
+	country = {
+		# Combined capstone idea (Replaces dynamic modifier and tiered equipment ideas)
+		SLO_pumping_out_weapons_idea = {
+			picture = slovakia_pomping_out_weapon
+			allowed = { original_tag = SLO }
+			removal_cost = -1
+
+			modifier = {
+				# From SLO_slovak_army_modifier
+				army_experience = 0.05
+				special_forces_cap = 0.05
+				land_doctrine_cost_factor = -0.05
+				
+				# From War College
+				army_speed_factor = 0.05
+				max_planning = 0.10
+				military_leader_cost_factor = -0.30
+				army_leader_start_attack_level = 1
+				army_leader_start_defense_level = 1
+				army_leader_start_planning_level = 1
+				field_officer_division_penalty_factor = -1.0
+			}
+
+			# Tier 8 equipment discounts (-8%)
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.08 instant = yes }
+				artillery_equipment = { build_cost_ic = -0.08 instant = yes }
+				anti_air = { build_cost_ic = -0.08 instant = yes }
+				anti_tank = { build_cost_ic = -0.08 instant = yes }
+				rocket_artillery_equipment = { build_cost_ic = -0.08 instant = yes }
+				motorized_rocket_equipment = { build_cost_ic = -0.08 instant = yes }
+				support_equipment = { build_cost_ic = -0.08 instant = yes }
+				motorized = { build_cost_ic = -0.08 instant = yes }
+				mechanized_equipment = { build_cost_ic = -0.08 instant = yes }
+				armored_car_equipment = { build_cost_ic = -0.08 instant = yes }
+				light_tank_chassis = { build_cost_ic = -0.08 instant = yes }
+				medium_tank_chassis = { build_cost_ic = -0.08 instant = yes }
+			}
+		}
+	}
+
+}

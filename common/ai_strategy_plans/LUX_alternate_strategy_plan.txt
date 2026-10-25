@@ -1,0 +1,416 @@
+LUX_alternate_democratic = {
+	name = "Luxembourg is gonna unite benelux and join allies"
+	desc = ""
+
+	allowed = {
+		original_tag = LUX
+	}
+	enable = {
+		has_country_flag = LUX_alternate_democratic_flag
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		LUX_strengthen_government
+		LUX_unity_through_democracy
+		LUX_industrial_effort
+		LUX_infrastructure_effort
+		LUX_town_to_large_town
+		LUX_industrial_complex
+		LUX_arms_factory
+		LUX_luxembourg_academy
+		LUX_large_town_to_large_city
+		LUX_give_refuge_to_scientists
+		LUX_lead_low_countries
+		LUX_propaganda_of_benelux
+		LUX_foreign_experts
+		LUX_invite_allied_experts
+		LUX_british_constructions
+		LUX_benelux_economic_cooperation
+		LUX_connect_railways
+		LUX_benelux_faction
+		LUX_invite_belgium
+		LUX_invite_holland
+		LUX_responsibility_for_our_own_defence 
+		LUX_unite_benelux
+		LUX_solve_draft_evader_problem
+		LUX_start_industry_plan
+		LUX_better_tools
+		LUX_improvements_in_construction_industry
+		LUX_develop_natural_resources
+		LUX_complete_industry_plan
+		LUX_science_funds
+		LUX_join_entente
+		LUX_aviation_effort
+		LUX_british_fighter_licence
+		LUX_increase_quality_of_weapons
+		LUX_rehabilitated_military
+		LUX_revive_the_army
+		LUX_speed_up_the_army
+		LUX_motorized_army
+		LUX_tank_no_thanks
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		
+	}
+
+	
+
+	focus_factors = {
+		
+	}
+
+}
+
+LUX_we_are_dutch = {
+	name = "We are dutch"
+	desc = ""
+
+	allowed = {
+		original_tag = LUX
+	}
+	enable = {
+		has_country_flag = LUX_we_are_dutch_flag
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		LUX_rally_the_monarchists
+		LUX_riots_in_streets
+		LUX_industrial_effort
+		LUX_infrastructure_effort
+		LUX_town_to_large_town
+		LUX_industrial_complex
+		LUX_arms_factory
+		LUX_luxembourg_academy
+		LUX_large_town_to_large_city
+		LUX_blame_government
+		LUX_organize_workers
+		LUX_start_industry_plan
+		LUX_improvements_in_construction_industry
+		LUX_better_tools 
+		LUX_overthrow_government
+		LUX_build_palace_for_our_future_king
+		LUX_assemble_regency_council
+		LUX_soldiers_of_kingdom
+		LUX_who_are_we
+		LUX_we_are_holland
+		LUX_luxembourg_monarchy
+		LUX_wilhelmina_or_wilhelm
+		LUX_royal_guards
+		LUX_claim_benelux
+		LUX_form_benelux
+		LUX_integrate_railways
+		LUX_foreign_experts
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		
+	}
+
+	
+
+	focus_factors = {
+		
+	}
+
+}
+
+LUX_rise_of_luxembourg_eng = {
+	name = "Rise of Luxembourg - Join Axis"
+	desc = ""
+
+	allowed = {
+		original_tag = LUX
+	}
+	enable = {
+		has_country_flag = LUX_rise_of_luxembourg_eng_flag
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		LUX_rally_the_monarchists
+		LUX_riots_in_streets
+		LUX_industrial_effort
+		LUX_infrastructure_effort
+		LUX_town_to_large_town
+		LUX_industrial_complex
+		LUX_arms_factory
+		LUX_luxembourg_academy
+		LUX_large_town_to_large_city
+		LUX_blame_government
+		LUX_organize_workers
+		LUX_start_industry_plan
+		LUX_improvements_in_construction_industry
+		LUX_better_tools 
+		LUX_overthrow_government
+		LUX_build_palace_for_our_future_king
+		LUX_assemble_regency_council
+		LUX_soldiers_of_kingdom
+		LUX_who_are_we
+		LUX_new_nation_born
+		LUX_luxembourg_monarchy
+		LUX_a_strange_girl_found_in_the_streets
+		LUX_give_her_luxembourg_throne
+		LUX_crown_guards
+		LUX_government_reforms
+		LUX_strengthen_the_queen
+		LUX_unification_of_low_countries
+		LUX_walk_with_britain
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		
+	}
+
+	
+
+	focus_factors = {
+		
+	}
+
+}
+
+LUX_rise_of_luxembourg_ger = {
+	name = "Rise of Luxembourg - Join Allies"
+	desc = ""
+
+	allowed = {
+		original_tag = LUX
+	}
+	enable = {
+		has_country_flag = LUX_rise_of_luxembourg_ger_flag
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		LUX_rally_the_monarchists
+		LUX_riots_in_streets
+		LUX_industrial_effort
+		LUX_infrastructure_effort
+		LUX_town_to_large_town
+		LUX_industrial_complex
+		LUX_arms_factory
+		LUX_luxembourg_academy
+		LUX_large_town_to_large_city
+		LUX_blame_government
+		LUX_organize_workers
+		LUX_start_industry_plan
+		LUX_improvements_in_construction_industry
+		LUX_better_tools 
+		LUX_overthrow_government
+		LUX_build_palace_for_our_future_king
+		LUX_assemble_regency_council
+		LUX_soldiers_of_kingdom
+		LUX_who_are_we
+		LUX_new_nation_born
+		LUX_luxembourg_monarchy
+		LUX_a_strange_girl_found_in_the_streets
+		LUX_give_her_luxembourg_throne
+		LUX_crown_guards
+		LUX_government_reforms
+		LUX_strengthen_the_queen
+		LUX_unification_of_low_countries
+		LUX_walk_with_germany
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		
+	}
+
+	
+
+	focus_factors = {
+		
+	}
+
+}
+
+LUX_join_axis = {
+	name = "Join Axis"
+	desc = ""
+
+	allowed = {
+		original_tag = LUX
+	}
+	enable = {
+		has_country_flag = LUX_join_axis_flag
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		LUX_approach_germans
+		LUX_revive_luxembourg_nationalism
+		LUX_industrial_effort
+		LUX_infrastructure_effort 
+		LUX_town_to_large_town
+		LUX_industrial_complex 
+		LUX_arms_factory
+		LUX_luxembourg_academy
+		LUX_large_town_to_large_city
+		LUX_anti_democratic_marches
+		LUX_anti_communist_militas
+		LUX_national_education
+		LUX_more_steel_for_our_glorious_people
+		LUX_golden_age
+		LUX_join_axis
+		LUX_united_benelux
+		LUX_foreign_experts
+		LUX_invite_axis_experts
+		LUX_german_constructions
+		LUX_integrate_benelux
+		LUX_aircraft_supporter_of_axis
+		LUX_lessons_from_luftwaffe
+		LUX_integrated_german_soldiers
+		LUX_german_techological_exchange
+		LUX_german_scientists
+		LUX_luxembourg_blitzkrieg
+		LUX_reichkommiserat_of_benelux
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		
+	}
+
+	
+
+	focus_factors = {
+		
+	}
+
+}
+
+LUX_communist_plan = {
+	name = "Join Comintern"
+	desc = ""
+
+	allowed = {
+		original_tag = LUX
+	}
+	enable = {
+		has_country_flag = LUX_communist_plan_flag
+	}
+	abort = {
+	
+	}
+
+	ai_national_focuses = {
+		LUX_restore_the_workers_republic
+		LUX_patriotism_over_internationalism
+		LUX_industrial_effort
+		LUX_infrastructure_effort
+		LUX_town_to_large_town
+		LUX_industrial_complex
+		LUX_arms_factory
+		LUX_luxembourg_academy
+		LUX_large_town_to_large_city
+		LUX_foreign_experts
+		LUX_create_workers_militia
+		LUX_refugees_from_germany
+		LUX_socialist_faith
+		LUX_workers_republic_of_luxembourg
+		LUX_start_industry_plan
+		LUX_improvements_in_construction_industry
+		LUX_officers_of_revolution
+		LUX_strengthen_workers
+		LUX_collectivizing_our_agriculture
+		LUX_approach_soviets
+		LUX_soviet_volunteers
+		LUX_wargoal_benelux
+		LUX_workers_republic_of_benelux
+		LUX_better_tools 
+		LUX_invite_allied_experts
+		LUX_british_constructions
+		LUX_develop_natural_resources
+		LUX_complete_industry_plan
+		LUX_aviation_effort
+		LUX_join_comintern
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		
+	}
+
+	
+
+	focus_factors = {
+		
+	}
+
+}
+

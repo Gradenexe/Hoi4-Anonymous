@@ -1,0 +1,256 @@
+﻿l_german:
+
+ # ============================================================
+ # FOCUS NAMES
+ # ============================================================
+
+ # Gateway
+ SCWR_choose_side:0 "Der sowjetische Bürgerkrieg"
+ SCWR_choose_side_desc:0 "Die Sowjetunion ist in einen Bürgerkrieg verfallen. Jetzt ist es an der Zeit, über unser Schicksal zu entscheiden. Erklären wir die Unabhängigkeit, unterstützen wir die Weiße Bewegung, schließen wir uns der kommunistischen Opposition an oder bleiben wir Stalin treu?"
+ SCWR_choose_side_tt:0 "Dies ebnet den Weg zum Bürgerkrieg für unsere Republik."
+
+ # --- Generic Emergency Measures ---
+ SCWR_emergency_measures:0 "Notfallmaßnahmen"
+ SCWR_emergency_measures_desc:0 "Da im ehemaligen Imperium der Bürgerkrieg tobt, müssen wir sofort Maßnahmen ergreifen, um unsere Grenzen zu sichern und die Ordnung aufrechtzuerhalten."
+ SCWR_seize_stockpiles:0 "Erobern Sie lokale Waffenkammern"
+ SCWR_seize_stockpiles_desc:0 "Auf unserem Territorium gibt es mehrere verlassene Versorgungsdepots der Roten Armee. Wir müssen diese Waffen sichern, bevor sie in die Hände von Plünderern oder Banditen fallen."
+ SCWR_requisition_transport:0 "Anforderungstransport"
+ SCWR_requisition_transport_desc:0 "Zivile Lastwagen, Busse und Züge müssen für die Kriegsanstrengungen requiriert werden, um sicherzustellen, dass unsere Streitkräfte schnell vorrücken können."
+ SCWR_mobilize_militias:0 "Mobilisieren Sie lokale Milizen"
+ SCWR_mobilize_militias_desc:0 "Wir können uns nicht allein auf eine Berufsarmee verlassen. Wir müssen die Bevölkerung bewaffnen, um ihre Häuser und Städte zu verteidigen."
+ SCWR_local_militias_idea:0 "Lokale Milizen"
+ SCWR_local_militias_idea_desc:0 "Bewaffnete Zivilisten stellen dringend benötigte Arbeitskräfte, ihnen fehlt jedoch die Organisation und Disziplin regulärer Truppen."
+ SCWR_raise_divisions:0 "Setzen Sie die Wachen ein"
+ SCWR_raise_divisions_desc:0 "Wir werden unsere neu gebildeten Milizeinheiten sofort einsetzen, um wichtige strategische Standorte in unserem kontrollierten Gebiet zu sichern."
+ SCWR_raise_divisions_tt:0 "Erzeugt §Y1 Milizdivision§! in jedem kontrollierten Staat. Wenn wir weniger als 3 Staaten kontrollieren, werden stattdessen §Y2 Milizdivisionen§! pro Staat erzeugt."
+
+ # --- Generic Economy (Left) ---
+ SCWR_wartime_economy:0 "Kriegswirtschaft"
+ SCWR_wartime_economy_desc:0 "Um den kommenden Konflikt zu überleben, müssen wir unsere gesamte Wirtschaft auf den Kriegszustand umstellen. Jede Fabrik, jeder Bauernhof und jeder Bürger muss zu den Kriegsanstrengungen beitragen."
+ SCWR_nationalize_industry:0 "Verstaatlichen Sie die Industrie"
+ SCWR_nationalize_industry_desc:0 "Private Unternehmen sind für unsere aktuellen Bedürfnisse zu ineffizient. Der Staat wird die direkte Kontrolle über die gesamte Schwerindustrie übernehmen, um eine stetige Waffenversorgung sicherzustellen."
+ SCWR_labor_battalions:0 "Arbeitsbataillone"
+ SCWR_labor_battalions_desc:0 "Wir werden zivile Arbeitsbataillone organisieren, um Befestigungen zu errichten, beschädigte Infrastruktur zu reparieren und unsere Versorgungsleitungen am Laufen zu halten."
+ SCWR_labor_battalions_idea:0 "Arbeitsbataillone"
+ SCWR_labor_battalions_idea_desc:0 "Organisierte Zivilarbeiter halten unsere Industrie und Infrastruktur am Leben."
+ SCWR_rationing_system:0 "Rationierungssystem"
+ SCWR_rationing_system_desc:0 "Konsumgüter sind ein Luxus, den wir uns nicht mehr leisten können. In allen Gebieten wird eine strikte Rationierung eingeführt, um die Ressourcen an die Front umzuleiten."
+ SCWR_rationing_system_idea:0 "Strenge Rationierung"
+ SCWR_rationing_system_idea_desc:0 "Die Zivilbevölkerung begnügt sich mit dem Nötigsten, damit unsere Soldaten das haben, was sie brauchen."
+
+ # --- Generic Security (Right) ---
+ SCWR_internal_security:0 "Staatssicherheitsdienst"
+ SCWR_internal_security_desc:0 "In diesen chaotischen Zeiten gibt es überall feindliche Agenten und Provokateure. Wir müssen einen eigenen Sicherheitsdienst einrichten, um die innere Ordnung aufrechtzuerhalten und abweichende Meinungen auszumerzen."
+ SCWR_internal_security_idea:0 "Staatssicherheitsdienst"
+ SCWR_internal_security_idea_desc:0 "Ein starker innerer Sicherheitsapparat sorgt für politische Stabilität und Compliance."
+ SCWR_anti_sabotage:0 "Anti-Sabotage-Einheiten"
+ SCWR_anti_sabotage_desc:0 "Spezialeinheiten werden eingesetzt, um lebenswichtige Infrastruktur, Eisenbahnlinien und militärische Einrichtungen vor feindlichen Saboteuren zu schützen."
+ SCWR_anti_sabotage_idea:0 "Anti-Sabotage-Einheiten"
+ SCWR_anti_sabotage_idea_desc:0 "Die erhöhte Sicherheit macht es feindlichen Spionen unglaublich schwer, in unserem Gebiet zu operieren."
+ SCWR_combat_desertion:0 "Bekämpfung der Desertion"
+ SCWR_combat_desertion_desc:0 "Deserteure untergraben die Moral der gesamten Armee. Wir werden harte Strafen für Fahnenflucht verhängen und Sperrkommandos einrichten, um unsere Truppen in Schach zu halten."
+ SCWR_combat_desertion_idea:0 "Strenge militärische Disziplin"
+ SCWR_combat_desertion_idea_desc:0 "Die Angst vor Bestrafung lässt unsere Soldaten auch in den verzweifeltsten Situationen kämpfen."
+ SCWR_wartime_propaganda:0 "Kriegspropaganda"
+ SCWR_wartime_propaganda_desc:0 "Wir müssen die Erzählung kontrollieren. Eine massive Propagandakampagne wird die Gräueltaten des Feindes hervorheben und unser Volk um die Flagge scharen."
+ SCWR_wartime_propaganda_idea:0 "Kriegspropaganda"
+ SCWR_wartime_propaganda_idea_desc:0 "Die Bevölkerung ist fest von der Richtigkeit unserer Sache überzeugt."
+
+ # --- Independence Branch ---
+ SCWR_independence_entry:0 "Erklären Sie unsere Unabhängigkeit"
+ SCWR_independence_entry_desc:0 "Während die russischen Mächte sich gegenseitig auseinanderreißen, haben wir die einmalige Gelegenheit, uns zu befreien und unser eigenes Schicksal zu gestalten. Wir werden es ergreifen."
+ SCWR_independence_entry_tt:0 "Wir befreien uns von der sowjetischen Autorität und beginnen mit dem Aufbau eines unabhängigen Staates."
+
+ SCWR_declare_independence:0 "Proklamiert die Republik"
+ SCWR_declare_independence_desc:0 "Mit einer formellen Proklamation etablieren wir uns als souveräne Nation. Die Welt muss unser Existenzrecht anerkennen."
+
+ SCWR_seek_allies:0 "Streben Sie nach internationaler Anerkennung"
+ SCWR_seek_allies_desc:0 "Alleine sind wir verletzlich. Wir wenden uns an die Westmächte und unsere Nachbarn und bitten um diplomatische Anerkennung und Unterstützung gegen russische Übergriffe."
+
+ SCWR_independence_army:0 "Die Armee der Unabhängigkeit"
+ SCWR_independence_army_desc:0 "Wir rufen jeden arbeitsfähigen Bürger auf, unsere neu verkündete Unabhängigkeit zu verteidigen. Eine Volksarmee erhebt sich, um unsere Grenzen zu schützen."
+
+ SCWR_diaspora_returns:0 "Die Diaspora kehrt nach Hause zurück"
+ SCWR_diaspora_returns_desc:0 "Tausende unserer Menschen, die vor der russischen Herrschaft geflohen sind, kehren mit neuen Fähigkeiten und Ressourcen nach Hause zurück und haben den brennenden Wunsch, beim Aufbau unserer Nation mitzuhelfen."
+
+ SCWR_democracy_path:0 "Eine Demokratische Republik"
+ SCWR_democracy_path_desc:0 "Wir werden unsere neue Nation auf den Grundsätzen der Demokratie und Rechtsstaatlichkeit aufbauen. Freie Wahlen, bürgerliche Freiheiten und eine parlamentarische Regierung werden unseren Staat definieren."
+
+ SCWR_nationalism_path:0 "Die Nationalbewegung"
+ SCWR_nationalism_path_desc:0 "Unsere Nation muss stark und vereint unter dem Banner unseres Volkes sein. Eine nationalistische Regierung wird unsere Nation über alles andere stellen."
+
+ SCWR_dictatorship_path:0 "Die eiserne Hand"
+ SCWR_dictatorship_path_desc:0 "In Krisenzeiten ist Demokratie ein Luxus, den wir uns nicht leisten können. Ein starker autoritärer Führer wird unser Volk mit eiserner Faust durch diese schwierigen Zeiten führen."
+
+ SCWR_monarchy_path:0 "Stellen Sie die alte Ordnung wieder her"
+ SCWR_monarchy_path_desc:0 "Die alten Dynastien stehen für Stabilität und Legitimität. Die Wiederherstellung eines Monarchen wird unser Volk unter einem Banner der Tradition und Ordnung vereinen."
+
+ SCWR_peace_with_victor:0 "Verhandeln Sie mit dem Sieger"
+ SCWR_peace_with_victor_desc:0 "Da der russische Bürgerkrieg nun zu Ende ist, müssen wir uns mit dem Sieger einigen. Frieden zu unseren Bedingungen ist besser als endloser Krieg."
+ SCWR_peace_with_victor_days_tt:0 "Der sowjetische Bürgerkrieg muss vor mindestens 365 Tagen begonnen haben."
+
+ # --- Whites Branch ---
+ SCWR_whites_entry:0 "Versprechen an Weißrussland"
+ SCWR_whites_entry_desc:0 "Weißrussland kämpft für ein freies, geeintes Russland gegen die bolschewistische Tyrannei. Wir werden ihrer Sache unsere Unterstützung zusichern und unseren Platz in einer wiederhergestellten russischen Ordnung sichern."
+ SCWR_whites_entry_tt:0 "Wir schließen uns Weißrussland an und schließen uns seinem Kampf gegen die Roten an."
+
+ SCWR_white_weapons:0 "Vorräte der Weißen Armee"
+ SCWR_white_weapons_desc:0 "Als Gegenleistung für unsere Loyalität versorgt uns Weißrussland mit Waffen, Munition und Militärberatern, um unsere Streitkräfte zu stärken."
+
+ SCWR_white_dominion:0 "Status der Dominion"
+ SCWR_white_dominion_desc:0 "Durch Verhandlungen mit der weißen Regierung sichern wir uns einen anerkannten Status als autonome Herrschaft innerhalb der russischen Sphäre – unsere Kultur und lokale Verwaltung bleiben erhalten."
+
+ SCWR_white_general_demand:0 "Die Inspektion des Generals"
+ SCWR_white_general_demand_desc:0 "Ein General der Weißen Armee trifft ein, um unsere Streitkräfte zu inspizieren. Sein Besuch wirft eine unangenehme Frage über die Zukunft unseres örtlichen Militärkommandos auf."
+
+ SCWR_stay_with_whites:0 "Ehre die Allianz"
+ SCWR_stay_with_whites_desc:0 "Wir unterwerfen uns dem Kommando der Weißen Armee. Es ist eine bittere Pille, aber unser Bündnis mit Weißrussland ist wertvoller als der lokale Stolz. Gemeinsam werden wir die Roten besiegen."
+
+ SCWR_betray_whites:0 "Werfen Sie das Joch ab"
+ SCWR_betray_whites_desc:0 "Wir weigern uns, als eroberte Provinz behandelt zu werden. Wir haben uns den Forderungen des Generals widersetzt und müssen nun die Konsequenzen tragen – aber es lohnt sich, für unsere Unabhängigkeit zu kämpfen."
+ SCWR_betray_whites_tt:0 "Wir werden mit Russland brechen, ihre Fraktion verlassen und ihnen den Krieg erklären."
+
+ SCWR_whites_independence_path:0 "Eine neue Morgendämmerung"
+ SCWR_whites_independence_path_desc:0 "Befreit von den Forderungen Weißrusslands müssen wir schnell unsere Streitkräfte mobilisieren und nach neuen Verbündeten suchen. Unser Weg in die Unabhängigkeit hat gerade erst begonnen."
+
+ # --- Opposition Branch ---
+ SCWR_opposition_entry:0 "Unterstützen Sie die Opposition"
+ SCWR_opposition_entry_desc:0 "Die kommunistische Opposition – ob trotzkistisch oder bucharinistisch – bietet eine bessere Vision für unser Volk als Stalins brutale Diktatur. Wir unterstützen sie."
+ SCWR_opposition_entry_tt:0 "Wir schließen uns der kommunistischen Opposition gegen das stalinistische Moskau an."
+
+ SCWR_opposition_support:0 "Politische Unterstützung"
+ SCWR_opposition_support_desc:0 "Wir setzen unser politisches Gewicht hinter die Oppositionsfraktionen. Unsere Ressourcen, Infrastruktur und Arbeitskräfte stehen ihnen zur Verfügung."
+
+ SCWR_opposition_political:0 "Stärken Sie unsere Position"
+ SCWR_opposition_political_desc:0 "Während wir die Opposition unterstützen, nutzen wir die Gelegenheit, unsere eigenen politischen Institutionen und militärischen Fähigkeiten aufzubauen – um sicherzustellen, dass wir beim Sieg nicht vergessen werden."
+
+ SCWR_opposition_join_war:0 "Treten Sie dem Kampf bei"
+ SCWR_opposition_join_war_desc:0 "Die Zeit rein politischer Unterstützung ist vorbei. Wir setzen unsere Kräfte voll und ganz für den Kampf gegen Stalins Moskau ein und stehen Seite an Seite mit der Opposition."
+
+ SCWR_opposition_victory:0 "Die Opposition setzt sich durch"
+ SCWR_opposition_victory_desc:0 "Der russische Bürgerkrieg ist vorbei und die kommunistische Opposition ist als Sieger hervorgegangen. Jetzt müssen wir über unseren Platz in der neuen Ordnung verhandeln."
+
+ SCWR_opposition_autonomy:0 "Autonome Sowjetrepublik"
+ SCWR_opposition_autonomy_desc:0 "Wir verhandeln mit der siegreichen Opposition über einen garantierten Autonomiestatus – bedeutende Selbstverwaltungsrechte bei gleichzeitiger Wahrung des sowjetischen Rahmens."
+
+ SCWR_opposition_independence_end:0 "Volle Unabhängigkeit"
+ SCWR_opposition_independence_end_desc:0 "Nachdem wir die Opposition während des Krieges unterstützt haben, drängen wir nun auf die vollständige Unabhängigkeit. Sie sind uns so viel schuldig."
+
+ # --- Moscow Branch ---
+ SCWR_moscow_entry:0 "Schwören Sie Treue zu Moskau"
+ SCWR_moscow_entry_desc:0 "Stalins Moskau repräsentiert die wahre Kontinuität der Sowjetmacht. Wir geloben der Kommunistischen Partei und dem Genossen Stalin persönlich unsere unerschütterliche Loyalität."
+ SCWR_moscow_entry_tt:0 "Wir verbünden uns mit dem stalinistischen Moskau gegen alle Opposition und weißen Kräfte."
+
+ SCWR_swear_to_stalin:0 "Der Eid auf Stalin"
+ SCWR_swear_to_stalin_desc:0 "In einer feierlichen Zeremonie schwört unsere Führung öffentlich die Treue zum Genossen Stalin und der Kommunistischen Partei. Unser Schicksal ist nun an Moskau gebunden."
+
+ SCWR_moscow_industry:0 "Sowjetische Wirtschaftsintegration"
+ SCWR_moscow_industry_desc:0 "Moskau belohnt unsere Treue mit Industrieinvestitionen. Aus Moskau kommen neue Fabriken und Wirtschaftsplaner, um zur Entwicklung unserer Region beizutragen."
+
+ SCWR_suppress_enemies:0 "Helfen Sie, die Feinde zu vernichten"
+ SCWR_suppress_enemies_desc:0 "Wir setzen unsere Kräfte ein, um Moskau dabei zu helfen, die Weißen und die kommunistische Opposition zu zerschlagen. Unsere Truppen kämpfen an der Seite der Roten Armee zur Verteidigung des stalinistischen Sozialismus."
+
+ SCWR_moscow_victory:0 "Moskau ist siegreich"
+ SCWR_moscow_victory_desc:0 "Stalins Truppen haben im Bürgerkrieg gesiegt. Jetzt richtet Moskau seine Aufmerksamkeit auf die Neuorganisation des Sowjetstaates – einschließlich der Frage, was mit loyalen Republiken wie uns geschehen soll."
+
+ SCWR_loyal_republic:0 "Eine loyale Sowjetrepublik"
+ SCWR_loyal_republic_desc:0 "Unsere Loyalität während des Bürgerkriegs wird anerkannt. Moskau gewährt uns einen privilegierten Status als vorbildliche Sowjetrepublik – Ressourcen, Investitionen und Autonomie kommen uns zugute."
+
+ SCWR_deeper_integration:0 "Vollständige Integration in die UdSSR"
+ SCWR_deeper_integration_desc:0 "Wir entscheiden uns dafür, uns vollständig in Stalins UdSSR zu integrieren. Es ist ein Glücksspiel – diejenigen, die sich am loyalsten erweisen, mögen Erfolg haben, aber Stalins Paranoia kennt keine Grenzen ..."
+ SCWR_deeper_integration_tt:0 "Integration kann Belohnungen bringen ... oder stalinistische Repressionen. In den kommenden Monaten wird es eine Veranstaltung geben."
+
+ # ============================================================
+ # EVENTS
+ # ============================================================
+
+ scwr.1.t:0 "Das Ultimatum des Generals"
+ scwr.1.d:0 "General [GetRandomFullName], der die Streitkräfte der Weißen Armee in der Region befehligt, ist mit einer unmissverständlichen Botschaft angekommen: Unsere örtlichen Streitkräfte sollen vollständig dem Kommando der Weißen Armee unterstellt werden. „Wir können keine Parallelarmeen haben“, knurrt er über dem Konferenztisch. „Entweder dienen Ihre Männer unter meinem Befehl, oder sie werden vollständig aufgelöst.“ Im Raum wird es still. Dies ist der Moment der Wahrheit für unser Bündnis mit Weißrussland."
+ scwr.1.a:0 "Dem Kommando der Weißen Armee vorlegen"
+ scwr.1.b:0 "Verweigern – Unsere Armee bleibt unsere eigene"
+
+ scwr.2.t:0 "Stalins Männer treffen ein"
+ scwr.2.d:0 "Eine Delegation aus Moskau ist eingetroffen – NKWD-Offiziere mit Namenslisten. Die Säuberungen, die über Russland hinwegfegten, erreichen nun auch unsere Republik. Lokale Parteifunktionäre werden festgenommen, Militärkommandanten befragt. Wie schlimm es wird, hängt davon ab, wie sehr Stalin uns vertraut ... oder wie sehr er uns fürchtet."
+ scwr.2.a:0 "Wir können nichts tun."
+
+ scwr.10.t:0 "Unabhängigkeit verkündet!"
+ scwr.10.d:0 "Unsere Führer haben offiziell die Unabhängigkeit unserer Nation verkündet. Die Proklamation wurde auf der Straße vor jubelnden Menschenmengen verlesen. Zum ersten Mal in meiner Erinnerung sind wir wirklich frei. Jetzt müssen wir verteidigen, was wir erklärt haben."
+ scwr.10.a:0 "Es lebe unsere Nation!"
+
+ # ============================================================
+ # IDEA NAMES & DESCRIPTIONS
+ # ============================================================
+
+ SCWR_international_recognition_idea:0 "Internationale Anerkennung"
+ SCWR_international_recognition_idea_desc:0 "Westmächte und Nachbarstaaten haben unsere Souveränität anerkannt und uns diplomatische Unterstützung und ein gewisses Maß an Sicherheit geboten."
+
+ SCWR_independence_army_idea:0 "Armee der Unabhängigkeit"
+ SCWR_independence_army_idea_desc:0 "Eine motivierte Freiwilligentruppe, die unser Heimatland verteidigt. Diese Soldaten kämpfen für etwas, für das es sich zu kämpfen lohnt."
+
+ SCWR_diaspora_returns_idea:0 "Diaspora kehrt nach Hause zurück"
+ SCWR_diaspora_returns_idea_desc:0 "Tausende unserer Landsleute kehren aus dem Ausland zurück und bringen Fähigkeiten, Ressourcen und Arbeitskräfte mit, um beim Aufbau unserer neuen Nation zu helfen."
+
+ SCWR_democracy_idea:0 "Demokratische Regierung"
+ SCWR_democracy_idea_desc:0 "Eine frei gewählte Regierung verleiht politische Legitimität und ermutigt die Bürger, in die Zukunft ihres Landes zu investieren."
+
+ SCWR_nationalism_idea:0 "Nationale Bewegung"
+ SCWR_nationalism_idea_desc:0 "Der nationalistische Eifer hat unser Volk hinter einer gemeinsamen Sache vereint. Jeder Soldat kämpft für die Nation, nicht nur für Befehle."
+
+ SCWR_dictatorship_idea:0 "Autoritäre Herrschaft"
+ SCWR_dictatorship_idea_desc:0 "Die eiserne Hand des Staates hält abweichende Meinungen in Schach und konzentriert alle Ressourcen auf das nationale Überleben."
+
+ SCWR_monarchy_idea:0 "Wiederhergestellte Monarchie"
+ SCWR_monarchy_idea_desc:0 "Die Rückkehr der alten Dynastien bringt Stabilität und ein Gefühl der Kontinuität, das eine besorgte Bevölkerung beruhigt."
+
+ SCWR_white_support_idea:0 "Vorräte der Weißen Armee"
+ SCWR_white_support_idea_desc:0 "Ein stetiger Zustrom von Waffen und Ausrüstung aus Weißrussland stärkt unsere militärischen Fähigkeiten."
+
+ SCWR_white_dominion_idea:0 "Dominion-Status"
+ SCWR_white_dominion_idea_desc:0 "Als Herrschaftsgebiet Weißrusslands behalten wir unsere kulturelle und administrative Autonomie und profitieren gleichzeitig von der russischen Unterstützung."
+
+ SCWR_loyal_whites_idea:0 "Der Sache der Weißen treu"
+ SCWR_loyal_whites_idea_desc:0 "Nachdem sie unsere Loyalität bewiesen haben, integrieren sich die Berater der Weißen Armee vollständig in unsere Streitkräfte und teilen Doktrin und Erfahrung auf dem Schlachtfeld."
+
+ SCWR_opposition_support_idea:0 "Unterstützung der Opposition"
+ SCWR_opposition_support_idea_desc:0 "Unsere Unterstützung der kommunistischen Opposition bringt politischen Schwung und verbindet uns mit einer alternativen Vision für die Zukunft Russlands."
+
+ SCWR_opposition_political_idea:0 "Politisches Netzwerk der Opposition"
+ SCWR_opposition_political_idea_desc:0 "Ein Netz politischer Kontakte innerhalb der Oppositionsfraktionen verschafft uns Einfluss und Informationen, die unseren Militäreinsätzen zugute kommen."
+
+ SCWR_opposition_autonomy_idea:0 "Autonome Republik"
+ SCWR_opposition_autonomy_idea_desc:0 "Ausgehandelte Autonomie innerhalb des neuen sowjetischen Rahmens – wir regieren uns selbst und profitieren gleichzeitig vom breiteren kommunistischen Wirtschaftsnetzwerk."
+
+ SCWR_opposition_military_idea:0 "Oppositionelles Militärkommando"
+ SCWR_opposition_military_idea_desc:0 "Unser Militärkommando ist vollständig in die Kriegsanstrengungen der Opposition integriert und sammelt wertvolle Erfahrungen und operative Effizienz."
+
+ SCWR_moscow_loyalty_idea:0 "Loyal gegenüber der Partei"
+ SCWR_moscow_loyalty_idea_desc:0 "Unsere öffentliche Loyalitätserklärung gegenüber Stalin und der Kommunistischen Partei stabilisiert unsere Innenpolitik und öffnet Türen zu den Ressourcen Moskaus."
+
+ SCWR_moscow_industry_idea:0 "Sowjetische Industrieinvestitionen"
+ SCWR_moscow_industry_idea_desc:0 "Moskaus Wirtschaftsplaner und Investmentfonds verändern unsere Industriebasis als Belohnung für unsere Treue im Bürgerkrieg."
+
+ SCWR_suppress_enemies_idea:0 "Diener der Partei"
+ SCWR_suppress_enemies_idea_desc:0 "Unsere Streitkräfte haben an der Seite der Roten Armee gekämpft, Erfahrungen gesammelt und das Vertrauen des militärischen Establishments Moskaus gewonnen."
+
+ SCWR_loyal_republic_idea:0 "Modell-Sowjetrepublik"
+ SCWR_loyal_republic_idea_desc:0 "Unsere Loyalität während des Bürgerkriegs wird anerkannt und belohnt. Wir gelten – vorerst – als Vorbild treuer sowjetischer Regierungsführung."
+
+ SCWR_stalinist_repression_idea:0 "Die Säuberungen beginnen"
+ SCWR_stalinist_repression_idea_desc:0 "NKWD-Agenten haben örtliche Parteifunktionäre und Militäroffiziere festgenommen. Die Säuberungen haben unsere Institutionen erschüttert und Angst in der Bevölkerung verbreitet."
+
+ SCWR_stalinist_repression_heavy_idea:0 "Systematische Säuberungen"
+ SCWR_stalinist_repression_heavy_idea_desc:0 "Eine verheerende Verhaftungswelle hat unsere militärische Führung und Parteistruktur zerstört. Ganze Einheiten wurden aufgelöst und ihre Kommandeure erschossen. Wir sind verkrüppelt."
+
+ # ============================================================
+ # CUSTOM TOOLTIPS
+ # ============================================================
+
+ SCWR_repression_heavy_tt:0 "Die schwersten Säuberungen, die möglich sind, treffen unsere Republik. Ins Visier genommen werden militärische Führung, Parteifunktionäre und zivile Verwaltungsbeamte."
+ SCWR_repression_moderate_tt:0 "Eine moderate Säuberung trifft unsere Republik. Einige Beamte werden verhaftet, aber unsere Kerninstitutionen überleben."
+ SCWR_repression_avoided_tt:0 "Stalins Agenten finden keinen Anlass zum Verdacht. Unsere Treue wird belohnt – Integration wird als Erfolg gewertet."
+
+ SCWR_chose_independence:0 "Wählen Sie Unabhängigkeit"
+ SCWR_chose_opposition:0 "Wählte die Opposition"
+
+ SCWR_chose_whites:0 "Wählte Weiße"
+ SCWR_defied_whites:0 "Trotzte den Weißen"

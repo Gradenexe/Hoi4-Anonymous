@@ -1,0 +1,828 @@
+characters = {
+	########################  日本   ####################################
+	JAP_Akihito_mikado = {
+		name = JAP_Akihito_mikado
+		portraits = {
+			civilian = {
+				large = GFX_portrait_JAP_Akihito_mikado
+			}
+		}
+	}
+	########################  韩国   ####################################
+	
+	JKO_Zhang_Dexiu = {
+		name = KOR_Zhang_Dexiu
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Zhang_Dexiu_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = JKO_Zhang_Dexiu
+			allowed = {
+				original_tag = JKO
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				JKO_royal_mouthpiece
+			}
+			visible = {
+				has_completed_focus = JKO_chafeng_minzuzhuyi_baokan
+			}
+		}
+	}
+	##########################################################################################################################################################
+	##################################################################   军事内阁  #############################################################################
+	##########################################################################################################################################################
+	JKO_kazushige_ugaki = {
+		name = JAP_kazushige_ugaki
+		portraits = {
+			civilian = {
+				large = GFX_portrait_JAP_kazushige_ugaki
+				small = GFX_portrait_JAP_kazushige_ugaki_small
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+				JAP_governor_general_of_korea
+			}
+			expire = "1961.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {
+				JAP_governor_general_of_korea
+			}
+			expire = "1961.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = {
+				career_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+	}
+	JKO_jiro_minami = {
+		name = KOR_jiro_minami
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_jiro_minami
+				small = GFX_portrait_KOR_jiro_minami_small
+			}
+			army = {
+				large = GFX_portrait_KOR_jiro_minami
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+				JAP_governor_general_of_korea
+			}
+			expire = "1988.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {
+				JAP_governor_general_of_korea
+			}
+			expire = "1988.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = JKO_jiro_minami
+			ledger = army
+			can_be_fired = no
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+			}
+			visible = {
+			}
+			traits = {
+				army_chief_old_guard
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+		field_marshal = {
+			traits = {
+				career_officer
+				cavalry_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+			}
+		}
+	}
+	JKO_kuniaki_koiso = {
+		name = JAP_kuniaki_koiso
+		portraits = {
+			civilian = {
+				large = GFX_portrait_JAP_kuniaki_koiso
+				small = GFX_portrait_JAP_kuniaki_koiso_small
+			}
+			army = {
+				large = GFX_portrait_JAP_kuniaki_koiso
+				small = GFX_portrait_JAP_kuniaki_koiso_small
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+				JAP_governor_general_of_korea
+			}
+			expire = "1989.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {
+				JAP_governor_general_of_korea
+			}
+			expire = "1989.1.1.1"
+			id = -1
+		}
+	}
+	JKO_Kotaro_Nakamura = {
+		name = JKO_Kotaro_Nakamura
+		portraits = {
+			army = {
+				large = GFX_portrait_JKO_Kotaro_Nakamura
+				small = GFX_portrait_JKO_Kotaro_Nakamura_small
+			}
+		}
+		field_marshal = {
+			traits = {
+				career_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				has_completed_focus = JKO_riben_guwen_tuan
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = JKO_Kotaro_Nakamura
+			ledger = army
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+			}
+			visible = {
+				has_completed_focus = JKO_riben_guwen_tuan
+			}
+			traits = {
+				army_entrenchment_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Kenzo_Kitano = {
+		name = JKO_Kenzo_Kitano
+		portraits = {
+			army = {
+				large = GFX_portrait_JKO_Kenzo_Kitano
+				small = GFX_portrait_JKO_Kenzo_Kitano_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+			}
+			visible = {
+				has_completed_focus = JKO_riben_guwen_tuan
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = JKO_Kenzo_Kitano
+			ledger = army
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+				has_completed_focus = JKO_riben_guwen_tuan
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Tamio_Iwasaki = {
+		name = JKO_Tamio_Iwasaki
+		portraits = {
+			army = {
+				large = GFX_portrait_JKO_Tamio_Iwasaki
+				small = GFX_portrait_JKO_Tamio_Iwasaki_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+			}
+			visible = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = JKO_Tamio_Iwasaki
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Li_Yingjun = {
+		name = JKO_Li_Yingjun
+		portraits = {
+			army = {
+				large = GFX_portrait_JKO_Li_Yingjun
+				small = GFX_portrait_JKO_Li_Yingjun_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				JKO_chaoxianji_rijun
+			}
+			visible = {
+				has_global_flag = qinripai_chaoxianren_keyong_flag
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = JKO_Li_Yingjun
+			ledger = army
+			allowed = {
+				original_tag = JKO
+			}
+			visible = {
+				has_global_flag = qinripai_chaoxianren_keyong_flag
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Jin_Baiyi = {
+		name = JKO_Jin_Baiyi
+		portraits = {
+			army = {
+				large = GFX_portrait_JKO_Jin_Baiyi
+				small = GFX_portrait_JKO_Jin_Baiyi_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+				KOR_manzhouguo_xi
+			}
+			visible = {
+				has_completed_focus = JKO_jiandao_teshe_budui
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = JKO_Jin_Baiyi
+			ledger = army
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+				has_completed_focus = JKO_jiandao_teshe_budui
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Hong_Siyi = {
+		name = JKO_Hong_Siyi
+		portraits = {
+			army = {
+				large = GFX_portrait_JKO_Hong_Siyi
+				small = GFX_portrait_JKO_Hong_Siyi_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				infantry_officer
+				JKO_chaoxianji_rijun
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = JKO_Hong_Siyi
+			allowed = {
+				original_tag = MAN
+			}
+			available = {
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Cai_Bingde = {
+		name = JKO_Cai_Bingde
+		portraits = {
+			army = {
+				large = GFX_portrait_JKO_Cai_Bingde
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				generic_artillery_officer
+				KOR_manzhouguo_xi
+			}
+			visible = {
+				has_global_flag = qinripai_chaoxianren_keyong_flag
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+	}
+	JKO_Jin_Xiyuan = {
+		name = JKO_Jin_Xiyuan
+		portraits = {
+			army = {
+				large = GFX_portrait_JKO_Jin_Xiyuan
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				infantry_officer
+				JKO_chaoxianji_rijun
+			}
+			visible = {
+				has_global_flag = qinripai_chaoxianren_keyong_flag
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+	}
+	JKO_Lee_Hyung_geun = {
+		name = JKO_Lee_Hyung_geun
+		portraits = {
+			army = {
+				large = GFX_portrait_JKO_Lee_Hyung_geun
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				generic_artillery_officer
+				JKO_chaoxianji_rijun
+			}
+			visible = {
+				has_global_flag = qinripai_chaoxianren_keyong_flag
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+	}
+	JKO_Shin_Tae_young = {
+		name = JKO_Shin_Tae_young
+		portraits = {
+			army = {
+				large = GFX_portrait_JKO_Shin_Tae_young
+				small = GFX_portrait_JKO_Shin_Tae_young_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				generic_artillery_officer
+				JKO_chaoxianji_rijun
+			}
+			visible = {
+				has_global_flag = qinripai_chaoxianren_keyong_flag
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = JKO_Shin_Tae_young
+			ledger = army
+			allowed = {
+				original_tag = JKO
+			}
+			visible = {
+				has_global_flag = qinripai_chaoxianren_keyong_flag
+			}
+			traits = {
+				army_artillery_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Park_Beom_jeopard = {
+		name = JKO_Park_Beom_jeopard
+		portraits = {
+			army = {
+				small = GFX_portrait_JKO_Park_Beom_jeopard_small
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = JKO_Park_Beom_jeopard
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	##########################################################################################################################################################
+	##################################################################   政治内阁  #############################################################################
+	##########################################################################################################################################################
+	JKO_Archbishop_Roh_Paul = {
+		name = JKO_Archbishop_Roh_Paul
+		portraits = {
+			army = {
+				large = GFX_portrait_JKO_Archbishop_Roh_Paul
+				small = GFX_portrait_JKO_Archbishop_Roh_Paul_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = JKO_Archbishop_Roh_Paul
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+				has_completed_focus = JKO_chaoxian_bandao_jidu
+			}
+			traits = {
+				JKO_collaborationist_arch_bishop
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Hozumi_Shinrokuro = {
+		name = JKO_Hozumi_Shinrokuro
+		portraits = {
+			army = {
+				small = GFX_portrait_JKO_Hozumi_Shinrokuro_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = JKO_Hozumi_Shinrokuro
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+			}
+			traits = {
+				udenrigsminister
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Imaida_Kiyonori = {
+		name = JKO_Imaida_Kiyonori
+		portraits = {
+			army = {
+				small = GFX_portrait_JKO_Imaida_Kiyonori_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = JKO_Imaida_Kiyonori
+			can_be_fired = no
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+			}
+			visible = {
+				NOT = {
+					has_country_flag = nancilang_shangtai_flag
+				}
+			}
+			traits = {
+				JKO_zhengwu_zongjian
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Rokuichiro_Oono = {
+		name = JKO_Rokuichiro_Oono
+		portraits = {
+			army = {
+				small = GFX_portrait_JKO_Rokuichiro_Oono_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = JKO_Rokuichiro_Oono
+			can_be_fired = no
+			allowed = {
+				original_tag = JKO
+			}
+			visible = {
+				has_country_flag = nancilang_shangtai_flag
+			}
+			traits = {
+				JKO_zhengwu_zongjian
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Shigezo_Hayashi = {
+		name = JKO_Shigezo_Hayashi
+		portraits = {
+			army = {
+				small = GFX_portrait_JKO_Shigezo_Hayashi_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = JKO_Shigezo_Hayashi
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+			}
+			traits = {
+				JAP_minister_of_finance
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Takeo_Tanaka = {
+		name = JKO_Takeo_Tanaka
+		portraits = {
+			army = {
+				small = GFX_portrait_JKO_Takeo_Tanaka_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = JKO_Takeo_Tanaka
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+				has_completed_focus = JKO_kuoda_jingcha_xitong
+			}
+			traits = {
+				gran_carabinero
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Yajima_Sugizo = {
+		name = JKO_Yajima_Sugizo
+		portraits = {
+			army = {
+				small = GFX_portrait_JKO_Yajima_Sugizo_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = JKO_Yajima_Sugizo
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+				has_completed_focus = JKO_quanguo_tudi_diaocha
+			}
+			traits = {
+				SWE_minister_of_agriculture
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Choi_Nam_sun = {
+		name = JKO_Choi_Nam_sun
+		portraits = {
+			army = {
+				small = GFX_portrait_JKO_Choi_Nam_sun_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = JKO_Choi_Nam_sun
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+				has_completed_focus = JKO_lalong_qinri_pai
+			}
+			traits = {
+				JKO_controversial_academic
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Park_Beom_jeopard = {
+		name = JKO_Park_Beom_jeopard
+		portraits = {
+			army = {
+				small = GFX_portrait_JKO_Park_Beom_jeopard_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = JKO_Park_Beom_jeopard
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+			}
+			traits = {
+				eager_collaborator
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	JKO_Bak_Yeonghyo = {
+		name = JKO_Bak_Yeonghyo
+		portraits = {
+			army = {
+				small = GFX_portrait_JKO_Bak_Yeonghyo_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = JKO_Bak_Yeonghyo
+			allowed = {
+				original_tag = JKO
+			}
+			available = {
+				has_completed_focus = JKO_sheli_chaoxian_shuxuan_yiyuan
+			}
+			traits = {
+				JKO_chaoxian_guizuyuan
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+}

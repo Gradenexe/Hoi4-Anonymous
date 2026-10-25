@@ -1,0 +1,2929 @@
+ideas = {
+	
+	industrial_concern = {
+		
+		ALB_anglo_persian_oil_company = {
+			
+			name = ALB_anglo_persian_oil_company
+			
+			picture = generic_refining_concern_1
+			
+			allowed = {
+				original_tag = ALB
+			}
+
+			available = {
+				has_completed_focus = ALB_seek_recognition
+			}
+
+			cost = 50
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			modifier = {
+				country_resource_oil = 8
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ALB_svea = { #Society for the Economic Development of Albania
+			
+			name = ALB_svea
+			
+			picture = generic_industrial_concern_2
+			
+			allowed = {
+				original_tag = ALB
+			}
+
+			available = {
+				has_completed_focus = ALB_guide_the_svea
+			}
+
+			cost = 50
+			
+			research_bonus = {
+				industry = 0.10
+				electronics = 0.10
+			}
+			
+			traits = { ALB_svea_trait }
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.075
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ALB_state_mining_directorate = {
+			
+			name = ALB_state_mining_directorate
+			
+			picture = generic_industrial_concern_3
+			
+			allowed = {
+				original_tag = ALB
+			}
+
+			cost = 150
+			
+			research_bonus = {
+				industry = 0.05
+				excavation_tech = 0.15
+			}
+			
+			traits = { ALB_state_mining_directorate_trait }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	
+	country = {
+	
+		ALB_national_unity = {
+			name = ALB_national_unity_dynamic_modifier
+			
+			picture = generic_pp_unity_bonus
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				custom_modifier_tooltip = ALB_national_unity_TT
+			}
+		}
+	
+		ALB_neglected_nation = {
+			picture = generic_intel_bonus
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = { 
+			}
+			removal_cost = -1
+			
+			rule = {
+				can_join_factions = no
+			}
+			
+			modifier = {
+				improve_relations_maintain_cost_factor = 0.50
+			}
+			
+		}
+	
+		ALB_italian_dependency = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = {
+					has_war_with = ITA
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+
+			modifier = {
+				fascism_acceptance = 50
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+			}
+		}
+		
+		ALB_italian_co_dependency = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				is_subject_of = ITA
+			}
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+
+			modifier = {
+				fascism_acceptance = 50
+			}
+			
+		}
+		
+		ALB_italian_high_command = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ITA_regio_esercito_1
+
+			modifier = {
+				political_power_gain = -0.10
+				experience_gain_army_factor = -0.10
+				mobilization_laws_cost_factor = 0.35
+				max_dig_in_factor = 0.1
+			}
+			
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
+			}
+			
+		}
+		
+		ALB_italian_high_command_decoupled = {
+		
+			name = ALB_italian_high_command
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ITA_regio_esercito_1
+
+			modifier = {
+				political_power_gain = -0.10
+				experience_gain_army_factor = -0.10
+				mobilization_laws_cost_factor = 0.35
+				max_dig_in_factor = 0.1
+			}
+			
+		}
+		
+		ALB_italian_high_command_positive = {
+			
+			name = ALB_italian_high_command
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ITA_regio_esercito_1
+
+			modifier = {
+				political_power_gain = -0.10
+				land_doctrine_cost_factor = -0.10
+				experience_gain_factor = 0.10
+				max_dig_in_factor = 0.1
+			}
+			
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
+			}
+			
+		}
+		
+		ALB_italian_high_command_positive_decoupled = {
+			
+			name = ALB_italian_high_command
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ITA_regio_esercito_1
+
+			modifier = {
+				political_power_gain = -0.10
+				land_doctrine_cost_factor = -0.10
+				experience_gain_factor = 0.10
+				max_dig_in_factor = 0.1
+			}
+			
+		}
+		
+		ALB_italian_arms = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = MEX_callistas
+			
+			on_add = {
+				add_offsite_building = { type = arms_factory level = 3 }
+			}
+			
+			on_remove = {
+				add_offsite_building = { type = arms_factory level = -3 }
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = ALB_italian_arms_TT
+			}
+			
+		}
+		
+		ALB_italian_peoples = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = MEX_callistas
+			
+			on_add = {
+				add_offsite_building = { type = industrial_complex level = 3 }
+			}
+			
+			on_remove = {
+				add_offsite_building = { type = industrial_complex level = -3 }
+			}
+			
+			modifier = {
+				weekly_manpower = 150
+				custom_modifier_tooltip = ALB_italian_peoples_TT
+			}
+		}
+		
+		ALB_albanian_betrayal = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				ALB = {
+					OR = {
+						exists = no
+						is_subject_of = ITA
+					}
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = SWE_neither_death_nor_dishonor
+			
+			modifier = {
+				weekly_manpower = -550
+			}
+			
+			targeted_modifier = {
+				tag = ALB
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
+			}
+		}
+		
+		ALB_spirit_of_resistance = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SPR_the_popular_front
+
+			modifier = {
+				surrender_limit = 0.05
+				war_support_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		
+		ALB_spirit_of_resistance_1 = {
+			
+			name = ALB_spirit_of_resistance
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SPR_the_popular_front
+
+			modifier = {
+				surrender_limit = 0.075
+				war_support_factor = 0.075
+				army_core_attack_factor = 0.075
+				army_core_defence_factor = 0.075
+			}
+		}
+		
+		ALB_spirit_of_resistance_2 = {
+		
+			name = ALB_spirit_of_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SPR_the_popular_front
+
+			modifier = {
+				surrender_limit = 0.10
+				war_support_factor = 0.10
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
+		
+		ALB_national_industry_01 = {
+		
+			picture = alb_national_industry
+
+			allowed = {
+				original_tag = ALB
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05		
+			}
+		}
+
+		ALB_national_industry_02 = {
+		
+			picture = alb_national_industry
+			
+			name = ALB_national_industry_01
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.02
+				production_factory_max_efficiency_factor = 0.02
+			}
+		}
+		
+		ALB_national_industry_03 = {
+		
+			picture = alb_national_industry
+			
+			name = ALB_national_industry_01
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		
+		ALB_national_industry_04 = {
+		
+			picture = alb_national_industry
+			
+			name = ALB_national_industry_01
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		
+		ALB_national_industry_05 = {
+		
+			picture = alb_national_industry
+			
+			name = ALB_national_industry_01
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				consumer_goods_factor = -0.2
+			}
+		}
+		
+		ALB_aircraft_production_idea = {
+		
+			picture = man_five_year_plan_air
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_air_base_factor = 0.10
+			}
+			
+			equipment_bonus = {
+				mio_cat_eq_all_small_plane = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				mio_cat_eq_all_medium_plane = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+		}
+		
+		ALB_italian_immigration_0 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				has_war_with = ITA
+			}
+
+			removal_cost = -1
+
+			picture = SOV_scientist_defect
+
+			modifier = {
+				custom_modifier_tooltip = 26_ALB_TT
+				monthly_population = 0.25
+				political_power_factor = -0.05
+			}
+		}
+		
+		ALB_italian_investments_0 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes	
+			}
+			
+			cancel = {
+				has_war_with = ITA
+			}
+
+			removal_cost = -1
+
+			picture = SOV_scientist_defect
+
+			modifier = {
+				custom_modifier_tooltip = 26_ALB_TT
+				production_speed_buildings_factor = 0.1
+				#production_speed_industrial_complex_factor = 0.10
+				#production_speed_infrastructure_factor = 0.10
+				consumer_goods_factor = -0.10
+				political_power_factor = -0.05
+			}
+		}
+		
+		ALB_italian_integration_0 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes	
+			}
+			
+			cancel = {
+				has_war_with = ITA
+			}
+
+			removal_cost = -1
+
+			picture = SOV_scientist_defect
+
+			modifier = {
+				custom_modifier_tooltip = 27_ALB_TT
+				monthly_population = 0.25
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.10
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				factory_energy_consumption = -0.1
+			}
+		}
+		
+		ALB_hybrid_culture_idea_1 = {
+			name = ALB_hybrid_culture_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes	
+			}
+
+			removal_cost = -1
+
+			picture = ITA_italian_irredentism
+
+			modifier = {
+				army_org_factor = 0.02
+				monthly_population = 0.1
+				convoy_retreat_speed = 0.1
+			}
+			
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+		}
+		
+		ALB_hybrid_culture_idea_2 = {
+			name = ALB_hybrid_culture_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes	
+			}
+
+			removal_cost = -1
+
+			picture = ITA_italian_irredentism
+
+			modifier = {
+				army_org_factor = 0.02
+				monthly_population = 0.20
+				convoy_retreat_speed = 0.20
+				recon_factor = 0.1
+				supply_node_range = 0.10
+			}
+			
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+		}
+		
+		ALB_italian_militias_idea = {
+			
+			removal_cost = -1
+
+			picture = ITA_camicie_nere
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+			}
+					
+			modifier = {
+				custom_modifier_tooltip = ITA_camicie_nere_mp_tt
+				resistance_garrison_penetration_chance = -0.1
+				resistance_damage_to_garrison = -0.1
+				conscription_factor = 0.15
+			}
+		}
+		
+		ALB_italian_militias_idea_1 = {
+			
+			name = ALB_italian_militias_idea
+			
+			removal_cost = -1
+
+			picture = ITA_camicie_nere
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+			}
+					
+			modifier = {
+				custom_modifier_tooltip = ITA_camicie_nere_mp_tt
+				resistance_garrison_penetration_chance = -0.1
+				resistance_damage_to_garrison = -0.1
+				conscription_factor = 0.15
+				non_core_manpower = 0.10
+				generate_wargoal_tension_against = -0.5
+				justify_war_goal_time = -0.15
+			}
+		}
+		
+		ALB_albanian_military_industry_idea = {
+			
+			removal_cost = -1
+
+			picture = SWE_hodgepodge_of_equipment
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				support_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		
+		ALB_italian_military_industry_idea = {
+			
+			removal_cost = -1
+
+			picture = generic_artillery_regiments
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+			
+			equipment_bonus = {
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_air_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		
+		ALB_unified_military_industry_idea = {
+			
+			removal_cost = -1
+
+			picture = SOV_third_five_year_plan_military
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_start_efficiency_factor = 0.10
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				support_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_air_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		
+		ALB_albanian_entrepreneurs = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				#production_speed_bunker_factor = 0.2
+				#production_speed_coastal_bunker_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_rail_way_factor = 0.2
+			}
+			
+		}
+		
+		ALB_electrification_of_ablainan_cities = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = PRC_nanjing_wireless_electronics_plant
+
+			modifier = {
+				factory_energy_consumption = -0.10
+				production_speed_energy_infrastructure_factor = 0.20
+				production_speed_industrial_infrastructure_factor = 0.20
+			}
+			
+		}
+		
+		ALB_anti_monarchist_sentiments = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				fascism_drift = -0.05
+				neutrality_drift = -0.10
+			}
+			
+		}
+		
+		ALB_blackshirts = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_2
+
+			modifier = {
+				mobilization_speed = 0.10
+				fascism_drift = 0.10
+			}
+			
+		}
+		
+		ALB_socialist_education = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = trotskyite_plot_purged
+
+			modifier = {
+				research_speed_factor = 0.06
+				communism_drift = 0.06
+			}
+			
+		}
+		
+		ALB_democratic_constitution_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				democratic_drift = 0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+			
+		}
+		
+		ALB_democratic_constitution_idea_0 = {
+		
+			name = ALB_democratic_constitution_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				compliance_gain = 0.01
+				democratic_drift = 0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+			
+		}
+		
+		ALB_royal_decree_liberal_1 = {
+			
+			name = ALB_royal_decree
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_rail_way_factor = 0.05
+			}
+			
+		}
+		
+		ALB_royal_decree_liberal_2 = {
+			
+			name = ALB_royal_decree
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_rail_way_factor = 0.05
+				neutrality_drift = 0.10
+			}
+			
+		}
+		
+		ALB_royal_decree_liberal_3 = {
+			
+			name = ALB_royal_decree
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_rail_way_factor = 0.05
+				neutrality_drift = 0.10
+				political_power_gain = 0.10
+			}
+			
+		}
+		
+		ALB_royal_decree_authoritarian_1 = {
+			
+			name = ALB_royal_decree
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				local_resources_factor = 0.10
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+			}
+			
+		}
+		
+		ALB_royal_decree_authoritarian_2 = {
+			
+			name = ALB_royal_decree
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				local_resources_factor = 0.10
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				neutrality_drift = 0.10
+			}
+			
+		}
+		
+		ALB_royal_decree_authoritarian_3 = {
+			
+			name = ALB_royal_decree
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				local_resources_factor = 0.10
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				neutrality_drift = 0.10
+				economy_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+			}
+			
+		}
+		
+		ALB_loyalists = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_service_overseas
+
+			modifier = {
+				conscription = 0.002
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+			
+		}
+		
+		ALB_loyalists_0 = {
+		
+			name = ALB_loyalists
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_service_overseas
+
+			modifier = {
+				conscription = 0.005
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+			
+		}
+		
+		ALB_loyalists_fascist = {
+		
+			name = ALB_loyalists
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_service_overseas
+
+			modifier = {
+				conscription = 0.002
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				promote_cost_factor = -0.25
+				economy_cost_factor = -0.10
+				trade_laws_cost_factor = -0.10
+				fascism_drift = 0.10
+			}
+			
+		}
+		
+		ALB_greater_albania_0 = {
+		
+			name = ALB_greater_albania_idea
+			
+			picture = generic_volunteer_expedition_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 350
+				weekly_casualties_war_support = 0.001
+			}
+			
+		}
+		
+		ALB_greater_albania_1 = {
+		
+			name = ALB_greater_albania_idea
+			
+			picture = generic_volunteer_expedition_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 700
+				weekly_casualties_war_support = 0.001
+			}
+			
+		}
+		
+		ALB_greater_albania_2 = {
+		
+			name = ALB_greater_albania_idea
+			
+			picture = generic_volunteer_expedition_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 1050
+				weekly_casualties_war_support = 0.001
+			}
+			
+		}
+		
+		ALB_greater_albania_3 = {
+		
+			name = ALB_greater_albania_idea
+			
+			picture = generic_volunteer_expedition_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 1400
+				weekly_casualties_war_support = 0.001
+			}
+			
+		}
+		
+		ALB_greater_albania_4 = {
+		
+			name = ALB_greater_albania_idea
+			
+			picture = generic_volunteer_expedition_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 1750
+				weekly_casualties_war_support = 0.001
+			}
+			
+		}
+		
+		ALB_dominance_idea = {
+			
+			picture = tur_etatism_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.05
+				subjects_autonomy_gain = -0.1
+			}
+			
+		}
+		
+		ALB_special_forces_training = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_special_air_service
+
+			modifier = {
+				special_forces_attack_factor = 0.03
+				special_forces_defence_factor = 0.03
+				special_forces_cap = 0.05
+			}
+			
+		}
+		
+		ALB_special_forces_training_1 = {
+		
+			name = ALB_special_forces_training
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_special_air_service
+
+			modifier = {
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
+				special_forces_cap = 0.10
+			}
+			
+		}
+		
+		ALB_motorized_forces = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_motorized_focus
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+				mechanized_equipment = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+				armored_car_equipment = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+			}
+			
+		}
+		
+		ALB_motorized_forces_1 = {
+		
+			name = ALB_motorized_forces
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_motorized_focus
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				mechanized_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				armored_car_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				armor = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+			
+		}
+		
+		ALB_king_zog_stress = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ROM_king_carol_ii_handled
+
+			modifier = {
+				stability_factor = -0.3
+				political_power_factor = -0.3
+				army_attack_factor = -0.3
+				army_defence_factor = -0.3
+				army_speed_factor = -0.3
+			}
+			
+		}
+		
+		ALB_fortification_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_fortification_focus
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.01
+				production_speed_bunker_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.20
+				production_speed_anti_air_building_factor = 0.20
+			}
+		}
+
+		ALB_fortification_focus2 = {
+		
+			name = ALB_fortification_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_fortification_focus
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.011
+				production_speed_bunker_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.20
+				production_speed_anti_air_building_factor = 0.20
+			}
+		}
+
+		ALB_fortification_focus3 = {
+		
+			name = ALB_fortification_focus
+
+			allowed = {
+				original_tag = ALB
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_fortification_focus
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.012
+				production_speed_bunker_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.20
+				production_speed_anti_air_building_factor = 0.20
+			}
+		}
+		
+		ALB_fortification_focus4 = {
+		
+			name = ALB_fortification_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_fortification_focus
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.013
+				production_speed_bunker_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.20
+				production_speed_anti_air_building_factor = 0.20
+			}
+		}
+		
+		ALB_fortification_focus5 = {
+		
+			name = ALB_fortification_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_fortification_focus
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.014
+				production_speed_bunker_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.20
+				production_speed_anti_air_building_factor = 0.20
+			}
+		}
+		
+		ALB_fortification_focus6 = {
+		
+			name = ALB_fortification_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_fortification_focus
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+				production_speed_bunker_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.20
+				production_speed_anti_air_building_factor = 0.20
+			}
+		}
+		
+		ALB_balkan_hegemon_1 = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ROM_balkans_dominance
+
+			modifier = {
+				conscription = 0.01
+				justify_war_goal_time = -0.10
+			}
+			
+		}
+		
+		ALB_balkan_hegemon_2 = {
+		
+			name = ALB_balkan_hegemon_1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ROM_balkans_dominance
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.015
+				justify_war_goal_time = -0.10
+			}
+		}
+		
+		ALB_balkan_hegemon_3 = {
+		
+			name = ALB_balkan_hegemon_1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ROM_balkans_dominance
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				justify_war_goal_time = -0.10
+			}
+		}
+		
+		ALB_balkan_hegemon_4 = {
+		
+			name = ALB_balkan_hegemon_1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ROM_balkans_dominance
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+				justify_war_goal_time = -0.10
+			}
+		}
+		
+		ALB_balkan_hegemon_5 = {
+		
+			name = ALB_balkan_hegemon_1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ROM_balkans_dominance
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.03
+				justify_war_goal_time = -0.10
+			}
+		}
+		
+		ALB_balkan_hegemon_6 = {
+		
+			name = ALB_balkan_hegemon_1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ROM_balkans_dominance
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.05
+				generate_wargoal_tension = -1.0
+				justify_war_goal_time = -0.10
+				subjects_autonomy_gain = -2.0
+			}
+		}
+		
+		ALB_western_dominance = {
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				YUG = {
+					OR = {
+						exists = no 
+						is_subject_of = ALB
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_scw_intervention_nationalists_focus
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = YUG
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.10
+			}
+		}
+		
+		ALB_eastern_dominance = {
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				ROM = {
+					OR = {
+						exists = no 
+						is_subject_of = ALB
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_scw_intervention_nationalists_focus
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = ROM
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.10
+			}
+		}
+		
+		ALB_northern_dominance = {
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				HUN = {
+					OR = {
+						exists = no 
+						is_subject_of = ALB
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_scw_intervention_nationalists_focus
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = HUN
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.10
+			}
+		}
+		
+		ALB_southern_dominance = {
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				AND = {
+					BUL = {
+						OR = {
+							exists = no 
+							is_subject_of = ALB
+						}
+					}
+					GRE = {
+						OR = {
+							exists = no 
+							is_subject_of = ALB
+						}
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_scw_intervention_nationalists_focus
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = BUL
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.10
+			}
+			
+			targeted_modifier = {
+				tag = GRE
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.10
+			}
+		}
+		
+		ALB_albanian_diplomatic_pressure = {
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				OR = {
+					is_subject = yes
+					is_in_faction = yes
+					ALB = { exists = no }
+				}
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+			
+			#rule = {
+			#	can_join_factions = no
+			#}
+			
+			modifier = {
+				drift_defence_factor = 0.10
+				opinion_gain_monthly_factor = -0.35
+				enemy_justify_war_goal_time = 0.35
+				ai_get_ally_desire_factor = -35
+			}
+		}
+		
+		ALB_albanian_guidance = {
+
+			allowed = {
+				always = no
+			}
+			
+			available = {
+				is_subject_of = ALB
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_weekly_factor = 0.001
+				master_ideology_drift = 0.05
+			}
+		}
+		
+		ALB_kick_out_italy = {
+		
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				ITA = {
+					OR = {
+						exists = no 
+						is_subject_of = ALB
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SPR_anti_fascist_crusade
+
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.10
+			}
+		}
+		
+		ALB_kick_out_turkey = {
+		
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				TUR = {
+					OR = {
+						exists = no 
+						is_subject_of = ALB
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.10
+			}
+		}
+		
+		ALB_navy_funding = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				TUR = {
+					OR = {
+						exists = no 
+						is_subject_of = ALB
+					}
+				}
+			}
+
+			picture = jap_interservice_rivalry_navy_dominant
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 3.0
+				industrial_capacity_factory = -0.1
+				production_speed_dockyard_factor = 0.33
+			}
+		}
+		
+		ALB_mediterranean_dominance1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_coastal_defense_ships2
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.25
+				experience_gain_navy_unit_factor = 0.1
+				experience_gain_navy_factor = 0.1
+				navy_org_factor = 0.1
+			}
+		}
+		
+		ALB_mediterranean_dominance2 = {
+		
+			name = ALB_mediterranean_dominance1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_coastal_defense_ships
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.5
+				naval_speed_factor = 0.1
+				experience_gain_navy_unit_factor = 0.1
+				experience_gain_navy_factor = 0.1
+				navy_org_factor = 0.1
+				naval_detection = 0.1
+			}
+		}
+		
+		ALB_land_dominance = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ast_abandon_the_westminster_system
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_regain = 0.10
+				war_stability_factor = 0.15
+			}
+		}
+		
+		ALB_bulgaria_offensive = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_scw_intervention_nationalists_focus
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = BUL
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		
+		ALB_greece_offensive = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_scw_intervention_nationalists_focus
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = GRE
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		
+		ALB_janissaries_idea_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = YUG_orthodox_church_support
+
+			removal_cost = -1
+			
+			modifier = {
+				compliance_growth = 0.1
+				resistance_target = -0.1
+				resistance_damage_to_garrison = -0.3
+			}
+		}
+		
+		ALB_janissaries_idea_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = YUG_orthodox_church_support
+
+			removal_cost = -1
+			
+			modifier = {
+				non_core_manpower = 0.02
+				compliance_growth = 0.10
+				resistance_target = -0.10
+				resistance_damage_to_garrison = -0.3
+				army_morale_factor = 0.10
+			}
+		}
+		
+		ALB_ottoman_volunteers = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			}
+
+			picture = generic_morale_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 75
+				army_leader_cost_factor = -0.5
+				war_support_factor = 0.10
+			}
+		}
+		
+		ALB_balkan_deterrence_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_national_mobilization_focus
+
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = 0.10
+				army_attack_against_major_factor = 0.10
+				army_defence_against_major_factor = 0.10
+			}
+		}
+		
+		ALB_ensured_political_sovereignty_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				is_subject = yes
+			}
+
+			picture = generic_political_support
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.15
+				stability_weekly = 0.001
+			}
+		}
+		
+		ALB_expansionism_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_scw_intervention_republicans_focus#FRA_scw_intervention_nationalists_focus
+
+			removal_cost = -1
+
+			modifier = {
+				justify_war_goal_time = -0.35
+				generate_wargoal_tension = -0.5
+			}
+		}
+		
+		ALB_deterrence = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_national_mobilization_focus
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				army_defence_factor = 0.10
+				max_dig_in_factor = 0.10
+			}
+		}
+		
+		ALB_combined_deterrence_idea = {
+			
+			name = ALB_deterrence
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_national_mobilization_focus
+
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = 0.10
+				army_attack_against_major_factor = 0.10
+				army_defence_against_major_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+				army_defence_factor = 0.10
+				max_dig_in_factor = 0.10
+			}
+		}
+		
+		ALB_westernization_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_democratic_drift_bonus
+
+			removal_cost = -1
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+
+			modifier = {
+				custom_modifier_tooltip = ALB_westernization_idea_tt
+			}
+		}
+		
+		ALB_placate_minorities_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = PER_unification_initiative_idea
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.10
+				custom_modifier_tooltip = ALB_placate_minorities_idea_tt
+			}
+		}
+		
+		ALB_albanian_army_idea_empty = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		
+		ALB_albanian_army_idea_army_of_tradition = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				org_loss_when_moving = -0.10
+				dig_in_speed_factor = 0.1
+				max_planning_factor = 0.10
+			}
+		}
+		
+		ALB_albanian_army_idea_brothers_in_arms = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				mobilization_speed = 0.10
+				army_core_defence_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		
+		ALB_albanian_army_idea_elite_infantry = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+			}
+		}
+		
+		ALB_albanian_army_idea_albanian_special_forces = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.05
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_refined_equipment = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				dig_in_speed_factor = 0.10
+				max_dig_in_factor = 0.10
+			}
+		}
+		
+		ALB_albanian_army_idea_army_modernization = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.05
+				mobilization_speed = 0.10
+				command_power_gain_mult = 0.10
+			}
+		}
+		
+		ALB_albanian_army_idea_study_international_military_tactics = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+				org_loss_when_moving = -0.10
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_maneuver_warfare = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.05
+				dig_in_speed_factor = 0.10
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_coordination_training = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+				training_time_factor = 0.05
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_structural_reform = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				mobilization_speed = 0.10
+				training_time_factor = 0.05
+				command_power_gain_mult = 0.25
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_frontline_consolidation = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				org_loss_when_moving = -0.05
+				dig_in_speed_factor = 0.10
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_arms_assembly_reconfiguration = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_field_supply_standardization = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.05
+				attrition = -0.05
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_indomitable_will = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = 0.10
+				command_power_gain_mult = 0.25
+				max_planning_factor = 0.10
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_overwhelming_firepower = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = -0.02
+				army_attack_factor = 0.10
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_methodical_prowess = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = 0.15
+				max_planning_factor = 0.15
+				command_power_gain_mult = 0.15
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_ruthless_rush = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.10
+				org_loss_when_moving = -0.10
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_desperate_measures = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.10
+				dig_in_speed_factor = 0.10
+				max_dig_in_factor = 0.10
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_red_army = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				out_of_supply_factor = -0.05
+				army_org_regain = 0.05
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_militarize_the_nation = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+				training_time_factor = -0.10
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_aircraft_production_efforts = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		ALB_albanian_army_idea_ALB_aircraft_carriers = {
+			
+			name = ALB_albanian_army_dynamic_modifier
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+	}
+	
+}

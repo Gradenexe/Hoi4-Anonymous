@@ -1,0 +1,256 @@
+﻿l_english:
+
+ # ============================================================
+ # FOCUS NAMES
+ # ============================================================
+
+ # Gateway
+ SCWR_choose_side:0 "The Soviet Civil War"
+ SCWR_choose_side_desc:0 "The Soviet Union has collapsed into civil war. Now is the time to decide our fate. Do we declare independence, support the White movement, join the communist opposition, or remain loyal to Stalin?"
+ SCWR_choose_side_tt:0 "This unlocks the civil war paths for our republic."
+
+ # --- Generic Emergency Measures ---
+ SCWR_emergency_measures:0 "Emergency Measures"
+ SCWR_emergency_measures_desc:0 "With the civil war raging across the former Empire, we must take immediate steps to secure our borders and maintain order."
+ SCWR_seize_stockpiles:0 "Seize Local Armories"
+ SCWR_seize_stockpiles_desc:0 "There are several abandoned Red Army supply depots in our territory. We must secure these weapons before they fall into the hands of looters or bandits."
+ SCWR_requisition_transport:0 "Requisition Transport"
+ SCWR_requisition_transport_desc:0 "Civilian trucks, buses, and trains must be requisitioned for the war effort to ensure our forces can move quickly."
+ SCWR_mobilize_militias:0 "Mobilize Local Militias"
+ SCWR_mobilize_militias_desc:0 "We cannot rely on a professional army alone. We must arm the populace to defend their homes and towns."
+ SCWR_local_militias_idea:0 "Local Militias"
+ SCWR_local_militias_idea_desc:0 "Armed civilians provide much-needed manpower, though they lack the organization and discipline of regular troops."
+ SCWR_raise_divisions:0 "Deploy the Guards"
+ SCWR_raise_divisions_desc:0 "We will immediately deploy our newly formed militia units to secure key strategic locations across our controlled territory."
+ SCWR_raise_divisions_tt:0 "Spawns §Y1 Militia Division§! in every controlled state. If we control fewer than 3 states, spawns §Y2 Militia Divisions§! per state instead."
+
+ # --- Generic Economy (Left) ---
+ SCWR_wartime_economy:0 "Wartime Economy"
+ SCWR_wartime_economy_desc:0 "To survive the coming conflict, we must transition our entire economy to a war footing. Every factory, farm, and citizen must contribute to the war effort."
+ SCWR_nationalize_industry:0 "Nationalize Industry"
+ SCWR_nationalize_industry_desc:0 "Private enterprises are too inefficient for our current needs. The state will take direct control of all heavy industry to ensure a steady supply of weapons."
+ SCWR_labor_battalions:0 "Labor Battalions"
+ SCWR_labor_battalions_desc:0 "We will organize civilian labor battalions to construct fortifications, repair damaged infrastructure, and keep our supply lines running."
+ SCWR_labor_battalions_idea:0 "Labor Battalions"
+ SCWR_labor_battalions_idea_desc:0 "Organized civilian workers are keeping our industry and infrastructure afloat."
+ SCWR_rationing_system:0 "Rationing System"
+ SCWR_rationing_system_desc:0 "Consumer goods are a luxury we can no longer afford. Strict rationing will be implemented across all territories to redirect resources to the frontline."
+ SCWR_rationing_system_idea:0 "Strict Rationing"
+ SCWR_rationing_system_idea_desc:0 "Civilians are making do with the bare minimum so our soldiers can have what they need."
+
+ # --- Generic Security (Right) ---
+ SCWR_internal_security:0 "State Security Service"
+ SCWR_internal_security_desc:0 "In these chaotic times, enemy agents and provocateurs are everywhere. We must establish a dedicated security service to maintain internal order and root out dissent."
+ SCWR_internal_security_idea:0 "State Security Service"
+ SCWR_internal_security_idea_desc:0 "A strong internal security apparatus ensures political stability and compliance."
+ SCWR_anti_sabotage:0 "Anti-Sabotage Units"
+ SCWR_anti_sabotage_desc:0 "Specialized units will be deployed to protect vital infrastructure, rail lines, and military installations from enemy saboteurs."
+ SCWR_anti_sabotage_idea:0 "Anti-Sabotage Units"
+ SCWR_anti_sabotage_idea_desc:0 "Heightened security makes it incredibly difficult for enemy spies to operate in our territory."
+ SCWR_combat_desertion:0 "Combat Desertion"
+ SCWR_combat_desertion_desc:0 "Deserters undermine the morale of the entire army. We will implement harsh penalties for desertion and establish blocking detachments to keep our troops in line."
+ SCWR_combat_desertion_idea:0 "Harsh Military Discipline"
+ SCWR_combat_desertion_idea_desc:0 "Fear of punishment keeps our soldiers fighting even in the most desperate situations."
+ SCWR_wartime_propaganda:0 "Wartime Propaganda"
+ SCWR_wartime_propaganda_desc:0 "We must control the narrative. A massive propaganda campaign will highlight enemy atrocities and rally our people around the flag."
+ SCWR_wartime_propaganda_idea:0 "Wartime Propaganda"
+ SCWR_wartime_propaganda_idea_desc:0 "The populace is firmly convinced of the righteousness of our cause."
+
+ # --- Independence Branch ---
+ SCWR_independence_entry:0 "Declare Our Independence"
+ SCWR_independence_entry_desc:0 "While the Russian powers tear each other apart, we have a unique opportunity to break free and forge our own destiny. We shall seize it."
+ SCWR_independence_entry_tt:0 "We break free from Soviet authority and begin building an independent state."
+
+ SCWR_declare_independence:0 "Proclaim the Republic"
+ SCWR_declare_independence_desc:0 "With a formal proclamation, we establish ourselves as a sovereign nation. The world must recognize our right to exist."
+
+ SCWR_seek_allies:0 "Seek International Recognition"
+ SCWR_seek_allies_desc:0 "Alone we are vulnerable. We reach out to the Western powers and our neighbors, seeking diplomatic recognition and support against Russian encroachment."
+
+ SCWR_independence_army:0 "The Army of Independence"
+ SCWR_independence_army_desc:0 "We call upon every able-bodied citizen to defend our newly proclaimed independence. A people's army rises to protect our borders."
+
+ SCWR_diaspora_returns:0 "The Diaspora Returns Home"
+ SCWR_diaspora_returns_desc:0 "Thousands of our people who fled Russian rule are returning home with new skills, resources, and a burning desire to help build our nation."
+
+ SCWR_democracy_path:0 "A Democratic Republic"
+ SCWR_democracy_path_desc:0 "We shall build our new nation on the principles of democracy and rule of law. Free elections, civil liberties and a parliamentary government will define our state."
+
+ SCWR_nationalism_path:0 "The National Movement"
+ SCWR_nationalism_path_desc:0 "Our nation must be strong, united under the banner of our people. A nationalist government will put our nation first above all else."
+
+ SCWR_dictatorship_path:0 "The Iron Hand"
+ SCWR_dictatorship_path_desc:0 "In times of crisis, democracy is a luxury we cannot afford. A strong authoritarian leader will guide our people through these difficult times with an iron fist."
+
+ SCWR_monarchy_path:0 "Restore the Old Order"
+ SCWR_monarchy_path_desc:0 "The old dynasties represent stability and legitimacy. Restoring a monarch will unite our people under a banner of tradition and order."
+
+ SCWR_peace_with_victor:0 "Negotiate with the Victor"
+ SCWR_peace_with_victor_desc:0 "Now that the Russian Civil War has ended, we must reach an accommodation with whoever won. Peace on our terms is better than endless war."
+ SCWR_peace_with_victor_days_tt:0 "The Soviet Civil War must have started at least 365 days ago."
+
+ # --- Whites Branch ---
+ SCWR_whites_entry:0 "Pledge to White Russia"
+ SCWR_whites_entry_desc:0 "White Russia fights for a free, united Russia against Bolshevik tyranny. We shall pledge our support to their cause and secure our place in a restored Russian order."
+ SCWR_whites_entry_tt:0 "We align ourselves with White Russia and join their fight against the Reds."
+
+ SCWR_white_weapons:0 "White Army Supplies"
+ SCWR_white_weapons_desc:0 "In exchange for our loyalty, White Russia supplies us with weapons, ammunition and military advisors to strengthen our armed forces."
+
+ SCWR_white_dominion:0 "Status of Dominion"
+ SCWR_white_dominion_desc:0 "Through negotiations with the White government, we secure a recognized status as an autonomous dominion within the Russian sphere — our culture and local administration preserved."
+
+ SCWR_white_general_demand:0 "The General's Inspection"
+ SCWR_white_general_demand_desc:0 "A White Army General arrives to inspect our forces. His visit brings an uncomfortable question about the future of our local military command."
+
+ SCWR_stay_with_whites:0 "Honor the Alliance"
+ SCWR_stay_with_whites_desc:0 "We submit to White Army command. It is a bitter pill, but our alliance with White Russia is more valuable than local pride. Together we shall defeat the Reds."
+
+ SCWR_betray_whites:0 "Throw Off the Yoke"
+ SCWR_betray_whites_desc:0 "We refuse to be treated as a conquered province. We defied the General's demands and now must face the consequences — but our independence is worth fighting for."
+ SCWR_betray_whites_tt:0 "We will break with Russia, leave their faction, and declare war on them."
+
+ SCWR_whites_independence_path:0 "A New Dawn"
+ SCWR_whites_independence_path_desc:0 "Freed from the demands of White Russia, we must quickly marshal our forces and seek new allies. Our path to independence has just begun."
+
+ # --- Opposition Branch ---
+ SCWR_opposition_entry:0 "Support the Opposition"
+ SCWR_opposition_entry_desc:0 "The communist opposition — whether Trotskyist or Bukharinist — offers a better vision for our people than Stalin's brutal dictatorship. We lend them our support."
+ SCWR_opposition_entry_tt:0 "We align with the communist opposition against Stalinist Moscow."
+
+ SCWR_opposition_support:0 "Political Backing"
+ SCWR_opposition_support_desc:0 "We throw our political weight behind the opposition factions. Our resources, infrastructure and manpower are placed at their disposal."
+
+ SCWR_opposition_political:0 "Strengthen Our Position"
+ SCWR_opposition_political_desc:0 "While supporting the opposition, we use the opportunity to build up our own political institutions and military capabilities — ensuring we are not forgotten when victory comes."
+
+ SCWR_opposition_join_war:0 "Join the Fray"
+ SCWR_opposition_join_war_desc:0 "The time for merely political support is over. We commit our forces fully to the struggle against Stalin's Moscow, standing shoulder to shoulder with the opposition."
+
+ SCWR_opposition_victory:0 "The Opposition Prevails"
+ SCWR_opposition_victory_desc:0 "The Russian Civil War is over and the communist opposition has emerged victorious. Now we must negotiate our place in the new order."
+
+ SCWR_opposition_autonomy:0 "Autonomous Soviet Republic"
+ SCWR_opposition_autonomy_desc:0 "We negotiate with the victorious opposition for a guaranteed autonomous status — significant self-governance rights while remaining within the Soviet framework."
+
+ SCWR_opposition_independence_end:0 "Full Independence"
+ SCWR_opposition_independence_end_desc:0 "Having supported the opposition through the war, we now press for full independence. They owe us this much."
+
+ # --- Moscow Branch ---
+ SCWR_moscow_entry:0 "Swear Loyalty to Moscow"
+ SCWR_moscow_entry_desc:0 "Stalin's Moscow represents the true continuity of Soviet power. We pledge our unwavering loyalty to the Communist Party and to Comrade Stalin personally."
+ SCWR_moscow_entry_tt:0 "We align with Stalinist Moscow against all opposition and White forces."
+
+ SCWR_swear_to_stalin:0 "The Oath to Stalin"
+ SCWR_swear_to_stalin_desc:0 "In a solemn ceremony, our leadership publicly swears loyalty to Comrade Stalin and the Communist Party. Our fate is now tied to Moscow."
+
+ SCWR_moscow_industry:0 "Soviet Economic Integration"
+ SCWR_moscow_industry_desc:0 "Moscow rewards our loyalty with industrial investment. New factories and economic planners arrive from Moscow to help develop our region."
+
+ SCWR_suppress_enemies:0 "Help Crush the Enemies"
+ SCWR_suppress_enemies_desc:0 "We commit our forces to help Moscow crush the Whites and the communist opposition. Our troops fight alongside the Red Army in defense of Stalinist socialism."
+
+ SCWR_moscow_victory:0 "Moscow is Victorious"
+ SCWR_moscow_victory_desc:0 "Stalin's forces have prevailed in the Civil War. Now Moscow turns its attention to reorganizing the Soviet state — including what to do with loyal republics like us."
+
+ SCWR_loyal_republic:0 "A Loyal Soviet Republic"
+ SCWR_loyal_republic_desc:0 "Our loyalty through the Civil War is recognized. Moscow grants us a privileged status as a model Soviet republic — resources, investment and autonomy all flow our way."
+
+ SCWR_deeper_integration:0 "Full Integration into the USSR"
+ SCWR_deeper_integration_desc:0 "We choose to fully integrate ourselves into Stalin's USSR. It is a gamble — those who prove most loyal may prosper, but Stalin's paranoia knows no bounds..."
+ SCWR_deeper_integration_tt:0 "Integration may bring rewards... or Stalinist repressions. An event will fire in the coming months."
+
+ # ============================================================
+ # EVENTS
+ # ============================================================
+
+ scwr.1.t:0 "The General's Ultimatum"
+ scwr.1.d:0 "General [GetRandomFullName], commanding White Army forces in the region, has arrived with an unmistakable message: our local military forces are to be subordinated entirely to White Army command. 'We cannot have parallel armies,' he growls over the conference table. 'Either your men serve under my orders, or they are disbanded entirely.' The room falls silent. This is the moment of truth for our alliance with White Russia."
+ scwr.1.a:0 "Submit to White Army Command"
+ scwr.1.b:0 "Refuse — Our Army Remains Our Own"
+
+ scwr.2.t:0 "Stalin's Men Arrive"
+ scwr.2.d:0 "A delegation from Moscow has arrived — NKVD officers with lists of names. The purges that swept through Russia are now reaching our republic. Local party officials are being arrested, military commanders questioned. How bad it gets depends on how much Stalin trusts us... or fears us."
+ scwr.2.a:0 "There is nothing we can do."
+
+ scwr.10.t:0 "Independence Proclaimed!"
+ scwr.10.d:0 "Our leaders have formally proclaimed our nation's independence. The proclamation has been read in the streets to cheering crowds. For the first time in memory, we are truly free. Now we must defend what we have declared."
+ scwr.10.a:0 "Long live our nation!"
+
+ # ============================================================
+ # IDEA NAMES & DESCRIPTIONS
+ # ============================================================
+
+ SCWR_international_recognition_idea:0 "International Recognition"
+ SCWR_international_recognition_idea_desc:0 "Western powers and neighboring states have acknowledged our sovereignty, providing diplomatic backing and a measure of security."
+
+ SCWR_independence_army_idea:0 "Army of Independence"
+ SCWR_independence_army_idea_desc:0 "A motivated volunteer force defending our homeland. These soldiers fight for something worth fighting for."
+
+ SCWR_diaspora_returns_idea:0 "Diaspora Returns Home"
+ SCWR_diaspora_returns_idea_desc:0 "Thousands of our countrymen return from abroad, bringing skills, resources and manpower to help build our new nation."
+
+ SCWR_democracy_idea:0 "Democratic Government"
+ SCWR_democracy_idea_desc:0 "A freely elected government provides political legitimacy and encourages citizens to invest in the future of their nation."
+
+ SCWR_nationalism_idea:0 "National Movement"
+ SCWR_nationalism_idea_desc:0 "Nationalist fervor has united our people behind a common cause. Every soldier fights for the nation, not just orders."
+
+ SCWR_dictatorship_idea:0 "Authoritarian Rule"
+ SCWR_dictatorship_idea_desc:0 "The iron hand of the state keeps dissent in check and focuses all resources toward national survival."
+
+ SCWR_monarchy_idea:0 "Restored Monarchy"
+ SCWR_monarchy_idea_desc:0 "The return of the old dynasties brings stability and a sense of continuity that calms an anxious population."
+
+ SCWR_white_support_idea:0 "White Army Supplies"
+ SCWR_white_support_idea_desc:0 "A steady flow of weapons and equipment from White Russia bolsters our military capabilities."
+
+ SCWR_white_dominion_idea:0 "Dominion Status"
+ SCWR_white_dominion_idea_desc:0 "Recognized as a dominion of White Russia, we retain cultural and administrative autonomy while benefiting from Russian support."
+
+ SCWR_loyal_whites_idea:0 "Loyal to the White Cause"
+ SCWR_loyal_whites_idea_desc:0 "Having proven our loyalty, White Army advisors integrate fully with our forces, sharing doctrine and battlefield experience."
+
+ SCWR_opposition_support_idea:0 "Supporting the Opposition"
+ SCWR_opposition_support_idea_desc:0 "Our backing of the communist opposition brings political momentum and connects us to an alternative vision for Russia's future."
+
+ SCWR_opposition_political_idea:0 "Opposition Political Network"
+ SCWR_opposition_political_idea_desc:0 "A web of political contacts within the opposition factions gives us influence and intelligence that benefits our military operations."
+
+ SCWR_opposition_autonomy_idea:0 "Autonomous Republic"
+ SCWR_opposition_autonomy_idea_desc:0 "Negotiated autonomy within the new Soviet framework — we govern ourselves while benefiting from the broader communist economic network."
+
+ SCWR_opposition_military_idea:0 "Opposition Military Command"
+ SCWR_opposition_military_idea_desc:0 "Our military command is fully integrated into the opposition war effort, gaining valuable experience and operational efficiency."
+
+ SCWR_moscow_loyalty_idea:0 "Loyal to the Party"
+ SCWR_moscow_loyalty_idea_desc:0 "Our public declaration of loyalty to Stalin and the Communist Party stabilizes our domestic politics and opens doors to Moscow's resources."
+
+ SCWR_moscow_industry_idea:0 "Soviet Industrial Investment"
+ SCWR_moscow_industry_idea_desc:0 "Moscow's economic planners and investment funds are transforming our industrial base as a reward for our loyalty in the Civil War."
+
+ SCWR_suppress_enemies_idea:0 "Servants of the Party"
+ SCWR_suppress_enemies_idea_desc:0 "Our forces have fought alongside the Red Army, gaining experience and earning the trust of Moscow's military establishment."
+
+ SCWR_loyal_republic_idea:0 "Model Soviet Republic"
+ SCWR_loyal_republic_idea_desc:0 "Our loyalty through the Civil War is recognized and rewarded. We are held up as a model of faithful Soviet governance — for now."
+
+ SCWR_stalinist_repression_idea:0 "The Purges Begin"
+ SCWR_stalinist_repression_idea_desc:0 "NKVD agents have arrested local party officials and military officers. The purges have shaken our institutions and spread fear through the population."
+
+ SCWR_stalinist_repression_heavy_idea:0 "Systematic Purges"
+ SCWR_stalinist_repression_heavy_idea_desc:0 "A devastating wave of arrests has gutted our military leadership and party structure. Entire units have been disbanded and their commanders shot. We are crippled."
+
+ # ============================================================
+ # CUSTOM TOOLTIPS
+ # ============================================================
+
+ SCWR_repression_heavy_tt:0 "The heaviest purges possible strike our republic. Military leadership, party officials, and civilian administrators are all targeted."
+ SCWR_repression_moderate_tt:0 "A moderate purge hits our republic. Some officials are arrested, but our core institutions survive."
+ SCWR_repression_avoided_tt:0 "Stalin's agents find no grounds for suspicion. Our loyalty is rewarded — integration is deemed a success."
+
+ SCWR_chose_independence:0 "Chose Independence"
+ SCWR_chose_opposition:0 "Chose The Opposition"
+
+ SCWR_chose_whites:0 "Chose Whites"
+ SCWR_defied_whites:0 "Defied Whites"

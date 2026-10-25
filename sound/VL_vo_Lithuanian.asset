@@ -1,0 +1,712 @@
+
+category =
+{
+ name = "Voices"
+ soundeffects = {
+	### Lithuanian Language ###
+	# LIT
+	LIT__infantry_idle
+	LIT__infantry_neutral_combat
+	LIT__infantry_positive_combat
+	LIT__infantry_retreat
+	LIT__infantry_move_out
+ }
+  compressor =
+ {
+	enabled = yes
+	pregain = 0.0
+	postgain = 2.0
+	ratio = 10.0
+	threshold = -10.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+
+########### AUDIO ASSETS
+########### LIT
+sound =
+{
+	name = "LIT__Idle_001"
+	file = "lit/LIT__Idle_001.wav"
+}
+sound =
+{
+	name = "LIT__Idle_002"
+	file = "lit/LIT__Idle_002.wav"
+}
+sound =
+{
+	name = "LIT__Idle_003"
+	file = "lit/LIT__Idle_003.wav"
+}
+sound =
+{
+	name = "LIT__Idle_004"
+	file = "lit/LIT__Idle_004.wav"
+}
+sound =
+{
+	name = "LIT__Idle_005"
+	file = "lit/LIT__Idle_005.wav"
+}
+sound =
+{
+	name = "LIT__Idle_006"
+	file = "lit/LIT__Idle_006.wav"
+}
+sound =
+{
+	name = "LIT__Idle_007"
+	file = "lit/LIT__Idle_007.wav"
+}
+sound =
+{
+	name = "LIT__Idle_008"
+	file = "lit/LIT__Idle_008.wav"
+}
+sound =
+{
+	name = "LIT__Neutral_001"
+	file = "lit/LIT__Neutral_001.wav"
+}
+sound =
+{
+	name = "LIT__Neutral_002"
+	file = "lit/LIT__Neutral_002.wav"
+}
+sound =
+{
+	name = "LIT__Neutral_003"
+	file = "lit/LIT__Neutral_003.wav"
+}
+sound =
+{
+	name = "LIT__Neutral_004"
+	file = "lit/LIT__Neutral_004.wav"
+}
+sound =
+{
+	name = "LIT__Positive_001"
+	file = "lit/LIT__Positive_001.wav"
+}
+sound =
+{
+	name = "LIT__Positive_002"
+	file = "lit/LIT__Positive_002.wav"
+}
+sound =
+{
+	name = "LIT__Positive_003"
+	file = "lit/LIT__Positive_003.wav"
+}
+sound =
+{
+	name = "LIT__Positive_004"
+	file = "lit/LIT__Positive_004.wav"
+}
+sound =
+{
+	name = "LIT__Positive_005"
+	file = "lit/LIT__Positive_005.wav"
+}
+sound =
+{
+	name = "LIT__Negative_001"
+	file = "lit/LIT__Negative_001.wav"
+}
+sound =
+{
+	name = "LIT__Negative_002"
+	file = "lit/LIT__Negative_002.wav"
+}
+sound =
+{
+	name = "LIT__Negative_003"
+	file = "lit/LIT__Negative_003.wav"
+}
+sound =
+{
+	name = "LIT__Negative_004"
+	file = "lit/LIT__Negative_004.wav"
+}
+sound =
+{
+	name = "LIT__Negative_005"
+	file = "lit/LIT__Negative_005.wav"
+}
+sound =
+{
+	name = "LIT__MoveOut_001"
+	file = "lit/LIT__MoveOut_001.wav"
+}
+sound =
+{
+	name = "LIT__MoveOut_002"
+	file = "lit/LIT__MoveOut_002.wav"
+}
+
+sound = { 
+    name = "LIT__idle_004"
+    file = "lit/LIT__idle_004.wav"
+}
+sound = { 
+    name = "LIT__idle_005"
+    file = "lit/LIT__idle_005.wav"
+}
+sound = { 
+    name = "LIT__idle_006"
+    file = "lit/LIT__idle_006.wav"
+}
+sound = { 
+    name = "LIT__idle_007"
+    file = "lit/LIT__idle_007.wav"
+}
+sound = { 
+    name = "LIT__idle_008"
+    file = "lit/LIT__idle_008.wav"
+}
+sound = { 
+    name = "LIT__idle_009"
+    file = "lit/LIT__idle_009.wav"
+}
+sound = { 
+    name = "LIT__idle_010"
+    file = "lit/LIT__idle_010.wav"
+}
+sound = { 
+    name = "LIT__idle_011"
+    file = "lit/LIT__idle_011.wav"
+}
+sound = { 
+    name = "LIT__idle_012"
+    file = "lit/LIT__idle_012.wav"
+}
+sound = { 
+    name = "LIT__idle_013"
+    file = "lit/LIT__idle_013.wav"
+}
+sound = { 
+    name = "LIT__idle_014"
+    file = "lit/LIT__idle_014.wav"
+}
+sound = { 
+    name = "LIT__idle_015"
+    file = "lit/LIT__idle_015.wav"
+}
+sound = { 
+    name = "LIT__idle_016"
+    file = "lit/LIT__idle_016.wav"
+}
+sound = { 
+    name = "LIT__idle_017"
+    file = "lit/LIT__idle_017.wav"
+}
+sound = { 
+    name = "LIT__idle_018"
+    file = "lit/LIT__idle_018.wav"
+}
+sound = { 
+    name = "LIT__idle_019"
+    file = "lit/LIT__idle_019.wav"
+}
+sound = { 
+    name = "LIT__idle_020"
+    file = "lit/LIT__idle_020.wav"
+}
+sound = { 
+    name = "LIT__idle_021"
+    file = "lit/LIT__idle_021.wav"
+}
+sound = { 
+    name = "LIT__idle_022"
+    file = "lit/LIT__idle_022.wav"
+}
+sound = { 
+    name = "LIT__idle_023"
+    file = "lit/LIT__idle_023.wav"
+}
+sound = { 
+    name = "LIT__idle_024"
+    file = "lit/LIT__idle_024.wav"
+}
+sound = { 
+    name = "LIT__idle_025"
+    file = "lit/LIT__idle_025.wav"
+}
+sound = { 
+    name = "LIT__idle_026"
+    file = "lit/LIT__idle_026.wav"
+}
+sound = { 
+    name = "LIT__idle_027"
+    file = "lit/LIT__idle_027.wav"
+}
+sound = { 
+    name = "LIT__neutral_001"
+    file = "lit/LIT__neutral_001.wav"
+}
+sound = { 
+    name = "LIT__neutral_002"
+    file = "lit/LIT__neutral_002.wav"
+}
+sound = { 
+    name = "LIT__neutral_003"
+    file = "lit/LIT__neutral_003.wav"
+}
+sound = { 
+    name = "LIT__neutral_004"
+    file = "lit/LIT__neutral_004.wav"
+}
+sound = { 
+    name = "LIT__neutral_005"
+    file = "lit/LIT__neutral_005.wav"
+}
+sound = { 
+    name = "LIT__neutral_006"
+    file = "lit/LIT__neutral_006.wav"
+}
+sound = { 
+    name = "LIT__neutral_007"
+    file = "lit/LIT__neutral_007.wav"
+}
+sound = { 
+    name = "LIT__neutral_008"
+    file = "lit/LIT__neutral_008.wav"
+}
+sound = { 
+    name = "LIT__neutral_009"
+    file = "lit/LIT__neutral_009.wav"
+}
+sound = { 
+    name = "LIT__neutral_010"
+    file = "lit/LIT__neutral_010.wav"
+}
+sound = { 
+    name = "LIT__neutral_011"
+    file = "lit/LIT__neutral_011.wav"
+}
+sound = { 
+    name = "LIT__neutral_012"
+    file = "lit/LIT__neutral_012.wav"
+}
+sound = { 
+    name = "LIT__neutral_013"
+    file = "lit/LIT__neutral_013.wav"
+}
+sound = { 
+    name = "LIT__neutral_014"
+    file = "lit/LIT__neutral_014.wav"
+}
+sound = { 
+    name = "LIT__neutral_015"
+    file = "lit/LIT__neutral_015.wav"
+}
+sound = { 
+    name = "LIT__neutral_016"
+    file = "lit/LIT__neutral_016.wav"
+}
+sound = { 
+    name = "LIT__neutral_017"
+    file = "lit/LIT__neutral_017.wav"
+}
+sound = { 
+    name = "LIT__neutral_018"
+    file = "lit/LIT__neutral_018.wav"
+}
+sound = { 
+    name = "LIT__neutral_019"
+    file = "lit/LIT__neutral_019.wav"
+}
+sound = { 
+    name = "LIT__neutral_019_alt"
+    file = "lit/LIT__neutral_019_alt.wav"
+}
+sound = { 
+    name = "LIT__neutral_020"
+    file = "lit/LIT__neutral_020.wav"
+}
+sound = { 
+    name = "LIT__neutral_020_alt"
+    file = "lit/LIT__neutral_020_alt.wav"
+}
+sound = { 
+    name = "LIT__neutral_021"
+    file = "lit/LIT__neutral_021.wav"
+}
+sound = { 
+    name = "LIT__neutral_021_alt"
+    file = "lit/LIT__neutral_021_alt.wav"
+}
+sound = { 
+    name = "LIT__positive_001"
+    file = "lit/LIT__positive_001.wav"
+}
+sound = { 
+    name = "LIT__positive_002"
+    file = "lit/LIT__positive_002.wav"
+}
+sound = { 
+    name = "LIT__positive_003"
+    file = "lit/LIT__positive_003.wav"
+}
+sound = { 
+    name = "LIT__positive_004"
+    file = "lit/LIT__positive_004.wav"
+}
+sound = { 
+    name = "LIT__positive_005"
+    file = "lit/LIT__positive_005.wav"
+}
+sound = { 
+    name = "LIT__positive_006"
+    file = "lit/LIT__positive_006.wav"
+}
+sound = { 
+    name = "LIT__positive_007"
+    file = "lit/LIT__positive_007.wav"
+}
+sound = { 
+    name = "LIT__positive_008"
+    file = "lit/LIT__positive_008.wav"
+}
+sound = { 
+    name = "LIT__positive_009"
+    file = "lit/LIT__positive_009.wav"
+}
+sound = { 
+    name = "LIT__positive_010"
+    file = "lit/LIT__positive_010.wav"
+}
+sound = { 
+    name = "LIT__positive_011"
+    file = "lit/LIT__positive_011.wav"
+}
+sound = { 
+    name = "LIT__positive_012"
+    file = "lit/LIT__positive_012.wav"
+}
+sound = { 
+    name = "LIT__positive_013"
+    file = "lit/LIT__positive_013.wav"
+}
+sound = { 
+    name = "LIT__positive_014"
+    file = "lit/LIT__positive_014.wav"
+}
+sound = { 
+    name = "LIT__positive_015"
+    file = "lit/LIT__positive_015.wav"
+}
+sound = { 
+    name = "LIT__positive_016"
+    file = "lit/LIT__positive_016.wav"
+}
+sound = { 
+    name = "LIT__positive_017"
+    file = "lit/LIT__positive_017.wav"
+}
+sound = { 
+    name = "LIT__positive_018"
+    file = "lit/LIT__positive_018.wav"
+}
+sound = { 
+    name = "LIT__positive_019"
+    file = "lit/LIT__positive_019.wav"
+}
+sound = { 
+    name = "LIT__positive_020"
+    file = "lit/LIT__positive_020.wav"
+}
+sound = { 
+    name = "LIT__positive_021"
+    file = "lit/LIT__positive_021.wav"
+}
+sound = { 
+    name = "LIT__positive_022"
+    file = "lit/LIT__positive_022.wav"
+}
+sound = { 
+    name = "LIT__positive_023"
+    file = "lit/LIT__positive_023.wav"
+}
+sound = { 
+    name = "LIT__positive_024"
+    file = "lit/LIT__positive_024.wav"
+}
+sound = { 
+    name = "LIT__retreat_001"
+    file = "lit/LIT__retreat_001.wav"
+}
+sound = { 
+    name = "LIT__retreat_002"
+    file = "lit/LIT__retreat_002.wav"
+}
+sound = { 
+    name = "LIT__retreat_003"
+    file = "lit/LIT__retreat_003.wav"
+}
+sound = { 
+    name = "LIT__retreat_004"
+    file = "lit/LIT__retreat_004.wav"
+}
+sound = { 
+    name = "LIT__retreat_005"
+    file = "lit/LIT__retreat_005.wav"
+}
+sound = { 
+    name = "LIT__retreat_006"
+    file = "lit/LIT__retreat_006.wav"
+}
+sound = { 
+    name = "LIT__retreat_007"
+    file = "lit/LIT__retreat_007.wav"
+}
+sound = { 
+    name = "LIT__retreat_008"
+    file = "lit/LIT__retreat_008.wav"
+}
+sound = { 
+    name = "LIT__retreat_009"
+    file = "lit/LIT__retreat_009.wav"
+}
+sound = { 
+    name = "LIT__retreat_010"
+    file = "lit/LIT__retreat_010.wav"
+}
+sound = { 
+    name = "LIT__retreat_011"
+    file = "lit/LIT__retreat_011.wav"
+}
+sound = { 
+    name = "LIT__retreat_012"
+    file = "lit/LIT__retreat_012.wav"
+}
+sound = { 
+    name = "LIT__retreat_013"
+    file = "lit/LIT__retreat_013.wav"
+}
+sound = { 
+    name = "LIT__retreat_014"
+    file = "lit/LIT__retreat_014.wav"
+}
+sound = { 
+    name = "LIT__retreat_015"
+    file = "lit/LIT__retreat_015.wav"
+}
+sound = { 
+    name = "LIT__retreat_016"
+    file = "lit/LIT__retreat_016.wav"
+}
+sound = { 
+    name = "LIT__retreat_016_alt"
+    file = "lit/LIT__retreat_016_alt.wav"
+}
+sound = { 
+    name = "LIT__retreat_017"
+    file = "lit/LIT__retreat_017.wav"
+}
+sound = { 
+    name = "LIT__retreat_017_alt"
+    file = "lit/LIT__retreat_017_alt.wav"
+}
+sound = { 
+    name = "LIT__retreat_018"
+    file = "lit/LIT__retreat_018.wav"
+}
+sound = { 
+    name = "LIT__retreat_018_alt"
+    file = "lit/LIT__retreat_018_alt.wav"
+}
+sound = { 
+    name = "LIT__idle_001"
+    file = "lit/LIT__idle_001.wav"
+}
+sound = { 
+    name = "LIT__idle_002"
+    file = "lit/LIT__idle_002.wav"
+}
+sound = { 
+    name = "LIT__idle_003" 
+    file = "lit/LIT__idle_003.wav"
+}
+
+########## Lithuanian
+########## LIT
+
+soundeffect =
+{
+    name = "LIT__infantry_idle"
+    sounds = {
+        sound = LIT__Idle_001
+        sound = LIT__Idle_002
+        sound = LIT__Idle_003
+        sound = LIT__Idle_004
+        sound = LIT__Idle_005
+        sound = LIT__Idle_006
+        sound = LIT__Idle_007
+        sound = LIT__Idle_008
+		sound = LIT__idle_001
+        sound = LIT__idle_002
+        sound = LIT__idle_003
+        sound = LIT__idle_004
+        sound = LIT__idle_005
+        sound = LIT__idle_006
+        sound = LIT__idle_007
+        sound = LIT__idle_008
+        sound = LIT__idle_009
+        sound = LIT__idle_010
+        sound = LIT__idle_011
+        sound = LIT__idle_012
+        sound = LIT__idle_013
+        sound = LIT__idle_014
+        sound = LIT__idle_015
+        sound = LIT__idle_016
+        sound = LIT__idle_017
+        sound = LIT__idle_018
+        sound = LIT__idle_019
+        sound = LIT__idle_020
+        sound = LIT__idle_021
+        sound = LIT__idle_022
+        sound = LIT__idle_023
+        sound = LIT__idle_024
+        sound = LIT__idle_025
+        sound = LIT__idle_026
+        sound = LIT__idle_027
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.6
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect =
+{
+    name = "LIT__infantry_neutral_combat"
+    sounds = {
+        sound = LIT__Neutral_001
+        sound = LIT__Neutral_002
+        sound = LIT__Neutral_003
+        sound = LIT__Neutral_004
+		sound = LIT__neutral_001
+        sound = LIT__neutral_002
+        sound = LIT__neutral_003
+        sound = LIT__neutral_004
+        sound = LIT__neutral_005
+        sound = LIT__neutral_006
+        sound = LIT__neutral_007
+        sound = LIT__neutral_008
+        sound = LIT__neutral_009
+        sound = LIT__neutral_010
+        sound = LIT__neutral_011
+        sound = LIT__neutral_012
+        sound = LIT__neutral_013
+        sound = LIT__neutral_014
+        sound = LIT__neutral_015
+        sound = LIT__neutral_016
+        sound = LIT__neutral_017
+        sound = LIT__neutral_018
+        sound = LIT__neutral_019
+#        sound = LIT__neutral_019_alt
+        sound = LIT__neutral_020
+#        sound = LIT__neutral_020_alt
+        sound = LIT__neutral_021
+#        sound = LIT__neutral_021_alt
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.6
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect =
+{
+    name = "LIT__infantry_positive_combat"
+    sounds = {
+        sound = LIT__Positive_001
+        sound = LIT__Positive_002
+        sound = LIT__Positive_003
+        sound = LIT__Positive_004
+        sound = LIT__Positive_005
+		sound = LIT__positive_001
+        sound = LIT__positive_002
+        sound = LIT__positive_003
+        sound = LIT__positive_004
+        sound = LIT__positive_005
+        sound = LIT__positive_006
+        sound = LIT__positive_007
+        sound = LIT__positive_008
+        sound = LIT__positive_009
+        sound = LIT__positive_010
+        sound = LIT__positive_011
+        sound = LIT__positive_012
+        sound = LIT__positive_013
+        sound = LIT__positive_014
+        sound = LIT__positive_015
+        sound = LIT__positive_016
+        sound = LIT__positive_017
+        sound = LIT__positive_018
+        sound = LIT__positive_019
+        sound = LIT__positive_020
+        sound = LIT__positive_021
+        sound = LIT__positive_022
+        sound = LIT__positive_023
+        sound = LIT__positive_024
+		
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.6
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect =
+{
+    name = "LIT__infantry_retreat"
+    sounds = {
+        sound = LIT__Negative_001
+        sound = LIT__Negative_002
+        sound = LIT__Negative_003
+        sound = LIT__Negative_004
+        sound = LIT__Negative_005
+		sound = LIT__retreat_001
+        sound = LIT__retreat_002
+        sound = LIT__retreat_003
+        sound = LIT__retreat_004
+        sound = LIT__retreat_005
+        sound = LIT__retreat_006
+        sound = LIT__retreat_007
+        sound = LIT__retreat_008
+        sound = LIT__retreat_009
+        sound = LIT__retreat_010
+        sound = LIT__retreat_011
+        sound = LIT__retreat_012
+        sound = LIT__retreat_013
+        sound = LIT__retreat_014
+        sound = LIT__retreat_015
+        sound = LIT__retreat_016
+#        sound = LIT__retreat_016_alt
+        sound = LIT__retreat_017
+#        sound = LIT__retreat_017_alt
+        sound = LIT__retreat_018
+#        sound = LIT__retreat_018_alt
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.6
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect =
+{
+    name = "LIT__infantry_move_out"
+    sounds = {
+        sound = LIT__MoveOut_001
+        sound = LIT__MoveOut_002
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.45
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}

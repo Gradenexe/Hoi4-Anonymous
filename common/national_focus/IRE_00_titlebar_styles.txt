@@ -1,0 +1,13 @@
+####################
+##### IRELAND ######
+####################
+
+
+style = {
+	name = IRE_focus_style
+
+	unavailable = GFX_focus_unavailable_joint_IRE
+	completed = GFX_focus_completed_joint_IRE
+	available = GFX_focus_can_start_joint_IRE
+	current = GFX_focus_current_joint_IRE
+}

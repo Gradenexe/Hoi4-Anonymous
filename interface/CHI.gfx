@@ -1,0 +1,19 @@
+spriteTypes = {	
+		
+	# Event
+	
+	spriteType = {
+			name = GFX_event_chiang_speech
+			texturefile = gfx/interface/events/event_chiang_speech.png
+		}
+		
+	spriteType = {
+			name = GFX_event_xian_incident
+			texturefile = gfx/interface/events/event_xian_incident.png
+		}
+		
+	spriteType = {
+			name = GFX_event_three_principles
+			texturefile = gfx/interface/events/event_three_principles.png
+		}
+}

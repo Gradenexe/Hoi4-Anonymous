@@ -1,0 +1,50 @@
+scripted_gui = {
+	election_parliament_gui = {
+		context_type = decision_category
+		window_name = "election_parliament_gui_container"
+		dynamic_lists = {
+			election_parliament_semicircle_main_grid = {
+				array = election_parliament_main_array
+				index = election_parliament_main_index
+				change_scope = no
+				entry_container = election_parliament_semicircle_main_entry
+			}
+			election_parliament_member_grid = {
+				array = election_parliament_member_array
+				index = election_parliament_member_index
+				change_scope = no
+				entry_container = election_parliament_member_entry
+			}
+		}
+		effects = {
+			election_parliament_modify_button_control_click = {
+				set_temp_variable = {
+					temp_member = v
+				}
+				set_temp_variable = {
+					temp_seats = 5
+				}
+				modify_election_parliament_seat = yes
+			}
+			election_parliament_modify_button_shift_click = {
+				set_temp_variable = {
+					temp_member = v
+				}
+				set_temp_variable = {
+					temp_seats = -5
+				}
+				modify_election_parliament_seat = yes
+			}
+		}
+		properties = {
+			election_parliament_semicircle_main_icon = {
+				frame = v
+				x = election_parliament_x_array^election_parliament_main_index
+				y = election_parliament_y_array^election_parliament_main_index
+			}
+			election_parliament_member_icon = {
+				frame = v
+			}
+		}
+	}
+}

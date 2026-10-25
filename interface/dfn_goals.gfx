@@ -1,0 +1,23 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_goal_generic_no_ac_effort"
+	texturefile = "gfx/interface/goals/no_ac.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_generic_send_bombs_to_the_hell"
+	texturefile = "gfx/interface/goals/bomb_ships_to_hell.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_generic_upgraded_anti_air"
+	texturefile = "gfx/interface/goals/ney.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_generic_no_ships"
+	texturefile = "gfx/interface/goals/no_ship.dds"			
+	}
+
+}

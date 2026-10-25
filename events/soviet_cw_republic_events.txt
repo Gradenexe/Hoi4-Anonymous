@@ -1,0 +1,125 @@
+add_namespace = scwr
+
+# ============================================================
+# scwr.1 — White General's Ultimatum
+# Fires from: SCWR_white_general_demand focus
+# Sets: SCWR_submitted_to_whites OR SCWR_defied_whites
+# ============================================================
+
+country_event = {
+	id = scwr.1
+	title = scwr.1.t
+	desc = scwr.1.d
+	picture = GFX_report_event_soviet_tanks_1
+
+	is_triggered_only = yes
+
+	# Option A: Submit — disband local army, remain loyal
+	option = {
+		name = scwr.1.a
+		ai_chance = { factor = 50 }
+
+		set_country_flag = SCWR_submitted_to_whites
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		# Lose some equipment to White Army
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -500
+		}
+	}
+
+	# Option B: Refuse — defy the general, path to betrayal
+	option = {
+		name = scwr.1.b
+		ai_chance = { factor = 50 }
+
+		set_country_flag = SCWR_defied_whites
+		add_stability = -0.10
+		add_war_support = 0.10
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.10
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = SCWR_traitor_modifier
+			}
+		}
+	}
+}
+
+# ============================================================
+# scwr.2 — Stalinist Repressions
+# Fires from: SCWR_deeper_integration focus (random delay 30–90 days)
+# Random outcome: repressions hit or are avoided
+# ============================================================
+
+country_event = {
+	id = scwr.2
+	title = scwr.2.t
+	desc = scwr.2.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# Option A: Accept the purge (only choice — event forces it)
+	option = {
+		name = scwr.2.a
+		ai_chance = { factor = 100 }
+
+		# Random severity
+		random_list = {
+			# 40% — Heavy repressions
+			40 = {
+				add_ideas = SCWR_stalinist_repression_heavy_idea
+				add_stability = -0.15
+				add_war_support = -0.10
+				add_manpower = -30000
+				army_experience = -30
+				custom_effect_tooltip = SCWR_repression_heavy_tt
+			}
+			# 35% — Moderate repressions
+			35 = {
+				add_ideas = SCWR_stalinist_repression_idea
+				add_stability = -0.08
+				add_manpower = -15000
+				custom_effect_tooltip = SCWR_repression_moderate_tt
+			}
+			# 25% — Avoided (loyalty rewarded)
+			25 = {
+				add_ideas = SCWR_loyal_republic_idea
+				add_stability = 0.05
+				add_political_power = 50
+				custom_effect_tooltip = SCWR_repression_avoided_tt
+			}
+		}
+	}
+}
+
+# ============================================================
+# scwr.10 — Independence Declared (notification)
+# Fires from: SCWR_declare_independence focus
+# ============================================================
+
+country_event = {
+	id = scwr.10
+	title = scwr.10.t
+	desc = scwr.10.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = scwr.10.a
+		ai_chance = { factor = 100 }
+
+		add_stability = 0.03
+		add_war_support = 0.05
+	}
+}

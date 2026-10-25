@@ -1,0 +1,105 @@
+faction_template_KOR_Asian_Anti_Communist_League = {
+	name = KOR_Asian_Anti_Communist_League
+	manifest = faction_manifest_suppress_asian_communism
+	icon = GFX_faction_logo_generic_12
+	goals = {
+		war_on_communism_goal_name
+		faction_goal_an_infantry_army
+		faction_goal_production_quotas
+	}
+	default_rules = {
+		joining_rule_non_communist
+		joining_rule_asia_only
+		faction_peace_rule_puppeting_focus
+		change_leader_rule_industry
+	}
+}
+
+faction_template_KOR_Asian_Democratic_Alliance = {
+	name = KOR_Asian_Democratic_Alliance
+	manifest = faction_manifest_defense_of_democracy
+	icon = GFX_faction_logo_generic_8
+	goals = {
+		war_on_communism_goal_name
+		stall_the_fascist_threat_goal_name
+		faction_goal_production_quotas
+	}
+	default_rules = {
+		joining_rule_fascist_only
+		joining_rule_asia_only
+		faction_peace_rule_puppeting_focus
+		change_leader_rule_industry
+	}
+}
+
+faction_template_KOR_Asian_Defense_Pact = {
+	name = KOR_Asian_Defense_Pact
+	manifest = faction_manifest_strength_in_unity
+	icon = GFX_faction_logo_generic_13
+	goals = {
+		faction_goal_aggressive_defense
+		faction_goal_a_great_fortress
+		faction_goal_industrial_expansion
+	}
+	default_rules = {
+		joining_rule_non_fascist
+		generate_wargoal_threat_reduction_20
+		change_leader_rule_manpower
+		change_leader_rule_industry
+	}
+}
+
+faction_template_KOR_dongfang_junzhu_lianmeng = {
+	name = KOR_Asian_Monarchist_United_Front
+	manifest = faction_manifest_suppress_asian_communism
+	icon = GFX_faction_logo_generic_5
+	goals = {
+		war_on_communism_goal_name
+		war_on_democracy_goal_name
+		faction_goal_an_infantry_army
+	}
+	default_rules = {
+		joining_rule_non_communist
+		joining_rule_non_democratic
+		joining_rule_asia_only
+		faction_peace_rule_puppeting_focus
+	}
+}
+
+faction_template_KOR_wangdao_tongyu_dongya = {
+	name = KOR_wangdao_tongyu_dongya_zhenying
+	manifest = faction_manifest_asian_dominance
+	icon = GFX_faction_logo_KOR_wangdao_tongyu_dongya
+	goals = {
+		# Short Term 
+		# faction_goal_coastal_security
+		# Medium Term 
+		faction_goal_the_greater_game
+		# Long Term 
+		faction_goal_control_the_chinese_capitals
+		faction_goal_war_on_communism_in_asia
+	}
+	default_rules = {
+		joining_rule_non_communist
+		joining_rule_asia_only
+		faction_peace_take_claimed_focus
+		change_leader_rule_industry
+		dismissal_rule_offensive_war
+	}
+}
+faction_template_KOR_the_kingdom_of_God = {
+	name = KOR_the_kingdom_of_God
+	manifest = faction_manifest_asian_dominance
+	icon = GFX_faction_logo_generic_7
+	goals = {
+		war_on_communism_in_asia_goal_name
+		faction_goal_an_infantry_army
+		faction_goal_production_quotas
+	}
+	default_rules = {
+		joining_rule_non_communist
+		joining_rule_asia_only
+		faction_peace_rule_puppeting_focus
+		change_leader_rule_industry
+	}
+}

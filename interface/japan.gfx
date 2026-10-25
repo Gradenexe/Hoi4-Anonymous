@@ -1,0 +1,1015 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_shogun"
+		texturefile = "gfx/interface/ideas/ideas_shogun.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_chrysanthemum"
+		texturefile = "gfx/interface/ideas/ideas_imperial_control.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hakko_ichiu"
+		texturefile = "gfx/interface/ideas/ideas_hakko_ichiu.png"
+	}		
+
+	spriteType = {
+		name = "GFX_idea_zero_production"
+		texturefile = "gfx/interface/ideas/ideas_zero.png"
+	}		
+	
+	spriteType = {
+		name = "GFX_idea_cherry_blossom"
+		texturefile = "gfx/interface/ideas/idea_cherryblossom.png"
+	}		
+	
+	spriteType = {
+		name = "GFX_idea_naval_production"
+		texturefile = "gfx/interface/ideas/idea_naval_production.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_showa"
+		texturefile = "gfx/interface/ideas/idea_showa.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_octopus"
+		texturefile = "gfx/interface/ideas/idea_octopus.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_japanese_citizens"
+		texturefile = "gfx/interface/ideas/ideas_japanese_citizens.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_korean_communists"
+		texturefile = "gfx/interface/goals/focus_support_korean_communists.png"
+	}
+	spriteType = {
+		name = "GFX_focus_korean_communists_shine"
+		texturefile = "gfx/interface/goals/focus_support_korean_communists.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_crush_monarchs"
+		texturefile = "gfx/interface/goals/focus_broken_crown.png"
+	}	
+	spriteType = {
+		name = "GFX_focus_crush_monarchs_shine"
+		texturefile = "gfx/interface/goals/focus_broken_crown.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_focus_recycle"
+		texturefile = "gfx/interface/goals/focus_recycle.png"
+	}	
+	spriteType = {
+		name = "GFX_focus_recycle_shine"
+		texturefile = "gfx/interface/goals/focus_recycle.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_vote_communist"
+		texturefile = "gfx/interface/goals/focus_communist_vote.png"
+	}
+	spriteType = {
+		name = "GFX_focus_vote_communist_shine"
+		texturefile = "gfx/interface/goals/focus_communist_vote.png"
+	}	
+		
+	spriteType = {
+		name = "GFX_bop_samurai"
+		texturefile = "gfx/interface/ideas/bop_samurai.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_bop_ship"
+		texturefile = "gfx/interface/ideas/bop_ship.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_focus_divine_wind"
+		texturefile = "gfx/interface/goals/focus_divine_wind.png"
+	}
+	spriteType = {
+		name = "GFX_focus_divine_wind_shine"
+		texturefile = "gfx/interface/goals/focus_divine_wind.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_focus_shogunate"
+		texturefile = "gfx/interface/goals/focus_shogunate.png"
+	}
+	spriteType = {
+		name = "GFX_focus_shogunate_shine"
+		texturefile = "gfx/interface/goals/focus_shogunate.png"
+	}		
+	
+	spriteType = {
+		name = "GFX_focus_warrior_spirit"
+		texturefile = "gfx/interface/goals/focus_warrior_spirit.png"
+	}
+	spriteType = {
+		name = "GFX_focus_warrior_spirit_shine"
+		texturefile = "gfx/interface/goals/focus_warrior_spirit.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_two_emperors"
+		texturefile = "gfx/interface/goals/focus_two_emperors.png"
+	}
+	spriteType = {
+		name = "GFX_focus_two_emperors_shine"
+		texturefile = "gfx/interface/goals/focus_two_emperors.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_master_of_china"
+		texturefile = "gfx/interface/ideas/ideas_master_of_china.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_the_two_emperors"
+		texturefile = "gfx/interface/ideas/ideas_two_emperors.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_focus_factions"
+		texturefile = "gfx/interface/goals/focus_factions.png"
+	}
+	spriteType = {
+		name = "GFX_focus_factions_shine"
+		texturefile = "gfx/interface/goals/focus_factions.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_jcp"
+		texturefile = "gfx/interface/goals/focus_jcp.png"
+	}
+	spriteType = {
+		name = "GFX_focus_jcp_shine"
+		texturefile = "gfx/interface/goals/focus_jcp.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_vote"
+		texturefile = "gfx/interface/goals/focus_japan_vote.png"
+	}
+	spriteType = {
+		name = "GFX_focus_vote_shine"
+		texturefile = "gfx/interface/goals/focus_japan_vote.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_subjugate_china"
+		texturefile = "gfx/interface/goals/focus_Subjugate_China.png"
+	}
+	spriteType = {
+		name = "GFX_focus_subjugate_china_shine"
+		texturefile = "gfx/interface/goals/focus_Subjugate_China.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_one_china"
+		texturefile = "gfx/interface/goals/focus_one_china.png"
+	}
+	spriteType = {
+		name = "GFX_focus_one_china_shine"
+		texturefile = "gfx/interface/goals/focus_one_china.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_imperial_visit"
+		texturefile = "gfx/interface/goals/focus_imperial_visit.png"
+	}
+	spriteType = {
+		name = "GFX_focus_imperial_visit_shine"
+		texturefile = "gfx/interface/goals/focus_imperial_visit.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_post_war"
+		texturefile = "gfx/interface/goals/focus_post_war.png"
+	}
+	spriteType = {
+		name = "GFX_focus_post_war_shine"
+		texturefile = "gfx/interface/goals/focus_post_war.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_divide_china"
+		texturefile = "gfx/interface/goals/focus_divide_and_conquer.png"
+	}
+	spriteType = {
+		name = "GFX_focus_divide_china_shine"
+		texturefile = "gfx/interface/goals/focus_divide_and_conquer.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_japan_triumphant"
+		texturefile = "gfx/interface/goals/focus_japan_triumphant.png"
+	}
+	spriteType = {
+		name = "GFX_focus_japan_triumphant_shine"
+		texturefile = "gfx/interface/goals/focus_japan_triumphant.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_ultimatum_warlords"
+		texturefile = "gfx/interface/goals/focus_ultimatum_to_warlords.png"
+	}
+	spriteType = {
+		name = "GFX_focus_ultimatum_warlords_shine"
+		texturefile = "gfx/interface/goals/focus_ultimatum_to_warlords.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_samurai_spirit"
+		texturefile = "gfx/interface/goals/focus_samurai_spirit.png"
+	}
+	spriteType = {
+		name = "GFX_focus_samurai_spirit_shine"
+		texturefile = "gfx/interface/goals/focus_samurai_spirit.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_spiritual_mob"
+		texturefile = "gfx/interface/goals/focus_spiritual_mobilization.png"
+	}
+	spriteType = {
+		name = "GFX_focus_spiritual_mob_shine"
+		texturefile = "gfx/interface/goals/focus_spiritual_mobilization.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_the_big_four"
+		texturefile = "gfx/interface/goals/focus_the_big_four.png"
+	}
+	spriteType = {
+		name = "GFX_focus_the_big_four_shine"
+		texturefile = "gfx/interface/goals/focus_the_big_four.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_cigarettes"
+		texturefile = "gfx/interface/goals/focus_cigarettes.png"
+	}
+	spriteType = {
+		name = "GFX_focus_cigarettes_shine"
+		texturefile = "gfx/interface/goals/focus_cigarettes.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_subjugate_warlords"
+		texturefile = "gfx/interface/goals/focus_subjugate_warlords.png"
+	}
+	spriteType = {
+		name = "GFX_focus_subjugate_warlords_shine"
+		texturefile = "gfx/interface/goals/focus_subjugate_warlords.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_fund_mitsubishi"
+		texturefile = "gfx/interface/goals/focus_mitsubishi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_fund_mitsubishi_shine"
+		texturefile = "gfx/interface/goals/focus_mitsubishi.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_fund_sumitomo"
+		texturefile = "gfx/interface/goals/focus_sumitomo.png"
+	}
+	spriteType = {
+		name = "GFX_focus_fund_sumitomo_shine"
+		texturefile = "gfx/interface/goals/focus_sumitomo.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_fund_mitsui"
+		texturefile = "gfx/interface/goals/focus_mitsui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_fund_mitsui_shine"
+		texturefile = "gfx/interface/goals/focus_mitsui.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_fund_yasuda"
+		texturefile = "gfx/interface/goals/focus_yasuda.png"
+	}
+	spriteType = {
+		name = "GFX_focus_fund_yasuda_shine"
+		texturefile = "gfx/interface/goals/focus_yasuda.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_teikoku_bank"
+		texturefile = "gfx/interface/goals/focus_teikoku_bank.png"
+	}
+	spriteType = {
+		name = "GFX_focus_teikoku_bank_shine"
+		texturefile = "gfx/interface/goals/focus_teikoku_bank.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_china_dev"
+		texturefile = "gfx/interface/goals/focus_china_dev.png"
+	}
+	spriteType = {
+		name = "GFX_focus_china_dev_shine"
+		texturefile = "gfx/interface/goals/focus_china_dev.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_divide_and_rule"
+		texturefile = "gfx/interface/goals/focus_divide_and_rule.png"
+	}
+	spriteType = {
+		name = "GFX_focus_divide_and_rule_shine"
+		texturefile = "gfx/interface/goals/focus_divide_and_rule.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_steel"
+		texturefile = "gfx/interface/goals/focus_nippon_steel.png"
+	}
+	spriteType = {
+		name = "GFX_focus_steel_shine"
+		texturefile = "gfx/interface/goals/focus_nippon_steel.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_mil_factories"
+		texturefile = "gfx/interface/goals/focus_military_factories.png"
+	}
+	spriteType = {
+		name = "GFX_focus_mil_factories_shine"
+		texturefile = "gfx/interface/goals/focus_military_factories.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_air_factory"
+		texturefile = "gfx/interface/goals/focus_aircraft_factories.png"
+	}
+	spriteType = {
+		name = "GFX_focus_air_factory_shine"
+		texturefile = "gfx/interface/goals/focus_aircraft_factories.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_science"
+		texturefile = "gfx/interface/goals/focus_science.png"
+	}
+	spriteType = {
+		name = "GFX_focus_science_shine"
+		texturefile = "gfx/interface/goals/focus_science.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_infrastructure"
+		texturefile = "gfx/interface/goals/focus_infrastructure.png"
+	}
+	spriteType = {
+		name = "GFX_focus_infrastructure_shine"
+		texturefile = "gfx/interface/goals/focus_infrastructure.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_resources"
+		texturefile = "gfx/interface/goals/focus_resource.png"
+	}
+	spriteType = {
+		name = "GFX_focus_resources_shine"
+		texturefile = "gfx/interface/goals/focus_resource.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_oil"
+		texturefile = "gfx/interface/goals/focus_oil.png"
+	}
+	spriteType = {
+		name = "GFX_focus_oil_shine"
+		texturefile = "gfx/interface/goals/focus_oil.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_zaibatsus_left"
+		texturefile = "gfx/interface/goals/focus_zaibatsus_left.png"
+	}
+	spriteType = {
+		name = "GFX_focus_zaibatsus_left_shine"
+		texturefile = "gfx/interface/goals/focus_zaibatsus_left.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_zaibatsus_middle"
+		texturefile = "gfx/interface/goals/focus_zaibatsus_middle.png"
+	}
+	spriteType = {
+		name = "GFX_focus_zaibatsus_middle_shine"
+		texturefile = "gfx/interface/goals/focus_zaibatsus_middle.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_zaibatsus_right"
+		texturefile = "gfx/interface/goals/focus_zaibatsus_right.png"
+	}
+	spriteType = {
+		name = "GFX_focus_zaibatsus_right_shine"
+		texturefile = "gfx/interface/goals/focus_zaibatsus_right.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_pan_asian_propaganda"
+		texturefile = "gfx/interface/goals/focus_pan_asian_propaganda.png"
+	}
+	spriteType = {
+		name = "GFX_focus_pan_asian_propaganda_shine"
+		texturefile = "gfx/interface/goals/focus_pan_asian_propaganda.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_spread_revolution"
+		texturefile = "gfx/interface/goals/focus_spread_revolution.png"
+	}
+	spriteType = {
+		name = "GFX_focus_spread_revolution_shine"
+		texturefile = "gfx/interface/goals/focus_spread_revolution.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_showa_restoration"
+		texturefile = "gfx/interface/goals/focus_showa_restoration.png"
+	}
+	spriteType = {
+		name = "GFX_focus_showa_restoration_shine"
+		texturefile = "gfx/interface/goals/focus_showa_restoration.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_trade_dutch"
+		texturefile = "gfx/interface/goals/focus_trade_dutch.png"
+	}
+	spriteType = {
+		name = "GFX_focus_trade_dutch_shine"
+		texturefile = "gfx/interface/goals/focus_trade_dutch.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_trade_usa"
+		texturefile = "gfx/interface/goals/focus_trade_usa.png"
+	}
+	spriteType = {
+		name = "GFX_focus_trade_usa_shine"
+		texturefile = "gfx/interface/goals/focus_trade_usa.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_hokushin_ron"
+		texturefile = "gfx/interface/goals/focus_hokushin_ron.png"
+	}
+	spriteType = {
+		name = "GFX_focus_hokushin_ron_shine"
+		texturefile = "gfx/interface/goals/focus_hokushin_ron.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_winter_training"
+		texturefile = "gfx/interface/goals/focus_winter_training.png"
+	}
+	spriteType = {
+		name = "GFX_focus_winter_training_shine"
+		texturefile = "gfx/interface/goals/focus_winter_training.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_tripartite"
+		texturefile = "gfx/interface/goals/focus_tripartite_pact.png"
+	}
+	spriteType = {
+		name = "GFX_focus_tripartite_shine"
+		texturefile = "gfx/interface/goals/focus_tripartite_pact.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_secure_afghanistan"
+		texturefile = "gfx/interface/goals/focus_secure_afghanistan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_secure_afghanistan_shine"
+		texturefile = "gfx/interface/goals/focus_secure_afghanistan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_secure_iran"
+		texturefile = "gfx/interface/goals/focus_secure_iran.png"
+	}
+	spriteType = {
+		name = "GFX_focus_secure_iran_shine"
+		texturefile = "gfx/interface/goals/focus_secure_iran.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_secure_iraq"
+		texturefile = "gfx/interface/goals/focus_secure_iraq.png"
+	}
+	spriteType = {
+		name = "GFX_focus_secure_iraq_shine"
+		texturefile = "gfx/interface/goals/focus_secure_iraq.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_crown_jewel"
+		texturefile = "gfx/interface/goals/focus_crown_jewel.png"
+	}
+	spriteType = {
+		name = "GFX_focus_crown_jewel_shine"
+		texturefile = "gfx/interface/goals/focus_crown_jewel.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_imperial_ambitions"
+		texturefile = "gfx/interface/goals/focus_imperial_ambitions.png"
+	}
+	spriteType = {
+		name = "GFX_focus_imperial_ambitions_shine"
+		texturefile = "gfx/interface/goals/focus_imperial_ambitions.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_middle_kingdom"
+		texturefile = "gfx/interface/goals/focus_middle_kingdom.png"
+	}
+	spriteType = {
+		name = "GFX_focus_middle_kingdom_shine"
+		texturefile = "gfx/interface/goals/focus_middle_kingdom.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_hakko_ichiu"
+		texturefile = "gfx/interface/goals/focus_hakko_ichiu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_hakko_ichiu_shine"
+		texturefile = "gfx/interface/goals/focus_hakko_ichiu.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_seishin_ron"
+		texturefile = "gfx/interface/goals/focus_seishin_ron.png"
+	}
+	spriteType = {
+		name = "GFX_focus_seishin_ron_shine"
+		texturefile = "gfx/interface/goals/focus_seishin_ron.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_anti_soviet"
+		texturefile = "gfx/interface/goals/focus_anti_communism.png"
+	}
+	spriteType = {
+		name = "GFX_focus_anti_soviet_shine"
+		texturefile = "gfx/interface/goals/focus_anti_communism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_tripartite_research"
+		texturefile = "gfx/interface/goals/focus_tripartite_research.png"
+	}
+	spriteType = {
+		name = "GFX_focus_tripartite_research_shine"
+		texturefile = "gfx/interface/goals/focus_tripartite_research.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_german_rocketry"
+		texturefile = "gfx/interface/goals/focus_germany_rocketry.png"
+	}
+	spriteType = {
+		name = "GFX_focus_german_rocketry_shine"
+		texturefile = "gfx/interface/goals/focus_germany_rocketry.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_jap_generic_military"
+		texturefile = "gfx/interface/goals/focus_default_military.png"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_generic_military_shine"
+		texturefile = "gfx/interface/goals/focus_default_military.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_jap_generic_mil_factory"
+		texturefile = "gfx/interface/goals/focus_jap_generic_mil_factory.png"
+	}
+	spriteType = {
+		name = "GFX_focus_jap_generic_mil_factory_shine"
+		texturefile = "gfx/interface/goals/focus_jap_generic_mil_factory.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_nanshin_ron"
+		texturefile = "gfx/interface/goals/focus_strike_south.png"
+	}
+	spriteType = {
+		name = "GFX_focus_nanshin_ron_shine"
+		texturefile = "gfx/interface/goals/focus_strike_south.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_southern_resource"
+		texturefile = "gfx/interface/goals/focus_secure_southern_resource_area.png"
+	}
+	spriteType = {
+		name = "GFX_focus_southern_resource_shine"
+		texturefile = "gfx/interface/goals/focus_secure_southern_resource_area.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_attack_philippines"
+		texturefile = "gfx/interface/goals/focus_attack_philippines.png"
+	}
+	spriteType = {
+		name = "GFX_focus_attack_philippines_shine"
+		texturefile = "gfx/interface/goals/focus_attack_philippines.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_bypass_philippines"
+		texturefile = "gfx/interface/goals/focus_bypass_philippines.png"
+	}
+	spriteType = {
+		name = "GFX_focus_bypass_philippines_shine"
+		texturefile = "gfx/interface/goals/focus_bypass_philippines.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_secure_australia"
+		texturefile = "gfx/interface/goals/focus_secure_australia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_secure_australia_shine"
+		texturefile = "gfx/interface/goals/focus_secure_australia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_marco_polo"
+		texturefile = "gfx/interface/goals/focus_marco_polo.png"
+	}
+	spriteType = {
+		name = "GFX_focus_marco_polo_shine"
+		texturefile = "gfx/interface/goals/focus_marco_polo.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_greater_east_prosperity"
+		texturefile = "gfx/interface/goals/focus_greater_east_prosperity.png"
+	}
+	spriteType = {
+		name = "GFX_focus_greater_east_prosperity_shine"
+		texturefile = "gfx/interface/goals/focus_greater_east_prosperity.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_alliance_siam"
+		texturefile = "gfx/interface/goals/focus_alliance_siam.png"
+	}
+	spriteType = {
+		name = "GFX_focus_alliance_siam_shine"
+		texturefile = "gfx/interface/goals/focus_alliance_siam.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_non_aggression_ussr"
+		texturefile = "gfx/interface/goals/focus_ussr_non_aggression.png"
+	}
+	spriteType = {
+		name = "GFX_focus_non_aggression_ussr_shine"
+		texturefile = "gfx/interface/goals/focus_ussr_non_aggression.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_secure_china"
+		texturefile = "gfx/interface/goals/focus_secure_china.png"
+	}
+	spriteType = {
+		name = "GFX_focus_secure_china_shine"
+		texturefile = "gfx/interface/goals/focus_secure_china.png"
+	}
+	
+	# liberate
+	
+	spriteType = {
+		name = "GFX_focus_liberate_nz"
+		texturefile = "gfx/interface/goals/focus_liberate_nz.png"
+	}
+	spriteType = {
+		name = "GFX_focus_liberate_nz_shine"
+		texturefile = "gfx/interface/goals/focus_liberate_nz.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_liberate_aus"
+		texturefile = "gfx/interface/goals/focus_liberate_australia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_liberate_aus_shine"
+		texturefile = "gfx/interface/goals/focus_liberate_australia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_liberate_phi"
+		texturefile = "gfx/interface/goals/focus_liberate_philippines.png"
+	}
+	spriteType = {
+		name = "GFX_focus_liberate_phi_shine"
+		texturefile = "gfx/interface/goals/focus_liberate_philippines.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_liberate_indonesia"
+		texturefile = "gfx/interface/goals/focus_liberate_indonesia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_liberate_indonesia_shine"
+		texturefile = "gfx/interface/goals/focus_liberate_indonesia.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_liberate_malaya"
+		texturefile = "gfx/interface/goals/focus_liberate_malaya.png"
+	}
+	spriteType = {
+		name = "GFX_focus_liberate_malaya_shine"
+		texturefile = "gfx/interface/goals/focus_liberate_malaya.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_liberate_vietnam"
+		texturefile = "gfx/interface/goals/focus_liberate_vietnam.png"
+	}
+	spriteType = {
+		name = "GFX_focus_liberate_vietnam_shine"
+		texturefile = "gfx/interface/goals/focus_liberate_vietnam.png"
+	}
+	
+	# Commies
+	
+	spriteType = {
+		name = "GFX_focus_communist_uprising_afghan"
+		texturefile = "gfx/interface/goals/focus_communist_afghan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_communist_uprising_afghan_shine"
+		texturefile = "gfx/interface/goals/focus_communist_afghan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_communist_uprising_india"
+		texturefile = "gfx/interface/goals/focus_communist_india.png"
+	}
+	spriteType = {
+		name = "GFX_focus_communist_uprising_india_shine"
+		texturefile = "gfx/interface/goals/focus_communist_india.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_communist_uprising_china"
+		texturefile = "gfx/interface/goals/focus_communist_china.png"
+	}
+	spriteType = {
+		name = "GFX_focus_communist_uprising_china_shine"
+		texturefile = "gfx/interface/goals/focus_communist_china.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_communist_uprising_indonesia"
+		texturefile = "gfx/interface/goals/focus_communist_indonesia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_communist_uprising_indonesia_shine"
+		texturefile = "gfx/interface/goals/focus_communist_indonesia.png"
+	}
+	
+	### Portraits
+	
+	spriteType = {
+		name = "GFX_portrait_Keisuke_Okada"
+		texturefile = "gfx/interface/leaders/portrait_Keisuke_Okada.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Hitoshi_Yamakawa"
+		texturefile = "gfx/interface/leaders/portrait_hitoshi_yamakawa.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Fukumoto_Kazuo"
+		texturefile = "gfx/interface/leaders/portrait_Fukumoto_Kazuo.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Hatoyama_Ichiro"
+		texturefile = "gfx/interface/leaders/portrait_Hatoyama_Ichirō.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Chuji_Machida"
+		texturefile = "gfx/interface/leaders/portrait_Chuji_machida.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Testsu_Katayama_redone"
+		texturefile = "gfx/interface/leaders/portrait_Testsu_Katayama_redone.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Japanese_Junta"
+		texturefile = "gfx/interface/leaders/portrait_Japanese_Junta.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Fumimaro_Konoe"
+		texturefile = "gfx/interface/leaders/portrait_Konoe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Showa"
+		texturefile = "gfx/interface/leaders/portrait_Hirohito.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_hideki_tojo"
+		texturefile = "gfx/interface/leaders/portrait_Hideki_Tojo.png"
+	}
+	
+		# Chinese Warlords
+		
+	spriteType = {
+		name = "GFX_portrait_Zhang_Jinghui_v2"
+		texturefile = "gfx/interface/leaders/portrait_Zhang_Jianghui.png"
+	}
+		
+	spriteType = {
+		name = "GFX_portrait_Chen_Gongbo"
+		texturefile = "gfx/interface/leaders/portrait_Chen_Gongbo.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Bao_Wenyue"
+		texturefile = "gfx/interface/leaders/portrait_Bao_Wenyue.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Xiao_Shuxuan"
+		texturefile = "gfx/interface/leaders/portrait_Xiao_Shuxuan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Qi_Xieyuan"
+		texturefile = "gfx/interface/leaders/portrait_Qi_Xieyuan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Ngagchen_Rinpoche"
+		texturefile = "gfx/interface/leaders/portrait_Ngagchen_Rinpoche.png"
+	}
+	
+	## Advisors
+	
+	spriteType = {
+		name = "GFX_advisor_okinori_kaya"
+		texturefile = "gfx/interface/advisors/advisor_finance_okinori_kaya.png"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ichizo_kobayashi"
+		texturefile = "gfx/interface/advisors/advisor_economist_ichizo_kobayashi.png"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_shumei_okawa"
+		texturefile = "gfx/interface/advisors/advisor_ideological_crusader_Shumei_Okawa.png"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_yoshisuke_aikawa"
+		texturefile = "gfx/interface/advisors/advisor_industry_yoshisuke_aikawa.png"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_tosuke_matsuoka"
+		texturefile = "gfx/interface/advisors/advisor_foreign_minister_yosuke_matsuoka.png"
+	}
+	
+	## Events
+	
+	spriteType = {
+		name = "GFX_event_mao_meeting"
+		texturefile = "gfx/interface/events/event_mao_meeting.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_mao_speech"
+		texturefile = "gfx/interface/events/event_mao_speech.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_zero"
+		texturefile = "gfx/interface/events/event_zero.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_okada"
+		texturefile = "gfx/interface/events/event_okada.png"
+	}
+	spriteType = {
+		name = "GFX_event_young_officers"
+		texturefile = "gfx/interface/events/event_young_officers.png"
+	}
+	spriteType = {
+		name = "GFX_event_konoe"
+		texturefile = "gfx/interface/events/event_konoe.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_wang_jingwei"
+		texturefile = "gfx/interface/events/event_wang_jingwei.png"
+	}
+		
+	spriteType = {
+		name = "GFX_event_hirohito_puyi"
+		texturefile = "gfx/interface/events/event_hirohito_puyi.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_japan_voting"
+		texturefile = "gfx/interface/events/event_japan_vote.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nanjing"
+		texturefile = "gfx/interface/events/event_nanjing.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_news_japan_poland_alliance"
+		texturefile = "gfx/interface/events/news_event_poland_japan_alliance.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_news_cairo"
+		texturefile = "gfx/interface/events/news_event_cairo.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_news_stalin_speech"
+		texturefile = "gfx/interface/events/news_event_stalin.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_news_hitler_speech"
+		texturefile = "gfx/interface/events/news_event_hitler_speech.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_japan_poland_alliance"
+		texturefile = "gfx/interface/events/event_japan_poland_alliance.png"
+	}
+	
+	spriteType = {
+		name = "GFX_event_korea"
+		texturefile = "gfx/interface/events/event_korea_free.png"
+	}
+	
+	# Ideas
+	
+	spriteType = {
+		name = "GFX_idea_winter_training"
+		texturefile = "gfx/interface/ideas/idea_winter_training.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_redefined_shinto"
+		texturefile = "gfx/interface/ideas/ideas_redefined_shinto.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_spiritual_mob"
+		texturefile = "gfx/interface/ideas/idea_spiritual_mobilization.png"
+	}
+	
+	# Ideology
+	
+	spriteType = {
+        name = GFX_ideology_yamakawaism
+        texturefile = "gfx/interface/ideologies/ideology_japanese_communism.png"
+    }
+}

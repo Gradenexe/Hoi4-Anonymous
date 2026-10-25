@@ -1,0 +1,8 @@
+﻿l_german:
+ VOLGA_DON_CANAL:0 "Wolga-Don-Kanal"
+ Volga_don_blocked_tt:0 "§RWolga-Don-Kanal ist nicht gebaut oder blockiert§!"
+
+ build_volga_don_canal:0 "Bauen Sie den Wolga-Don-Kanal"
+ build_volga_don_canal_desc:0 "Unsere begrenzten Seestreitkräfte im Kaspischen Meer sind seit langem von unserem Hauptzweig isoliert. Durch den Bau eines Kanals, der es mit dem Schwarzen Meer verbindet, können wir unsere Seestreitkräfte endlich nach Belieben zum und vom Meer bewegen."
+ VOLGA_DON_BUILT_tt:0 "§YDer Wolga-Don-Kanal wird Schiffen die Durchfahrt ermöglichen§!."
+ VOLGA_DON_NOT_BUILT:0 "Der Wolga-Don-Kanal wurde nicht gebaut"

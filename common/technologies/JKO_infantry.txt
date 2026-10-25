@@ -1,0 +1,19 @@
+technologies = {
+	military_police_plus = {
+		research_cost = 1
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		militia = {
+			suppression = 0.1
+	    	max_strength = 10
+	    	max_organisation = 10
+			urban = {
+				attack = 0.2
+				defence = 0.2
+				breakthrough = 0.2
+			}
+		}
+	}
+}

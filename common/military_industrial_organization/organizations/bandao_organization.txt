@@ -1,0 +1,1319 @@
+############################################################################################
+####################################      总督府            ##################################
+############################################################################################
+#####坦克######## 
+JKO_mitsubishi_heavy_industries = {
+	name = mitsubishi_heavy_industries
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_JAP_mitsubishi_tanks
+	allowed = {
+		original_tag = JKO
+	}
+	available = {
+		NOT = {
+			has_war_with = JAP
+		}
+		owner = {
+			has_completed_focus = JKO_shiyanxing_tanke_lian
+		}
+	}
+	visible = {
+	}
+}
+
+JKO_hitachi_arms_department = {
+	name = hitachi_arms_department
+	include = generic_assault_guns_organization
+	icon = GFX_idea_JAP_hitachi_arms
+	allowed = {
+		original_tag = JKO
+	}
+	available = {
+		NOT = {
+			has_war_with = JAP
+		}
+		owner = {
+			has_completed_focus = JKO_shiyanxing_tanke_lian
+		}
+	}
+	visible = {
+	}
+}
+
+########飞机########
+JKO_mitsubishi_organization = {
+	name = mitsubishi
+	include = generic_high_agility_fighter_aircraft_organization
+	icon = GFX_idea_JAP_mitsubishi_airplanes
+	allowed = {
+		original_tag = JKO
+	}
+	available = {
+		NOT = {
+			has_war_with = JAP
+		}
+		owner = {
+			has_completed_focus = JKO_hangkong_zhushi_huishe
+		}
+	}
+	visible = {
+	}
+}
+
+JKO_kawanishi_aircraft_company_organization = {
+	name = kawanishi_aircraft_company
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_JAP_kawanishi
+	allowed = {
+		original_tag = JKO
+	}
+	available = {
+		NOT = {
+			has_war_with = JAP
+		}
+		owner = {
+			has_completed_focus = JKO_hangkong_zhushi_huishe
+		}
+	}
+	visible = {
+	}
+}
+
+#####舰船######## 
+JKO_maizuru_naval_arsenal = {
+	name = maizuru_naval_arsenal
+	include = generic_escort_ship_organization
+	icon = GFX_idea_maizuru_naval_arsenal
+	allowed = {
+		original_tag = JKO
+	}
+	visible = {
+	}
+	available = {
+		NOT = {
+			has_war_with = JAP
+		}
+		owner = {
+			has_completed_focus = JKO_fendan_jinhai_fanghu
+		}
+	}
+	add_trait = {
+		token = JAP_mio_trait_high_pressure_boilers
+		name = JAP_mio_trait_high_pressure_boilers
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+		relative_position_id = generic_mio_trait_high_speed_mine_hunting_equipment
+		all_parents = {
+			generic_mio_trait_high_speed_mine_hunting_equipment
+		}
+		position = {
+			x = -1
+			y = 1
+		}
+		equipment_bonus = {
+			naval_speed = 0.1
+		}
+		ai_will_do = {
+			base = 2
+		}
+	}
+	add_trait = {
+		token = JAP_mio_trait_torpedo_reloads
+		name = JAP_mio_trait_torpedo_reloads
+		icon = GFX_generic_mio_trait_icon_torpedo_attack
+		special_trait_background = yes
+		relative_position_id = generic_mio_trait_fleet_escorts
+		all_parents = {
+			generic_mio_trait_fleet_escorts
+		}
+		position = {
+			x = 0
+			y = 1
+		}
+		limit_to_equipment_type = {
+			screen_ship
+		}
+		equipment_bonus = {
+			torpedo_attack = 0.1
+		}
+		ai_will_do = {
+			base = 2
+		}
+	}
+	add_trait = {
+		token = JAP_mio_trait_type_94_fire_control
+		name = JAP_mio_trait_type_94_fire_control
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+		special_trait_background = yes
+		relative_position_id = generic_mio_trait_high_speed_mine_hunting_equipment
+		all_parents = {
+			generic_mio_trait_high_speed_mine_hunting_equipment
+		}
+		position = {
+			x = 1
+			y = 1
+		}
+		limit_to_equipment_type = {
+			mio_cat_eq_all_cruiser
+			carrier
+		}
+		equipment_bonus = {
+			anti_air_attack = 0.1
+			naval_light_gun_hit_chance_factor = 0.05
+		}
+		ai_will_do = {
+			base = 2
+		}
+	}
+}
+
+JKO_mitsubishi_kobe_shipyard = {
+	name = mitsubishi_kobe_shipyard
+	include = generic_submarine_organization
+	icon = GFX_idea_JAP_kobe_shipyard
+	allowed = {
+		original_tag = JKO
+	}
+	available = {
+		NOT = {
+			has_war_with = JAP
+		}
+		owner = {
+			has_completed_focus = JKO_lalong_sanling_caifa
+		}
+	}
+	visible = {
+	}
+}
+
+#####军需品######## 
+JKO_nissan_organization = {
+	name = nissan
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_nissan
+	allowed = {
+		original_tag = JKO
+	}
+	available = {
+		NOT = {
+			has_war_with = JAP
+		}
+	}
+	visible = {
+	}
+}
+
+JKO_nagoya_arsenal_organization = {
+	name = nagoya_arsenal
+	include = generic_support_equipment_organization
+	icon = GFX_idea_JAP_nagoya_arsenal
+	allowed = {
+		original_tag = JKO
+	}
+	available = {
+		NOT = {
+			has_war_with = JAP
+		}
+		owner = {
+			has_completed_focus = JKO_qingqiu_junbei_xiandaihua
+		}
+	}
+	visible = {
+	}
+}
+
+############################################################################################
+####################################      朝鲜            ##################################
+############################################################################################
+#############  飞机  ############# 
+KOR_chaoxian_guojia_hangkonggongsi_ideas = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_generic_KOR_chaoxian_guojia_hangkonggongsi
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = {
+			has_completed_focus = KOR_junshi_jieguan_feiji
+		}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_beijixing_de_zhiyin
+		}
+	}
+}
+
+#韩国
+KOR_hanguo_feiji_zhizaoshang_ideas = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_generic_KOR_hanguo_feiji_1
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = {
+			has_completed_focus = KOR_junshi_jieguan_feiji
+		}
+	}
+	visible = {
+		owner = {
+			NOT = { has_completed_focus = KOR_beijixing_de_zhiyin } 
+		}
+	}
+}
+
+KOR_dahan_minguo_feiji_ideas = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_generic_KOR_dahan_minguo_feiji
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		#owner = {
+			#has_completed_focus = JKO_hangkong_zhushi_huishe
+		#}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_shenjijian_hangkongdui
+		}
+	}
+}
+
+##########  坦克  ##################  
+KOR_chaoxian_guojia_tankegongchang = {
+	include = generic_tank_organization
+	icon = GFX_idea_generic_KOR_chaoxian_guojia_tankegongchang
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = {
+			has_completed_focus = KOR_junshi_lujun_wuqiguanlibu
+		}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_beijixing_de_zhiyin
+		}
+	}
+}
+
+KOR_chaoxian_guojia_tankegongchang_1 = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_generic_KOR_chaoxian_guojia_tankegongchang_1
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		#owner = {
+			#has_completed_focus = JKO_hangkong_zhushi_huishe
+		#}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_tanke_hongliu
+		}
+	}
+}
+
+KOR_hanguo_tanke_zhizaoshang_1 = {
+	include = generic_tank_organization
+	icon = GFX_idea_generic_KOR_tanke_shejishang_1
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = {
+			has_completed_focus = KOR_junshi_lujun_wuqiguanlibu
+		}
+	}
+	visible = {
+		owner = {
+			NOT = { has_completed_focus = KOR_beijixing_de_zhiyin } 
+		}
+	}
+}
+
+##########  舰船  #############   
+KOR_chaoxian_guojia_haijun = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_KOR_chaoxian_guojia_haijun
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = {
+			has_completed_focus = KOR_junshi_jieguan_jianchuan
+		}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_beijixing_de_zhiyin
+		}
+	}
+}
+
+KOR_chaoxian_guojia_haijun_1 = {
+	include = generic_submarine_organization
+	icon = GFX_idea_generic_KOR_chaoxian_guojia_haijun_1
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = {
+			has_completed_focus = KOR_junshi_yuanyang_haijun
+		}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_beijixing_de_zhiyin
+		}
+	}
+}
+
+KOR_hanguo_haijun_sanxing_zhonggong = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_KOR_hanguo_haijun_zhizaoshang_1
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = {
+			has_completed_focus = KOR_junshi_jieguan_jianchuan
+		}
+	}
+	visible = {
+		owner = {
+			NOT = { has_completed_focus = KOR_beijixing_de_zhiyin } 
+		}
+	}
+}
+
+KOR_hanguo_haijun_zhizaoshang = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_KOR_dahanminguo_haijun_1
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		#owner = {
+			#has_completed_focus = KOR_junshi_jieguan_jianchuan
+		#}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_junshi_jieguan_jianchuan
+		}
+	}
+}
+
+#####军需品######## 
+KOR_chaoxian_guojia_junxieju = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_KOR_chaoxian_guojia_junxieju
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = {
+			has_completed_focus = KOR_junshi_lujun_wuqiguanlibu
+		}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_beijixing_de_zhiyin
+		}
+	}
+}
+
+KOR_hanguo_junxie_zhizaoshang = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_KOR_hanguo_junxie_zhizaoshang_1
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = {
+			has_completed_focus = KOR_junshi_lujun_wuqiguanlibu
+		}
+	}
+	visible = {
+		owner = {
+			NOT = { has_completed_focus = KOR_beijixing_de_zhiyin } 
+		}
+	}
+}
+
+KOR_hanguo_huopao_zhizaoshang = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_KOR_hanguo_huopao_zhizaoshang
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = {
+			has_completed_focus = KOR_junshi_lujun_wuqiguanlibu
+		}
+	}
+	visible = {
+	}
+}
+
+KOR_xiandai_qiche_jituan_ideas = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_generic_KOR_xiandai_qiche_jituan
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = {
+			has_completed_focus = KOR_junshi_touzi_qiche_chanye
+		}
+	}
+	visible = {
+	}
+}
+
+KOR_qiya_tezhongche_gongsi = {
+	include = generic_armored_car_organization
+	icon = GFX_idea_generic_KOR_qiya_tezhongche_gongsi
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		#owner = {
+			#has_completed_focus = JKO_hangkong_zhushi_huishe
+		#}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_junshi_lubing_jixiehua
+		}
+	}
+}
+
+############################################################################################
+####################################      外国            ##################################
+############################################################################################
+#####坦克######## 
+
+KOR_SOV_okmo_organization = {
+	name = SOV_okmo_organization
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_okmo
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		NOT = { has_war_with = SOV }
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_jiqun_tanke_biandui
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_thick_armor
+		position = { x=2 y=1 }
+	}
+}
+KOR_SOV_mytishchy_machine_building_plant_organization = {
+	name = SOV_mytishchy_machine_building_plant_organization
+	include = generic_tank_refurbishment_plant_organization
+	icon = GFX_idea_SOV_mytishchy_machine_building_plant
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		NOT = { has_war_with = SOV }
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_yaoqing_sulian_zhuanjia
+		}
+	}
+}
+KOR_USA_chrysler_organization = {
+	name = USA_chrysler_organization
+	include = generic_medium_tank_organization
+	icon = GFX_idea_chrysler
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		NOT = { has_war_with = USA }
+		#owner = {
+			#has_completed_focus = JKO_hangkong_zhushi_huishe
+		#}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_paobing_huoli_xueshuo
+		}
+	}
+	initial_trait = {
+		name = USA_mio_trait_medium_tank_manufacturer
+
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+
+		equipment_bonus = {
+			reliability = 0.1
+			soft_attack = 0.02
+			hard_attack = 0.03
+			defense = -0.15
+		}
+	}
+}
+KOR_CHI_shanghai_arsenal = {
+	name = CHI_shanghai_arsenal
+	icon = GFX_idea_CHI_shanghai_arsenal
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = { controls_state = CHI.mio_locations^7 } 
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_zijincheng_de_longyi
+		}
+	}
+	equipment_type = { armored_car_equipment mio_cat_eq_all_light_tank }
+	research_categories = { cat_armored_cars mio_cat_tech_light_armor_and_modules  }
+	tree_header_text = {
+		text = mio_header_design_and_production
+		x = 3
+	}
+	tree_header_text = {
+		text = mio_header_equipment_and_specialization
+		x = 7
+	}
+	
+	initial_trait = {
+		name = generic_mio_initial_trait_light_armored_manufacturer
+		equipment_bonus = {
+			armor_value = 0.05
+			defense =0.05
+			build_cost_ic = -0.05
+		}
+	}
+	trait = {
+		token = generic_mio_trait_simplified_suspension
+		name = generic_mio_trait_simplified_suspension
+		icon = GFX_generic_mio_trait_icon_reliability
+		equipment_bonus = {
+			reliability = 0.05
+		}
+		position = { x=1 y=0 }
+	}
+	
+	trait = {
+		token = generic_mio_trait_crew_ergonomics
+		name = generic_mio_trait_crew_ergonomics
+		icon = GFX_generic_mio_trait_icon_defense
+		equipment_bonus = {
+			maximum_speed = 0.02
+			defense = 0.02
+		}
+		position = { x=4 y=0 }
+		relative_position_id = generic_mio_trait_simplified_suspension
+	}
+	
+	trait = {
+		token = generic_mio_trait_reinforced_wheels
+		name = generic_mio_trait_reinforced_wheels
+		icon = GFX_generic_mio_department_icon_armored_car_engine
+		any_parent = { generic_mio_trait_simplified_suspension }
+		equipment_bonus = {
+			reliability = 0.05
+			maximum_speed = 0.05
+		}
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_simplified_suspension
+	}
+	trait = {
+		token = generic_mio_trait_command_upgrades
+		name = generic_mio_trait_command_upgrades
+		icon = GFX_generic_mio_trait_icon_breakthrough
+		any_parent = { generic_mio_trait_crew_ergonomics }
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_crew_ergonomics
+	}
+	
+	trait = {
+		token = generic_mio_trait_standardized_components
+		name = generic_mio_trait_standardized_components
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+		all_parents = { generic_mio_trait_simplified_suspension generic_mio_trait_crew_ergonomics }
+		position = { x=2 y=1 }
+		relative_position_id = generic_mio_trait_simplified_suspension
+		production_bonus = {
+			production_efficiency_gain_factor = 0.15
+			production_resource_need_factor = -0.15
+		}
+	}
+	trait = {
+		token = generic_mio_trait_improved_tooling
+		name = generic_mio_trait_improved_tooling
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		all_parents = { generic_mio_trait_reinforced_wheels generic_mio_trait_standardized_components generic_mio_trait_command_upgrades }
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_standardized_components
+		production_bonus = {
+			production_efficiency_cap_factor = 0.1
+		}
+	}
+	trait = {
+		token = generic_mio_trait_locally_sourced_alloys
+		name = generic_mio_trait_locally_sourced_alloys
+		icon = GFX_generic_mio_trait_icon_resources
+		special_trait_background = yes
+		any_parent = { generic_mio_trait_improved_tooling }
+		mutually_exclusive = { generic_mio_trait_quality_improvements }
+		position = { x=-1 y=1 }
+		relative_position_id = generic_mio_trait_improved_tooling
+		production_bonus = {
+			production_resource_need_factor = -0.15
+		}
+	}
+	trait = {
+		token = generic_mio_trait_quality_improvements
+		name = generic_mio_trait_quality_improvements
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+		any_parent = { generic_mio_trait_improved_tooling }
+		mutually_exclusive = { generic_mio_trait_locally_sourced_alloys}
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_improved_tooling
+		equipment_bonus = {
+			armor_value = 0.1
+			defense = 0.1
+		}
+	}
+	trait = {
+		token = generic_mio_trait_reinforcing_plates
+		name = generic_mio_trait_reinforcing_plates
+		icon = GFX_generic_mio_trait_icon_armor_value
+		equipment_bonus = {
+			armor_value = 0.05
+			defense = 0.02
+		}
+		position = { x=2 y=0 }
+		relative_position_id = generic_mio_trait_crew_ergonomics
+	}
+	trait = {
+		token = generic_mio_trait_long_barreled_guns
+		name = generic_mio_trait_long_barreled_guns
+		icon = GFX_generic_mio_trait_icon_ap_attack
+		all_parents = { generic_mio_trait_crew_ergonomics generic_mio_trait_reinforcing_plates }
+		mutually_exclusive = { generic_mio_trait_self_cycling_guns }
+		position = { x=-1 y=2 }
+		relative_position_id = generic_mio_trait_reinforcing_plates
+		equipment_bonus = {
+			ap_attack = 0.05
+			hard_attack = 0.05
+		}
+	}
+	trait = {
+		token = generic_mio_trait_self_cycling_guns
+		name = generic_mio_trait_self_cycling_guns
+		icon = GFX_generic_mio_trait_icon_soft_attack
+		special_trait_background = yes
+		all_parents = { generic_mio_trait_crew_ergonomics generic_mio_trait_reinforcing_plates }
+		mutually_exclusive = { generic_mio_trait_long_barreled_guns }
+		position = { x=1 y=2 }
+		relative_position_id = generic_mio_trait_reinforcing_plates
+		equipment_bonus = {
+			soft_attack = 0.05
+			air_attack = 0.05
+		}
+	}
+	trait = {
+		token = generic_mio_trait_heavy_anti_tank_gun
+		name = generic_mio_trait_heavy_anti_tank_gun
+		icon = GFX_generic_mio_trait_icon_hard_attack
+		any_parent = { generic_mio_trait_long_barreled_guns generic_mio_trait_self_cycling_guns }
+		mutually_exclusive = { generic_mio_trait_superior_fuel_mix }
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_long_barreled_guns
+		equipment_bonus = {
+			armor_value = 0.05
+			hard_attack = 0.05
+		}
+	}
+	trait = {
+		token = generic_mio_trait_superior_fuel_mix
+		name = generic_mio_trait_superior_fuel_mix
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+		special_trait_background = yes
+		any_parent = { generic_mio_trait_long_barreled_guns generic_mio_trait_self_cycling_guns }
+		mutually_exclusive = { generic_mio_trait_heavy_anti_tank_gun }
+		position = { x=2 y=2 }
+		relative_position_id = generic_mio_trait_long_barreled_guns
+		equipment_bonus = {
+			fuel_consumption = -0.1
+			reliability = 0.05
+		}
+	}
+}
+#####舰船######## 
+KOR_SOV_rubin_design_bureau_organization = {
+	name = SOV_rubin_design_bureau_organization
+	include = generic_raider_ship_organization
+	icon = GFX_idea_SOV_rubin_design_bureau
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		NOT = { has_war_with = SOV }
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_yaoqing_sulian_zhuanjia
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_thick_armor
+		position = { x=2 y=1 }
+	}
+}
+KOR_USA_newport_news_shipbuilding_organization = {
+	name = USA_newport_news_shipbuilding_organization
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_newport_news_shipbuilding
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		NOT = { has_war_with = USA }
+		#owner = {
+			#has_completed_focus = JKO_hangkong_zhushi_huishe
+		#}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_haijun_de_liming
+		}
+	}
+	initial_trait = {
+		name = USA_mio_trait_carrier_specialists
+		
+		limit_to_equipment_type = { 
+			carrier
+		}
+		
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+	}
+
+	add_trait = { 
+		token = USA_mio_trait_north_carolina_shipbuilding_company
+		name = USA_mio_trait_north_carolina_shipbuilding_company
+		icon = GFX_generic_mio_department_icon_ship_screen_ship_production
+		special_trait_background = yes
+
+		limit_to_equipment_type = {
+			screen_ship
+		}
+
+		all_parents = {  }
+
+		position = { x=3 y=0 }
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+}
+KOR_CHI_jiangnan_shipyard_group_organization = {
+	name = CHI_jiangnan_shipyard_group_organization
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		owner = { controls_state = CHI.mio_locations^0 }
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_zijincheng_de_longyi
+		}
+	}
+}
+#####飞机######## 
+KOR_SOV_ilyushin_design_bureau_organization = {
+	name = SOV_ilyushin_design_bureau_organization
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_ilyushin_design_bureau
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		NOT = { has_war_with = SOV }
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_yaoqing_sulian_zhuanjia
+		}
+	}
+}
+KOR_SOV_mig_design_bureau_organization = {
+	name = SOV_mig_design_bureau_organization
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_mig_design_bureau
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		NOT = { has_war_with = SOV }
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_chaoxian_shangkong_de_mige
+		}
+	}
+	
+}
+KOR_USA_north_american_aviation_organization = {
+	name = USA_north_american_aviation_organization
+	include = generic_range_focused_aircraft_organization
+	icon = GFX_idea_north_american_aviation
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		NOT = { has_war_with = USA }
+		#owner = {
+			#has_completed_focus = JKO_hangkong_zhushi_huishe
+		#}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_haijun_feixingyuan_jihua
+		}
+	}
+	initial_trait = {
+		name = USA_mio_trait_light_long_range_aircraft
+	}
+}
+KOR_USA_grumman_organization = {
+	name = USA_grumman_organization
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_grumman
+	allowed = {
+		original_tag = KOR
+	}
+	available = {
+		NOT = { has_war_with = USA }
+		#owner = {
+			#has_completed_focus = JKO_hangkong_zhushi_huishe
+		#}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_haijun_feixingyuan_jihua
+		}
+	}
+	add_trait = {
+		token = USA_mio_trait_smooth_finish
+		name = USA_mio_trait_smooth_finish
+		icon = GFX_generic_mio_trait_icon_air_agility
+		special_trait_background = yes
+		
+		position = { x=2 y=1 }  
+		relative_position_id = generic_mio_trait_reinforced_fuselage
+		
+		any_parent = { generic_mio_trait_reinforced_fuselage }
+		limit_to_equipment_type = { mio_cat_eq_all_cv_aircraft small_plane_naval_bomber_airframe }
+			
+		equipment_bonus = {
+			air_agility = 0.05
+			maximum_speed = 0.05
+		}
+	}
+	
+	override_trait = {
+		token = generic_mio_advanced_materials
+		position = { x=-1 y=1 }
+	}
+}
+#####军需品######## 
+KOR_CHI_jinling_arsenal_organization = {
+	name = CHI_jinling_arsenal_organization
+	include = generic_support_equipment_organization
+	icon = GFX_idea_CHI_jinling
+	allowed = {	
+		original_tag = KOR
+	}
+	available = {
+		owner = { controls_state = CHI.mio_locations^6 } 
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_zijincheng_de_longyi
+		}
+	}
+
+}
+#####日本######## 
+KOR_JAP_hitachi_arms_department_organization = {
+	name = JAP_hitachi_arms_department_organization
+	include = generic_assault_guns_organization
+	icon = GFX_idea_JAP_hitachi_arms
+	allowed = {	
+		original_tag = KOR
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_richuzhidi_de_nvwang
+		}
+	}
+}
+KOR_JAP_mitsubishi_heavy_industries_organization = {
+	name = JAP_mitsubishi_heavy_industries_organization
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_JAP_mitsubishi_tanks
+	allowed = {	
+		original_tag = KOR
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_richuzhidi_de_nvwang
+		}
+	}
+}
+KOR_JAP_kure_naval_arsenal_organization = {
+	name = JAP_kure_naval_arsenal_organization
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_kure_naval_arsenal
+	allowed = {	
+		original_tag = KOR
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_richuzhidi_de_nvwang
+		}
+	}
+	add_trait = {  
+		token = JAP_mio_trait_rapid_counterflooding_system
+		name = JAP_mio_trait_rapid_counterflooding_system
+		icon = GFX_generic_mio_trait_icon_max_strength
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_hardened_critical_components
+
+		all_parents = { generic_mio_trait_hardened_critical_components }
+
+		position = { x = 0 y = 1 } 
+
+		#available = {
+		#	FROM = {
+		#		has_completed_focus = GER_high_seas_fleet
+		#	}
+		#}
+
+		equipment_bonus = {
+			naval_torpedo_enemy_critical_chance_factor = -0.1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {  
+		token = JAP_mio_trait_enhanced_optics
+		name = JAP_mio_trait_enhanced_optics
+		icon = GFX_generic_mio_trait_icon_surface_detection
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_secondary_battery_layout
+
+		all_parents = { generic_mio_trait_secondary_battery_layout }
+
+		position = { x = 0 y = 1 } 
+
+		#available = {
+		#	FROM = {
+		#		has_completed_focus = GER_high_seas_fleet
+		#	}
+		#}
+
+		equipment_bonus = {
+			lg_attack = 0.05
+			hg_attack = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}
+KOR_JAP_yokosuka_naval_arsenal_organization = {
+	name = JAP_yokosuka_naval_arsenal_organization
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_yokosuka_naval_arsenal
+	allowed = {	
+		original_tag = KOR
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_richuzhidi_de_nvwang
+		}
+	}
+	add_trait = {  
+		token = JAP_mio_trait_armor_plating_to_hull_strength
+		name = JAP_mio_trait_armor_plating_to_hull_strength
+		icon = GFX_generic_mio_department_icon_ship_general_production
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_long_range_cruising
+
+		any_parent = { generic_mio_trait_long_range_cruising generic_mio_trait_high_speed_cruising }
+
+		position = { x = 0 y = 1 } 
+
+		
+
+		#available = {
+		#	FROM = {
+		#		has_completed_focus = GER_high_seas_fleet
+		#	}
+		#}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		equipment_bonus = {
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {  
+		token = JAP_mio_trait_enhanced_optics
+		name = JAP_mio_trait_enhanced_optics
+		icon = GFX_generic_mio_trait_icon_surface_detection
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_primary_fire_director_control
+
+		all_parents = { generic_mio_trait_primary_fire_director_control }
+
+		position = { x = 1 y = 1 } 
+
+		
+
+		#available = {
+		#	FROM = {
+		#		has_completed_focus = GER_high_seas_fleet
+		#	}
+		#}
+
+		equipment_bonus = {
+			lg_attack = 0.05
+			hg_attack = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {  
+		token = JAP_mio_trait_type_94_fire_control
+		name = JAP_mio_trait_type_94_fire_control
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_secondary_fire_director_control
+
+		all_parents = { generic_mio_trait_secondary_fire_director_control }
+
+		position = { x = 0 y = 1 } 
+
+		
+
+		limit_to_equipment_type = { mio_cat_eq_all_cruiser carrier }
+
+		#available = {
+		#	FROM = {
+		#		has_completed_focus = GER_high_seas_fleet
+		#	}
+		#}
+
+		equipment_bonus = {
+			anti_air_attack = 0.1
+			naval_light_gun_hit_chance_factor = 0.025
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {  
+		token = JAP_mio_trait_torpedo_reloads
+		name = JAP_mio_trait_torpedo_reloads
+		icon = GFX_generic_mio_trait_icon_torpedo_attack
+		special_trait_background = yes
+
+		relative_position_id = JAP_mio_trait_enhanced_optics
+
+		all_parents = { JAP_mio_trait_enhanced_optics }
+
+		position = { x = 0 y = 1 } 
+
+		
+
+		limit_to_equipment_type = { screen_ship }
+
+		#available = {
+		#	FROM = {
+		#		has_completed_focus = GER_high_seas_fleet
+		#	}
+		#}
+
+		equipment_bonus = {
+			torpedo_attack	= 0.1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}
+KOR_JAP_mitsubishi_kobe_shipyard_organization = {
+	name = JAP_mitsubishi_kobe_shipyard_organization
+	include = generic_submarine_organization
+	icon = GFX_idea_JAP_kobe_shipyard
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_richuzhidi_de_nvwang
+		}
+	}
+	
+}
+KOR_JAP_mitsubishi_organization = {
+	name = JAP_mitsubishi_organization
+	include = generic_high_agility_fighter_aircraft_organization
+	icon = GFX_idea_JAP_mitsubishi_airplanes
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_richuzhidi_de_nvwang
+		}
+	}
+	
+}
+KOR_JAP_tachikawa_aircraft_company_organization = {
+	name = JAP_tachikawa_aircraft_company_organization
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_JAP_tachikawa_aircraft_company
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_richuzhidi_de_nvwang
+		}
+	}
+	initial_trait = {
+		name = JAP_mio_trait_army_aircraft_manufacturer
+		
+		limit_to_equipment_type = { 
+			small_plane_cas_airframe
+		}
+		
+		production_bonus = {
+			production_capacity_factor = 0.03
+		}
+
+		equipment_bonus = {
+			air_ground_attack = 0.02
+		}
+
+	}
+	
+}
+KOR_JAP_aichi_organization = {
+	name = JAP_aichi_organization
+	include = generic_range_focused_aircraft_organization
+	icon = GFX_idea_aichi
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_richuzhidi_de_nvwang
+		}
+	}
+	
+}
+KOR_JAP_nakajima_organization = {
+	name = JAP_nakajima_organization
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_nakajima
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_richuzhidi_de_nvwang
+		}
+	}
+}
+KOR_JAP_yokosuka_organization = {
+	name = JAP_yokosuka_organization
+	include = generic_naval_aircraft_organization 
+	icon = GFX_idea_yokosuka
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_richuzhidi_de_nvwang
+		}
+	}
+}
+KOR_JAP_kayaba_industry_organization = {
+	name = JAP_kayaba_industry_organization
+	include = generic_helicopter_organization
+	icon = GFX_idea_JAP_kayaba_industry
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_richuzhidi_de_nvwang
+		}
+	}
+}
+KOR_JAP_kawasaki_aircraft_industries_organization = {
+	name = JAP_kawasaki_aircraft_industries_organization
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_JAP_kawasaki_aircraft
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		owner = {
+			has_completed_focus = KOR_richuzhidi_de_nvwang
+		}
+	}
+}

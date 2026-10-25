@@ -1,0 +1,14 @@
+spriteTypes = {	
+
+
+    spriteType = {
+	name = "GFX_portrait_lux_lux_crownguard"
+	texturefile = "gfx/leaders/LUX/portrait_lux_lux_crownguard.dds"
+	}
+
+	spriteType = {
+	name = "GFX_portrait_lux_regency_council"
+	texturefile = "gfx/leaders/LUX/portrait_lux_regency_council.dds"
+	}
+
+}

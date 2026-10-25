@@ -1,0 +1,80 @@
+technology_sharing_group = {
+	id = KOR_JAP_tech_sharing_group
+	name = KOR_JAP_tech_sharing_group_name
+	desc = KOR_JAP_tech_sharing_group_desc
+	picture = GFX_technology_sharing_default
+	research_sharing_per_country_bonus = 0.15
+	available = {
+		NOT = {
+			has_war_with = JAP
+		}
+	}
+}
+
+technology_sharing_group = {
+	id = KOR_SOV_tech_sharing_group
+	name = KOR_SOV_tech_sharing_group_name
+	desc = KOR_SOV_tech_sharing_group_desc
+	picture = GFX_technology_sharing_default
+	research_sharing_per_country_bonus = 0.1
+	available = {
+		OR = {
+			AND = {
+				original_tag = KOR
+				has_government = communism
+				NOT = {
+					has_war_with = SOV
+				}
+			}
+			AND = {
+				original_tag = SOV
+				has_government = communism
+				NOT = {
+					has_war_with = KOR
+				}
+			}
+		}
+	}
+}
+
+technology_sharing_group = {
+	id = KOR_USA_tech_sharing_group
+	name = KOR_USA_tech_sharing_group_name
+	desc = KOR_USA_tech_sharing_group_desc
+	picture = GFX_technology_sharing_default
+	research_sharing_per_country_bonus = 0.1
+	available = {
+		OR = {
+			AND = {
+				original_tag = KOR
+				has_government = democratic
+				NOT = {
+					has_war_with = USA
+				}
+			}
+			AND = {
+				original_tag = USA
+				has_government = democratic
+				NOT = {
+					has_war_with = KOR
+				}
+			}
+		}
+	}
+}
+
+technology_sharing_group = {
+	id = KOR_neutrality_tech_sharing_group
+	name = KOR_neutrality_tech_sharing_group_name
+	desc = KOR_neutrality_tech_sharing_group_desc
+	picture = GFX_technology_sharing_default
+	research_sharing_per_country_bonus = 0.15
+	available = {
+		AND = {
+			has_government = neutrality
+			NOT = {
+				has_war_with = KOR
+			}
+		}
+	}
+}

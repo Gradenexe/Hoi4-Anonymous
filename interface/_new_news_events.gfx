@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {  
+		name = "GFX_news_event_morrocan_war"
+		texturefile = "gfx/event_pictures/news_event_MOR_independence_war.dds"
+	}
+}

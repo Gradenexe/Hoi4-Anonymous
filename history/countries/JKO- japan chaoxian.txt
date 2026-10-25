@@ -1,0 +1,493 @@
+﻿capital = 525
+set_research_slots = 5
+set_stability = 0.5
+set_war_support = 0.3
+add_ideas = {
+}
+
+load_oob = "JKO_1936"
+JAP = {
+	set_autonomy = {
+		target = JKO
+		autonomy_state = zhimindi_zongdu_xiaqu
+	}
+}
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	tech_trucks = 1
+	bicycle_infantry = 1
+	basic_train = 1
+}
+
+add_ideas = {
+	limited_conscription
+	partial_economic_mobilisation
+	#
+	JKO_yibingyundong_de_jiyi
+	JKO_xianbing_jingcha_zhidu
+	#
+	JKO_dalu_bingzhan_jidi
+	JKO_caituan_de_longduan
+	#隐藏
+}
+
+country_lock_all_division_template = yes
+recruit_character = JKO_Bak_Yeonghyo
+recruit_character = JKO_kazushige_ugaki
+recruit_character = JKO_jiro_minami
+recruit_character = JKO_kuniaki_koiso
+recruit_character = JKO_Kotaro_Nakamura
+recruit_character = JKO_Kenzo_Kitano
+recruit_character = JKO_Tamio_Iwasaki
+recruit_character = JKO_Cai_Bingde
+recruit_character = JKO_Jin_Baiyi
+recruit_character = JKO_Jin_Xiyuan
+recruit_character = JKO_Lee_Hyung_geun
+recruit_character = JKO_Li_Yingjun
+recruit_character = JKO_Shin_Tae_young
+recruit_character = JKO_Archbishop_Roh_Paul
+recruit_character = JKO_Hozumi_Shinrokuro
+recruit_character = JKO_Imaida_Kiyonori
+recruit_character = JKO_Rokuichiro_Oono
+recruit_character = JKO_Shigezo_Hayashi
+recruit_character = JKO_Takeo_Tanaka
+recruit_character = JKO_Yajima_Sugizo
+recruit_character = JKO_Choi_Nam_sun
+recruit_character = JKO_Park_Beom_jeopard
+recruit_character = JKO_Zhang_Dexiu
+add_ideas = JKO_Imaida_Kiyonori
+##############################v
+add_dynamic_modifier = {
+	modifier = JKO_xianbing_jingcha_zhidu_dynamic
+}
+
+set_variable = {
+	xianbing_jingcha_1 = -0.05
+}
+
+set_variable = {
+	xianbing_jingcha_2 = -0.1
+}
+
+set_variable = {
+	xianbing_jingcha_3 = 0
+}
+
+set_variable = {
+	xianbing_jingcha_4 = 0.05
+}
+
+set_variable = {
+	xianbing_jingcha_5 = 0.05
+}
+
+set_variable = {
+	xianbing_jingcha_6 = 0
+}
+
+set_variable = {
+	xianbing_jingcha_7 = 0.1
+}
+
+################################
+add_dynamic_modifier = {
+	modifier = JKO_dalu_bingzhan_jidi_dynamic
+}
+
+set_variable = {
+	zongdufu_gongye_1 = -0.15
+}
+
+set_variable = {
+	zongdufu_gongye_2 = 0.1
+}
+
+set_variable = {
+	zongdufu_gongye_3 = 0.1
+}
+
+set_variable = {
+	zongdufu_gongye_4 = 0
+}
+
+set_variable = {
+	zongdufu_gongye_5 = 0
+}
+
+set_variable = {
+	zongdufu_gongye_6 = 0
+}
+
+set_variable = {
+	zongdufu_gongye_7 = 0
+}
+
+################################
+add_dynamic_modifier = {
+	modifier = JKO_caituan_de_longduan_dynamic
+}
+
+set_variable = {
+	zongdufu_caituan_1 = -0.1
+}
+
+set_variable = {
+	zongdufu_caituan_2 = -0.1
+}
+
+set_variable = {
+	zongdufu_caituan_3 = -0.1
+}
+
+set_variable = {
+	zongdufu_caituan_4 = 0.2
+}
+
+set_variable = {
+	zongdufu_caituan_5 = -0.1
+}
+
+set_variable = {
+	zongdufu_caituan_6 = 0.1
+}
+
+set_variable = {
+	zongdufu_caituan_7 = -0.1
+}
+
+################################
+set_variable = {
+	chaoxian_zongdu_fu_1 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_fu_2 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_fu_3 = 0.05
+}
+
+set_variable = {
+	chaoxian_zongdu_fu_4 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_fu_5 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_fu_6 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_fu_7 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_fu_8 = 0
+}
+
+################################
+set_variable = {
+	chaoxian_zongdu_budui_1 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_budui_2 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_budui_3 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_budui_4 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_budui_5 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_budui_6 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_budui_7 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_budui_8 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_budui_9 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_budui_10 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_budui_11 = 0
+}
+
+set_variable = {
+	chaoxian_zongdu_budui_12 = 0.03
+}
+
+################################
+set_variable = {
+	MAN_state_shintoism_surrender_limit = 0
+}
+
+set_variable = {
+	MAN_state_shintoism_war_support_factor = 0
+}
+
+set_variable = {
+	MAN_state_shintoism_pocket_penalty = 0
+}
+
+set_variable = {
+	MAN_state_shintoism_stability_factor = -0.05
+}
+
+set_variable = {
+	MAN_state_shintoism_army_core_defence_factor = 0
+}
+
+set_variable = {
+	MAN_state_shintoism_research_speed_factor = 0
+}
+
+set_variable = {
+	MAN_state_shintoism_recruitable_population_factor = 0
+}
+
+set_variable = {
+	MAN_state_shintoism_political_power_gain = -0.1
+}
+
+################################
+set_variable = {
+	JAP_showa_statism_fascism_drift = 0
+}
+
+set_variable = {
+	JAP_showa_statism_conscription_factor = 0
+}
+
+set_variable = {
+	JAP_showa_statism_weekly_casualties_war_support = 0
+}
+
+set_variable = {
+	JAP_showa_statism_weekly_convoys_war_support = 0
+}
+
+set_variable = {
+	JAP_showa_statism_weekly_bombing_war_support = 0
+}
+
+set_variable = {
+	JAP_showa_statism_industry_repair_factor = 0
+}
+
+set_variable = {
+	JAP_showa_statism_industrial_capacity_factory = 0
+}
+
+################################
+################################
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+	else = {
+		set_technology = {
+			gwtank = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+	}
+}
+
+set_convoys = 30
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 95
+	neutrality = 3
+	democratic = 1
+	communism = 1
+}
+
+if = {
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+}
+
+1939.1.1 = {
+	load_oob = "JKO_1939"
+	add_to_war = {
+		targeted_alliance = JAP
+		enemy = CHI
+		hostility_reason = puppet
+	}
+	retire_character = JKO_kazushige_ugaki
+	remove_ideas = JKO_Imaida_Kiyonori
+	JKO_jiro_minami = {
+		add_country_leader_role = {
+			promote_leader = yes
+			country_leader = {
+				ideology = fascism_ideology
+				expire = "1965.1.1.1"
+				traits = {
+					JAP_governor_general_of_korea
+				}
+			}
+		}
+		add_country_leader_role = {
+			promote_leader = yes
+			country_leader = {
+				ideology = oligarchism
+				expire = "1965.1.1.1"
+				traits = {
+					JAP_governor_general_of_korea
+				}
+			}
+		}
+	}
+	add_ideas = JKO_Rokuichiro_Oono
+	set_technology = {
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		mechanical_computing = 1
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+	set_grand_doctrine = grand_battleplan
+	set_grand_doctrine = new_fleet_in_being
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
+	complete_national_focus = JKO_fucong_riben_one
+	complete_national_focus = JKO_fucong_faxxing_zhanjuan
+	complete_national_focus = JKO_yaoqing_rriben_kaituotuan
+	complete_national_focus = JKO_kuojian_chaoxian_zhonggongye
+	complete_national_focus = JKO_qianghua_zhongyang_jiquan
+	complete_national_focus = JKO_lalong_qinri_pai
+	complete_national_focus = JKO_tuiguang_huangminhua_yundong
+	complete_national_focus = JKO_chaoxian_bandao_jidu
+	complete_national_focus = JKO_qingqiu_junbei_xiandaihua
+	complete_national_focus = JKO_riben_guwen_tuan
+}
+
+525 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1
+}
+
+527 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1
+}
+
+1028 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1
+}
+
+1029 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1
+}
+
+1030 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1
+}
+
+1031 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1
+}
+
+set_party_name = {
+	ideology = neutrality
+	name = JKO_neutrality_party
+	long_name = JKO_neutrality_party_long
+}
+
+set_party_name = {
+	ideology = fascism
+	name = JKO_fascism_party
+	long_name = JKO_neutrality_party_long
+}

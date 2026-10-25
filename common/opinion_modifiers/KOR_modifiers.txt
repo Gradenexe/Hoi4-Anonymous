@@ -1,0 +1,33 @@
+opinion_modifiers = {
+	KOR_zhichi_women_duli = {
+		value = 10
+	}
+	KOR_built_ships = {
+		value = 10
+		decay = 1
+	}
+	KOR_JAP_reparation = {
+		value = -50
+		months = 48
+	}
+	KOR_JAP_reparation_no = {
+		value = -50
+		months = 12
+	}
+	KOR_Condemning_Communism_good = {
+		value = 15
+	}
+	KOR_Condemning_Communism_bad = {
+		value = -15
+	}
+	KOR_Condemning_democratic_good = {
+		value = 15
+	}
+	KOR_Condemning_democratic_bad = {
+		value = -15
+	}
+	KOR_jinqi_beilue_duo = {
+		value = -15
+		months = 12
+	}
+}

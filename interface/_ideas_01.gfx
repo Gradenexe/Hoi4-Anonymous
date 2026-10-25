@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = GFX_idea_alb_national_industry
+		texturefile = "gfx/interface/ideas/idea_alb_national_industry.dds"
+	}
+	
+}

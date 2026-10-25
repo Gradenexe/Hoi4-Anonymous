@@ -1,0 +1,19 @@
+﻿l_english:
+ ANON_0_RULES_GROUP:0 "�Y! Lobby Setup�!"
+ RULE_GROUP_SOVIET_SETUP:0 "�Y! Lobby Setup�!"
+ RULE_SOVIET_REPUBLICS_STATUS:0 "Soviet Republics Status"
+ RULE_SOVIET_REPUBLICS_PUPPETS:0 "Historical (Puppets)"
+ RULE_SOVIET_REPUBLICS_PUPPETS_DESC:0 "The Soviet Union starts the game with its various republics as puppet states."
+ RULE_SOVIET_REPUBLICS_ANNEXED:0 "Integrated (Annexed)"
+ RULE_SOVIET_REPUBLICS_ANNEXED_DESC:0 "The Soviet Union will automatically annex all of its puppets at the start of the game, centralizing direct control."
+  RULE_DISABLE_AFRICA:0 "Disable Africa"
+ RULE_DISABLE_ASIA:0 "Disable Asia"
+ RULE_DISABLE_NORTH_AMERICA:0 "Disable North America"
+ RULE_DISABLE_SOUTH_AMERICA:0 "Disable South America"
+ RULE_DISABLE_MIDDLE_EAST:0 "Disable Middle East"
+ RULE_DISABLE_AUSTRALIA:0 "Disable Oceania"
+ RULE_DISABLE_EUROPE:0 "Disable Europe"
+ RULE_DISABLE_OFF:0 "Enabled (Default)"
+ RULE_DISABLE_ON:0 "Disabled"
+
+

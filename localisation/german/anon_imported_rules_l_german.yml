@@ -1,0 +1,25 @@
+﻿l_german:
+ rt56rp_gr_vanillarestrict_vol:0 "Einschränkungen für Vanilla-Freiwillige"
+ rt56rp_gr_vanillarestrict_vol_enable_n:0 "Deaktiviert (einschließlich KI)"
+ rt56rp_gr_vanillarestrict_vol_enable_n_desc:0 "Setzt die Grundspielregeln zur Freiwilligenarbeit außer Kraft und ermöglicht es Ihnen, sich unabhängig von Ihrer Ideologie immer ehrenamtlich zu engagieren."
+ rt56rp_gr_vanillarestrict_vol_enable_ai:0 "Deaktiviert (nur Spieler) (Standard)"
+ rt56rp_gr_vanillarestrict_vol_enable_ai_desc:0 "Setzt die Grundspielregeln außer Kraft und ermöglicht es den Spielern, sich unabhängig von ihrer Ideologie immer freiwillig zu melden."
+ rt56rp_gr_vanillarestrict_vol_enable_y:0 "Ermöglicht"
+ rt56rp_gr_vanillarestrict_vol_enable_y_desc:0 "Es gelten die Regeln für Freiwillige im Grundspiel."
+
+ rt56rp_gr_vanillarestrict_facc:0 "Einschränkungen bei der Erstellung von Vanilla-Fraktionen"
+ rt56rp_gr_vanillarestrict_facc_enable_n:0 "Deaktiviert (einschließlich KI)"
+ rt56rp_gr_vanillarestrict_facc_enable_n_desc:0 "Setzt die Regeln des Grundspiels zum Erstellen von Fraktionen außer Kraft und ermöglicht es Ihnen, unabhängig von der Ideologie immer Fraktionen zu erstellen."
+ rt56rp_gr_vanillarestrict_facc_enable_ai:0 "Deaktiviert (nur Spieler) (Standard)"
+ rt56rp_gr_vanillarestrict_facc_enable_ai_desc:0 "Setzt die Grundspielregeln außer Kraft und ermöglicht es den Spielern, unabhängig von ihrer Ideologie immer Fraktionen zu bilden."
+ rt56rp_gr_vanillarestrict_facc_enable_y:0 "Ermöglicht"
+ rt56rp_gr_vanillarestrict_facc_enable_y_desc:0 "Es gelten die Regeln für die Fraktionserstellung im Grundspiel."
+
+ rt56rp_gr_vanillarestrict_facj:0 "Beitrittsbeschränkungen für die Vanilla-Fraktion"
+ rt56rp_gr_vanillarestrict_facj_enable_n:0 "Deaktiviert (einschließlich KI)"
+ rt56rp_gr_vanillarestrict_facj_enable_n_desc:0 "Entfernt die weltweite Spannungsgrenze für den Beitritt zu Fraktionen sowohl für Spieler als auch für die KI."
+ rt56rp_gr_vanillarestrict_facj_enable_ai:0 "Deaktiviert (nur Spieler) (Standard)"
+ rt56rp_gr_vanillarestrict_facj_enable_ai_desc:0 "Entfernt die Weltspannungsgrenze für den Beitritt zu Fraktionen nur für Spieler."
+ rt56rp_gr_vanillarestrict_facj_enable_y:0 "Ermöglicht"
+ rt56rp_gr_vanillarestrict_facj_enable_y_desc:0 "Es gelten die Regeln für den Fraktionsbeitritt im Basisspiel."
+

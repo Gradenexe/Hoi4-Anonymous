@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_modifiers_lusaphon_commonwealth"
+        textureFile = "gfx/interface/state_modifiers/modifiers_lusaphon_commonwealth.dds"
+    }
+}

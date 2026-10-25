@@ -1,0 +1,373 @@
+ideas = {
+	country = {
+		# --------------------------------------------------------
+		# GENERIC IDEAS
+		# --------------------------------------------------------
+		SCWR_local_militias_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.02
+				training_time_factor = -0.10
+				army_org_factor = -0.05
+			}
+		}
+
+		SCWR_labor_battalions_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industry_repair_factor = 0.15
+			}
+		}
+		SCWR_rationing_system_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		SCWR_internal_security_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = EST_republican_defence_league
+			modifier = {
+				political_power_gain = 0.10
+				stability_weekly = 0.001
+			}
+		}
+		SCWR_anti_sabotage_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = EST_democratic_opposition
+			modifier = {
+				enemy_operative_detection_chance_factor = 0.20
+				defense = 0.05
+			}
+		}
+		SCWR_combat_desertion_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				org_loss_when_moving = -0.10
+				army_org_factor = 0.05
+			}
+		}
+		SCWR_wartime_propaganda_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				war_support_weekly = 0.001
+				core_defense_factor = 0.10
+			}
+		}
+
+		# --------------------------------------------------------
+		# INDEPENDENCE BRANCH ideas
+		# --------------------------------------------------------
+
+		SCWR_international_recognition_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_conference
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				opinion_gain_monthly_factor = 0.10
+			}
+		}
+
+		SCWR_independence_army_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+
+			modifier = {
+				conscription_factor = 0.05
+				army_org_factor = 0.05
+				planning_speed = 0.10
+				training_time_factor = -0.10
+			}
+		}
+
+		SCWR_diaspora_returns_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_war_preparation
+
+			modifier = {
+				weekly_manpower = 200
+				stability_factor = 0.03
+				mobilization_speed = 0.05
+			}
+		}
+
+		SCWR_democracy_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_political_support
+
+			modifier = {
+				political_power_gain_factor = 0.20
+				stability_factor = 0.05
+				research_speed_factor = 0.03
+				opinion_gain_monthly_factor = 0.15
+			}
+		}
+
+		SCWR_nationalism_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+
+			modifier = {
+				war_support_factor = 0.10
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_core_attack_factor = 0.10
+			}
+		}
+
+		SCWR_dictatorship_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_central_management
+
+			modifier = {
+				political_power_gain_factor = 0.15
+				war_support_factor = 0.10
+				conscription_factor = 0.03
+				mobilization_speed = 0.05
+			}
+		}
+
+		SCWR_monarchy_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_political_support
+
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain_factor = 0.15
+				mobilization_speed = 0.05
+				war_support_factor = 0.03
+			}
+		}
+
+		# --------------------------------------------------------
+		# WHITES BRANCH ideas
+		# --------------------------------------------------------
+
+		SCWR_white_support_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.03
+				equipment_capture_factor = 0.15
+			}
+		}
+
+		SCWR_white_dominion_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_political_support
+
+			modifier = {
+				political_power_gain_factor = 0.10
+				stability_factor = 0.05
+				trade_opinion_factor = 0.10
+			}
+		}
+
+		SCWR_loyal_whites_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+
+			modifier = {
+				army_org_factor = 0.05
+				breakthrough_factor = 0.10
+				division_recovery_rate_factor = 0.08
+				coordination_bonus = 0.05
+			}
+		}
+
+		# --------------------------------------------------------
+		# OPPOSITION BRANCH ideas
+		# --------------------------------------------------------
+
+		SCWR_opposition_support_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_political_support
+
+			modifier = {
+				political_power_gain_factor = 0.20
+				stability_factor = 0.03
+			}
+		}
+
+		SCWR_opposition_political_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_intel_bonus
+
+			modifier = {
+				army_org_factor = 0.05
+				war_support_factor = 0.10
+				operative_slot = 1
+				decryption_speed_factor = 0.10
+			}
+		}
+
+		SCWR_opposition_autonomy_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_research_bonus
+
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = 0.10
+				weekly_manpower = 150
+				political_power_gain_factor = 0.10
+			}
+		}
+
+		SCWR_opposition_military_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+
+			modifier = {
+				army_org_factor = 0.10
+				planning_speed = 0.15
+				mobilization_speed = 0.05
+			}
+		}
+
+		# --------------------------------------------------------
+		# MOSCOW BRANCH ideas
+		# --------------------------------------------------------
+
+		SCWR_moscow_loyalty_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_soviet_advisers
+
+			modifier = {
+				political_power_gain_factor = 0.10
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		SCWR_moscow_industry_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.05
+			}
+		}
+
+		SCWR_suppress_enemies_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_guerilla_warfare
+
+			modifier = {
+				war_support_factor = 0.10
+				army_core_attack_factor = 0.08
+				coordination_bonus = 0.05
+				resistance_target_on_our_occupied_states = 0.10
+			}
+		}
+
+		SCWR_loyal_republic_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_central_management
+
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = 0.10
+				political_power_gain_factor = 0.15
+				weekly_manpower = 150
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		# --------------------------------------------------------
+		# STALINIST REPRESSION ideas (negative)
+		# --------------------------------------------------------
+
+		SCWR_stalinist_repression_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_war_preparation
+
+			modifier = {
+				stability_factor = -0.08
+				political_power_gain_factor = -0.15
+				training_time_factor = 0.10
+				army_org_factor = -0.05
+			}
+		}
+
+		SCWR_stalinist_repression_heavy_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_war_preparation
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain_factor = -0.25
+				training_time_factor = 0.20
+				army_org_factor = -0.10
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+			}
+		}
+	}
+}

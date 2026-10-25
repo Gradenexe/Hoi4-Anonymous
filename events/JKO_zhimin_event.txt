@@ -1,0 +1,2764 @@
+add_namespace = JKO_renshi_biandong
+add_namespace = JKO_huangminhua_event
+add_namespace = JKO_duli_yundong_event
+################################################################################
+##########################         DEBUG 测试         ############################
+###############################################################################  
+################################################################################
+##########################         人事调动         ############################
+###############################################################################  
+country_event = {
+	id = JKO_renshi_biandong.1
+	title = JKO_renshi_biandong.1.t
+	desc = JKO_renshi_biandong.1.desc
+	picture = GFX_report_event_JKO_event_nancilang_shangren
+	fire_only_once = yes
+	trigger = {
+		JKO_kazushige_ugaki = {
+			is_country_leader = yes
+		}
+		date > 1936.08.05
+	}
+	option = {
+		name = JKO_renshi_biandong.1.a
+		ai_chance = {
+			factor = 10
+		}
+		promote_character = {
+			character = JKO_jiro_minami
+			ideology = fascism_ideology
+		}
+		add_ideas = JKO_Rokuichiro_Oono
+		hidden_effect = {
+			promote_character = {
+				character = JKO_jiro_minami
+				ideology = oligarchism
+			}
+			retire_character = JKO_kazushige_ugaki
+			remove_ideas = JKO_Imaida_Kiyonori
+		}
+		set_country_flag = nancilang_shangtai_flag
+	}
+}
+
+country_event = {
+	id = JKO_renshi_biandong.2
+	title = JKO_renshi_biandong.2.t
+	desc = JKO_renshi_biandong.2.desc
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes
+	option = {
+		name = JKO_renshi_biandong.2.a
+		ai_chance = {
+			factor = 10
+		}
+		set_global_flag = JKO_sheri_xingdong_flag
+	}
+}
+
+news_event = {
+	id = JKO_renshi_biandong.3
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		date > 1936.08.02
+		date < 1939.01.01
+	}
+	immediate = {
+		random_list = {
+			80 = {
+				news_event = {
+					id = JKO_renshi_biandong.4
+				}
+			}
+			20 = {
+				news_event = {
+					id = JKO_renshi_biandong.5
+				}
+			}
+		}
+	}
+	option = {
+		name = JKO_renshi_biandong.3.a
+	}
+}
+
+news_event = {
+	id = JKO_renshi_biandong.4
+	title = JKO_renshi_biandong.4.t
+	desc = JKO_renshi_biandong.4.desc
+	picture = GFX_news_event_zhaoyiman_xialuo_1
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = JKO_renshi_biandong.4.a
+	}
+}
+
+news_event = {
+	id = JKO_renshi_biandong.5
+	title = JKO_renshi_biandong.5.t
+	desc = JKO_renshi_biandong.5.desc
+	picture = GFX_news_event_zhaoyiman_xialuo_2
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = JKO_renshi_biandong.5.a
+		set_global_flag = zhaoyiman_taoli_flag
+	}
+}
+
+################################################################################
+##########################         皇民化运动         ############################
+###############################################################################  
+country_event = {
+	id = JKO_huangminhua_event.1
+	title = JKO_huangminhua_event.1.t
+	desc = JKO_huangminhua_event.1.desc
+	picture = GFX_report_event_JKO_event_huangminhua_yundong_chenggong
+	is_triggered_only = yes
+	option = {
+		name = JKO_huangminhua_event.1.a
+		ai_chance = {
+			factor = 10
+		}
+		random_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+			}
+			add_resistance = -3
+			add_compliance = 3
+		}
+	}
+}
+
+country_event = {
+	id = JKO_huangminhua_event.2
+	title = JKO_huangminhua_event.2.t
+	desc = JKO_huangminhua_event.2.desc
+	picture = GFX_report_event_JKO_event_huangminhua_yundong_meiyoujinzhan
+	is_triggered_only = yes
+	option = {
+		name = JKO_huangminhua_event.2.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = JKO_huangminhua_event.3
+	title = JKO_huangminhua_event.3.t
+	desc = JKO_huangminhua_event.3.desc
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	option = {
+		name = JKO_huangminhua_event.3.a
+		ai_chance = {
+			factor = 10
+		}
+		random_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+			}
+			add_resistance = 3
+		}
+	}
+}
+
+country_event = {
+	id = JKO_huangminhua_event.4
+	title = JKO_huangminhua_event.4.t
+	desc = JKO_huangminhua_event.4.desc
+	picture = GFX_report_event_indian_famine
+	is_triggered_only = yes
+	option = {
+		name = JKO_huangminhua_event.4.a
+		ai_chance = {
+			factor = 10
+		}
+		random_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+			}
+			add_resistance = -5
+			add_compliance = -5
+		}
+		random_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+			}
+			add_resistance = -5
+			add_compliance = -5
+		}
+	}
+	option = {
+		name = JKO_huangminhua_event.4.b
+		ai_chance = {
+			factor = 10
+		}
+		random_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+			}
+			add_resistance = 3
+			add_compliance = -2
+		}
+		random_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+			}
+			add_resistance = 3
+			add_compliance = -2
+		}
+	}
+}
+
+country_event = {
+	id = JKO_huangminhua_event.5
+	title = JKO_huangminhua_event.5.t
+	desc = JKO_huangminhua_event.5.desc
+	picture = GFX_report_event_JKO_event_huangminhua_yundong_chenggong
+	is_triggered_only = yes
+	option = {
+		name = JKO_huangminhua_event.5.a
+		ai_chance = {
+			factor = 10
+		}
+		IF = {
+			limit = {
+				KOR = {
+					has_completed_focus = KOR_chongsheng_zhengtong_diwei
+				}
+			}
+			KOR = {
+				add_legitimacy = -10
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+			}
+			add_resistance = -13
+			add_compliance = 13
+		}
+		add_ideas = JKO_chuangshi_gaiming_idea
+		hidden_effect = {
+			remove_ideas = JKO_guoyu_changyong_yundong_idea
+			remove_ideas = JKO_neixian_yitilun_xuanchuan_idea
+		}
+	}
+}
+
+country_event = {
+	id = JKO_huangminhua_event.6
+	title = JKO_huangminhua_event.6.t
+	desc = JKO_huangminhua_event.6.desc
+	picture = GFX_report_event_JKO_event_huangminhua_yundong_meiyoujinzhan
+	is_triggered_only = yes
+	option = {
+		name = JKO_huangminhua_event.6.a
+		ai_chance = {
+			factor = 10
+		}
+		IF = {
+			limit = {
+				KOR = {
+					has_completed_focus = KOR_chongsheng_zhengtong_diwei
+				}
+			}
+			KOR = {
+				add_legitimacy = -5
+			}
+		}
+		add_ideas = JKO_chuangshi_gaiming_idea_two
+		every_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+			}
+			add_resistance = -7
+			add_compliance = 7
+		}
+		hidden_effect = {
+			remove_ideas = JKO_guoyu_changyong_yundong_idea
+			remove_ideas = JKO_neixian_yitilun_xuanchuan_idea
+		}
+	}
+}
+
+country_event = {
+	id = JKO_huangminhua_event.7
+	title = JKO_huangminhua_event.7.t
+	desc = JKO_huangminhua_event.7.desc
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	option = {
+		name = JKO_huangminhua_event.7.a
+		ai_chance = {
+			factor = 10
+		}
+		every_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+			}
+			add_resistance = -3
+			add_compliance = 3
+		}
+		hidden_effect = {
+			remove_ideas = JKO_guoyu_changyong_yundong_idea
+			remove_ideas = JKO_neixian_yitilun_xuanchuan_idea
+		}
+	}
+}
+
+country_event = {
+	id = JKO_huangminhua_event.8
+	title = JKO_huangminhua_event.8.t
+	desc = JKO_huangminhua_event.8.desc
+	picture = GFX_report_event_fascist_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#Lying, thieving villians!
+		name = JKO_huangminhua_event.8.a
+		add_legitimacy = -10
+	}
+}
+
+################################################################################
+##########################         独立运动         ############################
+###############################################################################  
+country_event = {
+	id = JKO_duli_yundong_event.1
+	title = JKO_duli_yundong_event.1.t
+	desc = JKO_duli_yundong_event.1.desc
+	picture = GFX_report_event_generic_strike
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.1.a
+		ai_chance = {
+			factor = 10
+		}
+		add_political_power = 50		#添加政治点数
+		every_state = {
+			limit = {
+				has_dynamic_modifier = {
+					modifier = JKO_fankangjun_dabenying_modifiers
+				}
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+			}
+			add_resistance = 10
+			add_compliance = -10
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		JKO = {
+			add_timed_idea = {
+				idea = KOR_JKO_yinshua_dixia_kanwu_idea
+				days = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.2
+	title = JKO_duli_yundong_event.2.t
+	desc = JKO_duli_yundong_event.2.desc
+	picture = GFX_report_event_ITA_democratic_parlament
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.2.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_opinion = {
+					target = KOR
+					value > 29
+				}
+				factor = 2
+			}
+			modifier = {
+				has_opinion = {
+					target = KOR
+					value > 39
+				}
+				factor = 5
+			}
+			modifier = {
+				has_opinion = {
+					target = KOR
+					value > 49
+				}
+				factor = 10
+			}
+		}
+		set_country_flag = tongyi_zhichi_duli_flag
+		FROM = {
+			country_event = {
+				id = JKO_duli_yundong_event.3
+				days = 5
+			}
+		}
+	}
+	option = {
+		name = JKO_duli_yundong_event.2.b
+		ai_chance = {
+			base = 5
+		}
+		trigger = {
+			KOR = {
+				is_ai = no
+			}
+		}
+		FROM = {
+			country_event = {
+				id = JKO_duli_yundong_event.4
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.3
+	title = JKO_duli_yundong_event.3.t
+	desc = JKO_duli_yundong_event.3.desc
+	picture = GFX_report_event_ITA_democratic_parlament
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.3.a
+		ai_chance = {
+			factor = 10
+		}
+		KOR = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = small_increase
+			}
+		}
+		FROM = {
+			add_opinion_modifier = {
+				target = KOR
+				modifier = small_increase
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = tongyi_zhichi_duli_flag
+					}
+				}
+				set_country_flag = tongyi_zhichi_duli_flag
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = guojia_chengren_women_flag
+					}
+				}
+				set_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 1
+				}
+			}
+			else = {
+				modify_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.4
+	title = JKO_duli_yundong_event.4.t
+	desc = JKO_duli_yundong_event.4.desc
+	picture = GFX_report_event_ITA_democratic_parlament
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.4.a
+		ai_chance = {
+			factor = 10
+		}
+		KOR = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = medium_decrease
+			}
+		}
+	}
+}
+
+news_event = {
+	id = JKO_duli_yundong_event.5
+	title = JKO_duli_yundong_event.5.t
+	desc = JKO_duli_yundong_event.5.desc
+	picture = GFX_news_event_041
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.5.a
+		trigger = {
+			is_ai = no
+		}
+		hidden_effect = {
+			JAP = {
+				retire_character = JAP_emperor_hirohito
+				JAP_haijun_lujun_neizhan = yes
+				hidden_effect = {
+					random_country = {
+						limit = {
+							original_tag = JAP
+							has_government = democratic
+						}
+						every_other_country = {
+							limit = {
+								original_tag = JAP
+							}
+							PREV = {
+								declare_war_on = {
+									target = PREV
+									type = civil_war
+								}
+							}
+						}
+					}
+				}
+				country_event = JKO_duli_yundong_event.7
+				add_days_mission_timeout = {
+					mission = JAP_kwantung_army_impatience
+					days = 150
+				}
+			}
+		}
+	}
+	option = {
+		name = JKO_duli_yundong_event.5.b
+		trigger = {
+			is_ai = yes
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.6
+	title = JKO_duli_yundong_event.6.t
+	desc = JKO_duli_yundong_event.6.desc
+	picture = GFX_report_event_ITA_democratic_parlament
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.6.a
+		ai_chance = {
+			factor = 10
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = JAP_emperor_yasuhito
+			picture = GFX_portrait_JAP_emperor_yasuhito
+			expire = "1999.1.1"
+			ideology = emperor_fascism
+			traits = {
+				JAP_IJA_prime_minister_trait
+			}
+		}
+		hidden_effect = {
+			add_timed_idea = {
+				idea = KOR_neizhan_shuangfang_buff_idea
+				days = 110
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.7
+	title = JKO_duli_yundong_event.6.t
+	desc = JKO_duli_yundong_event.7.desc
+	picture = GFX_report_event_ITA_democratic_parlament
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.7.a
+		division_template = {
+			name = "Satsuma Domain Militia"
+			is_locked = no
+			division_names_group = JAP_MIL_02
+			template_counter = 118
+			role = infantry
+			override_model = JAP_militia_alt_0_entity
+			priority = 0
+			regiments = {
+				militia = {
+					x = 0
+					y = 0
+				}
+				militia = {
+					x = 0
+					y = 1
+				}
+				militia = {
+					x = 1
+					y = 0
+				}
+				militia = {
+					x = 1
+					y = 1
+				}
+				militia = {
+					x = 2
+					y = 0
+				}
+				militia = {
+					x = 2
+					y = 1
+				}
+				militia = {
+					x = 3
+					y = 0
+				}
+				militia = {
+					x = 3
+					y = 1
+				}
+			}
+			support = {
+				recon = {
+					x = 0
+					y = 0
+				}
+				artillery = {
+					x = 0
+					y = 1
+				}
+				engineer = {
+					x = 0
+					y = 2
+				}
+			}
+		}
+		division_template = {
+			name = "Imperial Japanese Marine Corps"
+			is_locked = no
+			division_names_group = JAP_MAR_01
+			template_counter = 118
+			role = infantry
+			priority = 0
+			regiments = {
+				marine = {
+					x = 0
+					y = 0
+				}
+				marine = {
+					x = 0
+					y = 1
+				}
+				marine = {
+					x = 0
+					y = 2
+				}
+				marine = {
+					x = 1
+					y = 0
+				}
+				marine = {
+					x = 1
+					y = 1
+				}
+				marine = {
+					x = 1
+					y = 2
+				}
+				marine = {
+					x = 2
+					y = 0
+				}
+				marine = {
+					x = 2
+					y = 1
+				}
+				marine = {
+					x = 2
+					y = 2
+				}
+			}
+			support = {
+				recon = {
+					x = 0
+					y = 0
+				}
+				artillery = {
+					x = 0
+					y = 1
+				}
+				engineer = {
+					x = 0
+					y = 2
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_core_of = JAP
+				is_fully_controlled_by = ROOT
+			}
+			prioritize = {
+				531
+			}
+			create_unit = {
+				division = "name = \"Satsuma Domain Militia\" division_template = \"Satsuma Domain Militia\" start_experience_factor = 0.5"
+				owner = ROOT
+				count = 24
+			}
+			create_unit = {
+				division = "name = \"Imperial Japanese Marine Corps\" division_template = \"Imperial Japanese Marine Corps\" start_experience_factor = 0.5"
+				owner = ROOT
+				count = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.8
+	title = JKO_duli_yundong_event.8.t
+	desc = JKO_duli_yundong_event.8.desc
+	picture = GFX_report_event_ITA_democratic_parlament
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.8.a
+		ai_chance = {
+			factor = 10
+		}
+		add_ideas = JKO_sizhan_butui
+		create_corps_commander = {
+			name = MAN_Zhou_Baozhong
+			portrait_path = GFX_portrait_MAN_Zhou_Baozhong
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				KOR_kanglian_junshi
+				guerilla_fighter
+			}
+		}
+		create_corps_commander = {
+			name = MAN_zhao_shangzhi
+			portrait_path = GFX_portrait_MAN_zhao_shangzhi_plus
+			traits = {
+				KOR_kanglian_junshi
+				guerilla_fighter
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+		create_corps_commander = {
+			name = MAN_Xia_Yunjie
+			portrait_path = GFX_portrait_MAN_Xia_Yunjie
+			traits = {
+				KOR_kanglian_junshi
+				guerilla_fighter
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = MAN_Wang_Yachen
+			portrait_path = GFX_portrait_MAN_Wang_Yachen
+			traits = {
+				KOR_kanglian_junshi
+				guerilla_fighter
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = MAN_Li_Zhaolin
+			portrait_path = GFX_portrait_MAN_Li_Zhaolin
+			traits = {
+				KOR_kanglian_junshi
+				guerilla_fighter
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		create_field_marshal = {
+			name = MAN_Yang_Jingyu
+			portrait_path = GFX_portrait_MAN_Yang_Jingyu
+			traits = {
+				KOR_kanglian_junshi
+				trait_mountaineer
+				winter_expert
+				ranger
+				scavenger
+				guerilla_fighter
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		if = {
+			limit = {
+				has_global_flag = zhaoyiman_taoli_flag
+			}
+			create_corps_commander = {
+				name = MAN_Zhao_Yiman
+				portrait_path = GFX_portrait_MAN_Zhao_Yiman
+				traits = {
+					KOR_kanglian_junshi
+					guerilla_fighter
+				}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}
+		declare_war_on = {
+			target = MAN
+			type = annex_everything
+		}
+	}
+}
+
+news_event = {
+	id = JKO_duli_yundong_event.9
+	title = JKO_duli_yundong_event.9.t
+	desc = JKO_duli_yundong_event.9.desc
+	picture = GFX_news_event_chaoxianduli
+	is_triggered_only = yes
+	major = no
+	option = {
+		name = JKO_duli_yundong_event.9.a
+		ai_chance = {
+			factor = 10
+		}
+		add_war_support = 0.05		#添加战争支持度
+		add_command_power = 30		#添加指挥点数
+		add_manpower = 20000		#加人力
+		custom_effect_tooltip = generic_skip_one_line_tt
+		THIS.capital_scope = {
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		set_country_flag = KOR_dulizhanzheng_days_flag
+		set_global_flag = KOR_dongya_minzu_jiefang_flag
+		hidden_effect = {
+			division_template = {
+				name = "Retired Soldier Division"
+				is_locked = no
+				division_names_group = KOR_INF_02
+				priority = 0
+				template_counter = 101				# optiona
+				regiments = {
+					infantry = {
+						x = 0
+						y = 0
+					}
+					infantry = {
+						x = 0
+						y = 1
+					}
+					infantry = {
+						x = 1
+						y = 0
+					}
+					infantry = {
+						x = 1
+						y = 1
+					}
+					infantry = {
+						x = 2
+						y = 0
+					}
+					infantry = {
+						x = 2
+						y = 1
+					}
+					infantry = {
+						x = 3
+						y = 0
+					}
+					infantry = {
+						x = 3
+						y = 1
+					}
+				}
+				support = {
+					recon = {
+						x = 0
+						y = 0
+					}
+				}
+			}
+			division_template = {
+				name = "Secret Service Independent Army"
+				is_locked = yes
+				division_names_group = KOR_GAR_01
+				priority = 0
+				template_counter = 68				# optiona
+				regiments = {
+					militia = {
+						x = 0
+						y = 0
+					}
+					militia = {
+						x = 0
+						y = 1
+					}
+					militia = {
+						x = 0
+						y = 2
+					}
+					militia = {
+						x = 1
+						y = 0
+					}
+					militia = {
+						x = 1
+						y = 1
+					}
+					militia = {
+						x = 1
+						y = 2
+					}
+					militia = {
+						x = 2
+						y = 0
+					}
+					militia = {
+						x = 2
+						y = 1
+					}
+					militia = {
+						x = 2
+						y = 2
+					}
+				}
+				support = {
+					recon = {
+						x = 0
+						y = 0
+					}
+					artillery = {
+						x = 0
+						y = 1
+					}
+				}
+			}
+			division_template = {
+				name = "Communist Militia Division"
+				is_locked = no
+				division_names_group = KOR_GAR_01
+				priority = 0
+				template_counter = 69				# optiona
+				regiments = {
+					militia = {
+						x = 0
+						y = 0
+					}
+					militia = {
+						x = 0
+						y = 1
+					}
+					militia = {
+						x = 1
+						y = 0
+					}
+					militia = {
+						x = 1
+						y = 1
+					}
+					militia = {
+						x = 2
+						y = 0
+					}
+					militia = {
+						x = 2
+						y = 1
+					}
+				}
+			}
+			division_template = {
+				name = "Independent Cavalry Regiment"
+				is_locked = no
+				division_names_group = KOR_GAR_01
+				priority = 0
+				template_counter = 16				# optiona
+				regiments = {
+					cavalry = {
+						x = 0
+						y = 0
+					}
+					cavalry = {
+						x = 0
+						y = 1
+					}
+					cavalry = {
+						x = 1
+						y = 0
+					}
+					cavalry = {
+						x = 1
+						y = 1
+					}
+					cavalry = {
+						x = 2
+						y = 0
+					}
+					cavalry = {
+						x = 2
+						y = 1
+					}
+				}
+			}
+			IF = {
+				limit = {
+					has_country_flag = JKO_xunlian_guangfujun_flag
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = KOR
+						is_controlled_by = ROOT
+					}
+					create_unit = {
+						division = "name = \"Guangfu Army\" division_template = \"Guangfu Army\" start_experience_factor = 0.1"
+						owner = ROOT
+						allow_spawning_on_enemy_provs = yes
+						count = var:KOR.KOR_guangfujun_shuliang_va
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = JKO_baitoushan_de_shiyue
+				}
+				division_template = {
+					name = "Northeast Counter-Japanese United Army"
+					is_locked = no
+					division_names_group = KOR_INF_01
+					priority = 0
+					template_counter = 118					# optiona
+					regiments = {
+						mountaineers = {
+							x = 0
+							y = 0
+						}
+						mountaineers = {
+							x = 0
+							y = 1
+						}
+						mountaineers = {
+							x = 1
+							y = 0
+						}
+						mountaineers = {
+							x = 1
+							y = 1
+						}
+						mountaineers = {
+							x = 2
+							y = 0
+						}
+						mountaineers = {
+							x = 2
+							y = 1
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						recon = {
+							x = 0
+							y = 1
+						}
+						logistics_company = {
+							x = 0
+							y = 2
+						}
+						artillery = {
+							x = 0
+							y = 3
+						}
+					}
+				}
+				random_controlled_state = {
+					limit = {
+						is_core_of = KOR
+						is_controlled_by = KOR
+					}
+					create_unit = {
+						division = "name = \"Northeast Counter-Japanese United Army\" division_template = \"Northeast Counter-Japanese United Army\" start_experience_factor = 0.3"
+						owner = ROOT
+						count = 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = JKO_dihou_pohuai
+				}
+				every_state = {
+					limit = {
+						is_controlled_by = JKO
+					}
+					add_dynamic_modifier = {
+						modifier = JKO_tielue_huihuai_modifiers
+						days = 730
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				division_template = {
+					name = "Railway Militia Division"
+					is_locked = no
+					division_names_group = KOR_INF_01
+					priority = 0
+					template_counter = 65					# optiona
+					regiments = {
+						militia = {
+							x = 0
+							y = 0
+						}
+						militia = {
+							x = 0
+							y = 1
+						}
+						militia = {
+							x = 1
+							y = 0
+						}
+						militia = {
+							x = 1
+							y = 1
+						}
+						militia = {
+							x = 2
+							y = 0
+						}
+						militia = {
+							x = 2
+							y = 1
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+					}
+				}
+				random_controlled_state = {
+					limit = {
+						is_core_of = KOR
+						is_controlled_by = KOR
+					}
+					create_unit = {
+						division = "name = \"Railway Militia Division\" division_template = \"Railway Militia Division\" start_experience_factor = 0.1"
+						owner = ROOT
+						count = 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				division_template = {
+					name = "Korean Anti-Japanese Volunteer Army"
+					is_locked = no
+					division_names_group = KOR_INF_01
+					priority = 0
+					template_counter = 65
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 3
+						}
+						artillery_brigade = {
+							x = 3
+							y = 0
+						}
+						artillery_brigade = {
+							x = 3
+							y = 1
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						artillery = {
+							x = 0
+							y = 1
+						}
+						recon = {
+							x = 0
+							y = 3
+						}
+					}
+				}
+				random_controlled_state = {
+					limit = {
+						is_core_of = KOR
+						is_controlled_by = KOR
+					}
+					create_unit = {
+						division = "name = \"Korean Anti-Japanese Volunteer Army\" division_template = \"Korean Anti-Japanese Volunteer Army\" start_experience_factor = 0.1"
+						owner = ROOT
+						count = 12
+					}
+				}
+			}
+		}
+		random_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_controlled_by = KOR
+			}
+			create_unit = {
+				division = "name = \"1st Retired Soldier Division\" division_template = \"Retired Soldier Division\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"2st Retired Soldier Division\" division_template = \"Retired Soldier Division\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"3st Retired Soldier Division\" division_template = \"Retired Soldier Division\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"4st Retired Soldier Division\" division_template = \"Retired Soldier Division\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+		}
+		random_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_controlled_by = KOR
+			}
+			create_unit = {
+				division = "name = \"1st Communist Militia Division\" division_template = \"Communist Militia Division\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"2st Communist Militia Division\" division_template = \"Communist Militia Division\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+		}
+		random_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_controlled_by = KOR
+			}
+			create_unit = {
+				division = "name = \"1st Secret Service Independent Army\" division_template = \"Secret Service Independent Army\" start_experience_factor = 0.2"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"2st Secret Service Independent Army\" division_template = \"Secret Service Independent Army\" start_experience_factor = 0.2"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"3st Secret Service Independent Army\" division_template = \"Secret Service Independent Army\" start_experience_factor = 0.2"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"4st Secret Service Independent Army\" division_template = \"Secret Service Independent Army\" start_experience_factor = 0.2"
+				owner = ROOT
+			}
+		}
+		random_controlled_state = {
+			limit = {
+				is_core_of = KOR
+				is_controlled_by = KOR
+			}
+			create_unit = {
+				division = "name = \"1st Independent Cavalry Regiment\" division_template = \"Independent Cavalry Regiment\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"2st Independent Cavalry Regiment\" division_template = \"Independent Cavalry Regiment\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.10
+	title = JKO_duli_yundong_event.10.t
+	desc = JKO_duli_yundong_event.10.desc
+	picture = GFX_report_event_BRA_smoking_snakes
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.10.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = KOR
+					value > 29
+				}
+				factor = 8
+			}
+			modifier = {
+				factor = 0.5
+				is_major = no
+			}
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = JAP
+					value > 0
+				}
+			}
+			modifier = {
+				factor = 0
+				has_opinion = {
+					target = JAP
+					value > 75
+				}
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = JAP
+					value < -50
+				}
+			}
+			modifier = {
+				factor = 2
+				any_owned_state = {
+					is_on_continent = asia
+					is_capital = yes
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_government = democratic
+			}
+			modifier = {
+				factor = 0.1
+				has_government = JAP
+			}
+			modifier = {
+				factor = 0.1
+				has_war_support < 0.1
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_idea = SWI_swiss_neutrality
+					has_idea = neutrality_idea
+				}
+			}
+		}
+		FROM = {
+			country_event = JKO_duli_yundong_event.12
+		}
+		add_relation_modifier = {
+			target = KOR
+			modifier = KOR_tongbao_zhiyuanjun
+		}
+		add_relation_rule_override = {
+			target = KOR
+			can_send_volunteers = yes
+		}
+		set_country_flag = KOR_zhunbei_paiqian_zhiyuanjun_flag
+	}
+	option = {
+		name = JKO_duli_yundong_event.10.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0.5
+				is_major = yes
+			}
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = JAP
+					value > 0
+				}
+			}
+			modifier = {
+				factor = 0
+				has_opinion = {
+					target = JAP
+					value > 75
+				}
+			}
+			modifier = {
+				factor = 0.5
+				has_war_support < 0.1
+			}
+			modifier = {
+				factor = 0
+				has_idea = SWI_swiss_neutrality
+			}
+			modifier = {
+				factor = 0.25
+				has_idea = neutrality_idea
+			}
+			modifier = {
+				has_opinion = {
+					target = KOR
+					value < 29
+				}
+				factor = 2
+			}
+		}
+		FROM = {
+			country_event = JKO_duli_yundong_event.11
+		}
+	}
+	option = {
+		name = JKO_duli_yundong_event.10.c
+		trigger = {
+			has_war = yes
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = JAP
+					value < 0
+				}
+			}
+		}
+		custom_effect_tooltip = KOR_volunteers_leave_200
+		add_manpower = -200
+		KOR = {
+			add_manpower = 200
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.11
+	title = JKO_duli_yundong_event.11.t
+	desc = JKO_duli_yundong_event.11.desc
+	picture = GFX_report_event_BRA_smoking_snakes
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.11.a
+		KOR = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = small_decrease
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.12
+	title = JKO_duli_yundong_event.12.t
+	desc = JKO_duli_yundong_event.12.desc
+	picture = GFX_report_event_BRA_smoking_snakes
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.12.a
+		KOR = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = small_increase
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.13
+	title = JKO_duli_yundong_event.13.t
+	desc = JKO_duli_yundong_event.13.desc
+	picture = GFX_report_event_DEN_danish_politics
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.13.a
+		JAP = {
+			country_event = {
+				id = JKO_duli_yundong_event.14
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.14
+	title = JKO_duli_yundong_event.14.t
+	desc = JKO_duli_yundong_event.14.desc
+	picture = GFX_report_event_DEN_danish_politics
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.14.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 5
+				}
+				factor = 50
+			}
+			modifier = {
+				has_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 4
+				}
+				factor = 40
+			}
+			modifier = {
+				has_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 3
+				}
+				factor = 30
+			}
+			modifier = {
+				has_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 2
+				}
+				factor = 20
+			}
+			modifier = {
+				has_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 1
+				}
+				factor = 10
+			}
+			modifier = {
+				has_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 0
+				}
+				factor = 1
+			}
+		}
+		KOR = {
+			country_event = {
+				id = JKO_duli_yundong_event.15
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = JKO_duli_yundong_event.14.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 5
+				}
+				factor = 0
+			}
+			modifier = {
+				has_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 4
+				}
+				factor = 0
+			}
+			modifier = {
+				has_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 3
+				}
+				factor = 0
+			}
+			modifier = {
+				has_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 2
+				}
+				factor = 0
+			}
+			modifier = {
+				has_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 1
+				}
+				factor = 5
+			}
+			modifier = {
+				has_global_flag = {
+					flag = guojia_chengren_women_flag
+					value = 0
+				}
+				factor = 50
+			}
+		}
+		FROM = {
+			country_event = {
+				id = JKO_duli_yundong_event.16
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.15
+	title = JKO_duli_yundong_event.15.t
+	desc = JKO_duli_yundong_event.15.desc
+	picture = GFX_report_event_generic_handshake
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.15.a
+		annex_country = {
+			target = JKO
+			transfer_troops = no
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = JAP
+					is_subject_of = JAP
+				}
+			}
+			white_peace = KOR
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = tongyi_zhichi_duli_flag
+				}
+				KOR = {
+					add_opinion_modifier = {
+						target = FROM
+						modifier = KOR_zhichi_women_duli
+					}
+				}
+			}
+			clr_global_flag = KOR_dongya_minzu_jiefang_flag
+			clr_global_flag = KOR_kaiju_zhanzheng_flag
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = KOR_zhengzhi_luxian_1
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				delete_units = {
+					division_template = "Korean Anti-Japanese Volunteer Army"
+					disband = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.16
+	title = JKO_duli_yundong_event.16.t
+	desc = JKO_duli_yundong_event.16.desc
+	picture = GFX_report_event_japanese_soldiers_01
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.16.a
+		add_political_power = -25
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 10
+				FROM = {
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				factor = 0.1
+				FROM = {
+					is_enemy_ideology = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = KOR_guizi_jujue_heping_flag
+				}
+			}
+			set_global_flag = KOR_guizi_jujue_heping_flag
+		}
+	}
+	option = {
+		name = JKO_duli_yundong_event.16.b
+		add_opinion_modifier = {
+			target = FROM
+			modifier = embargo
+		}
+		every_country = {
+			limit = {
+				has_country_flag = tongyi_zhichi_duli_flag
+			}
+			send_embargo = JAP
+			custom_effect_tooltip = embargo_relation_tt
+		}
+		FROM = {
+			country_event = {
+				days = 1
+				id = JKO_duli_yundong_event.17
+			}
+		}
+		ai_chance = {
+			base = 80
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				has_government = communism
+				FROM = {
+					has_government = communism
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.17
+	title = JKO_duli_yundong_event.17.t
+	desc = JKO_duli_yundong_event.17.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.17.a
+		ai_chance = {
+			base = 20
+		}
+		JAP = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = large_decrease
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = KOR_guizi_jujue_heping_flag
+				}
+			}
+			set_global_flag = KOR_guizi_jujue_heping_flag
+		}
+	}
+	option = {
+		name = JKO_duli_yundong_event.17.b
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 0.1
+				has_war = yes
+			}
+			modifier = {
+				factor = 0.5
+				has_political_power < 700
+			}
+		}
+		every_country = {
+			limit = {
+				has_country_flag = tongyi_zhichi_duli_flag
+			}
+			country_event = {
+				days = 1
+				id = JKO_duli_yundong_event.18
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.18
+	title = JKO_duli_yundong_event.18.t
+	desc = JKO_duli_yundong_event.18.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.18.a
+		ai_chance = {
+			base = 20
+		}
+		if = {
+			limit = {
+				has_opinion_modifier = embargo
+			}
+			remove_opinion_modifier = {
+				target = FROM
+				modifier = embargo
+			}
+		}
+		every_country = {
+			limit = {
+				has_country_flag = tongyi_zhichi_duli_flag
+			}
+			remove_opinion_modifier = {
+				target = JAP
+				modifier = embargo
+			}
+			custom_effect_tooltip = embargo_relation_tt
+		}
+		KOR = {
+			country_event = {
+				id = JKO_duli_yundong_event.15
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.19
+	title = JKO_duli_yundong_event.19.t
+	desc = JKO_duli_yundong_event.19.desc
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	fire_only_once = yes
+	trigger = {
+		tag = KOR
+		is_government_in_exile = no
+		has_completed_focus = JKO_sanqianlijiangshan_qiyi
+		has_global_flag = KOR_kaiju_zhanzheng_flag
+		has_global_flag = KOR_dongya_minzu_jiefang_flag
+		has_war = no
+	}
+	option = {
+		name = JKO_duli_yundong_event.19.a
+		annex_country = {
+			target = JKO
+			transfer_troops = no
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = JAP
+					is_subject_of = JAP
+				}
+			}
+			white_peace = KOR
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		hidden_effect = {
+			remove_ideas = KOR_guoji_guli
+			clr_global_flag = KOR_dongya_minzu_jiefang_flag
+			clr_global_flag = KOR_kaiju_zhanzheng_flag
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = KOR_zhengzhi_luxian_1
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				delete_units = {
+					division_template = "Korean Anti-Japanese Volunteer Army"
+					disband = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.22
+	title = JKO_duli_yundong_event.22.t
+	desc = JKO_duli_yundong_event.22.desc
+	picture = GFX_report_event_chinese_soldiers_mountain
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.22.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_war_with = CHI
+				factor = 3
+			}
+			modifier = {
+				has_war_support < 0.5
+				factor = 2
+			}
+			modifier = {
+				NOT = {
+					controls_province = 4052
+					controls_province = 4056
+				}
+				factor = 5
+			}
+			modifier = {
+				strength_ratio = {
+					tag = KOR
+					ratio < 0.8
+				}
+				factor = 5
+			}
+			modifier = {
+				has_civil_war = yes
+				factor = 8
+			}
+			modifier = {
+				has_war_with = USA
+				factor = 10
+			}
+		}
+		KOR = {
+			country_event = {
+				id = JKO_duli_yundong_event.15
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = JKO_duli_yundong_event.22.b
+		ai_chance = {
+			base = 5
+			modifier = {
+				strength_ratio = {
+					tag = KOR
+					ratio > 1.5
+				}
+				factor = 2
+			}
+			modifier = {
+				has_war_support > 0.8
+				factor = 2
+			}
+		}
+		KOR = {
+			country_event = {
+				id = JKO_duli_yundong_event.23
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = JKO_duli_yundong_event.22.c
+		ai_chance = {
+			base = 8
+			modifier = {
+				strength_ratio = {
+					tag = KOR
+					ratio > 1.5
+				}
+				factor = 2
+			}
+			modifier = {
+				has_war_support > 0.8
+				factor = 2
+			}
+		}
+		KOR = {
+			country_event = {
+				id = JKO_duli_yundong_event.24
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.23
+	title = JKO_duli_yundong_event.23.t
+	desc = JKO_duli_yundong_event.23.desc
+	picture = GFX_report_event_china_infiltration
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.23.a
+		ai_chance = {
+			factor = 10
+		}
+		add_political_power = 50		#添加政治点数
+		add_war_support = 0.05		#添加战争支持度
+		army_experience = 25		#陆军经验
+		add_command_power = 50		#添加指挥点数
+		add_manpower = 15000		#加人力
+		add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 1
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.24
+	title = JKO_duli_yundong_event.24.t
+	desc = JKO_duli_yundong_event.24.desc
+	picture = report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.24.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_war_support > 0.8
+				factor = 2
+			}
+			modifier = {
+				NOT = {
+					country_exists = JKO
+				}
+				factor = 3
+			}
+		}
+		add_political_power = 50		#添加政治点数
+		add_war_support = 0.05		#添加战争支持度
+		army_experience = 25		#陆军经验
+		add_command_power = 50		#添加指挥点数
+		add_manpower = 15000		#加人力
+		add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 1
+		}
+	}
+	option = {
+		name = JKO_duli_yundong_event.24.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_war_support < 0.6
+				factor = 2
+			}
+			modifier = {
+				strength_ratio = {
+					tag = JAP
+					ratio < 0.6
+				}
+				factor = 5
+			}
+		}
+		ROOT = {
+			add_timed_idea = {
+				idea = KOR_zhanzheng_peikuan
+				days = 180
+			}
+		}
+		JAP = {
+			add_timed_idea = {
+				idea = KOR_zhanzheng_peikuan_1
+				days = 180
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		annex_country = {
+			target = JKO
+			transfer_troops = no
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = JAP
+					is_subject_of = JAP
+				}
+			}
+			white_peace = KOR
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		give_resource_rights = {
+			receiver = JAP
+			state = 1028
+		}
+		hidden_effect = {
+			clr_global_flag = KOR_dongya_minzu_jiefang_flag
+			clr_global_flag = KOR_kaiju_zhanzheng_flag
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = KOR_zhengzhi_luxian_1
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				delete_units = {
+					division_template = "Korean Anti-Japanese Volunteer Army"
+					disband = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.25
+	title = JKO_duli_yundong_event.25.t
+	desc = JKO_duli_yundong_event.25.desc
+	picture = GFX_report_event_generic_army
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.25.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.26
+	title = JKO_duli_yundong_event.26.t
+	desc = JKO_duli_yundong_event.26.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_generic_bombers
+	# Great
+	option = {
+		name = JKO_duli_yundong_event.26.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.27
+	title = JKO_duli_yundong_event.27.t
+	desc = JKO_duli_yundong_event.27.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_sailors_in_working_rig
+	# Great
+	option = {
+		name = JKO_duli_yundong_event.27.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.28
+	title = JKO_duli_yundong_event.28.t
+	desc = JKO_duli_yundong_event.28.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_generic_rifles
+	# Great
+	option = {
+		name = JKO_duli_yundong_event.28.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.29
+	title = JKO_duli_yundong_event.29.t
+	desc = JKO_duli_yundong_event.29.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_generic_rifles
+	# Great
+	option = {
+		name = JKO_duli_yundong_event.29.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.30
+	title = JKO_duli_yundong_event.30.t
+	desc = JKO_duli_yundong_event.30.desc
+	is_triggered_only = yes
+	picture = report_event_SOV_purge_aircraft_2
+	# Great
+	option = {
+		name = JKO_duli_yundong_event.30.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.31
+	title = JKO_duli_yundong_event.31.t
+	desc = JKO_duli_yundong_event.31.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_generic_lend_lease
+	# Great
+	option = {
+		name = JKO_duli_yundong_event.31.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.32
+	title = mtg_exile_government.2.title
+	desc = mtg_exile_government.2.desc
+	picture = GFX_report_event_canadian_soldiers
+	is_triggered_only = yes
+	option = {
+		name = mtg_exile_government.2.a
+		FROM = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = our_liberators
+			}
+		}
+		end_exile = FROM
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.33
+	title = JKO_duli_yundong_event.33.t
+	desc = JKO_duli_yundong_event.33.desc
+	picture = GFX_report_event_canadian_soldiers
+	is_triggered_only = yes
+	option = {
+		name = mtg_exile_government.2.a
+		random_list = {
+			40 = {
+				add_political_power = 40
+			}
+			30 = {
+				add_political_power = 50
+			}
+			20 = {
+				add_political_power = 75
+			}
+			10 = {
+				add_political_power = 100
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.34
+	title = JKO_duli_yundong_event.34.t
+	desc = JKO_duli_yundong_event.34.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_KOR_event_huiyi_4
+	option = {
+		name = JKO_duli_yundong_event.34.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = JKO_duli_yundong_event_34_tt
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.35
+	title = SEA_PRC_request_aid.1.t
+	desc = JKO_duli_yundong_event.35.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = JKO_duli_yundong_event.35.a
+		FROM = {
+			country_event = {
+				id = JKO_duli_yundong_event.36
+				hours = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.36
+	title = SEA_PRC_request_aid.2.t
+	desc = SEA_PRC_request_aid.2.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = JKO_duli_yundong_event.36.a
+		ROOT = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1500
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 750
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 100
+				producer = SOV
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.37
+	title = BBA_switzerland.15.t
+	desc = JKO_duli_yundong_event.37.desc
+	picture = GFX_report_event_SWI_soldier_gathering
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.37.a
+		custom_effect_tooltip = JKO_duli_yundong_event.37.tt
+		hidden_effect = {
+			create_operative_leader = {
+				bypass_recruitment = no
+				portrait_tag_override = JAP
+				available_to_spy_master = yes
+				nationalities = {
+					KOR
+					JAP
+				}
+			}
+		}
+		FROM = {
+			custom_effect_tooltip = JKO_duli_yundong_event.37.tt
+			hidden_effect = {
+				create_operative_leader = {
+					bypass_recruitment = no
+					portrait_tag_override = JAP
+					available_to_spy_master = yes
+					nationalities = {
+						KOR
+						JAP
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.38
+	title = JKO_duli_yundong_event.38.t
+	desc = JKO_duli_yundong_event.38.desc
+	picture = GFX_report_event_china_infiltration
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.38.a
+		hidden_effect = {
+			KOR = {
+				random_list = {
+					45 = {
+						country_event = {
+							id = JKO_duli_yundong_event.39
+							hours = 5
+						}
+					}
+					25 = {
+						country_event = {
+							id = JKO_duli_yundong_event.40
+							hours = 5
+						}
+					}
+					25 = {
+						country_event = {
+							id = JKO_duli_yundong_event.41
+							hours = 5
+						}
+					}
+					5 = {
+						country_event = {
+							id = JKO_duli_yundong_event.42
+							hours = 5
+						}
+					}
+				}
+			}
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = KOR
+				modifier = KOR_jinqi_beilue_duo
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.39
+	title = JKO_duli_yundong_event.39.t
+	desc = JKO_duli_yundong_event.39.desc
+	picture = GFX_report_event_china_infiltration
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.39.a
+		add_manpower = 100
+		army_experience = 10		#陆军经验
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+			producer = FROM
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.40
+	title = JKO_duli_yundong_event.40.t
+	desc = JKO_duli_yundong_event.40.desc
+	picture = GFX_report_event_china_infiltration
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.40.a
+		add_manpower = 200
+		army_experience = 25		#陆军经验
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 300
+			producer = FROM
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.41
+	title = JKO_duli_yundong_event.41.t
+	desc = JKO_duli_yundong_event.41.desc
+	picture = GFX_report_event_china_infiltration
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.41.a
+		add_manpower = -150
+		army_experience = -15		#陆军经验
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.42
+	title = JKO_duli_yundong_event.42.t
+	desc = JKO_duli_yundong_event.42.desc
+	picture = GFX_report_event_china_infiltration
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.42.a
+		add_manpower = 300
+		army_experience = 75		#陆军经验
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 600
+			producer = FROM
+		}
+		every_state = {
+			limit = {
+				has_state_flag = KOR_FROM_beilueduo_flag
+				OR = {
+					industrial_complex > 0
+					arms_factory > 0
+					dockyard > 0
+				}
+			}
+			if = {
+				limit = {
+					industrial_complex > 0
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+			}
+			if = {
+				limit = {
+					arms_factory > 0
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 2
+				}
+			}
+			if = {
+				limit = {
+					dockyard > 0
+				}
+				damage_building = {
+					type = dockyard
+					damage = 1.5
+				}
+			}
+			damage_units = {
+				state = THIS
+				org_damage = 0.25
+				str_damage = 0.1
+				ratio = yes
+				army = yes
+			}
+			clr_state_flag = KOR_FROM_beilueduo_flag
+		}
+	}
+}
+
+news_event = {
+	id = JKO_duli_yundong_event.43
+	title = JKO_duli_yundong_event.43.t
+	desc = JKO_duli_yundong_event.43.desc
+	picture = GFX_news_event_kailuo_huiyi_shijian
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.43.a
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				is_in_faction_with = ENG
+				is_in_faction_with = CHI
+			}
+		}
+	}
+	option = {
+		name = JKO_duli_yundong_event.43.b
+		trigger = {
+			OR = {
+				has_war_with = USA
+				has_war_with = ENG
+				has_war_with = CHI
+			}
+		}
+	}
+}
+
+news_event = {
+	id = JKO_duli_yundong_event.44
+	title = JKO_duli_yundong_event.44.t
+	desc = JKO_duli_yundong_event.44.desc
+	picture = GFX_news_event_kailuo_huiyi_shijian
+	major = no
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.44.a
+		hidden_effect = {
+			news_event = {
+				id = JKO_duli_yundong_event.45
+				days = 1
+			}
+		}
+	}
+}
+
+news_event = {
+	id = JKO_duli_yundong_event.45
+	title = JKO_duli_yundong_event.45.t
+	desc = JKO_duli_yundong_event.45.desc
+	picture = GFX_news_event_kailuo_huiyi_shijian
+	major = no
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.45.a
+		set_country_flag = KOR_jujue_tuoguan_flag
+	}
+	option = {
+		name = JKO_duli_yundong_event.45.b
+		set_country_flag = KOR_jieshou_tuoguan_flag
+	}
+	option = {
+		name = JKO_duli_yundong_event.45.c
+		trigger = {
+			OR = {
+				AND = {
+					SOV = {
+						has_opinion = {
+							target = ROOT
+							value > 79
+						}
+					}
+					USA = {
+						has_opinion = {
+							target = ROOT
+							value > 79
+						}
+					}
+					ENG = {
+						has_opinion = {
+							target = ROOT
+							value > 79
+						}
+					}
+				}
+				KOR = {
+					strength_ratio = {
+						tag = JAP
+						ratio > 0.4
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = JKO_duli_yundong_event.46
+				days = 1
+			}
+		}
+	}
+}
+
+news_event = {
+	id = JKO_duli_yundong_event.46
+	title = JKO_duli_yundong_event.46.t
+	desc = JKO_duli_yundong_event.46.desc
+	picture = GFX_news_event_kailuo_huiyi_shijian
+	major = no
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.46.a
+		hidden_effect = {
+			unlock_national_focus = KOR_fantuoguan_xingdong
+		}
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.47
+	title = JKO_duli_yundong_event.47.t
+	desc = JKO_duli_yundong_event.47.desc
+	picture = GFX_report_event_chinese_soldiers_running
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.47.a
+		add_timed_idea = {
+			idea = KOR_qiangzhan_chaoxianbandao_mission_idea
+			days = 120
+		}
+		activate_mission = KOR_qiangzhan_chaoxianbandao_mission
+		set_global_flag = KOR_fenlie_de_bandao
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.48
+	title = JKO_duli_yundong_event.48.t
+	desc = JKO_duli_yundong_event.48.desc
+	picture = GFX_report_event_chinese_soldiers_running
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.48.a
+		add_political_power = 50		#添加政治点数
+		add_stability = 0.1		#添加稳定度
+		add_war_support = 0.1		#添加战争支持度
+		army_experience = 15		#陆军经验
+		custom_effect_tooltip = generic_skip_one_line_tt
+		USA = {
+			country_event = {
+				id = JKO_duli_yundong_event.50
+				hours = 8
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = JKO_duli_yundong_event_48_tt
+		clr_global_flag = KOR_fenlie_de_bandao
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.49
+	title = JKO_duli_yundong_event.49.t
+	desc = JKO_duli_yundong_event.49.desc
+	picture = GFX_report_event_chinese_soldiers_running
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.49.a
+		add_stability = -0.05		#添加稳定度
+		add_war_support = -0.05		#添加战争支持度
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.50
+	title = JKO_duli_yundong_event.50.t
+	desc = JKO_duli_yundong_event.50.desc
+	picture = GFX_report_event_chinese_soldiers_running
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.50.a
+	}
+}
+
+country_event = {
+	id = JKO_duli_yundong_event.51
+	title = JKO_duli_yundong_event.51.t
+	desc = JKO_duli_yundong_event.51.desc
+	picture = GFX_report_event_KOR_event_communism_4
+	is_triggered_only = yes
+	option = {
+		name = JKO_duli_yundong_event.51.a
+		hidden_effect = {
+			KOR_fenlie_de_chaoxianbandao_effects = yes
+			complete_national_focus = KOR_ziyou_shi_lanse
+		}
+	}
+}

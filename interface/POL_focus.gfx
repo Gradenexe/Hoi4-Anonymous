@@ -1,0 +1,3291 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_POL_additional_research_slot2"
+		texturefile = "gfx/interface/goals/POL/POL_additional_research_slot2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_additional_research_slot2_shine"
+		texturefile = "gfx/interface/goals/POL/POL_additional_research_slot2.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_additional_research_slot2.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_additional_research_slot2.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_expansion_of_new_towns"
+		texturefile = "gfx/interface/goals/POL/POL_expansion_of_new_towns.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_expansion_of_new_towns_shine"
+		texturefile = "gfx/interface/goals/POL/POL_expansion_of_new_towns.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_expansion_of_new_towns.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_expansion_of_new_towns.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_adaptive_designs"
+		texturefile = "gfx/interface/goals/POL/POL_adaptive_designs.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_adaptive_designs_shine"
+		texturefile = "gfx/interface/goals/POL/POL_adaptive_designs.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_adaptive_designs.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_adaptive_designs.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_agrarian_reform"
+		texturefile = "gfx/interface/goals/POL/POL_agrarian_reform.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_agrarian_reform_shine"
+		texturefile = "gfx/interface/goals/POL/POL_agrarian_reform.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_agrarian_reform.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_agrarian_reform.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_additional_research_slot1"
+		texturefile = "gfx/interface/goals/POL/POL_additional_research_slot1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_additional_research_slot1_shine"
+		texturefile = "gfx/interface/goals/POL/POL_additional_research_slot1.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_additional_research_slot1.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_additional_research_slot1.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_air_base_expansion"
+		texturefile = "gfx/interface/goals/POL/POL_air_base_expansion.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_air_base_expansion_shine"
+		texturefile = "gfx/interface/goals/POL/POL_air_base_expansion.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_air_base_expansion.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_air_base_expansion.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_air_innovations"
+		texturefile = "gfx/interface/goals/POL/POL_air_innovations.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_adaptive_designs_shine"
+		texturefile = "gfx/interface/goals/POL/POL_air_innovations.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_air_innovations.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_air_innovations.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_annex_czech"
+		texturefile = "gfx/interface/goals/POL/POL_annex_czech.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_annex_czech_shine"
+		texturefile = "gfx/interface/goals/POL/POL_annex_czech.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_annex_czech.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_annex_czech.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_anti_blitz_tactics"
+		texturefile = "gfx/interface/goals/POL/POL_anti_blitz_tactics.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_anti_blitz_tactics_shine"
+		texturefile = "gfx/interface/goals/POL/POL_anti_blitz_tactics.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_anti_blitz_tactics.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_anti_blitz_tactics.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_anti_blitz_vehicles"
+		texturefile = "gfx/interface/goals/POL/POL_anti_blitz_vehicles.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_anti_blitz_vehicles_shine"
+		texturefile = "gfx/interface/goals/POL/POL_anti_blitz_vehicles.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_anti_blitz_vehicles.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_anti_blitz_vehicles.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_anti_capitalist_revolution"
+		texturefile = "gfx/interface/goals/POL/POL_anti_capitalist_revolution.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_anti_capitalist_revolution_shine"
+		texturefile = "gfx/interface/goals/POL/POL_anti_capitalist_revolution.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_anti_capitalist_revolution.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_anti_capitalist_revolution.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+		SpriteType = {
+		name = "GFX_POL_anti_tank_guns"
+		texturefile = "gfx/interface/goals/POL/POL_anti_tank_guns.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_anti_tank_guns_shine"
+		texturefile = "gfx/interface/goals/POL/POL_anti_tank_guns.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_anti_tank_guns.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_anti_tank_guns.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_arm_peasant_militia"
+		texturefile = "gfx/interface/goals/POL/POL_arm_peasant_militia.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_arm_peasant_militia_shine"
+		texturefile = "gfx/interface/goals/POL/POL_arm_peasant_militia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_arm_peasant_militia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_arm_peasant_militia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_army_modernisation"
+		texturefile = "gfx/interface/goals/POL/POL_army_modernisation.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_army_modernisation_shine"
+		texturefile = "gfx/interface/goals/POL/POL_army_modernisation.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_army_modernisation.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_army_modernisation.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_assurance_of_loyalty"
+		texturefile = "gfx/interface/goals/POL/POL_assurance_of_loyalty.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_assurance_of_loyalty_shine"
+		texturefile = "gfx/interface/goals/POL/POL_assurance_of_loyalty.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_assurance_of_loyalty.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_assurance_of_loyalty.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_attract_foreign_motors"
+		texturefile = "gfx/interface/goals/POL/POL_attract_foreign_motors.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_attract_foreign_motors_shine"
+		texturefile = "gfx/interface/goals/POL/POL_attract_foreign_motors.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_attract_foreign_motors.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_attract_foreign_motors.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_baltic_alliance_focus"
+		texturefile = "gfx/interface/goals/POL/POL_baltic_alliance_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_baltic_alliance_focus_shine"
+		texturefile = "gfx/interface/goals/POL/POL_baltic_alliance_focus.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_baltic_alliance_focus.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_baltic_alliance_focus.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_baltic_navy"
+		texturefile = "gfx/interface/goals/POL/POL_baltic_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_baltic_navy_shine"
+		texturefile = "gfx/interface/goals/POL/POL_baltic_navy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_baltic_navy.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_baltic_navy.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_baltic_security"
+		texturefile = "gfx/interface/goals/POL/POL_baltic_security.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_baltic_security_shine"
+		texturefile = "gfx/interface/goals/POL/POL_baltic_security.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_baltic_security.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_baltic_security.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_baltic_socialism"
+		texturefile = "gfx/interface/goals/POL/POL_baltic_socialism.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_baltic_socialism_shine"
+		texturefile = "gfx/interface/goals/POL/POL_baltic_socialism.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_baltic_socialism.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_baltic_socialism.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_baltic_ultimatums"
+		texturefile = "gfx/interface/goals/POL/POL_baltic_ultimatums.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_baltic_ultimatums_shine"
+		texturefile = "gfx/interface/goals/POL/POL_baltic_ultimatums.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_baltic_ultimatums.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_baltic_ultimatums.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_central_defence_of_poland"
+		texturefile = "gfx/interface/goals/POL/POL_central_defence_of_poland.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_central_defence_of_poland_shine"
+		texturefile = "gfx/interface/goals/POL/POL_central_defence_of_poland.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_central_defence_of_poland.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_central_defence_of_poland.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+		SpriteType = {
+		name = "GFX_POL_central_region_strategy"
+		texturefile = "gfx/interface/goals/POL/POL_central_region_strategy.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_central_region_strategy_shine"
+		texturefile = "gfx/interface/goals/POL/POL_central_region_strategy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_central_region_strategy.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_central_region_strategy.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_claim_prussia"
+		texturefile = "gfx/interface/goals/POL/POL_claim_prussia.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_claim_prussia_shine"
+		texturefile = "gfx/interface/goals/POL/POL_claim_prussia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_claim_prussia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_claim_prussia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_coerce_czechoslovakia"
+		texturefile = "gfx/interface/goals/POL/POL_coerce_czechoslovakia.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_coerce_czechoslovakia_shine"
+		texturefile = "gfx/interface/goals/POL/POL_coerce_czechoslovakia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_coerce_czechoslovakia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_coerce_czechoslovakia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_com_independence"
+		texturefile = "gfx/interface/goals/POL/POL_com_independence.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_com_independence_shine"
+		texturefile = "gfx/interface/goals/POL/POL_com_independence.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_com_independence.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_com_independence.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_declare_independence"
+		texturefile = "gfx/interface/goals/POL/POL_declare_independence.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_declare_independence_shine"
+		texturefile = "gfx/interface/goals/POL/POL_declare_independence.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_declare_independence.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_declare_independence.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_demand_LIT"
+		texturefile = "gfx/interface/goals/POL/POL_demand_LIT.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_demand_LIT_shine"
+		texturefile = "gfx/interface/goals/POL/POL_demand_LIT.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_demand_LIT.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_demand_LIT.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_demand_LIT_pavel"
+		texturefile = "gfx/interface/goals/POL/POL_demand_LIT_pavel.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_demand_LIT_pavel_shine"
+		texturefile = "gfx/interface/goals/POL/POL_demand_LIT_pavel.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_demand_LIT_pavel.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_demand_LIT_pavel.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_demand_slovakia"
+		texturefile = "gfx/interface/goals/POL/POL_demand_slovakia.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_demand_slovakia_shine"
+		texturefile = "gfx/interface/goals/POL/POL_demand_slovakia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_demand_slovakia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_demand_slovakia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_demand_slovakia_pavel"
+		texturefile = "gfx/interface/goals/POL/POL_demand_slovakia_pavel.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_demand_slovakia_pavel_shine"
+		texturefile = "gfx/interface/goals/POL/POL_demand_slovakia_pavel.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_demand_slovakia_pavel.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_demand_slovakia_pavel.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_demand_yugoslav_subjugation"
+		texturefile = "gfx/interface/goals/POL/POL_demand_yugoslav_subjugation.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_demand_yugoslav_subjugation_shine"
+		texturefile = "gfx/interface/goals/POL/POL_demand_yugoslav_subjugation.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_demand_yugoslav_subjugation.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_demand_yugoslav_subjugation.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_divide_lit"
+		texturefile = "gfx/interface/goals/POL/POL_divide_lit.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_divide_lit_shine"
+		texturefile = "gfx/interface/goals/POL/POL_divide_lit.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_divide_lit.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_divide_lit.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+		SpriteType = {
+		name = "GFX_POL_ease_sanationist_tensions"
+		texturefile = "gfx/interface/goals/POL/POL_ease_sanationist_tensions.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_ease_sanationist_tensions_shine"
+		texturefile = "gfx/interface/goals/POL/POL_ease_sanationist_tensions.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_ease_sanationist_tensions.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_ease_sanationist_tensions.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_elect_a_PSL_leader"
+		texturefile = "gfx/interface/goals/POL/POL_elect_a_PSL_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_elect_a_PSL_leader_shine"
+		texturefile = "gfx/interface/goals/POL/POL_elect_a_PSL_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_elect_a_PSL_leader.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_elect_a_PSL_leader.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_expand_central_industrial_region"
+		texturefile = "gfx/interface/goals/POL/POL_expand_central_industrial_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_expand_central_industrial_region_shine"
+		texturefile = "gfx/interface/goals/POL/POL_expand_central_industrial_region.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_expand_central_industrial_region.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_expand_central_industrial_region.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_expand_northern_rail"
+		texturefile = "gfx/interface/goals/POL/POL_expand_northern_rail.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_expand_northern_rail_shine"
+		texturefile = "gfx/interface/goals/POL/POL_expand_northern_rail.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_expand_northern_rail.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_expand_northern_rail.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_expansion_of_new_towns"
+		texturefile = "gfx/interface/goals/POL/POL_expansion_of_new_towns.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_expansion_of_new_towns"
+		texturefile = "gfx/interface/goals/POL/POL_expansion_of_new_towns.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_expansion_of_new_towns.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_expansion_of_new_towns.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_falangist_international"
+		texturefile = "gfx/interface/goals/POL/POL_falangist_international.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_falangist_international_shine"
+		texturefile = "gfx/interface/goals/POL/POL_falangist_international.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_falangist_international.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_falangist_international.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_institute_royal_guards"
+		texturefile = "gfx/interface/goals/POL/POL_institute_royal_guards.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_institute_royal_guards_shine"
+		texturefile = "gfx/interface/goals/POL/POL_institute_royal_guards.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_institute_royal_guards.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_institute_royal_guards.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_invest_in_eastern_poland"
+		texturefile = "gfx/interface/goals/POL/POL_invest_in_eastern_poland.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_invest_in_eastern_poland_shine"
+		texturefile = "gfx/interface/goals/POL/POL_invest_in_eastern_poland.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invest_in_eastern_poland.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invest_in_eastern_poland.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_invite_denmark"
+		texturefile = "gfx/interface/goals/POL/POL_invite_denmark.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_invite_denmark_shine"
+		texturefile = "gfx/interface/goals/POL/POL_invite_denmark.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invite_denmark.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invite_denmark.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_invite_exiled_nobility"
+		texturefile = "gfx/interface/goals/POL/POL_invite_exiled_nobility.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_invite_exiled_nobility_shine"
+		texturefile = "gfx/interface/goals/POL/POL_invite_exiled_nobility.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invite_exiled_nobility.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invite_exiled_nobility.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_invite_norway"
+		texturefile = "gfx/interface/goals/POL/POL_invite_norway.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_invite_norway_shine"
+		texturefile = "gfx/interface/goals/POL/POL_invite_norway.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invite_norway.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invite_norway.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+		SpriteType = {
+		name = "GFX_POL_invite_sweden"
+		texturefile = "gfx/interface/goals/POL/POL_invite_sweden.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_invite_sweden_shine"
+		texturefile = "gfx/interface/goals/POL/POL_invite_sweden.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invite_sweden.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invite_sweden.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_invite_the_baltics"
+		texturefile = "gfx/interface/goals/POL/POL_invite_the_baltics.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_invite_the_baltics_shine"
+		texturefile = "gfx/interface/goals/POL/POL_invite_the_baltics.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invite_the_baltics.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invite_the_baltics.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_invite_the_lowlands"
+		texturefile = "gfx/interface/goals/POL/POL_invite_the_lowlands.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_invite_the_lowlands_shine"
+		texturefile = "gfx/interface/goals/POL/POL_invite_the_lowlands.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invite_the_lowlands.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_invite_the_lowlands.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_join_CZE_industry"
+		texturefile = "gfx/interface/goals/POL/POL_join_CZE_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_join_CZE_industry_shine"
+		texturefile = "gfx/interface/goals/POL/POL_join_CZE_industry.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_join_CZE_industry.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_join_CZE_industry.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_join_CZE_military"
+		texturefile = "gfx/interface/goals/POL/POL_join_CZE_military.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_join_CZE_military_shine"
+		texturefile = "gfx/interface/goals/POL/POL_join_CZE_military.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_join_CZE_military.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_join_CZE_military.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_king_of_bohemia"
+		texturefile = "gfx/interface/goals/POL/POL_king_of_bohemia.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_king_of_bohemia_shine"
+		texturefile = "gfx/interface/goals/POL/POL_king_of_bohemia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_king_of_bohemia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_king_of_bohemia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_kings_guard"
+		texturefile = "gfx/interface/goals/POL/POL_kings_guard.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_kings_guard_shine"
+		texturefile = "gfx/interface/goals/POL/POL_kings_guard.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_kings_guard.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_kings_guard.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_KPP_focus"
+		texturefile = "gfx/interface/goals/POL/POL_KPP_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_KPP_focus_shine"
+		texturefile = "gfx/interface/goals/POL/POL_KPP_focus.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_KPP_focus.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_KPP_focus.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_lithuanian_annexation"
+		texturefile = "gfx/interface/goals/POL/POL_lithuanian_annexation.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_lithuanian_annexation_shine"
+		texturefile = "gfx/interface/goals/POL/POL_lithuanian_annexation.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_lithuanian_annexation.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_lithuanian_annexation.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_lithuanian_ultimatum"
+		texturefile = "gfx/interface/goals/POL/POL_lithuanian_ultimatum.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_lithuanian_ultimatum_shine"
+		texturefile = "gfx/interface/goals/POL/POL_lithuanian_ultimatum.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_lithuanian_ultimatum.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_lithuanian_ultimatum.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_local_eastern_plans"
+		texturefile = "gfx/interface/goals/POL/POL_local_eastern_plans.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_local_eastern_plans_shine"
+		texturefile = "gfx/interface/goals/POL/POL_local_eastern_plans.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_local_eastern_plans.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_local_eastern_plans.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+		SpriteType = {
+		name = "GFX_POL_local_western_plans"
+		texturefile = "gfx/interface/goals/POL/POL_local_western_plans.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_local_western_plans_shine"
+		texturefile = "gfx/interface/goals/POL/POL_local_western_plans.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_local_western_plans.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_local_western_plans.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_modernising_the_cavalry"
+		texturefile = "gfx/interface/goals/POL/POL_modernising_the_cavalry.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_modernising_the_cavalry_shine"
+		texturefile = "gfx/interface/goals/POL/POL_modernising_the_cavalry.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_modernising_the_cavalry.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_modernising_the_cavalry.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_non_discriminatory_recruitment"
+		texturefile = "gfx/interface/goals/POL/POL_non_discriminatory_recruitment.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_non_discriminatory_recruitment_shine"
+		texturefile = "gfx/interface/goals/POL/POL_non_discriminatory_recruitment.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_non_discriminatory_recruitment.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_non_discriminatory_recruitment.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_organize_the_peasants_strike"
+		texturefile = "gfx/interface/goals/POL/POL_organize_the_peasants_strike.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_organize_the_peasants_strike_shine"
+		texturefile = "gfx/interface/goals/POL/POL_organize_the_peasants_strike.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_organize_the_peasants_strike.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_organize_the_peasants_strike.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_polish_peoples_republic"
+		texturefile = "gfx/interface/goals/POL/POL_polish_peoples_republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_polish_peoples_republic_shine"
+		texturefile = "gfx/interface/goals/POL/POL_polish_peoples_republic.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_polish_peoples_republic.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_polish_peoples_republic.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_preserve_baltic_independence"
+		texturefile = "gfx/interface/goals/POL/POL_preserve_baltic_independence.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_preserve_baltic_independence_shine"
+		texturefile = "gfx/interface/goals/POL/POL_preserve_baltic_independence.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_preserve_baltic_independence.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_preserve_baltic_independence.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_pressure_for_the_west"
+		texturefile = "gfx/interface/goals/POL/POL_pressure_for_the_west.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_pressure_for_the_west_shine"
+		texturefile = "gfx/interface/goals/POL/POL_pressure_for_the_west.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_pressure_for_the_west.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_pressure_for_the_west.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_protect_czechozlovakia"
+		texturefile = "gfx/interface/goals/POL/POL_protect_czechozlovakia.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_protect_czechozlovakia_shine"
+		texturefile = "gfx/interface/goals/POL/POL_protect_czechozlovakia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_protect_czechozlovakia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_protect_czechozlovakia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_purchase_madagascar"
+		texturefile = "gfx/interface/goals/POL/POL_purchase_madagascar.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_purchase_madagascar_shine"
+		texturefile = "gfx/interface/goals/POL/POL_purchase_madagascar.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_purchase_madagascar.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_purchase_madagascar.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_reassemble_the_sejm"
+		texturefile = "gfx/interface/goals/POL/POL_reassemble_the_sejm.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_reassemble_the_sejm_shine"
+		texturefile = "gfx/interface/goals/POL/POL_reassemble_the_sejm.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_reassemble_the_sejm.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_reassemble_the_sejm.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_reclaim_west_slavia"
+		texturefile = "gfx/interface/goals/POL/POL_reclaim_west_slavia.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_reclaim_west_slavia_shine"
+		texturefile = "gfx/interface/goals/POL/POL_reclaim_west_slavia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_reclaim_west_slavia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_reclaim_west_slavia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+		SpriteType = {
+		name = "GFX_POL_restoration_of_the_royal_sejm"
+		texturefile = "gfx/interface/goals/POL/POL_restoration_of_the_royal_sejm.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_restoration_of_the_royal_sejm_shine"
+		texturefile = "gfx/interface/goals/POL/POL_restoration_of_the_royal_sejm.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_restoration_of_the_royal_sejm.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_restoration_of_the_royal_sejm.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_restore_the_diet_of_galicia"
+		texturefile = "gfx/interface/goals/POL/POL_restore_the_diet_of_galicia.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_restore_the_diet_of_galicia_shine"
+		texturefile = "gfx/interface/goals/POL/POL_restore_the_diet_of_galicia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_restore_the_diet_of_galicia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_restore_the_diet_of_galicia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_romanov"
+		texturefile = "gfx/interface/goals/POL/POL_romanov.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_romanov_shine"
+		texturefile = "gfx/interface/goals/POL/POL_romanov.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_romanov.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_romanov.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_royal_hussars"
+		texturefile = "gfx/interface/goals/POL/POL_royal_hussars.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_royal_hussars_shine"
+		texturefile = "gfx/interface/goals/POL/POL_royal_hussars.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_royal_hussars.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_royal_hussars.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_sabotage_polish_industry"
+		texturefile = "gfx/interface/goals/POL/POL_sabotage_polish_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_sabotage_polish_industry_shine"
+		texturefile = "gfx/interface/goals/POL/POL_sabotage_polish_industry.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_sabotage_polish_industry.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_sabotage_polish_industry.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_soviet_industry"
+		texturefile = "gfx/interface/goals/POL/POL_soviet_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_soviet_industry_shine"
+		texturefile = "gfx/interface/goals/POL/POL_soviet_industry.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_soviet_industry.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_soviet_industry.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_soviet_military_staff"
+		texturefile = "gfx/interface/goals/POL/POL_soviet_military_staff.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_soviet_military_staff"
+		texturefile = "gfx/interface/goals/POL/POL_soviet_military_staff.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_soviet_military_staff.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_soviet_military_staff.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_study_foreign_tanks"
+		texturefile = "gfx/interface/goals/POL/POL_study_foreign_tanks.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_study_foreign_tanks_shine"
+		texturefile = "gfx/interface/goals/POL/POL_study_foreign_tanks.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_study_foreign_tanks.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_study_foreign_tanks.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_sudeten_mountaineers"
+		texturefile = "gfx/interface/goals/POL/POL_sudeten_mountaineers.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_sudeten_mountaineers_shine"
+		texturefile = "gfx/interface/goals/POL/POL_sudeten_mountaineers.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_sudeten_mountaineers.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_sudeten_mountaineers.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_POL_surrender_the_east"
+		texturefile = "gfx/interface/goals/POL/POL_surrender_the_east.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_surrender_the_east_shine"
+		texturefile = "gfx/interface/goals/POL/POL_surrender_the_east.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_surrender_the_east.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_surrender_the_east.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_POL_treaty_with_lithuania"
+		texturefile = "gfx/interface/goals/POL/POL_treaty_with_lithuania.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_treaty_with_lithuania_shine"
+		texturefile = "gfx/interface/goals/POL/POL_treaty_with_lithuania.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_treaty_with_lithuania.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_treaty_with_lithuania.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+		SpriteType = {
+		name = "GFX_POL_unite_west_slavia"
+		texturefile = "gfx/interface/goals/POL/POL_unite_west_slavia.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_unite_west_slavia_shine"
+		texturefile = "gfx/interface/goals/POL/POL_unite_west_slavia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_unite_west_slavia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_unite_west_slavia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_join_allies"
+		texturefile = "gfx/interface/goals/POL/POL_join_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_join_allies_shine"
+		texturefile = "gfx/interface/goals/POL/POL_join_allies.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_join_allies.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_join_allies.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_woo_morges_staff"
+		texturefile = "gfx/interface/goals/POL/POL_woo_morges_staff.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_woo_morges_staff_shine"
+		texturefile = "gfx/interface/goals/POL/POL_woo_morges_staff.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_woo_morges_staff.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_woo_morges_staff.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_raise_the_black_madonna"
+		texturefile = "gfx/interface/goals/POL/POL_raise_the_black_madonna.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_raise_the_black_madonna_shine"
+		texturefile = "gfx/interface/goals/POL/POL_raise_the_black_madonna.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_raise_the_black_madonna.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_raise_the_black_madonna.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_state_national_council"
+		texturefile = "gfx/interface/goals/POL/POL_state_national_council.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_state_national_council_shine"
+		texturefile = "gfx/interface/goals/POL/POL_state_national_council.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_state_national_council.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_state_national_council.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_a_leftist_sejm"
+		texturefile = "gfx/interface/goals/POL/POL_a_leftist_sejm.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_a_leftist_sejm_shine"
+		texturefile = "gfx/interface/goals/POL/POL_a_leftist_sejm.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_a_leftist_sejm.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_a_leftist_sejm.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_communal_governance"
+		texturefile = "gfx/interface/goals/POL/POL_communal_governance.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_POL_communal_governance_shine"
+		texturefile = "gfx/interface/goals/POL/POL_communal_governance.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_communal_governance.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_communal_governance.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_polish_path_to_socialism"
+		texturefile = "gfx/interface/goals/POL/POL_polish_path_to_socialism.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_polish_path_to_socialism_shine"
+		texturefile = "gfx/interface/goals/POL/POL_polish_path_to_socialism.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_polish_path_to_socialism.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_polish_path_to_socialism.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_press_the_habsburg_claim"
+		texturefile = "gfx/interface/goals/POL/POL_press_the_habsburg_claim.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_press_the_habsburg_claim_shine"
+		texturefile = "gfx/interface/goals/POL/POL_press_the_habsburg_claim.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_press_the_habsburg_claim.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_press_the_habsburg_claim.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_ROM_join_allies"
+		texturefile = "gfx/interface/goals/POL/POL_ROM_join_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_ROM_join_allies_shine"
+		texturefile = "gfx/interface/goals/POL/POL_ROM_join_allies.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_ROM_join_allies.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_ROM_join_allies.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_restore_bermontians"
+		texturefile = "gfx/interface/goals/POL/POL_restore_bermontians.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_restore_bermontians_shine"
+		texturefile = "gfx/interface/goals/POL/POL_restore_bermontians.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_restore_bermontians.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_restore_bermontians.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_demand_pomerania"
+		texturefile = "gfx/interface/goals/POL/POL_demand_pomerania.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_demand_pomerania_shine"
+		texturefile = "gfx/interface/goals/POL/POL_demand_pomerania.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_demand_pomerania.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_demand_pomerania.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_integrate_the_endecja"
+		texturefile = "gfx/interface/goals/POL/POL_integrate_the_endecja.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_integrate_the_endecja_shine"
+		texturefile = "gfx/interface/goals/POL/POL_integrate_the_endecja.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_integrate_the_endecja.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_integrate_the_endecja.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_sideline_the_sanacja"
+		texturefile = "gfx/interface/goals/POL/POL_sideline_the_sanacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_sideline_the_sanacja_shine"
+		texturefile = "gfx/interface/goals/POL/POL_sideline_the_sanacja.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_sideline_the_sanacja.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_sideline_the_sanacja.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_integrate_greater_kashubia"
+		texturefile = "gfx/interface/goals/POL/POL_integrate_greater_kashubia.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_integrate_greater_kashubia_shine"
+		texturefile = "gfx/interface/goals/POL/POL_integrate_greater_kashubia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_integrate_greater_kashubia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_integrate_greater_kashubia.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_prepare_german_line"
+		texturefile = "gfx/interface/goals/POL/POL_prepare_german_line.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_prepare_german_line_shine"
+		texturefile = "gfx/interface/goals/POL/POL_prepare_german_line.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_prepare_german_line.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_prepare_german_line.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+			SpriteType = {
+		name = "GFX_POL_second_man_of_the_state"
+		texturefile = "gfx/interface/goals/POL/POL_second_man_of_the_state.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_second_man_of_the_state_shine"
+		texturefile = "gfx/interface/goals/POL/POL_second_man_of_the_state.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_second_man_of_the_state.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/POL/POL_second_man_of_the_state.dds"
+			animationtexturefile = "gfx/interface/goals/POL/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}

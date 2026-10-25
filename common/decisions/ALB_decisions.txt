@@ -1,0 +1,3064 @@
+debug_decisions = {
+	ALB_update_national_unity_debug = {
+
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			ALB_update_national_unity = yes
+        }
+	}
+}
+
+ALB_national_unity_decisions = {
+
+	ALB_strengthen_administration_decision = {
+
+		allowed = {
+			original_tag = ALB
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ALB_government_authority_less_than_100_TT
+				check_variable = {
+					ALB_government_authority_var < 100
+				}
+			}
+		}
+		
+		icon = GFX_decision_generic_political_discourse
+		fire_only_once = no
+		
+		cost = 75
+		days_remove = 60
+		
+		remove_effect = {
+			set_temp_variable = { temp_var = 10 }
+			add_to_variable = {
+				var = ALB_government_authority_var
+				value = temp_var
+				tooltip = ALB_GOVERNMENT_AUTHORITY_TT
+			}
+			ALB_update_national_unity = yes
+        }
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				check_variable = {
+					var = ALB_government_authority_var
+					value = 50
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0.5
+				check_variable = {
+					var = ALB_government_authority_var
+					value = 75
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1938.1.1
+			}
+		}
+	}
+	
+	ALB_encourage_secular_education_decision = {
+
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ALB_westernization_less_than_100_TT
+				check_variable = {
+					ALB_westernization_var < 100
+				}
+			}
+		}
+		
+		visible = {
+			has_completed_focus = ALB_assess_internal_affairs
+		}
+		
+		icon = GFX_decision_generic_political_discourse
+		fire_only_once = no
+		
+		cost = 75
+		days_remove = 60
+		
+		remove_effect = {
+			set_temp_variable = { temp_var = 10 }
+			add_to_variable = {
+				var = ALB_westernization_var
+				value = temp_var
+				tooltip = ALB_WESTERNIZATION_TT
+			}
+			set_temp_variable = { temp_var = -2.5 }
+			add_to_variable = {
+				var = ALB_religious_unity_var
+				value = temp_var
+				tooltip = ALB_RELIGIOUS_UNITY_TT
+			}
+			ALB_update_national_unity = yes
+        }
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				check_variable = {
+					var = ALB_westernization_var
+					value = 50
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0.5
+				check_variable = {
+					var = ALB_westernization_var
+					value = 75
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1938.1.1
+			}
+			modifier = {
+				factor = 0.5
+				has_idea = ALB_westernization_idea
+			}
+		}
+	}
+	
+	ALB_placate_religious_groups_decision = {
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ALB_religious_unity_less_than_100_TT
+				check_variable = {
+					ALB_religious_unity_var < 100
+				}
+			}
+		}
+		
+		visible = {
+			has_completed_focus = ALB_assess_internal_affairs
+		}
+		
+		icon = GFX_decision_generic_political_discourse
+		fire_only_once = no
+		
+		cost = 75
+		days_remove = 60
+		
+		remove_effect = {
+			set_temp_variable = { temp_var = 10 }
+			add_to_variable = {
+				var = ALB_religious_unity_var
+				value = temp_var
+				tooltip = ALB_RELIGIOUS_UNITY_TT
+			}
+			set_temp_variable = { temp_var = -2.5 }
+			add_to_variable = {
+				var = ALB_westernization_var
+				value = temp_var
+				tooltip = ALB_WESTERNIZATION_TT
+			}
+			ALB_update_national_unity = yes
+        }
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				check_variable = {
+					var = ALB_religious_unity_var
+					value = 50
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0.5
+				check_variable = {
+					var = ALB_religious_unity_var
+					value = 75
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1938.1.1
+			}
+			modifier = {
+				factor = 0.5
+				has_idea = ALB_placate_minorities_idea
+			}
+		}
+	}
+	
+	ALB_thwart_italian_influence_decision = {
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ALB_italian_influence_greater_than_0_TT
+				check_variable = {
+					ALB_italian_influence_var > 0
+				}
+			}
+		}
+		
+		visible = {
+			NOT = { has_completed_focus = ALB_rewards_of_loyalty }
+		}
+		
+		icon = GFX_decision_generic_political_discourse
+		fire_only_once = no
+		
+		cost = 75
+		days_remove = 60
+		
+		remove_effect = {
+			set_temp_variable = { temp_var = -10 }
+			add_to_variable = {
+				var = ALB_italian_influence_var
+				value = temp_var
+				tooltip = ALB_ITALIAN_INFLUENCE_TT
+			}
+			ALB_update_national_unity = yes
+        }
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				check_variable = {
+					var = ALB_italian_influence_var
+					value = 50
+					compare = less_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0.5
+				check_variable = {
+					var = ALB_italian_influence_var
+					value = 25
+					compare = less_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					date < 1938.1.1
+					NOT = { has_completed_focus = ALB_balkan_deterrence }
+				}
+			}
+		}
+	}
+
+	ALB_seek_international_recognition_decision = {
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ALB_seek_international_recognition_decision_TT
+				check_variable = {
+					ALB_westernization_var < 50
+				}
+			}
+		}
+		
+		visible = {
+			has_completed_focus = ALB_seek_recognition
+		}
+		
+		icon = GFX_decision_generic_political_discourse
+		fire_only_once = no
+		
+		cost = 30
+		days_remove = 30
+		
+		remove_effect = {
+			set_temp_variable = { temp_var = 5 }
+			add_to_variable = {
+				var = ALB_westernization_var
+				value = temp_var
+				tooltip = ALB_WESTERNIZATION_TT
+			}
+			ALB_update_national_unity = yes
+        }
+
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	
+	ALB_import_foreign_media_decision = {
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			has_tech = radio
+		}
+		
+		visible = {
+			has_completed_focus = ALB_seek_recognition
+		}
+		
+		icon = GFX_decision_generic_political_discourse
+		fire_only_once = yes
+		
+		cost = 30
+		days_remove = 30
+		
+		remove_effect = {
+			set_temp_variable = { temp_var = 10 }
+			add_to_variable = {
+				var = ALB_westernization_var
+				value = temp_var
+				tooltip = ALB_WESTERNIZATION_TT
+			}
+			ALB_update_national_unity = yes
+        }
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 0.5
+				check_variable = {
+					var = ALB_westernization_var
+					value = 50
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = ALB_westernization_var
+					value = 90
+					compare = greater_than
+				}
+			}
+		}
+	}
+	
+	ALB_send_diplomats_to_ENG_decision = {
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			has_completed_focus = ALB_foreign_focus
+			ENG = { 
+				is_subject = no
+				has_opinion = {
+					target = ALB
+					value > 29
+				}
+			}
+		}
+		
+		visible = {
+			ENG = { 
+				exists = yes
+				has_capitulated = no
+			}
+			has_completed_focus = ALB_seek_recognition
+		}
+		
+		icon = GFX_decision_generic_political_discourse
+		fire_only_once = yes
+		
+		cost = 30
+		days_remove = 30
+		
+		remove_effect = {
+			set_temp_variable = { temp_var = 5 }
+			add_to_variable = {
+				var = ALB_westernization_var
+				value = temp_var
+				tooltip = ALB_WESTERNIZATION_TT
+			}
+			set_temp_variable = { temp_var = -5 }
+			add_to_variable = {
+				var = ALB_italian_influence_var
+				value = temp_var
+				tooltip = ALB_ITALIAN_INFLUENCE_TT
+			}
+			ALB_update_national_unity = yes
+        }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_send_diplomats_to_FRA_decision = {
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			has_completed_focus = ALB_foreign_focus
+			FRA = { 
+				is_subject = no
+				has_opinion = {
+					target = ALB
+					value > 29
+				}
+			}
+		}
+		
+		visible = {
+			FRA = { 
+				exists = yes
+				has_capitulated = no
+			}
+			has_completed_focus = ALB_seek_recognition
+		}
+		
+		icon = GFX_decision_generic_political_discourse
+		fire_only_once = yes
+		
+		cost = 30
+		days_remove = 30
+		
+		remove_effect = {
+			set_temp_variable = { temp_var = 5 }
+			add_to_variable = {
+				var = ALB_westernization_var
+				value = temp_var
+				tooltip = ALB_WESTERNIZATION_TT
+			}
+			set_temp_variable = { temp_var = -5 }
+			add_to_variable = {
+				var = ALB_italian_influence_var
+				value = temp_var
+				tooltip = ALB_ITALIAN_INFLUENCE_TT
+			}
+			ALB_update_national_unity = yes
+        }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_send_diplomats_to_USA_decision = {
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			has_completed_focus = ALB_foreign_focus
+			USA = { 
+				is_subject = no
+				has_opinion = {
+					target = ALB
+					value > 29
+				}
+			}
+		}
+		
+		visible = {
+			USA = { 
+				exists = yes
+				has_capitulated = no
+			}
+			has_completed_focus = ALB_seek_recognition
+		}
+		
+		icon = GFX_decision_generic_political_discourse
+		fire_only_once = yes
+		
+		cost = 30
+		days_remove = 30
+		
+		remove_effect = {
+			set_temp_variable = { temp_var = 5 }
+			add_to_variable = {
+				var = ALB_westernization_var
+				value = temp_var
+				tooltip = ALB_WESTERNIZATION_TT
+			}
+			set_temp_variable = { temp_var = -5 }
+			add_to_variable = {
+				var = ALB_italian_influence_var
+				value = temp_var
+				tooltip = ALB_ITALIAN_INFLUENCE_TT
+			}
+			ALB_update_national_unity = yes
+        }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_send_diplomats_to_SOV_decision = {
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			has_completed_focus = ALB_foreign_focus
+			SOV = { 
+				is_subject = no
+				has_opinion = {
+					target = ALB
+					value > 29
+				}
+			}
+		}
+		
+		visible = {
+			SOV = { 
+				exists = yes
+				has_capitulated = no
+			}
+			has_completed_focus = ALB_seek_recognition
+		}
+		
+		icon = GFX_decision_generic_political_discourse
+		fire_only_once = yes
+		
+		cost = 30
+		days_remove = 30
+		
+		remove_effect = {
+			set_temp_variable = { temp_var = 5 }
+			add_to_variable = {
+				var = ALB_westernization_var
+				value = temp_var
+				tooltip = ALB_WESTERNIZATION_TT
+			}
+			set_temp_variable = { temp_var = -5 }
+			add_to_variable = {
+				var = ALB_italian_influence_var
+				value = temp_var
+				tooltip = ALB_ITALIAN_INFLUENCE_TT
+			}
+			ALB_update_national_unity = yes
+        }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_utilize_yugoslavian_ties_decision = {
+
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			has_completed_focus = ALB_yug_ties
+		}
+		
+		visible = {
+			has_completed_focus = ALB_seek_recognition
+		}
+		
+		icon = GFX_decision_generic_political_discourse
+		fire_only_once = yes
+		
+		cost = 30
+		days_remove = 30
+		
+		remove_effect = {
+			set_temp_variable = { temp_var = -10 }
+			add_to_variable = {
+				var = ALB_italian_influence_var
+				value = temp_var
+				tooltip = ALB_ITALIAN_INFLUENCE_TT
+			}
+			ALB_update_national_unity = yes
+        }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ALB_assassinate_zog_decision = {
+
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			has_country_leader = {
+				character = ALB_king_zog
+				ruling_only = yes
+			}
+			has_completed_focus = ALB_defy_the_monarchy
+			NOT = {
+				has_completed_focus = ALB_proletariat_revolution
+				has_completed_focus = ALB_liberalization
+			}
+		}
+		
+		icon = GFX_decision_generic_assassination
+		fire_only_once = yes
+		
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			set_temp_variable = { temp_var = -20 }
+			add_to_variable = {
+				var = ALB_government_authority_var
+				value = temp_var
+				tooltip = ALB_GOVERNMENT_AUTHORITY_TT
+			}
+			ALB_update_national_unity = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.25
+			}
+			hidden_effect = {
+				create_country_leader = {
+					name = "Shefqet Vërlaci"
+					picture = "GFX_portrait_Europe_Generic_4"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+					}
+				}
+			}
+			retire_character = ALB_king_zog
+        }
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ALB_undermine_monarchy_decision = {
+
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			neutrality > 0.0
+		}
+		
+		visible = {
+			has_completed_focus = ALB_defy_the_monarchy
+			NOT = {
+				has_completed_focus = ALB_proletariat_revolution
+				has_completed_focus = ALB_liberalization
+			}
+		}
+		
+		icon = GFX_decision_generic_political_rally
+		fire_only_once = no
+		
+		cost = 25
+		days_remove = 30
+		
+		complete_effect = {
+			set_temp_variable = { temp_var = -10 }
+			add_to_variable = {
+				var = ALB_government_authority_var
+				value = temp_var
+				tooltip = ALB_GOVERNMENT_AUTHORITY_TT
+			}
+			ALB_update_national_unity = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+		
+		remove_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.10
+			}
+        }
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ALB_pro_democratic_rallies_decision = {
+
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			neutrality > 0.0
+		}
+		
+		visible = {
+			has_completed_focus = ALB_defy_the_monarchy
+			NOT = {
+				has_completed_focus = ALB_proletariat_revolution
+				has_completed_focus = ALB_liberalization
+			}
+		}
+		
+		icon = GFX_decision_generic_political_rally
+		fire_only_once = no
+		
+		cost = 25
+		days_remove = 30
+		
+		complete_effect = {
+			set_temp_variable = { temp_var = -5 }
+			add_to_variable = {
+				var = ALB_government_authority_var
+				value = temp_var
+				tooltip = ALB_GOVERNMENT_AUTHORITY_TT
+			}
+			ALB_update_national_unity = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+		
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+        }
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ALB_socialist_rallies_decision = {
+
+		allowed = {
+			original_tag = ALB
+		}
+		
+		available = {
+			neutrality > 0.0
+		}
+		
+		visible = {
+			has_completed_focus = ALB_defy_the_monarchy
+			NOT = {
+				has_completed_focus = ALB_proletariat_revolution
+				has_completed_focus = ALB_liberalization
+			}
+		}
+		
+		icon = GFX_decision_generic_political_rally
+		fire_only_once = no
+		
+		cost = 25
+		days_remove = 30
+		
+		complete_effect = {
+			set_temp_variable = { temp_var = -5 }
+			add_to_variable = {
+				var = ALB_government_authority_var
+				value = temp_var
+				tooltip = ALB_GOVERNMENT_AUTHORITY_TT
+			}
+			ALB_update_national_unity = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+		
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+        }
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}
+
+ALB_zog_smoking_addiciton = {
+
+	ALB_time_till_stress = {
+		
+		activation = {
+			always = no
+		}
+
+		available = {
+			#has_completed_focus = ALB_local_tobacco_industry
+		}
+		
+		#cancel_trigger = {
+		#	has_completed_focus = ALB_invade_cuba
+		#}
+
+		timeout_effect = {
+			add_ideas = ALB_king_zog_stress
+		}
+		
+		is_good = no
+		icon = GFX_decision_generic_monarchy
+		days_mission_timeout = 215
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}
+
+ALB_defending_our_nation = {
+	
+	ALB_fortify_albania_1 = {
+	
+		icon = GFX_decision_generic_mountain_fortification
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			controls_state = 44
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 44
+			has_completed_focus = ALB_albanian_fortifications
+		}
+		
+		fire_only_once = yes
+		days_remove = 45
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+			}
+		}
+
+		cost = 50
+		
+		remove_effect = {
+			934 = {	
+				set_building_level  = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						level < 2
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 2
+					}
+				}
+			}
+			44 = {	
+				set_building_level  = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						level < 2
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 2
+					}
+				}
+			}
+			805 = {	
+				set_building_level  = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						level < 2
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 2
+					}
+				}
+			}
+			swap_ideas = {
+				remove_idea = ALB_fortification_focus2
+				add_idea = ALB_fortification_focus3
+			}
+			set_country_flag = {
+				flag = albania_fortified
+				value = 1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	ALB_fortify_albania_2 = {
+	
+		icon = GFX_decision_generic_mountain_fortification
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			controls_state = 44
+			has_country_flag = {
+				flag = albania_fortified
+				value = 1
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 44
+		}
+		
+		fire_only_once = yes
+		days_remove = 45
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+			}
+		}
+
+		cost = 50
+		
+		remove_effect = {
+			934 = {	
+				set_building_level  = {
+					type = bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						level < 3
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 3
+					}
+				}
+			}
+			44 = {	
+				set_building_level  = {
+					type = bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						level < 3
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 3
+					}
+				}
+			}
+			805 = {	
+				set_building_level  = {
+					type = bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						level < 3
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 3
+					}
+				}
+			}
+			swap_ideas = {
+				remove_idea = ALB_fortification_focus3
+				add_idea = ALB_fortification_focus4
+			}
+			set_country_flag = {
+				flag = albania_fortified
+				value = 2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	ALB_fortify_albania_3 = {
+	
+		icon = GFX_decision_generic_mountain_fortification
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			controls_state = 44
+			has_country_flag = {
+				flag = albania_fortified
+				value = 2
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 44
+		}
+		
+		fire_only_once = yes
+		days_remove = 45
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+			}
+		}
+
+		cost = 50
+		
+		remove_effect = {
+			934 = {	
+				set_building_level  = {
+					type = bunker
+					level = 4
+					province = {
+						all_provinces = yes
+						level < 4
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 4
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 4
+					}
+				}
+			}
+			44 = {	
+				set_building_level  = {
+					type = bunker
+					level = 4
+					province = {
+						all_provinces = yes
+						level < 4
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 4
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 4
+					}
+				}
+			}
+			805 = {	
+				set_building_level  = {
+					type = bunker
+					level = 4
+					province = {
+						all_provinces = yes
+						level < 4
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 4
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 4
+					}
+				}
+			}
+			swap_ideas = {
+				remove_idea = ALB_fortification_focus4
+				add_idea = ALB_fortification_focus5
+			}
+			set_country_flag = {
+				flag = albania_fortified
+				value = 3
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	ALB_fortify_albania_4 = {
+	
+		icon = GFX_decision_generic_mountain_fortification
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			controls_state = 44
+			has_country_flag = {
+				flag = albania_fortified
+				value = 3
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 44
+		}
+		
+		fire_only_once = yes
+		days_remove = 45
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+			}
+		}
+
+		cost = 50
+		
+		remove_effect = {
+			934 = {	
+				set_building_level  = {
+					type = bunker
+					level = 5
+					province = {
+						all_provinces = yes
+						level < 5
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 5
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 5
+					}
+				}
+			}
+			44 = {	
+				set_building_level  = {
+					type = bunker
+					level = 5
+					province = {
+						all_provinces = yes
+						level < 5
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 5
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 5
+					}
+				}
+			}
+			805 = {	
+				set_building_level  = {
+					type = bunker
+					level = 5
+					province = {
+						all_provinces = yes
+						level < 5
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 5
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 5
+					}
+				}
+			}
+			swap_ideas = {
+				remove_idea = ALB_fortification_focus5
+				add_idea = ALB_fortification_focus6
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	ALB_fortify_montenegro = {
+	
+		icon = GFX_decision_generic_mountain_fortification
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			controls_state = 105
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 105
+			has_completed_focus = ALB_albanian_fortifications
+		}
+		
+		fire_only_once = yes
+		days_remove = 45
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 105
+			}
+		}
+
+		cost = 50
+		
+		remove_effect = {
+			105 = {	
+				set_building_level  = {
+					type = bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						level < 3
+					}
+				}
+				set_building_level  = {
+					type = coastal_bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 3
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	ALB_fortify_kosovo = {
+	
+		icon = GFX_decision_generic_mountain_fortification
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			controls_state = 802
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 802
+			has_completed_focus = ALB_albanian_fortifications
+		}
+		
+		fire_only_once = yes
+		days_remove = 45
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 802
+			}
+		}
+
+		cost = 50
+		
+		remove_effect = {
+			802 = {
+				set_building_level  = {
+					type = bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						level < 3
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	ALB_fortify_debar = {
+	
+		icon = GFX_decision_generic_mountain_fortification
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			controls_state = 970
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 970
+			has_completed_focus = ALB_albanian_fortifications
+		}
+		
+		fire_only_once = yes
+		days_remove = 45
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 970
+			}
+		}
+
+		cost = 50
+		
+		remove_effect = {
+			970 = {
+				set_building_level  = {
+					type = bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						level < 3
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	ALB_fortify_epirus = {
+	
+		icon = GFX_decision_generic_mountain_fortification
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			controls_state = 185
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 185
+			has_completed_focus = ALB_albanian_fortifications
+		}
+		
+		fire_only_once = yes
+		days_remove = 45
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 185
+			}
+		}
+
+		cost = 50
+		
+		remove_effect = {
+			185 = {
+				set_building_level  = {
+					type = bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						level < 3
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	#ALB_ariel_defense = {
+	#
+	#	icon = GFX_decision_generic_army_support
+	#	
+	#	allowed = {
+	#		original_tag = ALB
+	#	}
+	#	
+	#	available = {
+	#		has_completed_focus = ALB_air_defense
+	#	}
+	#	
+	#	visible = {
+	#		has_completed_focus = ALB_exile_italian_generals
+	#	}
+	#	
+	#	fire_only_once = yes
+	#	days_remove = 35
+	#	
+	#	custom_cost_trigger = {
+	#		has_army_experience  > 24
+	#	}
+	#	custom_cost_text = decision_cost_army_XP_25
+	#	
+	#	complete_effect = {
+    #        hidden_effect = {
+    #            army_experience = -25
+    #        }
+    #    }
+	#
+	#	remove_effect = {
+	#		custom_effect_tooltip = 17_ALB_TT
+	#		set_country_flag = ariel_drills
+	#		add_to_variable = { ALB_army_cas_damage_reduction = 0.20 }
+	#	}
+	#	
+	#	ai_will_do = {
+	#		factor = 10
+	#	}
+	#}
+	
+	#ALB_mountain_drills = {
+	#
+	#	icon = GFX_decision_generic_army_support
+	#	
+	#	allowed = {
+	#		original_tag = ALB
+	#	}
+	#	
+	#	available = {
+	#		has_completed_focus = ALB_mountain_training
+	#	}
+	#	
+	#	visible = {
+	#		has_completed_focus = ALB_exile_italian_generals
+	#	}
+	#	
+	#	fire_only_once = yes
+	#	days_remove = 35
+	#	
+	#	custom_cost_trigger = {
+	#		has_army_experience  > 24
+	#	}
+	#	custom_cost_text = decision_cost_army_XP_25
+	#	
+	#	complete_effect = {
+    #        hidden_effect = {
+    #            army_experience = -25
+    #        }
+    #    }
+	#
+	#	remove_effect = {
+	#		custom_effect_tooltip = 16_ALB_TT
+	#		set_country_flag = mountain_drills
+	#		add_to_variable = { ALB_army_terrain_penalty_reduction = 0.20 }
+	#	}
+	#	
+	#	ai_will_do = {
+	#		factor = 10
+	#	}
+	#}
+	
+}
+
+ALB_integrate_states = {
+	ALB_integrate_balkans_targeted_decision = {
+	
+		icon = GFX_decision_infiltrate_state
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		state_target = yes
+		target_root_trigger = {
+			#has_completed_focus = ALB_integrate_decisions
+		}
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				NOT = { is_core_of = ALB }
+				is_claimed_by = ALB
+				OR = {
+					region = 24
+					region = 25
+					region = 26
+					region = 27
+					region = 202
+				}
+			}
+		}
+		on_map_mode = map_only
+		
+		fire_only_once = yes
+		days_remove = 25
+		
+		available = {
+			FROM = { is_controlled_by = ALB }
+		}
+
+		custom_cost_trigger = {
+			command_power > 19
+		}
+		custom_cost_text = decision_cost_CP_25
+		
+		complete_effect = {
+            hidden_effect = {
+                add_command_power = -20
+            }
+        }
+		
+		remove_effect = {
+			FROM = {
+				if = {
+					limit = {
+						is_claimed_by = ALB
+					}
+					remove_claim_by = ALB
+				}
+				add_core_of = ALB
+				if = {
+					limit = {
+						OR = {
+							state = 105
+							state = 185
+							state = 802
+							state = 970
+						}
+					}
+					set_state_owner_to = ROOT
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}
+
+economy_decisions = {
+	
+	ALB_improve_infrastructure_in_albania = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			has_completed_focus = ALB_infrastructure_focus
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 44
+			44 = { infrastructure > 2 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			44 = { 
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 }
+				set_state_flag = infrastructure1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+	
+	ALB_improve_infrastructure_in_albania2 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			44 = {
+				has_state_flag = infrastructure1
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 44
+			44 = { infrastructure > 3 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			44 = { 
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 }
+				set_state_flag = infrastructure2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_albania3 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			44 = {
+				has_state_flag = infrastructure2
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 44
+			44 = { infrastructure > 4 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			44 = {
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_3 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_shkoder = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			has_completed_focus = ALB_infrastructure_focus
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 934
+			934 = { infrastructure > 2 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 934
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			934 = {
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 }
+				set_state_flag = infrastructure1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+	
+	ALB_improve_infrastructure_in_shkoder2 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			934 = {
+				has_state_flag = infrastructure1
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 934
+			934 = { infrastructure > 3 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 934
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			934 = { 
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 }
+				set_state_flag = infrastructure2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_shkoder3 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			934 = {
+				has_state_flag = infrastructure2
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 934
+			934 = { infrastructure > 4 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 934
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			934 = {
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_3 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_montenegro = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			has_completed_focus = ALB_infrastructure_focus
+			105 = { is_core_of = ALB }
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 105
+			105 = { infrastructure > 2 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 105
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			105 = {
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 }
+				set_state_flag = infrastructure1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+	
+	ALB_improve_infrastructure_in_montenegro2 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			105 = {
+				has_state_flag = infrastructure1
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 105
+			105 = { infrastructure > 3 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 105
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			105 = { 
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 }
+				set_state_flag = infrastructure2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_montenegro3 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			105 = {
+				has_state_flag = infrastructure2
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 105
+			105 = { infrastructure > 4 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 105
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			105 = {
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_3 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_macedonia = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			has_completed_focus = ALB_infrastructure_focus
+			106 = { is_core_of = ALB }
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 106
+			106 = { infrastructure > 2 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 106
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			106 = {
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 }
+				set_state_flag = infrastructure1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+	
+	ALB_improve_infrastructure_in_macedonia2 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			106 = {
+				has_state_flag = infrastructure1
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 106
+			106 = { infrastructure > 3 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 106
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			106 = { 
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 }
+				set_state_flag = infrastructure2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_macedonia3 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			106 = {
+				has_state_flag = infrastructure2
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 106
+			106 = { infrastructure > 4 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 106
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			106 = {
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_3 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_kosovo = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			has_completed_focus = ALB_infrastructure_focus
+			802 = { is_core_of = ALB }
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 802
+			802 = { infrastructure > 2 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 802
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			802 = {
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 }
+				set_state_flag = infrastructure1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+	
+	ALB_improve_infrastructure_in_kosovo2 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			802 = {
+				has_state_flag = infrastructure1
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 802
+			802 = { infrastructure > 3 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 802
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			802 = { 
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 }
+				set_state_flag = infrastructure2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_kosovo3 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			802 = {
+				has_state_flag = infrastructure2
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 802
+			802 = { infrastructure > 4 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 802
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			802 = {
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_3 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_northern_epirus = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			has_completed_focus = ALB_infrastructure_focus
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 805
+			805 = { infrastructure > 2 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 805
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			805 = {
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 }
+				set_state_flag = infrastructure1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+	
+	ALB_improve_infrastructure_in_northern_epirus2 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			805 = {
+				has_state_flag = infrastructure1
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 805
+			805 = { infrastructure > 3 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 805
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			805 = { 
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 }
+				set_state_flag = infrastructure2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_northern_epirus3 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			805 = {
+				has_state_flag = infrastructure2
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 805
+			805 = { infrastructure > 4 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 805
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			805 = {
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_3 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_epirus = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			has_completed_focus = ALB_infrastructure_focus
+			185 = { is_core_of = ALB }
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 185
+			185 = { infrastructure > 2 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 185
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			185 = {
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 }
+				set_state_flag = infrastructure1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+	
+	ALB_improve_infrastructure_in_epirus2 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			185 = {
+				has_state_flag = infrastructure1
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 185
+			185 = { infrastructure > 3 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 185
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			185 = { 
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 }
+				set_state_flag = infrastructure2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_epirus3 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			185 = {
+				has_state_flag = infrastructure2
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 185
+			185 = { infrastructure > 4 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 185
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			185 = {
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_3 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_debar = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			has_completed_focus = ALB_infrastructure_focus
+			970 = { is_core_of = ALB }
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 970
+			970 = { infrastructure > 2 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 970
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			970 = {
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 }
+				set_state_flag = infrastructure1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+	
+	ALB_improve_infrastructure_in_debar2 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			970 = {
+				has_state_flag = infrastructure1
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 970
+			970 = { infrastructure > 3 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 970
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			970 = { 
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_1 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 }
+				set_state_flag = infrastructure2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+	ALB_improve_infrastructure_in_debar3 = {
+		
+		icon = GFX_decision_generic_construction
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			970 = {
+				has_state_flag = infrastructure2
+			}
+		}
+		
+		on_map_mode = map_and_decisions_view
+
+		available = {
+			controls_state = 970
+			970 = { infrastructure > 4 }
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 970
+			}
+		}
+
+		cost = 50
+		
+		complete_effect = {
+        }
+		
+		remove_effect = {
+			970 = {
+				hidden_effect = { remove_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_2 } }
+				add_dynamic_modifier = { modifier = ALB_infrastructure_improved_modifier_3 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+	
+}
+
+foreign_politics = {
+
+	ALB_pressure_TAG = {
+	
+		icon = GFX_decision_generic_civil_support
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		target_root_trigger = {
+			has_completed_focus = ALB_thwart_outside_influence
+		}
+		targets = { BOS BUL CRO GRE HRZ HUN KOS MAC MNT ROM SLV TRA YUG }
+		
+		visible = {
+			NOT = {
+				has_war_with = FROM
+				FROM = { is_subject_of = ROOT }
+				FROM = { has_idea = ALB_albanian_diplomatic_pressure }
+				FROM = { has_country_flag = ALB_pressured_by_us }
+			}
+		}
+		available = {
+			FROM = {
+				is_subject = no
+				is_in_faction = no
+			}
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+
+		cost = 25
+		
+		remove_effect = {
+			FROM = { country_event = albania.17 add_ideas = ALB_albanian_diplomatic_pressure set_country_flag = ALB_pressured_by_us }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ALB_mutual_guarantees_TAG = {
+	
+		icon = GFX_decision_generic_civil_support
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		target_root_trigger = {
+			has_completed_focus = ALB_thwart_outside_influence
+		}
+		targets = { BOS BUL CRO GRE HRZ HUN KOS MAC MNT ROM SLV TRA YUG }
+		
+		visible = {
+			FROM = { has_idea = ALB_albanian_diplomatic_pressure }
+			FROM = { NOT = { has_country_flag = ALB_accepted_mutual_guarentees } }
+		}
+		available = {
+			NOT = { has_war_with = FROM }
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+
+		cost = 25
+		
+		remove_effect = {
+			FROM = { country_event = albania.18 }
+			
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				add_opinion_modifier = {
+					target = FROM
+					modifier = ALB_diplomatic_ties_opinion_modifier
+				}
+				give_guarantee = FROM
+				FROM = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = ALB_diplomatic_ties_opinion_modifier
+					}
+					give_guarantee = ROOT
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ALB_invite_to_faction_TAG = {
+	
+		icon = GFX_decision_generic_civil_support
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		target_root_trigger = {
+			has_completed_focus = ALB_thwart_outside_influence
+		}
+		targets = { BOS BUL CRO GRE HRZ HUN KOS MAC MNT ROM SLV TRA YUG }
+		
+		visible = {
+			NOT = { has_war_with = FROM }
+			FROM = { is_in_faction = no }
+			FROM = { has_idea = ALB_albanian_diplomatic_pressure }
+		}
+		available = {
+			is_faction_leader = yes
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+
+		cost = 25
+		
+		remove_effect = {
+			FROM = { country_event = albania.21 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ALB_integrate_TAG = {
+	
+		icon = GFX_decision_generic_civil_support
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		target_root_trigger = {
+			has_completed_focus = ALB_thwart_outside_influence
+		}
+		targets = { BOS BUL CRO GRE HRZ HUN KOS MAC MNT ROM SLV TRA YUG }
+		
+		visible = {
+			is_in_faction_with = FROM
+		}
+		available = {
+			FROM = { is_ai = yes }
+		}
+		
+		fire_only_once = yes
+		days_remove = 35
+
+		cost = 25
+		
+		remove_effect = {
+			set_autonomy = {
+				target = FROM
+				autonomous_state = autonomy_integrated_puppet
+				end_wars = no
+				end_civil_wars = no
+			}
+			FROM = { add_ideas = ALB_albanian_guidance }
+			if = {
+				limit = {
+					FROM = {
+						owns_state = 105
+					}
+				}
+				105 = { set_state_owner_to = ROOT add_core_of = ROOT }
+			}
+			if = {
+				limit = {
+					FROM = {
+						owns_state = 185
+					}
+				}
+				185 = { set_state_owner_to = ROOT add_core_of = ROOT }
+			}
+			if = {
+				limit = {
+					FROM = {
+						owns_state = 802
+					}
+				}
+				802 = { set_state_owner_to = ROOT add_core_of = ROOT }
+			}
+			if = {
+				limit = {
+					FROM = {
+						owns_state = 970
+					}
+				}
+				970 = { set_state_owner_to = ROOT add_core_of = ROOT }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ALB_send_diplomats_to_iran = {
+		
+		icon = GFX_decision_generic_form_nation
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			has_completed_focus = ALB_sphere_of_influence
+			PER = { is_ai = yes }
+		}
+
+		available = {
+			not = { has_war_with = PER }
+			PER = { exists = yes }
+		}
+		
+		fire_only_once = yes
+		days_remove = 25
+
+		cost = 25
+		
+		complete_effect = {
+			PER = {
+				add_opinion_modifier = {
+					target = ALB
+					modifier = TUR_valued_strategic_partners
+				}
+			}
+        }
+		
+		remove_effect = {
+			if = {
+				limit = { PER = { is_subject = no } }
+				ALB = { add_to_faction = PER }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+	
+	ALB_send_diplomats_to_iraq = {
+		
+		icon = GFX_decision_generic_form_nation
+		
+		allowed = {
+			original_tag = ALB
+		}
+		
+		visible = {
+			has_completed_focus = ALB_sphere_of_influence
+			IRQ = { is_ai = yes }
+		}
+
+		available = {
+			not = { has_war_with = IRQ }
+			IRQ = { exists = yes }
+		}
+		
+		fire_only_once = yes
+		days_remove = 25
+
+		cost = 25
+		
+		complete_effect = {
+			IRQ = {
+				add_opinion_modifier = {
+					target = ALB
+					modifier = TUR_valued_strategic_partners
+				}
+			}
+        }
+		
+		remove_effect = {
+			if = {
+				limit = { IRQ = { is_subject = no } }
+				ALB = { add_to_faction = IRQ }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+	}
+
+}

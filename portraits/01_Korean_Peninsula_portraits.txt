@@ -1,0 +1,210 @@
+JKO = {
+	army = {
+		male = {
+			"GFX_Portrait_Asia_Generic_land_1"
+			"GFX_Portrait_Asia_Generic_land_2"
+			"GFX_Portrait_Asia_Generic_land_3"
+			"GFX_Portrait_Asia_Generic_land_4"
+			"GFX_Portrait_Asia_Generic_land_5"
+		}
+	}
+	navy = {
+		male = {
+			"GFX_Portrait_Asia_Generic_navy_1"
+			"GFX_Portrait_Asia_Generic_navy_2"
+			"GFX_Portrait_Asia_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+			male = {
+				"GFX_Portrait_Asia_Generic_1"
+			}
+		}
+		democratic = {
+			male = {
+				"GFX_Portrait_Asia_Generic_2"
+			}
+		}
+		fascism = {
+			male = {
+				"GFX_Portrait_Asia_Generic_3"
+			}
+		}
+		neutrality = {
+			male = {
+				"GFX_Portrait_Asia_Generic_4"
+			}
+		}
+	}
+	scientist = {
+		female = {
+			"GFX_portrait_generic_asia_female_01"
+			"GFX_portrait_generic_asia_female_02"
+			"GFX_portrait_generic_asia_female_03"
+			"GFX_portrait_generic_asia_female_04"
+			"GFX_portrait_generic_asia_female_05"
+			"GFX_portrait_generic_asia_female_06"
+			"GFX_portrait_generic_asia_female_07"
+			"GFX_portrait_generic_asia_female_08"
+		}
+		male = {
+			"KOR_generic_male_1_scientist"
+			"GFX_portrait_generic_asia_male_01"
+			"GFX_portrait_generic_asia_male_02"
+			"GFX_portrait_generic_asia_male_03"
+			"GFX_portrait_generic_asia_male_04"
+			"GFX_portrait_generic_asia_male_05"
+			"GFX_portrait_generic_asia_male_06"
+			"GFX_portrait_generic_asia_male_07"
+			"GFX_portrait_generic_asia_male_08"
+		}
+	}
+	operative = {
+		female = {
+			"GFX_portrait_KOR_generic_female_5_operative"
+			"GFX_portrait_KOR_generic_female_6_operative"
+			"GFX_portrait_KOR_generic_female_7_operative"
+			"GFX_portrait_asia_generic_operative_female_1"
+			"GFX_portrait_asia_generic_operative_female_2"
+			"GFX_portrait_asia_generic_operative_female_3"
+			"GFX_portrait_asia_generic_operative_female_4"
+			"GFX_portrait_asia_generic_operative_female_5"
+			"GFX_portrait_asia_generic_operative_female_6"
+			"GFX_portrait_asia_generic_operative_female_7"
+			"GFX_portrait_asia_generic_operative_female_8"
+			"GFX_portrait_asia_generic_operative_female_9"
+		}
+		male = {
+			"GFX_portrait_KOR_generic_male_1_operative"
+			"GFX_portrait_asia_generic_operative_male_1"
+			"GFX_portrait_asia_generic_operative_male_2"
+			"GFX_portrait_asia_generic_operative_male_3"
+			"GFX_portrait_asia_generic_operative_male_4"
+			"GFX_portrait_asia_generic_operative_male_5"
+			"GFX_portrait_asia_generic_operative_male_6"
+			"GFX_portrait_asia_generic_operative_male_7"
+			"GFX_portrait_asia_generic_operative_male_8"
+			"GFX_portrait_asia_generic_operative_male_9"
+		}
+	}
+}
+
+KOR = {
+	army = {
+		male = {
+			"GFX_portrait_KOR_generic_male_1"
+			"GFX_portrait_KOR_generic_male_2"
+			"GFX_portrait_KOR_generic_male_3"
+			"GFX_portrait_KOR_generic_male_4"
+			"GFX_portrait_KOR_generic_male_5"
+			"GFX_portrait_KOR_generic_male_6"
+			"GFX_portrait_KOR_generic_male_7"
+			"GFX_portrait_KOR_generic_male_8"
+			"GFX_portrait_KOR_generic_male_9"
+		}
+	}
+	navy = {
+		male = {
+			"GFX_portrait_KOR_generic_navy_male_1"
+			"GFX_portrait_KOR_generic_navy_male_2"
+			"GFX_portrait_KOR_generic_navy_male_3"
+			"GFX_Portrait_Asia_Generic_navy_1"
+			"GFX_Portrait_Asia_Generic_navy_2"
+			"GFX_Portrait_Asia_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+			male = {
+				"GFX_portrait_KOR_generic_male_2"
+				"GFX_portrait_KOR_generic_male_3"
+				"GFX_portrait_KOR_generic_male_4"
+				"GFX_portrait_KOR_generic_male_8"
+				"GFX_Portrait_Asia_Generic_1"
+			}
+		}
+		democratic = {
+			male = {
+				"GFX_Portrait_Asia_Generic_2"
+				"GFX_portrait_KOR_generic_male_9"
+			}
+		}
+		fascism = {
+			male = {
+				"GFX_portrait_KOR_generic_male_1"
+				"GFX_Portrait_Asia_Generic_3"
+				"GFX_portrait_KOR_generic_male_9"
+			}
+		}
+		neutrality = {
+			male = {
+				"GFX_portrait_KOR_generic_male_1"
+				"GFX_Portrait_Asia_Generic_4"
+				"GFX_portrait_KOR_generic_male_9"
+			}
+		}
+	}
+	scientist = {
+		female = {
+			"GFX_portrait_KOR_generic_female_1_scientist"
+			"GFX_portrait_KOR_generic_female_2_scientist"
+			"GFX_portrait_KOR_generic_female_3_scientist"
+			"GFX_portrait_KOR_generic_female_4_scientist"
+			"GFX_portrait_KOR_generic_female_5_scientist"
+			"GFX_portrait_generic_asia_female_01"
+			"GFX_portrait_generic_asia_female_02"
+			"GFX_portrait_generic_asia_female_03"
+			"GFX_portrait_generic_asia_female_04"
+			"GFX_portrait_generic_asia_female_05"
+			"GFX_portrait_generic_asia_female_06"
+			"GFX_portrait_generic_asia_female_07"
+			"GFX_portrait_generic_asia_female_08"
+		}
+		male = {
+			"KOR_generic_male_1_scientist"
+			"KOR_generic_male_3_scientist"
+			"GFX_portrait_generic_asia_male_01"
+			"GFX_portrait_generic_asia_male_02"
+			"GFX_portrait_generic_asia_male_03"
+			"GFX_portrait_generic_asia_male_04"
+			"GFX_portrait_generic_asia_male_05"
+			"GFX_portrait_generic_asia_male_06"
+			"GFX_portrait_generic_asia_male_07"
+			"GFX_portrait_generic_asia_male_08"
+		}
+	}
+	operative = {
+		female = {
+			"GFX_portrait_KOR_generic_female_1_operative"
+			"GFX_portrait_KOR_generic_female_2_operative"
+			"GFX_portrait_KOR_generic_female_3_operative"
+			"GFX_portrait_KOR_generic_female_4_operative"
+			"GFX_portrait_KOR_generic_female_5_operative"
+			"GFX_portrait_KOR_generic_female_6_operative"
+			"GFX_portrait_KOR_generic_female_7_operative"
+			"GFX_portrait_asia_generic_operative_female_1"
+			"GFX_portrait_asia_generic_operative_female_2"
+			"GFX_portrait_asia_generic_operative_female_3"
+			"GFX_portrait_asia_generic_operative_female_4"
+			"GFX_portrait_asia_generic_operative_female_5"
+			"GFX_portrait_asia_generic_operative_female_6"
+			"GFX_portrait_asia_generic_operative_female_7"
+			"GFX_portrait_asia_generic_operative_female_8"
+			"GFX_portrait_asia_generic_operative_female_9"
+		}
+		male = {
+			"GFX_portrait_KOR_generic_male_1_operative"
+			"GFX_portrait_KOR_generic_male_3_operative"
+			"GFX_portrait_asia_generic_operative_male_1"
+			"GFX_portrait_asia_generic_operative_male_2"
+			"GFX_portrait_asia_generic_operative_male_3"
+			"GFX_portrait_asia_generic_operative_male_4"
+			"GFX_portrait_asia_generic_operative_male_5"
+			"GFX_portrait_asia_generic_operative_male_6"
+			"GFX_portrait_asia_generic_operative_male_7"
+			"GFX_portrait_asia_generic_operative_male_8"
+			"GFX_portrait_asia_generic_operative_male_9"
+		}
+	}
+}

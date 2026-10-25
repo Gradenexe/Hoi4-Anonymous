@@ -1,0 +1,129 @@
+spriteTypes = {	
+
+
+    spriteType = {
+	name = "GFX_idea_no_ship"
+	texturefile = "gfx/interface/ideas/no_ship.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_no_ac"
+	texturefile = "gfx/interface/ideas/no_ac.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_bomb_ships"
+	texturefile = "gfx/interface/ideas/bomb_ships.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_anti_air"
+	texturefile = "gfx/interface/ideas/anti_air.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_better_factories"
+		texturefile = "gfx/interface/ideas/dfn_better_factories.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_britain"
+		texturefile = "gfx/interface/ideas/dfn_britain.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_british_advisors"
+		texturefile = "gfx/interface/ideas/dfn_british_advisors.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_civillian"
+		texturefile = "gfx/interface/ideas/dfn_civillian.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_construction_company"
+		texturefile = "gfx/interface/ideas/dfn_construction_company.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_consumer_goods"
+		texturefile = "gfx/interface/ideas/dfn_consumer_goods.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_democratic"
+		texturefile = "gfx/interface/ideas/dfn_democratic.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_followers"
+		texturefile = "gfx/interface/ideas/dfn_followers.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_guardian"
+		texturefile = "gfx/interface/ideas/dfn_guardian.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_industrial_boom"
+		texturefile = "gfx/interface/ideas/dfn_industrial_boom.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_jihad"
+		texturefile = "gfx/interface/ideas/dfn_jihad.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_lion"
+		texturefile = "gfx/interface/ideas/dfn_lion.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_military"
+		texturefile = "gfx/interface/ideas/dfn_military.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_nationalist_education"
+		texturefile = "gfx/interface/ideas/dfn_nationalist_education.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_new_politics"
+		texturefile = "gfx/interface/ideas/dfn_new_politics.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_organized_workers"
+		texturefile = "gfx/interface/ideas/dfn_organized_workers.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_poor_industry"
+		texturefile = "gfx/interface/ideas/dfn_poor_industry.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_purge_anti_communists"
+		texturefile = "gfx/interface/ideas/dfn_purge_anti_communists.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_socialist_faith"
+		texturefile = "gfx/interface/ideas/dfn_socialist_faith.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_soviet_advisors"
+		texturefile = "gfx/interface/ideas/dfn_soviet_advisors.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_dfn_volunteers"
+		texturefile = "gfx/interface/ideas/dfn_volunteers.dds"		
+	}
+
+}

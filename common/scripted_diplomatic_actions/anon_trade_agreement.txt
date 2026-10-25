@@ -1,0 +1,80 @@
+scripted_diplomatic_actions = {
+	trade_agreement_action = {
+		visible = {
+			ROOT = {
+				is_ai = no
+				NOT = { has_war_with = PREV }
+				NOT = { has_relation_modifier = { target = PREV modifier = anon_trade_agreement_modifier } }
+			}
+		}
+		selectable = {
+			always = yes
+		}
+		ai_will_do = { base = 0 }
+		
+		requires_acceptance = yes
+		show_acceptance_on_action_button = yes 
+		
+		accept_title = ANON_TRADE_AGREEMENT_ACCEPT
+		accept_description = ANON_TRADE_AGREEMENT_ACCEPT_DESC
+		reject_title = ANON_TRADE_AGREEMENT_REJECT
+		reject_description = ANON_TRADE_AGREEMENT_REJECT_DESC
+		send_description = ANON_TRADE_AGREEMENT_SEND_DESC
+		receive_description = ANON_TRADE_AGREEMENT_RECEIVE_DESC
+
+		can_be_sent = {
+			ROOT = {
+				has_opinion = { target = PREV value > 19 }
+			}
+		}
+		
+		complete_effect = {
+			ROOT = {
+				add_relation_modifier = {
+					target = PREV
+					modifier = anon_trade_agreement_modifier
+				}
+			}
+			PREV = {
+				add_relation_modifier = {
+					target = ROOT
+					modifier = anon_trade_agreement_modifier
+				}
+			}
+		}
+		
+		ai_acceptance = {
+			trade_agreement_ai_base = {
+				base = 0
+				modifier = {
+					add = 50
+					ROOT = { has_opinion = { target = PREV value > 40 } }
+				}
+				modifier = {
+					add = -50
+					ROOT = { NOT = { has_opinion = { target = PREV value > 40 } } }
+				}
+			}
+		}
+	}
+	
+	trade_agreement_break_action = {
+		visible = {
+			ROOT = {
+				has_relation_modifier = { target = PREV modifier = anon_trade_agreement_modifier }
+			}
+		}
+		selectable = {
+			always = yes
+		}
+		requires_acceptance = no
+		complete_effect = {
+			ROOT = {
+				remove_relation_modifier = { target = PREV modifier = anon_trade_agreement_modifier }
+			}
+			PREV = {
+				remove_relation_modifier = { target = ROOT modifier = anon_trade_agreement_modifier }
+			}
+		}
+	}
+}

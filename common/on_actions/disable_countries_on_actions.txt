@@ -1,0 +1,797 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_AST option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = AST }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_NZL option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = NZL }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_INS option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = INS }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_GER option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = GER }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_SOV option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = SOV }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_ITA option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = ITA }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_FRA option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = FRA }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_ENG option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = ENG }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_POL option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = POL }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_SWE option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = SWE }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_NOR option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = NOR }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_DEN option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = DEN }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_FIN option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = FIN }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_ICE option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = ICE }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_HOL option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = HOL }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_BEL option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = BEL }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_LUX option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = LUX }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_SWI option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = SWI }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_AUS option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = AUS }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_CZE option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = CZE }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_HUN option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = HUN }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_YUG option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = YUG }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_ROM option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = ROM }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_BUL option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = BUL }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_GRE option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = GRE }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_ALB option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = ALB }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_SPR option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = SPR }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_POR option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = POR }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_LIT option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = LIT }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_LAT option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = LAT }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_EST option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = EST }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_IRE option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = IRE }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_JAP option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = JAP }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_CHI option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = CHI }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_PRC option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = PRC }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_MAN option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = MAN }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_MEN option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = MEN }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_SIA option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = SIA }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_AFG option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = AFG }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_TIB option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = TIB }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_SIK option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = SIK }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_XSM option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = XSM }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_GXC option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = GXC }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_YUN option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = YUN }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_SHX option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = SHX }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_NEP option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = NEP }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_BHU option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = BHU }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_PHI option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = PHI }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_USA option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = USA }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_CAN option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = CAN }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_MEX option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = MEX }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_CUB option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = CUB }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_HAI option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = HAI }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_DOM option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = DOM }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_GUA option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = GUA }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_ELS option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = ELS }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_HON option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = HON }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_NIC option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = NIC }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_COS option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = COS }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_PAN option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = PAN }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_COL option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = COL }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_VEN option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = VEN }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_ECU option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = ECU }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_PRU option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = PRU }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_BRA option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = BRA }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_BOL option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = BOL }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_PAR option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = PAR }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_URG option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = URG }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_ARG option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = ARG }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_CHL option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = CHL }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_TUR option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = TUR }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_IRQ option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = IRQ }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_PER option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = PER }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_SAU option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = SAU }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_YEM option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = YEM }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_OMA option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = OMA }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_ETH option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = ETH }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_SAF option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = SAF }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+			if = {
+				limit = { has_game_rule = { rule = RULE_DISABLE_LIB option = RULE_DISABLE_ON } }
+				every_state = {
+					limit = { is_owned_by = LIB }
+					GRN = { transfer_state = PREV }
+					set_building_level = { type = infrastructure level = 0 }
+					set_building_level = { type = arms_factory level = 0 }
+					set_building_level = { type = industrial_complex level = 0 }
+				}
+			}
+		}
+	}
+}
+

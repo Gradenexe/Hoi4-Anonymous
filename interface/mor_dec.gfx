@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_mor_project"
+		texturefile = "gfx/interface/decisions/project.png"
+		legacy_lazy_load = no
+	}
+
+}

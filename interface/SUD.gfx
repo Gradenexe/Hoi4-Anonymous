@@ -1,0 +1,7 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_portrait_george_stewart_symes"
+		texturefile = "gfx/interface/leaders/portrait_george_stewart_symes.png"
+	}
+}

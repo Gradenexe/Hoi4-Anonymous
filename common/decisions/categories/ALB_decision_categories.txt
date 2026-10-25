@@ -1,0 +1,85 @@
+################
+##### ALB ######
+################
+
+ALB_zog_smoking_addiciton = {
+
+	icon = GFX_decision_category_eng_appeal_to_imperial_loyalists
+	
+	allowed = {
+		tag = ALB
+	}
+
+	priority = {
+		base = 4
+	}
+
+	visible = {
+		ALB = {
+			has_completed_focus = ALB_acquire_modern_tools
+		}
+	}
+}
+
+ALB_defending_our_nation = {
+
+	icon = GFX_decision_category_generic_industry
+	
+	allowed = {
+		original_tag = ALB
+	}
+
+	priority = {
+		base = 3
+	}
+	
+	visible_when_empty = no
+
+	visible = {
+		ALB = {
+			OR = {
+				has_completed_focus = ALB_exile_italian_generals
+				has_completed_focus = ALB_albanian_fortifications
+			}
+		}
+	}
+}
+
+ALB_national_unity_decisions = {
+
+	icon = GFX_decision_category_generic_political_actions
+	
+	allowed = {
+		tag = ALB
+	}
+
+	priority = {
+		base = 2
+	}
+	
+	visible_when_empty = yes
+
+	visible = {
+	}
+}
+
+ALB_integrate_states = {
+
+	icon = GFX_decision_category_generic
+	
+	allowed = {
+		original_tag = ALB
+	}
+
+	priority = {
+		base = 1
+	}
+	
+	visible_when_empty = no
+
+	visible = {
+		#ALB = {
+		#	has_completed_focus = ALB_integrate_decisions
+		#}
+	}
+}

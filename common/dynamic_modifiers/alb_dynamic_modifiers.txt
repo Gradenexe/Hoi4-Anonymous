@@ -1,0 +1,89 @@
+ALB_albanian_army_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_tur_kemalist_officers
+
+	army_speed_factor = ALB_army_army_speed_factor
+	army_org_factor = ALB_army_army_org_factor
+	org_loss_when_moving = ALB_army_org_loss_when_moving
+	experience_gain_army_factor = ALB_army_experience_gain_army_factor
+	mobilization_speed = ALB_army_mobilization_speed
+	conscription_factor = ALB_army_conscription_factor
+	training_time_factor = ALB_army_training_time_factor
+	terrain_penalty_reduction = ALB_army_terrain_penalty_reduction
+	cas_damage_reduction = ALB_army_cas_damage_reduction
+	max_dig_in_factor = ALB_army_max_dig_in_factor
+	dig_in_speed_factor = ALB_army_dig_in_speed_factor
+	command_power_gain_mult = ALB_army_command_power_gain_mult
+	max_command_power_mult = ALB_army_max_command_power_mult
+	army_attack_factor = ALB_army_army_attack_factor
+	army_defence_factor = ALB_army_army_defense_factor
+	army_core_attack_factor = ALB_army_army_core_attack_factor
+	army_core_defence_factor = ALB_army_army_core_defense_factor
+	mobilization_laws_cost_factor = ALB_army_mobilization_laws_cost_factor
+	
+	planning_speed = ALB_army_planning_speed
+	max_planning_factor = ALB_army_max_planning_factor
+	attrition = ALB_army_attrition
+	industrial_capacity_factory = ALB_army_industrial_capacity_factory
+	industrial_capacity_dockyard = ALB_army_industrial_capacity_dockyard
+	out_of_supply_factor = ALB_army_out_of_supply_factor
+	army_org_regain = ALB_army_army_org_regain
+}
+
+ALB_national_unity_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+	
+	#icon = GFX_idea_generic_pp_unity_bonus
+	
+	# Unity
+	political_power_gain = ALB_national_unity_political_power_gain#0.50
+	
+	# Government Authority
+	stability_factor = ALB_national_unity_stability_factor#0.15
+	drift_defence_factor = ALB_national_unity_drift_defence_factor#0.50
+	
+	# Westernization
+	local_resources_factor = ALB_national_unity_westernization#0.15
+	research_speed_factor = ALB_national_unity_westernization#0.15
+	
+	# Religious Unity
+	non_core_manpower = ALB_national_unity_non_core_manpower#0.15
+	monthly_population = ALB_national_unity_monthly_population#0.15
+	
+	# Italian Influence
+	experience_gain_army_factor = ALB_national_unity_italian_influence#-0.15
+	experience_gain_navy_factor = ALB_national_unity_italian_influence#-0.15
+	experience_gain_air_factor = ALB_national_unity_italian_influence#-0.15
+	fascism_drift = ALB_national_unity_fascism_drift#0.20
+}
+
+ALB_infrastructure_improved_modifier_1 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_ETH_state_development
+	
+	local_building_slots = 1
+	local_resource_gain_efficiency_per_infrastructure = 0.05
+	recruitable_population_factor = 0.05
+}
+
+ALB_infrastructure_improved_modifier_2 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_ETH_state_development
+	
+	local_building_slots = 2
+	local_resource_gain_efficiency_per_infrastructure = 0.10
+	recruitable_population_factor = 0.10
+}
+
+ALB_infrastructure_improved_modifier_3 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_ETH_state_development
+	
+	local_building_slots = 3
+	local_resource_gain_efficiency_per_infrastructure = 0.15
+	recruitable_population_factor = 0.15
+}

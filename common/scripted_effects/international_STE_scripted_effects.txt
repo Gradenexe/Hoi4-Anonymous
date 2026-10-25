@@ -1,0 +1,170 @@
+give_sweden_tank_licences = {
+	if = {
+		limit = {
+			has_tech = main_battle_tank_chassis
+		}
+		if = {
+			limit = { has_dlc = "Death or Dishonor" }
+			create_production_license = {
+				target = ROOT
+				equipment = {
+					type = modern_tank_chassis_1
+				}
+				cost_factor = 0
+			}
+		}
+		ROOT = {
+			add_equipment_to_stockpile = {
+				type = modern_tank_chassis_1
+				amount = 360
+				producer = PREV
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_tech = advanced_medium_tank_chassis
+		}
+		if = {
+			limit = { has_dlc = "Death or Dishonor" }
+			create_production_license = {
+				target = ROOT
+				equipment = {
+					type = medium_tank_chassis_3
+				}
+				cost_factor = 0
+			}
+		}
+		ROOT = {
+			add_equipment_to_stockpile = {
+				type = medium_tank_chassis_3
+				amount = 360
+				producer = PREV
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_tech = improved_medium_tank_chassis
+		}
+		if = {
+			limit = { has_dlc = "Death or Dishonor" }
+			create_production_license = {
+				target = ROOT
+				equipment = {
+					type = medium_tank_chassis_2
+				}
+				cost_factor = 0
+			}
+		}
+		ROOT = {
+			add_equipment_to_stockpile = {
+				type = medium_tank_chassis_2
+				amount = 360
+				producer = PREV
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_tech = basic_medium_tank_chassis
+		}
+		if = {
+			limit = { has_dlc = "Death or Dishonor" }
+			create_production_license = {
+				target = ROOT
+				equipment = {
+					type = medium_tank_chassis_1
+				}
+				cost_factor = 0
+			}
+		}
+		ROOT = {
+			add_equipment_to_stockpile = {
+				type = medium_tank_chassis_1
+				amount = 360
+				producer = PREV
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_tech = improved_light_tank_chassis
+		}
+		if = {
+			limit = { has_dlc = "Death or Dishonor" }
+			create_production_license = {
+				target = ROOT
+				equipment = {
+					type = light_tank_chassis_2
+				}
+				cost_factor = 0
+			}
+		}
+		ROOT = {
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_2
+				amount = 360
+				producer = PREV
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = { has_dlc = "Death or Dishonor" }
+			create_production_license = {
+				target = ROOT
+				equipment = {
+					type = light_tank_chassis_1
+				}
+				cost_factor = 0
+			}
+		}
+		ROOT = {
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 360
+				producer = PREV
+			}
+		}
+	}
+}
+
+update_nokia = {
+	if = {
+		limit = {
+			FIN = { has_idea = BALTIC_better_Nokia_finland_2 }
+		}
+		FIN = {
+			swap_ideas = {
+				remove_idea = BALTIC_better_Nokia_finland_2
+				add_idea = BALTIC_better_Nokia_finland_3
+			}
+		}
+	}
+	
+	if = {
+		limit = {
+			FIN = { has_idea = BALTIC_better_Nokia_finland_1 }
+		}
+		FIN = {
+			swap_ideas = {
+				remove_idea = BALTIC_better_Nokia_finland_1
+				add_idea = BALTIC_better_Nokia_finland_2
+			}
+		}
+	}
+	
+	if = {
+		limit = {
+			FIN = { 
+				NOT = { has_idea = BALTIC_better_Nokia_finland_1 }
+				NOT = { has_idea = BALTIC_better_Nokia_finland_2 }
+				NOT = { has_idea = BALTIC_better_Nokia_finland_3 }
+			}
+		}
+		FIN = {
+			add_ideas = BALTIC_better_Nokia_finland_1
+		}
+	}
+}

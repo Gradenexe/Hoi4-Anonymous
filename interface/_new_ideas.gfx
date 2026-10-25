@@ -1,0 +1,47 @@
+spriteTypes = {
+	spriteType = {  
+		name = "GFX_modifiers_mor_berber_separatism"
+		texturefile = "gfx/interface/state_modifiers/modifiers_mor_berber_separatism.png"
+	}
+	spriteType = {  
+		name = "GFX_idea_agr"
+		texturefile = "gfx/interface/ideas/agrarian_society.png"
+	}
+	spriteType = {  
+		name = "GFX_idea_fr"
+		texturefile = "gfx/interface/ideas/french.png"
+	}
+	spriteType = {  
+		name = "GFX_idea_au_maroc"
+		texturefile = "gfx/interface/ideas/au_maroc.png"
+	}
+	spriteType = {  
+		name = "GFX_idea_agadir"
+		texturefile = "gfx/interface/ideas/agadir.png"
+	}
+	spriteType = {  
+		name = "GFX_idea_def"
+		texturefile = "gfx/interface/ideas/def.png"
+	}
+	spriteType = {  
+		name = "GFX_idea_cash"
+		texturefile = "gfx/interface/ideas/cash.png"
+	}
+	
+	spriteType = {  
+		name = "GFX_idea_non_electrif"
+		texturefile = "gfx/interface/ideas/non_electrif.png"
+	}
+	spriteType = {  
+		name = "GFX_idea_electr"
+		texturefile = "gfx/interface/ideas/electr.png"
+	}
+	spriteType = {  
+		name = "GFX_idea_tri_korol"
+		texturefile = "gfx/interface/ideas/tri_korol.png"
+	}
+	spriteType = {  
+		name = "GFX_idea_quran"
+		texturefile = "gfx/interface/ideas/quran.png"
+	}
+}

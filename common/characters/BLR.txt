@@ -1,0 +1,18 @@
+characters = {
+
+	BLR_panteleimon_ponomarenko = {
+		name = BLR_panteleimon_ponomarenko
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BLR_panteleimon_ponomarenko
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1965.3.1"
+			id = -1
+			traits = { }
+		}
+	}
+
+}

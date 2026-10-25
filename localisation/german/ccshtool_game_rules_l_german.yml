@@ -1,0 +1,86 @@
+﻿l_german:
+
+ ANON_0_RULES_GROUP:0 "�Y! Lobby-Setup�!"
+
+ ### HOST TOOL ###
+ ccshtool_gamerules_group:0 "„CHost Tool“!"
+
+ ### MODE RULE ###
+ ccshtool_gr_mode:0 "Host-Modus"
+
+ ccshtool_gr_mode_everyone:0 "Jeder ist Gastgeber"
+ ccshtool_gr_mode_everyone_desc:0 "Alle „Yplayer“! Erhalten Sie das „CHost Tool“! bei Spielbeginn. KI-Länder tun dies nicht."
+
+ ccshtool_gr_mode_everyone_ai:0 "Jeder ist Gastgeber (inkl. KI)"
+ ccshtool_gr_mode_everyone_ai_desc:0 "„RDebug-Modus.“! „YAll“! Länder – einschließlich AI – erhalten das „CHost Tool“! bei Spielbeginn. Nützlich für das Mod-Debugging."
+
+ ccshtool_gr_mode_random:0 "Zufälliger Spieler-Host"
+ ccshtool_gr_mode_random_desc:0 "Ein zufälliger Spieler erhält das „CHost Tool“! bei Spielbeginn. Sie können den Zugriff innerhalb des Tools übertragen."
+
+ ccshtool_gr_mode_nohost:0 "Kein Gastgeber"
+ ccshtool_gr_mode_nohost_desc:0 "Niemand erhält das „CHost Tool“! automatisch. Sie können die Konsole verwenden: set_flag ccshtool_enabled_cflag 1"
+
+ ### COUNTRY RULE ###
+ ccshtool_gr_country:0 "Gastland"
+
+ ccshtool_gr_country_none:0 "Kein bestimmtes Land"
+ ccshtool_gr_country_none_desc:0 "Das Gastland wird durch die Einstellung des Host-Modus oben bestimmt."
+
+ ccshtool_gr_host_country_desc:0 "Der Spieler, der dieses Land kontrolliert, erhält das „CHost Tool“! bei Spielbeginn."
+
+ ### MAJORS ###
+ ccshtool_gr_host_GER:0 "Deutschland"
+ ccshtool_gr_host_SOV:0 "die Sowjetunion"
+ ccshtool_gr_host_FRA:0 "Frankreich"
+ ccshtool_gr_host_ENG:0 "Vereinigtes Königreich"
+ ccshtool_gr_host_USA:0 "Vereinigte Staaten"
+ ccshtool_gr_host_JAP:0 "Japan"
+ ccshtool_gr_host_ITA:0 "Italien"
+ ccshtool_gr_host_CHI:0 "China"
+
+ ### EUROPEAN MINORS ###
+ ccshtool_gr_host_POL:0 "Polen"
+ ccshtool_gr_host_FIN:0 "Finnland"
+ ccshtool_gr_host_SWE:0 "Schweden"
+ ccshtool_gr_host_NOR:0 "Norwegen"
+ ccshtool_gr_host_DEN:0 "Dänemark"
+ ccshtool_gr_host_BEL:0 "Belgien"
+ ccshtool_gr_host_HOL:0 "Niederlande"
+ ccshtool_gr_host_CZE:0 "Tschechoslowakei"
+ ccshtool_gr_host_YUG:0 "Jugoslawien"
+ ccshtool_gr_host_ROM:0 "Rumänien"
+ ccshtool_gr_host_BUL:0 "Bulgarien"
+ ccshtool_gr_host_GRE:0 "Griechenland"
+ ccshtool_gr_host_HUN:0 "Ungarn"
+ ccshtool_gr_host_SLO:0 "Slowakei"
+ ccshtool_gr_host_AUS:0 "Österreich"
+ ccshtool_gr_host_SWI:0 "Schweiz"
+ ccshtool_gr_host_ICE:0 "Island"
+ ccshtool_gr_host_LIT:0 "Litauen"
+ ccshtool_gr_host_LAT:0 "Lettland"
+ ccshtool_gr_host_EST:0 "Estland"
+ ccshtool_gr_host_SPR:0 "Spanien"
+ ccshtool_gr_host_POR:0 "Portugal"
+ ccshtool_gr_host_TUR:0 "Truthahn"
+
+ ### REST OF WORLD ###
+ ccshtool_gr_host_CAN:0 "Kanada"
+ ccshtool_gr_host_ARG:0 "Argentinien"
+ ccshtool_gr_host_BRA:0 "Brasilien"
+ ccshtool_gr_host_MEX:0 "Mexiko"
+ ccshtool_gr_host_CHL:0 "Chile"
+ ccshtool_gr_host_PRY:0 "Paraguay"
+ ccshtool_gr_host_URU:0 "Uruguay"
+ ccshtool_gr_host_AST:0 "Australien"
+ ccshtool_gr_host_NZL:0 "Neuseeland"
+ ccshtool_gr_host_SAF:0 "Südafrika"
+ ccshtool_gr_host_ETH:0 "Äthiopien"
+ ccshtool_gr_host_COG:0 "Kongo"
+ ccshtool_gr_host_RAJ:0 "Britischer Raj"
+ ccshtool_gr_host_INS:0 "Indonesien"
+ ccshtool_gr_host_PHI:0 "Philippinen"
+ ccshtool_gr_host_SIA:0 "Siam"
+ ccshtool_gr_host_AFG:0 "Afghanistan"
+ ccshtool_gr_host_IRQ:0 "Irak"
+ ccshtool_gr_host_PER:0 "Persien"
+ ccshtool_gr_host_MAN:0 "Mandschukuo"

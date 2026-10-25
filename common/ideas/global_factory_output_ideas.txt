@@ -1,0 +1,144 @@
+ideas = {
+	country = {
+		global_factory_output_minus_150 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -1.5 }
+		}
+		global_factory_output_minus_140 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -1.4 }
+		}
+		global_factory_output_minus_130 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -1.3 }
+		}
+		global_factory_output_minus_125 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -1.25 }
+		}
+		global_factory_output_minus_110 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -1.1 }
+		}
+		global_factory_output_minus_100 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -1.0 }
+		}
+		global_factory_output_minus_90 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -0.9 }
+		}
+		global_factory_output_minus_75 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -0.75 }
+		}
+		global_factory_output_minus_60 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -0.6 }
+		}
+		global_factory_output_minus_50 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -0.5 }
+		}
+		global_factory_output_minus_40 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -0.4 }
+		}
+		global_factory_output_minus_25 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -0.25 }
+		}
+		global_factory_output_minus_15 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -0.15 }
+		}
+		global_factory_output_minus_10 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -0.1 }
+		}
+		global_factory_output_plus_10 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.1 }
+		}
+		global_factory_output_plus_15 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.15 }
+		}
+		global_factory_output_plus_25 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.25 }
+		}
+		global_factory_output_plus_40 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.4 }
+		}
+		global_factory_output_plus_50 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.5 }
+		}
+		global_factory_output_plus_60 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.6 }
+		}
+		global_factory_output_plus_75 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.75 }
+		}
+		global_factory_output_plus_90 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.9 }
+		}
+		global_factory_output_plus_100 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 1.0 }
+		}
+		global_factory_output_plus_110 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 1.1 }
+		}
+		global_factory_output_plus_125 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 1.25 }
+		}
+		global_factory_output_plus_130 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 1.3 }
+		}
+		global_factory_output_plus_140 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 1.4 }
+		}
+		global_factory_output_plus_150 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 1.5 }
+		}
+	}
+}

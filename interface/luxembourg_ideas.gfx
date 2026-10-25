@@ -1,0 +1,118 @@
+spriteTypes = {	
+
+    spriteType = {
+	name = "GFX_idea_benelux_economic_union"
+	texturefile = "gfx/interface/ideas/benelux_economic_union.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_benelux_propaganda"
+	texturefile = "gfx/interface/ideas/benelux_propaganda.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_lux_blackshirts"
+	texturefile = "gfx/interface/ideas/blackshirt.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_lux_conscription"
+	texturefile = "gfx/interface/ideas/conscription.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_foreign_experts"
+	texturefile = "gfx/interface/ideas/foreign_experts.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_german_scientists"
+	texturefile = "gfx/interface/ideas/german_scientists.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_give_refuge_to_scientists"
+	texturefile = "gfx/interface/ideas/give_refuge_to_scientists.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_golden_age"
+	texturefile = "gfx/interface/ideas/golden_age.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_lux_consumer_goods"
+	texturefile = "gfx/interface/ideas/lux_consumer_goods.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_lux_industrialization"
+	texturefile = "gfx/interface/ideas/lux_industrialization.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_lux_liberalism"
+	texturefile = "gfx/interface/ideas/lux_liberalism.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_lux_nationalist_education"
+	texturefile = "gfx/interface/ideas/lux_nationalist_education.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_lux_poor_industry"
+	texturefile = "gfx/interface/ideas/lux_poor_industry.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_lux_research_funds"
+	texturefile = "gfx/interface/ideas/lux_research_funds.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_lux_who_are_we"
+	texturefile = "gfx/interface/ideas/lux_who_are_we.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_lux_work"
+	texturefile = "gfx/interface/ideas/lux_work.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_lux_worker"
+	texturefile = "gfx/interface/ideas/lux_worker.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_luxembourg_army"
+	texturefile = "gfx/interface/ideas/luxembourg_army.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_palace"
+	texturefile = "gfx/interface/ideas/palace.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_riots"
+	texturefile = "gfx/interface/ideas/riots.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_soldier_of_kingdom"
+	texturefile = "gfx/interface/ideas/soldier_of_kingdom.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_state"
+	texturefile = "gfx/interface/ideas/state.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_war_preparations"
+	texturefile = "gfx/interface/ideas/war_preparations.dds"
+	}
+
+}

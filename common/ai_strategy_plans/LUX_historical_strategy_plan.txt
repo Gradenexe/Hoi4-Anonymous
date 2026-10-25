@@ -1,0 +1,85 @@
+LUX_historical = {
+	name = "Luxembourg historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = LUX
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		LUX_strengthen_government #70
+		LUX_unity_through_democracy #35
+		LUX_industrial_effort #35
+		LUX_infrastructure_effort #35
+		LUX_town_to_large_town #35
+		LUX_industrial_complex #35
+		LUX_arms_factory #35
+		LUX_luxembourg_academy #70
+		LUX_large_town_to_large_city #70
+		LUX_give_refuge_to_scientists #70
+		LUX_trust_in_west #35
+		LUX_foreign_experts #70
+		LUX_invite_allied_experts #35
+		LUX_british_constructions #35
+		LUX_invite_western_experts #70
+		LUX_land_reorganization #35
+		LUX_mercenary #70
+		LUX_non_aggression_benelux #70
+		LUX_solve_draft_evader_problem #35
+		LUX_start_industry_plan #70
+		LUX_better_tools #35
+		LUX_improvements_in_construction_industry #35
+		LUX_develop_natural_resources #35
+		LUX_complete_industry_plan #70
+		LUX_science_funds #70
+		LUX_expand_luxembourg_steel_works #35
+		LUX_conscription #70
+		LUX_aviation_effort #70
+		LUX_british_fighter_licence #70
+		LUX_increase_quality_of_weapons #35
+		LUX_rehabilitated_military #70
+		LUX_revive_the_army #35
+		LUX_speed_up_the_army #35
+		LUX_join_allies #35
+		LUX_underground_weapons #35
+		LUX_american_bomber_factory #70
+		LUX_motorized_army #35
+		LUX_tank_no_thanks #70
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

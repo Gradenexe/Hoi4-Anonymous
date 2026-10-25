@@ -1,0 +1,21 @@
+﻿l_english:
+ trade_agreement_action:0 "Sign Trade Agreement"
+ TRADE_AGREEMENT_ACTION:0 "Sign Trade Agreement"
+ TRADE_AGREEMENT_ACTION_TITLE:0 "Sign Trade Agreement"
+ trade_agreement_action_desc:0 "Offer a trade agreement to increase resources per factory from 8 to 12."
+ TRADE_AGREEMENT_ACTION_ACTION_DESC:0 "Offer a trade agreement to increase resources per factory from 8 to 12."
+ 
+ trade_agreement_break_action:0 "Cancel Trade Agreement"
+ TRADE_AGREEMENT_BREAK_ACTION:0 "Cancel Trade Agreement"
+ TRADE_AGREEMENT_BREAK_ACTION_TITLE:0 "Cancel Trade Agreement"
+ trade_agreement_break_action_desc:0 "Cancel the ongoing trade agreement with this nation."
+ TRADE_AGREEMENT_BREAK_ACTION_ACTION_DESC:0 "Cancel the ongoing trade agreement with this nation."
+ 
+ anon_trade_agreement_modifier:0 "Trade Agreement"
+ ANON_TRADE_AGREEMENT_ACCEPT:0 "Trade Agreement Accepted"
+ ANON_TRADE_AGREEMENT_ACCEPT_DESC:0 "They have accepted our trade agreement. 1 Factory will now yield 12 resources."
+ ANON_TRADE_AGREEMENT_REJECT:0 "Trade Agreement Rejected"
+ ANON_TRADE_AGREEMENT_REJECT_DESC:0 "They have rejected our trade agreement offer."
+ ANON_TRADE_AGREEMENT_SEND_DESC:0 "We are proposing a trade agreement. If accepted, 1 factory will yield 12 resources instead of 8."
+ ANON_TRADE_AGREEMENT_RECEIVE_DESC:0 "A trade agreement is being offered. If we accept, 1 factory will yield 12 resources instead of 8."
+ trade_agreement_ai_base:0 "Base Reluctance"

@@ -1,0 +1,22 @@
+#################外国志愿军
+KOR_tongbao_zhiyuanjun = {
+	send_volunteers_tension = -0.5
+	send_volunteer_divisions_required = -0.95
+	send_volunteer_factor = 0.5
+}
+
+KOR_guiding_principles_communism = {
+	power_balance_daily = -0.001
+}
+
+KOR_guiding_principles_democratic = {
+	power_balance_daily = 0.001
+}
+
+KOR_youshuo_zhichi_neutrality = {
+	power_balance_daily = -0.001
+}
+
+KOR_youshuo_zhichi_democratic = {
+	power_balance_daily = 0.001
+}

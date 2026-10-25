@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: North of Ireland or WAR
+	SpriteType = { 
+		name = "IRE_north_of_ireland_or_war-826"
+		texturefile = "gfx/interface/events/noiorwar-event/IRE_north_of_ireland_or_war-826.dds"
+	}
+
+ 
+ }

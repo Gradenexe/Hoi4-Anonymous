@@ -1,0 +1,869 @@
+##############################################################################################################################################################
+##############################################################        独立之前          #######################################################################
+##############################################################################################################################################################
+KOR_liuwang_zhengfu_modifiers = {
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		is_government_in_exile = no
+	}
+	icon = GFX_idea_KOR_liuwang_zhengfu
+	political_power_factor = KOR_liuwang_zhengfu_modifiers_1	#政治点
+	stability_factor = KOR_liuwang_zhengfu_modifiers_2	#稳定度
+	exiled_government_weekly_manpower = KOR_liuwang_zhengfu_modifiers_3	#每周流亡人力
+	political_advisor_cost_factor = KOR_liuwang_zhengfu_modifiers_4	#政治顾问花费
+	research_speed_factor = KOR_liuwang_zhengfu_modifiers_5	#研究科研速度
+	custom_modifier_tooltip = KOR_fenghuo_liaoyuan_tt
+}
+
+###################################################################################################################################################
+##############################################################        独立之后          #######################################################################
+##############################################################################################################################################################
+KOR_zmdjjdyc_dabenying_modifiers = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_usa_great_depression_2
+	consumer_goods_factor = KOR_zhimindijingji_de_yichan_1	#生活消费品
+	industrial_capacity_factory = KOR_zhimindijingji_de_yichan_2	#工厂产出
+	industrial_capacity_dockyard = KOR_zhimindijingji_de_yichan_3	#船坞产出 
+	production_factory_efficiency_gain_factor = KOR_zhimindijingji_de_yichan_4	#生产效率增长
+	production_factory_max_efficiency_factor = KOR_zhimindijingji_de_yichan_5	#生产效率上限
+	production_speed_industrial_complex_factor = KOR_zhimindijingji_de_yichan_6	#民用工厂建造速度
+	production_speed_arms_factory_factor = KOR_zhimindijingji_de_yichan_7	#军用工厂建造速度
+	production_speed_synthetic_refinery_factor = KOR_zhimindijingji_de_yichan_8	#化学合成厂建造速度
+	political_power_factor = KOR_zhimindijingji_de_yichan_9	#政治点
+	local_resources_factor = KOR_zhimindijingji_de_yichan_10	#战略资源获取率
+	local_building_slots_factor = KOR_zhimindijingji_de_yichan_11	#地区最大工业值
+}
+
+KOR_zmdjjdyc_dabenying_modifiers_1 = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_great_depression
+	consumer_goods_factor = KOR_zhimindijingji_de_yichan_1	#生活消费品
+	industrial_capacity_factory = KOR_zhimindijingji_de_yichan_2	#工厂产出
+	industrial_capacity_dockyard = KOR_zhimindijingji_de_yichan_3	#船坞产出 
+	production_factory_efficiency_gain_factor = KOR_zhimindijingji_de_yichan_4	#生产效率增长
+	production_factory_max_efficiency_factor = KOR_zhimindijingji_de_yichan_5	#生产效率上限
+	production_speed_industrial_complex_factor = KOR_zhimindijingji_de_yichan_6	#民用工厂建造速度
+	production_speed_arms_factory_factor = KOR_zhimindijingji_de_yichan_7	#军用工厂建造速度
+	production_speed_synthetic_refinery_factor = KOR_zhimindijingji_de_yichan_8	#化学合成厂建造速度
+	special_project_speed_factor = KOR_zhimindijingji_de_yichan_9	#专项计划速度
+	local_resources_factor = KOR_zhimindijingji_de_yichan_10	#战略资源获取率
+	local_building_slots_factor = KOR_zhimindijingji_de_yichan_11	#地区最大工业值
+}
+
+KOR_zmdjjdyc_dabenying_modifiers_2 = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_great_depression_plus
+	consumer_goods_factor = KOR_zhimindijingji_de_yichan_1	#生活消费品
+	industrial_capacity_factory = KOR_zhimindijingji_de_yichan_2	#工厂产出
+	industrial_capacity_dockyard = KOR_zhimindijingji_de_yichan_3	#船坞产出 
+	production_factory_efficiency_gain_factor = KOR_zhimindijingji_de_yichan_4	#生产效率增长
+	production_factory_max_efficiency_factor = KOR_zhimindijingji_de_yichan_5	#生产效率上限
+	production_speed_industrial_complex_factor = KOR_zhimindijingji_de_yichan_6	#民用工厂建造速度
+	production_speed_arms_factory_factor = KOR_zhimindijingji_de_yichan_7	#军用工厂建造速度
+	production_speed_synthetic_refinery_factor = KOR_zhimindijingji_de_yichan_8	#化学合成厂建造速度
+	special_project_speed_factor = KOR_zhimindijingji_de_yichan_9	#专项计划速度
+	local_resources_factor = KOR_zhimindijingji_de_yichan_10	#战略资源获取率
+	local_building_slots_factor = KOR_zhimindijingji_de_yichan_11	#地区最大工业值
+}
+
+KOR_paixilinli_dabenying_modifiers = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_KOR_paixilinli_de_weiyuanhui
+	stability_factor = KOR_paixilinli_dabenying_1	#稳定度
+	political_power_factor = KOR_paixilinli_dabenying_2	#政治点百分比增加 
+	production_speed_infrastructure_factor = KOR_paixilinli_dabenying_3	#政治顾问花费
+	war_support_factor = KOR_paixilinli_dabenying_4	#战争支持度
+	stability_weekly = KOR_paixilinli_dabenying_5	#每周稳定度增长
+}
+
+############################################################################################################
+######################################################     军事   #############################################
+############################################################################################################
+KOR_army_communism = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_KOR_army_communism
+	#0
+	winter_attrition_factor = KOR_army_communism_1	#冬季损耗
+	acclimatization_cold_climate_gain_factor = KOR_army_communism_2	#寒冷适应度增长
+	trait_winter_specialist_xp_gain_factor = KOR_army_communism_3	#凛冬悍将特质经验增长速度
+	trait_winter_expert_xp_gain_factor = KOR_army_communism_4	#冬季专家特质经验增长速度
+	special_forces_cap = KOR_army_communism_5	#特种部队上限
+	army_morale_factor = KOR_army_communism_6	#组织度恢复
+	equipment_conversion_speed = KOR_army_communism_7	#装备改装速度
+	land_reinforce_rate = KOR_army_communism_8	#增援率
+	production_factory_max_efficiency_factor = KOR_army_communism_9	#生产效率上限
+	experience_gain_army_factor = KOR_army_communism_10	#陆军师经验增长
+	equipment_capture = KOR_army_communism_11	#装备缴获
+	coordination_bonus = KOR_army_communism_12	#协同性
+	conscription_factor = KOR_army_communism_13	#适役人口修正
+	mobilization_speed = KOR_army_communism_14	#动员速度
+	supply_factor = KOR_army_communism_15	#补给效率
+	production_speed_supply_node_factor = KOR_army_communism_16	#补给中心建造速度
+	supply_combat_penalties_on_core_factor = KOR_army_communism_17	#核心领土战斗补给耗尽惩罚
+	command_power_gain_mult = KOR_army_communism_18	#每日指挥点增长百分比
+	max_command_power_mult = KOR_army_communism_19	#最大指挥点增长百分比
+	training_time_factor = KOR_army_communism_20	#陆军训练时间
+	experience_gain_army = KOR_army_communism_21	#陆军经验增长 
+	land_night_attack = KOR_army_communism_22	#陆战夜战攻击
+	conscription = KOR_army_communism_23	#适役人口
+	army_armor_defence_factor = KOR_army_communism_24	#坦克防御
+	army_armor_attack_factor = KOR_army_communism_25	#坦克攻击
+	resistance_growth_on_our_occupied_states = KOR_army_communism_26	#我们被敌人占领地区的抵抗增长速度
+	army_core_defence_factor = KOR_army_communism_27	#陆军核心防御
+	experience_loss_factor = KOR_army_communism_28	#有经验的士兵损失
+	army_artillery_attack_factor = KOR_army_communism_29	#炮兵攻击
+	army_artillery_defence_factor = KOR_army_communism_30	#炮兵防御
+	army_infantry_attack_factor = KOR_army_communism_31	#步兵攻击
+	army_infantry_defence_factor = KOR_army_communism_32	#步兵防御
+	modifier_army_sub_unit_militia_attack_factor = KOR_army_communism_33	#民兵攻击
+	modifier_army_sub_unit_militia_defence_factor = KOR_army_communism_34	#民兵防御
+	army_speed_factor = KOR_army_communism_35	#陆军师速度
+}
+
+KOR_army_democratic = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_KOR_army_democratic
+	#0
+	winter_attrition_factor = KOR_army_communism_1	#冬季损耗
+	acclimatization_cold_climate_gain_factor = KOR_army_communism_2	#寒冷适应度增长
+	trait_winter_specialist_xp_gain_factor = KOR_army_communism_3	#凛冬悍将特质经验增长速度
+	trait_winter_expert_xp_gain_factor = KOR_army_communism_4	#冬季专家特质经验增长速度
+	special_forces_cap = KOR_army_communism_5	#特种部队上限
+	army_morale_factor = KOR_army_communism_6	#组织度恢复
+	equipment_conversion_speed = KOR_army_communism_7	#装备改装速度
+	modifier_army_sub_unit_mountaineers_attack_factor = KOR_army_communism_8	#山地步兵攻击
+	production_factory_max_efficiency_factor = KOR_army_communism_9	#生产效率上限
+	experience_gain_army_factor = KOR_army_communism_10	#陆军师经验增长
+	equipment_capture = KOR_army_communism_11	#装备缴获
+	coordination_bonus = KOR_army_communism_12	#协同性
+	conscription_factor = KOR_army_communism_13	#适役人口修正
+	mobilization_speed = KOR_army_communism_14	#动员速度
+	supply_factor = KOR_army_communism_15	#补给效率
+	production_speed_supply_node_factor = KOR_army_communism_16	#补给中心建造速度
+	supply_combat_penalties_on_core_factor = KOR_army_communism_17	#核心领土战斗补给耗尽惩罚
+	command_power_gain_mult = KOR_army_communism_18	#每日指挥点增长百分比
+	max_command_power_mult = KOR_army_communism_19	#最大指挥点增长百分比
+	training_time_factor = KOR_army_communism_20	#陆军训练时间
+	experience_gain_army = KOR_army_communism_21	#陆军经验增长 
+	land_night_attack = KOR_army_communism_22	#陆战夜战攻击
+	conscription = KOR_army_communism_23	#适役人口
+	army_armor_defence_factor = KOR_army_communism_24	#坦克防御
+	army_armor_attack_factor = KOR_army_communism_25	#坦克攻击
+	resistance_growth_on_our_occupied_states = KOR_army_communism_26	#我们被敌人占领地区的抵抗增长速度
+	army_core_defence_factor = KOR_army_communism_27	#陆军核心防御
+	experience_loss_factor = KOR_army_communism_28	#有经验的士兵损失
+	army_artillery_attack_factor = KOR_army_communism_29	#炮兵攻击
+	army_artillery_defence_factor = KOR_army_communism_30	#炮兵防御
+	army_infantry_attack_factor = KOR_army_communism_31	#步兵攻击
+	army_infantry_defence_factor = KOR_army_communism_32	#步兵防御
+	modifier_army_sub_unit_militia_attack_factor = KOR_army_communism_33	#民兵攻击
+	modifier_army_sub_unit_militia_defence_factor = KOR_army_communism_34	#民兵防御
+	army_speed_factor = KOR_army_communism_35	#陆军师速度
+}
+
+#
+KOR_air_communism = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_KOR_air_communism
+	#0
+	experience_gain_air = KOR_air_communism_1	#空军经验增长
+	air_cas_efficiency = KOR_air_communism_2	#密接支援任务效率
+	air_superiority_efficiency = KOR_air_communism_3	#制空权效率
+	air_intercept_efficiency = KOR_air_communism_4	#空军拦截效率
+	air_training_xp_gain_factor = KOR_air_communism_5	#空军联队训练经验增长
+	air_wing_xp_loss_when_killed_factor = KOR_air_communism_6	#空军联队受损时失去的经验
+	air_mission_efficiency = KOR_air_communism_7	#空军任务效率
+	air_bombing_targetting = KOR_air_communism_8	#对地轰炸瞄准
+	naval_strike_attack_factor = KOR_air_communism_9	#对海轰炸
+	naval_strike_targetting_factor = KOR_air_communism_10	#对海瞄准
+	air_nav_efficiency = KOR_air_communism_11	#对海任务效率
+	air_night_penalty = KOR_air_communism_12	#夜间惩罚
+	air_strategic_bomber_bombing_factor = KOR_air_communism_13	#战略轰炸
+	air_accidents_factor = KOR_air_communism_14	#空军失事机率
+	army_bonus_air_superiority_factor = KOR_air_communism_15	#空优
+	navy_anti_air_attack_factor = KOR_air_communism_16	#海军对空攻击
+	navy_carrier_air_attack_factor = KOR_air_communism_17	#航母舰载机空中攻击
+	navy_carrier_air_targetting_factor = KOR_air_communism_18	#航母舰载机空中瞄准
+	air_ace_generation_chance_factor = KOR_air_communism_19	#空战王牌生成机率
+	production_speed_anti_air_building_factor = KOR_air_communism_20	#防空阵地建造速度
+	production_speed_radar_station_factor = KOR_air_communism_21	#雷达建造速度
+	air_defence_factor = KOR_air_communism_22	#空中防御
+	air_range_factor = KOR_air_communism_23	#空军航程
+}
+
+KOR_air_democratic = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_KOR_air_democratic
+	#0
+	experience_gain_air = KOR_air_communism_1	#空军经验增长
+	air_cas_efficiency = KOR_air_communism_2	#密接支援任务效率
+	air_superiority_efficiency = KOR_air_communism_3	#制空权效率
+	air_intercept_efficiency = KOR_air_communism_4	#空军拦截效率
+	air_training_xp_gain_factor = KOR_air_communism_5	#空军联队训练经验增长
+	air_wing_xp_loss_when_killed_factor = KOR_air_communism_6	#空军联队受损时失去的经验
+	air_mission_efficiency = KOR_air_communism_7	#空军任务效率
+	air_bombing_targetting = KOR_air_communism_8	#对地轰炸瞄准
+	naval_strike_attack_factor = KOR_air_communism_9	#对海轰炸
+	naval_strike_targetting_factor = KOR_air_communism_10	#对海瞄准
+	air_nav_efficiency = KOR_air_communism_11	#对海任务效率
+	air_night_penalty = KOR_air_communism_12	#夜间惩罚
+	air_strategic_bomber_bombing_factor = KOR_air_communism_13	#战略轰炸
+	air_accidents_factor = KOR_air_communism_14	#空军失事机率
+	army_bonus_air_superiority_factor = KOR_air_communism_15	#空优
+	navy_anti_air_attack_factor = KOR_air_communism_16	#海军对空攻击
+	navy_carrier_air_attack_factor = KOR_air_communism_17	#航母舰载机空中攻击
+	navy_carrier_air_targetting_factor = KOR_air_communism_18	#航母舰载机空中瞄准
+	air_ace_generation_chance_factor = KOR_air_communism_19	#空战王牌生成机率
+	production_speed_anti_air_building_factor = KOR_air_communism_20	#防空阵地建造速度
+	production_speed_radar_station_factor = KOR_air_communism_21	#雷达建造速度
+	air_defence_factor = KOR_air_communism_22	#空中防御
+	air_range_factor = KOR_air_communism_23	#空军航程
+}
+
+#
+KOR_navy_communism = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_KOR_navy_communism
+	#0
+	experience_gain_navy = KOR_navy_communism_1	#海军经验增长
+	experience_gain_navy_factor = KOR_navy_communism_2	#海军船经验增长
+	navy_submarine_attack_factor = KOR_navy_communism_3	#潜艇攻击
+	convoy_raiding_efficiency_factor = KOR_navy_communism_4	#袭击运输船任务效率
+	invasion_preparation = KOR_navy_communism_5	#登陆准备时间
+	amphibious_invasion = KOR_navy_communism_6	#两栖登陆速度
+	naval_invasion_capacity = KOR_navy_communism_7	#登陆作战上限
+	extra_marine_supply_grace = KOR_navy_communism_8	#海军陆战队携行补给
+	navy_screen_attack_factor = KOR_navy_communism_9	#屏卫舰攻击
+	navy_screen_defence_factor = KOR_navy_communism_10	#屏卫舰防御
+	navy_capital_ship_attack_factor = KOR_navy_communism_11	#主力舰攻击
+	navy_max_range_factor = KOR_navy_communism_12	#海军最大航程参数
+	convoy_retreat_speed = KOR_navy_communism_13	#撤退时运输船速度
+	refit_ic_cost = KOR_navy_communism_14	#舰船改造花费
+	refit_speed = KOR_navy_communism_15	#舰船改造速度
+	repair_speed_factor = KOR_navy_communism_16	#舰船修理速度
+	convoy_escort_efficiency = KOR_navy_communism_17	#护航效率
+	spotting_chance = KOR_navy_communism_18	#索敌速度
+	naval_morale_factor = KOR_navy_communism_19	#海军组织度恢复速率
+	naval_has_potf_in_combat_attack = KOR_navy_communism_20	#与舰队荣耀一起时攻击力加成
+	industrial_capacity_dockyard = KOR_navy_communism_21	#海军船坞产出
+	shore_bombardment_bonus = KOR_navy_communism_22	#对岸炮击加成
+	mines_planting_by_fleets_factor = KOR_navy_communism_23	#海军布雷效率
+	production_speed_coastal_bunker_factor = KOR_navy_communism_24	#海军要塞建造速度
+}
+
+KOR_navy_democratic = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_KOR_navy_democratic
+	#0
+	experience_gain_navy = KOR_navy_communism_1	#海军经验增长
+	experience_gain_navy_factor = KOR_navy_communism_2	#海军船经验增长
+	navy_submarine_attack_factor = KOR_navy_communism_3	#潜艇攻击
+	convoy_raiding_efficiency_factor = KOR_navy_communism_4	#袭击运输船任务效率
+	invasion_preparation = KOR_navy_communism_5	#登陆准备时间
+	amphibious_invasion = KOR_navy_communism_6	#两栖登陆速度
+	naval_invasion_capacity = KOR_navy_communism_7	#登陆作战上限
+	extra_marine_supply_grace = KOR_navy_communism_8	#海军陆战队携行补给
+	navy_screen_attack_factor = KOR_navy_communism_9	#屏卫舰攻击
+	navy_screen_defence_factor = KOR_navy_communism_10	#屏卫舰防御
+	navy_capital_ship_attack_factor = KOR_navy_communism_11	#主力舰攻击
+	navy_max_range_factor = KOR_navy_communism_12	#海军最大航程参数
+	convoy_retreat_speed = KOR_navy_communism_13	#撤退时运输船速度
+	refit_ic_cost = KOR_navy_communism_14	#舰船改造花费
+	refit_speed = KOR_navy_communism_15	#舰船改造速度
+	repair_speed_factor = KOR_navy_communism_16	#舰船修理速度
+	convoy_escort_efficiency = KOR_navy_communism_17	#护航效率
+	spotting_chance = KOR_navy_communism_18	#索敌速度
+	naval_morale_factor = KOR_navy_communism_19	#海军组织度恢复速率
+	naval_has_potf_in_combat_attack = KOR_navy_communism_20	#与舰队荣耀一起时攻击力加成
+	industrial_capacity_dockyard = KOR_navy_communism_21	#海军船坞产出
+	shore_bombardment_bonus = KOR_navy_communism_22	#对岸炮击加成
+	mines_planting_by_fleets_factor = KOR_navy_communism_23	#海军布雷效率
+	production_speed_coastal_bunker_factor = KOR_navy_communism_24	#海军要塞建造速度
+}
+
+#
+KOR_qiji_wuqi = {
+	icon = GFX_idea_JAP_advanced_weapons_programs
+	enable = {
+		always = yes
+	}
+	production_speed_land_facility_factor = KOR_qiji_wuqi_1	#改变陆地设施的建设速度
+	sp_tag_surface_ship_speed_factor = KOR_qiji_wuqi_2	#水面舰艇专项计划速度
+	sp_tag_jet_speed_factor = KOR_qiji_wuqi_3	#喷气式飞机专项计划速度
+	sp_tag_rocket_speed_factor = KOR_qiji_wuqi_4	#火箭项目速度
+	sp_tag_tank_speed_factor = KOR_qiji_wuqi_5	#坦克专项计划速度
+	sp_tag_artillery_speed_factor = KOR_qiji_wuqi_6	#火炮专项计划速度
+	sp_nuclear_warheads_speed_factor = KOR_qiji_wuqi_7	#核弹头研究速度
+	sp_nuclear_bomb_speed_factor = KOR_qiji_wuqi_8	#核弹计划研究速度
+	production_speed_nuclear_reactor_factor = KOR_qiji_wuqi_9	#改变核反应堆的建设速度
+	sp_nuclear_engines_speed_factor = KOR_qiji_wuqi_10	#核能引擎研究速度
+}
+
+############################################################################################################
+##############################################     共产主义   #############################################
+########################################################################################################## 
+KOR_communism_zhengzhi = {
+	icon = GFX_idea_KOR_communism_modifiers
+	enable = {
+		always = yes
+	}
+	communism_drift = KOR_communism_zhengzhi_1	#共产主义意识形态
+	conscription = KOR_communism_zhengzhi_2	#适役人口
+	conscription_factor = KOR_communism_zhengzhi_3	#适役人口修正
+	stability_factor = KOR_communism_zhengzhi_4	#稳定度
+	war_support_factor = KOR_communism_zhengzhi_5	#战争支持度
+	party_popularity_stability_factor = KOR_communism_zhengzhi_6	#党派支持度对稳定度修正
+	research_speed_factor = KOR_communism_zhengzhi_7	#研究速度
+	political_advisor_cost_factor = KOR_communism_zhengzhi_8	#政治顾问花费
+	local_building_slots_factor = KOR_communism_zhengzhi_9	#地区最大工业值 
+	political_power_factor = KOR_communism_zhengzhi_10	#政治点
+	defensive_war_stability_factor = KOR_communism_zhengzhi_12	#战争防御对稳定度修正
+	offensive_war_stability_factor = KOR_communism_zhengzhi_13	#侵略战争对稳定度修正
+}
+
+KOR_shehui_zhuyi_jingji = {
+	icon = GFX_idea_KOR_shehui_zhuyi_jingji
+	enable = {
+		always = yes
+	}
+	consumer_goods_factor = KOR_shehui_zhuyi_jingji_1	#生活消费品
+	political_power_factor = KOR_shehui_zhuyi_jingji_2	#政治点
+	production_speed_arms_factory_factor = KOR_shehui_zhuyi_jingji_3	#军用工厂建造速度
+	production_speed_industrial_complex_factor = KOR_shehui_zhuyi_jingji_4	#民用工厂建造速度
+	fuel_gain_factor = KOR_shehui_zhuyi_jingji_5	#从石油获得的燃油
+	local_building_slots_factor = KOR_shehui_zhuyi_jingji_6	#地区最大工业值 
+	trade_laws_cost_factor = KOR_shehui_zhuyi_jingji_7	#贸易法案花费
+	local_resources_factor = KOR_shehui_zhuyi_jingji_8	#战略资源获取率
+	industrial_capacity_factory = KOR_shehui_zhuyi_jingji_9	#工厂产出
+	line_change_production_efficiency_factor = KOR_shehui_zhuyi_jingji_10	#生产效率保持
+	production_factory_efficiency_gain_factor = KOR_shehui_zhuyi_jingji_11	#生产效率增长
+	production_factory_max_efficiency_factor = KOR_shehui_zhuyi_jingji_12	#生产效率上限
+	production_lack_of_resource_penalty_factor = KOR_shehui_zhuyi_jingji_13	#缺乏战略资源惩罚
+}
+
+KOR_guojia_anquan_baoweibu = {
+	icon = GFX_idea_KOR_guojia_anquan_baoweibu
+	enable = {
+		always = yes
+	}
+	max_surrender_limit_offset = KOR_guojia_anquan_baoweibu_1	#最低投降界限
+	intel_network_gain_factor = KOR_guojia_anquan_baoweibu_2	#情报网强度增长率
+	decryption_factor = KOR_guojia_anquan_baoweibu_3	#解密
+	operative_slot = KOR_guojia_anquan_baoweibu_4	#特工位
+	civilian_intel_to_others = KOR_guojia_anquan_baoweibu_5	#泄露给他国的民政情报
+	army_intel_to_others = KOR_guojia_anquan_baoweibu_6	#泄露给他国的陆军情报
+	navy_intel_to_others = KOR_guojia_anquan_baoweibu_7	#泄露给他国的海军情报
+	airforce_intel_to_others = KOR_guojia_anquan_baoweibu_8	#泄露给他国的空军情报
+	army_intel_factor = KOR_guojia_anquan_baoweibu_9	#陆军情报
+	navy_intel_factor = KOR_guojia_anquan_baoweibu_10	#海军情报
+	airforce_intel_factor = KOR_guojia_anquan_baoweibu_11	#空军情报
+	enemy_operative_detection_chance = KOR_guojia_anquan_baoweibu_12	#敌方特工被发现几率补正
+	enemy_operative_capture_chance_factor = KOR_guojia_anquan_baoweibu_13	#敌方特工被捕几率
+	weekly_casualties_war_support = KOR_guojia_anquan_baoweibu_14	#每周战争支持度（战斗伤亡）
+	weekly_convoys_war_support = KOR_guojia_anquan_baoweibu_15	#每周战争支持度（运输船沉没）
+	weekly_bombing_war_support = KOR_guojia_anquan_baoweibu_16	#每周战争支持度（敌军轰炸）
+}
+
+KOR_dangpai_douzheng_dynamic = {
+	#党派斗争
+	enable = {
+		always = yes
+	}
+	stability_factor = KOR_dangpai_douzheng_dynamic_1	#稳定度
+	political_advisor_cost_factor = KOR_dangpai_douzheng_dynamic_2	#政治顾问花费
+	army_chief_cost_factor = KOR_dangpai_douzheng_dynamic_3	#陆军部长花费
+	navy_chief_cost_factor = KOR_dangpai_douzheng_dynamic_4	#海军部长花费
+	air_chief_cost_factor = KOR_dangpai_douzheng_dynamic_5	#空军部长花费
+	high_command_cost_factor = KOR_dangpai_douzheng_dynamic_6	#总司令花费
+	theorist_cost_factor = KOR_dangpai_douzheng_dynamic_7	#理论家花费
+}
+
+KOR_chaoxian_dahui_dynamic = {
+	#集体领导
+	enable = {
+		always = yes
+	}
+	command_power_gain_mult = KOR_chaoxian_dahui_dynamic_1
+	max_command_power_mult = KOR_chaoxian_dahui_dynamic_2
+	army_artillery_attack_factor = KOR_chaoxian_dahui_dynamic_3
+	army_org_factor = KOR_chaoxian_dahui_dynamic_4
+	equipment_capture = KOR_chaoxian_dahui_dynamic_5
+	cat_superior_firepower_cost_factor = KOR_chaoxian_dahui_dynamic_6
+	consumer_goods_factor = KOR_chaoxian_dahui_dynamic_7
+	special_forces_cap_flat = KOR_chaoxian_dahui_dynamic_8
+	modifier_army_sub_unit_mountaineers_attack_factor = KOR_chaoxian_dahui_dynamic_9
+	org_loss_when_moving = KOR_chaoxian_dahui_dynamic_10
+	supply_consumption_factor = KOR_chaoxian_dahui_dynamic_11
+	cat_grand_battle_plan_cost_factor = KOR_chaoxian_dahui_dynamic_12
+	research_speed_factor = KOR_chaoxian_dahui_dynamic_13
+	army_fuel_consumption_factor = KOR_chaoxian_dahui_dynamic_14
+	enemy_operative_detection_chance = KOR_chaoxian_dahui_dynamic_15
+	army_armor_attack_factor = KOR_chaoxian_dahui_dynamic_16
+	cat_mobile_warfare_cost_factor = KOR_chaoxian_dahui_dynamic_17
+}
+
+KOR_weidalingxiu_xushishi_dynamic = {
+	#叙事诗
+	enable = {
+		always = yes
+	}
+	communism_drift = KOR_weidalingxiu_xushishi_1	#共产主义意识形态
+	research_speed_factor = KOR_weidalingxiu_xushishi_2	#研究速度
+	stability_weekly = KOR_weidalingxiu_xushishi_3	#每周稳定度增长
+	army_org_factor = KOR_weidalingxiu_xushishi_4	#陆军组织度
+	army_morale_factor = KOR_weidalingxiu_xushishi_5	#组织度恢复
+	experience_loss_factor = KOR_weidalingxiu_xushishi_6	#有经验的士兵损失
+	army_attack_factor = KOR_weidalingxiu_xushishi_7	#陆军攻击
+	compliance_growth = KOR_weidalingxiu_xushishi_8	#顺从度增长速度
+	resistance_growth = KOR_weidalingxiu_xushishi_9	#抵抗增长速度
+	resistance_decay = KOR_weidalingxiu_xushishi_10	#抵抗下降速度
+	supply_factor = KOR_weidalingxiu_xushishi_11	#补给效率
+	supply_node_range = KOR_weidalingxiu_xushishi_12	#补给范围
+	production_speed_rail_way_factor = KOR_weidalingxiu_xushishi_13	#铁路建造速度
+	production_speed_supply_node_factor = KOR_weidalingxiu_xushishi_14	#补给中心建造速度
+	production_speed_facility_factor = KOR_weidalingxiu_xushishi_15	#改变所有设施的建设速度
+	production_speed_arms_factory_factor = KOR_weidalingxiu_xushishi_16	#军用工厂建造速度
+	production_speed_industrial_complex_factor = KOR_weidalingxiu_xushishi_17	#民用工厂建造速度
+	production_speed_dockyard_factor = KOR_weidalingxiu_xushishi_18	#海军船坞建造速度
+	industrial_capacity_factory = KOR_weidalingxiu_xushishi_19	#工厂产出
+	industrial_capacity_dockyard = KOR_weidalingxiu_xushishi_20	#船坞产出 
+	line_change_production_efficiency_factor = KOR_weidalingxiu_xushishi_21	#生产效率保持
+	production_factory_max_efficiency_factor = KOR_weidalingxiu_xushishi_22	#生产效率上限
+	production_factory_efficiency_gain_factor = KOR_weidalingxiu_xushishi_23	#生产效率增长
+	local_resources_factor = KOR_weidalingxiu_xushishi_24	#战略资源获取率
+	local_resources_coal_factor = KOR_weidalingxiu_xushishi_25	#煤获取效率
+}
+
+KOR_fanya_yanjiu_lishihui_modifier = {
+	# Educating the Peasants NS
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_jap_supremacy_of_technology
+	research_speed_factor = KOR_fanya_yanjiu_lishihui_factor
+}
+
+###########地区
+KOR_zhiqing_xiaxiang_modifiers = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_generic_KOR_zhiqing_xiaxiang
+	remove_trigger = {
+		NOT = {
+			OWNER = {
+				has_government = communism
+			}
+		}
+	}
+	state_production_speed_arms_factory_factor = 0.1	#当地军用工厂建造速度
+	state_production_speed_industrial_complex_factor = 0.1	#当地民用工厂建造速度
+	state_production_speed_infrastructure_factor = 0.1	#当地基础设施建造速度
+	local_building_slots_factor = 0.1	#地区最大工业值 
+	recruitable_population_factor = 0.1	#当地适役人口修正
+}
+
+KOR_binhai_bianjiang_maoyi_modifiers = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_generic_KOR_binhai_bianjiang_maoyi_xiaxiang
+	remove_trigger = {
+		OR = {
+			OWNER = {
+				tag = SOV
+				has_war_with = KOR
+			}
+			OWNER = {
+				tag = KOR
+				has_war_with = SOV
+			}
+		}
+	}
+	state_production_speed_buildings_factor = 0.1	#当地建造速度
+	local_building_slots_factor = 0.3	#地区最大工业值 
+	recruitable_population_factor = 0.1	#当地适役人口修正
+	local_supplies = 0.15	#当地补给能力
+}
+
+################################      民主     #################################################
+KOR_democratic_zhengzhi = {
+	icon = GFX_idea_KOR_democratic_modifiers
+	enable = {
+		always = yes
+	}
+	democratic_drift = KOR_democratic_zhengzhi_1	#民主意识形态
+	local_building_slots_factor = KOR_democratic_zhengzhi_2	#地区最大工业值 
+	conscription = KOR_democratic_zhengzhi_3	#适役人口
+	conscription_factor = KOR_democratic_zhengzhi_4	#适役人口修正
+	consumer_goods_factor = KOR_democratic_zhengzhi_5	#生活消费品
+	political_power_factor = KOR_democratic_zhengzhi_6	#政治点
+	command_power_gain_mult = KOR_democratic_zhengzhi_7	#每日指挥点增长百分比
+	max_command_power_mult = KOR_democratic_zhengzhi_8	#最大指挥点增长百分比
+	party_popularity_stability_factor = KOR_democratic_zhengzhi_9	#党派支持度对稳定度修正
+	war_support_factor = KOR_democratic_zhengzhi_10	#战争支持度
+	max_surrender_limit_offset = KOR_democratic_zhengzhi_11	#最低投降界限
+	neutrality_drift = KOR_democratic_zhengzhi_12	#中立意识形态
+}
+
+KOR_Christian_Church_modifiers = {
+	icon = GFX_idea_KOR_jidu_zhujiaojueduan
+	enable = {
+		always = yes
+	}
+	democratic_drift = KOR_democratic_zhengzhi_1	#民主意识形态
+	local_building_slots_factor = KOR_democratic_zhengzhi_2	#地区最大工业值 
+	conscription = KOR_democratic_zhengzhi_3	#适役人口
+	conscription_factor = KOR_democratic_zhengzhi_4	#适役人口修正
+	consumer_goods_factor = KOR_democratic_zhengzhi_5	#生活消费品
+	political_power_factor = KOR_democratic_zhengzhi_6	#政治点
+	command_power_gain_mult = KOR_democratic_zhengzhi_7	#每日指挥点增长百分比
+	max_command_power_mult = KOR_democratic_zhengzhi_8	#最大指挥点增长百分比
+	party_popularity_stability_factor = KOR_democratic_zhengzhi_9	#党派支持度对稳定度修正
+	war_support_factor = KOR_democratic_zhengzhi_10	#战争支持度
+	max_surrender_limit_offset = KOR_democratic_zhengzhi_11	#最低投降界限
+	neutrality_drift = KOR_democratic_zhengzhi_12	#中立意识形态
+}
+
+########间谍
+KOR_guojia_anbao_fa_modifiers = {
+	icon = GFX_idea_KOR_guojia_anbao_fa
+	enable = {
+		always = yes
+	}
+	enemy_operative_capture_chance_factor = KOR_guojia_anbao_fa_modifiers_1	#敌方特工被捕几率
+	intel_network_gain_factor = KOR_guojia_anbao_fa_modifiers_2	#情报网强度增长率
+	enemy_operative_detection_chance_factor = KOR_guojia_anbao_fa_modifiers_3	#敌方特工被发现几率系数
+	operative_slot = KOR_guojia_anbao_fa_modifiers_4	#特工位
+	civilian_intel_to_others = KOR_guojia_anbao_fa_modifiers_5	#泄露给他国的民政情报
+	army_intel_to_others = KOR_guojia_anbao_fa_modifiers_6	#泄露给他国的陆军情报
+	navy_intel_to_others = KOR_guojia_anbao_fa_modifiers_7	#泄露给他国的海军情报
+	airforce_intel_to_others = KOR_guojia_anbao_fa_modifiers_8	#泄露给他国的空军情报
+	army_intel_factor = KOR_guojia_anbao_fa_modifiers_9	#陆军情报
+	navy_intel_factor = KOR_guojia_anbao_fa_modifiers_10	#海军情报
+	airforce_intel_factor = KOR_guojia_anbao_fa_modifiers_11	#空军情报
+}
+
+KOR_xincunyundong_de_chuxing_modifiers = {
+	icon = GFX_idea_KOR_xincunyundong_de_chuxing
+	enable = {
+		always = yes
+	}
+	local_building_slots_factor = 0.1
+	production_speed_buildings_factor = 0.05
+	conscription_factor = 0.05
+	consumer_goods_factor = -0.05
+	production_speed_arms_factory_factor = KOR_xincunyundong_de_chuxing_1	#军用工厂建造速度
+	production_speed_industrial_complex_factor = KOR_xincunyundong_de_chuxing_2	#民用工厂建造速度
+	industrial_capacity_factory = KOR_xincunyundong_de_chuxing_3w	#工厂产出
+}
+
+KOR_international_loan_modifier = {
+	icon = GFX_idea_NOR_printing_money
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		has_war_with = USA
+	}
+	political_power_cost = KOR_loan_political_power_cost
+	local_resources_factor = KOR_loan_local_resources_factor
+	production_speed_buildings_factor = KOR_loan_production_speed_buildings_factor
+	industrial_capacity_factory = KOR_loan_industrial_capacity_factory
+	industrial_capacity_dockyard = KOR_loan_industrial_capacity_dockyard
+	custom_modifier_tooltip = KOR_international_loan_cic_amount_tt
+}
+
+KOR_guangfujun_jingshen_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_generic_idea_KOR_guangfujun_jingshen
+	weekly_casualties_war_support = KOR_guangfujun_jingshen_modifier_1	#每周战争支持度（战斗伤亡）
+	weekly_bombing_war_support = KOR_guangfujun_jingshen_modifier_2	#每周战争支持度（敌军轰炸）
+	weekly_convoys_war_support = KOR_guangfujun_jingshen_modifier_3	#每周战争支持度（运输船沉没）
+	max_surrender_limit_offset = KOR_guangfujun_jingshen_modifier_4	#最低投降界限
+	defensive_war_stability_factor = KOR_guangfujun_jingshen_modifier_5	#战争防御对稳定度修正
+	training_time_factor = KOR_guangfujun_jingshen_modifier_6	#陆军训练时间
+	conscription = KOR_guangfujun_jingshen_modifier_7	#适役人口
+	mobilization_speed = KOR_guangfujun_jingshen_modifier_8	#动员速度
+}
+
+##地区
+KOR_difang_fenquan_modifiers = {
+	#STATE MODIFIER
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_JAP_taiheiyo_belt
+	state_production_speed_industrial_complex_factor = 0.08
+	recruitable_population_factor = 0.08
+	state_resources_factor = 0.08
+}
+
+KOR_kuojian_fushan_renchuan_gang_modifiers = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_RAJ_aden_treaty_port
+	state_production_speed_naval_base_factor = 0.1	#当地军海军基地建造速度
+	state_production_speed_dockyard_factor = 0.1	#当地海军船坞建造速度
+	local_building_slots_factor = 0.1	#地区最大工业值 
+	recruitable_population_factor = 0.05	#当地适役人口修正
+}
+
+KOR_jizhoudao_baoluan_zhenyamodifiers = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_ITA_mafia_on_the_rise
+	state_production_speed_buildings_factor = -0.15	#当地建造速度
+	local_supplies = -0.15	#当地补给能力
+	recruitable_population_factor = -0.1	#当地适役人口修正
+}
+
+KOR_shentou_yuandong_modifiers = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_KOR_shentou_yuandong
+	custom_modifier_tooltip = KOR_shentou_yuandong_modifiers_tt
+}
+
+KOR_shentou_yuandong_modifiers_1 = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_KOR_shentou_yuandong
+	custom_modifier_tooltip = KOR_shentou_yuandong_modifiers_1_tt
+}
+
+KOR_shentou_aertai_diqu_modifiers = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_KOR_shentou_yuandong
+	custom_modifier_tooltip = KOR_shentou_yuandong_modifiers_tt
+}
+
+KOR_shentou_pamier_diqu_modifiers = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_KOR_shentou_yuandong
+	custom_modifier_tooltip = KOR_shentou_yuandong_modifiers_tt
+}
+
+KOR_state_supporting_resistance_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_bul_macedonian_revolutionaries
+	resistance_damage_to_garrison = 0.15
+	resistance_activity = 0.2
+	resistance_growth = 0.5
+	resistance_target = 0.8
+	compliance_growth = -0.1
+}
+
+KOR_pro_Korean_sentiment_in_state = {
+	#STATE MODIFIER
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_KOR_shentou_yuandong
+	breakthrough_factor = 0.1
+	army_attack_factor = 0.1
+}
+
+################################      中立     #################################################
+KOR_neutrality_zhengzhi = {
+	icon = GFX_idea_KOR_neutrality_modifiers
+	enable = {
+		always = yes
+	}
+	neutrality_drift = KOR_neutrality_zhengzhi_1	#中立意识形态
+	party_popularity_stability_factor = KOR_neutrality_zhengzhi_2	#党派支持度对稳定度修正
+	political_advisor_cost_factor = KOR_neutrality_zhengzhi_3	#政治顾问花费
+	theorist_cost_factor = KOR_neutrality_zhengzhi_4	#理论家花费
+	conscription = KOR_neutrality_zhengzhi_5	#适役人口
+	conscription_factor = KOR_neutrality_zhengzhi_6	#适役人口修正
+	industrial_capacity_factory = KOR_neutrality_zhengzhi_7	#工厂产出
+	industrial_capacity_dockyard = KOR_neutrality_zhengzhi_8	#船坞产出 
+	line_change_production_efficiency_factor = KOR_neutrality_zhengzhi_9	#生产效率保持
+	production_factory_max_efficiency_factor = KOR_neutrality_zhengzhi_10	#生产效率上限
+	production_factory_efficiency_gain_factor = KOR_neutrality_zhengzhi_11	#生产效率增长
+	experience_loss_factor = KOR_neutrality_zhengzhi_12	#有经验的士兵损失
+	consumer_goods_factor = KOR_neutrality_zhengzhi_13	#生活消费品
+}
+
+KOR_urban_area_investments_modifier = {
+	#STATE MODIFIER
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_JAP_taiheiyo_belt
+	local_manpower = 0.1
+	state_production_speed_buildings_factor = 0.1
+	state_resources_factor = 0.1
+	army_speed_factor_for_controller = 0.05
+}
+
+KOR_hygenic_housing_output_bonus = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_SWE_hygienic_housing
+	recruitable_population_factor = 0.05
+	state_production_speed_industrial_complex_factor = 0.05
+	local_building_slots_factor = 0.1
+}
+
+idea_KOR_wenhe_de_tudi_gaige = {
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	state_resources_factor = 0.05
+	state_production_speed_buildings_factor = 0.05
+}
+
+KOR_diqu_dikang_modifiers = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_KOR_spiritual_resistance
+	resistance_activity = 0.3
+	resistance_growth = 0.2
+	resistance_decay = -0.3
+}
+
+KOR_Ortswehren_dynamic_mod = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_generic_military_plans
+	land_reinforce_rate = 0.03
+	fortification_collateral_chance = -0.2
+	cas_damage_reduction = 0.1
+	max_dig_in_factor = 0.2
+}
+
+KOR_guojia_ziran_baolei_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_BEL_eben_emael_raided
+	army_morale_factor = 0.15
+	supply_consumption_factor = -0.15
+	org_loss_when_moving = -0.15
+	army_defence_factor = 0.15
+}
+
+## 
+KOR_neutrality1_zhengzhi = {
+	icon = GFX_idea_KOR_neutrality1_modifiers
+	enable = {
+		always = yes
+	}
+	neutrality_drift = KOR_neutrality_zhengzhi_1	#中立意识形态
+	party_popularity_stability_factor = KOR_neutrality1_zhengzhi_2	#党派支持度对稳定度修正
+	political_power_factor = KOR_neutrality1_zhengzhi_3	#政治点
+	democratic_drift = KOR_neutrality1_zhengzhi_4	#民主意识形态
+	max_command_power_mult = KOR_neutrality1_zhengzhi_5	#最大指挥点增长百分比
+	research_speed_factor = KOR_neutrality1_zhengzhi_6	#研究科研速度
+	local_building_slots_factor = KOR_neutrality1_zhengzhi_7	#地区最大工业值 
+	consumer_goods_factor = KOR_neutrality1_zhengzhi_8	#生活消费品
+}
+
+KOR_huangjia_jingcha_modifier = {
+	icon = GFX_idea_KOR_huangjia_jingcha_budui
+	enable = {
+		always = yes
+	}
+	enemy_operative_capture_chance_factor = KOR_huangjia_jingcha_1	#敌方特工被捕几率
+	operative_slot = KOR_huangjia_jingcha_2	#特工位
+	conscription = KOR_huangjia_jingcha_3	#适役人口
+	enemy_operative_detection_chance_factor = KOR_huangjia_jingcha_4	#敌方特工被发现几率系数
+	mobilization_speed = KOR_huangjia_jingcha_5	#动员速度
+	weekly_casualties_war_support = KOR_huangjia_jingcha_6	#每周战争支持度（战斗伤亡）
+	weekly_convoys_war_support = KOR_huangjia_jingcha_7	#每周战争支持度（运输船沉没）
+	weekly_bombing_war_support = KOR_huangjia_jingcha_8	#每周战争支持度（敌军轰炸）
+}
+
+idea_KOR_wangshi_dichan_touzi = {
+	icon = GFX_modifiers_JAP_taiheiyo_belt
+	local_building_slots_factor = 0.12
+	state_production_speed_industrial_complex_factor = 0.08
+	recruitable_population_factor = 0.05
+}
+
+################################      法西斯     ################################################# 
+KOR_fascism_zhengzhi = {
+	icon = GFX_idea_KOR_fascism_modifiers
+	enable = {
+		always = yes
+	}
+	fascism_drift = KOR_fascism_zhengzhi_1	#法西斯意识形态
+	conscription = KOR_fascism_zhengzhi_2	#适役人口
+	party_popularity_stability_factor = KOR_fascism_zhengzhi_3	# 党派支持度对稳定度修正
+	theorist_cost_factor = KOR_fascism_zhengzhi_4	# 理论家花费
+	research_speed_factor = KOR_fascism_zhengzhi_5	# 研究科研速度
+	consumer_goods_factor = KOR_fascism_zhengzhi_6	# 生活消费品
+	mobilization_speed = KOR_fascism_zhengzhi_7	# 动员速度
+}
+
+KOR_huangshi_jingji_tizhi_modifiers = {
+	icon = GFX_idea_KOR_huangshi_jingji_tizhi
+	enable = {
+		always = yes
+	}
+	conscription = KOR_huangshi_jingji_tizhi_1	#适役人口
+	consumer_goods_factor = KOR_huangshi_jingji_tizhi_2	#生活消费品
+	industrial_capacity_factory = KOR_huangshi_jingji_tizhi_3	#工厂产出
+	industrial_capacity_dockyard = KOR_huangshi_jingji_tizhi_4	#船坞产出 
+	production_factory_max_efficiency_factor = KOR_huangshi_jingji_tizhi_5	#生产效率上限
+	production_factory_efficiency_gain_factor = KOR_huangshi_jingji_tizhi_6	#生产效率增长
+	production_speed_buildings_factor = KOR_huangshi_jingji_tizhi_7	#建造速度
+	local_building_slots_factor = KOR_huangshi_jingji_tizhi_8	#地区最大工业值 
+}
+
+KOR_electrification_modifier = {
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		ROOT = {
+			NOT = {
+				OWNER = {
+					original_tag = KOR
+				}
+			}
+			# ROOT refers to the state on which the modifier is added
+		}
+	}
+	icon = GFX_modifiers_ETH_state_development
+	state_production_speed_buildings_factor = 0.2
+	state_resources_factor = 0.2
+	local_building_slots_factor = 0.2
+	state_production_speed_infrastructure_factor = 0.2
+}

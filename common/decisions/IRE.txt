@@ -1,0 +1,919 @@
+IRE_Northern_Ireland_category = {
+
+
+	IRE_Sway_Tyrone_decision = {
+		priority = 80
+
+		fire_only_once = no
+
+		target_trigger = {
+			FROM = {
+				OWNER = {
+					owns_state = 119
+				}
+				
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = IRE_swayed_Tyrone_flag }
+		}
+
+		allowed = {
+			original_tag = IRE
+		}
+
+		available = {
+			OR = {
+				NOT = { has_country_flag = IRE_swayed_Tyrone_flag }
+			}
+		}
+
+		days_remove = 30
+		cost = 50
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+
+			IRE = {
+				country_event = {
+					id = IRE_NorthernIrelandCountySway.TYRONE
+					hours = 1
+				}
+			}
+		}
+	}
+	
+	
+	IRE_Sway_Fermanagh_decision = {
+		priority = 80
+
+		fire_only_once = no
+
+
+		target_trigger = {
+			FROM = {
+				OWNER = {
+					owns_state = 119
+				}
+				
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = IRE_swayed_Fermanagh_flag }
+		}
+
+		allowed = {
+			original_tag = IRE
+		}
+
+		available = {
+			OR = {
+				NOT = { has_country_flag = IRE_swayed_Fermanagh_flag }
+			}
+		}
+
+		days_remove = 30
+		cost = 50
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+
+			IRE = {
+				country_event = {
+					id = IRE_NorthernIrelandCountySway1.FERMANAGH
+					hours = 1
+				}
+			}
+		}
+	}
+	
+	
+	
+	IRE_Sway_Derry_decision = {
+		priority = 80
+
+		fire_only_once = no
+
+
+		target_trigger = {
+			FROM = {
+				OWNER = {
+					owns_state = 119
+				}
+				
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = IRE_swayed_Derry_flag }
+		}
+
+		allowed = {
+			original_tag = IRE
+		}
+
+		available = {
+			OR = {
+				NOT = { has_country_flag = IRE_swayed_Derry_flag }
+			}
+		}
+
+		days_remove = 30
+		cost = 50
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+
+			IRE = {
+				country_event = {
+					id = IRE_NorthernIrelandCountySway2.DERRY
+					hours = 1
+				}
+			}
+		}
+	}
+	
+	
+	
+	IRE_Sway_Down_decision = {
+		priority = 80
+
+		fire_only_once = no
+
+
+		target_trigger = {
+			FROM = {
+				OWNER = {
+					owns_state = 119
+				}
+				
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = IRE_swayed_Down_flag }
+		}
+
+		allowed = {
+			original_tag = IRE
+		}
+
+		available = {
+			OR = {
+				NOT = { has_country_flag = IRE_swayed_Down_flag }
+			}
+		}
+
+		days_remove = 30
+		cost = 50
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+
+			IRE = {
+				country_event = {
+					id = IRE_NorthernIrelandCountySway3.DOWN
+					hours = 1
+				}
+			}
+		}
+	}
+	
+	
+	IRE_Sway_Antrim_decision = {
+		priority = 80
+
+		fire_only_once = no
+
+
+		target_trigger = {
+			FROM = {
+				OWNER = {
+					owns_state = 119
+				}
+				
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = IRE_swayed_Antrim_flag }
+		}
+
+		allowed = {
+			original_tag = IRE
+		}
+
+		available = {
+			OR = {
+				NOT = { has_country_flag = IRE_swayed_Antrim_flag }
+			}
+		}
+
+		days_remove = 30
+		cost = 50
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+
+			IRE = {
+				country_event = {
+					id = IRE_NorthernIrelandCountySway4.ANTRIM
+					hours = 1
+				}
+			}
+		}
+	}
+	
+	
+	IRE_Sway_Armagh_decision = {
+		priority = 80
+
+		fire_only_once = no
+
+		target_trigger = {
+			FROM = {
+				OWNER = {
+					owns_state = 119
+				}
+				
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = IRE_swayed_Armagh_flag }
+		}
+
+		allowed = {
+			original_tag = IRE
+		}
+
+		available = {
+			OR = {
+				NOT = { has_country_flag = IRE_swayed_Armagh_flag }
+			}
+		}
+
+		days_remove = 30
+		cost = 50
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+
+			IRE = {
+				country_event = {
+					id = IRE_NorthernIrelandCountySway5.ARMAGH
+					hours = 1
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	IRE_Incorporate_Ulster_decision = {
+		priority = 80
+
+		fire_only_once = no
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 119
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		target_trigger = {
+			FROM = {
+				OWNER = {
+					owns_state = 119
+				}
+				
+			}
+		}
+
+		allowed = {
+			AND = {
+				original_tag = IRE
+			}
+		}
+
+		available = {
+			AND = {
+				original_tag = IRE
+				check_variable = { Northern_Ireland_Counties_swung > 1 }
+			}
+		}
+
+		days_remove = 30
+		cost = 50
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+
+			ENG = {
+				country_event = {
+					id = IRE_Propose_Northern_Irish_Unification.Proposal
+					hours = 12
+				}
+			}
+		}
+	}
+
+
+}
+
+
+IRE_IRA_balance_of_power_category = {
+	
+	IRA_honour_1916_heros = {
+		name = "Honour the 1916 Heros"
+		priority = 120
+		icon = GFX_decision_generic_political_discourse
+		cost = 10
+		allowed = {
+			original_tag = IRE
+		}
+
+		days_remove = 35
+		
+		remove_effect = {
+			add_power_balance_value = {
+				id = IRE_IRA_political_balance
+				value = -0.1
+			}
+			add_stability = 0.005
+		}
+	}
+	
+	IRA_Pardon_IRA_Members = {
+		name = "Pardon Members of the IRA"
+		priority = 120
+		icon = GFX_decision_generic_political_discourse
+		cost = 15
+		allowed = {
+			original_tag = IRE
+		}
+		days_remove = 35
+		
+		remove_effect = {
+			add_power_balance_value = {
+				id = IRE_IRA_political_balance
+				value = -0.2
+			}
+			add_stability = 0.01
+		}
+	}
+	
+	IRA_Endorse_The_IRA = {
+		name = "Endorse the IRA"
+		priority = 120
+		icon = GFX_decision_generic_political_discourse
+		cost = 35
+		allowed = {
+			original_tag = IRE
+		}
+		days_remove = 70
+		
+		remove_effect = {
+			add_power_balance_value = {
+				id = IRE_IRA_political_balance
+				value = -0.4
+			}
+			add_stability = 0.02
+		}
+	}
+	
+	IRE_IRA_Question_Motives = {
+		name = "Question Army Motives"
+		priority = 116
+		icon = GFX_decision_generic_political_discourse
+		cost = 10
+		allowed = {
+			original_tag = IRE
+		}
+
+		available = {}
+
+		days_remove = 35
+		
+		remove_effect = {
+			add_power_balance_value = {
+				id = IRE_IRA_political_balance
+				value = 0.1
+			}
+			add_manpower = -250
+		}
+	}
+
+	IRE_IRA_Slander_IRA = {
+		name = "Slander the IRA"
+		priority = 116
+		icon = GFX_decision_generic_political_discourse
+		cost = 15
+		allowed = {
+			original_tag = IRE
+		}
+
+		available = {}
+
+		days_remove = 35
+		
+		remove_effect = {
+			add_power_balance_value = {
+				id = IRE_IRA_political_balance
+				value = 0.2
+			}
+			add_manpower = -500
+		}
+	}
+	
+	IRE_Denounce_the_IRA = { 
+		name = "Denounce the IRA"
+		cost = 35
+		icon = GFX_decision_generic_political_discourse
+		days_remove = 70
+		
+		remove_effect = {
+			add_power_balance_value = {
+				id = IRE_IRA_political_balance
+				value = 0.4
+			}
+			add_manpower = -750
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+IRE_Celtic_Nationalism_category = {
+
+
+	IRE_Sway_Northern_Ireland_decision = {
+		priority = 80
+
+		fire_only_once = no
+
+		target_trigger = {
+			FROM = {
+				OWNER = {
+					owns_state = 119
+				}
+				
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = IRE_swayed_NorthernIreland_flag }
+		}
+
+		allowed = {
+			original_tag = IRE
+		}
+
+		available = {
+			OR = {
+				NOT = { has_country_flag = IRE_swayed_NorthernIreland_flag }
+			}
+		}
+
+		days_remove = 30
+		cost = 50
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+
+			IRE = {
+				country_event = {
+					id = IRE_Celtic_Union_Nationalism_Northern_Ireland.NorthernIreland
+					hours = 1
+				}
+			}
+		}
+	}
+	
+	IRE_Sway_Scotland_decision = {
+		priority = 80
+
+		fire_only_once = no
+
+		target_trigger = {
+			FROM = {
+				OWNER = {
+					owns_state = 121
+				}
+				
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = IRE_swayed_Scotland_flag }
+		}
+
+		allowed = {
+			original_tag = IRE
+		}
+
+		available = {
+			OR = {
+				NOT = { has_country_flag = IRE_swayed_Scotland_flag }
+			}
+		}
+
+		days_remove = 30
+		cost = 50
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+
+			IRE = {
+				country_event = {
+					id = IRE_Celtic_Union_Nationalism_Scotland.Scotland
+					hours = 1
+				}
+			}
+		}
+	}
+	
+	IRE_Sway_Wales_decision = {
+		priority = 80
+
+		fire_only_once = no
+
+		target_trigger = {
+			FROM = {
+				OWNER = {
+					owns_state = 122
+				}
+				
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = IRE_swayed_Wales_flag }
+		}
+
+		allowed = {
+			original_tag = IRE
+		}
+
+		available = {
+			OR = {
+				NOT = { has_country_flag = IRE_swayed_Wales_flag }
+			}
+		}
+
+		days_remove = 30
+		cost = 50
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+
+			IRE = {
+				country_event = {
+					id = IRE_Celtic_Union_Nationalism_Wales.Wales
+					hours = 1
+				}
+			}
+		}
+	}
+	
+	IRE_Stoke_Tensions_decision = {
+		priority = 80
+
+		fire_only_once = yes
+
+
+		allowed = {
+			AND = {
+				original_tag = IRE
+			}
+		}
+
+		available = {
+			AND = {
+				original_tag = IRE
+				check_variable = { Celtic_Union_Nationalism_Countries_swung > 2 }
+			}
+		}
+
+		days_remove = 25
+		cost = 150
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+
+			ENG = {
+				add_stability = -0.33
+				if = {
+					limit = { IRE = { has_country_flag = IRE_swayed_NorthernIreland_flag } }
+					remove_state_core = 119
+				}
+				if = {
+					limit = { IRE = { has_country_flag = IRE_swayed_Scotland_flag } }
+					remove_state_core = 133
+					remove_state_core = 121
+					remove_state_core = 136
+					remove_state_core = 120
+				}
+				if = {
+					limit = { IRE = { has_country_flag = IRE_swayed_Wales_flag } }
+					remove_state_core = 122
+				}
+			}
+		}
+	}
+	
+	IRE_Provoke_Revolt_decision = {
+		priority = 80
+
+		fire_only_once = yes
+
+
+		allowed = {
+			AND = {
+				original_tag = IRE
+			}
+		}
+
+		available = {
+			AND = {
+				original_tag = IRE
+				check_variable = { Celtic_Union_Nationalism_Countries_swung > 2 }
+			}
+		}
+
+		days_remove = 50
+		cost = 150
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+
+			NIR = {
+				transfer_state = 119
+				division_template = {
+				name = "Ulster Celtic Force"
+				division_names_group = NIR_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+				}
+				
+				random_owned_controlled_state = {
+					create_unit = { 
+						division = "name = \"1. Ulster Celtic Force\" division_template = \"Ulster Celtic Force\" start_experience_factor = 0.7" 
+						owner = NIR
+					}
+					create_unit = { 
+						division = "name = \"1. Ulster Celtic Force\" division_template = \"Ulster Celtic Force\" start_experience_factor = 0.7" 
+						owner = NIR
+					}
+					create_unit = { 
+						division = "name = \"1. Ulster Celtic Force\" division_template = \"Ulster Celtic Force\" start_experience_factor = 0.7" 
+						owner = NIR
+					}
+					create_unit = { 
+						division = "name = \"1. Ulster Celtic Force\" division_template = \"Ulster Celtic Force\" start_experience_factor = 0.7" 
+						owner = NIR
+					}
+				}
+				declare_war_on = { target = ENG    type = puppet_wargoal_focus }
+		
+		
+			}
+			SCO = {
+				transfer_state = 133
+				transfer_state = 121
+				transfer_state = 136
+				transfer_state = 120
+				
+				
+				
+				
+				division_template = {
+				name = "Scottish Celtic Force"
+				division_names_group = SCO_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+				}
+				
+				random_owned_controlled_state = {
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+
+				}
+				random_owned_controlled_state = {
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+					create_unit = { 
+						division = "name = \"1. Scottish Celtic Force\" division_template = \"Scottish Celtic Force\" start_experience_factor = 0.7" 
+						owner = SCO
+					}
+
+				}
+				declare_war_on = { target = ENG    type = puppet_wargoal_focus }
+				
+				
+			}
+			WLS = {
+				
+				transfer_state = 122
+				
+				division_template = {
+				name = "Welsh Celtic Force"
+				division_names_group = WLS_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+				}
+				
+				random_owned_controlled_state = {
+					create_unit = { 
+						division = "name = \"1. Welsh Celtic Force\" division_template = \"Welsh Celtic Force\" start_experience_factor = 0.7" 
+						owner = WLS
+					}
+					create_unit = { 
+						division = "name = \"1. Welsh Celtic Force\" division_template = \"Welsh Celtic Force\" start_experience_factor = 0.7" 
+						owner = WLS
+					}
+					create_unit = { 
+						division = "name = \"1. Welsh Celtic Force\" division_template = \"Welsh Celtic Force\" start_experience_factor = 0.7" 
+						owner = WLS
+					}
+					create_unit = { 
+						division = "name = \"1. Welsh Celtic Force\" division_template = \"Welsh Celtic Force\" start_experience_factor = 0.7" 
+						owner = WLS
+					}
+					create_unit = { 
+						division = "name = \"1. Welsh Celtic Force\" division_template = \"Welsh Celtic Force\" start_experience_factor = 0.7" 
+						owner = WLS
+					}
+					create_unit = { 
+						division = "name = \"1. Welsh Celtic Force\" division_template = \"Welsh Celtic Force\" start_experience_factor = 0.7" 
+						owner = WLS
+					}
+					create_unit = { 
+						division = "name = \"1. Welsh Celtic Force\" division_template = \"Welsh Celtic Force\" start_experience_factor = 0.7" 
+						owner = WLS
+					}
+					create_unit = { 
+						division = "name = \"1. Welsh Celtic Force\" division_template = \"Welsh Celtic Force\" start_experience_factor = 0.7" 
+						owner = WLS
+					}
+				}
+				declare_war_on = { target = ENG    type = puppet_wargoal_focus }
+			}
+		}
+	}
+
+
+}

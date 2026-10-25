@@ -1,0 +1,382 @@
+﻿ideas = {
+	country = {
+		SOVREP_soviet_investments_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_soviet_advisers
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		SOVREP_post_resistance_development = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				global_building_slots_factor = 0.10
+			}
+		}
+
+		SOVREP_aces_in_exile_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_air_fighter
+			modifier = {
+				experience_gain_air_factor = 0.10
+				air_ace_generation_chance_factor = 0.20
+			}
+		}
+
+		SOVREP_army_cooperation_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_org_factor = 0.05
+				division_recovery_rate_factor = 0.10
+			}
+		}
+
+		SOVREP_civil_and_military_organization_ukr = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				resistance_target_on_our_occupied_states = 0.10
+				operative_slot = 1
+				decryption_speed_factor = 0.10
+			}
+		}
+
+		SOVREP_industrialist_connections_ukr = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		SOVREP_even_stronger_resistance_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				resistance_target_on_our_occupied_states = 0.20
+				resistance_growth_on_our_occupied_states = 0.10
+			}
+		}
+
+		SOVREP_everyone_will_fight_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = soviet_german_friendship
+			modifier = {
+				conscription_factor = 0.05
+				weekly_manpower = 500
+			}
+		}
+
+		SOVREP_our_help_in_the_war_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+				opinion_gain_monthly_factor = 0.15
+			}
+		}
+
+		SOVREP_people_return_prep_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_war_preparation
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.10
+				resistance_target_on_our_occupied_states = 0.10
+			}
+		}
+
+		SOVREP_army_return_prep_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_core_defence_factor = 0.10
+				army_core_attack_factor = 0.10
+				planning_speed = 0.15
+			}
+		}
+
+		SOVREP_land_return_prep_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				out_of_supply_factor = -0.20
+				supply_consumption_factor = -0.10
+				max_planning = 0.10
+			}
+		}
+
+		SOVREP_united_exile_government_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+	allowed = { always = no }
+	allowed_civil_war = { always = yes }
+	removal_cost = -1
+	picture = generic_central_management
+
+	modifier = {
+		# РђСЂРјС–СЏ
+		army_attack_factor = 0.10
+		army_defence_factor = 0.10
+		army_org_factor = 0.05
+		division_recovery_rate_factor = 0.10
+		training_time_factor = -0.15
+
+		# РњР°РЅРµРІСЂРµРЅС–СЃС‚СЊ / РїР»Р°РЅСѓРІР°РЅРЅСЏ
+		planning_speed = 0.10
+		max_planning = 0.05
+
+		# Р¤Р»РѕС‚ С– РІРёСЂРѕР±РЅРёС†С‚РІРѕ С‚РµС…РЅС–РєРё
+		industrial_capacity_dockyard = 0.10
+
+		# РђРІС–Р°С†С–СЏ
+		experience_gain_air_factor = 0.10
+		air_ace_generation_chance_factor = 0.15
+
+		# Р РѕР·РІС–РґРєР° / РѕРїС–СЂ
+		operative_slot = 1
+		decryption_speed_factor = 0.10
+		resistance_target_on_our_occupied_states = 0.50
+		resistance_growth_on_our_occupied_states = 0.25
+
+		# РњРѕР±С–Р»С–Р·Р°С†С–СЏ
+		conscription_factor = 0.10
+		weekly_manpower = 750
+
+		# РќР°СѓРєР° С‚Р° РїСЂРѕРјРёСЃР»РѕРІС–СЃС‚СЊ
+		research_speed_factor = 0.10
+		production_speed_buildings_factor = 0.05
+
+		# РџРѕР»С–С‚РёРєР° / СЃС‚Р°Р±С–Р»СЊРЅС–СЃС‚СЊ
+		stability_factor = 0.10
+		war_support_factor = 0.10
+		political_power_gain_factor = 0.10
+		opinion_gain_monthly_factor = 0.10
+	}
+}
+
+		SOVREP_exile_politics_spirit = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_political_support
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain_factor = 0.10
+			}
+		}
+
+		SOVREP_exploit_connections_spirit = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				trade_opinion_factor = 0.15
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		SOVREP_allied_aid_spirit = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		SOVREP_intl_recognition_spirit = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_conference
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				weekly_political_power = 0.20
+			}
+		}
+
+		SOVREP_reconquest_spirit = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_guerilla_warfare
+			modifier = {
+				war_support_factor = 0.20
+				army_core_attack_factor = 0.15
+				division_recovery_rate_factor = 0.15
+			}
+		}
+
+		SOVREP_first_hit_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_core_attack_factor = 0.20
+				army_speed_factor = 0.10
+			}
+		}
+
+		SOVREP_second_hit_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				breakthrough_factor = 0.20
+				division_recovery_rate_factor = 0.15
+			}
+		}
+
+		SOVREP_third_hit_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_core_defence_factor = 0.20
+				planning_speed = 0.15
+			}
+		}
+
+		SOVREP_final_blow_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				reinforce_rate = 0.10
+			}
+		}
+	}
+}
+

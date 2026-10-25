@@ -1,0 +1,54 @@
+KOR_historical_plan = {
+	name = "KOR historical plan"
+	desc = ""
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = KOR_AI_BEHAVIOR
+					option = DEFAULT
+				}
+			}
+			has_country_flag = RULE_OPTION_HISTORICAL_KOR_flag
+			has_game_rule = {
+				rule = KOR_AI_BEHAVIOR
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_national_focuses = {
+		JKO_kaiju_guoce_jieshao
+		KOR_chongsheng_zhengtong_diwei
+		KOR_goumai_wuzi_zhuangbei
+		#1937
+		#1938
+		#1939
+		#1940
+		#1941
+		#1942
+		#1943
+	}
+	focus_factors = {
+	}
+	research = {
+	}
+	ideas = {
+	}
+	traits = {
+	}
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}

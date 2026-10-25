@@ -1,0 +1,116 @@
+KOR_zhiyuanjun_ai_qingxiang = {
+	enable = {
+		has_country_flag = KOR_zhunbei_paiqian_zhiyuanjun_flag
+		has_global_flag = KOR_dongya_minzu_jiefang_flag
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KOR
+		value = 400
+	}
+}
+
+JAP_fangshou_chaoxian_bandao = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		KOR = {
+			has_completed_focus = JKO_duli_chaoxian_one
+		}
+		525 = {
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+		527 = {
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+		1028 = {
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+		1029 = {
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+		1030 = {
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+		1031 = {
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			525
+			527
+			1028
+			1029
+			1030
+			1031
+		}
+		ratio = 0.2
+		area = asia
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 10
+	}
+}
+
+JKO_fangshou_chaoxian_bandao = {
+	allowed = {
+		original_tag = JKO
+	}
+	enable = {
+		KOR = {
+			has_completed_focus = JKO_duli_chaoxian_one
+		}
+		525 = {
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+		527 = {
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+		1028 = {
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+		1029 = {
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+		1030 = {
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+		1031 = {
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			525
+			527
+			1028
+			1029
+			1030
+			1031
+		}
+		ratio = 0.2
+		area = asia
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = 50
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 50
+	}
+}

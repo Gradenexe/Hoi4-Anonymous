@@ -1,0 +1,12 @@
+﻿l_german:
+ SOV_reinstate_the_duma_tt:0 "§HAleksandr Kerensky§! wird aus dem Exil zurückkehren."
+ SOV_return_of_republic_tt:0 "Dies wird die §HFaschisten§! und §HAutokraten§! §Ranger§!!"
+ SOV_dismantle_the_union_tt:0 "Die §HUnion§! wird aufgelöst, §Halle Mitgliedsstaaten werden als §Hintegrierte Marionetten freigelassen§!."
+ SOV_expand_the_union_tt:0 "Wir werden nun in der Lage sein, unsere §Höstlichen Verbündeten§! zu unterwerfen§!."
+ SOV_expand_the_union_real_tt:0 "Wir werden nun in der Lage sein, unsere §Höstlichen Verbündeten§! zu integrieren§!."
+ SOV_faction_management_countries_effected_tt:0 "Die Länder, die betroffen sein können, sind:\n- @POL§H[POL.getnamedefcap]§!\n- @LAT§H[LAT.getnamedefcap]§!\n- @LIT§H[LIT.getnamedefcap]§!\n- @EST§H[EST.getnamedefcap]§!\n- @ROM§H[ROM.getnamedefcap]§!\n- @FIN§H[FIN.getnamedefcap]§!"
+ gain_cores_transfer_on_highlighted_states_tt:0 "Die §Hhighlighted§!-Zustände werden entkernt und an uns übertragen."
+ SOV_new_frontiers_tt:0 "Wir werden nun in der Lage sein, weitere Länder §Hintegrieren§!."
+ SOV_greater_alliance_tt:0 "Wir können jetzt die Länder §HBalkan§! und §HNordic§! in unsere Allianz einladen."
+ SOV_foreign_investment_tt:0 "Fügt eine §Hzivile Fabrik§! und eine §Hmilitärische Fabrik§! für Beziehungen über §H70§! mit den folgenden Nationen hinzu:\n- @ENG§H[ENG.getnamedefcap]§!\n- @USA§H[USA.getnamedefcap]§!\n- @GER§H[GER.getnamedefcap]§!\n- @ITA§H[ITA.getnamedefcap]§!\n- @FRA§H[FRA.getnamedefcap]§!\n- @JAP§H[JAP.getnamedefcap]§!\nDaher ist es möglich, insgesamt bis zu §Hzwölf§! Fabriken zu gewinnen.\n\nHier sind die aktuellen Auswirkungen:"
+ SOV_internal_management_tt:0 "Einige ehemalige Regierungsmitglieder kehren ins Land zurück und können nun als Berater eingestellt werden."

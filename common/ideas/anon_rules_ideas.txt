@@ -1,0 +1,8 @@
+ideas = {
+	hidden_ideas = {
+		rt56rp_unrestricted_join_faction_idea = {
+			removal_cost = -1
+			modifier = { join_faction_tension = -1.0 }
+		}
+	}
+}

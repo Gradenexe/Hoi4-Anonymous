@@ -1,0 +1,68 @@
+spriteTypes = {
+
+	# Valid equipment textures that exist in game files:
+SpriteType = {
+		name = "GFX_IRE_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/usa_improved_infantry_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRE_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_0.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRE_light_tank_equipment_1"
+		texturefile = "gfx/interface/technologies/ENG_basic_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "IRE_medium_tank_equipment_2"
+		texturefile = "gfx/interface/technologies/ENG_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRE_medium_tank_equipment_3"
+		texturefile = "gfx/interface/technologies/ENG_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRE_heavy_tank_equipment_2"
+		texturefile = "gfx/interface/technologies/ENG_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRE_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRE_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRE_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRE_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRE_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRE_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_superheavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRE_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_main_battle_tank.dds"
+	}
+}

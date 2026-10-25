@@ -1,0 +1,211 @@
+ideas = {
+
+	country = {
+		BALTIC_Trade_with_sweden = {
+			name = BALTIC_Trade_with_sweden
+
+			allowed = { always = no }
+
+			picture = GER_german_trade
+
+			removal_cost = -1
+
+			cancel = {
+				has_war_with = SWE
+			}
+			
+			on_remove = {
+				if = {
+					limit = {
+						SWE = { has_opinion_modifier = GER_trading_partners }
+					}
+					SWE = {
+						remove_opinion_modifier = {
+							target = FROM 
+							modifier = GER_trading_partners
+						}
+					}
+				}
+			}
+
+			targeted_modifier = {
+				tag = SWE
+
+				trade_cost_for_target_factor = -0.2
+			}
+		}
+		
+		BALTIC_Trade_with_norwey = {
+			name = BALTIC_Trade_with_norwey
+
+			allowed = { always = no }
+
+			picture = GER_german_trade
+
+			removal_cost = -1
+
+			cancel = {
+				has_war_with = NOR
+			}
+			
+			on_remove = {
+				if = {
+					limit = {
+						NOR = { has_opinion_modifier = GER_trading_partners }
+					}
+					NOR = {
+						remove_opinion_modifier = {
+							target = FROM 
+							modifier = GER_trading_partners
+						}
+					}
+				}
+			}
+
+			targeted_modifier = {
+				tag = NOR
+
+				trade_cost_for_target_factor = -0.2
+			}
+		}
+		
+		BALTIC_Trade_with_denmark = {
+			name = BALTIC_Trade_with_denmark
+
+			allowed = { always = no }
+
+			picture = GER_german_trade
+
+			removal_cost = -1
+
+			cancel = {
+				has_war_with = DEN
+			}
+			
+			on_remove = {
+				if = {
+					limit = {
+						DEN = { has_opinion_modifier = GER_trading_partners }
+					}
+					DEN = {
+						remove_opinion_modifier = {
+							target = FROM 
+							modifier = GER_trading_partners
+						}
+					}
+				}
+			}
+
+			targeted_modifier = {
+				tag = DEN
+
+				trade_cost_for_target_factor = -0.2
+			}
+		}
+		
+		BALTIC_Trade_with_finland = {
+			name = BALTIC_Trade_with_finland
+
+			allowed = { always = no }
+
+			picture = GER_german_trade
+
+			removal_cost = -1
+
+			cancel = {
+				has_war_with = FIN
+			}
+			
+			on_remove = {
+				if = {
+					limit = {
+						FIN = { has_opinion_modifier = GER_trading_partners }
+					}
+					FIN = {
+						remove_opinion_modifier = {
+							target = FROM 
+							modifier = GER_trading_partners
+						}
+					}
+				}
+			}
+
+			targeted_modifier = {
+				tag = FIN
+
+				trade_cost_for_target_factor = -0.2
+			}
+		}
+		
+		BALTIC_better_Nokia_finland_1 = {
+			name = BALTIC_better_Nokia_finland
+
+			picture = GER_german_trade
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.025
+			}
+		}
+		
+		BALTIC_better_Nokia_finland_2 = {
+			name = BALTIC_better_Nokia_finland
+
+			picture = GER_german_trade
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		BALTIC_better_Nokia_finland_3 = {
+			name = BALTIC_better_Nokia_finland
+
+			picture = GER_german_trade
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.075
+			}
+		}
+	}
+	
+	industrial_concern = {
+
+		FIN_nokia_for_BALTIC = {
+			name = FIN_nokia
+	
+			picture = FIN_nokia
+			
+			allowed = {
+				or = {
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+				}
+			}
+	
+			visible = {
+				has_completed_focus = BALTIC_Trade_with_finland
+			}
+			
+			available = {
+				FIN = { controls_state = 927 }
+				not = { has_war_with = FIN }
+			}
+	
+			cost = 150
+	
+			research_bonus = {
+				electronics = 0.15
+				synth_resources = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+	}
+}

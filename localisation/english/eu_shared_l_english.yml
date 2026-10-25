@@ -1,0 +1,158 @@
+﻿l_english:
+
+ EU_council_of_europe: "The Council of Europe"
+ EU_council_of_europe_desc: "The time has come to look beyond our borders. With a strong coalition of democratic nations standing together in Europe, we can begin laying the foundation for a truly unified continent."
+ EU_council_of_europe_tt: "Gains the §YEuropean Community§! National Spirit"
+ 
+ EU_coal_and_steel: "European Coal and Steel Community"
+ EU_coal_and_steel_desc: "By pooling our heavy industries together, we make war between European nations not merely unthinkable, but materially impossible."
+ EU_coal_and_steel_tt: "The §YEuropean Community§! national spirit gains:\n§G+5.00%§! Factory Output"
+ 
+ EU_energy_integration: "European Energy Integration"
+ EU_energy_integration_desc: "Sharing our energy grids and resources will secure the power needed for Europe's continuous growth."
+ EU_energy_integration_tt: "The §YEuropean Community§! national spirit gains:\n§G+10.00%§! Max Factories in a State"
+ 
+ EU_nuclear_power: "Euratom"
+ EU_nuclear_power_desc: "Nuclear energy is the future. By establishing a joint European atomic energy community, we can research peaceful nuclear technology together."
+ EU_nuclear_power_tt: "The §YEuropean Community§! national spirit gains:\n§G+5.00%§! Research Speed"
+ 
+ EU_internal_market: "The European Internal Market"
+ EU_internal_market_desc: "Tearing down internal trade barriers and ensuring the free movement of goods will bring unprecedented prosperity to all member states."
+ EU_internal_market_tt: "The §YEuropean Community§! national spirit gains:\n§G+5.00%§! Factory Output"
+ 
+ EU_external_tariffs: "Common Customs Tariff"
+ EU_external_tariffs_desc: "A unified customs policy towards the rest of the world will strengthen our economic negotiating position globally."
+ EU_external_tariffs_tt: "The §YEuropean Community§! national spirit gains:\n§G-5.00%§! Consumer Goods Factories"
+ 
+ EU_single_currency: "The Euro"
+ EU_single_currency_desc: "A single market needs a single currency. Adopting the Euro will bind our economies together inextricably."
+ EU_single_currency_tt: "The §YEuropean Community§! national spirit gains:\n§G+10.00%§! Political Power Gain\n§G-5.00%§! Consumer Goods Factories"
+ 
+ EU_common_agriculture: "Common Agricultural Policy"
+ EU_common_agriculture_desc: "Subsidizing and modernizing our farms at a European level will ensure food security for the entire continent."
+ EU_common_agriculture_tt: "The §YEuropean Community§! national spirit gains:\n§G+5.00%§! Stability"
+
+ EU_european_parliament: "The European Parliament"
+ EU_european_parliament_desc: "A true union needs a democratic voice. We shall establish a directly elected parliament to represent all citizens of Europe."
+ EU_european_parliament_tt: "The §YEuropean Community§! national spirit gains:\n§G+10.00%§! Political Power Gain"
+ 
+ EU_court_of_justice: "European Court of Justice"
+ EU_court_of_justice_desc: "A supreme court is necessary to ensure that European law is interpreted and applied consistently across all member states."
+ EU_court_of_justice_tt: "The §YEuropean Community§! national spirit gains:\n§G+10.00%§! Stability"
+ 
+ EU_schengen_area: "The Schengen Agreement"
+ EU_schengen_area_desc: "Abolishing internal border checks will allow our citizens to travel freely across the continent."
+ EU_schengen_area_tt: "The §YEuropean Community§! national spirit gains:\n§G+5.00%§! Non-Core Manpower"
+ 
+ EU_space_agency: "European Rocketry Program"
+ EU_space_agency_desc: "Pooling our scientific minds will allow Europe to lead the world in advanced rocketry and aerospace research."
+ EU_space_agency_tt: "The §YEuropean Community§! national spirit gains:\n§G+5.00%§! Research Speed"
+
+ EU_defense_council: "European Defense Community"
+ EU_defense_council_desc: "Economic integration is meaningless without security. We must establish a joint command structure to defend the free nations of Europe."
+ EU_defense_council_tt: "The §YEuropean Community§! national spirit gains:\n§G+5.00%§! War Support"
+ 
+ EU_integrated_army: "Standardized Army Equipment"
+ EU_integrated_army_desc: "Standardizing weapons, ammunition, and military doctrine across all European armies will vastly improve our combat efficiency and organization."
+ EU_integrated_army_tt: "The §YEuropean Community§! national spirit gains:\n§G+5.00%§! Army Organization"
+ 
+ EU_integrated_navy: "Joint Naval Operations"
+ EU_integrated_navy_desc: "Sharing naval bases and coordinating our fleets will allow us to project European power across the world's oceans."
+ EU_integrated_navy_tt: "The §YEuropean Community§! national spirit gains:\n§G+5.00%§! Navy Organization"
+ 
+ EU_integrated_airforce: "European Air Command"
+ EU_integrated_airforce_desc: "An integrated air defense network and joint pilot training programs will secure the skies over Europe."
+ EU_integrated_airforce_tt: "The §YEuropean Community§! national spirit gains:\n§G+5.00%§! Air Mission Efficiency"
+ 
+ EU_united_states_of_europe: "Proclaim the European Union"
+ EU_united_states_of_europe_desc: "Today marks the end of centuries of European division. We shall formally unite into a single, federated superstate: The European Union."
+ 
+ EU_expand_the_union: "Expand the Union"
+ EU_expand_the_union_desc: "The European project does not end here. We must extend the hand of friendship to the remaining democratic nations of Europe and invite them to join our prosperity."
+ EU_gains_spirit_tt: "Gains the §YEuropean Community§! National Spirit"
+
+ POR_eu_gateway:0 "Portuguese Gateway to Europe"
+ POR_eu_gateway_desc:0 "Having embraced parliamentary democracy, Portugal looks outward, ready to open the door to closer European cooperation."
+
+ SPR_eu_gateway:0 "Spanish Gateway to Europe"
+ SPR_eu_gateway_desc:0 "A democratic Spain, having weathered its own turmoil, now seeks its place at the table of a united continent."
+
+ FRA_eu_gateway:0 "French Gateway to Europe"
+ FRA_eu_gateway_desc:0 "As one of the great democracies of the continent, France stands ready to lead the way toward European unity."
+
+ ENG_eu_gateway:0 "British Gateway to Europe"
+ ENG_eu_gateway_desc:0 "Long wary of continental entanglements, a democratic Britain reconsiders its place as a bridge between Europe and the wider world."
+
+ BEL_eu_gateway:0 "Belgian Gateway to Europe"
+ BEL_eu_gateway_desc:0 "Sitting at the crossroads of Europe, Belgium's democratic government throws its weight behind the project of continental cooperation."
+
+ BEL_eu_gateway_2:0 "Belgian Gateway to Europe (II)"
+ BEL_eu_gateway_2_desc:0 "Belgium reaffirms its commitment to a united Europe through a second path of cooperation and integration."
+
+ HOL_eu_gateway:0 "Dutch Gateway to Europe"
+ HOL_eu_gateway_desc:0 "A trading nation by tradition, the Netherlands sees in European unity a chance to secure prosperity for generations to come."
+
+ SWI_eu_gateway:0 "Swiss Gateway to Europe"
+ SWI_eu_gateway_desc:0 "Ever cautious of foreign entanglements, a democratic Switzerland weighs the benefits of joining its neighbors in a common European project."
+
+ ITA_eu_gateway:0 "Italian Gateway to Europe"
+ ITA_eu_gateway_desc:0 "A democratic Italy looks past its recent turmoil, seeking stability and prosperity through closer ties with its neighbors."
+
+ ITA_eu_gateway_2:0 "Italian Gateway to Europe (II)"
+ ITA_eu_gateway_2_desc:0 "Italy pursues a second avenue toward European cooperation, further cementing its role on the continent."
+
+ GER_eu_gateway:0 "German Gateway to Europe"
+ GER_eu_gateway_desc:0 "A democratic Germany, seeking to rebuild trust with its neighbors, offers its hand toward a shared European future."
+
+ AUS_eu_gateway:0 "Austrian Gateway to Europe"
+ AUS_eu_gateway_desc:0 "Standing at the heart of the continent, a democratic Austria seeks security and prosperity through European cooperation."
+
+ YUG_eu_gateway:0 "Yugoslav Gateway to Europe"
+ YUG_eu_gateway_desc:0 "A democratic Yugoslavia, uniting its many peoples under one banner, looks to Europe as a partner in stability."
+
+ GRE_eu_gateway:0 "Greek Gateway to Europe"
+ GRE_eu_gateway_desc:0 "A democratic Greece, heir to the traditions of the ancient world, seeks its place among a modern union of nations."
+
+ BUL_eu_gateway:0 "Bulgarian Gateway to Europe"
+ BUL_eu_gateway_desc:0 "A democratic Bulgaria looks westward, seeking new partners and new opportunities on the continent."
+
+ ROM_eu_gateway:0 "Romanian Gateway to Europe"
+ ROM_eu_gateway_desc:0 "A democratic Romania, having charted its own course, seeks closer cooperation with its European neighbors."
+
+ HUN_eu_gateway:0 "Hungarian Gateway to Europe"
+ HUN_eu_gateway_desc:0 "A democratic Hungary looks beyond its borders, seeking security and prosperity through continental cooperation."
+
+ POL_eu_gateway:0 "Polish Gateway to Europe"
+ POL_eu_gateway_desc:0 "A democratic Poland, standing at the crossroads of Europe, throws its support behind a union of free nations."
+
+ DEN_eu_gateway:0 "Danish Gateway to Europe"
+ DEN_eu_gateway_desc:0 "A democratic Denmark seeks safety in numbers, joining its voice to a growing chorus of European cooperation."
+
+ NOR_eu_gateway:0 "Norwegian Gateway to Europe"
+ NOR_eu_gateway_desc:0 "A democratic Norway, long tied to the sea, looks to the continent for new partnerships and shared security."
+
+ SWE_eu_gateway:0 "Swedish Gateway to Europe"
+ SWE_eu_gateway_desc:0 "A democratic Sweden weighs the merits of closer European integration against its tradition of neutrality."
+
+ FIN_eu_gateway:0 "Finnish Gateway to Europe"
+ FIN_eu_gateway_desc:0 "Having secured its independence, a democratic Finland seeks new allies through closer ties with the rest of Europe."
+
+ ICE_eu_gateway:0 "Icelandic Gateway to Europe"
+ ICE_eu_gateway_desc:0 "A democratic Iceland, though distant from the continent, sees value in joining a wider European project."
+
+ CZE_eu_gateway:0 "Czechoslovak Gateway to Europe"
+ CZE_eu_gateway_desc:0 "A democratic Czechoslovakia, standing firm amid regional tensions, seeks strength through European solidarity."
+
+ LIT_eu_gateway:0 "Lithuanian Gateway to Europe"
+ LIT_eu_gateway_desc:0 "A democratic Lithuania looks to European cooperation as a safeguard for its hard-won independence."
+
+ LAT_eu_gateway:0 "Latvian Gateway to Europe"
+ LAT_eu_gateway_desc:0 "A democratic Latvia seeks security and partnership through closer integration with the rest of Europe."
+
+ EST_eu_gateway:0 "Estonian Gateway to Europe"
+ EST_eu_gateway_desc:0 "A democratic Estonia, small but determined, seeks its place within a wider union of European nations."
+
+ SOV_eu_gateway:0 "Russian Gateway to Europe"
+ SOV_eu_gateway_desc:0 "Having embraced parliamentary democracy, the Russian Federation reconsiders its place in the world, looking toward Europe rather than isolation."
+  POL_eu_gateway_2:0 "Polish Gateway to Europe (II)"
+ POL_eu_gateway_2_desc:0 "Poland reaffirms its commitment to a united Europe through a second path of cooperation and integration."

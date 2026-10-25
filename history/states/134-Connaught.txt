@@ -1,0 +1,31 @@
+state={
+	id=134
+	name="STATE_134"
+	resources={
+		aluminium=15
+		steel=43
+		coal=38
+	}
+	history= {
+		owner = IRE
+		victory_points = {
+			9303 15 #Galway
+		}
+		victory_points = {
+			11371 5 #Sligo
+		}
+		buildings = {
+			infrastructure = 3 #was: 6
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		add_core_of = IRE
+	}
+	provinces=
+	{
+337 3396 9255 9303 9321 9369 11238 11287 11371 	}
+	manpower=667100
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=13
+}

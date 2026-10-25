@@ -1,0 +1,325 @@
+ideas = {
+	country = {
+		EXILE_aces_in_exile_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_air_fighter
+			modifier = {
+				experience_gain_air_factor = 0.10
+				air_ace_generation_chance_factor = 0.20
+			}
+		}
+
+		EXILE_army_cooperation_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_org_factor = 0.05
+				division_recovery_rate_factor = 0.10
+			}
+		}
+
+		EXILE_civil_and_military_organization = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				resistance_target_on_our_occupied_states = 0.10
+				operative_slot = 1
+				decryption_speed_factor = 0.10
+			}
+		}
+
+		EXILE_industrialist_connections = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		EXILE_even_stronger_resistance_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				resistance_target_on_our_occupied_states = 0.20
+				resistance_growth_on_our_occupied_states = 0.10
+			}
+		}
+
+		EXILE_everyone_will_fight_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = soviet_german_friendship
+			modifier = {
+				conscription_factor = 0.05
+				weekly_manpower = 500
+			}
+		}
+
+		EXILE_our_help_in_the_war_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+				opinion_gain_monthly_factor = 0.15
+			}
+		}
+
+		EXILE_people_return_prep_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_war_preparation
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.10
+				resistance_target_on_our_occupied_states = 0.10
+			}
+		}
+
+		EXILE_army_return_prep_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_core_defence_factor = 0.10
+				army_core_attack_factor = 0.10
+				planning_speed = 0.15
+			}
+		}
+
+		EXILE_land_return_prep_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				out_of_supply_factor = -0.20
+				supply_consumption_factor = -0.10
+				max_planning = 0.10
+			}
+		}
+
+		EXILE_united_exile_government_idea = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_central_management
+
+			modifier = {
+				# Army
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+				army_org_factor = 0.05
+				division_recovery_rate_factor = 0.10
+				training_time_factor = -0.15
+
+				# Maneuverability / planning
+				planning_speed = 0.10
+				max_planning = 0.05
+
+				# Navy and equipment production
+				industrial_capacity_dockyard = 0.10
+
+				# Aviation
+				experience_gain_air_factor = 0.10
+				air_ace_generation_chance_factor = 0.15
+
+				# Intelligence / resistance
+				operative_slot = 1
+				decryption_speed_factor = 0.10
+				resistance_target_on_our_occupied_states = 0.50
+				resistance_growth_on_our_occupied_states = 0.25
+
+				# Mobilization
+				conscription_factor = 0.10
+				weekly_manpower = 750
+
+				# Research and industry
+				research_speed_factor = 0.10
+				production_speed_buildings_factor = 0.05
+
+				# Politics / stability
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				political_power_gain_factor = 0.10
+				opinion_gain_monthly_factor = 0.10
+			}
+		}
+
+		EXILE_exile_politics_spirit = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_political_support
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain_factor = 0.10
+			}
+		}
+
+		EXILE_exploit_connections_spirit = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				trade_opinion_factor = 0.15
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		EXILE_allied_aid_spirit = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		EXILE_intl_recognition_spirit = {
+			cancel_trigger = {
+				has_capitulated = no
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_conference
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				weekly_political_power = 0.20
+			}
+		}
+
+		EXILE_reconquest_spirit = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_guerilla_warfare
+			modifier = {
+				war_support_factor = 0.20
+				army_core_attack_factor = 0.15
+				division_recovery_rate_factor = 0.15
+			}
+		}
+
+		EXILE_first_hit_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_core_attack_factor = 0.20
+				army_speed_factor = 0.10
+			}
+		}
+
+		EXILE_second_hit_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				breakthrough_factor = 0.20
+				division_recovery_rate_factor = 0.15
+			}
+		}
+
+		EXILE_third_hit_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_core_defence_factor = 0.20
+				planning_speed = 0.15
+			}
+		}
+
+		EXILE_final_blow_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				reinforce_rate = 0.10
+			}
+		}
+	}
+}

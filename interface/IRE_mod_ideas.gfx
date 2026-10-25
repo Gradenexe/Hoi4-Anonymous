@@ -1,0 +1,133 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_IRE_ireland_Famine"
+		texturefile = "gfx/interface/ideas/IRE/IRE_ireland_Famine.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_IRE_Potato_Famine"
+		texturefile = "gfx/interface/ideas/IRE/IRE_Potato_Famine.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_AngloIrishTradeWar"
+		texturefile = "gfx/interface/ideas/IRE/IRE_anglo_irish_trade_war.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Constitution"
+		texturefile = "gfx/interface/ideas/IRE/IRE_Constitution.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRE_ira_defeated"
+		texturefile = "gfx/interface/ideas/IRE/IRE_ira_defeated.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRE_ira_loyal"
+		texturefile = "gfx/interface/ideas/IRE/IRE_ira_loyal.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_IRE_daniel_hogan_army_small"
+		texturefile = "gfx/interface/advisors/IRE/IRE_daniel_hogan.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_daniel_hogan_army_large"
+		texturefile = "gfx/leaders/IRE/IRE_daniel_hogan.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_sean_mac_eoin_army_small"
+		texturefile = "gfx/interface/advisors/IRE/IRE_sean_mac_eoin.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_sean_mac_eoin_army_large"
+		texturefile = "gfx/leaders/IRE/IRE_sean_mac_eoin.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_james_steele_army_small"
+		texturefile = "gfx/interface/advisors/IRE/IRE_james_steele.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_james_steele_army_large"
+		texturefile = "gfx/leaders/IRE/IRE_james_steele.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_daniel_mckenna_army_small"
+		texturefile = "gfx/interface/advisors/IRE/IRE_daniel_mckenna.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_daniel_mckenna_army_large"
+		texturefile = "gfx/leaders/IRE/IRE_daniel_mckenna.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_jj_oconnell_army_small"
+		texturefile = "gfx/interface/advisors/IRE/IRE_jj_oconnell.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_jj_oconnell_army_large"
+		texturefile = "gfx/leaders/IRE/IRE_jj_oconnell.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_tom_barry_army_small"
+		texturefile = "gfx/interface/advisors/IRE/IRE_tom_barry.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_tom_barry_army_large"
+		texturefile = "gfx/leaders/IRE/IRE_tom_barry.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_wj_brennan_whitmore_army_small"
+		texturefile = "gfx/interface/advisors/IRE/IRE_wj_brennan_whitmore.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_wj_brennan_whitmore_army_large"
+		texturefile = "gfx/leaders/IRE/IRE_wj_brennan_whitmore.png"
+	}
+
+
+
+
+	spriteType = {
+		name = "GFX_idea_IRE_democracy_big_fellow_idea"
+		texturefile = "gfx/interface/ideas/IRE/Mods/IRE_democracy_big_fellow_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRE_irish_monarch_idea"
+		texturefile = "gfx/interface/ideas/IRE/Mods/IRE_irish_monarch_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Sword_Archangel"
+		texturefile = "gfx/interface/ideas/IRE/Mods/GER_Sword_Archangel.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_faith_in_the_army_idea"
+		texturefile = "gfx/interface/ideas/IRE/Mods/SWE_faith_in_the_army_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRE_new_ireland_idea"
+		texturefile = "gfx/interface/ideas/IRE/Mods/IRE_new_ireland_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRE_safety_security_idea"
+		texturefile = "gfx/interface/ideas/IRE/Mods/IRE_safety_security_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_Mining_Miner"
+		texturefile = "gfx/interface/ideas/IRE/Mods/BEL_Mining_Miner.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_steel_distinction"
+		texturefile = "gfx/interface/ideas/IRE/Mods/SWE_steel_distinction.png"
+	}
+	spriteType = {
+		name = "GFX_idea_worker_reforms"
+		texturefile = "gfx/interface/ideas/IRE/Mods/worker_reforms.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_carm_armored_spearhead"
+		texturefile = "gfx/interface/ideas/IRE/Mods/carm_armored_spearhead.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRE_thomond_idea"
+		texturefile = "gfx/interface/ideas/IRE/Mods/IRE_thomond_idea.png"
+	}
+
+}

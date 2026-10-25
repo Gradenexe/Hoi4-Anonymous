@@ -1,0 +1,4 @@
+
+should_have_KOR_communism_medals_trigger = {
+	tag = KOR
+}

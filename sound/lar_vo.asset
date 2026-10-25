@@ -1,0 +1,212 @@
+category = 
+{
+ name = "Unit Voices"
+ soundeffects = {
+	POR_infantry_idle
+	POR_infantry_neutral_combat
+	POR_infantry_positive_combat
+	POR_infantry_retreat
+	POR_infantry_move_out	
+ }
+}
+
+###### POR
+
+soundeffect = 
+{
+    name = "POR_infantry_idle"
+    sounds = {
+	sound = POR_Idle_1
+    sound = POR_Idle_2
+    sound = POR_Idle_3
+    sound = POR_Idle_4    	
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.65
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "POR_infantry_neutral_combat"
+    sounds = {
+        sound = POR_Combat_1
+        sound = POR_Combat_2
+        sound = POR_Combat_3
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.65
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "POR_infantry_positive_combat"
+    sounds = {
+	    sound = POR_Combat_4
+	    sound = POR_Combat_5
+	    sound = POR_Combat_6	
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.65
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "POR_infantry_retreat"
+    sounds = {
+        sound = POR_Retreat_1
+        sound = POR_Retreat_2
+		sound = POR_Retreat_3
+	    sound = POR_Retreat_4
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.65
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "POR_infantry_move_out"
+    sounds = {
+		sound = POR_Move_1
+		sound = POR_Move_2
+		sound = POR_Move_3
+		sound = POR_Move_4
+		sound = POR_Move_5
+		sound = POR_Move_6
+		sound = POR_Move_7
+		sound = POR_Move_8
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.55
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+###### AUDIO ASSETS
+
+### POR IDLE
+sound = 
+{
+	name = "POR_Idle_1"
+	file = "POR/POR_Idle_1.wav"
+}
+sound = 
+{
+	name = "POR_Idle_2"
+	file = "POR/POR_Idle_2.wav"
+}
+sound = 
+{
+	name = "POR_Idle_3"
+	file = "POR/POR_Idle_3.wav"
+}
+sound = 
+{
+	name = "POR_Idle_4"
+	file = "POR/POR_Idle_4.wav"
+}
+
+### POR COMBAT
+sound = 
+{
+	name = "POR_Combat_1"
+	file = "POR/POR_Combat_1.wav"
+}
+sound = 
+{
+	name = "POR_Combat_2"
+	file = "POR/POR_Combat_2.wav"
+}
+sound = 
+{
+	name = "POR_Combat_3"
+	file = "POR/POR_Combat_3.wav"
+}
+sound = 
+{
+	name = "POR_Combat_4"
+	file = "POR/POR_Combat_4.wav"
+}
+sound = 
+{
+	name = "POR_Combat_5"
+	file = "POR/POR_Combat_5.wav"
+}
+sound = 
+{
+	name = "POR_Combat_6"
+	file = "POR/POR_Combat_6.wav"
+}
+
+### POR RETREAT
+sound = 
+{
+	name = "POR_Retreat_1"
+	file = "POR/POR_Retreat_1.wav"
+}
+sound = 
+{
+	name = "POR_Retreat_2"
+	file = "POR/POR_Retreat_2.wav"
+}
+sound = 
+{
+	name = "POR_Retreat_3"
+	file = "POR/POR_Retreat_3.wav"
+}
+sound = 
+{
+	name = "POR_Retreat_4"
+	file = "POR/POR_Retreat_4.wav"
+}
+
+### POR MOVE
+sound = 
+{
+	name = "POR_Move_1"
+	file = "POR/POR_Move_1.wav"
+}
+sound = 
+{
+	name = "POR_Move_2"
+	file = "POR/POR_Move_2.wav"
+}
+sound = 
+{
+	name = "POR_Move_3"
+	file = "POR/POR_Move_3.wav"
+}
+sound = 
+{
+	name = "POR_Move_4"
+	file = "POR/POR_Move_4.wav"
+}
+sound = 
+{
+	name = "POR_Move_5"
+	file = "POR/POR_Move_5.wav"
+}
+sound = 
+{
+	name = "POR_Move_6"
+	file = "POR/POR_Move_6.wav"
+}
+sound = 
+{
+	name = "POR_Move_7"
+	file = "POR/POR_Move_7.wav"
+}
+sound = 
+{
+	name = "POR_Move_8"
+	file = "POR/POR_Move_8.wav"
+}
+

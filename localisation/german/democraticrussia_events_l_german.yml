@@ -1,0 +1,52 @@
+﻿l_german:
+ demrussia.1.t:0 "Die Duma-Wahl, [GetMonth] von [GetYear]"
+ demrussia.1.desc:0 "Mehrere Millionen russische Wähler gehen zu den Wahllokalen, um für die nächste Duma zu stimmen, die dann für den Premierminister stimmt. Wer wird zum Gewinner erklärt?"
+ demrussia.1.a:0 "Die Trudoviks bleiben beliebt."
+ demrussia.1.b:0 "Die Progressiven zeigen eine starke Leistung."
+ demrussia.1.c:0 "Die Kadetten kehren zurück."
+
+ demrussia.2.t:0 "[SOV.getnamedefcap] schlägt eine engere Zusammenarbeit vor"
+ demrussia.2.desc:0 "Heute hat sich der russische Botschafter mit uns getroffen und um eine noch engere Zusammenarbeit gebeten. Das würde bedeuten, dass wir einen Teil unserer Unabhängigkeit aufgeben würden, aber lohnt sich das für unsere Sicherheit?"
+ demrussia.2.a:0 "Sie haben Recht..."
+ demrussia.2.b:0 "Ja, nein."
+
+ demrussia.3.t:0 "Anfrage abgelehnt"
+ demrussia.3.desc:0 "Die Regierung von [FROM.getnamedefcap] hat unseren Antrag abgelehnt und erklärt, dass sie sich selbst versorgen kann.\n\nWie sollen wir reagieren?"
+ demrussia.3.a:0 "Eine Wahl, die wir nicht wünschen, die wir aber respektieren."
+ demrussia.3.b:0 "Dann lasst uns sehen, wie sie unabhängig voneinander kämpfen!"
+
+ demrussia.4.t:0 "[FROM.getnamedefcap] Akzeptiert!"
+ demrussia.4.desc:0 "Die Regierung von [FROM.getnamedefcap] hat unsere Anfrage angenommen und wir haben begonnen, enger mit ihr zusammenzuarbeiten."
+ demrussia.4.a:0 "Unsere Zukunft wird gemeinsam besser sein."
+
+ demrussia.5.t:0 "[FROM.getnamedefcap] will unsere Fraktion anführen!"
+ demrussia.5.desc:0 "Botschafter von [FROM.getnamedef] haben uns heute getroffen und darum gebeten, dass sie unsere Fraktion anführen! Wie reagieren wir?"
+ demrussia.5.a:0 "Vielleicht haben sie Recht, [FROM.getnamedef] wäre ein besserer Anführer."
+ demrussia.5.d:0 "Tut mir leid, im Moment ist kein guter Zeitpunkt."
+ 
+ demrussia.6.t:0 "[FROM.getnamedefcap] lehnt ab!"
+ demrussia.6.desc:0 "[FROM.getnamedefcap] hat entschieden, dass wir nicht der neue Anführer von [ROOT.getfactionname] sein sollten."
+ demrussia.6.a:0 "Schade."
+ 
+ demrussia.7.t:0 "[FROM.getnamedefcap] Akzeptiert!"
+ demrussia.7.desc:0 "[FROM.getnamedefcap] hat beschlossen, dass wir [ROOT.getfactionname] leiten werden!"
+ demrussia.7.a:0 "Sie haben die richtige Wahl getroffen – wir werden [ROOT.getfactionname] zu Größe führen!"
+
+ demrussia.8.t:0 "Die Alaska-Rückerstattung"
+ demrussia.8.desc:0 "Russische Beamte haben uns heute in [ROOT.capital.getname] getroffen und die Rückerstattung von Alaska an sie gefordert.\nNatürlich wird es seinen Preis haben, den sie bereit sind zu akzeptieren. Wie sollen wir reagieren?"
+ demrussia.8.a:0 "Scheint ein fairer Deal zu sein. Alaska ist sowieso nicht wirklich viel wert."
+ demrussia.8.b:0 "Lustiger Vorschlag! Aussteigen."
+
+ demrussia.9.t:0 "Die Alaska-Rückerstattung – abgelehnt"
+ demrussia.9.desc:0 "Die Verantwortlichen von [FROM.getadjective] haben beschlossen, auf unseren Vorschlag zu reagieren, da sie den Vorschlag als Witz betrachteten und ihn daher ablehnten."
+ demrussia.9.a:0 "Das ist bedauerlich."
+ demrussia.9.b:0 "Alaska wird in unseren Herzen immer russisch bleiben..."
+
+ demrussia.10.t:0 "Die Alaska-Rückerstattung – akzeptiert"
+ demrussia.10.desc:0 "Die Verantwortlichen von [FROM.getadjective] haben beschlossen, positiv auf unseren Vorschlag zu reagieren, da sie die Zahlungen für nützlich halten."
+ demrussia.10.a:0 "Endlich ist Alyaska zurück!"
+
+ demrussia.11.t:0 "Schicksal der Schwarzhunderter"
+ demrussia.11.desc:0 "Die Schwarzhunderter waren eine paramilitärische Truppe, die zwar loyal gegenüber dem Zaren war, aber auch Minderheiten und Anhänger der demokratischen Sache angriff. Nachdem wir sie nun aufgelöst haben, stellt sich die Frage, was mit den Beteiligten geschehen soll."
+ demrussia.11.a:0 "Sie haben im Kampf gegen die Kommunisten geholfen, also lassen wir sie dieses Mal durchgehen."
+ demrussia.11.b:0 "Ihr bisheriges Handeln wird im neuen Russland nicht toleriert."

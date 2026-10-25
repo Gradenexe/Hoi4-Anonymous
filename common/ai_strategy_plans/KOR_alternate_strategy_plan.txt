@@ -1,0 +1,798 @@
+KOR_COMMUNIST_YANANPAI_plan = {
+	name = "KOR COMMUNIST YANANPAI plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_country_flag = RULE_OPTION_COMMUNIST_YANANPAI_KOR_flag
+			has_game_rule = {
+				rule = KOR_AI_BEHAVIOR
+				option = COMMUNIST_YANANPAI
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		JKO_kaiju_guoce_jieshao
+		JKO_duli_chaoxian_one
+		JKO_jianli_minzu_zhisheng
+		JKO_jianli_minzu_zhisheng
+		KOR_goumai_wuzi_zhuangbei
+		JKO_jianli_dixia_qingbaowang
+		JKO_lianluo_haiwai_zhengfu
+		KOR_dulizhanzheng_guojizongdui
+		JKO_lalong_riji_chaoxianren
+		JKO_yingjiu_duli_yundonngzhe
+		JKO_sanqianlijiangshan_qiyi
+		KOR_juejing_zhong_de_minzu
+		JKO_xunqiu_guoji_zhiichi
+		KOR_dulizhanzheng_guojitiaoting
+
+		KOR_zhengzhi_luxian_1
+		KOR_zhengzhi_luxian_2
+		KOR_zhengzhi_zhenxing_guojia
+		KOR_queli_zhiding_linshi_xianfa
+		KOR_zhengzhi_zhengzhi_xingshang_huiyi
+		KOR_beijixing_de_zhiyin
+		KOR_jieshou_kangri_youjidui
+		KOR_qingsuan_de_fengbao
+		KOR_zhiding_guojia_xianfa
+
+		KOR_malie_zhuyi_bentuhua
+
+		KOR_zhengfeng_yundong
+		KOR_wenzi_gaige
+		KOR_zhi_qing_xiaxiang
+		KOR_peiyang_difang_ganbu
+		KOR_fandui_geren_chongbai
+		KOR_yanan_jingshen_de_huigui
+		
+		#1942
+		
+		#1943
+		
+		#1944
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+KOR_COMMUNIST_NANLAOPAI_plan = {
+	name = "KOR COMMUNIST NANLAOPAI plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_country_flag = RULE_OPTION_COMMUNIST_NANLAOPAI_KOR_flag
+			has_game_rule = {
+				rule = KOR_AI_BEHAVIOR
+				option = COMMUNIST_NANLAOPAI
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		JKO_kaiju_guoce_jieshao
+		JKO_duli_chaoxian_one
+		JKO_jianli_minzu_zhisheng
+		JKO_jianli_minzu_zhisheng
+		KOR_goumai_wuzi_zhuangbei
+		JKO_jianli_dixia_qingbaowang
+		JKO_lianluo_haiwai_zhengfu
+		KOR_dulizhanzheng_guojizongdui
+		JKO_lalong_riji_chaoxianren
+		JKO_yingjiu_duli_yundonngzhe
+		JKO_sanqianlijiangshan_qiyi
+		KOR_juejing_zhong_de_minzu
+		JKO_xunqiu_guoji_zhiichi
+		KOR_dulizhanzheng_guojitiaoting
+
+		KOR_zhengzhi_luxian_1
+		KOR_zhengzhi_luxian_2
+		KOR_zhengzhi_zhenxing_guojia
+		KOR_queli_zhiding_linshi_xianfa
+		KOR_zhengzhi_zhengzhi_xingshang_huiyi
+		KOR_beijixing_de_zhiyin
+		KOR_jieshou_kangri_youjidui
+		KOR_qingsuan_de_fengbao
+		KOR_zhiding_guojia_xianfa
+
+		KOR_jianli_laogong_dang
+
+
+		KOR_hongse_gonghui
+		KOR_wenzi_gaige
+		KOR_xuesheng_yundong_xianfeng
+		KOR_peiyang_difang_ganbu
+
+		KOR_fandui_geren_chongbai
+		KOR_renmin_weiyuanhui_de_yichan
+		
+
+		
+		#1942
+		
+		
+		
+		
+		#1943
+		
+		
+		
+		
+		
+		
+		
+		
+		#1944
+		
+		
+		
+		
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+KOR_COMMUNIST_MANZHOUPAI_plan = {
+	name = "KOR COMMUNIST MANZHOUPAI plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_country_flag = RULE_OPTION_COMMUNIST_MANZHOUPAI_KOR_flag
+			has_game_rule = {
+				rule = KOR_AI_BEHAVIOR
+				option = COMMUNIST_MANZHOUPAI
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		JKO_kaiju_guoce_jieshao
+		JKO_duli_chaoxian_one
+		JKO_jianli_minzu_zhisheng
+		JKO_jianli_minzu_zhisheng
+		KOR_goumai_wuzi_zhuangbei
+		JKO_jianli_dixia_qingbaowang
+		JKO_lianluo_haiwai_zhengfu
+		KOR_dulizhanzheng_guojizongdui
+		JKO_lalong_riji_chaoxianren
+		JKO_yingjiu_duli_yundonngzhe
+		JKO_sanqianlijiangshan_qiyi
+		KOR_juejing_zhong_de_minzu
+		JKO_xunqiu_guoji_zhiichi
+		KOR_dulizhanzheng_guojitiaoting
+
+		KOR_zhengzhi_luxian_1
+		KOR_zhengzhi_luxian_2
+		KOR_zhengzhi_zhenxing_guojia
+		KOR_queli_zhiding_linshi_xianfa
+		KOR_zhengzhi_zhengzhi_xingshang_huiyi
+		KOR_beijixing_de_zhiyin
+		KOR_jieshou_kangri_youjidui
+		KOR_qingsuan_de_fengbao
+		KOR_zhiding_guojia_xianfa
+
+		KOR_zili_geng_sheng
+		KOR_dangjiao_jiehe
+		KOR_quanmin_wuzhuang
+		KOR_sixiang_de_baolei
+
+		KOR_lingxiu_quanwei_zhidu_hua
+
+		KOR_zhutisixiang_de_dengta
+
+
+		
+
+		
+
+
+
+		#1937
+		
+		#1938
+		
+		#1939
+		
+		#1940
+		
+		
+		#1941
+		
+		#1942
+		
+		
+		
+		
+		#1943
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+KOR_COMMUNIST_SULIANPAI_plan = {
+	name = "KOR COMMUNIST SULIANPAI plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_country_flag = RULE_OPTION_COMMUNIST_SULIANPAI_KOR_flag
+			has_game_rule = {
+				rule = KOR_AI_BEHAVIOR
+				option = COMMUNIST_SULIANPAI
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		JKO_kaiju_guoce_jieshao
+		JKO_duli_chaoxian_one
+		JKO_jianli_minzu_zhisheng
+		JKO_jianli_minzu_zhisheng
+		KOR_goumai_wuzi_zhuangbei
+		JKO_jianli_dixia_qingbaowang
+		JKO_lianluo_haiwai_zhengfu
+		KOR_dulizhanzheng_guojizongdui
+		JKO_lalong_riji_chaoxianren
+		JKO_yingjiu_duli_yundonngzhe
+		JKO_sanqianlijiangshan_qiyi
+		KOR_juejing_zhong_de_minzu
+		JKO_xunqiu_guoji_zhiichi
+		KOR_dulizhanzheng_guojitiaoting
+
+		KOR_zhengzhi_luxian_1
+		KOR_zhengzhi_luxian_2
+		KOR_zhengzhi_zhenxing_guojia
+		KOR_queli_zhiding_linshi_xianfa
+		KOR_zhengzhi_zhengzhi_xingshang_huiyi
+		KOR_beijixing_de_zhiyin
+		KOR_jieshou_kangri_youjidui
+		KOR_qingsuan_de_fengbao
+		KOR_zhiding_guojia_xianfa
+
+		KOR_tuiguang_e_yu
+
+		KOR_wushenlun_xuanchuan
+		KOR_shehui_xiashi_zhuyi
+		KOR_quanmin_wuzhuang
+		KOR_lingxiu_quanwei_zhidu_hua
+		KOR_kelimulingong_de_yizhi
+
+
+
+		#1937
+		
+		#1938
+		
+		#1939
+		
+		#1940
+		
+		
+		#1941
+		
+		#1942
+		
+		
+		
+		
+		#1943
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+KOR_DEMOCRATIC_JINJIU_plan = {
+	name = "KOR DEMOCRATIC JINJIU plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_country_flag = RULE_OPTION_DEMOCRATIC_JINJIU_KOR_flag
+			has_game_rule = {
+				rule = KOR_AI_BEHAVIOR
+				option = DEMOCRATIC_JINJIU
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		JKO_kaiju_guoce_jieshao
+		JKO_duli_chaoxian_one
+		JKO_jianli_minzu_zhisheng
+		JKO_jianli_minzu_zhisheng
+		KOR_goumai_wuzi_zhuangbei
+		JKO_jianli_dixia_qingbaowang
+		JKO_lianluo_haiwai_zhengfu
+		KOR_dulizhanzheng_guojizongdui
+		JKO_lalong_riji_chaoxianren
+		JKO_yingjiu_duli_yundonngzhe
+		JKO_sanqianlijiangshan_qiyi
+		KOR_juejing_zhong_de_minzu
+		JKO_xunqiu_guoji_zhiichi
+		KOR_dulizhanzheng_guojitiaoting
+
+		KOR_zhengzhi_luxian_1
+		KOR_zhengzhi_luxian_2
+		KOR_zhengzhi_zhenxing_guojia
+		KOR_queli_zhiding_linshi_xianfa
+		KOR_zhengzhi_zhengzhi_xingshang_huiyi
+		KOR_ziyou_shi_lanse
+
+		KOR_baifan_de_lixiangguo
+	
+		#1943
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+KOR_DEMOCRATIC_LICHENGWAN_plan = {
+	name = "KOR DEMOCRATIC LICHENGWAN plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_country_flag = RULE_OPTION_DEMOCRATIC_LICHENGWAN_KOR_flag
+			has_game_rule = {
+				rule = KOR_AI_BEHAVIOR
+				option = DEMOCRATIC_LICHENGWAN
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		JKO_kaiju_guoce_jieshao
+		JKO_duli_chaoxian_one
+		JKO_jianli_minzu_zhisheng
+		JKO_jianli_minzu_zhisheng
+		KOR_goumai_wuzi_zhuangbei
+		JKO_jianli_dixia_qingbaowang
+		JKO_lianluo_haiwai_zhengfu
+		KOR_dulizhanzheng_guojizongdui
+		JKO_lalong_riji_chaoxianren
+		JKO_yingjiu_duli_yundonngzhe
+		JKO_sanqianlijiangshan_qiyi
+		KOR_juejing_zhong_de_minzu
+		JKO_xunqiu_guoji_zhiichi
+		KOR_dulizhanzheng_guojitiaoting
+
+		KOR_zhengzhi_luxian_1
+		KOR_zhengzhi_luxian_2
+		KOR_zhengzhi_zhenxing_guojia
+		KOR_queli_zhiding_linshi_xianfa
+		KOR_zhengzhi_zhengzhi_xingshang_huiyi
+
+		KOR_ziyou_shi_lanse
+
+		KOR_fangong_jianguo_gangling
+		#1937
+		
+		#1938
+		
+		#1939
+		
+		#1940
+		
+		
+		#1941
+		
+		#1942
+		
+		
+		
+		
+		#1943
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+KOR_NEUTRALITY_LVYUNHENG_plan = {
+	name = "KOR NEUTRALITY LVYUNHENG plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_country_flag = RULE_OPTION_NEUTRALITY_LVYUNHENG_KOR_flag
+			has_game_rule = {
+				rule = KOR_AI_BEHAVIOR
+				option = NEUTRALITY_LVYUNHENG
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		JKO_kaiju_guoce_jieshao
+		JKO_duli_chaoxian_one
+		JKO_jianli_minzu_zhisheng
+		JKO_jianli_minzu_zhisheng
+		KOR_goumai_wuzi_zhuangbei
+		JKO_jianli_dixia_qingbaowang
+		JKO_lianluo_haiwai_zhengfu
+		KOR_dulizhanzheng_guojizongdui
+		JKO_lalong_riji_chaoxianren
+		JKO_yingjiu_duli_yundonngzhe
+		JKO_sanqianlijiangshan_qiyi
+		KOR_juejing_zhong_de_minzu
+		JKO_xunqiu_guoji_zhiichi
+		KOR_dulizhanzheng_guojitiaoting
+
+		KOR_zhengzhi_luxian_1
+		KOR_zhengzhi_luxian_2
+		KOR_zhengzhi_zhenxing_guojia
+		KOR_queli_zhiding_linshi_xianfa
+		KOR_zhengzhi_zhengzhi_xingshang_huiyi
+
+		KOR_minzhi_de_dengta
+		KOR_qingsuan_yu_hejie
+		KOR_mengyang_de_lixiang
+		#1937
+		
+		#1938
+		
+		#1939
+		
+		#1940
+		
+		
+		#1941
+		
+		#1942
+		
+		
+		
+		
+		#1943
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+KOR_NEUTRALITY_JUNZHULIXIAN_plan = {
+	name = "KOR NEUTRALITY JUNZHULIXIAN PLUS plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_country_flag = RULE_OPTION_NEUTRALITY_JUNZHULIXIAN_KOR_flag
+			has_game_rule = {
+				rule = KOR_AI_BEHAVIOR
+				option = NEUTRALITY_JUNZHULIXIAN
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		JKO_kaiju_guoce_jieshao
+		JKO_duli_chaoxian_one
+		JKO_jianli_minzu_zhisheng
+		JKO_jianli_minzu_zhisheng
+		KOR_goumai_wuzi_zhuangbei
+		JKO_jianli_dixia_qingbaowang
+		JKO_lianluo_haiwai_zhengfu
+		KOR_dulizhanzheng_guojizongdui
+		JKO_lalong_riji_chaoxianren
+		JKO_yingjiu_duli_yundonngzhe
+		JKO_sanqianlijiangshan_qiyi
+		KOR_juejing_zhong_de_minzu
+		JKO_xunqiu_guoji_zhiichi
+		KOR_dulizhanzheng_guojitiaoting
+
+		KOR_zhengzhi_luxian_1
+		KOR_zhengzhi_luxian_2
+		KOR_zhengzhi_zhenxing_guojia
+		KOR_queli_zhiding_linshi_xianfa
+		KOR_zhengzhi_zhengzhi_xingshang_huiyi
+
+		KOR_minzhi_de_dengta
+		KOR_qingsuan_yu_hejie
+		KOR_mayi_taizai
+		#1937
+		
+		#1938
+		
+		#1939
+		
+		#1940
+		
+		
+		#1941
+		
+		#1942
+		
+		
+		
+		
+		#1943
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+KOR_FASCIST_DAHANDIGUO_plan = {
+	name = "KOR FASCIST DAHANDIGUO plan"
+	desc = ""
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			has_country_flag = RULE_OPTION_FASCIST_DAHANDIGUO_KOR_flag
+			has_game_rule = {
+				rule = KOR_AI_BEHAVIOR
+				option = FASCIST_DAHANDIGUO
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		JKO_kaiju_guoce_jieshao
+		JKO_duli_chaoxian_one
+		JKO_jianli_minzu_zhisheng
+		JKO_jianli_minzu_zhisheng
+		KOR_goumai_wuzi_zhuangbei
+		JKO_jianli_dixia_qingbaowang
+		JKO_lianluo_haiwai_zhengfu
+		KOR_dulizhanzheng_guojizongdui
+		JKO_lalong_riji_chaoxianren
+		JKO_yingjiu_duli_yundonngzhe
+		JKO_sanqianlijiangshan_qiyi
+		KOR_juejing_zhong_de_minzu
+		JKO_xunqiu_guoji_zhiichi
+		KOR_dulizhanzheng_guojitiaoting
+
+		KOR_zhengzhi_luxian_1
+		KOR_zhengzhi_luxian_2
+		KOR_zhengzhi_zhenxing_guojia
+		KOR_queli_zhiding_linshi_xianfa
+		KOR_zhengzhi_zhengzhi_xingshang_huiyi
+
+		KOR_fupi_de_yinying
+
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

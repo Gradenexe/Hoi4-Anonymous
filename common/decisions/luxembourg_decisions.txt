@@ -1,0 +1,69 @@
+luxembourg_state_category_mission = {
+
+
+	make_luxembourg_large_town_state = {
+	
+	icon = GFX_decision_icon_default
+	days_mission_timeout = 365	
+	is_good = no 
+	
+	allowed = { tag = LUX }
+	
+	activation = {
+		has_idea = town_state 
+		}
+	
+	available = {
+		has_completed_focus = LUX_town_to_large_town
+		}
+	
+	fire_only_once = no 
+	
+	visible = {
+		has_idea = town_state 
+		NOT = { has_completed_focus = LUX_town_to_large_town }
+		}
+	
+	timeout_effect = {
+		add_stability = -0.05 
+		}
+	
+	complete_effect = {
+		add_political_power = 50 
+		set_country_flag = luxembourg_is_large_town
+		}
+	
+	}
+	
+	
+	make_luxembourg_city_state = {
+	
+	icon = GFX_decision_icon_default
+	days_mission_timeout = 365
+	is_good = no 
+	
+	allowed = { tag = LUX }
+	available = {
+		has_completed_focus = LUX_large_town_to_large_city
+		}
+	
+	fire_only_once = no 
+	
+	activation = {
+		has_country_flag = luxembourg_is_large_town
+		has_idea = large_town_state
+        }
+	
+	timeout_effect = {
+		add_stability = -0.05 
+		}
+	
+	complete_effect = {
+		add_political_power = 50 
+		set_country_flag = luxembourg_is_city
+		}
+	
+	}
+	
+	}
+	

@@ -1,0 +1,102 @@
+spriteTypes = {	
+	
+	# Focus Titlebar
+		
+	spriteType = {
+			name = GFX_focus_completed_prc
+			texturefile = gfx/interface/focusview/titlebar/focus_completed_bg_prc.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_unavailable_prc
+			texturefile = gfx/interface/focusview/titlebar/focus_unavailable_bg_prc.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_can_start_prc
+			texturefile = gfx/interface/focusview/titlebar/focus_can_start_bg_prc.png
+		}
+		
+	spriteType = {
+			name = GFX_focus_current_prc
+			texturefile = gfx/interface/focusview/titlebar/focus_can_start_bg_prc.png
+		}
+		
+		
+	# Event
+	
+	
+	
+	# Portrait
+	
+	spriteType = {
+		name = "GFX_portrait_Deng_Xiaoping"
+		texturefile = "gfx/interface/leaders/portrait_Deng_Xiaoping.png"
+	}
+	
+
+		
+	# Ideas
+	
+	spriteType = {
+			name = GFX_ideas_advisor_yao_wenyuan
+			texturefile = gfx/interface/advisors/advisor_yao_wenyuan.png
+		}
+		
+	spriteType = {
+			name = GFX_ideas_advisor_zhang_chunqiao
+			texturefile = gfx/interface/advisors/advisor_zhang_chunqiao.png
+		}
+		
+	spriteType = {
+			name = GFX_ideas_advisor_wang_hongwen
+			texturefile = gfx/interface/advisors/advisor_wang_hongwen.png
+		}
+		
+	spriteType = {
+			name = GFX_ideas_advisor_wang_li
+			texturefile = gfx/interface/advisors/advisor_wang_li.png
+		}
+		
+	spriteType = {
+			name = GFX_ideas_advisor_xie_fuzhi
+			texturefile = gfx/interface/advisors/advisor_xie_fuzhi.png
+		}
+		
+	spriteType = {
+			name = GFX_ideas_advisor_jiang_qing
+			texturefile = gfx/interface/advisors/advisor_jiang_qing.png
+		}
+		
+	spriteType = {
+			name = GFX_ideas_advisor_chen_boda
+			texturefile = gfx/interface/advisors/advisor_chen_boda.png
+		}
+		
+		# Air
+		
+		spriteType = {
+			name = GFX_ideas_advisor_e_zakharov
+			texturefile = gfx/interface/advisors/advisor_emen_e_zakharov.png
+		}
+		
+		spriteType = {
+			name = GFX_ideas_advisor_d_golunov
+			texturefile = gfx/interface/advisors/advisor_d_golunov.png
+		}
+		
+		# Navy
+		
+		spriteType = {
+			name = GFX_ideas_advisor_B_Mikhailov
+			texturefile = gfx/interface/advisors/advisor_B_Mikhailov.png
+		}
+		
+		# Economy
+		
+		spriteType = {
+		name = "GFX_idea_Socialist_Market_Economy"
+		texturefile = "gfx/interface/ideas/idea_generic_free_trade.dds"
+	}	
+
+}

@@ -1,0 +1,31 @@
+KOR = {
+	KOR_weilai_zhuangjia_yunbingche_1 = {
+		pool = {
+			models = {
+				land_cruiser_entity
+			}
+		}
+	}
+	KOR_weilai_shandian_zhandouji_1 = {
+		pool = {
+			weight = 2  
+			icons = {
+				GFX_KOR_weilai_shandian_zhandouji_1_medium
+			}
+			models = {
+				supersonic_jet_plane_entity
+			}
+		}
+	}
+	KOR_weilai_leidian_zhandouji_1 = {
+		pool = {
+			weight = 2  
+			icons = {
+				GFX_KOR_weilai_leidian_zhandouji_1_medium
+			}
+			models = {
+				supersonic_jet_plane_entity
+			}
+		}
+	}
+}

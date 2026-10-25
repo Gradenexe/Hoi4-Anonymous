@@ -1,0 +1,12 @@
+﻿spriteTypes = {
+    spriteType = {
+        name = "GFX_LIT_LAT_EST_focus_style"
+        texturefile = "gfx/interface/goals/LIT_LAT_EST_focus_style.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_BALTIC_entente_focus_style"
+        texturefile = "gfx/interface/goals/focus_generic_industry_1.dds"
+        legacy_lazy_load = no
+    }
+}

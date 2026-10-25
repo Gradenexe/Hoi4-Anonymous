@@ -1,0 +1,16 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_army_reserve_bg"
+		texturefile = "gfx/interface/army_reserve_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_land_battle_unit_bg_left"
+		texturefile = "gfx/interface/land_battle_unit_bg_left.dds"
+	}
+
+	spriteType = {
+		name = "GFX_land_battle_unit_bg_right"
+		texturefile = "gfx/interface/land_battle_unit_bg_right.dds"
+	}
+}	

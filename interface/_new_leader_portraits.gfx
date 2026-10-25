@@ -1,0 +1,84 @@
+spriteTypes = {
+	
+	
+	
+	### MOHHAMED
+	spriteType = {  
+		name = "GFX_MOR_council"
+		texturefile = "gfx/leaders/MOR/council.png"
+	}
+### MOHHAMED
+	spriteType = {  
+		name = "GFX_portrait_mohhamed"
+		texturefile = "gfx/leaders/MOR/mohhamed.png"
+	}
+	
+### FASSI
+	spriteType = {  
+		name = "GFX_portrait_fassi_small"
+		texturefile = "gfx/leaders/MOR/fassi_small.png"
+	}
+	
+	### MOHHAMED IDEA
+	
+	spriteType = {
+		name = "GFX_idea_mohhamed"
+		texturefile = "gfx/interface/ideas/mohhamed_idea.png"
+	}
+	
+	### ABD-EL KRIM IDEA
+	
+	spriteType = {
+		name = "GFX_idea_krim"
+		texturefile = "gfx/interface/ideas/krim.png"
+	}
+	spriteType = {  
+		name = "GFX_portrait_krim"
+		texturefile = "gfx/leaders/MOR/Portrait_MOR_Abd_el-Krim.dds"
+	}
+	
+	### BELYAEV
+	
+	spriteType = {
+		name = "GFX_idea_belyaev"
+		texturefile = "gfx/interface/ideas/belyaev.png"
+	}
+	spriteType = {  
+		name = "GFX_portrait_belyaev"
+		texturefile = "gfx/leaders/MOR/Portrait_MOR_Ivan_Belyaev.dds"
+	}
+	
+	### ERN
+	
+	spriteType = {
+		name = "GFX_idea_ern"
+		texturefile = "gfx/interface/ideas/ern.png"
+	}
+	spriteType = {  
+		name = "GFX_portrait_ern"
+		texturefile = "gfx/leaders/MOR/Portrait_MOR_Nikolai_Ern.dds"
+	}
+	
+	### MUKRI
+	
+	spriteType = {
+		name = "GFX_idea_mukri"
+		texturefile = "gfx/interface/ideas/mukri.png"
+	}
+	
+	### PONSOT
+	spriteType = {
+		name = "GFX_portrait_ponsot"
+		texturefile = "gfx/leaders/MOR/ponsot.png"
+	}
+
+	### allal
+	spriteType = {
+		name = "GFX_portrait_allal"
+		texturefile = "gfx/leaders/MOR/allal.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_allal_i"
+		texturefile = "gfx/leaders/MOR/allal_i.png"
+	}
+}

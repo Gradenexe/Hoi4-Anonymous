@@ -1,0 +1,354 @@
+technologies = {
+	armored_car_recon_plus = {
+		research_cost = 1
+		sub_tech_index = 1
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		armored_car = {
+			suppression = 0.15
+			max_organisation = 5
+			ap_attack = 0.1
+			hard_attack = 0.1
+			#hardness = 1
+			plains = {
+				attack = 0.2
+				movement = 0.2
+			}
+			urban = {
+				attack = 0.45
+				movement = 0.1
+			}
+			forest = {
+				attack = 0.2
+				movement = 0.55
+			}
+			desert = {
+				attack = -0.2
+				movement = -0.55
+			}
+			snow = {
+				attack = 0.2
+				movement = 0.35
+			}
+		}
+		armored_car_recon = {
+			max_organisation = 10
+			ap_attack = 0.1
+			hard_attack = 0.1
+			defense = 10
+			#hardness = 1
+			plains = {
+				attack = 0.2
+				movement = 0.2
+			}
+			urban = {
+				attack = 0.15
+				movement = 0.1
+			}
+			forest = {
+				attack = 0.05
+				movement = 0.05
+			}
+			desert = {
+				attack = -0.15
+				movement = -0.15
+			}
+			snow = {
+				attack = 0.05
+				movement = 0.08
+			}
+		}
+	}
+	irregular_infantry_tech = {
+		allow = {
+			always = no
+		}
+		enable_subunits = {
+			irregular_infantry
+		}
+	}
+	militia_initiative_plus = {
+		research_cost = 1
+		sub_tech_index = 1
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		militia = {
+			initiative = 0.15
+		}
+	}
+	artillery_tech_plus = {
+		research_cost = 1
+		sub_tech_index = 1
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		artillery_brigade = {
+			combat_width = -1
+			breakthrough = 0.2
+			soft_attack = 0.1
+		}
+		category_support_artillery = {
+			max_organisation = 10
+			soft_attack = 0.1
+		}
+	}
+	light_tank_tech_plus = {
+		research_cost = 1
+		sub_tech_index = 1
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		light_tank_recon = {
+			battalion_mult = {
+				category = category_all_armor
+				max_organisation = 5
+				add = yes
+			}
+		}
+		category_all_armor = {
+			hard_attack = 0.1
+			soft_attack = 0.1
+			ap_attack = 0.05
+		}
+	}
+	KOR_irregular_infantry_tech = {
+		research_cost = 1
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		irregular_infantry = {
+			initiative = 0.1
+			max_organisation = 8
+		}
+	}
+	KOR_baodanqiang_tech = {
+		research_cost = 1
+		# 科技 #####
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			KOR_weilai_baodanqiang_1
+		}
+	}
+	KOR_donglijia_tech = {
+		research_cost = 1
+		# 科技 #####
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			KOR_weilai_donglijia_1
+		}
+	}
+	KOR_huopaoyunbingche_tech = {
+		research_cost = 1
+		# 科技 #####
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			KOR_weilai_zhuangjia_yunbingche_1
+		}
+	}
+	KOR_weilai_shandian_zhandouji_tech = {
+		research_cost = 1
+		# 科技 #####
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			KOR_weilai_shandian_zhandouji_1
+		}
+	}
+	KOR_weilai_leidian_zhandouji_tech = {
+		research_cost = 1
+		# 科技 #####
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			KOR_weilai_leidian_zhandouji_1
+		}
+	}
+	KOR_donglijia_ying_tech = {
+		research_cost = 1
+		# 军队 #####
+		allow = {
+			always = no
+		}
+		enable_subunits = {
+			KOR_Power_Armor
+		}
+	}
+	KOR_huopaoyunbingche_ying_tech = {
+		research_cost = 1
+		# 军队 #####
+		allow = {
+			always = no
+		}
+		enable_subunits = {
+			KOR_Assault_Vehicle
+		}
+	}
+	#################################################
+	KOR_yanan_communism_factional_strife1 = {
+		on_research_complete = {
+			KOR_yanan_communism_factional_strife1_effectt = yes
+		}
+	}
+	KOR_yanan_communism_factional_strife2 = {
+		on_research_complete = {
+			KOR_yanan_communism_factional_strife2_effectt = yes
+		}
+	}
+	KOR_yanan_communism_factional_strife3 = {
+		on_research_complete = {
+			KOR_yanan_communism_factional_strife3_effectt = yes
+		}
+	}
+	KOR_yanan_communism_factional_strife_1 = {
+		on_research_complete = {
+			KOR_yanan_communism_factional_strife_1_effectt = yes
+		}
+	}
+	KOR_yanan_communism_factional_strife_2 = {
+		on_research_complete = {
+			KOR_yanan_communism_factional_strife_2_effectt = yes
+		}
+	}
+	KOR_yanan_communism_factional_strife_3 = {
+		on_research_complete = {
+			KOR_yanan_communism_factional_strife_3_effectt = yes
+		}
+	}
+	##################################################################
+	KOR_sulian_communism_factional_strife1 = {
+		on_research_complete = {
+			KOR_sulian_communism_factional_strife1_effectt = yes
+		}
+	}
+	KOR_sulian_communism_factional_strife2 = {
+		on_research_complete = {
+			KOR_sulian_communism_factional_strife2_effectt = yes
+		}
+	}
+	KOR_sulian_communism_factional_strife3 = {
+		on_research_complete = {
+			KOR_sulian_communism_factional_strife3_effectt = yes
+		}
+	}
+	KOR_sulian_communism_factional_strife_1 = {
+		on_research_complete = {
+			KOR_sulian_communism_factional_strife_1_effectt = yes
+		}
+	}
+	KOR_sulian_communism_factional_strife_2 = {
+		on_research_complete = {
+			KOR_sulian_communism_factional_strife_2_effectt = yes
+		}
+	}
+	KOR_sulian_communism_factional_strife_3 = {
+		on_research_complete = {
+			KOR_sulian_communism_factional_strife_3_effectt = yes
+		}
+	}
+	##################################################################
+	KOR_kanglian_communism_factional_strife1 = {
+		on_research_complete = {
+			KOR_kanglian_communism_factional_strife1_effectt = yes
+		}
+	}
+	KOR_kanglian_communism_factional_strife2 = {
+		on_research_complete = {
+			KOR_kanglian_communism_factional_strife2_effectt = yes
+		}
+	}
+	KOR_kanglian_communism_factional_strife3 = {
+		on_research_complete = {
+			KOR_kanglian_communism_factional_strife3_effectt = yes
+		}
+	}
+	KOR_kanglian_communism_factional_strife_1 = {
+		on_research_complete = {
+			KOR_kanglian_communism_factional_strife_1_effectt = yes
+		}
+	}
+	KOR_kanglian_communism_factional_strife_2 = {
+		on_research_complete = {
+			KOR_kanglian_communism_factional_strife_2_effectt = yes
+		}
+	}
+	KOR_kanglian_communism_factional_strife_3 = {
+		on_research_complete = {
+			KOR_kanglian_communism_factional_strife_3_effectt = yes
+		}
+	}
+	##################################################################
+	KOR_nanlao_communism_factional_strife1 = {
+		on_research_complete = {
+			KOR_nanlao_communism_factional_strife1_effectt = yes
+		}
+	}
+	KOR_nanlao_communism_factional_strife2 = {
+		on_research_complete = {
+			KOR_nanlao_communism_factional_strife2_effectt = yes
+		}
+	}
+	KOR_nanlao_communism_factional_strife3 = {
+		on_research_complete = {
+			KOR_nanlao_communism_factional_strife3_effectt = yes
+		}
+	}
+	KOR_nanlao_communism_factional_strife_1 = {
+		on_research_complete = {
+			KOR_nanlao_communism_factional_strife_1_effectt = yes
+		}
+	}
+	KOR_nanlao_communism_factional_strife_2 = {
+		on_research_complete = {
+			KOR_nanlao_communism_factional_strife_2_effectt = yes
+		}
+	}
+	KOR_nanlao_communism_factional_strife_3 = {
+		on_research_complete = {
+			KOR_nanlao_communism_factional_strife_3_effectt = yes
+		}
+	}
+	###################################################################################################################
+	KOR_dangpai_douzheng_dynamic = {
+		on_research_complete = {
+			KOR_dangpai_douzheng_dynamic_effectt = yes
+		}
+	}
+	################################################################################################
+	KOR_chaoxian_dahui_dynamic_key = {
+		on_research_complete = {
+			KOR_chaoxian_dahui_dynamic_effectt = yes
+		}
+	}
+	################################################################################################
+	KOR_weidalingxiu_xushishi_dynamic_key = {
+		on_research_complete = {
+			KOR_weidalingxiu_xushishi_dynamic_effectt = yes
+		}
+	}
+	################################################################################################
+	KOR_sulianpai_zhangquan_tezhi_key = {
+		on_research_complete = {
+			KOR_sulianpai_zhangquan_tezhi_effectt = yes
+		}
+	}
+}

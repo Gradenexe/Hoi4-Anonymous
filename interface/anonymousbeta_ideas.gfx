@@ -1,0 +1,46 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_baltic_pact"
+		texturefile = "gfx/interface/ideas/idea_baltic_pact.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eu_european_community"
+		texturefile = "gfx/interface/ideas/idea_europa_union.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slovak_army"
+		texturefile = "gfx/interface/ideas/idea_slovak_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slovakia_starting_small"
+		texturefile = "gfx/interface/ideas/idea_slovakia_starting_small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slovakia_pomping_out_weapon"
+		texturefile = "gfx/interface/ideas/idea_slovakia_pomping_out_weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POR_beauty_of_expansion_idea"
+		texturefile = "gfx/interface/ideas/POR_beauty_of_expansion_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_evacuation_assets"
+		texturefile = "gfx/interface/ideas/ENG_evacuation_assets.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_commonwealth_trade_preference"
+		texturefile = "gfx/interface/ideas/ENG_commonwealth_trade_preference.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_IRE_trade"
+		texturefile = "gfx/interface/ideas/ENG_IRE_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_home_fleet_concentration_idea"
+		texturefile = "gfx/interface/ideas/ENG_home_fleet_concentration.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_european_intelligence_hub_idea"
+		texturefile = "gfx/interface/ideas/ENG_continental_spy_hub.dds"
+	}
+}

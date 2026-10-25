@@ -1,0 +1,55 @@
+
+defined_text = {
+	name = GetNIRDiplomaticOutcome
+
+	text = {
+		trigger = {
+			FROM = {
+				OWNER = {
+					check_variable = { Northern_Ireland_Counties_swung > 4 }
+				}
+			}
+		}
+
+		localization_key = TheyWillAccept1
+	}
+
+	text = {
+		trigger = {
+			FROM = {
+				OWNER = {
+					check_variable = { Northern_Ireland_Counties_swung = 4 }
+				}
+			}
+		}
+
+		localization_key = TheyWillLikelyAccept1
+	}
+
+
+	text = {
+		trigger = {
+			FROM = {
+				OWNER = {
+					check_variable = { Northern_Ireland_Counties_swung < 3 }
+
+				}
+			}
+		}
+
+		localization_key = TheyWillLikelyReject1
+	}
+	
+	text = {
+		trigger = {
+			FROM = {
+				OWNER = {
+					check_variable = { Northern_Ireland_Counties_swung = 3 }
+
+				}
+			}
+		}
+
+		localization_key = TheOutcomeIsUncertain1
+	}
+}

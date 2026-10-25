@@ -1,0 +1,73 @@
+#	Example:
+#
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for
+#                               # people engaging in the combat even if not in the state
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+
+###### COUNTRY MODIFIERS
+
+BALTIC_pact = {
+	enable = { always = yes }
+	icon = GFX_idea_baltic_pact
+	production_speed_infrastructure_factor = BALTIC_production_speed_infrastructure_factor
+	trade_opinion_factor = BALTIC_trade_opinion_factor
+	production_speed_arms_factory_factor = BALTIC_production_speed_arms_factory_factor
+	war_support_factor = BALTIC_war_support_factor
+	stability_factor = BALTIC_stability_factor
+	experience_gain_army = BALTIC_experience_gain_army
+	experience_gain_air = BALTIC_experience_gain_air
+	experience_gain_navy = BALTIC_experience_gain_navy
+	country_resource_oil = BALTIC_country_resource_oil
+	country_resource_chromium = BALTIC_country_resource_chromium
+	army_defence_against_major_factor = BALTIC_army_defence_against_major_factor
+	army_defence_against_minor_factor = BALTIC_army_defence_against_minor_factor
+	conscription_factor = BALTIC_conscription_factor
+	intelligence_agency_defense = BALTIC_intelligence_agency_defense
+	production_factory_efficiency_gain_factor = BALTIC_production_factory_efficiency_gain_factor
+	production_factory_max_efficiency_factor = BALTIC_production_factory_max_efficiency_factor
+
+	acclimatization_hot_climate_gain_factor = BALTIC_acclimatization_hot_climate_gain_factor
+	heat_attrition_factor = BALTIC_heat_attrition_factor
+	special_forces_cap = BALTIC_special_forces_cap
+	local_resources_factor = BALTIC_local_resources_factor
+
+	justify_war_goal_time = BALTIC_justify_war_goal_time
+	opinion_gain_monthly = BALTIC_opinion_gain_monthly
+	annex_cost_factor = BALTIC_annex_cost_factor
+	political_power_factor = BALTIC_political_power_factor
+
+	production_speed_buildings_factor = BALTIC_production_speed_buildings_factor
+	production_speed_bunker_factor = BALTIC_production_speed_bunker_factor
+	production_speed_coastal_bunker_factor = BALTIC_production_speed_coastal_bunker_factor
+	army_org_factor = BALTIC_army_org_factor
+	army_core_attack_factor = BALTIC_army_core_attack_factor
+	army_core_defence_factor = BALTIC_army_core_defence_factor
+	army_non_core_attack_factor = BALTIC_army_non_core_attack_factor
+	army_non_core_defence_factor = BALTIC_army_non_core_defence_factor
+	consumer_goods_factor = BALTIC_consumer_goods_factor
+
+	agency_upgrade_time = BALTIC_agency_upgrade_time
+}

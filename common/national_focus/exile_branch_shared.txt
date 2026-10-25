@@ -1,0 +1,1137 @@
+# Government-in-Exile Shared Branch
+# Used by all countries via shared_focus = EXILE_government_in_exile
+# Excluded: BEL, HOL, POL, NOR, FRA, UKR, ETH
+
+shared_focus = {
+	id = EXILE_government_in_exile
+	icon = GFX_focus_generic_government_in_exile
+	x = 12
+	y = 30
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		if = {
+			limit = {
+				is_subject = yes
+			}
+			overlord = {
+				ROOT = {
+					become_exiled_in = { target = PREV legitimacy = 30 }
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				is_in_faction = yes
+				is_faction_leader = no
+			}
+			faction_leader = {
+				ROOT = {
+					become_exiled_in = { target = PREV legitimacy = 30 }
+				}
+			}
+		}
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = { type = arms_factory level = 1 }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+			producer = ROOT
+		}
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = 50
+			producer = ROOT
+		}
+		gain_random_agency_upgrade = yes
+		add_political_power = 100
+		add_stability = 0.05
+		add_ideas = influx_of_exiles_1
+	}
+}
+
+shared_focus = {
+	id = EXILE_foreign_air_support
+	icon = GFX_focus_SMB_purchase_aircraft
+	prerequisite = { focus = EXILE_government_in_exile }
+	x = 10
+	y = 1
+	relative_position_id = EXILE_government_in_exile
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		air_experience = 25
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_0
+				amount = 50
+				producer = ROOT
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_1
+				amount = 50
+				producer = ROOT
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = EXILE_aces_in_exile
+	icon = GFX_focus_SOV_flying_clubs
+	prerequisite = { focus = EXILE_foreign_air_support }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 2
+	y = 1
+	relative_position_id = EXILE_foreign_air_support
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = EXILE_aces_in_exile_idea
+		air_experience = 50
+		add_manpower = 3500
+	}
+}
+
+shared_focus = {
+	id = EXILE_air_in_exile
+	icon = GFX_focus_NORDIC_dem_selector_airforce
+	prerequisite = { focus = EXILE_foreign_air_support }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = EXILE_foreign_air_support
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = exiled_air_production
+	}
+}
+
+shared_focus = {
+	id = EXILE_women_in_air
+	icon = GFX_focus_SOV_women_in_aviation
+	prerequisite = { focus = EXILE_foreign_air_support }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = -2
+	y = 1
+	relative_position_id = EXILE_foreign_air_support
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = strength_in_numbers
+		set_rule = {
+			can_generate_female_aces = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = EXILE_foreign_army_support
+	icon = GFX_focus_generic_manpower
+	prerequisite = { focus = EXILE_government_in_exile }
+	x = 2
+	y = 1
+	relative_position_id = EXILE_government_in_exile
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		army_experience = 25
+		add_manpower = 10000
+		swap_ideas = {
+			remove_idea = influx_of_exiles_1
+			add_idea = influx_of_exiles_2
+		}
+	}
+}
+
+shared_focus = {
+	id = EXILE_organize_exiled_army
+	icon = GFX_focus_JAP_organize_the_student_movements
+	prerequisite = { focus = EXILE_foreign_army_support }
+	x = 0
+	y = 1
+	relative_position_id = EXILE_foreign_army_support
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		army_experience = 50
+		add_manpower = 15000
+		swap_ideas = {
+			remove_idea = influx_of_exiles_2
+			add_idea = influx_of_exiles_3
+		}
+	}
+}
+
+shared_focus = {
+	id = EXILE_new_army
+	icon = GFX_focus_CZE_army_reform
+	prerequisite = { focus = EXILE_foreign_army_support }
+	x = 2
+	y = 1
+	relative_position_id = EXILE_foreign_army_support
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		army_experience = 50
+		add_manpower = 15000
+		add_idea = exiled_nation_in_arms
+	}
+}
+
+shared_focus = {
+	id = EXILE_foreign_fleet_support
+	icon = GFX_focus_PHI_mosquito_fleet
+	prerequisite = { focus = EXILE_government_in_exile }
+	x = 6
+	y = 1
+	relative_position_id = EXILE_government_in_exile
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		add_offsite_building = { type = dockyard level = 5 }
+	}
+}
+
+shared_focus = {
+	id = EXILE_buy_foreign_ships
+	icon = GFX_focus_generic_merchant_fleet
+	prerequisite = { focus = EXILE_foreign_fleet_support }
+	relative_position_id = EXILE_foreign_fleet_support
+	x = 0
+	y = 1
+	cost = 6
+	ai_will_do = {
+		factor = 2
+	}
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = naval_production_boost
+	}
+}
+
+shared_focus = {
+	id = EXILE_army_cooperation
+	icon = GFX_focus_SMB_blue_water_fleet
+	prerequisite = { focus = EXILE_organize_exiled_army }
+	prerequisite = { focus = EXILE_buy_foreign_ships }
+	prerequisite = { focus = EXILE_new_army }
+	prerequisite = { focus = EXILE_women_in_air }
+	prerequisite = { focus = EXILE_air_in_exile }
+	prerequisite = { focus = EXILE_aces_in_exile }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = EXILE_buy_foreign_ships
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = EXILE_army_cooperation_idea
+	}
+}
+
+shared_focus = {
+	id = EXILE_exile_politics
+	icon = GFX_focus_CZE_appeal_to_the_castle
+	prerequisite = { focus = EXILE_government_in_exile }
+	x = -10
+	y = 1
+	relative_position_id = EXILE_government_in_exile
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = EXILE_exile_politics_spirit
+	}
+}
+
+shared_focus = {
+	id = EXILE_exploit_our_connections
+	icon = GFX_focus_generic_democratic_europe
+	prerequisite = { focus = EXILE_exile_politics }
+	x = -2
+	y = 1
+	relative_position_id = EXILE_exile_politics
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = EXILE_exploit_connections_spirit
+	}
+}
+
+shared_focus = {
+	id = EXILE_help_from_our_allies
+	icon = GFX_focus_hol_the_fourth_ally
+	prerequisite = { focus = EXILE_exile_politics }
+	x = 2
+	y = 1
+	relative_position_id = EXILE_exile_politics
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = EXILE_allied_aid_spirit
+	}
+}
+
+shared_focus = {
+	id = EXILE_international_recognition
+	icon = GFX_focus_generic_industry_investment
+	prerequisite = { focus = EXILE_exile_politics }
+	x = 0
+	y = 1
+	relative_position_id = EXILE_exile_politics
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = EXILE_intl_recognition_spirit
+	}
+}
+
+shared_focus = {
+	id = EXILE_exile_industries
+	icon = GFX_focus_generic_industry_1
+	prerequisite = { focus = EXILE_government_in_exile }
+	x = -6
+	y = 1
+	relative_position_id = EXILE_government_in_exile
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = { type = arms_factory level = 1 }
+	}
+}
+
+shared_focus = {
+	id = EXILE_resistance_industries
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = EXILE_exile_industries }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 2
+	y = 1
+	relative_position_id = EXILE_exile_industries
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 5 }
+	}
+}
+
+shared_focus = {
+	id = EXILE_evacuated_industries
+	icon = GFX_focus_generic_industry_2
+	prerequisite = { focus = EXILE_exile_industries }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = EXILE_exile_industries
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 3 }
+		add_offsite_building = { type = arms_factory level = 3 }
+	}
+}
+
+shared_focus = {
+	id = EXILE_connections_with_industrialists
+	icon = GFX_focus_generic_arms_trade
+	prerequisite = { focus = EXILE_evacuated_industries }
+	prerequisite = { focus = EXILE_exploit_our_connections }
+	prerequisite = { focus = EXILE_international_recognition }
+	x = -1
+	y = 1
+	relative_position_id = EXILE_evacuated_industries
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = EXILE_industrialist_connections
+	}
+}
+
+shared_focus = {
+	id = EXILE_exile_resistance
+	icon = GFX_focus_CHI_political_advisors_in_every_division
+	prerequisite = { focus = EXILE_government_in_exile }
+	x = -2
+	y = 1
+	relative_position_id = EXILE_government_in_exile
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = generic_exile_resistance_idea
+		if = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			gain_random_agency_upgrade = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = EXILE_expand_operations
+	icon = GFX_focus_PER_expand_unique_unit
+	prerequisite = { focus = EXILE_exile_resistance }
+	x = 0
+	y = 1
+	relative_position_id = EXILE_exile_resistance
+	available_if_capitulated = yes
+	cost = 6
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	completion_reward = {
+		add_ideas = expand_intelligence_idea
+	}
+}
+
+shared_focus = {
+	id = EXILE_expand_intelligence
+	icon = GFX_focus_POL_expand_polish_intelligence
+	prerequisite = { focus = EXILE_exile_resistance }
+	available_if_capitulated = yes
+	available = {
+		has_intelligence_agency = yes
+		OR = {
+			has_capitulated = yes
+			surrender_progress > 0.75
+		}
+	}
+	x = 2
+	y = 1
+	relative_position_id = EXILE_exile_resistance
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	
+	search_filters = {  }
+	completion_reward = {
+		hidden_effect = {
+			set_technology = { lar_decryption_bonus_tech = 1 }
+		}
+		custom_effect_tooltip = lar_decryption_bonus_tt
+	}
+}
+
+shared_focus = {
+	id = EXILE_combined_civilian_agency_resistance
+	icon = GFX_focus_ICE_expanding_the_university_of_reykjavik
+	prerequisite = { focus = EXILE_expand_operations }
+	prerequisite = { focus = EXILE_resistance_industries }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 1
+	y = 1
+	relative_position_id = EXILE_resistance_industries
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_ideas = EXILE_civil_and_military_organization
+	}
+}
+
+shared_focus = {
+	id = EXILE_even_stronger_resistance
+	icon = GFX_focus_JAP_expand_the_irago_proving_ground
+	prerequisite = { focus = EXILE_connections_with_industrialists }
+	prerequisite = { focus = EXILE_combined_civilian_agency_resistance }
+	prerequisite = { focus = EXILE_army_cooperation }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 1
+	y = 1
+	relative_position_id = EXILE_combined_civilian_agency_resistance
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_ideas = EXILE_even_stronger_resistance_idea
+	}
+}
+
+shared_focus = {
+	id = EXILE_everyone_will_fight
+	icon = GFX_focus_SIA_war_fervor
+	prerequisite = { focus = EXILE_connections_with_industrialists }
+	prerequisite = { focus = EXILE_combined_civilian_agency_resistance }
+	prerequisite = { focus = EXILE_army_cooperation }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 3
+	y = 1
+	relative_position_id = EXILE_combined_civilian_agency_resistance
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_ideas = EXILE_everyone_will_fight_idea
+	}
+}
+
+shared_focus = {
+	id = EXILE_our_help_in_the_war
+	icon = GFX_focus_PER_ally_bazaari
+	prerequisite = { focus = EXILE_connections_with_industrialists }
+	prerequisite = { focus = EXILE_combined_civilian_agency_resistance }
+	prerequisite = { focus = EXILE_army_cooperation }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 5
+	y = 1
+	relative_position_id = EXILE_combined_civilian_agency_resistance
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_ideas = EXILE_our_help_in_the_war_idea
+	}
+}
+
+shared_focus = {
+	id = EXILE_prepare_our_people_to_return
+	icon = GFX_focus_SIA_prepare_for_a_short_war
+	prerequisite = { focus = EXILE_even_stronger_resistance }
+	prerequisite = { focus = EXILE_everyone_will_fight }
+	prerequisite = { focus = EXILE_our_help_in_the_war }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = EXILE_even_stronger_resistance
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_ideas = EXILE_people_return_prep_idea
+	}
+}
+
+shared_focus = {
+	id = EXILE_prepare_our_army_to_return
+	icon = GFX_focus_SIA_intermediate_war_preparation
+	prerequisite = { focus = EXILE_even_stronger_resistance }
+	prerequisite = { focus = EXILE_everyone_will_fight }
+	prerequisite = { focus = EXILE_our_help_in_the_war }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 2
+	y = 1
+	relative_position_id = EXILE_even_stronger_resistance
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_ideas = EXILE_army_return_prep_idea
+	}
+}
+
+shared_focus = {
+	id = EXILE_prepare_our_land_to_return
+	icon = GFX_focus_SIA_prepare_for_a_long_war
+	prerequisite = { focus = EXILE_even_stronger_resistance }
+	prerequisite = { focus = EXILE_everyone_will_fight }
+	prerequisite = { focus = EXILE_our_help_in_the_war }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 4
+	y = 1
+	relative_position_id = EXILE_even_stronger_resistance
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_ideas = EXILE_land_return_prep_idea
+	}
+}
+
+shared_focus = {
+	id = EXILE_combine_all_our_forces
+	icon = GFX_focus_generic_diverse_army
+	prerequisite = { focus = EXILE_prepare_our_people_to_return }
+	prerequisite = { focus = EXILE_prepare_our_army_to_return }
+	prerequisite = { focus = EXILE_prepare_our_land_to_return }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 2
+	y = 1
+	relative_position_id = EXILE_prepare_our_people_to_return
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_ideas = EXILE_united_exile_government_idea
+		remove_ideas = {
+			EXILE_aces_in_exile_idea
+			exiled_air_production
+			strength_in_numbers
+			influx_of_exiles_1
+			influx_of_exiles_2
+			influx_of_exiles_3
+			exiled_nation_in_arms
+			EXILE_army_cooperation_idea
+			naval_production_boost
+			EXILE_exile_politics_spirit
+			EXILE_exploit_connections_spirit
+			EXILE_allied_aid_spirit
+			EXILE_intl_recognition_spirit
+			EXILE_civil_and_military_organization
+			EXILE_industrialist_connections
+			generic_exile_resistance_idea
+			expand_intelligence_idea
+			EXILE_even_stronger_resistance_idea
+			EXILE_everyone_will_fight_idea
+			EXILE_our_help_in_the_war_idea
+			EXILE_people_return_prep_idea
+			EXILE_army_return_prep_idea
+			EXILE_land_return_prep_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = EXILE_to_return_ours
+	icon = GFX_focus_SIA_built_to_withstand_every_flame
+	prerequisite = { focus = EXILE_combine_all_our_forces }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.75
+			}
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = EXILE_combine_all_our_forces
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_timed_idea = { idea = EXILE_reconquest_spirit days = 180 }
+	}
+}
+
+shared_focus = {
+	id = EXILE_mobilize_from_liberated_lands
+	icon = GFX_focus_SIA_built_to_withstand_every_flame
+	prerequisite = { focus = EXILE_combine_all_our_forces }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress < 0.25
+			}
+		}
+	}
+	x = 2
+	y = 1
+	relative_position_id = EXILE_combine_all_our_forces
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		custom_effect_tooltip = EXILE_liberated_troops_tt
+		division_template = {
+			name = "Exile Liberation Brigade"
+			division_names_group = INF_01
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 0 y = 4 }
+			}
+			support = {
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				NOT = { has_state_flag = EXILE_core_state_liberated }
+				is_fully_controlled_by = ROOT
+			}
+			create_unit = {
+				division = "name = \"1st Liberation Brigade\" division_template = \"Exile Liberation Brigade\" start_experience_factor = 0"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"2nd Liberation Brigade\" division_template = \"Exile Liberation Brigade\" start_experience_factor = 0"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"3rd Liberation Brigade\" division_template = \"Exile Liberation Brigade\" start_experience_factor = 0"
+				owner = ROOT
+			}
+			set_state_flag = EXILE_core_state_liberated
+		}
+	}
+}
+
+shared_focus = {
+	id = EXILE_new_volunteers_to_fight
+	icon = GFX_focus_SIA_built_to_withstand_every_flame
+	prerequisite = { focus = EXILE_combine_all_our_forces }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress < 0.75
+			}
+		}
+	}
+	x = -2
+	y = 1
+	relative_position_id = EXILE_combine_all_our_forces
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		custom_effect_tooltip = EXILE_liberated_troops_tt
+		division_template = {
+			name = "Exile Liberation Brigade"
+			division_names_group = INF_01
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 0 y = 4 }
+			}
+			support = {
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				NOT = { has_state_flag = EXILE_core_state_liberated }
+				is_fully_controlled_by = ROOT
+			}
+			create_unit = {
+				division = "name = \"1st Liberation Brigade\" division_template = \"Exile Liberation Brigade\" start_experience_factor = 0"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"2nd Liberation Brigade\" division_template = \"Exile Liberation Brigade\" start_experience_factor = 0"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"3rd Liberation Brigade\" division_template = \"Exile Liberation Brigade\" start_experience_factor = 0"
+				owner = ROOT
+			}
+			set_state_flag = EXILE_core_state_liberated
+		}
+	}
+}
+
+shared_focus = {
+	id = EXILE_first_hit
+	icon = GFX_focus_SIA_the_hammers_that_strike
+	prerequisite = { focus = EXILE_to_return_ours }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				surrender_progress < 0.50
+			}
+		}
+	}
+	x = -2
+	y = 1
+	relative_position_id = EXILE_to_return_ours
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_timed_idea = { idea = EXILE_first_hit_idea days = 180 }
+	}
+}
+
+shared_focus = {
+	id = EXILE_second_hit
+	icon = GFX_focus_AST_second_australian_imperial_force
+	prerequisite = { focus = EXILE_to_return_ours }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				surrender_progress < 0.25
+			}
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = EXILE_to_return_ours
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_timed_idea = { idea = EXILE_second_hit_idea days = 180 }
+	}
+}
+
+shared_focus = {
+	id = EXILE_third_hit
+	icon = GFX_focus_focus_fra_third_empire
+	prerequisite = { focus = EXILE_to_return_ours }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				surrender_progress < 0.10
+			}
+		}
+	}
+	x = 2
+	y = 1
+	relative_position_id = EXILE_to_return_ours
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_timed_idea = { idea = EXILE_third_hit_idea days = 180 }
+	}
+}
+
+shared_focus = {
+	id = EXILE_final_blow
+	icon = GFX_focus_ARG_march_to_la_casa_rosada
+	prerequisite = { focus = EXILE_first_hit }
+	prerequisite = { focus = EXILE_second_hit }
+	prerequisite = { focus = EXILE_third_hit }
+	available = {
+		AND = {
+			is_in_faction = yes
+			OR = {
+				surrender_progress < 0.05
+			}
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = EXILE_second_hit
+	cost = 6
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_timed_idea = { idea = EXILE_final_blow_idea days = 360 }
+	}
+}
+

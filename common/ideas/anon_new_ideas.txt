@@ -1,0 +1,255 @@
+ideas = {
+	country = {
+		SOV_gold_for_karelia_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = spr_relocate_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		POR_beauty_of_expansion_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = POR_beauty_of_expansion_idea
+
+			modifier = {
+	army_non_core_attack_factor = 0.15
+	non_core_manpower = 0.15
+	army_speed_factor = 0.15
+	compliance_gain = 0.15
+	justify_war_goal_time = -0.5 
+}
+		}
+		
+			ENG_evacuation_assets = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ENG_evacuation_assets
+
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_arms_factory_factor = 0.15
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+
+		ENG_commonwealth_trade_preference = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ENG_commonwealth_trade_preference
+
+			modifier = {
+				trade_laws_cost_factor = -0.50
+				trade_opinion_factor = 0.30
+				convoy_escort_efficiency = 0.15
+				production_speed_bunker_factor = 0.05
+				production_speed_coastal_bunker_factor = 0.15
+			}
+		}
+			ENG_Trade_with_ireland = {
+			allowed = { always = no }
+			picture = ENG_IRE_trade
+			removal_cost = -1
+			cancel = {
+				has_war_with = IRE
+			}
+			on_remove = {
+				if = {
+					limit = {
+						IRE = { has_opinion_modifier = GER_trading_partners }
+					}
+					IRE = {
+						remove_opinion_modifier = {
+							target = FROM 
+							modifier = GER_trading_partners
+						}
+					}
+				}
+			}
+			targeted_modifier = {
+				tag = IRE
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		IRE_Trade_with_britain = {
+			allowed = { always = no }
+			picture = ENG_IRE_trade
+			removal_cost = -1
+			cancel = {
+				has_war_with = ENG
+			}
+			on_remove = {
+				if = {
+					limit = {
+						ENG = { has_opinion_modifier = GER_trading_partners }
+					}
+					ENG = {
+						remove_opinion_modifier = {
+							target = FROM 
+							modifier = GER_trading_partners
+						}
+					}
+				}
+			}
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+			ENG_home_fleet_concentration_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ENG_home_fleet_concentration_idea
+
+			modifier = {
+				navy_max_range_factor = -0.50
+				production_speed_dockyard_factor = 0.15
+			}
+
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				light_cruiser = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				heavy_cruiser = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				battleship = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				carrier = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+
+		ENG_domestic_air_industry_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = 0.15 instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					build_cost_ic = 0.15 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = 0.15 instant = yes
+				}
+			}
+		}
+			ENG_european_intelligence_hub_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ENG_european_intelligence_hub_idea
+
+			modifier = {
+				operative_slot = 2
+				intel_network_gain_factor = 0.25
+				decryption_factor = 0.20
+				enemy_operative_capture_chance_factor = 0.20
+				agency_upgrade_time = -0.25
+			}
+		}
+
+		ENG_home_defense_mobilization_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.05
+				army_core_defence_factor = 0.15
+				army_org_factor = 0.10
+				dig_in_speed_factor = 0.25
+				training_time_army_factor = -0.15
+			}
+		}
+	}
+}

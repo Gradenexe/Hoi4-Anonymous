@@ -1,0 +1,149 @@
+equipments = {
+	KOR_weilai_zhuangjia_yunbingche = {
+		year = 1936
+		is_archetype = yes
+		is_buildable = no
+		picture = archetype_super_heavy_tank_equipment
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 2000
+		module_slots = {
+			lc_main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					lc_main_armament
+				}
+			}
+			lc_secondary_armament_slot = {
+				required = no
+				allowed_module_categories = {
+					lc_secondary_armament
+				}
+			}
+			lc_special_features_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					lc_aerial_deployment
+					lc_external_features
+					lc_structural_features
+				}
+			}
+			lc_special_features_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					lc_radio_module
+				}
+			}
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+				}
+			}
+			lc_additional_armament_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					lc_additional_armament
+				}
+			}
+			lc_additional_armament_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					lc_additional_armament
+				}
+			}
+			lc_additional_armament_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					lc_additional_armament
+				}
+			}
+			lc_additional_armament_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					lc_additional_armament
+				}
+			}
+		}
+		module_count_limit = {
+			module = lc_assault_gun
+			count < 2
+		}
+		module_count_limit = {
+			module = lc_high_velocity_cannon_turret
+			count < 3
+		}
+		module_count_limit = {
+			module = lc_flamethrower_turret
+			count < 3
+		}
+		module_count_limit = {
+			module = lc_rocket_launcher
+			count < 3
+		}
+		module_count_limit = {
+			category = lc_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			module = lc_radar
+			count < 2
+		}
+		module_count_limit = {
+			category = lc_aerial_deployment
+			count < 2
+		}
+		module_count_limit = {
+			module = lc_armored_skirts
+			count < 2
+		}
+		module_count_limit = {
+			module = lc_obstacle_clearance_gear
+			count < 2
+		}
+		module_count_limit = {
+			module = lc_wet_ammunition_storage
+			count < 2
+		}
+		module_count_limit = {
+			module = lc_smoke_generators
+			count < 2
+		}
+		module_count_limit = {
+			module = lc_stabilizers
+			count < 2
+		}
+		default_modules = {
+			lc_main_armament_slot = KOR_juxing_jianongpao
+			lc_secondary_armament_slot = KOR_tongzhou_zidongpao
+			lc_additional_armament_slot_1 = KOR_paota_jiguang_pao
+			lc_additional_armament_slot_2 = KOR_gongchengzhe_jiupao
+			lc_additional_armament_slot_3 = KOR_shuanglian_baoshi_qiang
+			lc_additional_armament_slot_4 = KOR_shuanglian_baoshi_qiang
+			lc_special_features_slot_1 = lc_internal_fuel_tanks
+			lc_special_features_slot_2 = lc_command_center
+			engine_type_slot = tank_fanyingdui_fadongji
+		}
+		fuel_consumption = 12
+		maximum_speed = 12		#shouldn't be slower than infantry, or we ran into problems
+		build_cost_ic = 250
+		reliability = 1.75
+		armor_value = 150
+		defense = 12
+		hardness = 1
+		resources = {
+			steel = 8
+			chromium = 4
+		}
+		lend_lease_cost = 80
+		manpower = 30		#Other Tanks: 2
+	}
+	KOR_weilai_zhuangjia_yunbingche_1 = {
+		year = 1945
+		archetype = KOR_weilai_zhuangjia_yunbingche
+		priority = 10
+		visual_level = 1
+		module_slots = inherit
+	}
+}

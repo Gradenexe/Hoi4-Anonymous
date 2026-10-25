@@ -1,0 +1,427 @@
+add_namespace = IRE_NorthernIrelandCountySway
+add_namespace = IRE_NorthernIrelandCountySway1
+add_namespace = IRE_NorthernIrelandCountySway2
+add_namespace = IRE_NorthernIrelandCountySway3
+add_namespace = IRE_NorthernIrelandCountySway4
+add_namespace = IRE_NorthernIrelandCountySway5
+add_namespace = IRE_Celtic_Union_Nationalism_Northern_Ireland
+add_namespace = IRE_Celtic_Union_Nationalism_Scotland
+add_namespace = IRE_Celtic_Union_Nationalism_Wales
+add_namespace = IRE_Celtic_Union_Nationalism_Brittany
+add_namespace = IRE_Propose_Northern_Irish_Unification
+
+
+
+country_event = {
+	id = IRE_Celtic_Union_Nationalism_Wales.Wales
+	title = IRE_Celtic_Union_Nationalism_Wales.Wales.t
+	desc = IRE_Celtic_Union_Nationalism_Wales.Wales.d
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	hidden = yes
+	
+	option = { ## SWAYS
+		name = IRE_Celtic_Union_Nationalism_Wales.Wales.a
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				IRE = { set_country_flag = IRE_swayed_Wales_flag }
+				add_to_variable = {
+					var = Celtic_Union_Nationalism_Countries_swung
+					value = 1
+				}
+			}	
+		}
+	}
+	
+	
+	option = { ## FAILS
+		name = IRE_Celtic_Union_Nationalism_Wales.Wales.b
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				add_to_variable = {
+					var = Celtic_Union_Nationalism_Countries_swung
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = IRE_Celtic_Union_Nationalism_Northern_Ireland.NorthernIreland
+	title = IRE_Celtic_Union_Nationalism_Northern_Ireland.NorthernIreland.t
+	desc = IRE_Celtic_Union_Nationalism_Northern_Ireland.NorthernIreland.d
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	hidden = yes
+	
+	option = { ## SWAYS
+		name = IRE_Celtic_Union_Nationalism_Northern_Ireland.NorthernIreland.a
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				IRE = { set_country_flag = IRE_swayed_NorthernIreland_flag }
+				add_to_variable = {
+					var = Celtic_Union_Nationalism_Countries_swung
+					value = 1
+				}
+			}	
+		}
+	}
+	
+	
+	option = { ## FAILS
+		name = IRE_Celtic_Union_Nationalism_Northern_Ireland.NorthernIreland.b
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				add_to_variable = {
+					var = Celtic_Union_Nationalism_Countries_swung
+					value = 0
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = IRE_Celtic_Union_Nationalism_Scotland.Scotland
+	title = IRE_Celtic_Union_Nationalism_Scotland.Scotland.t
+	desc = IRE_Celtic_Union_Nationalism_Scotland.Scotland.d
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	hidden = yes
+	
+	option = { ## SWAYS
+		name = IRE_Celtic_Union_Nationalism_Scotland.Scotland.a
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				IRE = { set_country_flag = IRE_swayed_Scotland_flag }
+				add_to_variable = {
+					var = Celtic_Union_Nationalism_Countries_swung
+					value = 1
+				}
+			}	
+		}
+	}
+	
+	
+	option = { ## FAILS
+		name = IRE_Celtic_Union_Nationalism_Scotland.Scotland.b
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				add_to_variable = {
+					var = Celtic_Union_Nationalism_Countries_swung
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = IRE_NorthernIrelandCountySway.TYRONE
+	title = IRE_NorthernIrelandCountySway.TYRONE.t
+	desc = IRE_NorthernIrelandCountySway.TYRONE.d
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	hidden = yes
+	
+	option = { ## SWAYS
+		name = IRE_NorthernIrelandCountySway.TYRONE.a
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				IRE = { set_country_flag = IRE_swayed_Tyrone_flag }
+				add_to_variable = {
+					var = Northern_Ireland_Counties_swung
+					value = 1
+				}
+			}	
+		}
+	}
+	
+	
+	option = { ## FAILS
+		name = IRE_NorthernIrelandCountySway.TYRONE.b
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				add_to_variable = {
+					var = Northern_Ireland_Counties_swung
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = IRE_NorthernIrelandCountySway1.FERMANAGH
+	title = IRE_NorthernIrelandCountySway1.FERMANAGH.t
+	desc = IRE_NorthernIrelandCountySway1.FERMANAGH.d
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	hidden = yes
+	
+	option = { ## SWAYS
+		name = IRE_NorthernIrelandCountySway1.FERMANAGH.a
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				IRE = { set_country_flag = IRE_swayed_Fermanagh_flag }
+				add_to_variable = {
+					var = Northern_Ireland_Counties_swung
+					value = 1
+				}
+			}	
+		}
+	}
+	
+	
+	option = { ## FAILS
+		name = IRE_NorthernIrelandCountySway1.FERMANAGH.b
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				add_to_variable = {
+					var = Northern_Ireland_Counties_swung
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = IRE_NorthernIrelandCountySway2.DERRY
+	title = IRE_NorthernIrelandCountySway2.DERRY.t
+	desc = IRE_NorthernIrelandCountySway2.DERRY.d
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	hidden = yes
+	
+	option = { ## SWAYS
+		name = IRE_NorthernIrelandCountySway2.DERRY.a
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				IRE = { set_country_flag = IRE_swayed_derry_flag }
+				add_to_variable = {
+					var = Northern_Ireland_Counties_swung
+					value = 1
+				}
+			}	
+		}
+	}
+	
+	
+	option = { ## FAILS
+		name = IRE_NorthernIrelandCountySway2.DERRY.b
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				add_to_variable = {
+					var = Northern_Ireland_Counties_swung
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = IRE_NorthernIrelandCountySway3.DOWN
+	title = IRE_NorthernIrelandCountySway3.DOWN.t
+	desc = IRE_NorthernIrelandCountySway3.DOWN.d
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	hidden = yes
+	
+	option = { ## SWAYS
+		name = IRE_NorthernIrelandCountySway3.DOWN.a
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				IRE = { set_country_flag = IRE_swayed_down_flag }
+				add_to_variable = {
+					var = Northern_Ireland_Counties_swung
+					value = 1
+				}
+			}	
+		}
+	}
+	
+	
+	option = { ## FAILS
+		name = IRE_NorthernIrelandCountySway3.DOWN.b
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				add_to_variable = {
+					var = Northern_Ireland_Counties_swung
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = IRE_NorthernIrelandCountySway4.ANTRIM
+	title = IRE_NorthernIrelandCountySway4.ANTRIM.t
+	desc = IRE_NorthernIrelandCountySway4.ANTRIM.d
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	hidden = yes
+	
+	option = { ## SWAYS
+		name = IRE_NorthernIrelandCountySway4.ANTRIM.a
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				IRE = { set_country_flag = IRE_swayed_antrim_flag }
+				add_to_variable = {
+					var = Northern_Ireland_Counties_swung
+					value = 1
+				}
+			}	
+		}
+	}
+	
+	
+	option = { ## FAILS
+		name = IRE_NorthernIrelandCountySway4.ANTRIM.b
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				add_to_variable = {
+					var = Northern_Ireland_Counties_swung
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = IRE_NorthernIrelandCountySway5.ARMAGH
+	title = IRE_NorthernIrelandCountySway5.ARMAGH.t
+	desc = IRE_NorthernIrelandCountySway5.ARMAGH.d
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	hidden = yes
+	
+	option = { ## SWAYS
+		name = IRE_NorthernIrelandCountySway5.ARMAGH.a
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				IRE = { set_country_flag = IRE_swayed_armagh_flag }
+				add_to_variable = {
+					var = Northern_Ireland_Counties_swung
+					value = 1
+				}
+			}	
+		}
+	}
+	
+	
+	option = { ## FAILS
+		name = IRE_NorthernIrelandCountySway5.ARMAGH.b
+		random_list = {
+			seed = RANDOM
+			2 = { 
+				add_to_variable = {
+					var = Northern_Ireland_Counties_swung
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = IRE_Propose_Northern_Irish_Unification.Proposal
+	title = IRE_Propose_Northern_Irish_Unification.Proposal.t
+	desc = IRE_Propose_Northern_Irish_Unification.Proposal.d
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 40
+	option = { ## Hand Over Northern Ireland
+		name = IRE_Propose_Northern_Irish_Unification.Proposal.a
+		ai_chance = {
+			base = 5
+			modifier = {
+				check_variable = { Northern_Ireland_Counties_swung = 1 }
+				add = 15
+			}
+			modifier = {
+				check_variable = { Northern_Ireland_Counties_swung = 2 }
+				add = 30
+			}
+			modifier = {
+				check_variable = { Northern_Ireland_Counties_swung = 3 }
+				add = 45
+			}
+			modifier = {
+				check_variable = { Northern_Ireland_Counties_swung = 4 }
+				add = 60
+			}
+			modifier = {
+				check_variable = { Northern_Ireland_Counties_swung = 5 }
+				add = 75
+			}
+			modifier = {
+				check_variable = { Northern_Ireland_Counties_swung = 6 }
+				add = 100
+			}
+		}
+		IRE = { set_country_flag = Northern_Ireland_Accepted }
+		IRE = {
+			transfer_state = 119
+		}
+	}
+	
+	option = { ## Refuse to Hand Over Northern Ireland
+		name = IRE_Propose_Northern_Irish_Unification.Proposal.b
+		ai_chance = {
+			base = 15
+			modifier = {
+				check_variable = { Northern_Ireland_Counties_swung = 1 }
+				add = 10
+			}
+			modifier = {
+				check_variable = { Northern_Ireland_Counties_swung = 2 }
+				add = 20
+			}
+			modifier = {
+				check_variable = { Northern_Ireland_Counties_swung = 3 }
+				add = 35
+			}
+		}
+		IRE = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				generator = { 119 }
+			}
+		}
+		IRE = { set_country_flag = Northern_Ireland_Refused }
+	}
+	
+
+}

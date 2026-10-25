@@ -1,0 +1,39 @@
+ideas = {
+    country = {
+        POR_new_production_techniques = {
+            picture = generic_license_production
+
+            removal_cost = -1
+
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.05
+                production_factory_max_efficiency_factor = 0.1
+                production_lack_of_resource_penalty_factor = -0.25
+            }
+        }
+        POR_investment_in_local_companies = {
+            picture = ARG_public_works_investment
+
+            removal_cost = -1
+
+            modifier = {
+                military_industrial_organization_research_bonus = 0.15
+                military_industrial_organization_funds_gain = 0.1
+                military_industrial_organization_size_up_requirement = -0.25
+            }
+        }
+        POR_special_forces = {
+            picture = FRA_scw_intervention_nationalists_focus
+
+            removal_cost = -1
+
+            modifier = {
+                special_forces_cap = 0.15
+                special_forces_out_of_supply_factor = -0.1
+                special_forces_attack_factor = 0.15
+                special_forces_defence_factor = 0.1
+                initiative_factor = 0.02
+            }
+        }
+    }
+}

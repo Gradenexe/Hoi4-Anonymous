@@ -1,0 +1,95 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			# === MODE: Everyone is Host (players only) ===
+			if = {
+				limit = { has_game_rule = { rule = ccshtool_gr_mode   option = ccshtool_gr_mode_everyone } }
+				every_country = {
+					limit = { is_ai = no }
+					set_country_flag = ccshtool_enabled_cflag
+				}
+			}
+
+			# === MODE: Everyone is Host (including AI) ===
+			if = {
+				limit = { has_game_rule = { rule = ccshtool_gr_mode   option = ccshtool_gr_mode_everyone_ai } }
+				every_country = {
+					set_country_flag = ccshtool_enabled_cflag
+				}
+			}
+
+			# === MODE: Random Player Host (and no specific country chosen) ===
+			if = {
+				limit = {
+					has_game_rule = { rule = ccshtool_gr_mode   option = ccshtool_gr_mode_random }
+					has_game_rule = { rule = ccshtool_gr_country   option = ccshtool_gr_country_none }
+				}
+				random_country = {
+					limit = { is_ai = no }
+					set_country_flag = ccshtool_enabled_cflag
+				}
+			}
+
+			# === SPECIFIC COUNTRY HOST ===
+			# If a specific country is chosen, that country gets the tool regardless of mode
+			# (unless mode = nohost, which overrides everything)
+
+			# MAJORS
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_GER } GER = { exists = yes } } GER = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_SOV } SOV = { exists = yes } } SOV = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_FRA } FRA = { exists = yes } } FRA = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_ENG } ENG = { exists = yes } } ENG = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_USA } USA = { exists = yes } } USA = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_JAP } JAP = { exists = yes } } JAP = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_ITA } ITA = { exists = yes } } ITA = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_CHI } CHI = { exists = yes } } CHI = { set_country_flag = ccshtool_enabled_cflag } }
+
+			# EUROPEAN MINORS
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_POL } POL = { exists = yes } } POL = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_FIN } FIN = { exists = yes } } FIN = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_SWE } SWE = { exists = yes } } SWE = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_NOR } NOR = { exists = yes } } NOR = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_DEN } DEN = { exists = yes } } DEN = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_BEL } BEL = { exists = yes } } BEL = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_HOL } HOL = { exists = yes } } HOL = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_CZE } CZE = { exists = yes } } CZE = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_YUG } YUG = { exists = yes } } YUG = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_ROM } ROM = { exists = yes } } ROM = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_BUL } BUL = { exists = yes } } BUL = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_GRE } GRE = { exists = yes } } GRE = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_HUN } HUN = { exists = yes } } HUN = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_SLO } SLO = { exists = yes } } SLO = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_AUS } AUS = { exists = yes } } AUS = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_SWI } SWI = { exists = yes } } SWI = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_ICE } ICE = { exists = yes } } ICE = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_LIT } LIT = { exists = yes } } LIT = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_LAT } LAT = { exists = yes } } LAT = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_EST } EST = { exists = yes } } EST = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_SPR } SPR = { exists = yes } } SPR = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_POR } POR = { exists = yes } } POR = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_TUR } TUR = { exists = yes } } TUR = { set_country_flag = ccshtool_enabled_cflag } }
+
+			# REST OF WORLD
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_CAN } CAN = { exists = yes } } CAN = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_ARG } ARG = { exists = yes } } ARG = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_BRA } BRA = { exists = yes } } BRA = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_MEX } MEX = { exists = yes } } MEX = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_CHL } CHL = { exists = yes } } CHL = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_PRY } PRY = { exists = yes } } PRY = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_URU } URU = { exists = yes } } URU = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_AST } AST = { exists = yes } } AST = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_NZL } NZL = { exists = yes } } NZL = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_SAF } SAF = { exists = yes } } SAF = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_ETH } ETH = { exists = yes } } ETH = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_COG } COG = { exists = yes } } COG = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_RAJ } RAJ = { exists = yes } } RAJ = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_INS } INS = { exists = yes } } INS = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_PHI } PHI = { exists = yes } } PHI = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_SIA } SIA = { exists = yes } } SIA = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_AFG } AFG = { exists = yes } } AFG = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_IRQ } IRQ = { exists = yes } } IRQ = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_PER } PER = { exists = yes } } PER = { set_country_flag = ccshtool_enabled_cflag } }
+			if = { limit = { NOT = { has_game_rule = { rule = ccshtool_gr_mode option = ccshtool_gr_mode_nohost } } has_game_rule = { rule = ccshtool_gr_country option = ccshtool_gr_host_MAN } MAN = { exists = yes } } MAN = { set_country_flag = ccshtool_enabled_cflag } }
+		}
+	}
+}

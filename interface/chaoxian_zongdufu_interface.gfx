@@ -1,0 +1,2871 @@
+spriteTypes = {
+	##########################         勋章               ############################################## 
+	spriteType = {
+		name = "GFX_KOR_chaoxian_xunzhang_1"
+		texturefile = "gfx/interface/medals/KOR_chaoxian_xunzhang_1.png"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_KOR_chaoxian_xunzhang_1_large"
+		texturefile = "gfx/interface/medals/KOR_chaoxian_xunzhang_1_large.png"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_KOR_chaoxian_xunzhang_2"
+		texturefile = "gfx/interface/medals/KOR_chaoxian_xunzhang_2.png"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_KOR_chaoxian_xunzhang_2_large"
+		texturefile = "gfx/interface/medals/KOR_chaoxian_xunzhang_2_large.png"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_KOR_hanguo_xunzhang_1"
+		texturefile = "gfx/interface/medals/KOR_hanguo_xunzhang_1.png"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_KOR_hanguo_xunzhang_1_large"
+		texturefile = "gfx/interface/medals/KOR_hanguo_xunzhang_1_large.png"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_KOR_hanguo_xunzhang_2"
+		texturefile = "gfx/interface/medals/KOR_hanguo_xunzhang_2.png"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_KOR_hanguo_xunzhang_2_large"
+		texturefile = "gfx/interface/medals/KOR_hanguo_xunzhang_2_large.png"
+		noOfFrames = 4
+	}
+	##########################         配件               ############################################## 
+	####### 飞机配件
+	spriteType = {
+		name = "GFX_EMI_KOR_changpaoguan_zidongpao"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/KOR_changpaoguan_zidongpao.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_KOR_denglizi_chongya_yinqing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/KOR_denglizi_chongya_yinqing.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_KOR_diyudaji_daodan"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/KOR_diyudaji_daodan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_KOR_gaochuli_wolun_yinqing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/KOR_gaochuli_wolun_yinqing.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_KOR_jiguangpao"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/KOR_jiguangpao.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_KOR_kongkong_leida"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/KOR_kongkong_leida.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_KOR_shuanglian_zidongpao"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/KOR_shuanglian_zidongpao.png"
+		legacy_lazy_load = no
+	}
+	####### 坦克配件
+	spriteType = {
+		name = "GFX_EMI_KOR_gongchengzhe_jiupao"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/KOR_gongchengzhe_jiupao.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_KOR_juxing_jianongpao"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/KOR_juxing_jianongpao.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_KOR_paota_jiguang_pao"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/KOR_paota_jiguang_pao.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_KOR_shuanglian_baoshi_qiang"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/KOR_shuanglian_baoshi_qiang.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_KOR_tongzhou_zidongpao"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/KOR_tongzhou_zidongpao.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_fanyingdui_fadongji"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_fanyingdui_fadongji.png"
+		legacy_lazy_load = no
+	}
+	##########################        点击特效               ############################################## 
+	#### 空军点击特效
+	spriteType = {
+		name = "GFX_TM_KOR_leidian_zhadan_dianji"
+		textureFile = "gfx/interface/equipmentdesigner/planes/KOR/KOR_leidian_zhadan_dianji.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_KOR_leidian_toubu_dianji"
+		textureFile = "gfx/interface/equipmentdesigner/planes/KOR/KOR_leidian_toubu_dianji.png"
+		legacy_lazy_load = no
+	}
+	#### 白描图
+	spriteType = {
+		name = "GFX_TC_KOR_weilai_leidian_zhandouji"
+		textureFile = "gfx/interface/equipmentdesigner/planes/KOR/KOR_weilai_leidian_zhandouji.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TC_KOR_weilai_shandian_zhandouji"
+		textureFile = "gfx/interface/equipmentdesigner/planes/KOR/KOR_weilai_shandian_zhandouji.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TC_KOR_weilai_zhuangjia_yunbingche"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/KOR/KOR_weilai_zhuangjia_yunbingche.png"
+		legacy_lazy_load = no
+	}
+	#### 坦克点击特效
+	spriteType = {
+		name = "GFX_TM_KOR_tanke_paoguan_dianji"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/KOR/KOR_tanke_paoguan_dianji.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_KOR_tanke_fuwuqi_dianji"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/KOR/KOR_tanke_fuwuqi_dianji.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_KOR_tanke_ewaiwuqi_1_dianji"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/KOR/KOR_tanke_ewaiwuqi_1_dianji.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_KOR_tanke_ewaiwuqi_2_dianji"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/KOR/KOR_tanke_ewaiwuqi_2_dianji.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_KOR_tanke_ewaiwuqi_3_dianji"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/KOR/KOR_tanke_ewaiwuqi_3_dianji.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_KOR_teshu_gongneng_1_dianji"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/KOR/KOR_teshu_gongneng_1_dianji.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_KOR_teshu_gongneng_2_dianji"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/KOR/KOR_teshu_gongneng_2_dianji.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_KOR_teshu_gongneng_3_dianji"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/KOR/KOR_teshu_gongneng_3_dianji.png"
+		legacy_lazy_load = no
+	}
+	##########################         部队               ############################################## 
+	spriteType = {
+		name = "GFX_unit_KOR_Power_Armor_icon_small"
+		texturefile = "gfx/texticons/KOR_Power_Armor.png"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_KOR_Power_Armor_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KOR_Power_Armor.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_KOR_Power_Armor_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/KOR_Power_Armor.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_KOR_Assault_Vehicle_icon_small"
+		texturefile = "gfx/texticons/KOR_Assault_Vehicle.png"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_KOR_Assault_Vehicle_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KOR_Assault_Vehicle.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_KOR_Assault_Vehicle_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/KOR_Assault_Vehicle.png"
+		noOfFrames = 2
+	}
+	##########################         配件               ############################################## 
+	####### 陆军
+	spriteType = {
+		name = "GFX_KOR_weilai_baodanqiang_1_medium"
+		texturefile = "gfx/interface/technologies/KOR_weilai_baodanqiang.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_weilai_donglijia_1_medium"
+		texturefile = "gfx/interface/technologies/KOR_weilai_donglijia.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_weilai_shandian_zhandouji_1_medium"
+		texturefile = "gfx/interface/technologies/KOR_weilai_shandian_zhandouji.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_weilai_leidian_zhandouji_1_medium"
+		texturefile = "gfx/interface/technologies/KOR_weilai_leidian_zhandouji.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_weilai_zhuangjia_yunbingche_1_medium"
+		texturefile = "gfx/interface/technologies/KOR_weilai_zhuangjia_yunbingche.png"
+	}
+	SpriteType = {
+		name = "GFX_archetype_weilai_baodanqiang_medium"
+		texturefile = "gfx/interface/archetypes/archetype_weilai_baodanqiang.png"
+	}
+	SpriteType = {
+		name = "GFX_archetype_weilai_donglijia_medium"
+		texturefile = "gfx/interface/archetypes/archetype_weilai_donglijia.png"
+	}
+	##########################         阵营               ############################################## 
+	spriteType = {
+		name = "GFX_faction_logo_KOR_wangdao_tongyu_dongya"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_KOR_wangdao_tongyu_dongya.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_logo_KOR_wangdao_tongyu_dongya_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_KOR_wangdao_tongyu_dongya_miniature.png"
+	}
+	##########################         地块建筑               ############################################## 
+	spriteType = {
+		name = "GFX_Gyeongbokgung_Palace_icon_small"
+		texturefile = "gfx/interface/buildings/historical_buildings/small/Gyeongbokgung_Palace_icon_small.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_Celestial_Research_Institute_icon_small"
+		texturefile = "gfx/interface/buildings/historical_buildings/small/Celestial_Research_Institute_icon_small.png"
+		noOfFrames = 2
+	}
+	##########################         权力平衡               ##############################################
+	spriteType = {
+		name = "GFX_bop_KOR_democratic_side_colorful"
+		texturefile = "gfx/interface/bop/bop_KOR_democratic_side_colorful.png"
+	}
+	spriteType = {
+		name = "GFX_bop_KOR_democratic_side_grey"
+		texturefile = "gfx/interface/bop/bop_KOR_democratic_side_grey.png"
+	}
+	spriteType = {
+		name = "GFX_bop_KOR_monarchy_side_colorful"
+		texturefile = "gfx/interface/bop/bop_KOR_monarchy_side_colorful.png"
+	}
+	spriteType = {
+		name = "GFX_bop_KOR_monarchy_side_grey"
+		texturefile = "gfx/interface/bop/bop_KOR_monarchy_side_grey.png"
+	}
+	########################################################################################################################
+	spriteType = {
+		name = "GFX_portrait_KOR_pak_hon_yong_civilian_small"
+		texturefile = "gfx/interface/ideas/portrait_KOR_pak_hon_yong_civilian_small.dds"
+	}
+	##############################################################################################################################################################
+	####################################################################   国策小图标   ####################################################################
+	############################################################################################################################################################## 
+	spriteType = {
+		name = "GFX_yananpai_focus_xiaotubiao_texticon"
+		texturefile = "gfx/texticons/yananpai_focus_xiaotubiao_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bentupai_focus_xiaotubiao_texticon"
+		texturefile = "gfx/texticons/bentupai_focus_xiaotubiao_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_youjiduipai_focus_xiaotubiao_texticon"
+		texturefile = "gfx/texticons/youjiduipai_focus_xiaotubiao_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_sulianpai_focus_xiaotubiao_texticon"
+		texturefile = "gfx/texticons/sulianpai_focus_xiaotubiao_texticon.png"
+		legacy_lazy_load = no
+	}
+	##############################################################################################################################################################
+	####################################################################   王牌飞行员   ####################################################################
+	############################################################################################################################################################## 
+	spriteType = {
+		name = "GFX_KOR_ace_Kiok_Kwon"
+		texturefile = "gfx/aces/KOR_Kiok_Kwon_ace.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_ace_YuanYing_Kim"
+		texturefile = "gfx/aces/KOR_YuanYing_Kim_ace.png"
+	}
+	##############################################################################################################################################################
+	####################################################################   间谍行动   ####################################################################
+	############################################################################################################################################################## 
+	spriteType = {
+		name = "GFX_operations_JKO_chaoxian_cisha_yuren"
+		texturefile = "gfx/interface/operations/JKO_chaoxian_cisha_yuren.png"
+	}
+	##############################################################################################################################################################
+	####################################################################   地区buff   ####################################################################
+	############################################################################################################################################################## 
+	spriteType = {
+		name = "GFX_modifiers_KOR_spiritual_resistance"
+		textureFile = "gfx/interface/state_modifiers/modifiers_KOR_spiritual_resistance.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_shentou_yuandong"
+		textureFile = "gfx/interface/state_modifiers/modifiers_KOR_shentou_yuandong.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_generic_JKO_tielue_huihuai"
+		textureFile = "gfx/interface/state_modifiers/modifiers_generic_JKO_tielue_huihuai.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_generic_KOR_zhiqing_xiaxiang"
+		textureFile = "gfx/interface/state_modifiers/modifiers_generic_KOR_zhiqing_xiaxiang.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_generic_KOR_binhai_bianjiang_maoyi_xiaxiang"
+		textureFile = "gfx/interface/state_modifiers/modifiers_generic_KOR_binhai_bianjiang_maoyi_xiaxiang.png"
+	}
+	##############################################################################################################################################################
+	####################################################################   傀儡国标志   ####################################################################
+	############################################################################################################################################################## 
+	# 
+	spriteType = {
+		name = "GFX_zhimindi_zongdu_xiaqu_icon"
+		textureFile = "gfx/interface/autonomy/zhimindi_zongdu_xiaqu_icon.png"
+	}
+	##############################################################################################################################################################
+	####################################################################   情报机构   ####################################################################
+	############################################################################################################################################################## 
+	#  
+	spriteType = {
+		name = "GFX_intelligence_JKO_General_Intelligence_Presidency"
+		texturefile = "gfx/interface/operatives/agencies/JKO_General_Intelligence_Presidency.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_intelligence_JKO_General_Intelligence_Presidency_communism"
+		texturefile = "gfx/interface/operatives/agencies/JKO_General_Intelligence_Presidency_communism.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_intelligence_JKO_General_Intelligence_Presidency_democratic"
+		texturefile = "gfx/interface/operatives/agencies/JKO_General_Intelligence_Presidency_democratic.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_intelligence_JKO_General_Intelligence_Presidency_fascism"
+		texturefile = "gfx/interface/operatives/agencies/JKO_General_Intelligence_Presidency_fascism.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_intelligence_JKO_General_Intelligence_Presidency_neutrality"
+		texturefile = "gfx/interface/operatives/agencies/JKO_General_Intelligence_Presidency_neutrality.png"
+		noOfFrames = 2
+	}
+	##############################################################################################################################################################
+	####################################################################   将领特质   ####################################################################
+	############################################################################################################################################################## 
+	spriteType = {
+		name = "GFX_trait_generic_artillery_officer"
+		texturefile = "gfx/interface/traits/personal/generic_artillery_officer.png"
+	}
+	spriteType = {
+		name = "GFX_trait_JKO_chaoxianji_rijun"
+		texturefile = "gfx/interface/traits/personal/JKO_chaoxianji_rijun.png"
+	}
+	spriteType = {
+		name = "GFX_trait_KOR_sulian_pai"
+		texturefile = "gfx/interface/traits/personal/KOR_sulian_pai.png"
+	}
+	spriteType = {
+		name = "GFX_trait_KOR_kanglian_junshi"
+		texturefile = "gfx/interface/traits/personal/KOR_kanglian_junshi.png"
+	}
+	spriteType = {
+		name = "GFX_trait_KOR_yananpai_chengyuan"
+		texturefile = "gfx/interface/traits/personal/KOR_yananpai_chengyuan.png"
+	}
+	spriteType = {
+		name = "GFX_trait_KOR_nanlao_pai"
+		texturefile = "gfx/interface/traits/personal/KOR_nanlao_pai.png"
+	}
+	spriteType = {
+		name = "GFX_trait_KOR_zhongguoxi"
+		texturefile = "gfx/interface/traits/personal/KOR_zhongguoxi.png"
+	}
+	spriteType = {
+		name = "GFX_trait_KOR_manzhouguo_xi"
+		texturefile = "gfx/interface/traits/personal/KOR_manzhouguo_xi.png"
+	}
+	spriteType = {
+		name = "GFX_trait_KOR_huangjia_xuetong"
+		texturefile = "gfx/interface/traits/personal/KOR_huangjia_xuetong.png"
+	}
+	spriteType = {
+		name = "GFX_trait_KOR_Fear_of_the_investigation_committee"
+		texturefile = "gfx/interface/traits/personal/KOR_Fear_of_the_investigation_committee.png"
+	}
+	##############################################################################################################################################################
+	####################################################################   leaders   ####################################################################
+	##############################################################################################################################################################
+	######################################################            通用人物           ##########################################################################
+	####女性 间谍
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_female_1_operative"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_female_1_operative.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_female_2_operative"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_female_2_operative.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_female_3_operative"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_female_3_operative.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_female_4_operative"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_female_4_operative.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_female_5_operative"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_female_5_operative.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_female_6_operative"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_female_6_operative.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_female_7_operative"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_female_7_operative.png"
+	}
+	####女性 科学家
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_female_1_scientist"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_female_1_scientist.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_female_2_scientist"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_female_2_scientist.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_female_3_scientist"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_female_3_scientist.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_female_4_scientist"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_female_4_scientist.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_female_5_scientist"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_female_5_scientist.png"
+	}
+	####男性 
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_navy_male_3"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_navy_male_3.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_navy_male_3_small"
+		texturefile = "gfx/interface/ideas/KOR_generic_navy_male_3_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_navy_male_2"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_navy_male_2.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_navy_male_2_small"
+		texturefile = "gfx/interface/ideas/KOR_generic_navy_male_2_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_navy_male_1"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_navy_male_1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_navy_male_1_small"
+		texturefile = "gfx/interface/ideas/KOR_generic_navy_male_1_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_1"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_1_scientist"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_1_scientist.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_1_operative"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_1_operative.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_1_small"
+		texturefile = "gfx/interface/ideas/KOR_generic_male_1_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_2"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_2.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_2_small"
+		texturefile = "gfx/interface/ideas/KOR_generic_male_2_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_3_scientist"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_3_scientist.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_3_operative"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_3_operative.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_3"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_3.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_3_small"
+		texturefile = "gfx/interface/ideas/KOR_generic_male_3_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_4"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_4.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_4_small"
+		texturefile = "gfx/interface/ideas/KOR_generic_male_4_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_5"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_5.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_5_small"
+		texturefile = "gfx/interface/ideas/KOR_generic_male_5_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_6"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_6.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_6_small"
+		texturefile = "gfx/interface/ideas/KOR_generic_male_6_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_7"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_7.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_7_small"
+		texturefile = "gfx/interface/ideas/KOR_generic_male_7_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_8"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_8.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_8_small"
+		texturefile = "gfx/interface/ideas/KOR_generic_male_8_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_9"
+		texturefile = "gfx/leaders/KOR_generic/KOR_generic_male_9.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_generic_male_9_small"
+		texturefile = "gfx/interface/ideas/KOR_generic_male_9_small.png"
+	}
+	######################################################            群星彩蛋人物           ##########################################################################
+	spriteType = {
+		name = "GFX_portrait_KOR_caidan_renwu"
+		texturefile = "gfx/leaders/KOR_fascism/KOR_caidan_renwu.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_caidan_renwu_small"
+		texturefile = "gfx/interface/ideas/KOR_caidan_renwu_small.png"
+	}
+	#   leaders
+	######################################################            东北抗联           ##########################################################################
+	spriteType = {
+		name = "GFX_portrait_MAN_Li_Zhaolin"
+		texturefile = "gfx/leaders/MAN_communism/MAN_Li_Zhaolin.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_MAN_Wang_Yachen"
+		texturefile = "gfx/leaders/MAN_communism/MAN_Wang_Yachen.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_MAN_Xia_Yunjie"
+		texturefile = "gfx/leaders/MAN_communism/MAN_Xia_Yunjie.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_MAN_Yang_Jingyu"
+		texturefile = "gfx/leaders/MAN_communism/MAN_Yang_Jingyu.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_MAN_Yang_Jingyu_small"
+		texturefile = "gfx/interface/ideas/MAN_Yang_Jingyu_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_MAN_zhao_shangzhi_plus"
+		texturefile = "gfx/leaders/MAN_communism/MAN_zhao_shangzhi_plus.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_MAN_Zhao_Yiman"
+		texturefile = "gfx/leaders/MAN_communism/MAN_Zhao_Yiman.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_MAN_Zhou_Baozhong"
+		texturefile = "gfx/leaders/MAN_communism/MAN_Zhou_Baozhong.png"
+	}
+	######################################################            朝鲜总督府           ########################################################################## 
+	spriteType = {
+		name = "GFX_portrait_JAP_Akihito_mikado"
+		texturefile = "gfx/leaders/JKO/JAP_Akihito_mikado.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Kenzo_Kitano"
+		texturefile = "gfx/leaders/JKO/JKO_Kenzo_Kitano.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Cai_Bingde"
+		texturefile = "gfx/leaders/JKO/JKO_Cai_Bingde.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Hong_Siyi"
+		texturefile = "gfx/leaders/JKO/JKO_Hong_Siyi.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Jin_Baiyi"
+		texturefile = "gfx/leaders/JKO/JKO_Jin_Baiyi.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Jin_Xiyuan"
+		texturefile = "gfx/leaders/JKO/JKO_Jin_Xiyuan.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Kotaro_Nakamura"
+		texturefile = "gfx/leaders/JKO/JKO_Kotaro_Nakamura.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Lee_Hyung_geun"
+		texturefile = "gfx/leaders/JKO/JKO_Lee_Hyung_geun.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Li_Yingjun"
+		texturefile = "gfx/leaders/JKO/JKO_Li_Yingjun.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Shin_Tae_young"
+		texturefile = "gfx/leaders/JKO/JKO_Shin_Tae_young.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Tamio_Iwasaki"
+		texturefile = "gfx/leaders/JKO/JKO_Tamio_Iwasaki.png"
+	}
+	######################################################            科学家           ##########################################################################
+	spriteType = {
+		name = "GFX_portrait_KOR_Du_Shanglu"
+		texturefile = "gfx/leaders/KOR_scientist/KOR_Du_Shanglu.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Shengji"
+		texturefile = "gfx/leaders/KOR_scientist/KOR_Li_Shengji.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Shengji_small"
+		texturefile = "gfx/leaders/KOR_scientist/KOR_Li_Shengji_small.png"
+	}
+	######################################################            朝鲜中立线           ##########################################################################
+	spriteType = {
+		name = "GFX_portrait_KOR_Jianzhun_weiyuanhui"
+		texturefile = "gfx/leaders/KOR_neutrality/KOR_Jianzhun_weiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_DongNing"
+		texturefile = "gfx/leaders/KOR_neutrality/KOR_Li_DongNing.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_lyuh_woon_hyung"
+		texturefile = "gfx/leaders/KOR_neutrality/KOR_lyuh_woon_hyung.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_lyuh_woon_hyung_small"
+		texturefile = "gfx/interface/ideas/KOR_lyuh_woon_hyung_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cho_Bong_am"
+		texturefile = "gfx/leaders/KOR_neutrality/KOR_Cho_Bong_am.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cho_Bong_am_small"
+		texturefile = "gfx/interface/ideas/KOR_Cho_Bong_am_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cho_Man_sik"
+		texturefile = "gfx/leaders/KOR_neutrality/KOR_Cho_Man_sik.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cho_Man_sik_small"
+		texturefile = "gfx/interface/ideas/KOR_Cho_Man_sik_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Yi_Yunyong_small"
+		texturefile = "gfx/interface/ideas/KOR_Yi_Yunyong_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Ahn_Jae_hong_small"
+		texturefile = "gfx/interface/ideas/KOR_Ahn_Jae_hong_small.png"
+	}
+	######################################################     朝鲜康米线   ########################################################################
+	##间谍           
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_ShanShi"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Li_ShanShi.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cheng_Shibo"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Cheng_Shibo.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Chi_Chunlan"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Chi_Chunlan.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Hong_Wanzhi"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Hong_Wanzhi.png"
+	}
+	##大会  
+	spriteType = {
+		name = "GFX_portrait_KOR_chaoxian_dahui"
+		texturefile = "gfx/leaders/KOR_communism/KOR_chaoxian_dahui.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_communism_kaiju_leader"
+		texturefile = "gfx/leaders/KOR_communism/KOR_communism_kaiju_leader.png"
+	}
+	######################################################     朝鲜康米线——苏联派           ##########################################################################
+	spriteType = {
+		name = "GFX_portrait_SOV_Ivan_Chistyakov"
+		texturefile = "gfx/leaders/KOR_communism/SOV_Ivan_Chistyakov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_Trenti_Shitikov"
+		texturefile = "gfx/leaders/KOR_communism/SOV_Trenti_Shitikov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Nam_Il"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Nam_Il.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Nam_Il_small"
+		texturefile = "gfx/interface/ideas/KOR_Nam_Il_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Xu_Jiayi"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Xu_Jiayi.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Xu_Jiayi_small"
+		texturefile = "gfx/interface/ideas/KOR_Xu_Jiayi_small.png"
+	}
+	######################################################     朝鲜康米线——延安派派           ##########################################################################
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Tu_bong"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Kim_Tu_bong.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Tu_bong_small"
+		texturefile = "gfx/interface/ideas/KOR_Kim_Tu_bong_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Xiangzhao"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Li_Xiangzhao.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Park_Il_Woo"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Park_Il_Woo.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Park_Il_Woo_small"
+		texturefile = "gfx/interface/ideas/KOR_Park_Il_Woo_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Chang_man_small"
+		texturefile = "gfx/interface/ideas/KOR_Kim_Chang_man_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Won_bong"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Kim_Won_bong.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Won_bong_small"
+		texturefile = "gfx/interface/ideas/KOR_Kim_Won_bong_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Tse_Chianguikku_small"
+		texturefile = "gfx/interface/ideas/KOR_Tse_Chianguikku_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Bang_Ho_San"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Bang_Ho_San.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Yun_Seju"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Yun_Seju.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Bang_Ho_San_small"
+		texturefile = "gfx/interface/ideas/KOR_Bang_Ho_San_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Quanwu"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Li_Quanwu.png"
+	}
+	######################################################     朝鲜康米线——南劳派           ########################################################################## 
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_KangGuo_small"
+		texturefile = "gfx/interface/ideas/KOR_Li_KangGuo_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Lim_Hwa_small"
+		texturefile = "gfx/interface/ideas/KOR_Lim_Hwa_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Chengye"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Li_Chengye.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Chengye_small"
+		texturefile = "gfx/interface/ideas/KOR_Li_Chengye_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Xuanxiang"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Li_Xuanxiang.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Xuanxiang_small"
+		texturefile = "gfx/interface/ideas/KOR_Li_Xuanxiang_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Xuan_Junhe"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Xuan_Junhe.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Xuan_Junhe_small"
+		texturefile = "gfx/interface/ideas/KOR_Xuan_Junhe_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Bai_Nanyun_small"
+		texturefile = "gfx/interface/ideas/KOR_Bai_Nanyun_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Hong_Mingxi_small"
+		texturefile = "gfx/interface/ideas/KOR_Hong_Mingxi_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Xu_Chengze_small"
+		texturefile = "gfx/interface/ideas/KOR_Xu_Chengze_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_SanLong_small"
+		texturefile = "gfx/interface/ideas/KOR_Jin_SanLong_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_ZhouHe_small"
+		texturefile = "gfx/interface/ideas/KOR_Li_ZhouHe_small.png"
+	}
+	######################################################     朝鲜康米线——甲山派           ##########################################################################
+	spriteType = {
+		name = "GFX_portrait_KOR_Xu_Fengxue"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Xu_Fengxue.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Xu_Fengxue_small"
+		texturefile = "gfx/interface/ideas/KOR_Xu_Fengxue_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Pak_Kum_chol"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Pak_Kum_chol.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Pak_Kum_chol_small"
+		texturefile = "gfx/interface/ideas/KOR_Pak_Kum_chol_small.png"
+	}
+	###########################     朝鲜康米线内阁         ###############################################  
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_JongSuk_small"
+		texturefile = "gfx/interface/ideas/KOR_Kim_JongSuk_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Xu_ZhenJiao_small"
+		texturefile = "gfx/interface/ideas/KOR_Xu_ZhenJiao_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_Ce_small"
+		texturefile = "gfx/interface/ideas/KOR_Kim_Ce_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Dae_hyun_small"
+		texturefile = "gfx/interface/ideas/KOR_Kim_Dae_hyun_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Yi_small"
+		texturefile = "gfx/interface/ideas/KOR_Kim_Yi_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Lin_Chunqiu_small"
+		texturefile = "gfx/interface/ideas/KOR_Lin_Chunqiu_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Seongsuk_small"
+		texturefile = "gfx/interface/ideas/KOR_Kim_Seongsuk_small.png"
+	}
+	###########################     朝鲜康米线军队         ###############################################
+	spriteType = {
+		name = "GFX_portrait_KOR_Wu_Bailong"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Wu_Bailong.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Wu_Bailong_small"
+		texturefile = "gfx/interface/ideas/KOR_Wu_Bailong_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Qingsong"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Li_Qingsong.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cui_Guang"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Cui_Guang.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cui_Guang_small"
+		texturefile = "gfx/interface/ideas/KOR_Cui_Guang_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_choe_hyon"
+		texturefile = "gfx/leaders/KOR_communism/KOR_choe_hyon.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_choe_hyon_small"
+		texturefile = "gfx/interface/ideas/KOR_choe_hyon_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cui_Yongjian"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Cui_Yongjian.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cui_Yongjian_small"
+		texturefile = "gfx/interface/ideas/KOR_Cui_Yongjian_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cui_Yongjin"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Cui_Yongjin.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cui_Yongjin_small"
+		texturefile = "gfx/interface/ideas/KOR_Cui_Yongjin_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jiang_Jian"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Jiang_Jian.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jiang_Jian_small"
+		texturefile = "gfx/interface/ideas/KOR_Jiang_Jian_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_Dahong"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Jin_Dahong.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_Dahong_small"
+		texturefile = "gfx/interface/ideas/KOR_Jin_Dahong_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Yonghao"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Li_Yonghao.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Yonghao_small"
+		texturefile = "gfx/interface/ideas/KOR_Li_Yonghao_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Liu_Jingzhu"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Liu_Jingzhu.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Liu_Jingzhu_small"
+		texturefile = "gfx/interface/ideas/KOR_Liu_Jingzhu_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_GuangXia"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Jin_GuangXia.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_GuangXia_small"
+		texturefile = "gfx/interface/ideas/KOR_Jin_GuangXia_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Park_Jung_deok"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Park_Jung_deok.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Park_Jung_deok_small"
+		texturefile = "gfx/interface/ideas/KOR_Park_Jung_deok_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Mu_Jong"
+		texturefile = "gfx/leaders/KOR_communism/KOR_Mu_Jong.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Mu_Jong_small"
+		texturefile = "gfx/interface/ideas/KOR_Mu_Jong_small.png"
+	}
+	######################################################            韩国线           ##########################################################################
+	####美国顾问
+	spriteType = {
+		name = "GFX_portrait_KOR_USA_Cornelius_Ryan"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_USA_Cornelius_Ryan.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_USA_Cornelius_Ryan_small"
+		texturefile = "gfx/interface/ideas/KOR_USA_Cornelius_Ryan_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_John_reed_hodg"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_John_reed_hodg.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_John_reed_hodg_small"
+		texturefile = "gfx/interface/ideas/KOR_John_reed_hodg_small.png"
+	}
+	################################################ 特工 ########################################################################
+	spriteType = {
+		name = "GFX_portrait_JKO_Archbishop_Roh_Paul"
+		texturefile = "gfx/leaders/KOR_democratic/JKO_Archbishop_Roh_Paul.png"
+	}
+	#######
+	spriteType = {
+		name = "GFX_portrait_KOR_An_Douxi"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_An_Douxi.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cui_Xiangyue"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Cui_Xiangyue.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_Chengzheng"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Jin_Chengzheng.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Zhe"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Li_Zhe.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Charles_Turner_Joy"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Charles_Turner_Joy.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Charles_Turner_Joy_small"
+		texturefile = "gfx/interface/ideas/KOR_Charles_Turner_Joy_small.png"
+	}
+	################ 政治顾问 #################### 
+	spriteType = {
+		name = "GFX_portrait_KOR_Yi_DongZhu_small"
+		texturefile = "gfx/interface/ideas/KOR_Yi_DongZhu_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_MingShi_small"
+		texturefile = "gfx/interface/ideas/KOR_Jin_MingShi_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cui_Doushan_small"
+		texturefile = "gfx/interface/ideas/KOR_Cui_Doushan_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jang_Taek_small"
+		texturefile = "gfx/interface/ideas/KOR_Jang_Taek_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cuineng_Town_small"
+		texturefile = "gfx/interface/ideas/KOR_Cuineng_Town_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_Binglu_small"
+		texturefile = "gfx/interface/ideas/KOR_Jin_Binglu_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Yin_Zhiwang_small"
+		texturefile = "gfx/interface/ideas/KOR_Yin_Zhiwang_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Lee_Byungchul_small"
+		texturefile = "gfx/interface/ideas/KOR_Lee_Byungchul_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Lee_Byungchul"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Lee_Byungchul.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Shin_Ik_hee_small"
+		texturefile = "gfx/interface/ideas/KOR_Shin_Ik_hee_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Shin_Ik_hee"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Shin_Ik_hee.png"
+	}
+	################ 金九系 ######################################## 
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Koo"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Kim_Koo.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Koo_small"
+		texturefile = "gfx/interface/ideas/KOR_Kim_Koo_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_Kuizhi_small"
+		texturefile = "gfx/interface/ideas/KOR_Jin_Kuizhi_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Zhao_Suang_small"
+		texturefile = "gfx/interface/ideas/KOR_Zhao_Suang_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Xin_small"
+		texturefile = "gfx/interface/ideas/KOR_Kim_Xin_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_JunZhi"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Li_JunZhi.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_JunZhi_small"
+		texturefile = "gfx/interface/ideas/KOR_Li_JunZhi_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Ahn_Chunsaeng"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Ahn_Chunsaeng.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Ahn_Chunsaeng_small"
+		texturefile = "gfx/interface/ideas/KOR_Ahn_Chunsaeng_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Park_Shichang"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Park_Shichang.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Park_Shichang_small"
+		texturefile = "gfx/interface/ideas/KOR_Park_Shichang_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Choi_Dukshin"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Choi_Dukshin.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Choi_Dukshin_small"
+		texturefile = "gfx/interface/ideas/KOR_Choi_Dukshin_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Ji_CheongCheon"
+		texturefile = "gfx/interface/ideas/KOR_Ji_CheongCheon.png"
+	}
+	################ 韩国民主党—民主国民党 ######################################## 
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Seong_Soo"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Kim_Seong_Soo.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Seong_Soo_small"
+		texturefile = "gfx/interface/ideas/KOR_Kim_Seong_Soo_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Song_Zhenyu"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Song_Zhenyu.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Song_Zhenyu_small"
+		texturefile = "gfx/interface/ideas/KOR_Song_Zhenyu_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Xu_Zheng_small"
+		texturefile = "gfx/interface/ideas/KOR_Xu_Zheng_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Yun_Bo_seon_small"
+		texturefile = "gfx/interface/ideas/KOR_Yun_Bo_seon_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Zhang_Dexiu_small"
+		texturefile = "gfx/interface/ideas/KOR_Zhang_Dexiu_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Zhao_Bingyu_small"
+		texturefile = "gfx/interface/ideas/KOR_Zhao_Bingyu_small.png"
+	}
+	################ 自由党 ######################################## 
+	spriteType = {
+		name = "GFX_portrait_KOR_Rhee_Syng_Man"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Rhee_Syng_Man.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Rhee_Syng_Man_small"
+		texturefile = "gfx/interface/ideas/KOR_Rhee_Syng_Man_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_lee_beom_seok"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_lee_beom_seok.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_lee_beom_seok_small"
+		texturefile = "gfx/interface/ideas/KOR_lee_beom_seok_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_Changlong_small"
+		texturefile = "gfx/interface/ideas/KOR_Jin_Changlong_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Yin_Zhihao_small"
+		texturefile = "gfx/interface/ideas/KOR_Yin_Zhihao_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Chang_Myon_small"
+		texturefile = "gfx/interface/ideas/KOR_Chang_Myon_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Yi_Siyeong"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Yi_Siyeong.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Yi_Siyeong_small"
+		texturefile = "gfx/interface/ideas/KOR_Yi_Siyeong_small.png"
+	}
+	################################################ 军队 ########################################################################
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_ZhongWu"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Jin_ZhongWu.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Song_Yo_chan"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Song_Yo_chan.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Hanlin"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Li_Hanlin.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Liu_Zaixing"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Liu_Zaixing.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Liu_Shenglie"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Liu_Shenglie.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Zhongzan"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Li_Zhongzan.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Zhongzan_small"
+		texturefile = "gfx/interface/ideas/KOR_Li_Zhongzan_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Shin_sung"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Shin_sung.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Shin_sung_small"
+		texturefile = "gfx/interface/ideas/KOR_Shin_sung_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Song_Ho_seong"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Song_Ho_seong.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Song_Ho_seong_small"
+		texturefile = "gfx/interface/ideas/KOR_Song_Ho_seong_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Paik_Sun_Yup"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Paik_Sun_Yup.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Paik_Sun_Yup_small"
+		texturefile = "gfx/interface/ideas/KOR_Paik_Sun_Yup_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Ji_cheong_cheon"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Ji_cheong_cheon.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Ji_cheong_cheon_small"
+		texturefile = "gfx/interface/ideas/KOR_Ji_cheong_cheon_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Hong_il"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Kim_Hong_il.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Kim_Hong_il_small"
+		texturefile = "gfx/interface/ideas/KOR_Kim_Hong_il_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Shin_Hyun_Joon"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Shin_Hyun_Joon.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Shin_Hyun_Joon_small"
+		texturefile = "gfx/interface/ideas/KOR_Shin_Hyun_Joon_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Son_Won_Il"
+		texturefile = "gfx/leaders/KOR_democratic/KOR_Son_Won_Il.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Son_Won_Il_small"
+		texturefile = "gfx/interface/ideas/KOR_Son_Won_Il_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Cui_Yongde_small"
+		texturefile = "gfx/interface/ideas/KOR_Cui_Yongde_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Ding_Yiquan_small"
+		texturefile = "gfx/interface/ideas/KOR_Ding_Yiquan_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Jin_Zhenlie_small"
+		texturefile = "gfx/interface/ideas/KOR_Jin_Zhenlie_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Genhao_small"
+		texturefile = "gfx/interface/ideas/KOR_Li_Genhao_small.png"
+	}
+	######################################################            大韩帝国线           ##########################################################################
+	spriteType = {
+		name = "GFX_portrait_KOR_Lee_Dynasty"
+		texturefile = "gfx/leaders/KOR_fascism/KOR_Lee_Dynasty.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_yi_kang"
+		texturefile = "gfx/leaders/KOR_fascism/KOR_yi_kang.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_yi_kang_1"
+		texturefile = "gfx/leaders/KOR_fascism/KOR_yi_kang_1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_yi_kang_small"
+		texturefile = "gfx/interface/ideas/KOR_yi_kang_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Sairong"
+		texturefile = "gfx/leaders/KOR_fascism/KOR_Li_Sairong.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Sairong_small"
+		texturefile = "gfx/interface/ideas/KOR_Li_Sairong_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Yi_Bangja"
+		texturefile = "gfx/leaders/KOR_fascism/KOR_Yi_Bangja.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Yi_Bangja_small"
+		texturefile = "gfx/interface/ideas/KOR_Yi_Bangja_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Jian"
+		texturefile = "gfx/leaders/KOR_fascism/KOR_Li_Jian.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Jian_small"
+		texturefile = "gfx/interface/ideas/KOR_Li_Jian_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Qin"
+		texturefile = "gfx/leaders/KOR_fascism/KOR_Li_Qin.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_Qin_small"
+		texturefile = "gfx/interface/ideas/KOR_Li_Qin_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Lian_DongZhen_small"
+		texturefile = "gfx/interface/ideas/KOR_Lian_DongZhen_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Yin_Shifu_small"
+		texturefile = "gfx/interface/ideas/KOR_Yin_Shifu_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_yi_un_plus"
+		texturefile = "gfx/leaders/KOR_fascism/KOR_yi_un_plus.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_yi_un_one"
+		texturefile = "gfx/leaders/KOR_fascism/KOR_yi_un_one.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_Li_ChengLie"
+		texturefile = "gfx/leaders/KOR_fascism/KOR_Li_ChengLie.png"
+	}
+	##############################################################################################################################################################
+	####################################################################   ideas   ####################################################################
+	##############################################################################################################################################################
+	# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  内阁 ideas # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+	######################################################            朝鲜总督府           ##########################################################################
+	spriteType = {
+		name = "GFX_portrait_JKO_Kenzo_Kitano_small"
+		texturefile = "gfx/interface/ideas/JKO_Kenzo_Kitano_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Shin_Tae_young_small"
+		texturefile = "gfx/interface/ideas/JKO_Shin_Tae_young_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Archbishop_Roh_Paul_small"
+		texturefile = "gfx/interface/ideas/JKO_Archbishop_Roh_Paul_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Choi_Nam_sun_small"
+		texturefile = "gfx/interface/ideas/JKO_Choi_Nam_sun_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Hozumi_Shinrokuro_small"
+		texturefile = "gfx/interface/ideas/JKO_Hozumi_Shinrokuro_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Imaida_Kiyonori_small"
+		texturefile = "gfx/interface/ideas/JKO_Imaida_Kiyonori_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Park_Beom_jeopard_small"
+		texturefile = "gfx/interface/ideas/JKO_Park_Beom_jeopard_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Rokuichiro_Oono_small"
+		texturefile = "gfx/interface/ideas/JKO_Rokuichiro_Oono_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Shigezo_Hayashi_small"
+		texturefile = "gfx/interface/ideas/JKO_Shigezo_Hayashi_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Takeo_Tanaka_small"
+		texturefile = "gfx/interface/ideas/JKO_Takeo_Tanaka_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Yajima_Sugizo_small"
+		texturefile = "gfx/interface/ideas/JKO_Yajima_Sugizo_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Yajima_Sugizo_small"
+		texturefile = "gfx/interface/ideas/JKO_Yajima_Sugizo_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Kotaro_Nakamura_small"
+		texturefile = "gfx/interface/ideas/JKO_Kotaro_Nakamura_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Li_Yingjun_small"
+		texturefile = "gfx/interface/ideas/JKO_Li_Yingjun_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Tamio_Iwasaki_small"
+		texturefile = "gfx/interface/ideas/JKO_Tamio_Iwasaki_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Hong_Siyi_small"
+		texturefile = "gfx/interface/ideas/JKO_Hong_Siyi_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Jin_Baiyi_small"
+		texturefile = "gfx/interface/ideas/JKO_Jin_Baiyi_small.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_JKO_Bak_Yeonghyo_small"
+		texturefile = "gfx/interface/ideas/JKO_Bak_Yeonghyo_small.png"
+	}
+	# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  工业企业 ideas # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+	spriteType = {
+		name = "GFX_idea_KOR_chaoxian_guojia_meitangongsi"
+		texturefile = "gfx/interface/ideas/KOR_chaoxian_guojia_meitangongsi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_chaoxian_guojia_dianligongsi"
+		texturefile = "gfx/interface/ideas/KOR_chaoxian_guojia_dianligongsi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_chaoxian_guojia_shiyougongsi"
+		texturefile = "gfx/interface/ideas/KOR_chaoxian_guojia_shiyougongsi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_chaoxian_qianlima_gangtiechang"
+		texturefile = "gfx/interface/ideas/KOR_chaoxian_qianlima_gangtiechang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JKO_zhichan_yinhang"
+		texturefile = "gfx/interface/ideas/idea_JKO_zhichan_yinhang.png"
+	}
+	##韩国   
+	spriteType = {
+		name = "GFX_idea_KOR_hanguo_zhongyang_yinhang"
+		texturefile = "gfx/interface/ideas/idea_KOR_hanguo_zhongyang_yinhang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hanguo_sanxingdianzi"
+		texturefile = "gfx/interface/ideas/KOR_hanguo_sanxingdianzi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lg_jituan_dianzi"
+		texturefile = "gfx/interface/ideas/KOR_lg_jituan_dianzi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hanguo_guojia_meitangongsi"
+		texturefile = "gfx/interface/ideas/KOR_hanguo_guojia_meitangongsi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hanguo_gangtie"
+		texturefile = "gfx/interface/ideas/KOR_hanguo_gangtie.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_guojia_tielu_gongsi"
+		texturefile = "gfx/interface/ideas/KOR_guojia_tielu_gongsi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_dayuzaochuan_haiyang"
+		texturefile = "gfx/interface/ideas/KOR_dayuzaochuan_haiyang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_dahan_minyong_hangkong"
+		texturefile = "gfx/interface/ideas/KOR_dahan_minyong_hangkong.png"
+	}
+	# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  装备 ideas # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+	#####飞机   
+	spriteType = {
+		name = "GFX_idea_generic_KOR_chaoxian_guojia_hangkonggongsi"
+		texturefile = "gfx/interface/ideas/KOR_chaoxian_guojia_hangkonggongsi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_KOR_hanguo_feiji_1"
+		texturefile = "gfx/interface/ideas/KOR_hanguo_feiji_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_KOR_dahan_minguo_feiji"
+		texturefile = "gfx/interface/ideas/KOR_dahan_minguo_feiji.png"
+	}
+	#####坦克 
+	spriteType = {
+		name = "GFX_idea_generic_KOR_chaoxian_guojia_tankegongchang"
+		texturefile = "gfx/interface/ideas/KOR_chaoxian_guojia_tankegongchang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_KOR_chaoxian_guojia_tankegongchang_1"
+		texturefile = "gfx/interface/ideas/KOR_chaoxian_guojia_tankegongchang_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_KOR_tanke_shejishang_1"
+		texturefile = "gfx/interface/ideas/KOR_tanke_shejishang_1.png"
+	}
+	#####船只 
+	spriteType = {
+		name = "GFX_idea_generic_KOR_chaoxian_guojia_haijun"
+		texturefile = "gfx/interface/ideas/KOR_chaoxian_guojia_haijun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_KOR_chaoxian_guojia_haijun_1"
+		texturefile = "gfx/interface/ideas/KOR_chaoxian_guojia_haijun_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_KOR_hanguo_haijun_zhizaoshang_1"
+		texturefile = "gfx/interface/ideas/KOR_hanguo_haijun_zhizaoshang_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_KOR_dahanminguo_haijun_1"
+		texturefile = "gfx/interface/ideas/KOR_dahanminguo_haijun_1.png"
+	}
+	#####军械 
+	spriteType = {
+		name = "GFX_idea_generic_KOR_chaoxian_guojia_junxieju"
+		texturefile = "gfx/interface/ideas/KOR_chaoxian_guojia_junxieju.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_KOR_hanguo_junxie_zhizaoshang"
+		texturefile = "gfx/interface/ideas/KOR_hanguo_junxie_zhizaoshang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_KOR_hanguo_huopao_zhizaoshang"
+		texturefile = "gfx/interface/ideas/KOR_hanguo_huopao_zhizaoshang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_KOR_hanguo_junxie_zhizaoshang_1"
+		texturefile = "gfx/interface/ideas/KOR_hanguo_junxie_zhizaoshang_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_KOR_xiandai_qiche_jituan"
+		texturefile = "gfx/interface/ideas/KOR_xiandai_qiche_jituan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_KOR_qiya_tezhongche_gongsi"
+		texturefile = "gfx/interface/ideas/KOR_qiya_tezhongche_gongsi.png"
+	}
+	##############################################################################################################################################################
+	####################################################################   决议   ####################################################################
+	############################################################################################################################################################## 
+	spriteType = {
+		name = "GFX_decision_zhonghua_hexin_tubiao"
+		texturefile = "gfx/interface/decisions/decision_zhonghua_hexin_tubiao.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_fatuanxian_xiaotubiao"
+		texturefile = "gfx/interface/decisions/decision_KOR_fatuanxian_xiaotubiao.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_fatuanxian_tupian"
+		texturefile = "gfx/interface/decisions/decision_KOR_fatuanxian_tupian.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_liyong_meisu_maodun"
+		texturefile = "gfx/interface/decisions/decision_KOR_liyong_meisu_maodun.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_fandduipai_dongluan"
+		texturefile = "gfx/interface/decisions/decision_KOR_fandduipai_dongluan.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_baifan_de_lixiangguo"
+		texturefile = "gfx/interface/decisions/decision_KOR_baifan_de_lixiangguo.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_meiyuan_yilai_jingji"
+		texturefile = "gfx/interface/decisions/decision_KOR_meiyuan_yilai_jingji.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_caifa_de_dansheng"
+		texturefile = "gfx/interface/decisions/decision_KOR_caifa_de_dansheng.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_xuetong_shixi_shenhua"
+		texturefile = "gfx/interface/decisions/decision_KOR_xuetong_shixi_shenhua.png"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_fuchi_bentu_pai"
+		texturefile = "gfx/interface/decisions/decision_fuchi_bentu_pai.png"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_fuchi_manzhou_pai"
+		texturefile = "gfx/interface/decisions/decision_fuchi_manzhou_pai.png"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_fuchi_sulian_pai"
+		texturefile = "gfx/interface/decisions/decision_fuchi_sulian_pai.png"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_fuchi_yanan_pai"
+		texturefile = "gfx/interface/decisions/decision_fuchi_yanan_pai.png"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_keyan_xiaotubiao"
+		texturefile = "gfx/interface/decisions/decision_generic_keyan_xiaotubiao.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_gongyexian"
+		texturefile = "gfx/interface/decisions/decision_KOR_gongyexian.png"
+	}
+	spriteType = {
+		name = "GFX_decision_JKO_huangminhua_yundong"
+		texturefile = "gfx/interface/decisions/decision_JKO_huangminhua_yundong.png"
+	}
+	spriteType = {
+		name = "GFX_decision_JKO_chaoxian_duli"
+		texturefile = "gfx/interface/decisions/decision_JKO_chaoxian_duli.png"
+	}
+	##############################################################################################################################################################
+	####################################################################   事件   ####################################################################
+	############################################################################################################################################################## 
+	spriteType = {
+		name = "GFX_report_event_KOR_event_fascism_6"
+		texturefile = "gfx/event_pictures/KOR_event_fascism_6.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_fascism_5"
+		texturefile = "gfx/event_pictures/KOR_event_fascism_5.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_fascism_4"
+		texturefile = "gfx/event_pictures/KOR_event_fascism_4.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_fascism_3"
+		texturefile = "gfx/event_pictures/KOR_event_fascism_3.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_fascism_2"
+		texturefile = "gfx/event_pictures/KOR_event_fascism_2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_fascism_1"
+		texturefile = "gfx/event_pictures/KOR_event_fascism_1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_neutrality_3"
+		texturefile = "gfx/event_pictures/KOR_event_neutrality_3.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_neutrality_2"
+		texturefile = "gfx/event_pictures/KOR_event_neutrality_2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_neutrality_1"
+		texturefile = "gfx/event_pictures/KOR_event_neutrality_1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_democratic_6"
+		texturefile = "gfx/event_pictures/KOR_event_democratic_6.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_democratic_5"
+		texturefile = "gfx/event_pictures/KOR_event_democratic_5.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_democratic_4"
+		texturefile = "gfx/event_pictures/KOR_event_democratic_4.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_democratic_3"
+		texturefile = "gfx/event_pictures/KOR_event_democratic_3.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_democratic_2"
+		texturefile = "gfx/event_pictures/KOR_event_democratic_2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_democratic_1"
+		texturefile = "gfx/event_pictures/KOR_event_democratic_1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_13"
+		texturefile = "gfx/event_pictures/KOR_event_communism_13.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_12"
+		texturefile = "gfx/event_pictures/KOR_event_communism_12.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_11"
+		texturefile = "gfx/event_pictures/KOR_event_communism_11.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_10"
+		texturefile = "gfx/event_pictures/KOR_event_communism_10.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_9"
+		texturefile = "gfx/event_pictures/KOR_event_communism_9.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_8"
+		texturefile = "gfx/event_pictures/KOR_event_communism_8.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_7"
+		texturefile = "gfx/event_pictures/KOR_event_communism_7.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_6"
+		texturefile = "gfx/event_pictures/KOR_event_communism_6.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_5"
+		texturefile = "gfx/event_pictures/KOR_event_communism_5.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_4"
+		texturefile = "gfx/event_pictures/KOR_event_communism_4.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_3"
+		texturefile = "gfx/event_pictures/KOR_event_communism_3.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_2"
+		texturefile = "gfx/event_pictures/KOR_event_communism_2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_1"
+		texturefile = "gfx/event_pictures/KOR_event_communism_1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_communism_0"
+		texturefile = "gfx/event_pictures/KOR_event_communism_0.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_huiyi_1"
+		texturefile = "gfx/event_pictures/KOR_event_huiyi_1.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_huiyi_2"
+		texturefile = "gfx/event_pictures/KOR_event_huiyi_2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_huiyi_3"
+		texturefile = "gfx/event_pictures/KOR_event_huiyi_3.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_huiyi_4"
+		texturefile = "gfx/event_pictures/KOR_event_huiyi_4.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_huiyi_5"
+		texturefile = "gfx/event_pictures/KOR_event_huiyi_5.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_KOR_event_huiyi_6"
+		texturefile = "gfx/event_pictures/KOR_event_huiyi_6.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_JKO_event_huangminhua_yundong_chenggong"
+		texturefile = "gfx/event_pictures/JKO_event_huangminhua_yundong_chenggong.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_JKO_event_huangminhua_yundong_meiyoujinzhan"
+		texturefile = "gfx/event_pictures/JKO_event_huangminhua_yundong_meiyoujinzhan.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_JKO_event_nancilang_shangren"
+		texturefile = "gfx/event_pictures/JKO_event_nancilang_shangren.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_chaoxianduli"
+		texturefile = "gfx/event_pictures/news_event_chaoxianduli.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_zhaoyiman_xialuo_1"
+		texturefile = "gfx/event_pictures/news_event_zhaoyiman_xialuo_1.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_zhaoyiman_xialuo_2"
+		texturefile = "gfx/event_pictures/news_event_zhaoyiman_xialuo_2.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_fascism_3"
+		texturefile = "gfx/event_pictures/news_event_fascism_3.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_kailuo_huiyi_shijian"
+		texturefile = "gfx/event_pictures/news_event_kailuo_huiyi_shijian.png"
+	}
+	##############################################################################################################################################################
+	####################################################################   国策   ####################################################################
+	############################################################################################################################################################## 
+	# 
+	spriteType = {
+		name = "GFX_focus_generic_JKO_kaiju_guoce"
+		texturefile = "gfx/interface/goals/JKO_kaiju_guoce.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_fucong_riben"
+		texturefile = "gfx/interface/goals/JKO_fucong_riben.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_fucong_zongdu_jianghua"
+		texturefile = "gfx/interface/goals/JKO_fucong_zongdu_jianghua.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_faxing_zhaijuan"
+		texturefile = "gfx/interface/goals/JKO_faxing_zhaijuan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_chaoxian_beifang_zhonggogye"
+		texturefile = "gfx/interface/goals/JKO_chaoxian_beifang_zhonggogye.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_chaoxian_nanfang_chuanwu"
+		texturefile = "gfx/interface/goals/JKO_chaoxian_nanfang_chuanwu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_mufan_zongdu_qu"
+		texturefile = "gfx/interface/goals/JKO_mufan_zongdu_qu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_qianghua_zhongyang_jiquan"
+		texturefile = "gfx/interface/goals/JKO_qianghua_zhongyang_jiquan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_riben_guwen"
+		texturefile = "gfx/interface/goals/JKO_riben_guwen.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_jiandao_teshedui"
+		texturefile = "gfx/interface/goals/JKO_jiandao_teshedui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_chaoxian_bandao_jidu"
+		texturefile = "gfx/interface/goals/JKO_chaoxian_bandao_jidu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_chaoxian_neixianyiti_hua"
+		texturefile = "gfx/interface/goals/JKO_chaoxian_neixianyiti_hua.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_chaoxian_neidi_yanchang_zhuyi"
+		texturefile = "gfx/interface/goals/JKO_chaoxian_neidi_yanchang_zhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_cisha_yuren_tianhuang"
+		texturefile = "gfx/interface/goals/JKO_cisha_yuren_tianhuang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_yingjiu_dulirenshi"
+		texturefile = "gfx/interface/goals/JKO_yingjiu_dulirenshi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_sanyi_yundong_zhihun"
+		texturefile = "gfx/interface/goals/JKO_sanyi_yundong_zhihun.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_chaoxian_minzu_zhi_sheng"
+		texturefile = "gfx/interface/goals/JKO_chaoxian_minzu_zhi_sheng.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_baitoushan_de_shiyue"
+		texturefile = "gfx/interface/goals/JKO_baitoushan_de_shiyue.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_lalong_riji_chaoxianren"
+		texturefile = "gfx/interface/goals/JKO_lalong_riji_chaoxianren.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_lianhe_haiwai_zhengfu"
+		texturefile = "gfx/interface/goals/JKO_lianhe_haiwai_zhengfu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_lianluo_guowai_guojia"
+		texturefile = "gfx/interface/goals/JKO_lianluo_guowai_guojia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_JKO_sanqianli_jiangshan_duli"
+		texturefile = "gfx/interface/goals/JKO_sanqianli_jiangshan_duli.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_duli_zhanzheng_1"
+		texturefile = "gfx/interface/goals/KOR_duli_zhanzheng_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_duli_zhanzheng_2"
+		texturefile = "gfx/interface/goals/KOR_duli_zhanzheng_2.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_duli_zhanzheng_3"
+		texturefile = "gfx/interface/goals/KOR_duli_zhanzheng_3.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_duli_zhanzheng_4"
+		texturefile = "gfx/interface/goals/KOR_duli_zhanzheng_4.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_zhengzhi_luxian_1"
+		texturefile = "gfx/interface/goals/KOR_zhengzhi_luxian_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_zhengzhi_luxian_2"
+		texturefile = "gfx/interface/goals/KOR_zhengzhi_luxian_2.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_fupi_de_yinying"
+		texturefile = "gfx/interface/goals/KOR_fupi_de_yinying.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_lanse_ziyou_zhifeng"
+		texturefile = "gfx/interface/goals/KOR_lanse_ziyou_zhifeng.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jianli_guojia_anquan"
+		texturefile = "gfx/interface/goals/KOR_jianli_guojia_anquan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_dier_jingji"
+		texturefile = "gfx/interface/goals/KOR_dier_jingji.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jiti_lingdaozhi_queli"
+		texturefile = "gfx/interface/goals/KOR_jiti_lingdaozhi_queli.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_gongsi_heying"
+		texturefile = "gfx/interface/goals/KOR_gongsi_heying.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_yanan_jingshen_de_huigui"
+		texturefile = "gfx/interface/goals/KOR_yanan_jingshen_de_huigui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_renmin_weiyuanhui_de_yichan"
+		texturefile = "gfx/interface/goals/KOR_renmin_weiyuanhui_de_yichan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_zhutisixiang_de_dengta"
+		texturefile = "gfx/interface/goals/KOR_zhutisixiang_de_dengta.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_kelimulingong_de_yizhi"
+		texturefile = "gfx/interface/goals/KOR_kelimulingong_de_yizhi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_wutingjiangjun_de_paobing"
+		texturefile = "gfx/interface/goals/KOR_wutingjiangjun_de_paobing.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_shijie_geming_de_yibufen"
+		texturefile = "gfx/interface/goals/KOR_shijie_geming_de_yibufen.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_fanyan_yihui"
+		texturefile = "gfx/interface/goals/KOR_fanyan_yihui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_tuixing_yazhou_huobi"
+		texturefile = "gfx/interface/goals/KOR_tuixing_yazhou_huobi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_qianlima_yundong"
+		texturefile = "gfx/interface/goals/KOR_qianlima_yundong.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_dangjiao_jiehe"
+		texturefile = "gfx/interface/goals/KOR_dangjiao_jiehe.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_shehui_xiashi_zhuyi"
+		texturefile = "gfx/interface/goals/KOR_shehui_xiashi_zhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_lingxiu_quanwei_zhidu_hua"
+		texturefile = "gfx/interface/goals/KOR_lingxiu_quanwei_zhidu_hua.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_tanke_hongliu"
+		texturefile = "gfx/interface/goals/KOR_tanke_hongliu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_zhuti_renminjun"
+		texturefile = "gfx/interface/goals/KOR_zhuti_renminjun.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_shijie_zhongyang_weiyuanhui"
+		texturefile = "gfx/interface/goals/KOR_shijie_zhongyang_weiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_xuetong_shixi_shenhua"
+		texturefile = "gfx/interface/goals/KOR_xuetong_shixi_shenhua.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_pingrang_de_mosike_shenpan"
+		texturefile = "gfx/interface/goals/KOR_pingrang_de_mosike_shenpan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_hongjun_moshi"
+		texturefile = "gfx/interface/goals/KOR_hongjun_moshi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_folongzhi_xueyuan_biyesheng"
+		texturefile = "gfx/interface/goals/KOR_folongzhi_xueyuan_biyesheng.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jianli_zhongyang_yinhang"
+		texturefile = "gfx/interface/goals/KOR_jianli_zhongyang_yinhang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jieshou_kangri_youjidui"
+		texturefile = "gfx/interface/goals/KOR_jieshou_kangri_youjidui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_xincunyundong_de_chuxing"
+		texturefile = "gfx/interface/goals/KOR_xincunyundong_de_chuxing.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_shenbushier_yundong"
+		texturefile = "gfx/interface/goals/KOR_shenbushier_yundong.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_meiyuan_yilai_jingji"
+		texturefile = "gfx/interface/goals/KOR_meiyuan_yilai_jingji.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_hanjiang_qiji"
+		texturefile = "gfx/interface/goals/KOR_hanjiang_qiji.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_caofengyan_guoce"
+		texturefile = "gfx/interface/goals/KOR_caofengyan_guoce.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_baifan_de_lixiangguo"
+		texturefile = "gfx/interface/goals/KOR_baifan_de_lixiangguo.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_fangong_jianguo_gangling"
+		texturefile = "gfx/interface/goals/KOR_fangong_jianguo_gangling.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_sanjun_zhuyi"
+		texturefile = "gfx/interface/goals/KOR_sanjun_zhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_qingnian_aiguo_tuan"
+		texturefile = "gfx/interface/goals/KOR_qingnian_aiguo_tuan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_sixiang_de_baolei"
+		texturefile = "gfx/interface/goals/KOR_sixiang_de_baolei.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_huifu_minzu_wenzi_yu_yuyan"
+		texturefile = "gfx/interface/goals/KOR_huifu_minzu_wenzi_yu_yuyan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_baifansixiang_yanjiuyuan"
+		texturefile = "gfx/interface/goals/KOR_baifansixiang_yanjiuyuan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_guojia_anbao_fa"
+		texturefile = "gfx/interface/goals/KOR_guojia_anbao_fa.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_minzujingshen_gaizao"
+		texturefile = "gfx/interface/goals/KOR_minzujingshen_gaizao.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_zili_geng_sheng"
+		texturefile = "gfx/interface/goals/KOR_zili_geng_sheng.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_yongyuan_de_guofu"
+		texturefile = "gfx/interface/goals/KOR_yongyuan_de_guofu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_guangfujun_jingshen"
+		texturefile = "gfx/interface/goals/KOR_guangfujun_jingshen.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_ziyou_de_huixiang"
+		texturefile = "gfx/interface/goals/KOR_ziyou_de_huixiang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_yaoqing_KMAG"
+		texturefile = "gfx/interface/goals/KOR_yaoqing_KMAG.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_mengyang_de_lixiang"
+		texturefile = "gfx/interface/goals/KOR_mengyang_de_lixiang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_mengyang_de_lixiang_1"
+		texturefile = "gfx/interface/goals/KOR_mengyang_de_lixiang_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_mayi_taizai"
+		texturefile = "gfx/interface/goals/KOR_mayi_taizai.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_xinminzhu_zhuyi_jiaoyu"
+		texturefile = "gfx/interface/goals/KOR_xinminzhu_zhuyi_jiaoyu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_xinminzhu_zhuyi_jiaoyu_1"
+		texturefile = "gfx/interface/goals/KOR_xinminzhu_zhuyi_jiaoyu_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_bujiemengyundong_de_xianqu"
+		texturefile = "gfx/interface/goals/KOR_bujiemengyundong_de_xianqu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_zhengzhi_luxian_3"
+		texturefile = "gfx/interface/goals/KOR_zhengzhi_luxian_3.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_dadongya_lianbang"
+		texturefile = "gfx/interface/goals/KOR_dadongya_lianbang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_zujian_zeren_neige"
+		texturefile = "gfx/interface/goals/KOR_zujian_zeren_neige.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_wangshi_texu_hui_she"
+		texturefile = "gfx/interface/goals/KOR_wangshi_texu_hui_she.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_minzu_de_wenhua_fuxing"
+		texturefile = "gfx/interface/goals/KOR_minzu_de_wenhua_fuxing.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_wei_renmin_fuwu_junzhu"
+		texturefile = "gfx/interface/goals/KOR_wei_renmin_fuwu_junzhu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_zhenya_chifei_panluan"
+		texturefile = "gfx/interface/goals/KOR_zhenya_chifei_panluan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_huang_taizi_huiguo"
+		texturefile = "gfx/interface/goals/KOR_huang_taizi_huiguo.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_yinshi_wangguo_de_yichan"
+		texturefile = "gfx/interface/goals/KOR_yinshi_wangguo_de_yichan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_yu_xifang_tongshang"
+		texturefile = "gfx/interface/goals/KOR_yu_xifang_tongshang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_guojia_ziran_baolei"
+		texturefile = "gfx/interface/goals/KOR_guojia_ziran_baolei.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_yuandong_maoyi_xieding"
+		texturefile = "gfx/interface/goals/KOR_yuandong_maoyi_xieding.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_chongehsn_tianming"
+		texturefile = "gfx/interface/goals/KOR_chongehsn_tianming.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_chongjian_jingfu_gong"
+		texturefile = "gfx/interface/goals/KOR_chongjian_jingfu_gong.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_weixin_bianfa"
+		texturefile = "gfx/interface/goals/KOR_weixin_bianfa.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_badao_yixin"
+		texturefile = "gfx/interface/goals/KOR_badao_yixin.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_huangguo_shiguan"
+		texturefile = "gfx/interface/goals/KOR_huangguo_shiguan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_da_zongjiao"
+		texturefile = "gfx/interface/goals/KOR_da_zongjiao.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_wangdao_tongyu_dongya"
+		texturefile = "gfx/interface/goals/KOR_wangdao_tongyu_dongya.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_richuzhidi_de_nvwang"
+		texturefile = "gfx/interface/goals/KOR_richuzhidi_de_nvwang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jicheng_chongzhen_datong"
+		texturefile = "gfx/interface/goals/KOR_jicheng_chongzhen_datong.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_tiansun_minzu_de_shenhua"
+		texturefile = "gfx/interface/goals/KOR_tiansun_minzu_de_shenhua.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_women_de_mubiao_shi_xingchen_dahai"
+		texturefile = "gfx/interface/goals/KOR_women_de_mubiao_shi_xingchen_dahai.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_qiannian_diguo_de_dianli"
+		texturefile = "gfx/interface/goals/KOR_qiannian_diguo_de_dianli.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_hualang_jingshen_zhuru"
+		texturefile = "gfx/interface/goals/KOR_hualang_jingshen_zhuru.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_baihu_tezhong_budui"
+		texturefile = "gfx/interface/goals/KOR_baihu_tezhong_budui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_chongjian_guichuan_jiandui"
+		texturefile = "gfx/interface/goals/KOR_chongjian_guichuan_jiandui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_huangguo_xingwang_zaici_yizhan"
+		texturefile = "gfx/interface/goals/KOR_huangguo_xingwang_zaici_yizhan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_zhengzhi_zhenxing_guojia"
+		texturefile = "gfx/interface/goals/KOR_zhengzhi_zhenxing_guojia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jingji_diyige_wunian_jihua"
+		texturefile = "gfx/interface/goals/KOR_jingji_diyige_wunian_jihua.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jingji_qingjin_zonghe_gangchang"
+		texturefile = "gfx/interface/goals/KOR_jingji_qingjin_zonghe_gangchang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jingji_beifang_jihua"
+		texturefile = "gfx/interface/goals/KOR_jingji_beifang_jihua.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jingji_nanfang_jihua"
+		texturefile = "gfx/interface/goals/KOR_jingji_nanfang_jihua.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_lujun_xueyuan"
+		texturefile = "gfx/interface/goals/KOR_junshi_lujun_xueyuan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jingji_chukou_renshen"
+		texturefile = "gfx/interface/goals/KOR_jingji_chukou_renshen.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_lujun_wuqiguanlibu"
+		texturefile = "gfx/interface/goals/KOR_junshi_lujun_wuqiguanlibu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_lujun_wuqiguanlibu_1"
+		texturefile = "gfx/interface/goals/KOR_junshi_lujun_wuqiguanlibu_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_lujun_xueyuan_1"
+		texturefile = "gfx/interface/goals/KOR_junshi_lujun_xueyuan_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_lujun_xueyuan_2"
+		texturefile = "gfx/interface/goals/KOR_junshi_lujun_xueyuan_2.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_shanhaiguan_zhi_yao"
+		texturefile = "gfx/interface/goals/KOR_shanhaiguan_zhi_yao.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jiefang_aertai_de_tongbao"
+		texturefile = "gfx/interface/goals/KOR_jiefang_aertai_de_tongbao.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_haijun_kaiduan"
+		texturefile = "gfx/interface/goals/KOR_junshi_haijun_kaiduan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_haijun_kaiduan_1"
+		texturefile = "gfx/interface/goals/KOR_junshi_haijun_kaiduan_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_jieguan_feiji"
+		texturefile = "gfx/interface/goals/KOR_junshi_jieguan_feiji.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_jieguan_feiji_1"
+		texturefile = "gfx/interface/goals/KOR_junshi_jieguan_feiji_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_jieguan_feiji_2"
+		texturefile = "gfx/interface/goals/KOR_junshi_jieguan_feiji_2.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_zongjie_kangri_jingyan"
+		texturefile = "gfx/interface/goals/KOR_junshi_zongjie_kangri_jingyan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_fushan_jidi"
+		texturefile = "gfx/interface/goals/KOR_junshi_fushan_jidi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_pingrang_jidi"
+		texturefile = "gfx/interface/goals/KOR_junshi_pingrang_jidi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jingji_kaiduan_guoce"
+		texturefile = "gfx/interface/goals/KOR_jingji_kaiduan_guoce.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_minzhi_de_dengta"
+		texturefile = "gfx/interface/goals/KOR_minzhi_de_dengta.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_beijixing_de_zhiyin"
+		texturefile = "gfx/interface/goals/KOR_beijixing_de_zhiyin.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_funv_jiefang_yundong_focus"
+		texturefile = "gfx/interface/goals/KOR_funv_jiefang_yundong_focus.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_guanghuamen_de_jiamian"
+		texturefile = "gfx/interface/goals/KOR_guanghuamen_de_jiamian.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_tamier_gaoyuan_de_taijiqi"
+		texturefile = "gfx/interface/goals/KOR_tamier_gaoyuan_de_taijiqi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_daan_gongzuo_tixi"
+		texturefile = "gfx/interface/goals/KOR_daan_gongzuo_tixi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_zijincheng_de_longyi"
+		texturefile = "gfx/interface/goals/KOR_zijincheng_de_longyi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_yimin_zhuyi_lilun"
+		texturefile = "gfx/interface/goals/KOR_yimin_zhuyi_lilun.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_fuchou_zhuyi_jiaoyu"
+		texturefile = "gfx/interface/goals/KOR_fuchou_zhuyi_jiaoyu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_dongfang_de_jinrong_zhongxin"
+		texturefile = "gfx/interface/goals/KOR_dongfang_de_jinrong_zhongxin.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jianli_cishan_jijinhui"
+		texturefile = "gfx/interface/goals/KOR_jianli_cishan_jijinhui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_chongjian_zongqin_fu"
+		texturefile = "gfx/interface/goals/KOR_chongjian_zongqin_fu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_huangjia_jingcha_budui"
+		texturefile = "gfx/interface/goals/KOR_huangjia_jingcha_budui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_heyi_she_qingbao"
+		texturefile = "gfx/interface/goals/KOR_heyi_she_qingbao.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jingji_guantong_taibai_shanmai"
+		texturefile = "gfx/interface/goals/KOR_jingji_guantong_taibai_shanmai.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_jieguan_jianchuan"
+		texturefile = "gfx/interface/goals/KOR_junshi_jieguan_jianchuan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_junshi_jieguan_jianchuan_1"
+		texturefile = "gfx/interface/goals/KOR_junshi_jieguan_jianchuan_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_dongjing_shen_ppan"
+		texturefile = "gfx/interface/goals/KOR_dongjing_shen_ppan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_laodong_renmin_bao"
+		texturefile = "gfx/interface/goals/KOR_laodong_renmin_bao.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_xunfang_bosi_de_biaoqin"
+		texturefile = "gfx/interface/goals/KOR_xunfang_bosi_de_biaoqin.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_liangtiaotui_zoulu"
+		texturefile = "gfx/interface/goals/KOR_liangtiaotui_zoulu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_bohai_xianmin_de_yiji"
+		texturefile = "gfx/interface/goals/KOR_bohai_xianmin_de_yiji.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_malie_zhuyi_bentuhua"
+		texturefile = "gfx/interface/goals/KOR_malie_zhuyi_bentuhua.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_Asian_Convention_Organization"
+		texturefile = "gfx/interface/goals/KOR_Asian_Convention_Organization.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_huangshi_keyan_yuan"
+		texturefile = "gfx/interface/goals/KOR_huangshi_keyan_yuan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_forge_a_national_identity"
+		texturefile = "gfx/interface/goals/KOR_forge_a_national_identity.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_caidan_tianwai_laike"
+		texturefile = "gfx/interface/goals/KOR_caidan_tianwai_laike.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_tianti_yanjiu_xueyuan"
+		texturefile = "gfx/interface/goals/KOR_tianti_yanjiu_xueyuan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_weilai_tanke_focus"
+		texturefile = "gfx/interface/goals/KOR_weilai_tanke_focus.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_weilai_zhanshi_focus"
+		texturefile = "gfx/interface/goals/KOR_weilai_zhanshi_focus.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_weilai_zhandouji_focus"
+		texturefile = "gfx/interface/goals/KOR_weilai_zhandouji_focus.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_tainti_he_fanyingdui"
+		texturefile = "gfx/interface/goals/KOR_tainti_he_fanyingdui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jidu_zhujiaojueduan"
+		texturefile = "gfx/interface/goals/KOR_jidu_zhujiaojueduan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jidu_tianzhu_de_guo"
+		texturefile = "gfx/interface/goals/KOR_jidu_tianzhu_de_guo.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jidu_shengzhan_kaishi"
+		texturefile = "gfx/interface/goals/KOR_jidu_shengzhan_kaishi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_dongfang_de_weidui"
+		texturefile = "gfx/interface/goals/KOR_dongfang_de_weidui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_jidu_kongtian_qishi"
+		texturefile = "gfx/interface/goals/KOR_jidu_kongtian_qishi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_chongzu_yizheng_yuan"
+		texturefile = "gfx/interface/goals/KOR_chongzu_yizheng_yuan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_chongsheng_zhengtong_diwei"
+		texturefile = "gfx/interface/goals/KOR_chongsheng_zhengtong_diwei.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_tongyi_duli_zhenxian"
+		texturefile = "gfx/interface/goals/KOR_tongyi_duli_zhenxian.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_duiri_xuanzhan"
+		texturefile = "gfx/interface/goals/KOR_duiri_xuanzhan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_lianluo_yiyongdui"
+		texturefile = "gfx/interface/goals/KOR_lianluo_yiyongdui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_weituo_tongzhi"
+		texturefile = "gfx/interface/goals/KOR_weituo_tongzhi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_KOR_kailuo_huiyi"
+		texturefile = "gfx/interface/goals/KOR_kailuo_huiyi.png"
+	}
+	# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+	# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  民族精神 ideas # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+	# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+	spriteType = {
+		name = "GFX_idea_KOR_liuwang_zhengfu"
+		texturefile = "gfx/interface/ideas/idea_KOR_liuwang_zhengfu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_shouzhiyu_jiangjieshi"
+		texturefile = "gfx/interface/ideas/idea_KOR_shouzhiyu_jiangjieshi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_jidu_qidao_yu_laodong"
+		texturefile = "gfx/interface/ideas/idea_KOR_jidu_qidao_yu_laodong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_jidu_zhujiaojueduan"
+		texturefile = "gfx/interface/ideas/idea_KOR_jidu_zhujiaojueduan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_jidu_llaizi_luoma_de_xinjian"
+		texturefile = "gfx/interface/ideas/idea_KOR_jidu_llaizi_luoma_de_xinjian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yongyuan_de_guofu"
+		texturefile = "gfx/interface/ideas/idea_KOR_yongyuan_de_guofu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_wangdao_tongyu_dongya"
+		texturefile = "gfx/interface/ideas/idea_KOR_wangdao_tongyu_dongya.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_baihu_tezhong_budui"
+		texturefile = "gfx/interface/ideas/idea_KOR_baihu_tezhong_budui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_national_defense_state"
+		texturefile = "gfx/interface/ideas/idea_KOR_national_defense_state.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_fuchou_zhuyi_jiaoyu"
+		texturefile = "gfx/interface/ideas/idea_KOR_fuchou_zhuyi_jiaoyu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_huangguo_shiguan"
+		texturefile = "gfx/interface/ideas/idea_KOR_huangguo_shiguan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yimin_zhuyi_lilun"
+		texturefile = "gfx/interface/ideas/idea_KOR_yimin_zhuyi_lilun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_huangshi_jingji_tizhi"
+		texturefile = "gfx/interface/ideas/idea_KOR_huangshi_jingji_tizhi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_sixiang_jiancha_ju"
+		texturefile = "gfx/interface/ideas/idea_KOR_sixiang_jiancha_ju.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_xianfeng_qingniantuan"
+		texturefile = "gfx/interface/ideas/idea_KOR_xianfeng_qingniantuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_xuanbu_yazhou_de_menluozhuyi"
+		texturefile = "gfx/interface/ideas/idea_KOR_xuanbu_yazhou_de_menluozhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yu_liangban_guizu_hejie"
+		texturefile = "gfx/interface/ideas/idea_KOR_yu_liangban_guizu_hejie.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_dongfang_de_jinrong_zhongxin"
+		texturefile = "gfx/interface/ideas/idea_KOR_dongfang_de_jinrong_zhongxin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_sheli_guizu_yuan"
+		texturefile = "gfx/interface/ideas/idea_KOR_sheli_guizu_yuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_jianli_huangjia_weidui"
+		texturefile = "gfx/interface/ideas/idea_KOR_jianli_huangjia_weidui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_huangjia_jingcha_budui"
+		texturefile = "gfx/interface/ideas/idea_KOR_huangjia_jingcha_budui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_bujiemengyundong_de_xianqu_idea"
+		texturefile = "gfx/interface/ideas/KOR_bujiemengyundong_de_xianqu_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_tuiguang_meili_de_guojia"
+		texturefile = "gfx/interface/ideas/idea_KOR_tuiguang_meili_de_guojia.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yaxiya_tiaoyue_zuzhi_idea"
+		texturefile = "gfx/interface/ideas/KOR_yaxiya_tiaoyue_zuzhi_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_menghu_de_paoxiao_idea"
+		texturefile = "gfx/interface/ideas/KOR_menghu_de_paoxiao_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_shenbushier_yundong"
+		texturefile = "gfx/interface/ideas/idea_KOR_shenbushier_yundong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hanjiang_qiji"
+		texturefile = "gfx/interface/ideas/idea_KOR_hanjiang_qiji.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_xincunyundong_de_chuxing"
+		texturefile = "gfx/interface/ideas/idea_KOR_xincunyundong_de_chuxing.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_guojia_anbao_fa"
+		texturefile = "gfx/interface/ideas/idea_KOR_guojia_anbao_fa.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_puji_yiwu_jiaoyu_idea"
+		texturefile = "gfx/interface/ideas/idea_KOR_puji_yiwu_jiaoyu_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_malie_zhuyi_kexueyuan"
+		texturefile = "gfx/interface/ideas/idea_KOR_malie_zhuyi_kexueyuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_saochu_wenmang_yundong_idea"
+		texturefile = "gfx/interface/ideas/idea_KOR_saochu_wenmang_yundong_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_xuetong_shixi_shenhua"
+		texturefile = "gfx/interface/ideas/idea_KOR_xuetong_shixi_shenhua.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hewuqi_de_juexin"
+		texturefile = "gfx/interface/ideas/idea_KOR_hewuqi_de_juexin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_funv_jiefang_yundong"
+		texturefile = "gfx/interface/ideas/idea_KOR_funv_jiefang_yundong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lianjia_baku_shiyou"
+		texturefile = "gfx/interface/ideas/idea_KOR_lianjia_baku_shiyou.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_dier_jingji_tubiao"
+		texturefile = "gfx/interface/ideas/idea_KOR_dier_jingji_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_qianlima_yundong_minzujingshen"
+		texturefile = "gfx/interface/ideas/idea_KOR_qianlima_yundong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_sandajilv_badazhuyi"
+		texturefile = "gfx/interface/ideas/idea_KOR_sandajilv_bada_zhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_shehuizhuyi_shangpin_jingji"
+		texturefile = "gfx/interface/ideas/idea_KOR_shehuizhuyi_shangpin_jingji.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_ziyuan_kaifa_hezi_jingji"
+		texturefile = "gfx/interface/ideas/idea_KOR_ziyuan_kaifa_hezi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_aiguo_qingnian_tuan"
+		texturefile = "gfx/interface/ideas/idea_KOR_aiguo_qingnian_tuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_shehui_zhuyi_jingji"
+		texturefile = "gfx/interface/ideas/idea_KOR_shehui_zhuyi_jingji.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hongse_gonghui"
+		texturefile = "gfx/interface/ideas/idea_KOR_hongse_gonghui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_guojia_anquan_baoweibu"
+		texturefile = "gfx/interface/ideas/idea_KOR_guojia_anquan_baoweibu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_communism_modifiers"
+		texturefile = "gfx/interface/ideas/idea_KOR_communism_modifiers.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_democratic_modifiers"
+		texturefile = "gfx/interface/ideas/idea_KOR_democratic_modifiers.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_neutrality_modifiers"
+		texturefile = "gfx/interface/ideas/idea_KOR_neutrality_modifiers.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_neutrality1_modifiers"
+		texturefile = "gfx/interface/ideas/idea_KOR_neutrality1_modifiers.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_fascism_modifiers"
+		texturefile = "gfx/interface/ideas/idea_KOR_fascism_modifiers.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_jingji_qingsuan_jishu"
+		texturefile = "gfx/interface/ideas/idea_KOR_jingji_qingsuan_jishu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_air_democratic"
+		texturefile = "gfx/interface/ideas/idea_KOR_air_democratic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_navy_democratic"
+		texturefile = "gfx/interface/ideas/idea_KOR_navy_democratic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_democratic"
+		texturefile = "gfx/interface/ideas/idea_KOR_army_democratic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_air_communism"
+		texturefile = "gfx/interface/ideas/idea_KOR_air_communism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_navy_communism"
+		texturefile = "gfx/interface/ideas/idea_KOR_navy_communism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_communism"
+		texturefile = "gfx/interface/ideas/idea_KOR_army_communism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_great_depression_plus"
+		texturefile = "gfx/interface/ideas/idea_great_depression_plus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_jishurencai_duanceng"
+		texturefile = "gfx/interface/ideas/idea_KOR_jishurencai_duanceng.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_paixilinli_de_weiyuanhui"
+		texturefile = "gfx/interface/ideas/idea_KOR_paixilinli_de_weiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JKO_xiaomai_chukou"
+		texturefile = "gfx/interface/ideas/idea_JKO_xiaomai_chukou.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_shengli_de_shanghen"
+		texturefile = "gfx/interface/ideas/KOR_shengli_de_shanghen.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_chaoxian_zongdu_fu"
+		texturefile = "gfx/interface/ideas/idea_chaoxian_zongdu_fu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_chaoxian_zongdu_budui"
+		texturefile = "gfx/interface/ideas/idea_chaoxian_zongdu_budui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_zongdu_ribenqiaomin"
+		texturefile = "gfx/interface/ideas/idea_zongdu_ribenqiaomin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_diyici_jiaoyuling"
+		texturefile = "gfx/interface/ideas/idea_diyici_jiaoyuling.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_idea_guominjiaoyu_ribenyu"
+		texturefile = "gfx/interface/ideas/idea_guominjiaoyu_ribenyu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_idea_neixian_yiti_hua"
+		texturefile = "gfx/interface/ideas/idea_neixian_yiti_hua.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_idea_chaoxian_sanyi_yundong"
+		texturefile = "gfx/interface/ideas/idea_chaoxian_sanyi_yundong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_idea_KOR_folongzhi_xueyuan"
+		texturefile = "gfx/interface/ideas/idea_KOR_folongzhi_xueyuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_idea_KOR_guangfujun_jingshen"
+		texturefile = "gfx/interface/ideas/idea_KOR_guangfujun_jingshen.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_guanghuamen_de_jiamian"
+		texturefile = "gfx/interface/ideas/idea_KOR_guanghuamen_de_jiamian.png"
+	}
+}

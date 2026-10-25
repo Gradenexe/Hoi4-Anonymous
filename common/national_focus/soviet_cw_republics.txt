@@ -1,0 +1,1740 @@
+﻿# ============================================================
+# SOVIET CIVIL WAR РІР‚вЂќ REPUBLIC FOCUS TREE
+# Shared branches for all Soviet Republic tags
+# Activated when: has_global_flag = SOV_soviet_civil_war
+# Civil war over: has_global_flag = SOV_soviet_civil_war_over
+#
+# Branches:
+#   1. Independence (SCWR_independence_entry)
+#   2. Whites / SOV (SCWR_whites_entry)
+#   3. Opposition РІР‚вЂќ Left + Right (SCWR_opposition_entry)
+#   4. Moscow / Stalin / D04 (SCWR_moscow_entry)
+# ============================================================
+
+# ============================================================
+# GATEWAY FOCUS
+# ============================================================
+
+shared_focus = {
+	id = SCWR_choose_side
+	icon = GFX_goal_start_scwr
+	x = 50
+	y = 0
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 500
+	}
+
+	available = {
+		has_global_flag = SOV_soviet_civil_war
+		NOT = { has_global_flag = SOV_soviet_civil_war_over }
+		NOT = { has_country_flag = SCWR_side_chosen }
+	}
+
+	bypass = {
+		has_country_flag = SCWR_side_chosen
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 25
+		custom_effect_tooltip = SCWR_choose_side_tt
+		set_country_flag = SCWR_civil_war_started_flag
+	}
+}
+
+# ============================================================
+# GENERIC EMERGENCY MEASURES (Available to all)
+# ============================================================
+
+shared_focus = {
+	id = SCWR_emergency_measures
+	icon = GFX_goal_generic_national_unity # PLACEHOLDER
+	prerequisite = { focus = SCWR_choose_side }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_choose_side
+
+	cost = 10
+
+	ai_will_do = { factor = 500 }
+
+	available = {
+		has_global_flag = SOV_soviet_civil_war
+		NOT = { has_global_flag = SOV_soviet_civil_war_over }
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 25
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = SCWR_seize_stockpiles
+	icon = GFX_goal_generic_small_arms # PLACEHOLDER
+	prerequisite = { focus = SCWR_emergency_measures }
+	x = -1
+	y = 1
+	relative_position_id = SCWR_emergency_measures
+
+	cost = 10
+
+	ai_will_do = { factor = 400 }
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+		add_equipment_to_stockpile = { type = artillery_equipment amount = 60 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 100 }
+		army_experience = 10
+	}
+}
+
+shared_focus = {
+	id = SCWR_requisition_transport
+	icon = GFX_goal_generic_army_motorized # PLACEHOLDER
+	prerequisite = { focus = SCWR_seize_stockpiles }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_seize_stockpiles
+
+	cost = 10
+
+	ai_will_do = { factor = 400 }
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_equipment_to_stockpile = { type = motorized_equipment amount = 200 }
+		add_equipment_to_stockpile = { type = train_equipment amount = 10 }
+	}
+}
+
+shared_focus = {
+	id = SCWR_mobilize_militias
+	icon = GFX_goal_generic_small_arms # PLACEHOLDER
+	prerequisite = { focus = SCWR_emergency_measures }
+	x = 1
+	y = 1
+	relative_position_id = SCWR_emergency_measures
+
+	cost = 10
+
+	ai_will_do = { factor = 500 }
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_war_support = 0.10
+		add_ideas = SCWR_local_militias_idea
+		add_manpower = 15000
+		if = {
+			limit = { num_of_controlled_states < 3 }
+			division_template = {
+			name = "Militia"
+			is_locked = no
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 1 }
+			}
+		}
+		every_owned_state = {
+			create_unit = {
+				division = "name = \"1. Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"2. Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+		}
+		}
+		else = {
+			division_template = {
+			name = "Militia"
+			is_locked = no
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 1 }
+			}
+		}
+		every_owned_state = {
+			create_unit = {
+				division = "name = \"1. Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+		}
+		}
+		
+		
+	}
+}
+
+shared_focus = {
+	id = SCWR_raise_divisions
+	icon = GFX_goal_generic_army_motorized
+	prerequisite = { focus = SCWR_mobilize_militias }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_mobilize_militias
+
+	cost = 10
+
+	ai_will_do = { factor = 500 }
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		division_template = {
+			name = "Militia"
+			is_locked = no
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 1 }
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "name = \"1. Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"2. Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"3. Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"4. Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+				owner = ROOT
+			}
+		}
+	}
+}
+
+# ============================================================
+# GENERIC ECONOMY (Left)
+# ============================================================
+
+shared_focus = {
+	id = SCWR_wartime_economy
+	icon = GFX_goal_generic_production
+	prerequisite = { focus = SCWR_choose_side }
+	x = -6
+	y = 1
+	relative_position_id = SCWR_choose_side
+
+	cost = 10
+	ai_will_do = { factor = 500 }
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 150
+		upgrade_economy_law = yes
+	}
+}
+
+shared_focus = {
+	id = SCWR_nationalize_industry
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = SCWR_wartime_economy }
+	x = -1
+	y = 1
+	relative_position_id = SCWR_wartime_economy
+
+	cost = 10
+	ai_will_do = { factor = 500 }
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_offsite_building = { type = arms_factory level = 2 }
+	}
+}
+
+shared_focus = {
+	id = SCWR_labor_battalions
+	icon = GFX_goal_generic_construct_infrastructure
+	prerequisite = { focus = SCWR_wartime_economy }
+	x = 1
+	y = 1
+	relative_position_id = SCWR_wartime_economy
+
+	cost = 10
+	ai_will_do = { factor = 500 }
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_labor_battalions_idea
+	}
+}
+
+shared_focus = {
+	id = SCWR_rationing_system
+	icon = GFX_goal_generic_consumer_goods
+	prerequisite = { focus = SCWR_nationalize_industry }
+	prerequisite = { focus = SCWR_labor_battalions }
+	x = 0
+	y = 2
+	relative_position_id = SCWR_wartime_economy
+
+	cost = 10
+	ai_will_do = { factor = 500 }
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_rationing_system_idea
+	}
+}
+
+# ============================================================
+# GENERIC SECURITY (Right)
+# ============================================================
+
+shared_focus = {
+	id = SCWR_internal_security
+	icon = GFX_goal_generic_secret_weapon
+	prerequisite = { focus = SCWR_choose_side }
+	x = 6
+	y = 1
+	relative_position_id = SCWR_choose_side
+
+	cost = 10
+	ai_will_do = { factor = 500 }
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 25
+		add_stability = 0.05
+		add_ideas = SCWR_internal_security_idea
+	}
+}
+
+shared_focus = {
+	id = SCWR_anti_sabotage
+	icon = GFX_goal_generic_intelligence_exchange
+	prerequisite = { focus = SCWR_internal_security }
+	x = -1
+	y = 1
+	relative_position_id = SCWR_internal_security
+
+	cost = 10
+	ai_will_do = { factor = 500 }
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_anti_sabotage_idea
+	}
+}
+
+shared_focus = {
+	id = SCWR_combat_desertion
+	icon = GFX_goal_generic_propaganda
+	prerequisite = { focus = SCWR_internal_security }
+	x = 1
+	y = 1
+	relative_position_id = SCWR_internal_security
+
+	cost = 10
+	ai_will_do = { factor = 500 }
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_manpower = 5000
+		add_ideas = SCWR_combat_desertion_idea
+	}
+}
+
+shared_focus = {
+	id = SCWR_wartime_propaganda
+	icon = GFX_goal_generic_national_unity
+	prerequisite = { focus = SCWR_anti_sabotage }
+	prerequisite = { focus = SCWR_combat_desertion }
+	x = 0
+	y = 2
+	relative_position_id = SCWR_internal_security
+
+	cost = 10
+	ai_will_do = { factor = 500 }
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_war_support = 0.15
+		add_ideas = SCWR_wartime_propaganda_idea
+	}
+}
+
+# ============================================================
+# BRANCH 1 РІР‚вЂќ INDEPENDENCE
+# ============================================================
+
+shared_focus = {
+	id = SCWR_independence_entry
+	icon = GFX_goal_independent_way
+	prerequisite = { focus = SCWR_choose_side }
+	mutually_exclusive = {
+		focus = SCWR_whites_entry
+		focus = SCWR_opposition_entry
+		focus = SCWR_moscow_entry
+	}
+	x = -9
+	y = 4
+	relative_position_id = SCWR_choose_side
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 3
+	}
+
+	available = {
+		has_global_flag = SOV_soviet_civil_war
+		NOT = { has_global_flag = SOV_soviet_civil_war_over }
+		is_subject = no
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		set_country_flag = SCWR_side_chosen
+		set_country_flag = SCWR_chose_independence
+		if = {
+			limit = { is_subject = yes }
+			overlord = {
+				set_autonomy = {
+					target = ROOT
+					autonomy_state = autonomy_free
+				}
+			}
+		}
+		add_stability = 0.05
+		add_war_support = 0.15
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.10
+		}
+		custom_effect_tooltip = SCWR_independence_entry_tt
+	}
+}
+
+shared_focus = {
+	id = SCWR_declare_independence
+	icon = GFX_goal_generic_national_unity # PLACEHOLDER
+	prerequisite = { focus = SCWR_independence_entry }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_independence_entry
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_independence
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
+		add_war_support = 0.05
+		country_event = { id = scwr.10 days = 1 }
+		
+		hidden_effect = { set_variable = { SCWR_independence_target = OVERLORD } }
+		OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
+		effect_tooltip = {		
+			if = {
+				limit = { is_in_faction_with = OVERLORD }
+				leave_faction = yes
+			}
+			declare_war_on = {
+				target = OVERLORD
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { is_in_faction_with = var:SCWR_independence_target }
+				leave_faction = yes
+			}
+			declare_war_on = {
+				target = var:SCWR_independence_target 
+				type = annex_everything
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SCWR_seek_allies
+	icon = GFX_goal_generic_improve_relations # PLACEHOLDER
+	prerequisite = { focus = SCWR_declare_independence }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_declare_independence
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_independence
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_international_recognition_idea
+		if = {
+			limit = {
+				ENG = {
+					exists = yes
+					has_capitulated = no
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = SCWR_recognition_modifier
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = SCWR_recognition_modifier
+				}
+			}
+		}
+		if = {
+			limit = {
+				FRA = {
+					exists = yes
+					has_capitulated = no
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = SCWR_recognition_modifier
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = SCWR_recognition_modifier
+				}
+			}
+		}
+		add_political_power = 25
+	}
+}
+
+shared_focus = {
+	id = SCWR_independence_army
+	icon = GFX_goal_generic_army_motorized
+	prerequisite = { focus = SCWR_seek_allies }
+	x = -1
+	y = 1
+	relative_position_id = SCWR_seek_allies
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_independence
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_independence_army_idea
+		upgrade_economy_law = yes
+		army_experience = 25
+		division_template = {
+			name = "Infantry Division"
+			is_locked = no
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 1 }
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "name = \"National Guard\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"National Guard\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+				owner = ROOT
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SCWR_diaspora_returns
+	icon = GFX_goal_generic_national_unity # PLACEHOLDER
+	prerequisite = { focus = SCWR_seek_allies }
+	x = 1
+	y = 1
+	relative_position_id = SCWR_seek_allies
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_independence
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_diaspora_returns_idea
+		add_manpower = 25000
+		add_stability = 0.05
+	}
+}
+
+# --- Governance fork (all 4 mutex) ---
+
+shared_focus = {
+	id = SCWR_democracy_path
+	icon = GFX_goal_support_democracy # PLACEHOLDER
+	prerequisite = {
+		focus = SCWR_independence_army
+		focus = SCWR_diaspora_returns
+	}
+	prerequisite = { focus = SCWR_whites_independence_path }
+	mutually_exclusive = {
+		focus = SCWR_nationalism_path
+		focus = SCWR_dictatorship_path
+		focus = SCWR_monarchy_path
+	}
+	x = -3
+	y = 1
+	relative_position_id = SCWR_independence_army
+
+	cost = 10
+
+	ai_will_do = { factor = 2 }
+
+	available = {
+		has_country_flag = SCWR_chose_independence
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			election_frequency = 48
+			last_election = "1936.1.1"
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.20
+		}
+		add_ideas = SCWR_democracy_idea
+		add_stability = 0.10
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = SCWR_nationalism_path
+	icon = GFX_goal_generic_political_pressure # PLACEHOLDER
+	prerequisite = {
+		focus = SCWR_independence_army
+		focus = SCWR_diaspora_returns
+	}
+	prerequisite = { focus = SCWR_whites_independence_path }
+	mutually_exclusive = {
+		focus = SCWR_democracy_path
+		focus = SCWR_dictatorship_path
+		focus = SCWR_monarchy_path
+	}
+	x = -1
+	y = 1
+	relative_position_id = SCWR_independence_army
+
+	cost = 10
+
+	ai_will_do = { factor = 2 }
+
+	available = {
+		has_country_flag = SCWR_chose_independence
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.20
+		}
+		add_ideas = SCWR_nationalism_idea
+		add_war_support = 0.10
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = SCWR_dictatorship_path
+	icon = GFX_goal_generic_forceful_treaty # PLACEHOLDER
+	prerequisite = {
+		focus = SCWR_independence_army
+		focus = SCWR_diaspora_returns
+	}
+	prerequisite = { focus = SCWR_whites_independence_path }
+	mutually_exclusive = {
+		focus = SCWR_democracy_path
+		focus = SCWR_nationalism_path
+		focus = SCWR_monarchy_path
+	}
+	x = 1
+	y = 1
+	relative_position_id = SCWR_independence_army
+
+	cost = 10
+
+	ai_will_do = { factor = 2 }
+
+	available = {
+		has_country_flag = SCWR_chose_independence
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.20
+		}
+		add_ideas = SCWR_dictatorship_idea
+		add_war_support = 0.15
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = SCWR_monarchy_path
+	icon = GFX_goal_generic_political_pressure # PLACEHOLDER
+	prerequisite = {
+		focus = SCWR_independence_army
+		focus = SCWR_diaspora_returns
+	}
+	prerequisite = { focus = SCWR_whites_independence_path }
+	mutually_exclusive = {
+		focus = SCWR_democracy_path
+		focus = SCWR_nationalism_path
+		focus = SCWR_dictatorship_path
+	}
+	x = 3
+	y = 1
+	relative_position_id = SCWR_independence_army
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_independence
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.25
+		}
+		add_ideas = SCWR_monarchy_idea
+		add_stability = 0.08
+		add_political_power = 50
+	}
+}
+
+# --- Peace with victor (after governance chosen + civil war over) ---
+
+shared_focus = {
+	id = SCWR_peace_with_victor
+	icon = GFX_goal_generic_improve_relations # PLACEHOLDER
+	prerequisite = {
+		focus = SCWR_democracy_path
+		focus = SCWR_nationalism_path
+		focus = SCWR_dictatorship_path
+		focus = SCWR_monarchy_path
+	}
+	x = 0
+	y = 1
+	relative_position_id = SCWR_nationalism_path
+
+	cost = 10
+
+	ai_will_do = { factor = 5 }
+
+	available = {
+		has_country_flag = SCWR_chose_independence
+		has_global_flag = SOV_soviet_civil_war_over
+		custom_trigger_tooltip = {
+			tooltip = SCWR_peace_with_victor_days_tt
+			has_country_flag = {
+				flag = SCWR_civil_war_started_flag
+				days > 365
+			}
+		}
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = 0.10
+		add_political_power = 100
+		
+		# Transfer states we own but enemy controls
+		every_state = {
+			limit = {
+				is_owned_by = ROOT
+				NOT = { is_controlled_by = ROOT }
+				controller = { is_in_war_with = ROOT }
+			}
+			controller = { transfer_state = PREV }
+		}
+		
+		# Transfer enemy states we control that border us
+		every_state = {
+			limit = {
+				is_controlled_by = ROOT
+				NOT = { is_owned_by = ROOT }
+				owner = { is_in_war_with = ROOT }
+				any_neighbor_state = { is_owned_by = ROOT }
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		
+		# Return enemy states we control that DO NOT border us
+		every_state = {
+			limit = {
+				is_controlled_by = ROOT
+				NOT = { is_owned_by = ROOT }
+				owner = { is_in_war_with = ROOT }
+				NOT = { any_neighbor_state = { is_owned_by = ROOT } }
+			}
+			owner = { transfer_state = PREV }
+		}
+
+		if = {
+			limit = {
+				SOV = { exists = yes has_war_with = ROOT }
+			}
+			SOV = { white_peace = ROOT }
+		}
+		if = {
+			limit = {
+				D04 = { exists = yes has_war_with = ROOT }
+			}
+			D04 = { white_peace = ROOT }
+		}
+		set_rule = { can_join_factions = yes }
+	}
+}
+
+# ============================================================
+# BRANCH 2 РІР‚вЂќ WHITES (SOV)
+# ============================================================
+
+shared_focus = {
+	id = SCWR_whites_entry
+	icon = GFX_goal_white_way
+	prerequisite = { focus = SCWR_choose_side }
+	mutually_exclusive = {
+		focus = SCWR_independence_entry
+		focus = SCWR_opposition_entry
+		focus = SCWR_moscow_entry
+	}
+	x = -3
+	y = 4
+	relative_position_id = SCWR_choose_side
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			add = -2
+			NOT = {
+				SOV = {
+					exists = yes
+					has_completed_focus = SOV_the_hands_do
+				}
+			}
+		}
+	}
+
+	available = {
+		has_global_flag = SOV_soviet_civil_war
+		NOT = { has_global_flag = SOV_soviet_civil_war_over }
+		is_puppet_of = SOV
+		SOV = {
+			exists = yes
+			has_completed_focus = SOV_the_hands_do
+		}
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		set_country_flag = SCWR_side_chosen
+		set_country_flag = SCWR_chose_whites
+		add_stability = 0.05
+		add_war_support = 0.10
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = SCWR_ally_modifier
+			}
+			reverse_add_opinion_modifier = {
+				target = ROOT
+				modifier = SCWR_ally_modifier
+			}
+		}
+		custom_effect_tooltip = SCWR_whites_entry_tt
+	}
+}
+
+shared_focus = {
+	id = SCWR_white_weapons
+	icon = GFX_goal_generic_army_artillery # PLACEHOLDER
+	prerequisite = { focus = SCWR_whites_entry }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_whites_entry
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_whites
+		SOV = { exists = yes }
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2500
+			producer = SOV
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 400
+			producer = SOV
+		}
+		add_ideas = SCWR_white_support_idea
+	}
+}
+
+shared_focus = {
+	id = SCWR_white_dominion
+	icon = GFX_goal_generic_political_pressure # PLACEHOLDER
+	prerequisite = { focus = SCWR_white_weapons }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_white_weapons
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_whites
+		SOV = { exists = yes }
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_white_dominion_idea
+		add_political_power = 50
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = SCWR_white_general_demand
+	icon = GFX_goal_generic_army_doctrines # PLACEHOLDER
+	prerequisite = { focus = SCWR_white_dominion }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_white_dominion
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_whites
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		# Fires the White General's Ultimatum event
+		country_event = { id = scwr.1 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = SCWR_stay_with_whites
+	icon = GFX_goal_generic_alliance # PLACEHOLDER
+	prerequisite = { focus = SCWR_white_general_demand }
+	mutually_exclusive = { focus = SCWR_betray_whites }
+	x = -1
+	y = 1
+	relative_position_id = SCWR_white_general_demand
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			add = -3
+			has_country_flag = SCWR_defied_whites
+		}
+	}
+
+	available = {
+		has_country_flag = SCWR_chose_whites
+		has_country_flag = SCWR_submitted_to_whites
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_loyal_whites_idea
+		add_war_support = 0.15
+		army_experience = 25
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = SCWR_dedicated_ally_modifier
+			}
+			reverse_add_opinion_modifier = {
+				target = ROOT
+				modifier = SCWR_dedicated_ally_modifier
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SCWR_betray_whites
+	icon = GFX_goal_generic_secret_weapon # PLACEHOLDER
+	prerequisite = { focus = SCWR_white_general_demand }
+	mutually_exclusive = { focus = SCWR_stay_with_whites }
+	x = 1
+	y = 1
+	relative_position_id = SCWR_white_general_demand
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			add = -3
+			has_country_flag = SCWR_submitted_to_whites
+		}
+	}
+
+	available = {
+		has_country_flag = SCWR_chose_whites
+		has_country_flag = SCWR_defied_whites
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		complete_national_focus = SCWR_independence_entry
+		set_country_flag = SCWR_chose_independence
+		set_country_flag = SCWR_betrayed_whites
+		remove_ideas = SCWR_white_support_idea
+		remove_ideas = SCWR_white_dominion_idea
+		add_stability = -0.10
+		add_war_support = 0.20
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.15
+		}
+		hidden_effect = { set_variable = { SCWR_independence_target = OVERLORD } }
+		OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
+		effect_tooltip = {		
+			if = {
+				limit = { is_in_faction_with = OVERLORD }
+				leave_faction = yes
+			}
+			declare_war_on = {
+				target = OVERLORD
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { is_in_faction_with = var:SCWR_independence_target }
+				leave_faction = yes
+			}
+			declare_war_on = {
+				target = var:SCWR_independence_target 
+				type = annex_everything
+			}
+		}
+		custom_effect_tooltip = SCWR_betray_whites_tt
+	}
+}
+
+# ============================================================
+# BRANCH 3 РІР‚вЂќ OPPOSITION (Left + Right / Trotskyist + Bukharin)
+# ============================================================
+
+shared_focus = {
+	id = SCWR_opposition_entry
+	icon = GFX_goal_red_opposition_way
+	prerequisite = { focus = SCWR_choose_side }
+	mutually_exclusive = {
+		focus = SCWR_independence_entry
+		focus = SCWR_whites_entry
+		focus = SCWR_moscow_entry
+	}
+	x = 3
+	y = 4
+	relative_position_id = SCWR_choose_side
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			add = 2
+			has_government = communism
+		}
+	}
+
+	available = {
+		has_global_flag = SOV_soviet_civil_war
+		NOT = { has_global_flag = SOV_soviet_civil_war_over }
+		is_puppet_of = SOV
+		OR = {
+			SOV = {
+				exists = yes
+				has_completed_focus = SOV_left_opposition_coup
+			}
+			SOV = {
+				exists = yes
+				has_completed_focus = SOV_the_right_opposition
+			}
+		}
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		set_country_flag = SCWR_side_chosen
+		set_country_flag = SCWR_chose_opposition
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10
+		}
+		custom_effect_tooltip = SCWR_opposition_entry_tt
+	}
+}
+
+shared_focus = {
+	id = SCWR_opposition_support
+	icon = GFX_goal_generic_political_pressure # PLACEHOLDER
+	prerequisite = { focus = SCWR_opposition_entry }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_opposition_entry
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_opposition
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_opposition_support_idea
+		add_political_power = 75
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10
+		}
+	}
+}
+
+shared_focus = {
+	id = SCWR_opposition_political
+	icon = GFX_goal_generic_political_pressure # PLACEHOLDER
+	prerequisite = { focus = SCWR_opposition_support }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_opposition_support
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_opposition
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_opposition_political_idea
+		add_stability = 0.05
+		army_experience = 20
+		add_war_support = 0.10
+	}
+}
+
+shared_focus = {
+	id = SCWR_opposition_join_war
+	icon = GFX_goal_generic_army_motorized # PLACEHOLDER
+	prerequisite = { focus = SCWR_opposition_political }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_opposition_political
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_opposition
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_opposition_military_idea
+		add_war_support = 0.15
+		army_experience = 30
+		division_template = {
+			name = "Infantry Division"
+			is_locked = no
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 1 }
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "name = \"Red Guard\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Red Guard\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+				owner = ROOT
+			}
+		}
+		# Join the war on opposition's side against D04
+		if = {
+			limit = {
+				D04 = { exists = yes }
+				SOV = { exists = yes }
+				SOV = { has_war_with = D04 }
+				NOT = { has_war_with = D04 }
+			}
+			SOV = {
+				D04 = {
+					ROOT = {
+						add_to_war = {
+							targeted_alliance = PREV.PREV
+							enemy = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SCWR_opposition_victory
+	icon = GFX_goal_generic_political_pressure # PLACEHOLDER
+	prerequisite = { focus = SCWR_opposition_join_war }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_opposition_join_war
+
+	cost = 10
+
+	ai_will_do = { factor = 5 }
+
+	available = {
+		has_country_flag = SCWR_chose_opposition
+		has_global_flag = SOV_soviet_civil_war_over
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 100
+		add_stability = 0.10
+	}
+}
+
+shared_focus = {
+	id = SCWR_opposition_autonomy
+	icon = GFX_goal_generic_political_pressure # PLACEHOLDER
+	prerequisite = { focus = SCWR_opposition_victory }
+	mutually_exclusive = { focus = SCWR_opposition_independence_end }
+	x = -1
+	y = 1
+	relative_position_id = SCWR_opposition_victory
+
+	cost = 10
+
+	ai_will_do = { factor = 2 }
+
+	available = {
+		has_country_flag = SCWR_chose_opposition
+		has_global_flag = SOV_soviet_civil_war_over
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_opposition_autonomy_idea
+		add_stability = 0.10
+		add_political_power = 100
+		add_popularity = {
+			ideology = communism
+			popularity = 0.15
+		}
+		add_manpower = 15000
+	}
+}
+
+shared_focus = {
+	id = SCWR_opposition_independence_end
+	icon = GFX_goal_generic_national_unity # PLACEHOLDER
+	prerequisite = { focus = SCWR_opposition_victory }
+	mutually_exclusive = { focus = SCWR_opposition_autonomy }
+	x = 1
+	y = 1
+	relative_position_id = SCWR_opposition_victory
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_opposition
+		has_global_flag = SOV_soviet_civil_war_over
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		complete_national_focus = SCWR_independence_entry
+		hidden_effect = { set_variable = { SCWR_independence_target = OVERLORD } }
+		OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
+		effect_tooltip = {		
+			if = {
+				limit = { is_in_faction_with = OVERLORD }
+				leave_faction = yes
+			}
+			declare_war_on = {
+				target = OVERLORD
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { is_in_faction_with = var:SCWR_independence_target }
+				leave_faction = yes
+			}
+			declare_war_on = {
+				target = var:SCWR_independence_target 
+				type = annex_everything
+			}
+		}
+		add_stability = 0.05
+		add_war_support = 0.15
+		add_political_power = 150
+		set_rule = { can_join_factions = yes }
+	}
+}
+
+# ============================================================
+# BRANCH 4 РІР‚вЂќ MOSCOW / STALINIST (D04)
+# ============================================================
+
+shared_focus = {
+	id = SCWR_moscow_entry
+	icon = GFX_goal_moscow_way
+	prerequisite = { focus = SCWR_choose_side }
+	mutually_exclusive = {
+		focus = SCWR_independence_entry
+		focus = SCWR_whites_entry
+		focus = SCWR_opposition_entry
+	}
+	x = 9
+	y = 4
+	relative_position_id = SCWR_choose_side
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			add = 2
+			has_government = communism
+		}
+		modifier = {
+			add = -2
+			NOT = { D04 = { exists = yes } }
+		}
+	}
+
+	available = {
+		has_global_flag = SOV_soviet_civil_war
+		NOT = { has_global_flag = SOV_soviet_civil_war_over }
+		is_puppet_of = D04
+		D04 = { exists = yes }
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		set_country_flag = SCWR_side_chosen
+		set_country_flag = SCWR_chose_moscow
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.15
+		}
+		D04 = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = SCWR_ally_modifier
+			}
+			reverse_add_opinion_modifier = {
+				target = ROOT
+				modifier = SCWR_ally_modifier
+			}
+		}
+		custom_effect_tooltip = SCWR_moscow_entry_tt
+	}
+}
+
+shared_focus = {
+	id = SCWR_swear_to_stalin
+	icon = GFX_goal_generic_political_pressure # PLACEHOLDER
+	prerequisite = { focus = SCWR_moscow_entry }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_moscow_entry
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_moscow
+		D04 = { exists = yes }
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_moscow_loyalty_idea
+		add_political_power = 50
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10
+		}
+	}
+}
+
+shared_focus = {
+	id = SCWR_moscow_industry
+	icon = GFX_goal_generic_production # PLACEHOLDER
+	prerequisite = { focus = SCWR_swear_to_stalin }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_swear_to_stalin
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_moscow
+		D04 = { exists = yes }
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_moscow_industry_idea
+		capital_scope = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SCWR_suppress_enemies
+	icon = GFX_goal_generic_secret_weapon # PLACEHOLDER
+	prerequisite = { focus = SCWR_moscow_industry }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_moscow_industry
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_moscow
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_suppress_enemies_idea
+		add_war_support = 0.10
+		army_experience = 30
+		# Join the war on Moscow's side against Whites
+		if = {
+			limit = {
+				D04 = { exists = yes }
+				SOV = { exists = yes }
+				D04 = { has_war_with = SOV }
+				NOT = { has_war_with = SOV }
+			}
+			D04 = {
+				SOV = {
+					ROOT = {
+						add_to_war = {
+							targeted_alliance = PREV.PREV
+							enemy = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SCWR_moscow_victory
+	icon = GFX_goal_generic_political_pressure # PLACEHOLDER
+	prerequisite = { focus = SCWR_suppress_enemies }
+	x = 0
+	y = 1
+	relative_position_id = SCWR_suppress_enemies
+
+	cost = 10
+
+	ai_will_do = { factor = 5 }
+
+	available = {
+		has_country_flag = SCWR_chose_moscow
+		has_global_flag = SOV_soviet_civil_war_over
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 100
+		add_stability = 0.10
+	}
+}
+
+shared_focus = {
+	id = SCWR_loyal_republic
+	icon = GFX_goal_generic_alliance # PLACEHOLDER
+	prerequisite = { focus = SCWR_moscow_victory }
+	mutually_exclusive = { focus = SCWR_deeper_integration }
+	x = -1
+	y = 1
+	relative_position_id = SCWR_moscow_victory
+
+	cost = 10
+
+	ai_will_do = { factor = 2 }
+
+	available = {
+		has_country_flag = SCWR_chose_moscow
+		has_global_flag = SOV_soviet_civil_war_over
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SCWR_loyal_republic_idea
+		add_stability = 0.10
+		add_political_power = 100
+		add_war_support = 0.05
+		add_manpower = 20000
+	}
+}
+
+shared_focus = {
+	id = SCWR_deeper_integration
+	icon = GFX_goal_generic_forceful_treaty # PLACEHOLDER
+	prerequisite = { focus = SCWR_moscow_victory }
+	mutually_exclusive = { focus = SCWR_loyal_republic }
+	x = 1
+	y = 1
+	relative_position_id = SCWR_moscow_victory
+
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		has_country_flag = SCWR_chose_moscow
+		has_global_flag = SOV_soviet_civil_war_over
+	}
+
+	cancel_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+		# Stalinist repressions РІР‚вЂќ random outcome event
+		country_event = { id = scwr.2 days = 30 random_days = 60 }
+		custom_effect_tooltip = SCWR_deeper_integration_tt
+	}
+}
+
+
+
+
+
+
+

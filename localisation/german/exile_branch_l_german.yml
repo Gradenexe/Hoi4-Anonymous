@@ -1,0 +1,176 @@
+﻿l_german:
+ # === EXILE BRANCH SHARED FOCUSES ===
+ EXILE_government_in_exile:0 "Regierung im Exil"
+ EXILE_government_in_exile_desc:0 "Unser Heimatland ist gefallen oder steht kurz vor dem Zusammenbruch, aber unser Geist bleibt ungebrochen. Wir werden unsere Regierung im Exil gründen und den Befreiungskampf vom Ausland aus koordinieren und unser Volk und unsere Streitkräfte mobilisieren, um den Kampf fortzusetzen."
+
+ EXILE_foreign_air_support:0 "Ausländische Luftunterstützung"
+ EXILE_foreign_air_support_desc:0 "Unsere Gastgeber werden bei der Ausbildung unserer Piloten und der Bereitstellung von Flugzeugen für unsere Exil-Luftwaffe behilflich sein. Mit ihrer Hilfe können wir ein Luftgeschwader aufbauen, das in der Lage ist, gegen die Besatzer zurückzuschlagen."
+
+ EXILE_aces_in_exile:0 "Asse im Exil"
+ EXILE_aces_in_exile_desc:0 "Zu unseren Piloten, die dem Untergang unseres Heimatlandes entkommen sind, gehören einige der besten Flieger der Welt. Indem wir diese Eliteflieger in spezielle Staffeln einteilen, können wir unsere Exil-Luftwaffe zu einer Streitmacht machen, mit der man rechnen muss."
+
+ EXILE_air_in_exile:0 "Exil-Luftwaffe"
+ EXILE_air_in_exile_desc:0 "Durch die Zusammenarbeit mit verbündeten Flugzeugherstellern können wir Rohstoffe sichern und leichte Kampfflugzeuge für unsere Exil-Luftwaffe bauen."
+
+ EXILE_women_in_air:0 "Flügel für alle"
+ EXILE_women_in_air_desc:0 "Durch die Mobilisierung aller verfügbaren Bürger, einschließlich der Ausbildung von Frauen für aktive und Hilfsfunktionen in der Luftfahrt, erweitern wir unsere operative Kapazität erheblich."
+
+ EXILE_foreign_army_support:0 "Unterstützung der ausländischen Armee"
+ EXILE_foreign_army_support_desc:0 "Wir werden unsere verstreuten Soldaten und Freiwilligen zu einer kampfbereiten Truppe auf fremdem Boden versammeln. Mit der Unterstützung unserer Gastgeber wird unsere Exilarmee zu einer beeindruckenden Streitmacht heranwachsen."
+
+ EXILE_organize_exiled_army:0 "Organisieren Sie die Exilarmee"
+ EXILE_organize_exiled_army_desc:0 "Da nun Tausende von Soldaten auf fremdem Boden versammelt sind, ist es an der Zeit, unsere Exilarmee richtig zu organisieren. Wir werden eine geeignete Kommandostruktur aufbauen, Trainingsübungen durchführen und unsere Streitkräfte auf die eventuelle Rückkehr nach Hause vorbereiten."
+
+ EXILE_new_army:0 "Eine neue Armee"
+ EXILE_new_army_desc:0 "Wir werden unter unseren vertriebenen Landsleuten neue Freiwillige rekrutieren und neue Militäreinheiten aufbauen. Diese Kräfte werden zusammen mit den Veteranen des Untergangs das Rückgrat unserer Befreiungsarmee bilden."
+
+ EXILE_foreign_fleet_support:0 "Unterstützung ausländischer Flotten"
+ EXILE_foreign_fleet_support_desc:0 "Unsere Seestreitkräfte sind zwar reduziert, können aber in alliierten Häfen Zuflucht und Nachschub finden. Durch den Abschluss von Vereinbarungen mit unseren Gastländern können wir unsere Flotte wieder aufbauen und Marineeinsätze gegen die Besatzer fortsetzen."
+
+ EXILE_buy_foreign_ships:0 "Erwerben Sie alliierte Schiffe"
+ EXILE_buy_foreign_ships_desc:0 "Unsere Ingenieure und Schiffsbauer arbeiten mit den Werftanlagen des Gastlandes zusammen, um die Geschwindigkeit und Effizienz des Schiffsbaus zu verbessern. Wir werden auch versuchen, überschüssige Schiffe von unseren Verbündeten zu erwerben."
+
+ EXILE_army_cooperation:0 "Einheitliches Kommando"
+ EXILE_army_cooperation_desc:0 "Da unsere Luft-, Land- und Seestreitkräfte nun gemeinsam operieren, werden wir eine einheitliche Kommandostruktur aufbauen, um alle Aspekte unserer Befreiungskampagne zu koordinieren. Diese Zusammenarbeit wird unsere Exilkräfte weitaus effektiver machen als die Summe ihrer Teile."
+
+ EXILE_exile_politics:0 "Exilpolitik"
+ EXILE_exile_politics_desc:0 "Die politische Landschaft unserer Exilregierung muss sorgfältig verwaltet werden. Indem wir die verschiedenen Fraktionen unserer Exilregierung zusammenbringen, können wir eine einheitliche Front darstellen und die Legitimität unseres Anspruchs wahren."
+
+ EXILE_exploit_our_connections:0 "Nutzen Sie unsere Verbindungen"
+ EXILE_exploit_our_connections_desc:0 "Unsere Exilregierung verfügt über Verbindungen in die gesamte alliierte Welt. Durch die Nutzung dieser Beziehungen können wir bessere Handelsbedingungen sicherstellen und die Belastung durch die Versorgung unserer Exilkräfte verringern."
+
+ EXILE_help_from_our_allies:0 "Unterstützung der Alliierten"
+ EXILE_help_from_our_allies_desc:0 "Unsere Verbündeten haben sich verpflichtet, unseren Befreiungskampf zu unterstützen. Indem wir diese Unterstützung durch diplomatische Vereinbarungen formalisieren, können wir einen stetigen Fluss militärischer Hilfe und politischer Unterstützung für unsere Sache sicherstellen."
+
+ EXILE_international_recognition:0 "Internationale Anerkennung"
+ EXILE_international_recognition_desc:0 "Wir müssen sicherstellen, dass die internationale Gemeinschaft unsere Exilregierung als legitime Regierung unserer Nation anerkennt. Diese Anerkennung wird unsere politische Position stärken und dazu beitragen, zusätzliche Unterstützung zu sichern."
+
+ EXILE_exile_industries:0 "Exilindustrien"
+ EXILE_exile_industries_desc:0 "Durch Vereinbarungen mit unseren Gastgebern werden wir externe Fabriken errichten, um unsere Kriegsanstrengungen zu unterstützen. In diesen Einrichtungen werden die Waffen und die Ausrüstung hergestellt, die unsere Exilkräfte dringend benötigen."
+
+ EXILE_resistance_industries:0 "Erweitern Sie die Exilproduktion"
+ EXILE_resistance_industries_desc:0 "Wir müssen unsere Industriekapazität im Exil drastisch erweitern. Durch den Bau zusätzlicher Fabriken und den Abschluss von Rohstoffverträgen können wir nicht nur unsere eigenen Streitkräfte, sondern auch die Widerstandskämpfer in der Heimat versorgen."
+
+ EXILE_evacuated_industries:0 "Evakuierte Industrien"
+ EXILE_evacuated_industries_desc:0 "Vor dem Herbst gelang es uns, einige unserer wichtigsten Industrieanlagen zu evakuieren. Durch den Wiederaufbau dieser evakuierten Fabriken auf verbündetem Boden können wir einen Teil unserer Produktionskapazität wiederherstellen."
+
+ EXILE_connections_with_industrialists:0 "Industrielle Verbindungen"
+ EXILE_connections_with_industrialists_desc:0 "Unsere Kontakte in die verbündete Industriewelt haben sich als unschätzbar wertvoll erwiesen. Durch die Vertiefung dieser Verbindungen können wir den Zugang zu Spitzentechnologie sichern und unsere eigene industrielle Entwicklung beschleunigen."
+
+ EXILE_exile_resistance:0 "Koordinieren Sie den Untergrund"
+ EXILE_exile_resistance_desc:0 "Wir werden Kontakt zu lokalen Widerstandsgruppen in unseren besetzten Gebieten aufnehmen, um Sabotage und Widerstand zu koordinieren. Unsere Exilregierung wird als Nervenzentrum einer landesweiten Widerstandsbewegung dienen."
+
+ EXILE_expand_operations:0 "Erweitern Sie Widerstandsoperationen"
+ EXILE_expand_operations_desc:0 "Es ist an der Zeit, über bloße Sabotage hinauszugehen. Wir werden unsere Widerstandseinsätze ausweiten, um ehrgeizigere Angriffe gegen die Infrastruktur und Versorgungsleitungen der Besatzer einzuschließen."
+
+ EXILE_expand_intelligence:0 "Erweitern Sie das Geheimdienstnetzwerk"
+ EXILE_expand_intelligence_desc:0 "Wir integrieren unsere Entschlüsselungsteams und Feldagenten in alliierte Geheimdienststrukturen und gewähren uns Zugang zu fortschrittlichen Spionagenetzwerken, die tief in besetzte Gebiete vordringen können."
+
+ EXILE_combined_civilian_agency_resistance:0 "Zivil-militärische Koordination"
+ EXILE_combined_civilian_agency_resistance_desc:0 "Durch die Kombination unserer zivilen Untergrundnetzwerke mit unseren militärischen Geheimdienstoperationen schaffen wir eine nahtlos integrierte Widerstandstruppe, die nach Belieben im gesamten besetzten Heimatland zuschlagen kann."
+
+ EXILE_even_stronger_resistance:0 "Totaler Widerstand"
+ EXILE_even_stronger_resistance_desc:0 "Die Widerstandsbewegung hat sich zu einer gewaltigen Kraft entwickelt. Durch die Koordinierung aller verfügbaren Ressourcen – industrieller, militärischer und geheimer Art – können wir die Besetzung unseres Heimatlandes für den Feind zu einem unhaltbaren Unterfangen machen."
+
+ EXILE_everyone_will_fight:0 "Jeder wird kämpfen"
+ EXILE_everyone_will_fight_desc:0 "Wir rufen jeden Mann, jede Frau und jedes Kind auf, sich dem Kampf anzuschließen. Vom Fabrikarbeiter bis zum Bauern sollen alle zur Befreiung unseres Heimatlandes beitragen."
+
+ EXILE_our_help_in_the_war:0 "Unser Beitrag zum Krieg"
+ EXILE_our_help_in_the_war_desc:0 "Indem wir unseren Verbündeten durch konkrete militärische Beiträge unseren Wert demonstrieren, stärken wir unsere Position und stellen sicher, dass unsere Befreiung weiterhin eine Priorität in der Strategie der Verbündeten bleibt."
+
+ EXILE_prepare_our_people_to_return:0 "Bereiten Sie unsere Leute vor"
+ EXILE_prepare_our_people_to_return_desc:0 "Die Zeit der Rückkehr naht. Wir müssen unser Volk – sowohl die im Exil als auch die im Untergrund – auf den letzten Vorstoß zur Befreiung unseres Heimatlandes vorbereiten. Die Moral muss hoch sein, die Entschlossenheit muss unerschütterlich sein."
+
+ EXILE_prepare_our_army_to_return:0 "Bereiten Sie unsere Armee vor"
+ EXILE_prepare_our_army_to_return_desc:0 "Unsere Exilarmee muss für den Befreiungsfeldzug bereit sein. Abschlusstraining, Ausrüstungskontrollen und Gefechtsplanung stellen sicher, dass unsere Streitkräfte zu gegebener Zeit mit maximaler Effektivität zuschlagen."
+
+ EXILE_prepare_our_land_to_return:0 "Bereiten Sie sich auf die Befreiung vor"
+ EXILE_prepare_our_land_to_return_desc:0 "Eine sorgfältige Planung der Versorgungswege, Logistiknetzwerke und Verwaltungsstrukturen wird sicherstellen, dass befreite Gebiete schnell und effektiv unter die Kontrolle unserer Regierung gebracht werden können."
+
+ EXILE_combine_all_our_forces:0 "Vereint alle unsere Kräfte"
+ EXILE_combine_all_our_forces_desc:0 "Der Moment der Befreiung ist nahe. Alle unsere Kräfte – Exilarmee, Luftwaffe, Marine, Widerstandskämpfer und Industriekapazitäten – werden unter einem einheitlichen Kommando für den letzten Feldzug zur Befreiung unseres Heimatlandes vereint."
+
+ EXILE_to_return_ours:0 "Die Rückkehr beginnt"
+ EXILE_to_return_ours_desc:0 "Mit vereinten und vorbereiteten Kräften starten wir die Befreiungskampagne. Unsere Soldaten und Widerstandskämpfer schlagen gleichzeitig zu und überwältigen die Besatzer aus allen Richtungen."
+
+ EXILE_mobilize_from_liberated_lands:0 "Mobilisiert die Befreiten"
+ EXILE_mobilize_from_liberated_lands_desc:0 "Während wir unser Heimatland Territorium für Territorium befreien, rufen wir die neu befreiten Bürger dazu auf, sich unseren Reihen anzuschließen. Jedes befreite Dorf und jede befreite Stadt erweitert unsere Befreiungsarmee um neue Kämpfer."
+
+ EXILE_new_volunteers_to_fight:0 "Neue Freiwillige"
+ EXILE_new_volunteers_to_fight_desc:0 "Die Nachricht von unseren Siegen hat sich herumgesprochen und eine neue Welle von Freiwilligen sowohl aus der Diaspora als auch aus den besetzten Gebieten inspiriert. Diese eifrigen Kämpfer werden unsere Streitkräfte für den letzten Vorstoß verstärken."
+
+ EXILE_first_hit:0 "Erstschlag"
+ EXILE_first_hit_desc:0 "Unsere Exil-Streitkräfte starten ihre erste große Offensive und schlagen hart und schnell gegen die Schwachstellen des Besatzers vor. Geschwindigkeit und Überraschung sind unsere größten Waffen."
+
+ EXILE_second_hit:0 "Zweite Welle"
+ EXILE_second_hit_desc:0 "Anknüpfend an unsere ersten Erfolge starten wir eine zweite Angriffswelle, um die Lücken in den Linien der Besatzer auszunutzen und tief in deren hintere Gebiete vorzudringen."
+
+ EXILE_third_hit:0 "Der dritte Schlag"
+ EXILE_third_hit_desc:0 "Unsere dritte Angriffswelle festigt unsere Errungenschaften und bereitet unsere Streitkräfte auf die letzte entscheidende Schlacht vor. Die Besatzer geraten ins Wanken und wir nutzen unseren Vorteil gnadenlos aus."
+
+ EXILE_final_blow:0 "Der letzte Schlag"
+ EXILE_final_blow_desc:0 "Der Moment, für den wir gearbeitet und Opfer gebracht haben, ist da. Wir starten die letzte, entscheidende Offensive, die den letzten Besatzer von unserem Boden vertreibt und unserer Nation ihren rechtmäßigen Platz unter den freien Völkern zurückgibt."
+
+ # === EXILE BRANCH SHARED IDEAS ===
+ EXILE_aces_in_exile_idea:0 "Asse im Exil"
+ EXILE_aces_in_exile_idea_desc:0 "Unsere erfahrensten Piloten, die aus ihrer Heimat vertrieben wurden, haben sich alliierten Staffeln angeschlossen und brachten ihre beträchtlichen Fähigkeiten mit. Ihr Fachwissen steigert die Gesamtqualität unserer Exil-Luftwaffe."
+
+ EXILE_army_cooperation_idea:0 "Einheitliches Kommando"
+ EXILE_army_cooperation_idea_desc:0 "Unsere Exilkräfte haben eine nahtlose Koordination mit alliierten Kommandos aufgebaut und so unsere organisatorische Effizienz und Wiederherstellungsfähigkeiten vor Ort verbessert."
+
+ EXILE_civil_and_military_organization:0 "Zivil-militärische Koordination"
+ EXILE_civil_and_military_organization_desc:0 "Die Integration unserer zivilen Untergrundnetzwerke mit dem militärischen Geheimdienst hat einen hochwirksamen Widerstandsapparat geschaffen, der im gesamten besetzten Gebiet operiert."
+
+ EXILE_industrialist_connections:0 "Industrielle Verbindungen"
+ EXILE_industrialist_connections_desc:0 "Unsere Beziehungen zu verbündeten Industriellen haben Türen für neue Technologien geöffnet und unsere Fähigkeit beschleunigt, die Waffen herzustellen, die unsere Befreiungskräfte benötigen."
+
+ EXILE_even_stronger_resistance_idea:0 "Totaler Widerstand"
+ EXILE_even_stronger_resistance_idea_desc:0 "Der Widerstand in unserem besetzten Heimatland hat sich zu einer gewaltigen Kraft entwickelt, was die Besetzung kostspielig macht und den Weg für unsere eventuelle Rückkehr bereitet."
+
+ EXILE_everyone_will_fight_idea:0 "Jeder wird kämpfen"
+ EXILE_everyone_will_fight_idea_desc:0 "Unser gesamtes Volk ist dem Ruf zu den Waffen gefolgt. Von jungen Freiwilligen bis hin zu Veteranen vergangener Kampagnen schließen sich alle dem Befreiungskampf an."
+
+ EXILE_our_help_in_the_war_idea:0 "Unser Beitrag zum Krieg"
+ EXILE_our_help_in_the_war_idea_desc:0 "Unser aktiver Beitrag zu den alliierten Kriegsanstrengungen hat uns Wohlwollen eingebracht und den Zugang zu neuen Technologien und Forschung beschleunigt."
+
+ EXILE_people_return_prep_idea:0 "Bereit zur Rückkehr"
+ EXILE_people_return_prep_idea_desc:0 "Unser Volk, sowohl im Exil als auch im Untergrund, ist bereit für den Befreiungsfeldzug. Die Moral ist hoch und der Kampfwille unzerbrechlich."
+
+ EXILE_army_return_prep_idea:0 "Armee bereit zur Rückkehr"
+ EXILE_army_return_prep_idea_desc:0 "Unsere Exilarmee hat ihre letzten Vorbereitungen abgeschlossen und ist zum Angriff bereit. Unsere Kommandeure haben sorgfältige Pläne ausgearbeitet, um unsere Angriffseffektivität zu maximieren."
+
+ EXILE_land_return_prep_idea:0 "Befreiungslogistik"
+ EXILE_land_return_prep_idea_desc:0 "Eine sorgfältige Planung der Lieferketten und der Logistik bedeutet, dass unsere Streitkräfte auch dann gut versorgt sind, wenn sie tief in das besetzte Gebiet vordringen."
+
+ EXILE_united_exile_government_idea:0 "Vereinigte Exilregierung"
+ EXILE_united_exile_government_idea_desc:0 "Nach Jahren des Exils, der Opfer und des Kampfes sind unsere Streitkräfte und unser Volk vereint wie nie zuvor. Die vereinte Stärke unserer Exilregierung, unserer Streitkräfte, unserer Widerstandskämpfer und unserer industriellen Kapazität macht uns zu einer beeindruckenden Macht, die bereit ist, das zurückzuerobern, was uns gehört."
+
+ EXILE_exile_politics_spirit:0 "Politische Einheit im Exil"
+ EXILE_exile_politics_spirit_desc:0 "Unsere Exilregierung hat ihre internen Spaltungen überwunden und präsentiert eine geschlossene politische Front. Diese Einheit stärkt unsere Legitimität und verbessert unsere Fähigkeit, auch aus dem Ausland effektiv zu regieren."
+
+ EXILE_exploit_connections_spirit:0 "Netzwerk der Verbindungen"
+ EXILE_exploit_connections_spirit_desc:0 "Durch unser umfangreiches Kontaktnetzwerk in der alliierten Welt haben wir günstige Handelsvereinbarungen gesichert und die Verbraucherbelastung unserer Exilwirtschaft verringert."
+
+ EXILE_allied_aid_spirit:0 "Alliierte Hilfe"
+ EXILE_allied_aid_spirit_desc:0 "Unsere Verbündeten haben unserer Exilregierung erhebliche materielle und technische Unterstützung geleistet und so unsere Forschungs- und Entwicklungsbemühungen beschleunigt."
+
+ EXILE_intl_recognition_spirit:0 "Internationale Anerkennung"
+ EXILE_intl_recognition_spirit_desc:0 "Da wir von der internationalen Gemeinschaft als legitime Regierung unserer Nation anerkannt werden, haben wir an Stabilität und politischem Einfluss gewonnen, und unsere Rufe nach Befreiung finden auf der ganzen Welt eifrige Ohren."
+
+ EXILE_reconquest_spirit:0 "Geist der Rückeroberung"
+ EXILE_reconquest_spirit_desc:0 "Die Befreiungskampagne hat begonnen und unsere Streitkräfte kämpfen mit der Wut derer, die zurückfordern, was ihnen genommen wurde. Dieser gerechte Zorn verleiht unseren Offensivoperationen einen mächtigen Schub."
+
+ EXILE_first_hit_idea:0 "Erstschlag"
+ EXILE_first_hit_idea_desc:0 "Unsere erste Offensive hat den Feind überrascht. Unsere Streitkräfte drängen schnell und aggressiv voran und nutzen dabei die Dynamik unserer ersten Siege."
+
+ EXILE_second_hit_idea:0 "Zweite Welle"
+ EXILE_second_hit_idea_desc:0 "Unsere zweite Angriffswelle nutzt die Breschen unserer ersten Offensive aus, wobei unsere Streitkräfte in die Tiefe vordringen und sich schnell von den Strapazen des Kampfes erholen."
+
+ EXILE_third_hit_idea:0 "Der dritte Schlag"
+ EXILE_third_hit_idea_desc:0 "Unsere dritte Offensivwelle konzentriert sich darauf, unsere Errungenschaften zu festigen und dem Feind jede Chance zu nehmen, sich zu erholen. Unsere Streitkräfte kämpfen mit absoluter taktischer Meisterschaft."
+
+ EXILE_final_blow_idea:0 "Der letzte Schlag"
+ EXILE_final_blow_idea_desc:0 "Wir liefern die letzte, entscheidende Offensive der Befreiungskampagne. Unsere Streitkräfte kämpfen mit der absoluten Überzeugung, dass der Sieg und die Wiederherstellung unseres Heimatlandes in greifbarer Nähe sind."
+
+ # Tooltip
+ EXILE_liberated_troops_tt:0 "Für jeden Kernstaat, der vollständig von [Root.GetName] kontrolliert wird, werden drei Divisionen der Befreiungsbrigade geschaffen."

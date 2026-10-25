@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_POR_neutrality_group"
+		texturefile = "gfx/interface/ideologies/POR_neutrality_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_POR_fascism_group"
+		texturefile = "gfx/interface/ideologies/POR_fascism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_POR_communism_group"
+		texturefile = "gfx/interface/ideologies/POR_communism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_POR_democratic_group"
+		texturefile = "gfx/interface/ideologies/POR_democratic_group.png"
+	}
+}

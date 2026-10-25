@@ -1,0 +1,27 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_portrait_Kim_Il_sung_2"
+		texturefile = "gfx/interface/leaders/portrait_kim_il_sung.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Syngman_Rhee_2"
+		texturefile = "gfx/interface/leaders/portrait_Syngman_Rhee.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Yi_Kang_2"
+		texturefile = "gfx/interface/leaders/portrait_yi_kang.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Yi_Un_2"
+		texturefile = "gfx/interface/leaders/portrait_yi_un.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Pak_Hon_Yong"
+		texturefile = "gfx/interface/leaders/portrait_pak_hon_yong.png"
+	}
+}

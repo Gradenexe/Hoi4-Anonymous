@@ -1,0 +1,22 @@
+SLO_slovak_army_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_slovak_army
+
+	# Military Technical Institute — Army XP gain +5%
+	experience_gain_army = SLO_army_xp_gain_var
+
+	# Mountain Troops — Special forces cap +5%
+	special_forces_cap = SLO_special_forces_cap_var
+
+	# Doctrine Discoveries — Doctrine cost -5%
+	land_doctrine_cost_factor = SLO_doctrine_cost_var
+
+	# War College — Division speed, planning speed, leader cost, leader levels, promotion penalty
+	army_speed_factor = SLO_division_speed_var
+	planning_speed = SLO_planning_speed_var
+	military_leader_cost_factor = SLO_military_leader_cost_var
+	army_leader_start_attack_level = SLO_leader_attack_var
+	army_leader_start_defense_level = SLO_leader_defense_var
+	army_leader_start_planning_level = SLO_leader_planning_var
+	field_officer_promotion_penalty = SLO_field_officer_penalty_var
+}

@@ -1,0 +1,19 @@
+﻿l_german:
+ ANON_0_RULES_GROUP:0 "�Y! Lobby-Setup�!"
+ RULE_GROUP_SOVIET_SETUP:0 "�Y! Lobby-Setup�!"
+ RULE_SOVIET_REPUBLICS_STATUS:0 "Status der Sowjetrepubliken"
+ RULE_SOVIET_REPUBLICS_PUPPETS:0 "Historisch (Marionetten)"
+ RULE_SOVIET_REPUBLICS_PUPPETS_DESC:0 "Die Sowjetunion beginnt das Spiel mit ihren verschiedenen Republiken als Marionettenstaaten."
+ RULE_SOVIET_REPUBLICS_ANNEXED:0 "Integriert (im Anhang)"
+ RULE_SOVIET_REPUBLICS_ANNEXED_DESC:0 "Die Sowjetunion wird zu Beginn des Spiels automatisch alle ihre Marionetten annektieren und so die direkte Kontrolle zentralisieren."
+  RULE_DISABLE_AFRICA:0 "Afrika deaktivieren"
+ RULE_DISABLE_ASIA:0 "Asien deaktivieren"
+ RULE_DISABLE_NORTH_AMERICA:0 "Deaktivieren Sie Nordamerika"
+ RULE_DISABLE_SOUTH_AMERICA:0 "Deaktivieren Sie Südamerika"
+ RULE_DISABLE_MIDDLE_EAST:0 "Deaktivieren Sie den Nahen Osten"
+ RULE_DISABLE_AUSTRALIA:0 "Ozeanien deaktivieren"
+ RULE_DISABLE_EUROPE:0 "Europa deaktivieren"
+ RULE_DISABLE_OFF:0 "Aktiviert (Standard)"
+ RULE_DISABLE_ON:0 "Deaktiviert"
+
+

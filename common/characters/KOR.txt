@@ -1,0 +1,4405 @@
+characters = {
+	################################################################################################################################################################
+	##########################################################        彩蛋       ##############################################################################
+	################################################################################################################################################################
+	KOR_caidan_kexuejia = {
+		name = KOR_caidan_kexuejia
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_caidan_renwu
+				small = GFX_portrait_KOR_caidan_renwu_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_caidan_kexuejia
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			visible = {
+				has_completed_focus = KOR_caidan_tianwai_laike
+			}
+			traits = {
+				KOR_caidan_kexuejia_tezhi
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_genius
+				scientist_trait_nuclear_specialist
+				scientist_trait_nuclear_warfare_expert
+				scientist_trait_nuclear_power_expert
+			}
+			skills = {
+				specialization_nuclear = 3
+			}
+			visible = {
+				owner = {
+					has_completed_focus = KOR_caidan_tianwai_laike
+				}
+			}
+		}
+	}
+	################################################################################################################################################################
+	##########################################################        朝鲜中立线       ##############################################################################
+	################################################################################################################################################################
+	#  
+	KOR_Cho_Man_sik = {
+		name = KOR_Cho_Man_sik
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Cho_Man_sik
+				small = GFX_portrait_KOR_Cho_Man_sik_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Cho_Man_sik
+			allowed = {
+				original_tag = KOR
+			}
+			visible = {
+				is_government_in_exile = no
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_chaoxian_de_gandi
+			}
+		}
+	}
+	KOR_Li_DongNing = {
+		name = KOR_Li_DongNing
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Li_DongNing
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+			traits = {
+				KOR_provisional_government_trait
+			}
+			id = -1
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {
+				KOR_provisional_government_trait
+			}
+			expire = "1966.1.1.1"
+			id = -1
+		}
+	}
+	KOR_lyuh_woon_hyung = {
+		name = KOR_lyuh_woon_hyung
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_lyuh_woon_hyung
+				small = GFX_portrait_KOR_lyuh_woon_hyung_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_lyuh_woon_hyung
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			visible = {
+				NOT = {
+					KOR_lyuh_woon_hyung = {
+						is_country_leader = yes
+					}
+				}
+			}
+			traits = {
+				KOR_mongyang
+			}
+		}
+	}
+	KOR_Jianzhun_weiyuanhui = {
+		name = KOR_Jianzhun_weiyuanhui
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Jianzhun_weiyuanhui
+			}
+		}
+	}
+	KOR_Cho_Bong_am = {
+		name = KOR_Cho_Bong_am
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Cho_Bong_am
+				small = GFX_portrait_KOR_Cho_Bong_am_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Cho_Bong_am
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				SWI_social_democrat
+			}
+			visible = {
+				NOT = {
+					KOR_Cho_Bong_am = {
+						is_country_leader = yes
+					}
+				}
+				is_government_in_exile = no
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+			}
+		}
+	}
+	KOR_Yi_Yunyong = {
+		name = KOR_Yi_Yunyong
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Yi_Yunyong_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Yi_Yunyong
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_weilihui_jidu_mushi
+			}
+			visible = {
+				OR = {
+					has_completed_focus = KOR_jidu_jiao_liguo_lun
+					has_completed_focus = KOR_hongyi_renjian_de_zhengzhi
+					has_completed_focus = KOR_minzhi_de_dengta
+					has_completed_focus = KOR_yimin_zhuyi_lilun
+				}
+			}
+		}
+	}
+	KOR_Ahn_Jae_hong = {
+		name = KOR_Ahn_Jae_hong
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_Ahn_Jae_hong_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Ahn_Jae_hong
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_minzheng_zhangguan
+			}
+		}
+	}
+	################################################################################################################################################################
+	##########################################################        朝鲜共产主义       ############################################################################
+	################################################################################################################################################################ 
+	#大会
+	KOR_chaoxian_dahui = {
+		name = KOR_chaoxian_dahui
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_chaoxian_dahui
+			}
+		}
+	}
+	KOR_communism_kaiju_leader = {
+		name = KOR_communism_kaiju_leader
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_communism_kaiju_leader
+			}
+		}
+	}
+	#通用内阁  
+	KOR_Xu_ZhenJiao = {
+		name = KOR_Xu_ZhenJiao
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Xu_ZhenJiao_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Xu_ZhenJiao
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				SWE_suffragette_research
+			}
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_funv_xuanchuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Kim_JongSuk = {
+		name = KOR_Kim_JongSuk
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Kim_JongSuk_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Kim_JongSuk
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				PRC_secretary_of_womens_committee
+			}
+			visible = {
+				has_completed_focus = KOR_funv_jiefang_yundong
+			}
+		}
+	}
+	KOR_Jin_Ce = {
+		name = KOR_Jin_Ce
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Jin_Ce_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Jin_Ce
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_chanye_yu_jiaotong
+			}
+			visible = {
+				has_completed_focus = KOR_beijixing_de_zhiyin
+			}
+		}
+	}
+	KOR_Xu_Chengze = {
+		name = KOR_Xu_Chengze
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_Xu_Chengze_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Xu_Chengze
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_Minister_of_Coal_Industry
+			}
+			visible = {
+				has_completed_focus = KOR_beijixing_de_zhiyin
+			}
+		}
+	}
+	KOR_Bai_Nanyun = {
+		name = KOR_Bai_Nanyun
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Bai_Nanyun_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Bai_Nanyun
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_malie_zhuyi_kexueyuan
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_kexueyuan_yuanzhang
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				has_completed_focus = KOR_malie_zhuyi_kexueyuan
+			}
+		}
+	}
+	KOR_Kim_Dae_hyun = {
+		name = KOR_Kim_Dae_hyun
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Kim_Dae_hyun_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Kim_Dae_hyun
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_tiandaojiaog_qingyouhui
+			}
+			visible = {
+				is_government_in_exile = no
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+			}
+		}
+	}
+	KOR_Choi_Dukshin = {
+		name = KOR_Choi_Dukshin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Choi_Dukshin
+				small = GFX_portrait_KOR_Choi_Dukshin_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Choi_Dukshin
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			visible = {
+				OR = {
+					has_completed_focus = KOR_dangjiao_jiehe
+					has_completed_focus = KOR_huifu_minzu_wenzi_yu_yuyan
+				}
+			}
+			traits = {
+				KOR_tiandaojiaog_weiyuanzhang
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_zhongguoxi
+				defensive_doctrine
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+	}
+	KOR_Ji_CheongCheon = {
+		name = KOR_Ji_CheongCheon
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Ji_CheongCheon
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = army_chief
+			idea_token = KOR_Ji_CheongCheon
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			visible = {
+				has_completed_focus = KOR_guangfujun_de_zujian
+			}
+			traits = {
+				KOR_Staff_Officer_of_the_Restoration_Army
+			}
+		}
+	}
+	KOR_Kim_Yi = {
+		name = KOR_Kim_Yi
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Kim_Yi_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Kim_Yi
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				head_of_the_nkvd_yagoda_no_paranoia
+			}
+			visible = {
+				has_completed_focus = KOR_beijixing_de_zhiyin
+			}
+		}
+	}
+	KOR_Lin_Chunqiu = {
+		name = KOR_Lin_Chunqiu
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Lin_Chunqiu_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Lin_Chunqiu
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_dangzhengzhiju_weiyuan
+			}
+			visible = {
+				has_completed_focus = KOR_beijixing_de_zhiyin
+			}
+		}
+	}
+	KOR_Kim_Seongsuk = {
+		name = KOR_Kim_Seongsuk
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Kim_Seongsuk_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Kim_Seongsuk
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_revolutionary_writer
+			}
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_completed_focus = KOR_baozheng_yanlun_jihui_ziyou
+				}
+			}
+		}
+	}
+	KOR_Kim_Chang_man = {
+		name = KOR_Kim_Chang_man
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Kim_Chang_man_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Kim_Chang_man
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_xuanchuan_buzhang
+			}
+			visible = {
+				has_completed_focus = KOR_beijixing_de_zhiyin
+			}
+		}
+	}
+	KOR_Xuan_Junhe = {
+		name = KOR_Xuan_Junhe
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Xuan_Junhe
+				small = GFX_portrait_KOR_Xuan_Junhe_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Xuan_Junhe
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = KOR_fangong_jianguo_gangling
+				}
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+			traits = {
+				devoted_communist
+			}
+		}
+	}
+	##########################################################        游击队派       ############################################################################
+	KOR_kim_il_sung = {
+		name = KOR_kim_il_sung
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kim_il_sung
+				small = GFX_portrait_KOR_kim_il_sung_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_kim_il_sung
+			can_be_fired = no
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_minister_of_state
+			}
+			available = {
+				has_country_flag = KOR_youjidui_pai_ruge_flag
+			}
+			visible = {
+				NOT = {
+					KOR_kim_il_sung = {
+						is_country_leader = yes
+					}
+				}
+				is_government_in_exile = no
+				has_completed_focus = KOR_zili_geng_sheng
+			}
+		}
+		field_marshal = {
+			traits = {
+				KOR_kanglian_junshi
+				guerilla_fighter
+				trait_mountaineer
+				inspirational_leader
+				aggressive_assaulter
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Cui_Yongjian = {
+		name = KOR_Cui_Yongjian
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Cui_Yongjian
+				small = GFX_portrait_KOR_Cui_Yongjian_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Cui_Yongjian
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+			traits = {
+				KOR_minzu_baowei_xiang
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_kanglian_junshi
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	##########################################################        南劳派       ############################################################################
+	KOR_pak_hon_yong = {
+		name = KOR_pak_hon_yong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_pak_hon_yong
+				small = GFX_portrait_KOR_pak_hon_yong_civilian_small
+			}
+			army = {
+				small = GFX_portrait_KOR_pak_hon_yong_military_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_pak_hon_yong
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			visible = {
+				NOT = {
+					KOR_pak_hon_yong = {
+						is_country_leader = yes
+					}
+				}
+				has_completed_focus = KOR_jianli_laogong_dang
+			}
+			available = {
+				has_country_flag = KOR_nanlao_pai_ruge_flag
+			}
+			traits = {
+				KOR_Foreign_Minister
+			}
+		}
+		#country_leader = {
+		#	ideology = stalinism
+		#	traits = {  }
+		#	expire = "1965.1.1.1"
+		#	id = -1
+		#}
+	}
+	KOR_Li_Chengye = {
+		name = KOR_Li_Chengye
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Li_Chengye
+				small = GFX_portrait_KOR_Li_Chengye_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Li_Chengye
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_hierarch_minister_of_justice
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Li_Xuanxiang = {
+		name = KOR_Li_Xuanxiang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Li_Xuanxiang
+				small = GFX_portrait_KOR_Li_Xuanxiang_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = KOR_Li_Xuanxiang
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_completed_focus = KOR_shentou_zuozhan_zhuanjia
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				PRC_guerilla_warfare_theorist
+			}
+		}
+		field_marshal = {
+			traits = {
+				trickster
+				guerilla_fighter
+				KOR_nanlao_pai
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				has_country_flag = KOR_communism_political_advisor_flag
+				is_government_in_exile = no
+			}
+			legacy_id = -1
+		}
+	}
+	KOR_Hong_Mingxi = {
+		name = KOR_Hong_Mingxi
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Hong_Mingxi_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Hong_Mingxi
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				prime_minister_inonu
+			}
+			visible = {
+				OR = {
+					has_completed_focus = KOR_beijixing_de_zhiyin
+					has_completed_focus = KOR_minzu_hejie_weiyuanhui
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Jin_SanLong = {
+		name = KOR_Jin_SanLong
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Jin_SanLong_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Jin_SanLong
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				AUS_communist_revolutionary
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Li_ZhouHe = {
+		name = KOR_Li_ZhouHe
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Li_ZhouHe_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Li_ZhouHe
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				left_trade_unionist
+			}
+			visible = {
+				OR = {
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Lim_Hwa = {
+		name = KOR_Lim_Hwa
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Lim_Hwa_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Lim_Hwa
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				renowned_revolutionary_poet
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Li_KangGuo = {
+		name = KOR_Li_KangGuo
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Li_KangGuo_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Li_KangGuo
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				JUNO_miniter_of_economy_and_commerce
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	##########################################################        甲山派       ############################################################################
+	KOR_Xu_Fengxue = {
+		name = KOR_Xu_Fengxue
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Xu_Fengxue
+				small = GFX_portrait_KOR_Xu_Fengxue_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Xu_Fengxue
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_junxiao_xiaozhang
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_kanglian_junshi
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	KOR_Pak_Kum_chol = {
+		name = KOR_Pak_Kum_chol
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Pak_Kum_chol
+				small = GFX_portrait_KOR_Pak_Kum_chol_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Pak_Kum_chol
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_zuzhi_buzhang
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	##########################################################        苏联派       ############################################################################
+	KOR_Xu_Jiayi = {
+		name = KOR_Xu_Jiayi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Xu_Jiayi
+				small = GFX_portrait_KOR_Xu_Jiayi_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Xu_Jiayi
+			can_be_fired = no
+			allowed = {
+				original_tag = KOR
+			}
+			visible = {
+				NOT = {
+					KOR_Xu_Jiayi = {
+						is_country_leader = yes
+					}
+				}
+				has_completed_focus = KOR_tuiguang_e_yu
+			}
+			available = {
+				has_country_flag = KOR_sulian_pai_ruge_flag
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_diyi_shuji
+			}
+		}
+	}
+	KOR_Nam_Il = {
+		name = KOR_Nam_Il
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Nam_Il
+				small = GFX_portrait_KOR_Nam_Il_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Nam_Il
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_Foreign_Minister
+			}
+			visible = {
+				NOT = {
+					KOR_Xu_Jiayi = {
+						is_country_leader = yes
+					}
+				}
+				has_completed_focus = KOR_ganbu_shencha
+				is_government_in_exile = no
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				KOR_sulian_pai
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SOV_Ivan_Chistyakov = {
+		name = SOV_Ivan_Chistyakov
+		portraits = {
+			army = {
+				small = GFX_portrait_SOV_Ivan_Chistyakov
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_sulian_pai
+			}
+			visible = {
+				has_completed_focus = KOR_folongzhi_xueyuan_biyesheng
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SOV_Trenti_Shitikov = {
+		name = SOV_Trenti_Shitikov
+		portraits = {
+			army = {
+				small = GFX_portrait_SOV_Trenti_Shitikov
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_sulian_pai
+			}
+			visible = {
+				has_completed_focus = KOR_folongzhi_xueyuan_biyesheng
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	##########################################################        延安派派       ############################################################################
+	KOR_Kim_Tu_bong = {
+		name = KOR_Kim_Tu_bong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Kim_Tu_bong
+				small = GFX_portrait_KOR_Kim_Tu_bong_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Kim_Tu_bong
+			allowed = {
+				original_tag = KOR
+			}
+			visible = {
+				NOT = {
+					KOR_Kim_Tu_bong = {
+						is_country_leader = yes
+					}
+				}
+				is_government_in_exile = no
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				ARG_university_rector
+			}
+		}
+	}
+	KOR_Li_Xiangzhao = {
+		name = KOR_Li_Xiangzhao
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Li_Xiangzhao
+				small = GFX_portrait_KOR_Li_Xiangzhao_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_yananpai_chengyuan
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Park_Il_Woo = {
+		name = KOR_Park_Il_Woo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Park_Il_Woo
+				small = GFX_portrait_KOR_Park_Il_Woo_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Park_Il_Woo
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				PRC_minister_interior_affairs
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_yananpai_chengyuan
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				has_country_flag = KOR_communism_political_advisor_flag
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Kim_Won_bong = {
+		name = KOR_Kim_Won_bong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Kim_Won_bong
+				small = GFX_portrait_KOR_Kim_Won_bong_small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {
+				BRA_militant_communist
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Kim_Won_bong
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_laodong_buzhang
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				NOT = {
+					KOR_Kim_Won_bong = {
+						is_country_leader = yes
+					}
+				}
+				is_government_in_exile = no
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_yananpai_chengyuan
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				has_country_flag = KOR_communism_political_advisor_flag
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Tse_Chianguikku = {
+		name = KOR_Tse_Chianguikku
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Tse_Chianguikku_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Tse_Chianguikku
+			can_be_fired = no
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_country_flag = KOR_yanan_pai_ruge_flag
+			}
+			visible = {
+				NOT = {
+					KOR_Tse_Chianguikku = {
+						is_country_leader = yes
+					}
+				}
+				has_completed_focus = KOR_malie_zhuyi_bentuhua
+				is_government_in_exile = no
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_guojia_fuxiang
+			}
+		}
+	}
+	KOR_Bang_Ho_San = {
+		name = KOR_Bang_Ho_San
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Bang_Ho_San
+				small = GFX_portrait_KOR_Bang_Ho_San_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = army_chief
+			idea_token = KOR_Bang_Ho_San
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			available = {
+				has_completed_focus = KOR_minbing_xiandaihua_jianshe
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+			traits = {
+				army_chief_drill_2
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				KOR_yananpai_chengyuan
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				has_country_flag = KOR_communism_political_advisor_flag
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Li_Quanwu = {
+		name = KOR_Li_Quanwu
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Li_Quanwu
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				KOR_yananpai_chengyuan
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Yun_Seju = {
+		name = KOR_Yun_Seju
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Yun_Seju
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				KOR_yananpai_chengyuan
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_democratic_political_advisor_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	##########################################################        朝鲜共产将军       ############################################################################
+	# Choe Hyon
+	KOR_choe_hyon = {
+		name = KOR_choe_hyon
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_choe_hyon
+				small = GFX_portrait_KOR_choe_hyon_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_kanglian_junshi
+				trickster
+				trait_mountaineer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = army_chief
+			idea_token = KOR_choe_hyon
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Wu_Bailong = {
+		name = KOR_Wu_Bailong
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Wu_Bailong
+				small = GFX_portrait_KOR_Wu_Bailong_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_kanglian_junshi
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = KOR_Wu_Bailong
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				army_regrouping_2
+			}
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Li_Qingsong = {
+		name = KOR_Li_Qingsong
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Li_Qingsong
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Cui_Guang = {
+		name = KOR_Cui_Guang
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Cui_Guang
+				small = GFX_portrait_KOR_Cui_Guang_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			ledger = air
+			idea_token = KOR_Cui_Guang
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				air_air_superiority_2
+			}
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_kanglian_junshi
+				career_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Cui_Yongjin = {
+		name = KOR_Cui_Yongjin
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Cui_Yongjin
+				small = GFX_portrait_KOR_Cui_Yongjin_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = KOR_Cui_Yongjin
+			ledger = air
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				air_warfare_theorist
+			}
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_kanglian_junshi
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Jiang_Jian = {
+		name = KOR_Jiang_Jian
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Jiang_Jian
+				small = GFX_portrait_KOR_Jiang_Jian_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = KOR_Jiang_Jian
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_kanglian_junshi
+				brilliant_strategist
+				organizer
+				expert_delegator
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Jin_Dahong = {
+		name = KOR_Jin_Dahong
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Jin_Dahong
+				small = GFX_portrait_KOR_Jin_Dahong_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = air_chief
+			idea_token = KOR_Jin_Dahong
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_kanglian_junshi
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Li_Yonghao = {
+		name = KOR_Li_Yonghao
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Li_Yonghao
+				small = GFX_portrait_KOR_Li_Yonghao_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = navy_chief
+			idea_token = KOR_Li_Yonghao
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+		navy_leader = {
+			traits = {
+				KOR_kanglian_junshi
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Park_Jung_deok = {
+		name = KOR_Park_Jung_deok
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Park_Jung_deok
+				small = GFX_portrait_KOR_Park_Jung_deok_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = KOR_Park_Jung_deok
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				navy_amphibious_assault_2
+			}
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+		corps_commander = {
+			traits = {
+				naval_invader
+				KOR_kanglian_junshi
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Jin_GuangXia = {
+		name = KOR_Jin_GuangXia
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Jin_GuangXia
+				small = GFX_portrait_KOR_Jin_GuangXia_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = KOR_Jin_GuangXia
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				army_entrenchment_2
+			}
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_kanglian_junshi
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	KOR_Mu_Jong = {
+		name = KOR_Mu_Jong
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Mu_Jong
+				small = GFX_portrait_KOR_Mu_Jong_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = KOR_Mu_Jong
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			available = {
+				has_completed_focus = KOR_wutingjiangjun_de_paobing
+			}
+			visible = {
+				NOT = {
+					KOR_Mu_Jong = {
+						is_country_leader = yes
+					}
+				}
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+			traits = {
+				superior_firepower_expert
+			}
+		}
+		field_marshal = {
+			traits = {
+				PRC_survivor_of_the_long_march
+				generic_artillery_officer
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					NOT = {
+						has_country_flag = KOR_democratic_political_advisor_flag
+					}
+					has_country_flag = KOR_minzu_hejie_weiyuanhui_flag
+				}
+				is_government_in_exile = no
+			}
+		}
+	}
+	################################################################################################################################################################
+	##########################################################        朝鲜民主线       ##############################################################################
+	################################################################################################################################################################
+	KOR_chaotic_Congress = {
+		name = KOR_chaotic_Congress
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SWE_fallen_riksdag
+			}
+		}
+	}
+	# 美国顾问
+	KOR_USA_Cornelius_Ryan = {
+		name = KOR_USA_Cornelius_Ryan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_USA_Cornelius_Ryan
+				small = GFX_portrait_KOR_USA_Cornelius_Ryan_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = army_chief
+			idea_token = KOR_USA_Cornelius_Ryan
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			visible = {
+				has_completed_focus = KOR_yaoqing_KMAG
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				has_completed_focus = KOR_yaoqing_KMAG
+			}
+		}
+	}
+	KOR_John_reed_hodg = {
+		name = KOR_John_reed_hodg
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_John_reed_hodg
+				small = GFX_portrait_KOR_John_reed_hodg_small
+			}
+		}
+		field_marshal = {
+			traits = {
+				career_officer
+				war_hero
+				naval_liason
+				invader_ii
+				skilled_staffer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = -1
+			visible = {
+				has_completed_focus = KOR_yaoqing_KMAG
+			}
+		}
+	}
+	KOR_Charles_Turner_Joy = {
+		name = KOR_Charles_Turner_Joy
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Charles_Turner_Joy
+				small = GFX_portrait_KOR_Charles_Turner_Joy_small
+			}
+		}
+		navy_leader = {
+			traits = {
+				ironside
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+			legacy_id = -1
+			visible = {
+				has_completed_focus = KOR_yaoqing_KMAG
+			}
+		}
+	}
+	###### 政治顾问  
+	KOR_Yi_DongZhu = {
+		name = KOR_Yi_DongZhu
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Yi_DongZhu_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Yi_DongZhu
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_national_poet
+			}
+			visible = {
+				OR = {
+					has_completed_focus = KOR_huifu_minzu_wenzi_yu_yuyan
+					has_completed_focus = KOR_minzu_de_wenhua_fuxing
+				}
+			}
+		}
+	}
+	KOR_Jin_MingShi = {
+		name = KOR_Jin_MingShi
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Jin_MingShi_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Jin_MingShi
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_Publicity_Department_of_the_Women_Federation
+			}
+			visible = {
+				has_country_flag = KOR_funv_xuanchuanhui_flag
+			}
+		}
+	}
+	KOR_Cui_Doushan = {
+		name = KOR_Cui_Doushan
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Cui_Doushan_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Cui_Doushan
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_baoshe_shezhang
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Jang_Taek = {
+		name = KOR_Jang_Taek
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Jang_Taek_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Jang_Taek
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				JUNO_minister_of_foreign_affairs
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Cuineng_Town = {
+		name = KOR_Cuineng_Town
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Cuineng_Town_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Cuineng_Town
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				BRA_head_of_political_police
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				has_country_flag = KOR_qingsuan_qinripai_flag
+			}
+		}
+	}
+	KOR_Shin_Ik_hee = {
+		name = KOR_Shin_Ik_hee
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Shin_Ik_hee
+				small = GFX_portrait_KOR_Shin_Ik_hee_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Shin_Ik_hee
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				BEL_illusive_mastermind
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = KOR_fangong_jianguo_gangling
+				}
+				NOT = {
+					has_completed_focus = KOR_beijixing_de_zhiyin
+				}
+			}
+		}
+	}
+	KOR_Jin_Binglu = {
+		name = KOR_Jin_Binglu
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Jin_Binglu_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Jin_Binglu
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				BRA_supreme_court_justice
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Yin_Zhiwang = {
+		name = KOR_Yin_Zhiwang
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Yin_Zhiwang_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Yin_Zhiwang
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_yiwu_zongjian
+			}
+			visible = {
+				OR = {
+					has_completed_focus = KOR_tuiguang_meili_de_guojia
+					has_completed_focus = KOR_quanguo_huji_denglu
+					has_completed_focus = KOR_jianli_jumin_yibao
+					has_completed_focus = KOR_jianli_cishan_jijinhui
+				}
+			}
+		}
+	}
+	KOR_Lee_Byungchul = {
+		name = KOR_Lee_Byungchul
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Lee_Byungchul
+				small = GFX_portrait_KOR_Lee_Byungchul_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Lee_Byungchul
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_sanxing_shanghui
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				OR = {
+					has_completed_focus = KOR_minzu_zichan_peiyang
+					has_completed_focus = KOR_fuchi_minzu_qiye
+					has_completed_focus = KOR_jianli_diguo_caifa
+					has_completed_focus = KOR_wangshi_texu_hui_she
+				}
+			}
+		}
+	}
+	###### 金九系 
+	KOR_Kim_Koo = {
+		name = KOR_Kim_Koo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Kim_Koo
+				small = GFX_portrait_KOR_Kim_Koo_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Kim_Koo
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			visible = {
+				NOT = {
+					KOR_Kim_Koo = {
+						is_country_leader = yes
+					}
+				}
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_completed_focus = KOR_minzhi_de_dengta
+				}
+			}
+			traits = {
+				KOR_guowu_ling
+			}
+		}
+	}
+	KOR_Kim_Xin = {
+		name = KOR_Kim_Xin
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Kim_Xin_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = air_chief
+			idea_token = KOR_Kim_Xin
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				air_chief_safety_2
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+			}
+		}
+	}
+	KOR_Jin_Kuizhi = {
+		name = KOR_Jin_Kuizhi
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Jin_Kuizhi_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Jin_Kuizhi
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_reich_minister_of_propaganda
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+			}
+		}
+	}
+	KOR_Zhao_Suang = {
+		name = KOR_Zhao_Suang
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Zhao_Suang_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Zhao_Suang
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_yizhengyuan_yuanzhang
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+			}
+		}
+	}
+	KOR_Park_Shichang = {
+		name = KOR_Park_Shichang
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Park_Shichang
+				small = GFX_portrait_KOR_Park_Shichang_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = KOR_Park_Shichang
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_artillery_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+			}
+		}
+		corps_commander = {
+			traits = {
+				KOR_zhongguoxi
+				generic_artillery_officer
+				career_officer
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+			}
+		}
+	}
+	KOR_Ahn_Chunsaeng = {
+		name = KOR_Ahn_Chunsaeng
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Ahn_Chunsaeng
+				small = GFX_portrait_KOR_Ahn_Chunsaeng_small
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = KOR_Ahn_Chunsaeng
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_maneuver_2
+				KOR_zhongguoxi
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+				career_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+			}
+		}
+	}
+	KOR_Li_JunZhi = {
+		name = KOR_Li_JunZhi
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Li_JunZhi
+				small = GFX_portrait_KOR_Li_JunZhi_small
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = KOR_Li_JunZhi
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				KOR_zhongguoxi
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+			}
+		}
+	}
+	###### 韩国民主党—民主国民党
+	KOR_Kim_Seong_Soo = {
+		name = KOR_Kim_Seong_Soo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Kim_Seong_Soo
+				small = GFX_portrait_KOR_Kim_Seong_Soo_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Kim_Seong_Soo
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				AUS_minister_of_education
+			}
+			available = {
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					KOR_Kim_Seong_Soo = {
+						is_country_leader = yes
+					}
+				}
+				OR = {
+					has_completed_focus = KOR_puji_yiwu_jiaoyu
+					has_completed_focus = KOR_tuidong_kexue_yu_chuantong
+					has_completed_focus = KOR_kexuejishu_xueyuan
+				}
+			}
+		}
+	}
+	KOR_Song_Zhenyu = {
+		name = KOR_Song_Zhenyu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Song_Zhenyu
+				small = GFX_portrait_KOR_Song_Zhenyu_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Song_Zhenyu
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				DEN_konservativ
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					KOR_Song_Zhenyu = {
+						is_country_leader = yes
+					}
+				}
+			}
+		}
+	}
+	KOR_Xu_Zheng = {
+		name = KOR_Xu_Zheng
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Xu_Zheng_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Xu_Zheng
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				BRA_minister_of_transport
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Yun_Bo_seon = {
+		name = KOR_Yun_Bo_seon
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Yun_Bo_seon_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Yun_Bo_seon
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_hongshizihui_zhuxi
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Zhao_Bingyu = {
+		name = KOR_Zhao_Bingyu
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Zhao_Bingyu_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Zhao_Bingyu
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				gran_carabinero
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				OR = {
+					has_country_flag = KOR_buqingsuan_qinripai_flag
+					has_completed_focus = KOR_guojia_anbao_fa
+				}
+			}
+		}
+	}
+	###### 自由党 
+	KOR_syngman_rhee = {
+		name = KOR_syngman_rhee
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Rhee_Syng_Man
+				small = GFX_portrait_KOR_Rhee_Syng_Man_small
+			}
+		}
+	}
+	KOR_lee_beom_seok = {
+		name = KOR_lee_beom_seok
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_lee_beom_seok
+				small = GFX_portrait_KOR_lee_beom_seok_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_lee_beom_seok
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				JUNO_minister_of_defense
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+			}
+		}
+		field_marshal = {
+			traits = {
+				organizer
+				career_officer
+				expert_delegator
+				unyielding_defender
+				skilled_staffer
+				KOR_huangjia_xuetong
+				KOR_zhongguoxi
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+			}
+		}
+	}
+	KOR_Jin_Changlong = {
+		name = KOR_Jin_Changlong
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Jin_Changlong_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Jin_Changlong
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				spymaster
+			}
+			visible = {
+				OR = {
+					has_completed_focus = KOR_qianghua_qingbao_jiguan
+					has_completed_focus = KOR_huangjia_jingcha_budui
+				}
+			}
+			available = {
+			}
+		}
+	}
+	KOR_Yin_Zhihao = {
+		name = KOR_Yin_Zhihao
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Yin_Zhihao_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Yin_Zhihao
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				PRC_minister_interior_affairs
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Chang_Myon = {
+		name = KOR_Chang_Myon
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Chang_Myon_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Chang_Myon
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				prime_minister_okyar
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				has_completed_focus = KOR_fangong_jianguo_gangling
+			}
+		}
+	}
+	KOR_Archbishop_Roh_Paul = {
+		name = KOR_Archbishop_Roh_Paul
+		portraits = {
+			civilian = {
+				large = GFX_portrait_JKO_Archbishop_Roh_Paul
+				small = GFX_portrait_JKO_Archbishop_Roh_Paul_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Archbishop_Roh_Paul
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_Archidioecesis_Seulensis
+			}
+			visible = {
+				has_country_flag = KOR_pardon_the_bishop_flag
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					JKO_Archbishop_Roh_Paul = {
+						is_country_leader = yes
+					}
+				}
+			}
+		}
+	}
+	KOR_Yi_Siyeong = {
+		name = KOR_Yi_Siyeong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Yi_Siyeong
+				small = GFX_portrait_KOR_Yi_Siyeong_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = KOR_Yi_Siyeong
+			allowed = {
+				original_tag = KOR
+			}
+			ai_will_do = {
+				base = 1
+			}
+			traits = {
+				KOR_fawu_zongzhang
+			}
+			visible = {
+				NOT = {
+					KOR_Yi_Siyeong = {
+						is_country_leader = yes
+					}
+				}
+			}
+		}
+	}
+	###### 军队 
+	KOR_Jin_ZhongWu = {
+		name = KOR_Jin_ZhongWu
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Jin_ZhongWu
+			}
+		}
+		corps_commander = {
+			traits = {
+				defensive_doctrine
+				JKO_chaoxianji_rijun
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Song_Yo_chan = {
+		name = KOR_Song_Yo_chan
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Song_Yo_chan
+			}
+		}
+		corps_commander = {
+			traits = {
+				JKO_chaoxianji_rijun
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Li_Hanlin = {
+		name = KOR_Li_Hanlin
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Li_Hanlin
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				KOR_manzhouguo_xi
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Liu_Zaixing = {
+		name = KOR_Liu_Zaixing
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Liu_Zaixing
+			}
+		}
+		corps_commander = {
+			traits = {
+				JKO_chaoxianji_rijun
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Liu_Shenglie = {
+		name = KOR_Liu_Shenglie
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Liu_Shenglie
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				infantry_officer
+				JKO_chaoxianji_rijun
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Shin_sung = {
+		name = KOR_Shin_sung
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Shin_sung
+				small = GFX_portrait_KOR_Shin_sung_small
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = KOR_Shin_sung
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+		navy_leader = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+			}
+		}
+	}
+	KOR_Song_Ho_seong = {
+		name = KOR_Song_Ho_seong
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Song_Ho_seong
+				small = GFX_portrait_KOR_Song_Ho_seong_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = KOR_Song_Ho_seong
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+			}
+		}
+		field_marshal = {
+			traits = {
+				career_officer
+				KOR_zhongguoxi
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+			visible = {
+			}
+		}
+	}
+	KOR_Paik_Sun_Yup = {
+		name = KOR_Paik_Sun_Yup
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Paik_Sun_Yup
+				small = GFX_portrait_KOR_Paik_Sun_Yup_small
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = KOR_Paik_Sun_Yup
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				infantry_officer
+				commando
+				KOR_manzhouguo_xi
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Ji_cheong_cheon = {
+		name = KOR_Ji_cheong_cheon
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Ji_cheong_cheon
+				small = GFX_portrait_KOR_Ji_cheong_cheon_small
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = KOR_Ji_cheong_cheon
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+			}
+		}
+		field_marshal = {
+			traits = {
+				trait_mountaineer
+				infantry_officer
+				career_officer
+				ambusher
+				unyielding_defender
+				organisational_leader
+				KOR_zhongguoxi
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+			}
+		}
+	}
+	KOR_Kim_Hong_il = {
+		name = KOR_Kim_Hong_il
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Kim_Hong_il
+				small = GFX_portrait_KOR_Kim_Hong_il_small
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = KOR_Kim_Hong_il
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+				career_officer
+				unyielding_defender
+				organisational_leader
+				KOR_zhongguoxi
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+			}
+		}
+	}
+	KOR_Shin_Hyun_Joon = {
+		name = KOR_Shin_Hyun_Joon
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Shin_Hyun_Joon
+				small = GFX_portrait_KOR_Shin_Hyun_Joon_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = KOR_Shin_Hyun_Joon
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_amphibious_assault_2
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = KOR_beijixing_de_zhiyin
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+				naval_invader
+				KOR_manzhouguo_xi
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_completed_focus = KOR_beijixing_de_zhiyin
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Son_Won_Il = {
+		name = KOR_Son_Won_Il
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Son_Won_Il
+				small = GFX_portrait_KOR_Son_Won_Il_small
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = KOR_Son_Won_Il
+			ledger = navy
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				naval_theorist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+			}
+		}
+		navy_leader = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+	}
+	KOR_Cui_Yongde = {
+		name = KOR_Cui_Yongde
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_Cui_Yongde_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = KOR_Cui_Yongde
+			ledger = air
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				air_air_combat_training_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+			}
+		}
+	}
+	KOR_Ding_Yiquan = {
+		name = KOR_Ding_Yiquan
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_Ding_Yiquan_small
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = KOR_Ding_Yiquan
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_planning_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Jin_Zhenlie = {
+		name = KOR_Jin_Zhenlie
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_Jin_Zhenlie_small
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = KOR_Jin_Zhenlie
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	KOR_Li_Genhao = {
+		name = KOR_Li_Genhao
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_Li_Genhao_small
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = KOR_Li_Genhao
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				NOT = {
+					has_country_flag = KOR_communism_political_advisor_flag
+				}
+				NOT = {
+					has_global_flag = KOR_kaiju_zhanzheng_flag
+				}
+			}
+		}
+	}
+	################################################################################################################################################################
+	##########################################################        大韩帝国线       ##############################################################################
+	################################################################################################################################################################
+	# Yi Un 
+	KOR_Lee_Dynasty = {
+		name = KOR_Lee_Dynasty
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Lee_Dynasty
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+				no_designated_regency
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	KOR_yi_un = {
+		#KOR_highness_yi_of_changdeokgung
+		name = KOR_yi_un
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_yi_un_one
+				small = GFX_portrait_KOR_yi_un_civilian_small
+			}
+			army = {
+				large = GFX_portrait_KOR_yi_un
+				small = GFX_portrait_KOR_yi_un_military_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KOR_yi_un
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				KOR_highness_yi_of_changdeokgung
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				has_completed_focus = KOR_chongjian_zongqin_fu
+			}
+		}
+	}
+	# Yi Kang 
+	KOR_yi_kang = {
+		name = KOR_yi_kang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_yi_kang
+				small = GFX_portrait_KOR_yi_kang_small
+			}
+			army = {
+				large = GFX_portrait_KOR_yi_kang_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KOR_yi_kang
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				KOR_chaoxian_guizu
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				OR = {
+					has_country_flag = KOR_kending_wangshi_gongxian_flag
+					has_completed_focus = KOR_huang_taizi_huiguo
+				}
+				NOT = {
+					KOR_yi_kang = {
+						is_country_leader = yes
+					}
+				}
+				NOT = {
+					has_completed_focus = KOR_beijixing_de_zhiyin
+				}
+			}
+		}
+		field_marshal = {
+			traits = {
+				career_officer
+				politically_connected
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					has_completed_focus = KOR_mayi_taizai
+					has_completed_focus = KOR_huang_taizi_huiguo
+				}
+			}
+		}
+	}
+	KOR_Li_Sairong = {
+		name = KOR_Li_Sairong
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Li_Sairong
+				small = GFX_portrait_KOR_Li_Sairong_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KOR_Li_Sairong
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				KOR_chaoxian_guizu
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				OR = {
+					has_completed_focus = KOR_sheli_guizu_yuan
+					has_completed_focus = KOR_huang_taizi_huiguo
+				}
+			}
+		}
+	}
+	KOR_Yi_Bangja = {
+		name = KOR_Yi_Bangja
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Yi_Bangja
+				small = GFX_portrait_KOR_Yi_Bangja_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KOR_Yi_Bangja
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				KOR_Yi_Bangja_tezhi
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				has_country_flag = KOR_riben_bingru_bentu_flag
+			}
+		}
+	}
+	KOR_Li_Jian = {
+		name = KOR_Li_Jian
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Li_Jian
+				small = GFX_portrait_KOR_Li_Jian_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = KOR_Li_Jian
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_cavalry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				OR = {
+					has_completed_focus = KOR_chongjian_zongqin_fu
+					has_completed_focus = KOR_huang_taizi_huiguo
+				}
+			}
+		}
+		corps_commander = {
+			traits = {
+				cavalry_officer
+				career_officer
+				KOR_huangjia_xuetong
+				politically_connected
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					has_completed_focus = KOR_chongjian_zongqin_fu
+					has_completed_focus = KOR_huang_taizi_huiguo
+				}
+			}
+		}
+	}
+	KOR_Li_Qin = {
+		name = KOR_Li_Qin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Li_Qin
+				small = GFX_portrait_KOR_Li_Qin_small
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = KOR_Li_Qin
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				OR = {
+					has_completed_focus = KOR_chongjian_zongqin_fu
+					has_completed_focus = KOR_huang_taizi_huiguo
+				}
+			}
+		}
+		corps_commander = {
+			traits = {
+				cavalry_officer
+				career_officer
+				KOR_huangjia_xuetong
+				politically_connected
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					has_completed_focus = KOR_chongjian_zongqin_fu
+					has_completed_focus = KOR_huang_taizi_huiguo
+				}
+			}
+		}
+	}
+	KOR_Lian_DongZhen = {
+		name = KOR_Lian_DongZhen
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Lian_DongZhen_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KOR_Lian_DongZhen
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				spymaster
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				has_completed_focus = KOR_huang_taizi_huiguo
+			}
+			available = {
+				has_completed_focus = KOR_heyi_she_qingbao
+			}
+		}
+	}
+	KOR_Yin_Shifu = {
+		name = KOR_Yin_Shifu
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KOR_Yin_Shifu_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KOR_Yin_Shifu
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				KOR_Tan_Ya_Grandmaster
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				has_completed_focus = KOR_da_zongjiao
+			}
+		}
+	}
+	################################################################################################################################################################
+	##########################################################        科学家       ##############################################################################
+	################################################################################################################################################################
+	KOR_Du_Shanglu = {
+		name = KOR_Du_Shanglu
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Du_Shanglu
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_nuclear_specialist
+			}
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+	}
+	KOR_Li_Shengji = {
+		name = KOR_Li_Shengji
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_Li_Shengji
+				small = GFX_portrait_KOR_Li_Shengji_small
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_nuclear_warfare_expert
+			}
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+	}
+	################################################################################################################################################################
+	##########################################################        东北抗联       ##############################################################################
+	################################################################################################################################################################
+	MAN_Li_Zhaolin = {
+		name = MAN_Li_Zhaolin
+		portraits = {
+			army = {
+				large = GFX_portrait_MAN_Li_Zhaolin
+			}
+		}
+		corps_commander = {
+			traits = {
+				guerilla_fighter
+				KOR_kanglian_junshi
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+			visible = {
+				has_completed_focus = KOR_jieshou_kangri_youjidui
+			}
+		}
+	}
+	MAN_Wang_Yachen = {
+		name = MAN_Wang_Yachen
+		portraits = {
+			army = {
+				large = GFX_portrait_MAN_Wang_Yachen
+			}
+		}
+		corps_commander = {
+			traits = {
+				guerilla_fighter
+				KOR_kanglian_junshi
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				has_completed_focus = KOR_jieshou_kangri_youjidui
+			}
+		}
+	}
+	MAN_Xia_Yunjie = {
+		name = MAN_Xia_Yunjie
+		portraits = {
+			army = {
+				large = GFX_portrait_MAN_Xia_Yunjie
+			}
+		}
+		corps_commander = {
+			traits = {
+				guerilla_fighter
+				KOR_kanglian_junshi
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				has_completed_focus = KOR_jieshou_kangri_youjidui
+			}
+		}
+	}
+	MAN_zhao_shangzhi_plus = {
+		name = MAN_zhao_shangzhi
+		portraits = {
+			army = {
+				large = GFX_portrait_MAN_zhao_shangzhi_plus
+			}
+		}
+		corps_commander = {
+			traits = {
+				guerilla_fighter
+				KOR_kanglian_junshi
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+			visible = {
+				has_completed_focus = KOR_jieshou_kangri_youjidui
+			}
+		}
+	}
+	MAN_Zhao_Yiman = {
+		name = MAN_Zhao_Yiman
+		portraits = {
+			army = {
+				large = GFX_portrait_MAN_Zhao_Yiman
+			}
+		}
+		corps_commander = {
+			traits = {
+				guerilla_fighter
+				KOR_kanglian_junshi
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				has_completed_focus = KOR_jieshou_kangri_youjidui
+				NOT = {
+					has_global_flag = zhaoyiman_taoli_flag
+				}
+			}
+		}
+	}
+	MAN_Zhou_Baozhong = {
+		name = MAN_Zhou_Baozhong
+		portraits = {
+			army = {
+				large = GFX_portrait_MAN_Zhou_Baozhong
+			}
+		}
+		corps_commander = {
+			traits = {
+				guerilla_fighter
+				KOR_kanglian_junshi
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				has_completed_focus = KOR_jieshou_kangri_youjidui
+			}
+		}
+	}
+	MAN_Yang_Jingyu = {
+		name = MAN_Yang_Jingyu
+		portraits = {
+			army = {
+				large = GFX_portrait_MAN_Yang_Jingyu
+				small = GFX_portrait_MAN_Yang_Jingyu_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = MAN_Yang_Jingyu
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			visible = {
+				has_completed_focus = KOR_jieshou_kangri_youjidui
+			}
+			traits = {
+				MAN_dongbei_kanglian_yangjingyu
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		field_marshal = {
+			traits = {
+				trait_mountaineer
+				winter_expert
+				ranger
+				scavenger
+				guerilla_fighter
+				KOR_kanglian_junshi
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
+			legacy_id = -1
+			visible = {
+				has_government = communism
+			}
+		}
+	}
+	################################################################################################################################################################
+	##########################################################        白军将领       ##############################################################################
+	################################################################################################################################################################
+	FER_anton_denikin = {
+		name = SOV_anton_denikin
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_anton_denikin"
+				small = "GFX_idea_SOV_anton_denikin"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = anton_denikin
+			allowed = {
+				original_tag = FER
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1
+			}
+		}
+		field_marshal = {
+			traits = {
+				old_guard
+				inflexible_strategist
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+				has_global_flag = KOR_SOV_baiweijun_jiangling_flag
+			}
+		}
+	}
+	FER_pyotr_krasnov = {
+		name = SOV_pyotr_krasnov
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_pyotr_krasnov"
+				small = "GFX_idea_SOV_pyotr_krasnov"
+			}
+		}
+		corps_commander = {
+			traits = {
+				cavalry_leader
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+				has_global_flag = KOR_SOV_baiweijun_jiangling_flag
+			}
+		}
+	}
+	FER_konstantin_nechayev = {
+		name = SOV_konstantin_nechayev
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_konstantin_nechayev"
+				small = "GFX_idea_SOV_konstantin_nechayev"
+			}
+		}
+		field_marshal = {
+			traits = {
+				infantry_officer
+				war_hero
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+				has_global_flag = KOR_SOV_baiweijun_jiangling_flag
+			}
+		}
+	}
+	FER_vladimir_kosmin = {
+		name = SOV_vladimir_kosmin
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_vladimir_kosmin"
+				small = "GFX_idea_SOV_vladimir_kosmin"
+			}
+		}
+		field_marshal = {
+			traits = {
+				winter_expert
+				trait_mountaineer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+				has_global_flag = KOR_SOV_baiweijun_jiangling_flag
+			}
+		}
+	}
+	FER_aleksandr_rodzyanko = {
+		name = SOV_aleksandr_rodzyanko
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_aleksandr_rodzyanko"
+				small = "GFX_idea_SOV_aleksandr_rodzyanko"
+			}
+		}
+		field_marshal = {
+			traits = {
+				cavalry_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+				has_global_flag = KOR_SOV_baiweijun_jiangling_flag
+			}
+		}
+	}
+	FER_andrey_shkuro = {
+		name = SOV_andrey_shkuro
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_andrey_shkuro"
+				small = "GFX_idea_SOV_andrey_shkuro"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_reckless
+				cavalry_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+				has_global_flag = KOR_SOV_baiweijun_jiangling_flag
+			}
+		}
+	}
+	FER_grigory_semyonov = {
+		name = SOV_grigory_semyonov
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_grigory_semyonov"
+				large = "GFX_portrait_SOV_grigory_semyonov"
+			}
+		}
+		corps_commander = {
+			traits = {
+				cavalry_officer
+				cavalry_leader
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id = 0
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+				has_global_flag = KOR_SOV_baiweijun_jiangling_flag
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_grigory_semyonov
+			allowed = {
+				original_tag = FER
+			}
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+				has_global_flag = KOR_SOV_baiweijun_jiangling_flag
+			}
+			traits = {
+				ataman_transbaikal_host
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+}
