@@ -159,7 +159,7 @@
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -168,7 +168,7 @@
 						all_provinces = yes							
 						limit_to_naval_base = yes
 					}
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -732,7 +732,7 @@
         search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
-			army_experience = 30
+			army_experience = 15
 			swap_ideas = {
 				remove_idea = SAF_ossewabrandwag
 				add_idea = SAF_ossewabrandwag_fascism
@@ -867,7 +867,7 @@
 						id = 7770
 						id = 4879
 					}
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -880,7 +880,7 @@
 					province = {
 						id = 2207
 					}
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -893,7 +893,7 @@
 						id = 7605
 						id = 10963
 					}
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -904,7 +904,7 @@
 						id = 12519
 					
 					}
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -976,7 +976,7 @@
 			ENG = { remove_from_faction = ROOT }
 			set_rule = { can_create_factions = yes }
 			add_political_power = 140
-			add_stability = 0.2
+			add_stability = 0.20
 		}
 	}
 
@@ -1553,7 +1553,7 @@
         search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
-			add_war_support = 0.2
+			add_war_support = 0.20
 			ENG = { 
 					remove_from_faction = SAF
 					add_opinion_modifier = { target = SAF modifier = SAF_anti_colonialist_crusaders }
@@ -2668,7 +2668,7 @@
         search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			army_experience = 20
+			army_experience = 10
 			add_doctrine_cost_reduction = {
 				name = SAF_special_service_battalion
 				cost_reduction = 0.25
@@ -2784,7 +2784,7 @@
         search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			army_experience = 20
+			army_experience = 10
 			add_doctrine_cost_reduction = {
 				name = SAF__south_african_military_college
 				cost_reduction = 0.5
@@ -3058,7 +3058,7 @@
         search_filters = { FOCUS_FILTER_RESEARCH }
 
 		complete_tooltip = {
-			air_experience = 50
+			air_experience = 25
 			random_state = {				
 				limit = {
 					has_state_flag = SAF_commit_to_the_five_year_plan_AB
@@ -3078,7 +3078,7 @@
 		}
 
 		completion_reward = {
-			air_experience = 50
+			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3208,7 +3208,7 @@
         search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			air_experience = 50
+			air_experience = 25
 
 			add_mastery_bonus = {
 				name = SAF_perfect_the_cab_rank_technique
@@ -3321,7 +3321,7 @@
         search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			air_experience = 70
+			air_experience = 35
 			add_doctrine_cost_reduction = {
 				name = SAF_retain_experienced_pilots
 				cost_reduction = 0.5
@@ -3362,7 +3362,7 @@
         search_filters = { FOCUS_FILTER_RESEARCH }
 
 		complete_tooltip = {
-			navy_experience = 50
+			navy_experience = 25
 			random_state = {
 				limit = {
 					has_state_flag = SAF_seaward_defence_force_DY
@@ -3377,7 +3377,7 @@
 		}
 
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 25
 			random_owned_controlled_state = {
 				prioritize = { 681 719 }
 				limit = {
@@ -3738,7 +3738,7 @@
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -3747,7 +3747,7 @@
 						all_provinces = yes							
 						limit_to_naval_base = yes
 					}
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}

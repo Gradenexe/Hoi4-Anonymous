@@ -1099,7 +1099,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {	
-			air_experience = 50
+			air_experience = 25
 			add_breakthrough_progress = {
 				specialization = specialization_air
 				value = 0.5
@@ -1402,7 +1402,7 @@ focus_tree = {
 						}
 						requested_factories = 1
 						progress = 0.95
-						amount = 1
+						amount = 2
 					}
 					add_equipment_production = {
 						equipment = {
@@ -1410,7 +1410,7 @@ focus_tree = {
 						}
 						requested_factories = 1
 						progress = 0.95
-						amount = 1
+						amount = 2
 					}
 					else = {
 						set_technology = { basic_light_cruiser = 1 }
@@ -1454,7 +1454,7 @@ focus_tree = {
 							}
 							requested_factories = 1
 							progress = 0.95
-							amount = 1
+							amount = 2
 						}
 						add_equipment_production = {
 							equipment = {
@@ -1464,7 +1464,7 @@ focus_tree = {
 							}
 							requested_factories = 1
 							progress = 0.95
-							amount = 1
+							amount = 2
 						}
 					}
 					else = {
@@ -1473,7 +1473,7 @@ focus_tree = {
 							basic_torpedo = 1
 							basic_heavy_battery = 1
 						}
-						navy_experience = 100
+						navy_experience = 50
 						custom_effect_tooltip = RAJ_navy_funding_effect
 					}
 				}
@@ -1515,7 +1515,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			army_experience = 60
+			army_experience = 30
 			add_tech_bonus = {
 				name = RAJ_british_army_support
 				bonus = 1.0
@@ -1554,7 +1554,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 		custom_effect_tooltip = RAJ_create_unit_red_eagles_tt
-		army_experience = 100
+		army_experience = 50
 			hidden_effect = {
 				division_template = {
 					name = "Red Eagles Division"
@@ -1777,7 +1777,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_political_power = 200
-			army_experience = 50
+			army_experience = 25
 		}
 	}
 
@@ -1936,7 +1936,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = RAJ_lions_of_the_great_war
-			army_experience = 60
+			army_experience = 30
 			custom_effect_tooltip = RAJ_create_unit_sikh_tt
 			hidden_effect = {
 
@@ -2116,7 +2116,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			army_experience = 20
+			army_experience = 10
 			add_tech_bonus = {
 				name = RAJ_royal_indian_artillery
 				bonus = 1.0
@@ -2354,7 +2354,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			air_experience = 50
+			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = RAJ_british_pilot_training
 				cost_reduction = 0.5
@@ -2560,7 +2560,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			air_experience = 50
+			air_experience = 25
 			add_breakthrough_progress = {
 				specialization = specialization_air
 				value = 0.25
@@ -2941,7 +2941,7 @@ focus_tree = {
 				RAJ_homi_j_bhabha = {
 					add_scientist_level = {
 						specialization = specialization_nuclear
-						level = 1
+						level = 2
 					}
 				}
 			}
@@ -3046,7 +3046,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			navy_experience = 100
+			navy_experience = 50
 			random_owned_controlled_state = {
 				prioritize = { 429 }
 				limit = {
@@ -3129,7 +3129,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 25
 			random_owned_controlled_state = {
 				prioritize = { 426 }
 				limit = {
@@ -3190,7 +3190,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			navy_experience = 20
+			navy_experience = 10
 			add_doctrine_cost_reduction = {
 				name = RAJ_royal_indian_navy
 				cost_reduction = 0.5

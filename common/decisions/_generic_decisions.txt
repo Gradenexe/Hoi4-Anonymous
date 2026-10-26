@@ -306,7 +306,7 @@ propaganda_efforts = {
 
 		available = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
-			has_war_support < 1
+			has_war_support < 2
 			
 			if = {
 				limit = {

@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -335,7 +335,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		completion_reward = {
-			add_stability = 0.1
+			add_stability = 0.10
 			every_country = {
 				limit = {
 					OR = {
@@ -1239,9 +1239,9 @@ focus_tree = {
 			set_country_flag = ALB_national_unity_experience_bypass
 			ALB_update_national_unity = yes
 			custom_effect_tooltip = generic_skip_one_line_tt
-			army_experience = 30
-			navy_experience = 30
-			air_experience = 30
+			army_experience = 15
+			navy_experience = 15
+			air_experience = 15
 		}
 	}
 	
@@ -2152,7 +2152,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
-			add_stability = -0.05
+			add_stability = -0.10
 			custom_effect_tooltip = generic_skip_one_line_tt
 			effect_tooltip = {
 				swap_ideas = {
@@ -2649,7 +2649,7 @@ focus_tree = {
 			add_to_variable = { ALB_army_army_org_factor = 0.05 }
 			add_to_variable = { ALB_army_training_time_factor = 0.05 }
 			
-			army_experience = 30
+			army_experience = 15
 		}
 	}
 	
@@ -2679,7 +2679,7 @@ focus_tree = {
 			add_to_variable = { ALB_army_training_time_factor = 0.05 }
 			add_to_variable = { ALB_army_command_power_gain_mult = 0.25 }
 			
-			army_experience = 30
+			army_experience = 15
 		}
 	}
 	
@@ -2708,7 +2708,7 @@ focus_tree = {
 			add_to_variable = { ALB_army_org_loss_when_moving = -0.05 }
 			add_to_variable = { ALB_army_dig_in_speed_factor = 0.10 }
 			
-			army_experience = 30
+			army_experience = 15
 		}
 	}
 	
@@ -2798,7 +2798,7 @@ focus_tree = {
 			add_to_variable = { ALB_army_army_speed_factor = 0.05 }
 			add_to_variable = { ALB_army_attrition = -0.05 }
 			
-			army_experience = 30
+			army_experience = 15
 		}
 	}
 	
@@ -2953,7 +2953,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_AIR_XP }
 		
 		completion_reward = {
-			air_experience = 30
+			air_experience = 15
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.50
 				uses = 1
@@ -2979,8 +2979,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 		
 		completion_reward = {
-			army_experience = 30
-			air_experience = 30
+			army_experience = 15
+			air_experience = 15
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
@@ -3131,7 +3131,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
 		completion_reward = {
-			air_experience = 100
+			air_experience = 50
 			if = {
 				limit = {
 					has_dlc = "By Blood Alone"
@@ -3214,7 +3214,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_NAVY_XP }
 		
 		completion_reward = {
-			navy_experience = 30
+			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.50
 				uses = 1
@@ -3240,7 +3240,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
 		completion_reward = {
-			navy_experience = 100
+			navy_experience = 50
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 3
@@ -3372,8 +3372,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
 		
 		completion_reward = {
-			army_experience = 30
-			navy_experience = 30
+			army_experience = 15
+			navy_experience = 15
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
@@ -3748,7 +3748,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		
 		completion_reward = {
-			add_war_support = 0.1
+			add_war_support = 0.10
 			custom_effect_tooltip = generic_skip_one_line_tt
 			effect_tooltip = {
 				swap_ideas = {
@@ -3921,7 +3921,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		completion_reward = {
-			add_stability = 0.2
+			add_stability = 0.20
 			set_temp_variable = { temp_var = 10 }
 			add_to_variable = {
 				var = ALB_westernization_var
@@ -3994,7 +3994,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		
 		completion_reward = {
-			add_war_support = 0.1
+			add_war_support = 0.10
 			custom_effect_tooltip = generic_skip_one_line_tt
 			effect_tooltip = {
 				swap_ideas = {
@@ -4286,7 +4286,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		
 		completion_reward = {
-			add_war_support = 0.1
+			add_war_support = 0.10
 			custom_effect_tooltip = generic_skip_one_line_tt
 			effect_tooltip = {
 				swap_ideas = {
@@ -4481,7 +4481,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
 		
 		completion_reward = {
-			add_war_support = 0.1
+			add_war_support = 0.10
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				add_idea = ALB_loyalists_0
@@ -4512,7 +4512,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		
 		completion_reward = {
-			add_stability = 0.2
+			add_stability = 0.20
 			if = {
 				limit = { NOT = { has_rule = can_create_factions } }
 				set_rule = {
@@ -4925,7 +4925,7 @@ focus_tree = {
 				remove_idea = ALB_greater_albania_2
 				add_idea = ALB_greater_albania_3
 			}
-			add_stability = 0.2
+			add_stability = 0.20
 		}
 	}
 	
@@ -5507,7 +5507,7 @@ focus_tree = {
 				type = puppet_wargoal_focus
 				target = TUR
 			}
-			add_stability = -0.02
+			add_stability = -0.04
 		}
 	}
 	
@@ -5536,7 +5536,7 @@ focus_tree = {
 				add_idea = ALB_balkan_hegemon_6
 			}
 			
-			add_stability = 0.1
+			add_stability = 0.10
 			set_cosmetic_tag = ALB_balkan_empire
 		}
 	}
@@ -5649,7 +5649,7 @@ focus_tree = {
 				uses = 3
 				category = naval_equipment
 			}
-			navy_experience = 100
+			navy_experience = 50
 		}
 	}
 	
@@ -5701,7 +5701,7 @@ focus_tree = {
 					}
 				}
 			}
-			navy_experience = 100
+			navy_experience = 50
 		}
 	}
 	
@@ -5724,7 +5724,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = ALB_land_dominance
-			army_experience = 100
+			army_experience = 50
 		}
 	}
 	
@@ -5779,7 +5779,7 @@ focus_tree = {
 					}
 				}
 			}
-			army_experience = 100
+			army_experience = 50
 		}
 	}
 	
@@ -5893,7 +5893,7 @@ focus_tree = {
 		
 		completion_reward = {
 			TUR = {
-				add_stability = -0.05
+				add_stability = -0.10
 			}
 			custom_effect_tooltip = 22_ALB_TT
 			hidden_effect = {
@@ -5955,7 +5955,7 @@ focus_tree = {
 				remove_idea = ALB_janissaries_idea_1
 				add_idea = ALB_janissaries_idea_2
 			}
-			add_war_support = 0.1
+			add_war_support = 0.10
 		}
 	}
 	

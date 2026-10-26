@@ -2752,6 +2752,11 @@ form_european_union_category = {
 
 		allowed = {
 			OR = {
+				ROOT = {
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
 				original_tag = HOL
 				original_tag = BEL
 				original_tag = LUX
@@ -2781,6 +2786,14 @@ form_european_union_category = {
 		visible = {
 
 			OR = { 
+				AND = {	
+					ROOT = {
+						capital_scope = {
+							is_on_continent = europe
+						}
+					}
+					has_government = democratic
+				}
 				AND = {
 					OR = {
 						original_tag = HOL
@@ -2835,15 +2848,68 @@ form_european_union_category = {
 					has_completed_focus = CZE_bend_the_bars
 				}
 			}
+			}
 
 			NOT = { has_global_flag = form_european_union_flag }
 
 			is_major = yes
-
 		}
 
 		available = {
-			is_subject = no
+			OR = { 
+				AND = {	
+					ROOT = {
+						capital_scope = {
+							is_on_continent = europe
+						}
+					}
+					has_government = democratic
+					has_completed_focus = EU_united_states_of_europe
+				}
+				AND = {
+					original_tag = ENG
+					has_country_leader = {
+						character = ENG_oswald_mosley
+						ruling_only = yes
+					}
+					has_completed_focus = ENG_imperial_federation
+				}
+				AND = {
+					original_tag = HUN
+					has_country_leader = {
+						character = HUN_otto_von_habsburg
+						ruling_only = yes
+					}
+					has_government = neutrality
+					has_completed_focus = wuw_HUN_renovato_imperii
+				}
+				AND = {
+					original_tag = AUS
+					OR = {
+						AND = {
+							has_country_leader = {
+								character = HUN_otto_von_habsburg
+								ruling_only = yes
+							}
+							has_completed_focus = AUS_the_danubian_federation
+							is_faction_leader = yes
+						}	
+						AND = {
+							has_completed_focus = AUS_the_right_to_self_determination
+							has_government = democratic
+						}
+					}
+				}
+				AND = {
+					original_tag = GER
+					has_completed_focus = GER_european_confederation
+				}
+				AND = {
+					original_tag = CZE
+					has_completed_focus = CZE_bend_the_bars
+				}
+			}
+			is_subject = no	
 
 			controls_state = 8
 

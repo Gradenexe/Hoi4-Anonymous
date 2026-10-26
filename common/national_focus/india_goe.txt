@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -183,7 +183,7 @@ focus_tree = {
                 }
             }
             ELSE = {
-                army_experience = 100
+                army_experience = 50
             }
         }
     }
@@ -381,8 +381,8 @@ focus_tree = {
                 ideology = neutrality
                 popularity = 0.05
             }
-            add_stability = 0.1
-            add_war_support = 0.1
+            add_stability = 0.10
+            add_war_support = 0.10
             add_political_power = 160 
 
             hidden_effect = {
@@ -735,7 +735,7 @@ focus_tree = {
 				}
 			}
 
-            add_war_support = 0.1
+            add_war_support = 0.10
             if = {
                 limit = {
                     987 = { is_controlled_by = ROOT }
@@ -1268,7 +1268,21 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             custom_effect_tooltip = RAJ_relax_agrarian_society_criteria_tt
             add_to_variable = { RAJ_agrarian_society_conscription_factor = 0.09 tooltip = conscription_factor_tt }
             add_to_variable = { RAJ_agrarian_society_mobilization_speed = 0.09  tooltip = mobilization_speed_tt }
@@ -1305,8 +1319,51 @@ focus_tree = {
 
         search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_XP}
         completion_reward = {
-            try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             add_tech_bonus = {
                 name = RAJ_forging_the_mughal_arsenal
                 bonus = 0.35
@@ -1314,7 +1371,7 @@ focus_tree = {
                 category = artillery 
             }
 
-            army_experience = 60
+            army_experience = 30
         }
     }
 
@@ -1350,9 +1407,66 @@ focus_tree = {
         completion_reward = {
         
 
-            try_build_civ_in_core_otherwise_build_in_controlled_2_civs = yes
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
 			custom_effect_tooltip = newline_tt
             if = {
                 limit = {
@@ -1381,7 +1495,7 @@ focus_tree = {
                 }  
             }
 			custom_effect_tooltip = newline_tt
-			ROOT = { add_stability = 0.2 }
+			ROOT = { add_stability = 0.20 }
         } 
 
     }
@@ -1634,8 +1748,37 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_RESEARCH  FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
 
         completion_reward = {
-            try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
-            add_war_support = 0.1
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            add_war_support = 0.10
             add_doctrine_cost_reduction = {
                 name = RAJ_sharpen_the_tulwar
                 cost_reduction = 0.66
@@ -1731,7 +1874,36 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            try_build_civ_in_core_otherwise_build_in_controlled_2_civs = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             if = {
                 limit = {
                     has_idea = civilian_economy
@@ -1774,7 +1946,21 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             random_core_state = {
                 limit = {
                     is_controlled_by = ROOT
@@ -1889,7 +2075,7 @@ focus_tree = {
                 }
             }
 
-            army_experience = 140
+            army_experience = 70
 
             custom_effect_tooltip = generic_skip_one_line_tt
             if = {
@@ -1905,7 +2091,7 @@ focus_tree = {
                 }
                 add_ideas = proper_heritage_spirit
             }
-            #add_extra_state_shared_building_slots = 2
+            #add_extra_state_shared_building_slots = 1
         }
     }
 
@@ -1978,7 +2164,7 @@ focus_tree = {
         }
 
         bypass_effect = {
-            add_war_support = 0.1
+            add_war_support = 0.10
             add_manpower = 50000
         }
         
@@ -1997,7 +2183,7 @@ focus_tree = {
 
         completion_reward = {
             add_ideas = idea_RAJ_under_the_yoke_of_peacock_throne
-            add_war_support = 0.1
+            add_war_support = 0.10
             add_manpower = 50000
             custom_effect_tooltip = RAJ_revolt_of_the_princes_tt
 			create_wargoal = {
@@ -2502,7 +2688,7 @@ focus_tree = {
                 }
             }
             else = {
-                army_experience = 200
+                army_experience = 100
             }
             if = {
                 limit = {
@@ -3921,7 +4107,7 @@ focus_tree = {
 #            activate_mission = RAJ_GOE_provide_working_opportunities
 #            add_equipment_to_stockpile = { 
 #                type = infantry_equipment_0
-#                amount = 24000
+#                amount = 12000
 #                producer = ENG
 #            }
 #
@@ -3963,7 +4149,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            custom_effect_tooltip = RAJ_seek_intial_funding_tt
+            custom_effect_tooltip = RAJ_seek_intial_funding_doubled_tt
 
             hidden_effect = {
                 controlled_civilian_factories_excluding_trade = yes
@@ -4007,7 +4193,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 
         completion_reward = {
-            add_stability = 0.1
+            add_stability = 0.10
             if = {
                 limit = {
                     NOT = {
@@ -4246,7 +4432,21 @@ focus_tree = {
 
         completion_reward = {
             add_ideas = idea_RAJ_empowered_police_force
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
     
@@ -4446,7 +4646,7 @@ focus_tree = {
                     }
                     add_scientist_level = {
                         specialization = specialization_air
-                        level = 1
+                        level = 2
                     }
                 }
 
@@ -4460,7 +4660,7 @@ focus_tree = {
                     }
                     add_scientist_level = {
                         specialization = specialization_land
-                        level = 1
+                        level = 2
                     }
                 }
 
@@ -4473,7 +4673,7 @@ focus_tree = {
                     }
                     add_scientist_level = {
                         specialization = specialization_nuclear
-                        level = 1
+                        level = 2
                     }
                 }
 
@@ -4486,7 +4686,7 @@ focus_tree = {
                     }
                     add_scientist_level = {
                         specialization = specialization_naval
-                        level = 1
+                        level = 2
                     }
                 }
             }
@@ -4603,8 +4803,51 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            try_build_civ_in_core_otherwise_build_in_controlled_2_civs = yes
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             hidden_effect = {
                 controlled_civilian_factories_excluding_trade = yes
                 calc_expected_consumer_goods_for_taxes = yes
@@ -4647,8 +4890,51 @@ focus_tree = {
                 days = 730
             }
 
-            try_build_civ_in_core_otherwise_build_in_controlled_2_civs = yes
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             hidden_effect = {
                 controlled_civilian_factories_excluding_trade = yes
                 calc_expected_consumer_goods_for_taxes = yes
@@ -4833,9 +5119,9 @@ focus_tree = {
                 }
             }
             else = {
-                navy_experience = 100
+                navy_experience = 50
             }
-            navy_experience = 100
+            navy_experience = 50
             add_to_tech_sharing_group = RAJ_naval_tech_sharing_group
             custom_effect_tooltip = newline_tt
             ENG = {
@@ -4950,7 +5236,21 @@ focus_tree = {
             }
 
 
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
     
@@ -5011,7 +5311,7 @@ focus_tree = {
                     category = artillery # optional 
                     # technology  = technology_id # optional
                 }
-                army_experience = 50
+                army_experience = 25
             }
         }
     }
@@ -5068,8 +5368,38 @@ focus_tree = {
                     add_idea = idea_RAJ_long_range_sea_operations_2
                 }
             }
-            try_build_dockyard_in_core_otherwise_build_in_controlled = yes
-            try_build_dockyard_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		is_coastal = yes
+            		free_building_slots = {
+            			building = dockyard
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = dockyard
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		is_coastal = yes
+            		free_building_slots = {
+            			building = dockyard
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = dockyard
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
 
@@ -5255,7 +5585,7 @@ focus_tree = {
                     }
                     requested_factories = 5
                     progress = 0.6 
-                    amount = 1
+                    amount = 2
                     name = "Varuna"
                 }
 
@@ -5349,7 +5679,36 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
 
         completion_reward = {
-            try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             random_core_state = {
                 limit = {
                     is_fully_controlled_by = ROOT
@@ -5534,7 +5893,21 @@ focus_tree = {
                 category = synth_resources # optional 
                 # technology  = technology_id # optional
             }
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
 
@@ -5583,7 +5956,7 @@ focus_tree = {
                     }
                     add_scientist_level = {
                         specialization = specialization_air
-                        level = 1
+                        level = 2
                     }
                 }
                 
@@ -5596,7 +5969,7 @@ focus_tree = {
                     }
                     add_scientist_level = {
                         specialization = specialization_land
-                        level = 1
+                        level = 2
                     }
                 }
 
@@ -5609,7 +5982,7 @@ focus_tree = {
                     }
                     add_scientist_level = {
                         specialization = specialization_naval
-                        level = 1
+                        level = 2
                     }
                 }
             }
@@ -5754,7 +6127,21 @@ focus_tree = {
                 controlled_civilian_factories_excluding_trade = yes
                 calc_expected_consumer_goods_for_taxes = yes
             }
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
 
@@ -5815,7 +6202,21 @@ focus_tree = {
                 controlled_civilian_factories_excluding_trade = yes
                 calc_expected_consumer_goods_for_taxes = yes
             }
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
 
@@ -6020,9 +6421,52 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            try_build_civ_in_core_otherwise_build_in_controlled_2_civs = yes
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
-            add_stability = -0.06
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            add_stability = -0.12
             hidden_effect = {
                 controlled_civilian_factories_excluding_trade = yes
                 calc_expected_consumer_goods_for_taxes = yes
@@ -6256,8 +6700,38 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            try_build_dockyard_in_core_otherwise_build_in_controlled = yes
-            try_build_dockyard_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		is_coastal = yes
+            		free_building_slots = {
+            			building = dockyard
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = dockyard
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		is_coastal = yes
+            		free_building_slots = {
+            			building = dockyard
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = dockyard
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             create_wargoal = {
                 type = annex_everything
                 target = INS
@@ -6693,7 +7167,21 @@ focus_tree = {
                 controlled_civilian_factories_excluding_trade = yes
                 calc_expected_consumer_goods_for_taxes = yes
             }
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
     
@@ -6921,7 +7409,21 @@ focus_tree = {
         completion_reward = {
             add_stability = 0.06
             add_country_leader_trait = shareholder_democracy
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
     
@@ -6965,8 +7467,26 @@ focus_tree = {
                 category = excavation_tech  
             }
 
-            try_build_infra_in_core_otherwise_build_in_controlled = yes
-            try_build_infra_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		infrastructure < 5
+            	}
+            	add_building_construction = {
+            		type = infrastructure
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		infrastructure < 5
+            	}
+            	add_building_construction = {
+            		type = infrastructure
+            		level = 2
+            		instant_build = yes
+            	}
+            }
 
         }
     }
@@ -7365,7 +7885,7 @@ focus_tree = {
 #        completion_reward = {
 #            custom_effect_tooltip = available_industrial_concern
 #            show_ideas_tooltip = idea_RAJ_the_reserve_bank_of_india
-#            add_political_power = 50
+#            add_political_power = 25
 #        }
 #    }
 #
@@ -7492,7 +8012,7 @@ focus_tree = {
  #                   localization = RAJ_extended_franchise
  #               }
  #           }
- #           add_stability = 0.1
+ #           add_stability = 0.05
  #       }
  #   }
 
@@ -7951,7 +8471,21 @@ focus_tree = {
             add_to_variable = { RAJ_resistance_activity_independence_movement = 0.1 tooltip =  resistance_activity_tt }
             add_to_variable = { RAJ_resistance_target_independence_movement = 0.1 tooltip =  resistance_target_tt }
             custom_effect_tooltip = generic_skip_one_line_tt
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             
         }
     }
@@ -8061,7 +8595,21 @@ focus_tree = {
                 value = 0.03
                 localization = RAJ_khadi_movement
             }
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
 
@@ -8494,7 +9042,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_POLITICAL}
 
         completion_reward = {
-            add_stability = 0.2
+            add_stability = 0.20
             add_popularity = {
                 ideology = democratic
                 popularity = 0.1
@@ -8642,7 +9190,21 @@ focus_tree = {
                 value = 0.05 
                 localization = RAJ_cottage_industries
             }
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
 
@@ -8749,7 +9311,7 @@ focus_tree = {
 #
             #        add_building_construction = {
             #            type = infrastructure
-            #            level = 2
+            #            level = 1
             #            instant_build = yes
             #        }
             #    }
@@ -8905,7 +9467,21 @@ focus_tree = {
                 localization = RAJ_handloom_weaving
             }
 
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             add_tech_bonus = {
                 name = RAJ_handloom_weaving
                 bonus = 0.35
@@ -9125,7 +9701,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_POLITICAL_CHARACTER}
 
         completion_reward = {
-            add_war_support = 0.1
+            add_war_support = 0.10
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.1
@@ -9205,7 +9781,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 
         completion_reward = {
-            add_war_support = 0.1
+            add_war_support = 0.10
             add_popularity = { ideology = fascism popularity = 0.1 }
 
             if = {
@@ -9782,7 +10358,7 @@ focus_tree = {
            }
 
 
-           add_stability = -0.15
+           add_stability = -0.30
 
            hidden_effect = {
                 every_country = {
@@ -9848,15 +10424,15 @@ focus_tree = {
  #           }
 #
  #           capital_scope = {
- #               add_extra_state_shared_building_slots = 6
+ #               add_extra_state_shared_building_slots = 3
  #               add_building_construction = {
  #                   type = industrial_complex
- #                   level = 4
+ #                   level = 2
  #                   instant_build = yes
  #               }
  #               add_building_construction = {
  #                   type = arms_factory
- #                   level = 2
+ #                   level = 1
  #                   instant_build = yes
  #               }
  #           }
@@ -9967,7 +10543,7 @@ focus_tree = {
             }
             remove_ideas = idea_RAJ_flames_of_the_revolution
 
-            add_war_support = 0.1
+            add_war_support = 0.10
 
         }
     }
@@ -10230,7 +10806,7 @@ focus_tree = {
             }
             custom_effect_tooltip = generic_skip_one_line_tt
 
-            add_war_support = -0.05
+            add_war_support = -0.10
             add_timed_idea = {
                 idea = idea_RAJ_bhoodan_movement
                 days = 720
@@ -10794,7 +11370,21 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             custom_effect_tooltip = RAJ_urban_industrialism_tt
             
         }
@@ -11547,7 +12137,7 @@ focus_tree = {
                 add_extra_state_shared_building_slots = 4
                 add_building_construction = {
                     type = dam
-                    level = 1
+                    level = 2
                     instant_build = yes
                     province = {
                         id = 4516
@@ -11559,7 +12149,7 @@ focus_tree = {
                 add_extra_state_shared_building_slots = 4
                 add_building_construction = {
                     type = dam
-                    level = 1
+                    level = 2
                     instant_build = yes
                     province = {
                         id = 4245
@@ -11571,7 +12161,7 @@ focus_tree = {
                 add_extra_state_shared_building_slots = 4
                 add_building_construction = {
                     type = dam
-                    level = 1
+                    level = 2
                     instant_build = yes
                     province = {
                         id = 11929
@@ -11615,7 +12205,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 
         completion_reward = {
-            add_stability = 0.2
+            add_stability = 0.20
             add_popularity = {
                 ideology = communism
                 popularity = 0.05
@@ -11689,7 +12279,7 @@ focus_tree = {
         }
 
         bypass_effect = {
-            army_experience = 100
+            army_experience = 50
         }
 
         cancel_if_invalid = yes
@@ -11700,7 +12290,7 @@ focus_tree = {
 
         completion_reward = {
             custom_effect_tooltip = RAJ_jugantar_tt
-            army_experience = 100
+            army_experience = 50
         }
     }
 
@@ -11808,7 +12398,36 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            try_build_civ_in_core_otherwise_build_in_controlled_2_civs = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             custom_effect_tooltip = generic_skip_one_line_tt
             add_timed_idea = {
                 idea = idea_RAJ_confiscated_princely_wealth
@@ -13136,7 +13755,7 @@ focus_tree = {
                     province = {
                         all_provinces = yes
                     }
-                    level = 5
+                    level = 10
                     instant_build = yes
                 }
 
@@ -13601,8 +14220,36 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
-            try_build_civ_in_core_otherwise_build_in_controlled = yes  
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             random_core_state = {
                 limit = {
                     is_controlled_by = ROOT
@@ -13710,8 +14357,36 @@ focus_tree = {
                     }
                 }
             }
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
-            try_build_mil_in_core_otherwise_build_in_controlled = yes  
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
 
         }
     }
@@ -14094,8 +14769,36 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             if = {
                 limit = {
                     capital_scope = {
@@ -14170,7 +14873,7 @@ focus_tree = {
                 popularity = 0.35
                 ideology = communism
             }
-            add_stability = -0.05
+            add_stability = -0.10
 
             add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = SOV }
             SOV = { add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = ROOT } }
@@ -14281,7 +14984,7 @@ focus_tree = {
                 popularity = 0.35
                 ideology = fascism
             }
-            add_stability = -0.05
+            add_stability = -0.10
 
 
             add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = GER }
@@ -14713,7 +15416,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_POLITICAL}
 
         completion_reward = {
-            add_stability = 0.2
+            add_stability = 0.20
             add_popularity = {
                 ideology = fascism
                 popularity = 0.15
@@ -14829,7 +15532,7 @@ focus_tree = {
         available_if_capitulated = yes
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
-            add_war_support = 0.2
+            add_war_support = 0.20
             every_controlled_state = {
                 limit = {
                     has_resistance = yes
@@ -15094,7 +15797,7 @@ focus_tree = {
                 limit = {
                     has_idea = RAJ_marginalized_muslim_community_angry
                 }
-                add_war_support = -0.05
+                add_war_support = -0.10
             }
 
 
@@ -15638,7 +16341,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_POLITICAL}
 
         completion_reward = {
-            add_stability = -0.15
+            add_stability = -0.30
             add_political_power = 300
             set_country_flag = RAJ_allow_release_states
         }
@@ -16189,7 +16892,7 @@ focus_tree = {
 #        }
 #
 #        completion_reward = {
-#            add_stability = 0.2
+#            add_stability = 0.1
 #            add_popularity = {
 #                ideology = democratic
 #                popularity = 0.1
@@ -16230,7 +16933,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            add_stability = 0.2
+            add_stability = 0.20
             add_popularity = {
                 ideology = democratic
                 popularity = 0.15
@@ -16727,8 +17430,51 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            try_build_civ_in_core_otherwise_build_in_controlled_2_civs = yes
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
 
@@ -17034,10 +17780,126 @@ focus_tree = {
 
         completion_reward = {
            add_research_slot = 1
-           try_build_civ_in_core_otherwise_build_in_controlled_2_civs = yes
-           try_build_civ_in_core_otherwise_build_in_controlled_2_civs = yes
-           try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
-           try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
+           random_owned_controlled_state = {
+           	limit = {
+           		free_building_slots = {
+           			building = industrial_complex
+           			size > 0
+           			include_locked = yes
+           		}
+           	}
+           	add_extra_state_shared_building_slots = 2
+           	add_building_construction = {
+           		type = industrial_complex
+           		level = 2
+           		instant_build = yes
+           	}
+           }
+           random_owned_controlled_state = {
+           	limit = {
+           		free_building_slots = {
+           			building = industrial_complex
+           			size > 0
+           			include_locked = yes
+           		}
+           	}
+           	add_extra_state_shared_building_slots = 2
+           	add_building_construction = {
+           		type = industrial_complex
+           		level = 2
+           		instant_build = yes
+           	}
+           }
+           random_owned_controlled_state = {
+           	limit = {
+           		free_building_slots = {
+           			building = industrial_complex
+           			size > 0
+           			include_locked = yes
+           		}
+           	}
+           	add_extra_state_shared_building_slots = 2
+           	add_building_construction = {
+           		type = industrial_complex
+           		level = 2
+           		instant_build = yes
+           	}
+           }
+           random_owned_controlled_state = {
+           	limit = {
+           		free_building_slots = {
+           			building = industrial_complex
+           			size > 0
+           			include_locked = yes
+           		}
+           	}
+           	add_extra_state_shared_building_slots = 2
+           	add_building_construction = {
+           		type = industrial_complex
+           		level = 2
+           		instant_build = yes
+           	}
+           }
+           random_owned_controlled_state = {
+           	limit = {
+           		free_building_slots = {
+           			building = arms_factory
+           			size > 0
+           			include_locked = yes
+           		}
+           	}
+           	add_extra_state_shared_building_slots = 2
+           	add_building_construction = {
+           		type = arms_factory
+           		level = 2
+           		instant_build = yes
+           	}
+           }
+           random_owned_controlled_state = {
+           	limit = {
+           		free_building_slots = {
+           			building = arms_factory
+           			size > 0
+           			include_locked = yes
+           		}
+           	}
+           	add_extra_state_shared_building_slots = 2
+           	add_building_construction = {
+           		type = arms_factory
+           		level = 2
+           		instant_build = yes
+           	}
+           }
+           random_owned_controlled_state = {
+           	limit = {
+           		free_building_slots = {
+           			building = arms_factory
+           			size > 0
+           			include_locked = yes
+           		}
+           	}
+           	add_extra_state_shared_building_slots = 2
+           	add_building_construction = {
+           		type = arms_factory
+           		level = 2
+           		instant_build = yes
+           	}
+           }
+           random_owned_controlled_state = {
+           	limit = {
+           		free_building_slots = {
+           			building = arms_factory
+           			size > 0
+           			include_locked = yes
+           		}
+           	}
+           	add_extra_state_shared_building_slots = 2
+           	add_building_construction = {
+           		type = arms_factory
+           		level = 2
+           		instant_build = yes
+           	}
+           }
         }
     }
 
@@ -17202,7 +18064,7 @@ focus = {
 		clear_variable = RAJ_pp_bonus_based_on_compliance
 
 		custom_effect_tooltip = generic_skip_one_line_tt
-		add_stability = 0.1
+		add_stability = 0.10
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 		custom_effect_tooltip = RAJ_famine_impact_reduction
@@ -17285,7 +18147,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_INDUSTRY }
 
 	completion_reward = {
-		army_experience = 50
+		army_experience = 25
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -17713,8 +18575,8 @@ focus = {
 		add_to_variable = { RAJ_a_loyal_government_conscription_factor = 0.05 tooltip = conscription_factor_tt }
 
 		custom_effect_tooltip = generic_skip_one_line_tt
-		add_stability = 0.2
-		add_war_support = 0.2
+		add_stability = 0.20
+		add_war_support = 0.20
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.1
@@ -17975,7 +18837,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_STABILITY }
 
 	completion_reward = {
-		add_stability = 0.1
+		add_stability = 0.10
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 		custom_effect_tooltip = RAJ_famine_impact_reduction
@@ -18761,7 +19623,7 @@ focus = {
 			RAJ_homi_j_bhabha = {
 				add_scientist_level = {
 					specialization = specialization_nuclear
-					level = 1
+					level = 2
 				}
 			}
 		}
@@ -18862,7 +19724,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_ARMY_XP }
 
 	completion_reward = {
-		army_experience = 70
+		army_experience = 35
 		custom_effect_tooltip = generic_skip_one_line_tt
 		add_dynamic_modifier = { modifier = RAJ_indian_gentlemen_officers_goe }
 	}
@@ -19397,7 +20259,7 @@ focus = {
 
 			add_building_construction = {
 				type = naval_base
-				level = 2
+				level = 4
 				instant_build = yes
 				province =  {
 					all_provinces = yes
@@ -19432,7 +20294,7 @@ focus = {
 
 			add_building_construction = {
 				type = naval_base
-				level = 2
+				level = 4
 				instant_build = yes
 				province =  {
 					all_provinces = yes
@@ -19467,7 +20329,7 @@ focus = {
 
 			add_building_construction = {
 				type = naval_base
-				level = 2
+				level = 4
 				instant_build = yes
 				province =  {
 					all_provinces = yes
@@ -19554,7 +20416,7 @@ focus = {
 
 			add_building_construction = {
 				type = naval_base
-				level = 2
+				level = 4
 				instant_build = yes
 				province = {
 					all_provinces = yes
@@ -19614,7 +20476,7 @@ focus = {
 				}
 				requested_factories = 1
 				progress = 0.75
-				amount = 3
+				amount = 6
 				industrial_manufacturer = mio:RAJ_garden_reach_shipbuilders_organization
 			}
 
@@ -19649,7 +20511,7 @@ focus = {
 				}
 				requested_factories = 1
 				progress = 0.75
-				amount = 1
+				amount = 2
 				industrial_manufacturer = mio:RAJ_garden_reach_shipbuilders_organization
 			}
 		}
@@ -19677,7 +20539,7 @@ focus = {
 				}
 				requested_factories = 1
 				progress = 0.75
-				amount = 3
+				amount = 6
 				industrial_manufacturer = mio:RAJ_garden_reach_shipbuilders_organization
 			}
 
@@ -19714,7 +20576,7 @@ focus = {
 				}
 				requested_factories = 1
 				progress = 0.75
-				amount = 1
+				amount = 2
 				industrial_manufacturer = mio:RAJ_garden_reach_shipbuilders_organization
 			}
 		}
@@ -19756,7 +20618,7 @@ focus = {
 				}
 				requested_factories = 1
 				progress = 0.75
-				amount = 3
+				amount = 6
 				industrial_manufacturer = mio:RAJ_garden_reach_shipbuilders_organization
 			}
 		}
@@ -20670,7 +21532,7 @@ focus = {
 			#Forts - Imphal
 			add_building_construction = {
 				type = bunker
-				level = 4
+				level = 8
 				instant_build = yes
 				province =  {
 					all_provinces = yes
@@ -21275,7 +22137,7 @@ focus = {
             }
             custom_effect_tooltip = if_they_accept_tt
             effect_tooltip = {
-                add_manpower = -100000
+                add_manpower = -200000
                 add_timed_idea = {
                      idea = idea_RAJ_soldiers_training_in_britain
                      days = 365
@@ -21434,8 +22296,8 @@ focus = {
         search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_XP}
 
         completion_reward = {
-            army_experience = 100
-            add_war_support = 0.1
+            army_experience = 50
+            add_war_support = 0.10
         }
     }
 
@@ -21781,7 +22643,7 @@ focus = {
                         }
                         add_building_construction = {
                             type = bunker
-                            level = 2
+                            level = 4
                             instant_build = yes
                             province = {
                                 id = 1159
@@ -22111,7 +22973,7 @@ focus = {
                 every_owned_state = {
                     add_building_construction = {
                         type = bunker
-                        level = 3
+                        level = 6
                         instant_build = yes
                         province = {
                             all_provinces = yes
@@ -22836,7 +23698,7 @@ focus = {
                 category = cat_mechanized_equipment # optional 
                 # technology  = technology_id # optional
             }
-            army_experience = 40
+            army_experience = 20
         }
     }
     
@@ -23038,7 +23900,7 @@ focus = {
                 }
             }
             else = {
-                army_experience = 100
+                army_experience = 50
             }
         }
     }
@@ -23167,7 +24029,7 @@ focus = {
                 add_potential_special_forces_tree = yes
             }
             else = {
-                army_experience = 200
+                army_experience = 100
             }
             division_template = {
                 name = "Gurkha Rifles"
@@ -23271,7 +24133,7 @@ focus = {
         search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ARMY_XP FOCUS_FILTER_WAR_SUPPORT }
         completion_reward = {
             add_ideas = idea_RAJ_lions_of_the_great_war
-            army_experience = 60
+            army_experience = 30
             custom_effect_tooltip = RAJ_create_unit_sikh_tt
             hidden_effect = {
 
@@ -23894,7 +24756,36 @@ focus = {
                 category = engineers_tech # optional 
                 # technology  = technology_id # optional
             }
-           try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
+           random_owned_controlled_state = {
+           	limit = {
+           		free_building_slots = {
+           			building = arms_factory
+           			size > 0
+           			include_locked = yes
+           		}
+           	}
+           	add_extra_state_shared_building_slots = 2
+           	add_building_construction = {
+           		type = arms_factory
+           		level = 2
+           		instant_build = yes
+           	}
+           }
+           random_owned_controlled_state = {
+           	limit = {
+           		free_building_slots = {
+           			building = arms_factory
+           			size > 0
+           			include_locked = yes
+           		}
+           	}
+           	add_extra_state_shared_building_slots = 2
+           	add_building_construction = {
+           		type = arms_factory
+           		level = 2
+           		instant_build = yes
+           	}
+           }
         }
     }
     
@@ -23944,7 +24835,21 @@ focus = {
                 upgrade_ordance_factories_art_no_aat = yes
             }
 
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
     
@@ -23992,7 +24897,21 @@ focus = {
                 upgrade_ordance_factories_no_aat = yes
             }
 
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
             
         }
     }
@@ -24051,7 +24970,21 @@ focus = {
                 upgrade_ordance_factories_art_no_aat = yes
             }
 
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
 
@@ -24106,7 +25039,21 @@ focus = {
                 }
 
             }
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
 
         }
     }
@@ -24183,7 +25130,21 @@ focus = {
                 }
             }
 
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
     
@@ -24276,7 +25237,21 @@ focus = {
                 upgrade_ordance_factories_art_no_aat = yes
             }
 
-             try_build_mil_in_core_otherwise_build_in_controlled = yes
+             random_owned_controlled_state = {
+             	limit = {
+             		free_building_slots = {
+             			building = arms_factory
+             			size > 0
+             			include_locked = yes
+             		}
+             	}
+             	add_extra_state_shared_building_slots = 2
+             	add_building_construction = {
+             		type = arms_factory
+             		level = 2
+             		instant_build = yes
+             	}
+             }
         }
     }
     
@@ -24453,7 +25428,7 @@ focus = {
 
         completion_reward = {
 
-            air_experience = 50
+            air_experience = 25
             add_tech_bonus = {
                 name = RAJ_spitfire
                 bonus = 1
@@ -24620,7 +25595,7 @@ focus = {
                 }
             }
             else = {
-                air_experience = 120
+                air_experience = 60
             }
 
             custom_effect_tooltip = idea_RAJ_indian_air_force_modify_tt
@@ -24679,7 +25654,21 @@ focus = {
             }
 
              
-             try_build_mil_in_core_otherwise_build_in_controlled = yes
+             random_owned_controlled_state = {
+             	limit = {
+             		free_building_slots = {
+             			building = arms_factory
+             			size > 0
+             			include_locked = yes
+             		}
+             	}
+             	add_extra_state_shared_building_slots = 2
+             	add_building_construction = {
+             		type = arms_factory
+             		level = 2
+             		instant_build = yes
+             	}
+             }
         }
     }
     
@@ -24848,7 +25837,7 @@ focus = {
         search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP}
 
         completion_reward = {
-            air_experience = 50
+            air_experience = 25
             add_tech_bonus = {
                 name = RAJ_long_range_escorts
                 bonus = 1
@@ -24947,14 +25936,14 @@ focus = {
                     uses = 1
                     category = special_forces_doctrine
                 }
-                army_experience = 60
-                navy_experience = 60
-                air_experience = 60
+                army_experience = 30
+                navy_experience = 30
+                air_experience = 30
             }
             else = {
-                army_experience = 90
-                navy_experience = 90
-                air_experience = 90
+                army_experience = 45
+                navy_experience = 45
+                air_experience = 45
             }
         }
     }
@@ -25019,11 +26008,83 @@ focus = {
                 }
             }
             else = {
-                try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
+                random_owned_controlled_state = {
+                	limit = {
+                		free_building_slots = {
+                			building = arms_factory
+                			size > 0
+                			include_locked = yes
+                		}
+                	}
+                	add_extra_state_shared_building_slots = 2
+                	add_building_construction = {
+                		type = arms_factory
+                		level = 2
+                		instant_build = yes
+                	}
+                }
+                random_owned_controlled_state = {
+                	limit = {
+                		free_building_slots = {
+                			building = arms_factory
+                			size > 0
+                			include_locked = yes
+                		}
+                	}
+                	add_extra_state_shared_building_slots = 2
+                	add_building_construction = {
+                		type = arms_factory
+                		level = 2
+                		instant_build = yes
+                	}
+                }
             }
 
-            try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
-            try_build_mil_in_core_otherwise_build_in_controlled = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
     
@@ -25114,7 +26175,7 @@ focus = {
         search_filters = {FOCUS_FILTER_AIR_XP}
 
         completion_reward = {
-            air_experience = 200
+            air_experience = 100
             add_doctrine_cost_reduction = {
                 cost_reduction = 0.5
                 uses = 2
@@ -25214,7 +26275,7 @@ focus = {
         }
 
         completion_reward = {
-            navy_experience = 100
+            navy_experience = 50
             random_owned_controlled_state = {
                 prioritize = { 429 }
                 limit = {
@@ -25469,7 +26530,7 @@ focus = {
         }
 
         completion_reward = {
-            navy_experience = 50
+            navy_experience = 25
             random_owned_controlled_state = {
                 prioritize = { 426 }
                 limit = {
@@ -25576,7 +26637,7 @@ focus = {
 
         completion_reward = {
             add_ideas = RAJ_womens_royal_indian_naval_service_spirit
-            navy_experience = 50
+            navy_experience = 25
         }
 
     }
@@ -26118,8 +27179,51 @@ focus = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            try_build_civ_in_core_otherwise_build_in_controlled = yes
-            try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = industrial_complex
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = industrial_complex
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
+            random_owned_controlled_state = {
+            	limit = {
+            		free_building_slots = {
+            			building = arms_factory
+            			size > 0
+            			include_locked = yes
+            		}
+            	}
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            		type = arms_factory
+            		level = 2
+            		instant_build = yes
+            	}
+            }
         }
     }
 

@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = canadian_focus
 	
 	country = {
@@ -1754,7 +1754,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			army_experience = 100
+			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = CAN_independent_command
 				cost_reduction = 0.5
@@ -2002,7 +2002,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			army_experience = 100 
+			army_experience = 50 
 			add_doctrine_cost_reduction = {
 				name = CAN_army_modernization
 				cost_reduction = 0.5
@@ -2252,7 +2252,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			army_experience = 60
+			army_experience = 30
 			add_doctrine_cost_reduction = {
 				name = CAN_red_deer_training_camp
 				cost_reduction = 0.5
@@ -3537,7 +3537,7 @@
 						all_provinces = yes
 						limit_to_border = yes
 					}
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -3553,7 +3553,7 @@
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -4084,7 +4084,7 @@
 						all_provinces = yes
 						limit_to_border = yes
 					}
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -4100,7 +4100,7 @@
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -4160,7 +4160,7 @@
 			send_equipment = {
 				target = SOV
 				type = infantry_equipment
-				amount = 500
+				amount = 1000
 			}
 		}
 
@@ -4353,7 +4353,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		complete_tooltip = {
-			air_experience = 50
+			air_experience = 25
 			random_state = {				
 				limit = {
 					has_state_flag = CAN_rcaf_station_borden_AB
@@ -4373,7 +4373,7 @@
 		}
 
 		completion_reward = {
-			air_experience = 50
+			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -4669,7 +4669,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		complete_tooltip = {
-			air_experience = 50
+			air_experience = 25
 			random_state = {
 				limit = {
 					has_state_flag = CAN_commonwealth_air_training_plan_AB
@@ -4689,7 +4689,7 @@
 		}
 
 		completion_reward = {
-			air_experience = 50
+			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -4915,7 +4915,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
-			navy_experience = 50
+			navy_experience = 25
 			random_state = {
 				limit = {
 					has_state_flag = CAN_halifax_shipyards_DY
@@ -4930,7 +4930,7 @@
 		}
 
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 25
 			random_owned_controlled_state = {
 				prioritize = { 464 }
 				limit = {
@@ -4981,7 +4981,7 @@
 
 		completion_reward = {
 
-			navy_experience = 50
+			navy_experience = 25
 
 			add_tech_bonus = {
 				name = CAN_destroyer_effort
@@ -5129,7 +5129,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 25
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.15
@@ -5193,7 +5193,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 25
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.15
@@ -5334,7 +5334,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
-			navy_experience = 50
+			navy_experience = 25
 			random_state = {
 				limit = {
 					has_state_flag = CAN_united_shipyards_DY
@@ -5349,7 +5349,7 @@
 		}
 
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes

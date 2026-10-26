@@ -1,0 +1,31 @@
+rts_European_State_Integration = {
+    icon = "GFX_european_state_integration_occupation"
+    tooltip = "rts_occupation_law_european_integration_tt"
+    sound_effect = "Martial_Law_Interface_Liberate_Workers_Occupation_Unique_COM"
+
+	visible = {
+       has_completed_focus = EU_united_states_of_europe ### // You have to complete this focus in order to be able to click this occupation law
+    }
+
+    available = {
+        FROM = {
+            capital_scope = { is_on_continent = europe } ### // The capital of the country on which you apply this occupation law must be in Europe
+        } 
+    }
+
+	fallback_law = foreign_civilian_oversight
+
+    state_modifier = {
+        resistance_target                   = -0.55     ### // Less Resistance by 55%
+        compliance_gain                     = 0.05      ### // More Compliance Gain by .050 , baseline in game is 0.075
+        required_garrison_factor            = -0.75     ### // It requires 75% less garrison 
+        resistance_damage_to_garrison       = 0.4       ### // It takes 40% more damage to garrison 
+        local_factories                     = 0.01      ### // With 100% compliance you get 100% factories in state 
+        local_resources                     = 0.1       ### // With 100% compliance you get 100% resources from state 
+        local_manpower                      = 2.5       ### // Manpower that you get from this state is the same as if it was a core state
+    }
+
+    ai_will_do = {
+        base = 850
+    }
+}
